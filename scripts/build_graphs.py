@@ -15,8 +15,12 @@ For query paper q (published on date t_q, cutoff = t_q - 1 day):
   3. Edges: A_ij = 1 if pool work i cites pool work j. Duplicate records
      of one paper (e.g. arXiv and venue versions) are merged by title.
   4. Ground truth: references cited in q's related-work section
-     (DeepScholar-Bench citations.csv), matched to pool works by
-     normalised title; the benchmark's "important" subset is kept too.
+     (DeepScholar-Bench citations.csv). Each is resolved to OpenAlex by
+     DOI or arXiv DOI where it has one (accepted only if the titles
+     agree, since OpenAlex occasionally attaches a DOI to the wrong
+     record) and matched to pool works by id/DOI first, by normalised
+     title otherwise. Match rates are recorded; the benchmark's
+     "important" subset is kept too.
 
 Output: data/graphs/<arxiv_id>.json, one file per query.
 """
@@ -35,7 +39,7 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-from dspectra.openalex import OpenAlexClient, abstract_text, short_id  # noqa: E402
+from dspectra.openalex import OpenAlexClient, abstract_text, bare_doi, short_id  # noqa: E402
 
 
 STOPWORDS = set("""a an the of for and or in on to with by from via at as is are be been
@@ -67,6 +71,37 @@ def norm_title(t: str) -> str:
 def arxiv_core(s) -> str:
     m = re.search(r"(\d{4}\.\d{4,5})", str(s))
     return m.group(1) if m else ""
+
+
+def titles_agree(a: str, b: str, cutoff: float = 0.6) -> bool:
+    return difflib.SequenceMatcher(None, norm_title(a), norm_title(b)).ratio() >= cutoff
+
+
+def resolve_ground_truth(oa: OpenAlexClient, cit_rows):
+    """Map each related-work citation to the DOIs and OpenAlex ids it is
+    known by. A DOI counts only if the OpenAlex record behind it has an
+    agreeing title."""
+    wanted = {}
+    for key, title, doi, link in zip(cit_rows.citation_shorthand, cit_rows.cited_paper_title,
+                                     cit_rows.bib_paper_doi, cit_rows.cited_paper_arxiv_link):
+        dois = [d for d in (bare_doi(doi),) if d]
+        ax = arxiv_core(link)
+        if ax:
+            dois.append(f"10.48550/arxiv.{ax}")
+        wanted[key] = (title, dois)
+    records = {bare_doi(w.get("doi")): w for w in
+               oa.by_dois([d for _, ds in wanted.values() for d in ds])}
+    resolved = {}
+    for key, (title, dois) in wanted.items():
+        ids, good_dois = set(), set()
+        for d in dois:
+            w = records.get(d)
+            if w is not None and titles_agree(w.get("title") or "", title):
+                ids.add(short_id(w["id"]))
+                good_dois.add(d)
+        resolved[key] = {"title": title, "has_identifier": bool(dois),
+                         "ids": ids, "dois": good_dois}
+    return resolved
 
 
 def title_matcher(gt_titles):
@@ -144,12 +179,15 @@ def build_one(oa: OpenAlexClient, q, cit_rows, imp_keys, args):
             alias[pid] = k
             nodes[k]["_refs"] |= {short_id(r) for r in (w.get("referenced_works") or [])}
             nodes[k]["openalex_ids"].append(pid)
+            if bare_doi(w.get("doi")):
+                nodes[k]["dois"].append(bare_doi(w.get("doi")))
             continue
         k = len(nodes)
         by_title[t] = k
         alias[pid] = k
         nodes.append({
             "openalex_id": pid, "openalex_ids": [pid], "title": w["title"],
+            "dois": [bare_doi(w.get("doi"))] if bare_doi(w.get("doi")) else [],
             "abstract": abstract_text(w.get("abstract_inverted_index")),
             "publication_date": w.get("publication_date"),
             "cited_by_count": w.get("cited_by_count") or 0,
@@ -165,18 +203,29 @@ def build_one(oa: OpenAlexClient, q, cit_rows, imp_keys, args):
             if j is not None and j != k:
                 edges.add((k, j))
 
-    gt_titles = {norm_title(t): key for key, t in
-                 zip(cit_rows.citation_shorthand, cit_rows.cited_paper_title)}
+    resolved = resolve_ground_truth(oa, cit_rows)
+    id_to_key = {i: key for key, rv in resolved.items() for i in rv["ids"]}
+    doi_to_key = {d: key for key, rv in resolved.items() for d in rv["dois"]}
+    gt_titles = {norm_title(rv["title"]): key for key, rv in resolved.items()}
     match = title_matcher(gt_titles)
-    gt_in_pool, imp_in_pool, matched_keys = [], [], set()
+    node_keys, how = {}, {}
     for k, nd in enumerate(nodes):
+        key = next((id_to_key[i] for i in nd["openalex_ids"] if i in id_to_key), None)
+        if key is None:
+            key = next((doi_to_key[d] for d in nd["dois"] if d in doi_to_key), None)
+        if key is not None:
+            node_keys[k], how[k] = key, "id"
+            continue
         t = match(nd["title"])
         if t is not None:
-            key = gt_titles[t]
-            matched_keys.add(key)
-            gt_in_pool.append(k)
-            if key in imp_keys:
-                imp_in_pool.append(k)
+            node_keys[k], how[k] = gt_titles[t], "title"
+    keys_by_id = {node_keys[k] for k in node_keys if how[k] == "id"}
+    keys_by_title = {node_keys[k] for k in node_keys if how[k] == "title"} - keys_by_id
+    # how many id matches title matching alone would also have found
+    title_also = {node_keys[k] for k in node_keys if how[k] == "id"
+                  and gt_titles.get(match(nodes[k]["title"]) or "") == node_keys[k]}
+    gt_in_pool = sorted(node_keys)
+    imp_in_pool = [k for k in gt_in_pool if node_keys[k] in imp_keys]
 
     return {
         "arxiv_id": aid, "status": "ok",
@@ -184,10 +233,19 @@ def build_one(oa: OpenAlexClient, q, cit_rows, imp_keys, args):
                   "published_date": t_q.isoformat(), "search_queries": queries},
         "nodes": nodes, "edges": sorted(edges),
         "gt": {
-            "n_cited_in_related_work": int(len(gt_titles)),
+            "n_cited_in_related_work": len(resolved),
             "n_important": int(len(imp_keys)),
+            "important_keys": sorted(imp_keys),
             "in_pool": gt_in_pool, "important_in_pool": imp_in_pool,
-            "matched_keys": sorted(matched_keys),
+            "node_keys": {str(k): v for k, v in node_keys.items()},
+            "match": {
+                "n_with_identifier": sum(rv["has_identifier"] for rv in resolved.values()),
+                "n_resolved_by_id": sum(bool(rv["ids"]) for rv in resolved.values()),
+                "n_in_pool": len(keys_by_id | keys_by_title),
+                "n_in_pool_by_id": len(keys_by_id),
+                "n_in_pool_by_title_only": len(keys_by_title),
+                "n_id_matches_also_found_by_title": len(title_also),
+            },
         },
         "stats": {
             "n_nodes": len(nodes), "n_edges": len(edges),
@@ -237,11 +295,11 @@ def main():
             g = {"arxiv_id": aid, "status": f"error: {e}"}
         with open(path, "w") as f:
             json.dump(g, f)
-        st = g.get("stats", {}); gt = g.get("gt", {})
+        st = g.get("stats", {}); gt = g.get("gt", {}); mt = gt.get("match", {})
         print(f"[{k + 1}/{len(order)}] {aid} {g['status']} nodes={st.get('n_nodes')} "
-              f"edges={st.get('n_edges')} no_refs={st.get('frac_nodes_no_listed_refs', 0):.2f} "
-              f"gt={gt.get('n_cited_in_related_work')} in_pool={len(gt.get('in_pool', []))} "
-              f"imp={gt.get('n_important')} imp_in_pool={len(gt.get('important_in_pool', []))} "
+              f"edges={st.get('n_edges')} gt={gt.get('n_cited_in_related_work')} "
+              f"resolved_by_id={mt.get('n_resolved_by_id')} in_pool={mt.get('n_in_pool')} "
+              f"(id={mt.get('n_in_pool_by_id')}, title_only={mt.get('n_in_pool_by_title_only')}) "
               f"requests={oa.n_requests}", flush=True)
 
 

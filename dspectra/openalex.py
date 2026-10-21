@@ -27,6 +27,14 @@ def short_id(oa_id: str) -> str:
     return oa_id.rsplit("/", 1)[-1]
 
 
+def bare_doi(doi: Optional[str]) -> str:
+    d = str(doi or "").strip().lower()
+    for prefix in ("https://doi.org/", "http://doi.org/", "doi:"):
+        if d.startswith(prefix):
+            d = d[len(prefix):]
+    return "" if d in ("", "nan", "none") else d
+
+
 def _api_key() -> Optional[str]:
     if os.environ.get("OPENALEX_API_KEY"):
         return os.environ["OPENALEX_API_KEY"]
@@ -108,6 +116,16 @@ class OpenAlexClient:
         for k in range(0, len(ids), 100):
             part = ids[k:k + 100]
             d = self._get("/works", {"filter": "openalex:" + "|".join(part),
+                                     "per-page": 100, "select": select})
+            out.extend((d or {}).get("results", []))
+        return out
+
+    def by_dois(self, dois: List[str], select: str = "id,title,doi") -> List[Dict]:
+        out = []
+        dois = sorted(set(dois))
+        for k in range(0, len(dois), 50):
+            part = dois[k:k + 50]
+            d = self._get("/works", {"filter": "doi:" + "|".join(part),
                                      "per-page": 100, "select": select})
             out.extend((d or {}).get("results", []))
         return out

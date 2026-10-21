@@ -205,8 +205,10 @@ def prepare_adjacency(A: np.ndarray, kind: str, device: str) -> torch.Tensor:
 
 
 def fit(A: np.ndarray, kind: str = "directed", eta: float = 0.0,
-        cfg: Optional[FitConfig] = None, seed: int = 0):
-    """Cold-start fixed-epoch fit of  NLL - eta * log d_ev + R  (as in SPECTRA)."""
+        cfg: Optional[FitConfig] = None, seed: int = 0,
+        trace: Optional[List[Dict]] = None, trace_every: int = 100):
+    """Cold-start fixed-epoch fit of  NLL - eta * log d_ev + R  (as in SPECTRA).
+    If `trace` is a list, (epoch, nll, d_ev) is appended every `trace_every` epochs."""
     cfg = cfg or FitConfig()
     set_seed(seed)
     At = prepare_adjacency(A, kind, cfg.device)
@@ -222,6 +224,8 @@ def fit(A: np.ndarray, kind: str = "directed", eta: float = 0.0,
         nll, log_v, reg = loss_components(m, At, mask, cfg.lambda_theta, cfg.lambda_bias)
         (nll - eta * log_v + reg).backward()
         opt.step()
+        if trace is not None and epoch % trace_every == 0:
+            trace.append({"epoch": epoch, "nll": float(nll), "d_ev": float(torch.exp(log_v))})
     return m
 
 

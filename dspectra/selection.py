@@ -56,15 +56,49 @@ def top_k(score: np.ndarray, B: int, candidates: Optional[np.ndarray] = None) ->
     return order[:B].tolist()
 
 
-def set_d_ev(V: np.ndarray, p: np.ndarray, S) -> float:
+def set_d_ev(V: np.ndarray, p: np.ndarray, r: np.ndarray, S) -> float:
     """Effective number of modes a set occupies: exp(entropy) of
-    q_k ∝ p_k * sum_{i in S} V_ik^2."""
+    q_k ∝ w_k z_k(S) ∝ p_k * sum_{i in S} r_i V_ik^2, the same per-mode
+    quantity the coverage term of F(S) is built from."""
     S = list(S)
     if not S:
         return 0.0
-    q = p * (V[S] ** 2).sum(0)
+    q = p * (r[S, None] * V[S] ** 2).sum(0)
     q = q / max(q.sum(), 1e-12)
     return float(np.exp(-(q * np.log(np.maximum(q, 1e-12))).sum()))
+
+
+def vendi_score(E_S: np.ndarray) -> float:
+    """Vendi score (Friedman & Dieng, 2023) of a set with unit-norm
+    embedding rows: exp(entropy) of the eigenvalues of E_S E_S^T / |S|."""
+    k = E_S.shape[0]
+    if k == 0:
+        return 0.0
+    lam = np.clip(np.linalg.eigvalsh(E_S @ E_S.T / k), 0.0, None)
+    lam = lam / max(lam.sum(), 1e-12)
+    return float(np.exp(-(lam * np.log(np.maximum(lam, 1e-12))).sum()))
+
+
+def greedy_vendi(E: np.ndarray, r: np.ndarray, B: int, alpha: float = 0.5) -> List[int]:
+    """Greedy relevance + diversity selection in the style of Vendi-RAG:
+    maximise alpha * sum_{i in S} r_i + (1 - alpha) * VS(S) over text
+    embeddings, no citation structure. The objective does not depend on
+    B, so the order for the largest budget gives every smaller budget as
+    a prefix."""
+    n = E.shape[0]
+    S: List[int] = []
+    allowed = np.ones(n, dtype=bool)
+    for _ in range(min(B, n)):
+        cand = np.flatnonzero(allowed)
+        X = np.concatenate([np.repeat(E[S][None], len(cand), 0), E[cand][:, None]], axis=1)
+        G = X @ X.transpose(0, 2, 1) / X.shape[1]
+        lam = np.clip(np.linalg.eigvalsh(G), 0.0, None)
+        lam = lam / np.maximum(lam.sum(1, keepdims=True), 1e-12)
+        vs = np.exp(-(lam * np.log(np.maximum(lam, 1e-12))).sum(1))
+        i = int(cand[np.argmax(alpha * r[cand] + (1.0 - alpha) * vs)])
+        S.append(i)
+        allowed[i] = False
+    return S
 
 
 def embedding_diversity(E: np.ndarray, S) -> float:
