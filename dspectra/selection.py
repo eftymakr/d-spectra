@@ -79,7 +79,8 @@ def vendi_score(E_S: np.ndarray) -> float:
     return float(np.exp(-(lam * np.log(np.maximum(lam, 1e-12))).sum()))
 
 
-def greedy_vendi(E: np.ndarray, r: np.ndarray, B: int, alpha: float = 0.5) -> List[int]:
+def greedy_vendi(E: np.ndarray, r: np.ndarray, B: int, alpha: float = 0.5,
+                 candidates: Optional[np.ndarray] = None) -> List[int]:
     """Greedy relevance + diversity selection in the style of Vendi-RAG:
     maximise alpha * sum_{i in S} r_i + (1 - alpha) * VS(S) over text
     embeddings, no citation structure. The objective does not depend on
@@ -87,8 +88,9 @@ def greedy_vendi(E: np.ndarray, r: np.ndarray, B: int, alpha: float = 0.5) -> Li
     a prefix."""
     n = E.shape[0]
     S: List[int] = []
-    allowed = np.ones(n, dtype=bool)
-    for _ in range(min(B, n)):
+    allowed = np.zeros(n, dtype=bool)
+    allowed[candidates if candidates is not None else np.arange(n)] = True
+    for _ in range(min(B, int(allowed.sum()))):
         cand = np.flatnonzero(allowed)
         X = np.concatenate([np.repeat(E[S][None], len(cand), 0), E[cand][:, None]], axis=1)
         G = X @ X.transpose(0, 2, 1) / X.shape[1]

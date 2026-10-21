@@ -9,6 +9,7 @@ D-SPECTRA chooses which papers a deep-research agent gives its writer LLM. It bu
 - `dspectra/model.py`: directed SPECTRA, `P(i cites j) = σ(a_i + b_j + β K_ij)` with `K = n·UΣVᵀ/‖UΣVᵀ‖_*` and `d_ev = exp(H(σ/Σσ))`, plus bisection on η to a target `d_ev`. Also the original undirected SPECTRA, used as an ablation.
 - `dspectra/selection.py`: greedy submodular selection `F(S)` over the fitted modes, plus a Vendi-score baseline.
 - `scripts/build_graphs.py`: a citation graph from OpenAlex for each of the 63 DeepScholar-Bench queries, using only papers published before the query paper.
+- `scripts/build_pool_expanded.py`: the same kind of graph starting from DeepScholar-base's frozen candidate pools, with citations from Semantic Scholar.
 - `scripts/synthetic_check.py`, `scripts/pilot_selection.py`, `scripts/convergence_check.py`: the LLM-free experiments (planted graphs, selection pilot, training-length check).
 
 ## Run

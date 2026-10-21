@@ -153,8 +153,9 @@ def evaluate_query(path, args):
         raise ValueError(f"{aid}: embeddings have {En.shape[0]} rows but the graph has {n} "
                          f"nodes; recompute them with --embed for this --graphs directory")
     r = relevance(Eq, En)
-    ops_npz = np.load(f"{args.out}/operators/{aid}.npz")
-    with open(f"{args.out}/operators/{aid}.json") as f:
+    ops_dir = args.operators or f"{args.out}/operators"
+    ops_npz = np.load(f"{ops_dir}/{aid}.npz")
+    with open(f"{ops_dir}/{aid}.json") as f:
         fit_info = json.load(f)
 
     operators = {name: (ops_npz[f"{name}_V"], ops_npz[f"{name}_p"])
@@ -168,16 +169,20 @@ def evaluate_query(path, args):
     imp_keys = set(g["gt"]["important_keys"])
     keys_in_pool = set(node_key.values())
     seeds = np.array([k for k, nd in enumerate(g["nodes"]) if nd["source"] == "seed"])
+    # --select_from seeds: every method picks only among the search pool (the
+    # model is still fitted on the whole expanded graph)
+    cand = seeds if args.select_from == "seeds" else None
 
-    vendi_order = greedy_vendi(En, r, max(BUDGETS), args.alpha)
+    vendi_order = greedy_vendi(En, r, max(BUDGETS), args.alpha, candidates=cand)
     selections = {}
     for B in BUDGETS:
         selections[("search_only", B)] = top_k(r, B, candidates=seeds)
-        selections[("relevance_only", B)] = top_k(r, B)
-        selections[("most_cited", B)] = top_k(A.sum(0) + 1e-6 * r, B)
+        selections[("relevance_only", B)] = top_k(r, B, candidates=cand)
+        selections[("most_cited", B)] = top_k(A.sum(0) + 1e-6 * r, B, candidates=cand)
         selections[("vendi", B)] = vendi_order[:B]
         for name, (V, p) in operators.items():
-            selections[(name, B)] = greedy_select(V, p, r, B, args.alpha, args.gamma)
+            selections[(name, B)] = greedy_select(V, p, r, B, args.alpha, args.gamma,
+                                                  candidates=cand)
 
     n_gt_all = g["gt"]["n_cited_in_related_work"]
     n_imp_all = g["gt"]["n_important"]
@@ -300,6 +305,10 @@ def main():
     ap.add_argument("--embed", action="store_true")
     ap.add_argument("--fit", default=None, help="k/N shard of graphs to fit")
     ap.add_argument("--evaluate", action="store_true")
+    ap.add_argument("--select_from", choices=["all", "seeds"], default="all",
+                    help="select from the whole expanded graph or only the search pool")
+    ap.add_argument("--operators", default=None,
+                    help="directory of fitted operators (default: <out>/operators)")
     ap.add_argument("--aggregate", action="store_true")
     ap.add_argument("--rank", type=int, default=32)
     ap.add_argument("--epochs", type=int, default=1500)
@@ -332,7 +341,7 @@ def main():
         os.makedirs(f"{args.out}/per_query", exist_ok=True)
         for path in files:
             aid = os.path.basename(path)[:-5]
-            if not os.path.isfile(f"{args.out}/operators/{aid}.json"):
+            if not os.path.isfile(f"{args.operators or args.out + '/operators'}/{aid}.json"):
                 continue
             result = evaluate_query(path, args)
             with open(f"{args.out}/per_query/{aid}.json", "w") as f:
