@@ -1,0 +1,25 @@
+rank,arxiv_id,title,url,date
+1,2111.12358,SPCL: A New Framework for Domain Adaptive Semantic Segmentation via Semantic Prototype-based Contrastive Learning,http://arxiv.org/abs/2111.12358v2,2021-11-24 09:26:07+00:00
+2,1804.08286,Fully Convolutional Adaptation Networks for Semantic Segmentation,http://arxiv.org/abs/1804.08286v1,2018-04-23 08:44:52+00:00
+3,2204.02111,Birds of A Feather Flock Together: Category-Divergence Guidance for Domain Adaptive Segmentation,http://arxiv.org/abs/2204.02111v1,2022-04-05 11:17:19+00:00
+4,2103.15467,Category-Adaptive Domain Adaptation for Semantic Segmentation,http://arxiv.org/abs/2103.15467v2,2021-03-29 10:00:50+00:00
+5,2302.06378,Semantic Image Segmentation: Two Decades of Research,http://arxiv.org/abs/2302.06378v1,2023-02-13 14:11:05+00:00
+6,2405.19899,Open-Set Domain Adaptation for Semantic Segmentation,http://arxiv.org/abs/2405.19899v1,2024-05-30 09:55:19+00:00
+7,1910.13049,Category Anchor-Guided Unsupervised Domain Adaptation for Semantic Segmentation,http://arxiv.org/abs/1910.13049v2,2019-10-29 02:40:32+00:00
+8,2103.13561,On Evolving Attention Towards Domain Adaptation,http://arxiv.org/abs/2103.13561v1,2021-03-25 01:50:28+00:00
+9,2103.13041,Coarse-to-Fine Domain Adaptive Semantic Segmentation with Photometric Alignment and Category-Center Regularization,http://arxiv.org/abs/2103.13041v1,2021-03-24 08:04:08+00:00
+10,2211.14596,1st Place Solution to NeurIPS 2022 Challenge on Visual Domain Adaptation,http://arxiv.org/abs/2211.14596v1,2022-11-26 15:45:31+00:00
+11,2208.06087,Domain-invariant Prototypes for Semantic Segmentation,http://arxiv.org/abs/2208.06087v1,2022-08-12 02:21:05+00:00
+12,2012.08226,Cross-Domain Grouping and Alignment for Domain Adaptive Semantic Segmentation,http://arxiv.org/abs/2012.08226v2,2020-12-15 11:36:21+00:00
+13,2201.01002,Multi-Representation Adaptation Network for Cross-domain Image Classification,http://arxiv.org/abs/2201.01002v1,2022-01-04 06:34:48+00:00
+14,2109.14219,Unsupervised Domain Adaptation in Semantic Segmentation Based on Pixel Alignment and Self-Training,http://arxiv.org/abs/2109.14219v1,2021-09-29 06:56:57+00:00
+15,1702.05374,Domain Adaptation for Visual Applications: A Comprehensive Survey,http://arxiv.org/abs/1702.05374v2,2017-02-17 15:07:40+00:00
+16,2109.09736,Unsupervised Domain Adaptation with Semantic Consistency across Heterogeneous Modalities for MRI Prostate Lesion Segmentation,http://arxiv.org/abs/2109.09736v1,2021-09-19 17:33:26+00:00
+17,2103.16372,Source-Free Domain Adaptation for Semantic Segmentation,http://arxiv.org/abs/2103.16372v1,2021-03-30 14:14:29+00:00
+18,2104.10376,Towards Corruption-Agnostic Robust Domain Adaptation,http://arxiv.org/abs/2104.10376v1,2021-04-21 06:27:48+00:00
+19,1707.09465,Curriculum Domain Adaptation for Semantic Segmentation of Urban Scenes,http://arxiv.org/abs/1707.09465v5,2017-07-29 05:47:43+00:00
+20,2206.11428,"LidarMultiNet: Unifying LiDAR Semantic Segmentation, 3D Object Detection, and Panoptic Segmentation in a Single Multi-task Network",http://arxiv.org/abs/2206.11428v2,2022-06-23 00:22:13+00:00
+21,1909.02620,Multi-layer Domain Adaptation for Deep Convolutional Networks,http://arxiv.org/abs/1909.02620v1,2019-09-05 20:24:49+00:00
+22,1910.03548,Multi-Source Domain Adaptation and Semi-Supervised Domain Adaptation with Focus on Visual Domain Adaptation Challenge 2019,http://arxiv.org/abs/1910.03548v2,2019-10-08 17:17:35+00:00
+23,1904.10620,Bidirectional Learning for Domain Adaptation of Semantic Segmentation,http://arxiv.org/abs/1904.10620v1,2019-04-24 03:00:22+00:00
+24,2308.13515,Robust Core-Periphery Constrained Transformer for Domain Adaptation,http://arxiv.org/abs/2308.13515v5,2023-08-25 17:49:52+00:00

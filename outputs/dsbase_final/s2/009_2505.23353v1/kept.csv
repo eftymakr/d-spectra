@@ -1,0 +1,31 @@
+rank,arxiv_id,title,url,date
+1,2312.16835,RimSet: Quantitatively Identifying and Characterizing Chronic Active Multiple Sclerosis Lesion on Quantitative Susceptibility Maps,http://arxiv.org/abs/2312.16835v2,2023-12-28 05:44:15+00:00
+2,2211.04764,Quantitative Susceptibility Mapping in Cognitive Decline: A Review of Technical Aspects and Applications,http://arxiv.org/abs/2211.04764v1,2022-11-09 09:37:58+00:00
+3,1905.03356,QSMGAN: Improved Quantitative Susceptibility Mapping using 3D Generative Adversarial Networks with Increased Receptive Field,http://arxiv.org/abs/1905.03356v2,2019-05-08 21:19:02+00:00
+4,2201.07463,"Cortical lesions, central vein sign, and paramagnetic rim lesions in multiple sclerosis: emerging machine learning techniques and future avenues",http://arxiv.org/abs/2201.07463v1,2022-01-19 08:26:49+00:00
+5,2412.10492,QSM-RimDS: A detection and segmentation tool for paramagnetic rim lesions in multiple sclerosis,http://arxiv.org/abs/2412.10492v2,2024-12-13 18:18:00+00:00
+6,2505.22537,ConfLUNet: Multiple sclerosis lesion instance segmentation in presence of confluent lesions,http://arxiv.org/abs/2505.22537v1,2025-05-28 16:22:27+00:00
+7,1809.01410,Generating Highly Realistic Images of Skin Lesions with GANs,http://arxiv.org/abs/1809.01410v2,2018-09-05 09:47:13+00:00
+8,2407.16477,qMRI Diffuser: Quantitative T1 Mapping of the Brain using a Denoising Diffusion Probabilistic Model,http://arxiv.org/abs/2407.16477v2,2024-07-23 13:49:19+00:00
+9,2010.13454,Matthews Correlation Coefficient Loss for Deep Convolutional Networks: Application to Skin Lesion Segmentation,http://arxiv.org/abs/2010.13454v2,2020-10-26 09:50:25+00:00
+10,1803.05627,Quantitative Susceptibility Mapping using Deep Neural Network: QSMnet,http://arxiv.org/abs/1803.05627v2,2018-03-15 08:19:47+00:00
+11,2103.09375,Accelerating Quantitative Susceptibility Mapping using Compressed Sensing and Deep Neural Network,http://arxiv.org/abs/2103.09375v1,2021-03-17 00:26:51+00:00
+12,2009.04251,Probabilistic Dipole Inversion for Adaptive Quantitative Susceptibility Mapping,http://arxiv.org/abs/2009.04251v6,2020-09-07 18:49:19+00:00
+13,2505.06133,BrainSegDMlF: A Dynamic Fusion-enhanced SAM for Brain Lesion Segmentation,http://arxiv.org/abs/2505.06133v2,2025-05-09 15:40:09+00:00
+14,2005.00031,Unsupervised Lesion Detection via Image Restoration with a Normative Prior,http://arxiv.org/abs/2005.00031v1,2020-04-30 18:03:18+00:00
+15,2008.05024,Learned Proximal Networks for Quantitative Susceptibility Mapping,http://arxiv.org/abs/2008.05024v1,2020-08-11 22:35:24+00:00
+16,2009.13755,Geometric Loss for Deep Multiple Sclerosis lesion Segmentation,http://arxiv.org/abs/2009.13755v1,2020-09-29 03:49:28+00:00
+17,2504.05591,Class Imbalance Correction for Improved Universal Lesion Detection and Tagging in CT,http://arxiv.org/abs/2504.05591v1,2025-04-08 00:58:26+00:00
+18,2410.01766,SegHeD: Segmentation of Heterogeneous Data for Multiple Sclerosis Lesions with Anatomical Constraints,http://arxiv.org/abs/2410.01766v1,2024-10-02 17:21:43+00:00
+19,2207.14709,Robust Quantitative Susceptibility Mapping via Approximate Message Passing with Parameter Estimation,http://arxiv.org/abs/2207.14709v3,2022-07-29 14:38:03+00:00
+20,2106.00525,Deep grey matter quantitative susceptibility mapping from small spatial coverages using deep learning,http://arxiv.org/abs/2106.00525v1,2021-06-01 14:41:52+00:00
+21,2109.03378,Rethinking Multidimensional Discriminator Output for Generative Adversarial Networks,http://arxiv.org/abs/2109.03378v3,2021-09-08 00:38:44+00:00
+22,1809.03185,Shallow vs deep learning architectures for white matter lesion segmentation in the early stages of multiple sclerosis,http://arxiv.org/abs/1809.03185v1,2018-09-10 08:50:34+00:00
+23,2104.09630,Quaternion Generative Adversarial Networks,http://arxiv.org/abs/2104.09630v2,2021-04-19 20:46:18+00:00
+24,2107.12978,Optimizing Operating Points for High Performance Lesion Detection and Segmentation Using Lesion Size Reweighting,http://arxiv.org/abs/2107.12978v2,2021-07-27 17:43:49+00:00
+25,2306.11714,Meta-Analysis of Transfer Learning for Segmentation of Brain Lesions,http://arxiv.org/abs/2306.11714v1,2023-06-20 17:42:30+00:00
+26,1711.10449,Multi-class Semantic Segmentation of Skin Lesions via Fully Convolutional Networks,http://arxiv.org/abs/1711.10449v2,2017-11-28 18:24:15+00:00
+27,2109.05409,Team NeuroPoly: Description of the Pipelines for the MICCAI 2021 MS New Lesions Segmentation Challenge,http://arxiv.org/abs/2109.05409v2,2021-09-12 02:42:17+00:00
+28,2307.05760,Line Art Colorization of Fakemon using Generative Adversarial Neural Networks,http://arxiv.org/abs/2307.05760v1,2023-07-11 19:30:09+00:00
+29,2303.11214,Accurate Detection of Mediastinal Lesions with nnDetection,http://arxiv.org/abs/2303.11214v1,2023-03-20 15:46:49+00:00
+30,1906.02415,Handling Inter-Annotator Agreement for Automated Skin Lesion Segmentation,http://arxiv.org/abs/1906.02415v1,2019-06-06 05:01:04+00:00

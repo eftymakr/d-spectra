@@ -1,0 +1,29 @@
+arxiv_id,title,url,date,category,cited_in_text
+2110.11156,"DMS, AE, DAA: methods and applications of adaptive time series model selection, ensemble, and financial evaluation",http://arxiv.org/abs/2110.11156v3,2021-10-21 13:59:54+00:00,Integration of Time Series Forecasting and Optimization,True
+1912.02933,Risk-Aware MMSE Estimation,http://arxiv.org/abs/1912.02933v1,2019-12-06 00:33:33+00:00,Risk-Aware Allocation Strategies,True
+2502.18410,TSKANMixer: Kolmogorov-Arnold Networks with MLP-Mixer Model for Time Series Forecasting,http://arxiv.org/abs/2502.18410v2,2025-02-25 18:04:45+00:00,State-of-the-Art Forecasting Models and Their Impact,True
+2503.06928,FinTSBridge: A New Evaluation Suite for Real-world Financial Prediction with Advanced Time Series Models,http://arxiv.org/abs/2503.06928v2,2025-03-10 05:19:13+00:00,State-of-the-Art Forecasting Models and Their Impact,True
+2107.03743,Probabilistic Time Series Forecasting with Implicit Quantile Networks,http://arxiv.org/abs/2107.03743v1,2021-07-08 10:37:24+00:00,State-of-the-Art Forecasting Models and Their Impact,True
+2410.11674,LLM-Mixer: Multiscale Mixing in LLMs for Time Series Forecasting,http://arxiv.org/abs/2410.11674v2,2024-10-15 15:08:57+00:00,State-of-the-Art Forecasting Models and Their Impact,True
+2311.13247,A projected nonlinear state-space model for forecasting time series signals,http://arxiv.org/abs/2311.13247v2,2023-11-22 09:05:37+00:00,State-of-the-Art Forecasting Models and Their Impact,True
+2503.03165,A Predict-Then-Optimize Customer Allocation Framework for Online Fund Recommendation,http://arxiv.org/abs/2503.03165v1,2025-03-05 04:16:36+00:00,Prediction-Only vs. Predict-Then-Optimize Frameworks,True
+2304.14544,Assessing Text Mining and Technical Analyses on Forecasting Financial Time Series,http://arxiv.org/abs/2304.14544v1,2023-04-27 21:52:36+00:00,State-of-the-Art Forecasting Models and Their Impact,True
+2104.05781,Censored Semi-Bandits for Resource Allocation,http://arxiv.org/abs/2104.05781v1,2021-04-12 19:15:32+00:00,Risk-Aware Allocation Strategies,True
+2503.04662,Risk-aware Trading Portfolio Optimization,http://arxiv.org/abs/2503.04662v1,2025-03-06 17:56:57+00:00,Risk-Aware Allocation Strategies,True
+1810.08418,Probabilistic Forecasting in Day-Ahead Electricity Markets: Simulating Peak and Off-Peak Prices,http://arxiv.org/abs/1810.08418v2,2018-10-19 09:27:16+00:00,State-of-the-Art Forecasting Models and Their Impact,True
+2304.04912,Financial Time Series Forecasting using CNN and Transformer,http://arxiv.org/abs/2304.04912v1,2023-04-11 00:56:57+00:00,State-of-the-Art Forecasting Models and Their Impact,True
+2407.02641,Learning Graph Structures and Uncertainty for Accurate and Calibrated Time-series Forecasting,http://arxiv.org/abs/2407.02641v1,2024-07-02 20:14:32+00:00,Uncertainty Calibration Techniques,False
+2108.10403,Robust Risk-Aware Reinforcement Learning,http://arxiv.org/abs/2108.10403v2,2021-08-23 20:56:34+00:00,Risk-Aware Allocation Strategies,False
+2410.19025,Large Language Models for Financial Aid in Financial Time-series Forecasting,http://arxiv.org/abs/2410.19025v1,2024-10-24 12:41:47+00:00,State-of-the-Art Forecasting Models and Their Impact,False
+2410.07932,Decision-Aware Predictive Model Selection for Workforce Allocation,http://arxiv.org/abs/2410.07932v1,2024-10-10 13:59:43+00:00,Risk-Aware Allocation Strategies,False
+2410.14630,On the Regularization of Learnable Embeddings for Time Series Forecasting,http://arxiv.org/abs/2410.14630v2,2024-10-18 17:30:20+00:00,End-to-End Training and Objective Alignment,False
+2405.07836,Forecasting with Hyper-Trees,http://arxiv.org/abs/2405.07836v5,2024-05-13 15:22:15+00:00,Integration of Time Series Forecasting and Optimization,False
+1012.2631,Monte Carlo uncertainty estimation for wavelength calibration,http://arxiv.org/abs/1012.2631v2,2010-12-13 05:14:36+00:00,Uncertainty Calibration Techniques,False
+2305.13467,Risk-aware Safe Control for Decentralized Multi-agent Systems via Dynamic Responsibility Allocation,http://arxiv.org/abs/2305.13467v1,2023-05-22 20:21:49+00:00,Risk-Aware Allocation Strategies,False
+1604.01846,Resource Allocation Optimization for Users with Different Levels of Service in Multicarrier Systems,http://arxiv.org/abs/1604.01846v1,2016-04-07 01:50:07+00:00,Comparative Performance of Allocation Methods,False
+2505.10574,Roman Observations Time Allocation Committee: Final Report and Recommendations,http://arxiv.org/abs/2505.10574v2,2025-05-13 20:40:37+00:00,Risk-Aware Allocation Strategies,False
+1909.05134,Robot Risk-Awareness by Formal Risk Reasoning and Planning,http://arxiv.org/abs/1909.05134v1,2019-09-09 01:39:24+00:00,Risk-Aware Allocation Strategies,False
+1604.01464,Feedback Bits Allocation for Interference Minimization in Cognitive Radio Communications,http://arxiv.org/abs/1604.01464v1,2016-04-06 02:09:49+00:00,Risk-Aware Allocation Strategies,False
+2008.00374,"Fair Allocation of Vaccines, Ventilators and Antiviral Treatments: Leaving No Ethical Value Behind in Health Care Rationing",http://arxiv.org/abs/2008.00374v3,2020-08-02 01:13:23+00:00,Risk-Aware Allocation Strategies,False
+2109.08947,Risk-averse autonomous systems: A brief history and recent developments from the perspective of optimal control,http://arxiv.org/abs/2109.08947v3,2021-09-18 15:01:57+00:00,Risk-Aware Allocation Strategies,False
+2302.02622,Uncertainty Calibration and its Application to Object Detection,http://arxiv.org/abs/2302.02622v1,2023-02-06 08:41:07+00:00,Uncertainty Calibration Techniques,False

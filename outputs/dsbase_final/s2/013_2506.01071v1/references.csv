@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2403.06151,Decoupled Contrastive Learning for Long-Tailed Recognition,http://arxiv.org/abs/2403.06151v1,2024-03-10 09:46:28+00:00,Decoupled Training Objectives,True
+2203.11506,Rebalanced Siamese Contrastive Mining for Long-Tailed Recognition,http://arxiv.org/abs/2203.11506v2,2022-03-22 07:30:38+00:00,Class-Balanced Contrastive Pair Mining,True
+2305.01160,Long-Tailed Recognition by Mutual Information Maximization between Latent Features and Ground-Truth Labels,http://arxiv.org/abs/2305.01160v3,2023-05-02 02:29:18+00:00,Class Imbalance in Recognition Tasks,True
+2207.09052,Balanced Contrastive Learning for Long-Tailed Visual Recognition,http://arxiv.org/abs/2207.09052v3,2022-07-19 03:48:59+00:00,Class-Averaging and Class-Complement Strategies,True
+2212.11187,Similarity Contrastive Estimation for Image and Video Soft Contrastive Self-Supervised Learning,http://arxiv.org/abs/2212.11187v1,2022-12-21 16:56:55+00:00,Contrastive Learning Frameworks,True
+2211.11938,Supervised Contrastive Learning on Blended Images for Long-tailed Recognition,http://arxiv.org/abs/2211.11938v1,2022-11-22 01:19:00+00:00,Class Imbalance in Recognition Tasks,True
+2102.08817,Dissecting Supervised Contrastive Learning,http://arxiv.org/abs/2102.08817v4,2021-02-17 15:22:38+00:00,Contrastive Learning Frameworks,True
+2406.02223,SMCL: Saliency Masked Contrastive Learning for Long-tailed Recognition,http://arxiv.org/abs/2406.02223v1,2024-06-04 11:33:40+00:00,Class Imbalance in Recognition Tasks,True
+2309.16135,A dual-branch model with inter- and intra-branch contrastive loss for long-tailed recognition,http://arxiv.org/abs/2309.16135v1,2023-09-28 03:31:11+00:00,Class Imbalance in Recognition Tasks,True
+2004.03706,Long-Tailed Recognition Using Class-Balanced Experts,http://arxiv.org/abs/2004.03706v2,2020-04-07 20:57:44+00:00,Class Imbalance in Recognition Tasks,True
+2306.13275,On The Relationship Between Continual Learning and Long-Tailed Recognition,http://arxiv.org/abs/2306.13275v2,2023-06-23 03:05:33+00:00,Class Imbalance in Recognition Tasks,True
+2407.12568,LTRL: Boosting Long-tail Recognition via Reflective Learning,http://arxiv.org/abs/2407.12568v2,2024-07-17 13:51:49+00:00,Class Imbalance in Recognition Tasks,True
+2408.00483,A Systematic Review on Long-Tailed Learning,http://arxiv.org/abs/2408.00483v1,2024-08-01 11:39:45+00:00,Class Imbalance in Recognition Tasks,True
+2101.06480,SelfMatch: Combining Contrastive Self-Supervision and Consistency for Semi-Supervised Learning,http://arxiv.org/abs/2101.06480v1,2021-01-16 17:03:53+00:00,Contrastive Learning Frameworks,True
+2410.06109,Continuous Contrastive Learning for Long-Tailed Semi-Supervised Recognition,http://arxiv.org/abs/2410.06109v1,2024-10-08 15:06:10+00:00,Contrastive Learning Frameworks,True
+2009.12991,Long-Tailed Classification by Keeping the Good and Removing the Bad Momentum Causal Effect,http://arxiv.org/abs/2009.12991v5,2020-09-28 00:32:11+00:00,Class Imbalance in Recognition Tasks,True
+2108.02722,Video Contrastive Learning with Global Context,http://arxiv.org/abs/2108.02722v1,2021-08-05 16:42:38+00:00,Contrastive Learning Frameworks,True
+2007.10740,Balanced Meta-Softmax for Long-Tailed Visual Recognition,http://arxiv.org/abs/2007.10740v3,2020-07-21 12:05:00+00:00,Class Imbalance in Recognition Tasks,False
+2112.05340,Tradeoffs Between Contrastive and Supervised Learning: An Empirical Study,http://arxiv.org/abs/2112.05340v1,2021-12-10 05:19:32+00:00,Contrastive Learning Frameworks,False
+2208.05445,Non-Contrastive Self-supervised Learning for Utterance-Level Information Extraction from Speech,http://arxiv.org/abs/2208.05445v1,2022-08-10 16:56:39+00:00,Contrastive Learning Frameworks,False
+2009.14776,Joint Contrastive Learning with Infinite Possibilities,http://arxiv.org/abs/2009.14776v2,2020-09-30 16:24:21+00:00,Contrastive Learning Frameworks,True
+2110.05025,Self-supervised Learning is More Robust to Dataset Imbalance,http://arxiv.org/abs/2110.05025v2,2021-10-11 06:29:56+00:00,Robustness Enhancements in Contrastive Learning,False
+2312.05933,Temporal Supervised Contrastive Learning for Modeling Patient Risk Progression,http://arxiv.org/abs/2312.05933v1,2023-12-10 16:43:15+00:00,Contrastive Learning Frameworks,False
+2207.09504,Invariant Feature Learning for Generalized Long-Tailed Classification,http://arxiv.org/abs/2207.09504v3,2022-07-19 18:27:42+00:00,Class Imbalance in Recognition Tasks,True
+2309.07186,LCReg: Long-Tailed Image Classification with Latent Categories based Recognition,http://arxiv.org/abs/2309.07186v1,2023-09-13 02:03:17+00:00,Class Imbalance in Recognition Tasks,False
+2206.14988,Towards Federated Long-Tailed Learning,http://arxiv.org/abs/2206.14988v1,2022-06-30 02:34:22+00:00,Class Imbalance in Recognition Tasks,False
+2105.15134,Toward Understanding the Feature Learning Process of Self-supervised Contrastive Learning,http://arxiv.org/abs/2105.15134v3,2021-05-31 16:42:09+00:00,Contrastive Learning Frameworks,False
+1912.10364,Learning to Impute: A General Framework for Semi-supervised Learning,http://arxiv.org/abs/1912.10364v3,2019-12-22 00:27:21+00:00,Class-Balanced Contrastive Pair Mining,False
+1808.00262,Saliency for Fine-grained Object Recognition in Domains with Scarce Training Data,http://arxiv.org/abs/1808.00262v3,2018-08-01 10:55:14+00:00,Class-Balanced Contrastive Pair Mining,False
+2104.14847,Active WeaSuL: Improving Weak Supervision with Active Learning,http://arxiv.org/abs/2104.14847v1,2021-04-30 08:58:26+00:00,Data Reweighting and Resampling Techniques,False

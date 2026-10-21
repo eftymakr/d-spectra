@@ -1,0 +1,19 @@
+arxiv_id,title,url,date,category,cited_in_text
+2505.02456,Colombian Waitresses y Jueces canadienses: Gender and Country Biases in Occupation Recommendations from LLMs,http://arxiv.org/abs/2505.02456v2,2025-05-05 08:40:51+00:00,Gender and Occupation Bias in LLMs,True
+2411.13738,Assessing Gender Bias in LLMs: Comparing LLM Outputs with Human Perceptions and Official Statistics,http://arxiv.org/abs/2411.13738v1,2024-11-20 22:43:18+00:00,Gender and Occupation Bias in LLMs,True
+2105.05541,Evaluating Gender Bias in Natural Language Inference,http://arxiv.org/abs/2105.05541v1,2021-05-12 09:41:51+00:00,Gender and Occupation Bias in LLMs,True
+2404.11457,Bias and Unfairness in Information Retrieval Systems: New Challenges in the LLM Era,http://arxiv.org/abs/2404.11457v2,2024-04-17 15:05:03+00:00,Challenges in Evaluating LLM Fairness,True
+2212.10678,Causally Testing Gender Bias in LLMs: A Case Study on Occupational Bias,http://arxiv.org/abs/2212.10678v4,2022-12-20 22:41:24+00:00,Gender and Occupation Bias in LLMs,True
+2502.19104,Are All Spanish Doctors Male? Evaluating Gender Bias in German Machine Translation,http://arxiv.org/abs/2502.19104v2,2025-02-26 12:46:59+00:00,Gender and Occupation Bias in LLMs,True
+1905.11684,On Measuring Gender Bias in Translation of Gender-neutral Pronouns,http://arxiv.org/abs/1905.11684v1,2019-05-28 08:46:56+00:00,Gender and Occupation Bias in LLMs,True
+2312.06056,METAL: Metamorphic Testing Framework for Analyzing Large-Language Model Qualities,http://arxiv.org/abs/2312.06056v1,2023-12-11 01:29:19+00:00,Challenges in Evaluating LLM Fairness,True
+2503.04372,Assumed Identities: Quantifying Gender Bias in Machine Translation of Gender-Ambiguous Occupational Terms,http://arxiv.org/abs/2503.04372v3,2025-03-06 12:16:14+00:00,Gender and Occupation Bias in LLMs,True
+2502.04419,Understanding and Mitigating Bias Inheritance in LLM-based Data Augmentation on Downstream Tasks,http://arxiv.org/abs/2502.04419v3,2025-02-06 15:20:58+00:00,Challenges in Evaluating LLM Fairness,True
+2505.03053,Developing A Framework to Support Human Evaluation of Bias in Generated Free Response Text,http://arxiv.org/abs/2505.03053v1,2025-05-05 22:26:55+00:00,Challenges in Evaluating LLM Fairness,False
+2210.11471,Choose Your Lenses: Flaws in Gender Bias Evaluation,http://arxiv.org/abs/2210.11471v1,2022-10-20 17:59:55+00:00,Challenges in Evaluating LLM Fairness,False
+2409.14583,"LLM Bias Evaluation: Gender, Racial, and Age Disparities in Occupational and Crime Scenarios",http://arxiv.org/abs/2409.14583v4,2024-09-22 20:21:20+00:00,Gender and Occupation Bias in LLMs,False
+2503.21676,"How do language models learn facts? Dynamics, curricula and hallucinations",http://arxiv.org/abs/2503.21676v2,2025-03-27 16:43:45+00:00,Challenges in Evaluating LLM Fairness,False
+2109.14047,Second Order WinoBias (SoWinoBias) Test Set for Latent Gender Bias Detection in Coreference Resolution,http://arxiv.org/abs/2109.14047v1,2021-09-28 21:03:32+00:00,Challenges in Evaluating LLM Fairness,False
+2306.12424,VisoGender: A dataset for benchmarking gender bias in image-text pronoun resolution,http://arxiv.org/abs/2306.12424v3,2023-06-21 17:59:51+00:00,Gender and Occupation Bias in LLMs,False
+2412.16117,PruneVid: Visual Token Pruning for Efficient Video Large Language Models,http://arxiv.org/abs/2412.16117v1,2024-12-20 18:01:58+00:00,Challenges in Evaluating LLM Fairness,False
+2312.12141,Neuron-Level Knowledge Attribution in Large Language Models,http://arxiv.org/abs/2312.12141v4,2023-12-19 13:23:18+00:00,Challenges in Evaluating LLM Fairness,False

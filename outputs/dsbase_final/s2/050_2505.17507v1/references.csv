@@ -1,0 +1,16 @@
+arxiv_id,title,url,date,category,cited_in_text
+2311.13380,Analyzing the Evolution and Maintenance of ML Models on Hugging Face,http://arxiv.org/abs/2311.13380v2,2023-11-22 13:20:25+00:00,Model Evolution Tracking,True
+2303.06031,Investigating the role of visual experience with face-masks in face recognition during COVID-19,http://arxiv.org/abs/2303.06031v1,2023-02-28 06:29:56+00:00,Querying and Analysis Capabilities,True
+2004.02195,Clustering based Contrastive Learning for Improving Face Representations,http://arxiv.org/abs/2004.02195v1,2020-04-05 13:11:44+00:00,Dataset Classification Techniques,True
+2210.16602,an intelligent security centered resource-efficient resource management model for cloud computing environments,http://arxiv.org/abs/2210.16602v1,2022-10-29 13:54:36+00:00,Platform Limitations in ML Resource Management,True
+2402.07323,Lessons Learned from Mining the Hugging Face Repository,http://arxiv.org/abs/2402.07323v1,2024-02-11 22:59:19+00:00,Model Evolution Tracking,True
+2206.01087,Enriching a Fashion Knowledge Graph from Product Textual Descriptions,http://arxiv.org/abs/2206.01087v1,2022-06-02 15:14:18+00:00,Knowledge Graph Applications in ML,True
+2209.12801,Subsampling for Knowledge Graph Embedding Explained,http://arxiv.org/abs/2209.12801v1,2022-09-13 09:17:46+00:00,Knowledge Graph Applications in ML,True
+2009.06103,Tax Knowledge Graph for a Smarter and More Personalized TurboTax,http://arxiv.org/abs/2009.06103v1,2020-09-13 22:41:01+00:00,Knowledge Graph Applications in ML,True
+1911.01277,Penerapan Knowledge Management System Sales and Customer Care pada PT Satria Medikantara Palembang,http://arxiv.org/abs/1911.01277v1,2019-10-30 05:45:56+00:00,Querying and Analysis Capabilities,True
+1004.3566,An Economic-based Resource Management and Scheduling for Grid Computing Applications,http://arxiv.org/abs/1004.3566v1,2010-04-20 20:32:31+00:00,Resource Recommendation Systems,True
+2006.16309,Adversarial Learning for Debiasing Knowledge Graph Embeddings,http://arxiv.org/abs/2006.16309v2,2020-06-29 18:36:15+00:00,Structured Representation Challenges,False
+1803.03186,RAN Enablers for 5G Radio Resource Management,http://arxiv.org/abs/1803.03186v1,2018-03-08 16:23:28+00:00,Querying and Analysis Capabilities,False
+2107.01910,Analyzing a Knowledge Graph of Industry4.0 Standards,http://arxiv.org/abs/2107.01910v1,2021-07-05 10:03:06+00:00,Scalability and Breadth of Knowledge Graphs,False
+2411.13797,Hugging Rain Man: A Novel Facial Action Units Dataset for Analyzing Atypical Facial Expressions in Children with Autism Spectrum Disorder,http://arxiv.org/abs/2411.13797v1,2024-11-21 02:51:52+00:00,Dataset Classification Techniques,False
+2211.05075,"Supporting AI/ML Security Workers through an Adversarial Techniques, Tools, and Common Knowledge (AI/ML ATT&CK) Framework",http://arxiv.org/abs/2211.05075v1,2022-11-09 18:07:10+00:00,Querying and Analysis Capabilities,False

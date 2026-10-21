@@ -1,0 +1,26 @@
+rank,arxiv_id,title,url,date
+1,2501.01242,An Efficient Attention Mechanism for Sequential Recommendation Tasks: HydraRec,http://arxiv.org/abs/2501.01242v1,2025-01-02 13:03:06+00:00
+2,2406.02638,EchoMamba4Rec: Harmonizing Bidirectional State Space Models with Spectral Filtering for Advanced Sequential Recommendation,http://arxiv.org/abs/2406.02638v2,2024-06-04 09:07:58+00:00
+3,2403.03900,Mamba4Rec: Towards Efficient Sequential Recommendation with Selective State Space Models,http://arxiv.org/abs/2403.03900v2,2024-03-06 18:00:15+00:00
+4,2409.16182,TiM4Rec: An Efficient Sequential Recommendation Model Based on Time-Aware Structured State Space Duality Model,http://arxiv.org/abs/2409.16182v3,2024-09-24 15:26:38+00:00
+5,2409.01192,SSD4Rec: A Structured State Space Duality Model for Efficient Sequential Recommendation,http://arxiv.org/abs/2409.01192v2,2024-09-02 11:58:56+00:00
+6,2304.09184,Frequency Enhanced Hybrid Attention Network for Sequential Recommendation,http://arxiv.org/abs/2304.09184v3,2023-04-18 15:28:53+00:00
+7,2102.06950,"Sequential Recommendation in Online Games with Multiple Sequences, Tasks and User Levels",http://arxiv.org/abs/2102.06950v2,2021-02-13 16:02:14+00:00
+8,2409.07367,Enhancing Sequential Music Recommendation with Negative Feedback-informed Contrastive Learning,http://arxiv.org/abs/2409.07367v1,2024-09-11 15:56:05+00:00
+9,2002.00741,Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation,http://arxiv.org/abs/2002.00741v1,2020-01-29 20:27:42+00:00
+10,2108.11333,Lightweight Self-Attentive Sequential Recommendation,http://arxiv.org/abs/2108.11333v1,2021-08-25 16:46:47+00:00
+11,2309.11623,Leveraging Negative Signals with Self-Attention for Sequential Music Recommendation,http://arxiv.org/abs/2309.11623v2,2023-09-20 20:21:13+00:00
+12,2109.11059,Exploring Heterogeneous Metadata for Video Recommendation with Two-tower Model,http://arxiv.org/abs/2109.11059v2,2021-09-22 22:13:54+00:00
+13,2109.05261,CauseRec: Counterfactual User Sequence Synthesis for Sequential Recommendation,http://arxiv.org/abs/2109.05261v1,2021-09-11 11:41:07+00:00
+14,2210.01942,IGNiteR: News Recommendation in Microblogging Applications (Extended Version),http://arxiv.org/abs/2210.01942v1,2022-10-04 22:33:58+00:00
+15,2008.08273,MEANTIME: Mixture of Attention Mechanisms with Multi-temporal Embeddings for Sequential Recommendation,http://arxiv.org/abs/2008.08273v2,2020-08-19 05:32:14+00:00
+16,1806.08200,Mixtures of Experts Models,http://arxiv.org/abs/1806.08200v1,2018-06-21 12:30:12+00:00
+17,2407.02793,Learning Positional Attention for Sequential Recommendation,http://arxiv.org/abs/2407.02793v3,2024-07-03 03:42:13+00:00
+18,2304.08158,Attention Mixtures for Time-Aware Sequential Recommendation,http://arxiv.org/abs/2304.08158v2,2023-04-17 11:11:19+00:00
+19,2503.03213,Convergence Rates for Softmax Gating Mixture of Experts,http://arxiv.org/abs/2503.03213v1,2025-03-05 06:11:24+00:00
+20,2402.18166,Sequence-level Semantic Representation Fusion for Recommender Systems,http://arxiv.org/abs/2402.18166v1,2024-02-28 08:55:20+00:00
+21,2402.14800,Not All Experts are Equal: Efficient Expert Pruning and Skipping for Mixture-of-Experts Large Language Models,http://arxiv.org/abs/2402.14800v2,2024-02-22 18:56:07+00:00
+22,2310.02367,Linear Recurrent Units for Sequential Recommendation,http://arxiv.org/abs/2310.02367v2,2023-10-03 18:44:17+00:00
+23,2409.05022,Sequential Recommendation via Adaptive Robust Attention with Multi-dimensional Embeddings,http://arxiv.org/abs/2409.05022v1,2024-09-08 08:27:22+00:00
+24,1002.1150,Finding Sequential Patterns from Large Sequence Data,http://arxiv.org/abs/1002.1150v1,2010-02-05 08:43:45+00:00
+25,1707.08913,Multi-Stakeholder Recommendation: Applications and Challenges,http://arxiv.org/abs/1707.08913v1,2017-07-27 15:52:18+00:00

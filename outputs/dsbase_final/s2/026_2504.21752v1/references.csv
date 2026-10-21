@@ -1,0 +1,25 @@
+arxiv_id,title,url,date,category,cited_in_text
+2208.09011,Verifiable Differential Privacy,http://arxiv.org/abs/2208.09011v2,2022-08-18 18:20:22+00:00,Verification Mechanisms for DP,True
+2406.18940,Efficient Verifiable Differential Privacy with Input Authenticity in the Local and Shuffle Model,http://arxiv.org/abs/2406.18940v2,2024-06-27 07:12:28+00:00,Verification Mechanisms for DP,True
+1709.05361,Synthesizing Coupling Proofs of Differential Privacy,http://arxiv.org/abs/1709.05361v2,2017-09-15 18:22:14+00:00,Verification Mechanisms for DP,True
+2409.10667,Benchmarking Secure Sampling Protocols for Differential Privacy,http://arxiv.org/abs/2409.10667v2,2024-09-16 19:04:47+00:00,Privacy in Distributed Systems,True
+2012.12803,Hiding Among the Clones: A Simple and Nearly Optimal Analysis of Privacy Amplification by Shuffling,http://arxiv.org/abs/2012.12803v3,2020-12-23 17:07:26+00:00,Privacy Amplification Techniques,True
+2102.12621,Discrete Distribution Estimation with Local Differential Privacy: A Comparative Analysis,http://arxiv.org/abs/2102.12621v1,2021-02-25 01:32:06+00:00,Efficient DP Mechanisms,True
+2006.05609,Learning With Differential Privacy,http://arxiv.org/abs/2006.05609v2,2020-06-10 02:04:13+00:00,Differential Privacy Foundations,True
+2212.00306,Decentralized Matrix Factorization with Heterogeneous Differential Privacy,http://arxiv.org/abs/2212.00306v2,2022-12-01 06:48:18+00:00,Privacy in Distributed Systems,True
+1601.06426,Robust Privacy-Utility Tradeoffs under Differential Privacy and Hamming Distortion,http://arxiv.org/abs/1601.06426v3,2016-01-24 20:12:03+00:00,Efficient DP Mechanisms,True
+1809.01794,Information-Theoretic Privacy in Distributed Average Consensus,http://arxiv.org/abs/1809.01794v3,2018-09-06 02:43:53+00:00,Privacy in Distributed Systems,True
+2310.13618,Zero-Knowledge Proofs for Questionnaire Result Verification in Smart Contracts,http://arxiv.org/abs/2310.13618v1,2023-10-20 16:10:14+00:00,Zero-Knowledge Proofs and DP,True
+2112.05307,Are We There Yet? Timing and Floating-Point Attacks on Differential Privacy Systems,http://arxiv.org/abs/2112.05307v4,2021-12-10 02:57:01+00:00,Adversarial Behaviors in DP,True
+1504.06998,Heterogeneous Differential Privacy,http://arxiv.org/abs/1504.06998v1,2015-04-27 09:35:46+00:00,Differential Privacy Foundations,True
+2412.16916,On the Differential Privacy and Interactivity of Privacy Sandbox Reports,http://arxiv.org/abs/2412.16916v3,2024-12-22 08:22:57+00:00,Differential Privacy Foundations,True
+1608.00849,"Distributed, End-to-end Verifiable, and Privacy-Preserving Internet Voting Systems",http://arxiv.org/abs/1608.00849v1,2016-08-02 14:49:51+00:00,Privacy in Distributed Systems,True
+2012.07828,Robustness Threats of Differential Privacy,http://arxiv.org/abs/2012.07828v3,2020-12-14 18:59:24+00:00,Adversarial Behaviors in DP,False
+2211.17230,The Bounded Gaussian Mechanism for Differential Privacy,http://arxiv.org/abs/2211.17230v1,2022-11-30 18:31:50+00:00,Efficient DP Mechanisms,False
+2109.02496,Statistical Privacy Guarantees of Machine Learning Preprocessing Techniques,http://arxiv.org/abs/2109.02496v1,2021-09-06 14:08:47+00:00,Differential Privacy Foundations,False
+2411.09064,Minimax Optimal Two-Sample Testing under Local Differential Privacy,http://arxiv.org/abs/2411.09064v2,2024-11-13 22:44:25+00:00,Efficient DP Mechanisms,False
+1101.2819,Formal Verification of Differential Privacy for Interactive Systems,http://arxiv.org/abs/1101.2819v1,2011-01-14 14:26:20+00:00,Verification Mechanisms for DP,False
+1906.01337,SoK: Differential Privacies,http://arxiv.org/abs/1906.01337v6,2019-06-04 10:55:01+00:00,Differential Privacy Foundations,False
+1602.01937,"YOURPRIVACYPROTECTOR, A recommender system for privacy settings in social networks",http://arxiv.org/abs/1602.01937v1,2016-02-05 07:29:55+00:00,Verification Overhead Optimization,False
+0802.3267,The Forgiving Tree: A Self-Healing Distributed Data Structure,http://arxiv.org/abs/0802.3267v1,2008-02-22 08:22:33+00:00,Privacy in Distributed Systems,False
+2404.15859,Secure and Privacy-Preserving Authentication for Data Subject Rights Enforcement,http://arxiv.org/abs/2404.15859v1,2024-04-24 13:17:52+00:00,Privacy in Distributed Systems,False

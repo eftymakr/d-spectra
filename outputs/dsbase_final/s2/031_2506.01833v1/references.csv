@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2504.09265,Mixture of Group Experts for Learning Invariant Representations,http://arxiv.org/abs/2504.09265v2,2025-04-12 15:58:02+00:00,Mixture of Experts (MoE) Architectures,True
+2204.09179,On the Representation Collapse of Sparse Mixture of Experts,http://arxiv.org/abs/2204.09179v3,2022-04-20 01:40:19+00:00,Mixture of Experts (MoE) Architectures,True
+1805.07702,Predicting drug response of tumors from integrated genomic profiles by deep neural networks,http://arxiv.org/abs/1805.07702v1,2018-05-20 04:27:09+00:00,Supervised Genomic Profile Prediction,True
+2110.05231,Multi-modal Self-supervised Pre-training for Regulatory Genome Across Cell Types,http://arxiv.org/abs/2110.05231v2,2021-10-11 12:48:44+00:00,Unsupervised DNA Pre-training Approaches,True
+2411.11158,Leveraging genomic deep learning models for the prediction of non-coding variant effects,http://arxiv.org/abs/2411.11158v2,2024-11-17 19:15:42+00:00,Supervised Genomic Profile Prediction,True
+1605.01133,Deep Motif: Visualizing Genomic Sequence Classifications,http://arxiv.org/abs/1605.01133v2,2016-05-04 03:33:48+00:00,Genomic Sequence Analysis and Evolutionary Relationships,True
+2112.05340,Tradeoffs Between Contrastive and Supervised Learning: An Empirical Study,http://arxiv.org/abs/2112.05340v1,2021-12-10 05:19:32+00:00,Others,True
+2405.09585,An Embarrassingly Simple Approach to Enhance Transformer Performance in Genomic Selection for Crop Breeding,http://arxiv.org/abs/2405.09585v3,2024-05-15 07:31:06+00:00,Genomic Sequence Analysis and Evolutionary Relationships,True
+2101.06480,SelfMatch: Combining Contrastive Self-Supervision and Consistency for Semi-Supervised Learning,http://arxiv.org/abs/2101.06480v1,2021-01-16 17:03:53+00:00,Compression-Based Methods for Genomic Data,True
+1305.3347,featureCounts: An efficient general-purpose program for assigning sequence reads to genomic features,http://arxiv.org/abs/1305.3347v2,2013-05-15 03:00:48+00:00,Genomic Sequence Analysis and Evolutionary Relationships,True
+1401.4725,Information profiles for DNA pattern discovery,http://arxiv.org/abs/1401.4725v1,2014-01-19 19:44:07+00:00,Compression-Based Methods for Genomic Data,False
+2203.06041,Embedding Earth: Self-supervised contrastive pre-training for dense land cover classification,http://arxiv.org/abs/2203.06041v1,2022-03-11 16:14:14+00:00,Compression-Based Methods for Genomic Data,False
+2402.06079,DiscDiff: Latent Diffusion Model for DNA Sequence Generation,http://arxiv.org/abs/2402.06079v2,2024-02-08 22:06:55+00:00,Genomic Sequence Analysis and Evolutionary Relationships,False
+1810.12836,Learning Cross-Lingual Sentence Representations via a Multi-task Dual-Encoder Model,http://arxiv.org/abs/1810.12836v4,2018-10-30 16:18:05+00:00,Others,False
+2208.08789,"Towards Label-efficient Automatic Diagnosis and Analysis: A Comprehensive Survey of Advanced Deep Learning-based Weakly-supervised, Semi-supervised and Self-supervised Techniques in Histopathological Image Analysis",http://arxiv.org/abs/2208.08789v2,2022-08-18 11:49:41+00:00,Compression-Based Methods for Genomic Data,False
+2101.05870,From Genotype to Phenotype: polygenic prediction of complex human traits,http://arxiv.org/abs/2101.05870v1,2021-01-14 21:06:18+00:00,Supervised Genomic Profile Prediction,False
+1511.08445,Characterization of DNA methylation as a function of biological complexity via dinucleotide inter-distances,http://arxiv.org/abs/1511.08445v1,2015-11-26 16:30:39+00:00,Genomic Sequence Analysis and Evolutionary Relationships,False
+2111.04518,Bayesian profile regression for clustering analysis involving a longitudinal response and explanatory variables,http://arxiv.org/abs/2111.04518v1,2021-11-08 14:04:19+00:00,Genomic Sequence Analysis and Evolutionary Relationships,False
+1210.7091,Development of Hydrogen Bonding Magnetic Reaction-based Gene Regulation through Cyclic Electromagnetic DNA Simulation in Double-Stranded DNA,http://arxiv.org/abs/1210.7091v2,2012-10-26 10:25:03+00:00,Genomic Sequence Analysis and Evolutionary Relationships,False
+2306.15111,Self-Supervised Image Captioning with CLIP,http://arxiv.org/abs/2306.15111v2,2023-06-26 23:29:16+00:00,Compression-Based Methods for Genomic Data,False
+2005.11841,"scadnano: A browser-based, scriptable tool for designing DNA nanostructures",http://arxiv.org/abs/2005.11841v3,2020-05-24 21:00:29+00:00,Genomic Sequence Analysis and Evolutionary Relationships,False
+,Multifractal analysis of DNA walks and trails,http://arxiv.org/abs/cond-mat/0209396v2,2002-09-17 14:11:36+00:00,Genomic Sequence Analysis and Evolutionary Relationships,False
+2407.19385,Multi-modal Imaging Genomics Transformer: Attentive Integration of Imaging with Genomic Biomarkers for Schizophrenia Classification,http://arxiv.org/abs/2407.19385v1,2024-07-28 03:54:08+00:00,Supervised Genomic Profile Prediction,False
+2310.11284,Self-Supervised 3D Scene Flow Estimation and Motion Prediction using Local Rigidity Prior,http://arxiv.org/abs/2310.11284v1,2023-10-17 14:06:55+00:00,Compression-Based Methods for Genomic Data,False
+2201.08443,Diversifying the Genomic Data Science Research Community,http://arxiv.org/abs/2201.08443v2,2022-01-20 20:36:18+00:00,Genomic Sequence Analysis and Evolutionary Relationships,False
+2105.03431,DNA Nanotechnology Meets Nanophotonics,http://arxiv.org/abs/2105.03431v1,2021-05-10 13:32:46+00:00,Genomic Sequence Analysis and Evolutionary Relationships,False
+1806.08200,Mixtures of Experts Models,http://arxiv.org/abs/1806.08200v1,2018-06-21 12:30:12+00:00,Mixture of Experts (MoE) Architectures,True
+,Conformations of closed DNA,http://arxiv.org/abs/cond-mat/9903364v1,1999-03-24 18:00:27+00:00,Genomic Sequence Analysis and Evolutionary Relationships,False
+,Charge Transport in DNA-Based Devices,http://arxiv.org/abs/cond-mat/0403640v2,2004-03-25 17:47:52+00:00,Genomic Sequence Analysis and Evolutionary Relationships,False
+1910.07640,A Combined Deep Learning-Gradient Boosting Machine Framework for Fluid Intelligence Prediction,http://arxiv.org/abs/1910.07640v1,2019-10-16 22:32:13+00:00,Compression-Based Methods for Genomic Data,False

@@ -1,0 +1,18 @@
+rank,arxiv_id,title,url,date
+1,2004.12727,Screenplay Summarization Using Latent Narrative Structure,http://arxiv.org/abs/2004.12727v1,2020-04-27 11:54:19+00:00
+2,2403.18802,Long-form factuality in large language models,http://arxiv.org/abs/2403.18802v4,2024-03-27 17:48:55+00:00
+3,2412.05449,Towards Effective GenAI Multi-Agent Collaboration: Design and Evaluation for Enterprise Applications,http://arxiv.org/abs/2412.05449v1,2024-12-06 22:14:17+00:00
+4,2007.04874,CompRes: A Dataset for Narrative Structure in News,http://arxiv.org/abs/2007.04874v2,2020-07-09 15:21:59+00:00
+5,2504.02259,T*: Re-thinking Temporal Search for Long-Form Video Understanding,http://arxiv.org/abs/2504.02259v3,2025-04-03 04:03:10+00:00
+6,2412.06333,Augmenting the action space with conventions to improve multi-agent cooperation in Hanabi,http://arxiv.org/abs/2412.06333v3,2024-12-09 09:34:40+00:00
+7,1811.00185,Dial2Desc: End-to-end Dialogue Description Generation,http://arxiv.org/abs/1811.00185v1,2018-11-01 02:10:50+00:00
+8,1807.02648,How game complexity affects the playing behavior of synthetic agents,http://arxiv.org/abs/1807.02648v1,2018-07-07 11:57:21+00:00
+9,1811.00511,Towards Coherent and Cohesive Long-form Text Generation,http://arxiv.org/abs/1811.00511v2,2018-11-01 17:30:50+00:00
+10,2411.15993,Investigating Factuality in Long-Form Text Generation: The Roles of Self-Known and Self-Unknown,http://arxiv.org/abs/2411.15993v2,2024-11-24 22:06:26+00:00
+11,1403.4714,Enhancing Dictionary Based Preprocessing For Better Text Compression,http://arxiv.org/abs/1403.4714v1,2014-03-19 07:13:58+00:00
+12,2411.03962,How Does A Text Preprocessing Pipeline Affect Ontology Matching?,http://arxiv.org/abs/2411.03962v11,2024-11-06 14:51:02+00:00
+13,2302.10809,Causal Explanations for Sequential Decision-Making in Multi-Agent Systems,http://arxiv.org/abs/2302.10809v4,2023-02-21 16:34:07+00:00
+14,2410.05252,Causal Micro-Narratives,http://arxiv.org/abs/2410.05252v1,2024-10-07 17:55:10+00:00
+15,2404.14882,A sensitivity analysis to quantify the impact of neuroimaging preprocessing strategies on subsequent statistical analyses,http://arxiv.org/abs/2404.14882v2,2024-04-23 10:09:32+00:00
+16,2407.21057,Multi-group Uncertainty Quantification for Long-form Text Generation,http://arxiv.org/abs/2407.21057v2,2024-07-25 02:59:52+00:00
+17,2412.20138,TradingAgents: Multi-Agents LLM Financial Trading Framework,http://arxiv.org/abs/2412.20138v7,2024-12-28 12:54:06+00:00

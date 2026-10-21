@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2210.12607,Learning to Perform Complex Tasks through Compositional Fine-Tuning of Language Models,http://arxiv.org/abs/2210.12607v1,2022-10-23 03:22:34+00:00,Knowledge Acquisition During Training,True
+2108.06279,On Single and Multiple Representations in Dense Passage Retrieval,http://arxiv.org/abs/2108.06279v2,2021-08-13 15:01:53+00:00,"Dense Retriever Architectures (BERT, LLaMA)",True
+2408.03099,Topic Modeling with Fine-tuning LLMs and Bag of Sentences,http://arxiv.org/abs/2408.03099v2,2024-08-06 11:04:07+00:00,Unsupervised Dense Retrieval Methods,True
+2312.05934,Fine-Tuning or Retrieval? Comparing Knowledge Injection in LLMs,http://arxiv.org/abs/2312.05934v3,2023-12-10 16:52:00+00:00,Knowledge Acquisition During Training,True
+2212.07841,MASTER: Multi-task Pre-trained Bottlenecked Masked Autoencoders are Better Dense Retrievers,http://arxiv.org/abs/2212.07841v2,2022-12-15 13:57:07+00:00,"Dense Retriever Architectures (BERT, LLaMA)",True
+2010.02616,On the Interplay Between Fine-tuning and Sentence-level Probing for Linguistic Knowledge in Pre-trained Transformers,http://arxiv.org/abs/2010.02616v1,2020-10-06 10:54:00+00:00,Knowledge Acquisition During Training,True
+2104.14939,Evaluating Contrastive Models for Instance-based Image Retrieval,http://arxiv.org/abs/2104.14939v1,2021-04-30 12:05:23+00:00,Contrastive Learning in Retrieval,True
+2210.15133,Retrieval Oriented Masking Pre-training Language Model for Dense Passage Retrieval,http://arxiv.org/abs/2210.15133v1,2022-10-27 02:43:48+00:00,Unsupervised Dense Retrieval Methods,True
+2112.09118,Unsupervised Dense Information Retrieval with Contrastive Learning,http://arxiv.org/abs/2112.09118v4,2021-12-16 18:57:37+00:00,Unsupervised Dense Retrieval Methods,True
+2007.00808,Approximate Nearest Neighbor Negative Contrastive Learning for Dense Text Retrieval,http://arxiv.org/abs/2007.00808v2,2020-07-01 23:15:56+00:00,Contrastive Learning in Retrieval,True
+2004.12817,LightPAFF: A Two-Stage Distillation Framework for Pre-training and Fine-tuning,http://arxiv.org/abs/2004.12817v1,2020-04-27 14:00:09+00:00,Knowledge Acquisition During Training,True
+2104.08253,Condenser: a Pre-training Architecture for Dense Retrieval,http://arxiv.org/abs/2104.08253v2,2021-04-16 17:36:44+00:00,"Dense Retriever Architectures (BERT, LLaMA)",True
+2310.03059,Point-PEFT: Parameter-Efficient Fine-Tuning for 3D Pre-trained Models,http://arxiv.org/abs/2310.03059v8,2023-10-04 16:49:36+00:00,Reproducibility and Implementation Availability,True
+2009.14776,Joint Contrastive Learning with Infinite Possibilities,http://arxiv.org/abs/2009.14776v2,2020-09-30 16:24:21+00:00,Contrastive Learning in Retrieval,False
+2409.12519,Multi-View Adaptive Contrastive Learning for Information Retrieval Based Fault Localization,http://arxiv.org/abs/2409.12519v3,2024-09-19 07:20:10+00:00,Contrastive Learning in Retrieval,False
+2206.10658,Questions Are All You Need to Train a Dense Passage Retriever,http://arxiv.org/abs/2206.10658v4,2022-06-21 18:16:31+00:00,Unsupervised Dense Retrieval Methods,False
+2204.10641,Pre-train a Discriminative Text Encoder for Dense Retrieval via Contrastive Span Prediction,http://arxiv.org/abs/2204.10641v1,2022-04-22 11:22:29+00:00,Contrastive Pre-training Approaches,False
+2106.04509,MoCL: Data-driven Molecular Fingerprint via Knowledge-aware Contrastive Learning from Molecular Graph,http://arxiv.org/abs/2106.04509v2,2021-06-05 18:00:51+00:00,Contrastive Pre-training Approaches,False
+2210.10599,Self-supervised Graph Masking Pre-training for Graph-to-Text Generation,http://arxiv.org/abs/2210.10599v1,2022-10-19 14:44:56+00:00,Unsupervised Dense Retrieval Methods,False
+2110.08265,Knowledge-driven Active Learning,http://arxiv.org/abs/2110.08265v4,2021-10-15 06:11:53+00:00,Knowledge Acquisition During Training,False
+2108.05652,Modeling Relevance Ranking under the Pre-training and Fine-tuning Paradigm,http://arxiv.org/abs/2108.05652v1,2021-08-12 10:37:12+00:00,Pre-training vs. Fine-tuning Role in Retrieval,False
+2212.09598,Query-as-context Pre-training for Dense Passage Retrieval,http://arxiv.org/abs/2212.09598v3,2022-12-19 16:34:19+00:00,Contrastive Pre-training Approaches,False
+2204.12833,Transfer Learning with Pre-trained Conditional Generative Models,http://arxiv.org/abs/2204.12833v3,2022-04-27 10:36:32+00:00,Model Generalization Across Architectures,False
+2111.12292,Improved Fine-Tuning by Better Leveraging Pre-Training Data,http://arxiv.org/abs/2111.12292v2,2021-11-24 06:18:32+00:00,Model Generalization Across Architectures,False
+2403.10939,Improving the Robustness of Dense Retrievers Against Typos via Multi-Positive Contrastive Learning,http://arxiv.org/abs/2403.10939v1,2024-03-16 14:43:30+00:00,Contrastive Learning in Retrieval,False
+2306.03166,Unsupervised Dense Retrieval with Relevance-Aware Contrastive Pre-Training,http://arxiv.org/abs/2306.03166v1,2023-06-05 18:20:27+00:00,Contrastive Pre-training Approaches,False
+2108.05540,Unsupervised Corpus Aware Language Model Pre-training for Dense Passage Retrieval,http://arxiv.org/abs/2108.05540v1,2021-08-12 05:20:27+00:00,Unsupervised Dense Retrieval Methods,False
+2211.03888,Proceedings of Principle and practice of data and Knowledge Acquisition Workshop 2022 (PKAW 2022),http://arxiv.org/abs/2211.03888v2,2022-11-07 22:34:12+00:00,Knowledge Acquisition During Training,False
+2208.14227,CLUDA : Contrastive Learning in Unsupervised Domain Adaptation for Semantic Segmentation,http://arxiv.org/abs/2208.14227v2,2022-08-27 05:13:14+00:00,Contrastive Learning in Retrieval,False
+2306.16478,Pre-Training Multi-Modal Dense Retrievers for Outside-Knowledge Visual Question Answering,http://arxiv.org/abs/2306.16478v1,2023-06-28 18:06:40+00:00,"Dense Retriever Architectures (BERT, LLaMA)",False

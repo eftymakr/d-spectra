@@ -1,0 +1,14 @@
+arxiv_id,title,url,date,category,cited_in_text
+1210.4053,Joint Cache Partition and Job Assignment on Multi-Core Processors,http://arxiv.org/abs/1210.4053v3,2012-10-15 14:47:01+00:00,Cache Partitioning Methods,True
+1809.05921,Analysis of Dynamic Memory Bandwidth Regulation in Multi-core Real-Time Systems,http://arxiv.org/abs/1809.05921v1,2018-09-16 18:02:25+00:00,Memory Bandwidth Regulation Techniques,True
+2310.02959,Co-Optimizing Cache Partitioning and Multi-Core Task Scheduling: Exploit Cache Sensitivity or Not?,http://arxiv.org/abs/2310.02959v1,2023-10-04 16:50:23+00:00,Task-Resource Co-Allocation Frameworks,True
+2504.07884,CatCMA with Margin for Single- and Multi-Objective Mixed-Variable Black-Box Optimization,http://arxiv.org/abs/2504.07884v6,2025-04-10 15:59:22+00:00,Multi-Objective Heuristics for Schedulability,True
+1310.4231,Dynamic cache reconfiguration based techniques for improving cache energy efficiency,http://arxiv.org/abs/1310.4231v1,2013-10-16 00:41:12+00:00,Cache Partitioning Methods,True
+2009.00466,toki: A Build- and Test-Platform for Prototyping and Evaluating Operating System Concepts in Real-Time Environments,http://arxiv.org/abs/2009.00466v1,2020-09-01 14:24:20+00:00,Hypervisor-Based Resource Partitioning,True
+2205.11173,Multi-objective Optimization of Clustering-based Scheduling for Multi-workflow On Clouds Considering Fairness,http://arxiv.org/abs/2205.11173v1,2022-05-23 10:25:16+00:00,Multi-Objective Heuristics for Schedulability,True
+1704.08876,Mixed-criticality Scheduling with Dynamic Redistribution of Shared Cache,http://arxiv.org/abs/1704.08876v1,2017-04-28 11:17:51+00:00,Cache Partitioning Methods,True
+2409.05867,Flash Cache: Reducing Bias in Radiance Cache Based Inverse Rendering,http://arxiv.org/abs/2409.05867v1,2024-09-09 17:59:57+00:00,Cache Partitioning Methods,True
+1507.05454,Concolic Testing in Logic Programming,http://arxiv.org/abs/1507.05454v1,2015-07-20 11:41:49+00:00,0-1 Linear Programming Applications,True
+2307.03911,A Novel Pseudo-Random Number Generator Based on Multi-Objective Optimization for Image-Cryptographic Applications,http://arxiv.org/abs/2307.03911v1,2023-07-08 06:05:13+00:00,Multi-Objective Heuristics for Schedulability,False
+1103.4133,An ER-based Framework for Declarative Web Programming,http://arxiv.org/abs/1103.4133v2,2011-03-21 20:01:02+00:00,Hypervisor-Based Resource Partitioning,False
+2303.01648,Congestion-aware routing and content placement in elastic cache networks,http://arxiv.org/abs/2303.01648v1,2023-03-03 00:47:28+00:00,0-1 Linear Programming Applications,False

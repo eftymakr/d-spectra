@@ -1,0 +1,26 @@
+rank,arxiv_id,title,url,date
+1,2406.02540,ViDiT-Q: Efficient and Accurate Quantization of Diffusion Transformers for Image and Video Generation,http://arxiv.org/abs/2406.02540v3,2024-06-04 17:57:10+00:00
+2,2407.11585,QVD: Post-training Quantization for Video Diffusion Models,http://arxiv.org/abs/2407.11585v2,2024-07-16 10:47:27+00:00
+3,2302.04304,Q-Diffusion: Quantizing Diffusion Models,http://arxiv.org/abs/2302.04304v3,2023-02-08 19:38:59+00:00
+4,2505.05530,Low-bit Model Quantization for Deep Neural Networks: A Survey,http://arxiv.org/abs/2505.05530v1,2025-05-08 13:26:19+00:00
+5,2005.06803,TAM: Temporal Adaptive Module for Video Recognition,http://arxiv.org/abs/2005.06803v3,2020-05-14 08:22:45+00:00
+6,1904.03567,Image and Video Compression with Neural Networks: A Review,http://arxiv.org/abs/1904.03567v2,2019-04-07 01:59:57+00:00
+7,1406.2018,Perceptual Quality of Video with Periodic Frame Rate and Quantization Variation-Subjective Studies and Analytical Modeling,http://arxiv.org/abs/1406.2018v1,2014-06-08 19:37:06+00:00
+8,2303.17599,Zero-Shot Video Editing Using Off-The-Shelf Image Diffusion Models,http://arxiv.org/abs/2303.17599v3,2023-03-30 17:59:25+00:00
+9,2206.10590,Temporally Consistent Semantic Video Editing,http://arxiv.org/abs/2206.10590v1,2022-06-21 17:59:59+00:00
+10,2407.15508,Compensate Quantization Errors+: Quantized Models Are Inquisitive Learners,http://arxiv.org/abs/2407.15508v3,2024-07-22 09:45:16+00:00
+11,2410.05265,PrefixQuant: Eliminating Outliers by Prefixed Tokens for Large Language Models Quantization,http://arxiv.org/abs/2410.05265v2,2024-10-07 17:59:35+00:00
+12,2407.07111,Diffusion Model-Based Video Editing: A Survey,http://arxiv.org/abs/2407.07111v2,2024-06-26 04:58:39+00:00
+13,2212.02802,Diffusion Video Autoencoders: Toward Temporally Consistent Face Video Editing via Disentangled Video Encoding,http://arxiv.org/abs/2212.02802v2,2022-12-06 07:41:51+00:00
+14,1908.07683,Preserving Semantic and Temporal Consistency for Unpaired Video-to-Video Translation,http://arxiv.org/abs/1908.07683v1,2019-08-21 02:54:21+00:00
+15,2503.00200,Unified Video Action Model,http://arxiv.org/abs/2503.00200v3,2025-02-28 21:38:17+00:00
+16,2207.10357,Synthesizing Light Field Video from Monocular Video,http://arxiv.org/abs/2207.10357v1,2022-07-21 08:23:27+00:00
+17,1502.06080,Intra-and-Inter-Constraint-based Video Enhancement based on Piecewise Tone Mapping,http://arxiv.org/abs/1502.06080v1,2015-02-21 07:36:26+00:00
+18,1709.06342,Assessing Visual Quality of Omnidirectional Videos,http://arxiv.org/abs/1709.06342v4,2017-09-19 10:54:24+00:00
+19,2407.03563,Learning Video Temporal Dynamics with Cross-Modal Attention for Robust Audio-Visual Speech Recognition,http://arxiv.org/abs/2407.03563v3,2024-07-04 01:25:20+00:00
+20,2010.11838,Blind Video Temporal Consistency via Deep Video Prior,http://arxiv.org/abs/2010.11838v1,2020-10-22 16:19:20+00:00
+21,2403.05131,Sora as a World Model? A Complete Survey on Text-to-Video Generation,http://arxiv.org/abs/2403.05131v3,2024-03-08 07:58:13+00:00
+22,1109.2262,Diffusion in LanCoIn3n+2 phases studied by perturbed angular correlation,http://arxiv.org/abs/1109.2262v1,2011-09-10 21:29:55+00:00
+23,2303.07909,Text-to-image Diffusion Models in Generative AI: A Survey,http://arxiv.org/abs/2303.07909v3,2023-03-14 13:49:54+00:00
+24,2312.06640,Upscale-A-Video: Temporal-Consistent Diffusion Model for Real-World Video Super-Resolution,http://arxiv.org/abs/2312.06640v1,2023-12-11 18:54:52+00:00
+25,2309.14364,Automata Quest: NCAs as a Video Game Life Mechanic,http://arxiv.org/abs/2309.14364v1,2023-09-23 11:14:09+00:00

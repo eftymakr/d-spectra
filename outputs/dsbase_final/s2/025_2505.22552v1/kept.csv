@@ -1,0 +1,21 @@
+rank,arxiv_id,title,url,date
+1,2502.20988,Reviewing Clinical Knowledge in Medical Large Language Models: Training and Beyond,http://arxiv.org/abs/2502.20988v2,2025-02-28 12:00:51+00:00
+2,2505.12348,Reasoning-CV: Fine-tuning Powerful Reasoning LLMs for Knowledge-Assisted Claim Verification,http://arxiv.org/abs/2505.12348v1,2025-05-18 10:28:54+00:00
+3,2404.07677,ODA: Observation-Driven Agent for integrating LLMs and Knowledge Graphs,http://arxiv.org/abs/2404.07677v2,2024-04-11 12:16:16+00:00
+4,2502.11959,STRIVE: Structured Reasoning for Self-Improvement in Claim Verification,http://arxiv.org/abs/2502.11959v2,2025-02-17 16:07:07+00:00
+5,2505.18607,From Entity-Centric to Goal-Oriented Graphs: Enhancing LLM Knowledge Retrieval in Minecraft,http://arxiv.org/abs/2505.18607v2,2025-05-24 09:09:20+00:00
+6,2310.05253,Explainable Claim Verification via Knowledge-Grounded Reasoning with Large Language Models,http://arxiv.org/abs/2310.05253v2,2023-10-08 18:04:05+00:00
+7,2306.08302,Unifying Large Language Models and Knowledge Graphs: A Roadmap,http://arxiv.org/abs/2306.08302v3,2023-06-14 07:15:26+00:00
+8,2405.17249,Assessing LLMs Suitability for Knowledge Graph Completion,http://arxiv.org/abs/2405.17249v2,2024-05-27 15:04:50+00:00
+9,2305.09645,StructGPT: A General Framework for Large Language Model to Reason over Structured Data,http://arxiv.org/abs/2305.09645v2,2023-05-16 17:45:23+00:00
+10,2007.08304,Dual Graph Embedding for Object-Tag LinkPrediction on the Knowledge Graph,http://arxiv.org/abs/2007.08304v1,2020-07-16 12:46:32+00:00
+11,2412.15443,SKETCH: Structured Knowledge Enhanced Text Comprehension for Holistic Retrieval,http://arxiv.org/abs/2412.15443v1,2024-12-19 22:51:56+00:00
+12,2411.01023,Capturing and Anticipating User Intents in Data Analytics via Knowledge Graphs,http://arxiv.org/abs/2411.01023v1,2024-11-01 20:45:23+00:00
+13,1908.09354,Unsupervised Construction of Knowledge Graphs From Text and Code,http://arxiv.org/abs/1908.09354v1,2019-08-25 16:10:31+00:00
+14,2004.14843,Knowledge Graph Embeddings and Explainable AI,http://arxiv.org/abs/2004.14843v1,2020-04-30 14:55:09+00:00
+15,2410.05339,Proceedings of the First International Workshop on Next-Generation Language Models for Knowledge Representation and Reasoning (NeLaMKRR 2024),http://arxiv.org/abs/2410.05339v2,2024-10-07 02:31:47+00:00
+16,2208.08130,Knowledge Graph Curation: A Practical Framework,http://arxiv.org/abs/2208.08130v1,2022-08-17 07:55:28+00:00
+17,2011.01103,Generating Knowledge Graphs by Employing Natural Language Processing and Machine Learning Techniques within the Scholarly Domain,http://arxiv.org/abs/2011.01103v1,2020-10-28 08:31:40+00:00
+18,2412.12881,RAG-Star: Enhancing Deliberative Reasoning with Retrieval Augmented Verification and Refinement,http://arxiv.org/abs/2412.12881v1,2024-12-17 13:05:36+00:00
+19,2406.06621,LinkQ: An LLM-Assisted Visual Interface for Knowledge Graph Question-Answering,http://arxiv.org/abs/2406.06621v2,2024-06-07 15:28:31+00:00
+20,1809.00626,Deductive Verification of Unmodified Linux Kernel Library Functions,http://arxiv.org/abs/1809.00626v1,2018-09-03 15:19:46+00:00

@@ -1,0 +1,17 @@
+arxiv_id,title,url,date,category,cited_in_text
+2202.06991,Transformer Memory as a Differentiable Search Index,http://arxiv.org/abs/2202.06991v3,2022-02-14 19:12:43+00:00,Differentiable Search Index Frameworks,True
+2404.12237,De-DSI: Decentralised Differentiable Search Index,http://arxiv.org/abs/2404.12237v2,2024-04-18 14:51:55+00:00,Differentiable Search Index Frameworks,True
+2502.17057,ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance,http://arxiv.org/abs/2502.17057v3,2025-02-24 11:15:41+00:00,Large Language Model-Based Query Generation,True
+2305.02073,Understanding Differential Search Index for Text Retrieval,http://arxiv.org/abs/2305.02073v2,2023-05-03 12:22:39+00:00,Differentiable Search Index Frameworks,True
+2502.02788,Inducing Diversity in Differentiable Search Indexing,http://arxiv.org/abs/2502.02788v1,2025-02-05 00:21:17+00:00,Differentiable Search Index Frameworks,True
+2309.15217,Ragas: Automated Evaluation of Retrieval Augmented Generation,http://arxiv.org/abs/2309.15217v2,2023-09-26 19:23:54+00:00,Complex Natural Language Query Handling,True
+1906.00041,Table2Vec: Neural Word and Entity Embeddings for Table Population and Retrieval,http://arxiv.org/abs/1906.00041v1,2019-05-31 19:22:29+00:00,Query-Table Interaction and Semantic Alignment,True
+1208.4016,Concept driven framework for Latent Table Discovery,http://arxiv.org/abs/1208.4016v1,2012-08-20 14:09:01+00:00,Query-Table Interaction and Semantic Alignment,True
+2412.13834,Maybe you are looking for CroQS: Cross-modal Query Suggestion for Text-to-Image Retrieval,http://arxiv.org/abs/2412.13834v1,2024-12-18 13:24:09+00:00,Large Language Model-Based Query Generation,True
+2307.08803,Mixed-initiative Query Rewriting in Conversational Passage Retrieval,http://arxiv.org/abs/2307.08803v3,2023-07-17 19:38:40+00:00,Complex Natural Language Query Handling,True
+2307.00161,"FFPDG: Fast, Fair and Private Data Generation",http://arxiv.org/abs/2307.00161v1,2023-06-30 22:32:44+00:00,Transformer-Based Table Discovery Approaches,False
+2411.03356,Enhancing Table Representations with LLM-powered Synthetic Data Generation,http://arxiv.org/abs/2411.03356v1,2024-11-04 19:54:07+00:00,Synthetic Query Generation for Table Discovery,False
+2307.05801,Differentiable Forward Projector for X-ray Computed Tomography,http://arxiv.org/abs/2307.05801v1,2023-07-11 20:52:46+00:00,Differentiable Search Index Frameworks,False
+2406.19708,A Differentiable Approach to Multi-scale Brain Modeling,http://arxiv.org/abs/2406.19708v3,2024-06-28 07:41:31+00:00,Differentiable Search Index Frameworks,False
+1511.05802,What Users See - Structures in Search Engine Results Pages,http://arxiv.org/abs/1511.05802v1,2015-11-18 14:33:27+00:00,Efficient Query Representation and Indexing Strategies,False
+2407.12346,Object-Aware Query Perturbation for Cross-Modal Image-Text Retrieval,http://arxiv.org/abs/2407.12346v2,2024-07-17 06:42:14+00:00,Query-Table Interaction and Semantic Alignment,False

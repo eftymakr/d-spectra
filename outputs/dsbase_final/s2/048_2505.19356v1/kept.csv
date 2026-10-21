@@ -1,0 +1,31 @@
+rank,arxiv_id,title,url,date
+1,2305.15425,Language Model Tokenizers Introduce Unfairness Between Languages,http://arxiv.org/abs/2305.15425v2,2023-05-17 14:17:57+00:00
+2,2402.15010,How Important Is Tokenization in French Medical Masked Language Models?,http://arxiv.org/abs/2402.15010v2,2024-02-22 23:11:08+00:00
+3,2203.08459,KinyaBERT: a Morphology-aware Kinyarwanda Language Model,http://arxiv.org/abs/2203.08459v2,2022-03-16 08:36:14+00:00
+4,2311.00658,Explicit Morphological Knowledge Improves Pre-training of Language Models for Hebrew,http://arxiv.org/abs/2311.00658v1,2023-11-01 17:02:49+00:00
+5,2403.13369,Clinical information extraction for Low-resource languages with Few-shot learning using Pre-trained language models and Prompting,http://arxiv.org/abs/2403.13369v2,2024-03-20 08:01:33+00:00
+6,2410.11627,Tokenization and Morphology in Multilingual Language Models: A Comparative Analysis of mT5 and ByT5,http://arxiv.org/abs/2410.11627v2,2024-10-15 14:14:19+00:00
+7,2212.09651,Cross-Lingual Retrieval Augmented Prompt for Low-Resource Languages,http://arxiv.org/abs/2212.09651v4,2022-12-19 17:29:37+00:00
+8,2412.16365,Overview of the First Workshop on Language Models for Low-Resource Languages (LoResLM 2025),http://arxiv.org/abs/2412.16365v1,2024-12-20 21:55:32+00:00
+9,2112.12489,TFW2V: An Enhanced Document Similarity Method for the Morphologically Rich Finnish Language,http://arxiv.org/abs/2112.12489v1,2021-12-23 12:27:45+00:00
+10,2504.10335,MorphTok: Morphologically Grounded Tokenization for Indian Languages,http://arxiv.org/abs/2504.10335v2,2025-04-14 15:44:45+00:00
+11,1606.04217,Word Representation Models for Morphologically Rich Languages in Neural Machine Translation,http://arxiv.org/abs/1606.04217v1,2016-06-14 07:04:37+00:00
+12,2204.08832,Impact of Tokenization on Language Models: An Analysis for Turkish,http://arxiv.org/abs/2204.08832v1,2022-04-19 12:01:46+00:00
+13,2205.02364,KenSwQuAD -- A Question Answering Dataset for Swahili Low Resource Language,http://arxiv.org/abs/2205.02364v3,2022-05-04 23:53:23+00:00
+14,2012.08743,"Improving Multilingual Neural Machine Translation For Low-Resource Languages: French,English - Vietnamese",http://arxiv.org/abs/2012.08743v2,2020-12-16 04:43:43+00:00
+15,2208.06061,Structural Biases for Improving Transformers on Translation into Morphologically Rich Languages,http://arxiv.org/abs/2208.06061v1,2022-08-11 22:42:24+00:00
+16,2204.08143,Detect Rumors in Microblog Posts for Low-Resource Domains via Adversarial Contrastive Learning,http://arxiv.org/abs/2204.08143v2,2022-04-18 03:10:34+00:00
+17,2410.02283,Morphological evaluation of subwords vocabulary used by BETO language model,http://arxiv.org/abs/2410.02283v1,2024-10-03 08:07:14+00:00
+18,1910.11536,Stem-driven Language Models for Morphologically Rich Languages,http://arxiv.org/abs/1910.11536v1,2019-10-25 05:35:36+00:00
+19,2503.21676,"How do language models learn facts? Dynamics, curricula and hallucinations",http://arxiv.org/abs/2503.21676v2,2025-03-27 16:43:45+00:00
+20,1811.08772,Overcoming low-utility facets for complex answer retrieval,http://arxiv.org/abs/1811.08772v1,2018-11-21 15:09:00+00:00
+21,2409.14674,RACER: Rich Language-Guided Failure Recovery Policies for Imitation Learning,http://arxiv.org/abs/2409.14674v1,2024-09-23 02:50:33+00:00
+22,1804.07878,Massively Parallel Cross-Lingual Learning in Low-Resource Target Language Translation,http://arxiv.org/abs/1804.07878v2,2018-04-21 02:18:36+00:00
+23,2505.02463,Data Augmentation With Back translation for Low Resource languages: A case of English and Luganda,http://arxiv.org/abs/2505.02463v1,2025-05-05 08:47:52+00:00
+24,2304.01492,A Unified Contrastive Transfer Framework with Propagation Structure for Boosting Low-Resource Rumor Detection,http://arxiv.org/abs/2304.01492v5,2023-04-04 03:13:03+00:00
+25,1108.2033,Discovery of a super-Li rich turn-off star in the metal poor globular cluster NGC 6397,http://arxiv.org/abs/1108.2033v1,2011-08-09 20:00:01+00:00
+26,2004.13945,"Linguistic Resources for Bhojpuri, Magahi and Maithili: Statistics about them, their Similarity Estimates, and Baselines for Three Applications",http://arxiv.org/abs/2004.13945v2,2020-04-29 03:58:55+00:00
+27,2401.13165,Misgendering and Assuming Gender in Machine Translation when Working with Low-Resource Languages,http://arxiv.org/abs/2401.13165v3,2024-01-24 00:58:30+00:00
+28,2202.12288,Toward More Meaningful Resources for Lower-resourced Languages,http://arxiv.org/abs/2202.12288v1,2022-02-24 18:39:57+00:00
+29,1203.6079,A super-Li rich turnoff star in NGC 6397 - the puzzle persists,http://arxiv.org/abs/1203.6079v1,2012-03-27 20:19:05+00:00
+30,1508.04271,Probabilistic Modelling of Morphologically Rich Languages,http://arxiv.org/abs/1508.04271v1,2015-08-18 10:29:10+00:00

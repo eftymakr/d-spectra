@@ -1,0 +1,20 @@
+rank,arxiv_id,title,url,date
+1,2412.12178,Activation Sparsity Opportunities for Compressing General Large Language Models,http://arxiv.org/abs/2412.12178v2,2024-12-13 02:26:54+00:00
+2,2402.12065,WKVQuant: Quantizing Weight and Key/Value Cache for Large Language Models Gains More,http://arxiv.org/abs/2402.12065v2,2024-02-19 11:33:21+00:00
+3,1907.12300,Predictive Triggering for Distributed Control of Resource Constrained Multi-agent Systems,http://arxiv.org/abs/1907.12300v1,2019-07-29 09:39:34+00:00
+4,2206.00774,Distributed Training for Deep Learning Models On An Edge Computing Network Using ShieldedReinforcement Learning,http://arxiv.org/abs/2206.00774v1,2022-06-01 21:32:44+00:00
+5,2302.06126,Expediting Distributed DNN Training with Device Topology-Aware Graph Deployment,http://arxiv.org/abs/2302.06126v1,2023-02-13 06:30:24+00:00
+6,1905.09219,Online Collection and Forecasting of Resource Utilization in Large-Scale Distributed Systems,http://arxiv.org/abs/1905.09219v1,2019-05-22 16:14:14+00:00
+7,2109.06440,Complexity-aware Adaptive Training and Inference for Edge-Cloud Distributed AI Systems,http://arxiv.org/abs/2109.06440v1,2021-09-14 05:03:54+00:00
+8,2003.05168,Multi-Rate Fluid Scheduling of Mixed-Criticality Systems on Multiprocessors,http://arxiv.org/abs/2003.05168v1,2020-03-11 08:58:29+00:00
+9,2401.02431,Execution time budget assignment for mixed criticality systems,http://arxiv.org/abs/2401.02431v2,2023-11-14 07:55:56+00:00
+10,1911.09561,Predicting Failures in Multi-Tier Distributed Systems,http://arxiv.org/abs/1911.09561v1,2019-11-21 15:55:09+00:00
+11,1012.1288,Representations of task assignments in distributed systems using Young tableaux and symmetric groups,http://arxiv.org/abs/1012.1288v5,2010-12-06 19:16:18+00:00
+12,2312.03140,FlexModel: A Framework for Interpretability of Distributed Large Language Models,http://arxiv.org/abs/2312.03140v1,2023-12-05 21:19:33+00:00
+13,1604.02114,Distributed Resource Management in Systems of Systems: An Architecture Perspective,http://arxiv.org/abs/1604.02114v3,2016-04-07 19:06:55+00:00
+14,0901.2685,A Statistical Approach to Performance Monitoring in Soft Real-Time Distributed Systems,http://arxiv.org/abs/0901.2685v1,2009-01-18 07:16:59+00:00
+15,2306.13549,A Survey on Multimodal Large Language Models,http://arxiv.org/abs/2306.13549v4,2023-06-23 15:21:52+00:00
+16,2407.08029,A Critical Review of Causal Reasoning Benchmarks for Large Language Models,http://arxiv.org/abs/2407.08029v1,2024-07-10 20:11:51+00:00
+17,2312.05434,Beneath the Surface: Unveiling Harmful Memes with Multimodal Reasoning Distilled from Large Language Models,http://arxiv.org/abs/2312.05434v1,2023-12-09 01:59:11+00:00
+18,2404.16891,Attacks on Third-Party APIs of Large Language Models,http://arxiv.org/abs/2404.16891v1,2024-04-24 19:27:02+00:00
+19,,Space-time distributions,http://arxiv.org/abs/gr-qc/9810059v1,1998-10-18 19:09:37+00:00

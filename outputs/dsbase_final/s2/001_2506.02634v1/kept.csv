@@ -1,0 +1,16 @@
+rank,arxiv_id,title,url,date
+1,2412.19442,A Survey on Large Language Model Acceleration based on KV Cache Management,http://arxiv.org/abs/2412.19442v3,2024-12-27 04:17:57+00:00
+2,2503.12491,CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences,http://arxiv.org/abs/2503.12491v2,2025-03-16 12:49:44+00:00
+3,2502.03805,CriticalKV: Optimizing KV Cache Eviction from an Output Perturbation Perspective,http://arxiv.org/abs/2502.03805v2,2025-02-06 06:31:47+00:00
+4,2402.12065,WKVQuant: Quantizing Weight and Key/Value Cache for Large Language Models Gains More,http://arxiv.org/abs/2402.12065v2,2024-02-19 11:33:21+00:00
+5,2503.08879,LLMs Know What to Drop: Self-Attention Guided KV Cache Eviction for Efficient Long-Context Inference,http://arxiv.org/abs/2503.08879v1,2025-03-11 20:45:02+00:00
+6,2407.11550,Ada-KV: Optimizing KV Cache Eviction by Adaptive Budget Allocation for Efficient LLM Inference,http://arxiv.org/abs/2407.11550v5,2024-07-16 09:53:32+00:00
+7,2408.03675,NACL: A General and Effective KV Cache Eviction Framework for LLMs at Inference Time,http://arxiv.org/abs/2408.03675v2,2024-08-07 10:31:07+00:00
+8,2501.06807,MPCache: MPC-Friendly KV Cache Eviction for Efficient Private LLM Inference,http://arxiv.org/abs/2501.06807v2,2025-01-12 13:18:04+00:00
+9,2105.08770,Lightweight Robust Size Aware Cache Management,http://arxiv.org/abs/2105.08770v2,2021-05-18 18:35:40+00:00
+10,2410.12876,In-context KV-Cache Eviction for LLMs via Attention-Gate,http://arxiv.org/abs/2410.12876v3,2024-10-15 05:01:19+00:00
+11,2303.01648,Congestion-aware routing and content placement in elastic cache networks,http://arxiv.org/abs/2303.01648v1,2023-03-03 00:47:28+00:00
+12,2108.05023,Taming Process Variations in CNFET for Efficient Last Level Cache Design,http://arxiv.org/abs/2108.05023v1,2021-08-11 04:26:33+00:00
+13,0812.4210,A Stochastic Processes Toolkit for Risk Management,http://arxiv.org/abs/0812.4210v1,2008-12-22 15:00:03+00:00
+14,1504.06736,ROBUS: Fair Cache Allocation for Multi-tenant Data-parallel Workloads,http://arxiv.org/abs/1504.06736v2,2015-04-25 14:56:30+00:00
+15,2402.10067,LLM-based policy generation for intent-based management of applications,http://arxiv.org/abs/2402.10067v1,2024-01-22 15:37:04+00:00

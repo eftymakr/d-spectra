@@ -1,0 +1,28 @@
+rank,arxiv_id,title,url,date
+1,2408.13627,Recent Event Camera Innovations: A Survey,http://arxiv.org/abs/2408.13627v2,2024-08-24 16:48:25+00:00
+2,2402.15584,State Space Models for Event Cameras,http://arxiv.org/abs/2402.15584v3,2024-02-23 19:51:55+00:00
+3,2504.12515,Event Quality Score (EQS): Assessing the Realism of Simulated Event Camera Streams via Distances in Latent Space,http://arxiv.org/abs/2504.12515v2,2025-04-16 22:25:57+00:00
+4,2501.01040,Event Masked Autoencoder: Point-wise Action Recognition with Event-Based Cameras,http://arxiv.org/abs/2501.01040v1,2025-01-02 03:49:03+00:00
+5,1801.10202,The Multi Vehicle Stereo Event Camera Dataset: An Event Camera Dataset for 3D Perception,http://arxiv.org/abs/1801.10202v2,2018-01-30 20:09:30+00:00
+6,1212.0582,Compositional Stochastic Modeling and Probabilistic Programming,http://arxiv.org/abs/1212.0582v1,2012-12-03 23:05:30+00:00
+7,2412.00816,Motion-Aware Optical Camera Communication with Event Cameras,http://arxiv.org/abs/2412.00816v1,2024-12-01 14:06:31+00:00
+8,2104.15139,Differentiable Event Stream Simulator for Non-Rigid 3D Tracking,http://arxiv.org/abs/2104.15139v1,2021-04-30 17:58:07+00:00
+9,2307.04493,Geometric Constraints in Probabilistic Manifolds: A Bridge from Molecular Dynamics to Structured Diffusion Processes,http://arxiv.org/abs/2307.04493v1,2023-07-10 11:31:15+00:00
+10,1008.0823,A Homogeneous Reaction Rule Language for Complex Event Processing,http://arxiv.org/abs/1008.0823v1,2010-08-04 17:05:33+00:00
+11,2505.13885,Approximately Dual and Pseudo-Dual Probabilistic Frames,http://arxiv.org/abs/2505.13885v2,2025-05-20 03:46:47+00:00
+12,1910.04076,FisheyeDistanceNet: Self-Supervised Scale-Aware Distance Estimation using Monocular Fisheye Camera for Autonomous Driving,http://arxiv.org/abs/1910.04076v4,2019-10-07 14:51:38+00:00
+13,2504.10984,Seeing like a Cephalopod: Colour Vision with a Monochrome Event Camera,http://arxiv.org/abs/2504.10984v2,2025-04-15 08:47:11+00:00
+14,2503.19916,EventFly: Event Camera Perception from Ground to the Sky,http://arxiv.org/abs/2503.19916v1,2025-03-25 17:59:59+00:00
+15,2210.04625,Robustness Certification of Visual Perception Models via Camera Motion Smoothing,http://arxiv.org/abs/2210.04625v2,2022-10-04 15:31:57+00:00
+16,2106.04148,RECOWNs: Probabilistic Circuits for Trustworthy Time Series Forecasting,http://arxiv.org/abs/2106.04148v2,2021-06-08 07:32:12+00:00
+17,1906.08850,Implicitly Adaptive Importance Sampling,http://arxiv.org/abs/1906.08850v2,2019-06-20 21:16:35+00:00
+18,1310.2320,An Event Structure Model for Probabilistic Concurrent Kleene Algebra,http://arxiv.org/abs/1310.2320v1,2013-10-09 01:10:38+00:00
+19,2212.03239,Perspective Fields for Single Image Camera Calibration,http://arxiv.org/abs/2212.03239v2,2022-12-06 18:59:50+00:00
+20,1806.11037,"Using machine learning to parameterize moist convection: potential for modeling of climate, climate change and extreme events",http://arxiv.org/abs/1806.11037v2,2018-06-28 15:30:48+00:00
+21,2303.03575,Adaptive Importance Sampling and Quasi-Monte Carlo Methods for 6G URLLC Systems,http://arxiv.org/abs/2303.03575v1,2023-03-07 01:02:03+00:00
+22,1602.04656,Dividend maximization in a hidden Markov switching model,http://arxiv.org/abs/1602.04656v1,2016-02-15 12:47:32+00:00
+23,2405.17769,Microsaccade-inspired Event Camera for Robotics,http://arxiv.org/abs/2405.17769v1,2024-05-28 02:49:46+00:00
+24,2010.15727,Amortized Probabilistic Detection of Communities in Graphs,http://arxiv.org/abs/2010.15727v4,2020-10-29 16:18:48+00:00
+25,2011.02867,The probabilistic world,http://arxiv.org/abs/2011.02867v3,2020-11-04 14:05:31+00:00
+26,1603.07704,Probabilistic Reasoning via Deep Learning: Neural Association Models,http://arxiv.org/abs/1603.07704v2,2016-03-24 18:54:18+00:00
+27,1710.09323,Recursion Aware Modeling and Discovery For Hierarchical Software Event Log Analysis (Extended),http://arxiv.org/abs/1710.09323v1,2017-10-17 08:56:50+00:00

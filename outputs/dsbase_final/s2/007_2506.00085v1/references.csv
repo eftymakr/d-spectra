@@ -1,0 +1,22 @@
+arxiv_id,title,url,date,category,cited_in_text
+2107.04071,A Triangle Inequality for Cosine Similarity,http://arxiv.org/abs/2107.04071v1,2021-07-08 19:13:34+00:00,Cosine Similarity in Multi-Modal Alignment,True
+2309.01446,Open Sesame! Universal Black Box Jailbreaking of Large Language Models,http://arxiv.org/abs/2309.01446v4,2023-09-04 08:54:20+00:00,Adversarial Robustness in Alignment Techniques,True
+2505.03532,Joint Generalized Cosine Similarity: A Novel Method for N-Modal Semantic Alignment Based on Contrastive Learning,http://arxiv.org/abs/2505.03532v1,2025-05-06 13:41:31+00:00,Joint Generalized Cosine Similarity (JGCS),True
+2403.09832,Scaling Behavior of Machine Translation with Large Language Models under Prompt Injection Attacks,http://arxiv.org/abs/2403.09832v1,2024-03-14 19:39:10+00:00,Adversarial Robustness in Alignment Techniques,True
+2407.07530,How Aligned are Different Alignment Metrics?,http://arxiv.org/abs/2407.07530v1,2024-07-10 10:36:11+00:00,Cosine Similarity in Multi-Modal Alignment,True
+2310.00905,All Languages Matter: On the Multilingual Safety of Large Language Models,http://arxiv.org/abs/2310.00905v2,2023-10-02 05:23:34+00:00,Weakly Aligned Model Handling,True
+2310.13994,On the distribution of cosine similarity with application to biology,http://arxiv.org/abs/2310.13994v1,2023-10-21 12:41:39+00:00,Cosine Similarity in Multi-Modal Alignment,True
+2403.05440,Is Cosine-Similarity of Embeddings Really About Similarity?,http://arxiv.org/abs/2403.05440v1,2024-03-08 16:48:20+00:00,Cosine Similarity in Multi-Modal Alignment,True
+2412.11937,Precise Length Control in Large Language Models,http://arxiv.org/abs/2412.11937v1,2024-12-16 16:22:27+00:00,Alignment Loss Functions and Training Techniques,True
+2312.12141,Neuron-Level Knowledge Attribution in Large Language Models,http://arxiv.org/abs/2312.12141v4,2023-12-19 13:23:18+00:00,Weakly Aligned Model Handling,True
+2502.02233,Variance-Adjusted Cosine Distance as Similarity Metric,http://arxiv.org/abs/2502.02233v1,2025-02-04 11:20:57+00:00,Cosine Similarity in Multi-Modal Alignment,True
+2311.18495,Improving Adversarial Transferability via Model Alignment,http://arxiv.org/abs/2311.18495v2,2023-11-30 12:15:49+00:00,Adversarial Robustness in Alignment Techniques,True
+2312.03893,Deliberative Technology for Alignment,http://arxiv.org/abs/2312.03893v1,2023-12-06 20:34:32+00:00,Semantic Alignment with Human Judgments,True
+2309.02144,Making Large Language Models Better Reasoners with Alignment,http://arxiv.org/abs/2309.02144v1,2023-09-05 11:32:48+00:00,Alignment Loss Functions and Training Techniques,True
+2305.14982,LAraBench: Benchmarking Arabic AI with Large Language Models,http://arxiv.org/abs/2305.14982v2,2023-05-24 10:16:16+00:00,Weakly Aligned Model Handling,True
+1412.2200,"Response to ""Comment on ""Ultra-low-energy non-volatile straintronic computing using single multiferroic composites"""" [Appl. Phys. Lett. 103, 173110 (2013)]",http://arxiv.org/abs/1412.2200v2,2014-12-06 06:15:46+00:00,Weakly Aligned Model Handling,False
+1802.06043,"Flawed Waveform Design of Augusto Aubry, Antonio DeMaio et al",http://arxiv.org/abs/1802.06043v2,2018-02-16 17:34:38+00:00,Adversarial Robustness in Alignment Techniques,False
+1412.8244,"Comment on ""An error-resilient non-volatile magneto-elastic universal logic gate with ultralow energy-delay product"" [Sci. Rep. 4, 7553 (2014)]",http://arxiv.org/abs/1412.8244v2,2014-12-29 02:08:14+00:00,Weakly Aligned Model Handling,False
+2312.05434,Beneath the Surface: Unveiling Harmful Memes with Multimodal Reasoning Distilled from Large Language Models,http://arxiv.org/abs/2312.05434v1,2023-12-09 01:59:11+00:00,Cosine Similarity in Multi-Modal Alignment,False
+1301.5273,Using Periodicity of Nucleotide Sequences,http://arxiv.org/abs/1301.5273v2,2013-01-20 02:02:30+00:00,Adversarial Robustness in Alignment Techniques,False
+2303.00551,Optimal Placement of Electric Vehicle Charging Stations in Populated Regions of Tehran for Various Demands Distribution,http://arxiv.org/abs/2303.00551v2,2023-03-01 14:50:30+00:00,Weakly Aligned Model Handling,False

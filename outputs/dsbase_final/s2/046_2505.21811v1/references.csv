@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2012.00485,Mixed Information Flow for Cross-domain Sequential Recommendations,http://arxiv.org/abs/2012.00485v3,2020-12-01 13:45:26+00:00,Multi-Domain Knowledge Transfer,True
+2108.11333,Lightweight Self-Attentive Sequential Recommendation,http://arxiv.org/abs/2108.11333v1,2021-08-25 16:46:47+00:00,Computational Efficiency and Memory Optimization,True
+2408.08209,Modeling Domain and Feedback Transitions for Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2408.08209v2,2024-08-15 15:18:55+00:00,Graph-Based Models for Sequential Data,True
+2410.13588,Cross-Domain Sequential Recommendation via Neural Process,http://arxiv.org/abs/2410.13588v1,2024-10-17 14:22:57+00:00,Cross-Domain Attention Score Optimization,True
+2206.08050,Time Interval-enhanced Graph Neural Network for Shared-account Cross-domain Sequential Recommendation,http://arxiv.org/abs/2206.08050v1,2022-06-16 10:06:01+00:00,Graph-Based Models for Sequential Data,True
+1810.04650,Multi-Task Learning as Multi-Objective Optimization,http://arxiv.org/abs/1810.04650v2,2018-10-10 17:18:09+00:00,Computational Efficiency and Memory Optimization,True
+2211.01297,Self-Attentive Sequential Recommendation with Cheap Causal Convolutions,http://arxiv.org/abs/2211.01297v4,2022-11-02 17:19:45+00:00,Efficient Attention Mechanism Design,True
+2304.03891,Contrastive Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2304.03891v1,2023-04-08 02:19:40+00:00,Graph-Based Models for Sequential Data,True
+1910.02448,Parallel Split-Join Networks for Shared-account Cross-domain Sequential Recommendations,http://arxiv.org/abs/1910.02448v4,2019-10-06 13:35:31+00:00,Multi-Domain Knowledge Transfer,True
+2305.19798,Primal-Attention: Self-attention through Asymmetric Kernel SVD in Primal Representation,http://arxiv.org/abs/2305.19798v2,2023-05-31 12:38:24+00:00,Self-Attention Mechanism Enhancements,True
+2009.04695,Momentum-based Gradient Methods in Multi-Objective Recommendation,http://arxiv.org/abs/2009.04695v3,2020-09-10 07:12:21+00:00,Cross-Domain Attention Score Optimization,True
+2504.15085,Cognitive-Inspired Hierarchical Attention Fusion With Visual and Textual for Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2504.15085v5,2025-04-21 13:18:54+00:00,Temporal Attention and User Preference Modeling,True
+2310.04633,Unbiased and Robust: External Attention-enhanced Graph Contrastive Learning for Cross-domain Sequential Recommendation,http://arxiv.org/abs/2310.04633v3,2023-10-07 01:00:40+00:00,Graph-Based Models for Sequential Data,True
+2209.10163,DDGHM: Dual Dynamic Graph with Hybrid Metric Training for Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2209.10163v1,2022-09-21 07:53:06+00:00,Graph-Based Models for Sequential Data,True
+2502.15694,Image Fusion for Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2502.15694v2,2024-12-31 02:44:38+00:00,Domain-Specific Feature Utilization,True
+2311.04590,Rethinking Cross-Domain Sequential Recommendation under Open-World Assumptions,http://arxiv.org/abs/2311.04590v6,2023-11-08 10:44:20+00:00,Multi-Domain Knowledge Transfer,True
+2312.10325,An Attentive Inductive Bias for Sequential Recommendation beyond the Self-Attention,http://arxiv.org/abs/2312.10325v2,2023-12-16 05:23:08+00:00,Self-Attention Mechanism Enhancements,True
+2504.20859,X-Cross: Dynamic Integration of Language Models for Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2504.20859v1,2025-04-29 15:33:20+00:00,Multi-Domain Knowledge Transfer,True
+2302.03221,Towards Lightweight Cross-domain Sequential Recommendation via External Attention-enhanced Graph Convolution Network,http://arxiv.org/abs/2302.03221v1,2023-02-07 03:06:29+00:00,Graph-Based Models for Sequential Data,True
+2210.10309,Multi-Objective Recommender Systems: Survey and Challenges,http://arxiv.org/abs/2210.10309v1,2022-10-19 05:51:54+00:00,Cross-Domain Attention Score Optimization,True
+2212.04120,Denoising Self-attentive Sequential Recommendation,http://arxiv.org/abs/2212.04120v1,2022-12-08 07:35:52+00:00,Self-Attention Mechanism Enhancements,True
+2204.02744,Universal Representations: A Unified Look at Multiple Task and Domain Learning,http://arxiv.org/abs/2204.02744v2,2022-04-06 11:40:01+00:00,Multi-Domain Knowledge Transfer,False
+2304.04218,Automated Prompting for Non-overlapping Cross-domain Sequential Recommendation,http://arxiv.org/abs/2304.04218v1,2023-04-09 11:34:54+00:00,Cross-Domain Attention Score Optimization,False
+2311.08272,Mixed Attention Network for Cross-domain Sequential Recommendation,http://arxiv.org/abs/2311.08272v1,2023-11-14 16:07:16+00:00,Multi-Domain Knowledge Transfer,False
+2210.00973,NCVX: A General-Purpose Optimization Solver for Constrained Machine and Deep Learning,http://arxiv.org/abs/2210.00973v2,2022-10-03 14:41:26+00:00,Computational Efficiency and Memory Optimization,False
+2401.15369,Privacy-Preserving Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2401.15369v1,2024-01-27 10:14:21+00:00,Plug-and-Play Module Implementation,False
+2409.07367,Enhancing Sequential Music Recommendation with Negative Feedback-informed Contrastive Learning,http://arxiv.org/abs/2409.07367v1,2024-09-11 15:56:05+00:00,Temporal Attention and User Preference Modeling,False
+2409.08066,Self-Supervised Learning of Iterative Solvers for Constrained Optimization,http://arxiv.org/abs/2409.08066v3,2024-09-12 14:17:23+00:00,Computational Efficiency and Memory Optimization,False
+2204.04986,Multi-Objective Yield Optimization for Electrical Machines using Machine Learning,http://arxiv.org/abs/2204.04986v1,2022-04-11 09:59:20+00:00,Computational Efficiency and Memory Optimization,False
+2210.12765,Multi-Objective GFlowNets,http://arxiv.org/abs/2210.12765v2,2022-10-23 16:15:36+00:00,Reinforcement Learning Integration,False

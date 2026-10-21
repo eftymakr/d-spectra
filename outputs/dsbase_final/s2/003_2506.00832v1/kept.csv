@@ -1,0 +1,28 @@
+rank,arxiv_id,title,url,date
+1,2303.01086,"LiteG2P: A fast, light and high accuracy model for grapheme-to-phoneme conversion",http://arxiv.org/abs/2303.01086v1,2023-03-02 09:16:21+00:00
+2,2307.16643,Improving grapheme-to-phoneme conversion by learning pronunciations from speech recordings,http://arxiv.org/abs/2307.16643v1,2023-07-31 13:25:38+00:00
+3,2308.08442,Mitigating the Exposure Bias in Sentence-Level Grapheme-to-Phoneme (G2P) Transduction,http://arxiv.org/abs/2308.08442v1,2023-08-16 15:49:36+00:00
+4,2411.07563,Improving Grapheme-to-Phoneme Conversion through In-Context Knowledge Retrieval with Large Language Models,http://arxiv.org/abs/2411.07563v1,2024-11-12 05:38:43+00:00
+5,2004.03136,g2pM: A Neural Grapheme-to-Phoneme Conversion Package for Mandarin Chinese Based on a New Open Benchmark Dataset,http://arxiv.org/abs/2004.03136v5,2020-04-07 05:44:58+00:00
+6,2110.02854,Prosody-TTS: An end-to-end speech synthesis system with prosody control,http://arxiv.org/abs/2110.02854v1,2021-10-06 15:29:35+00:00
+7,2202.07200,Unsupervised word-level prosody tagging for controllable speech synthesis,http://arxiv.org/abs/2202.07200v2,2022-02-15 05:28:23+00:00
+8,2412.03388,DiffStyleTTS: Diffusion-based Hierarchical Prosody Modeling for Text-to-Speech with Diverse and Controllable Styles,http://arxiv.org/abs/2412.03388v1,2024-12-04 15:17:25+00:00
+9,2303.00171,DTW-SiameseNet: Dynamic Time Warped Siamese Network for Mispronunciation Detection and Correction,http://arxiv.org/abs/2303.00171v1,2023-03-01 01:53:11+00:00
+10,2401.10465,Data-driven grapheme-to-phoneme representations for a lexicon-free text-to-speech,http://arxiv.org/abs/2401.10465v1,2024-01-19 03:37:27+00:00
+11,2303.07726,Good Neighbors Are All You Need for Chinese Grapheme-to-Phoneme Conversion,http://arxiv.org/abs/2303.07726v1,2023-03-14 09:15:51+00:00
+12,2410.24019,Speech is More Than Words: Do Speech-to-Text Translation Systems Leverage Prosody?,http://arxiv.org/abs/2410.24019v1,2024-10-31 15:20:50+00:00
+13,2004.06338,Transformer based Grapheme-to-Phoneme Conversion,http://arxiv.org/abs/2004.06338v2,2020-04-14 07:48:15+00:00
+14,2412.09102,PolyIPA -- Multilingual Phoneme-to-Grapheme Conversion Model,http://arxiv.org/abs/2412.09102v1,2024-12-12 09:29:59+00:00
+15,2108.05517,Masked Acoustic Unit for Mispronunciation Detection and Correction,http://arxiv.org/abs/2108.05517v2,2021-08-12 03:44:27+00:00
+16,2505.06599,Bridging the Gap: An Intermediate Language for Enhanced and Cost-Effective Grapheme-to-Phoneme Conversion with Homographs with Multiple Pronunciations Disambiguation,http://arxiv.org/abs/2505.06599v1,2025-05-10 11:10:48+00:00
+17,2009.01475,Voice Conversion by Cascading Automatic Speech Recognition and Text-to-Speech Synthesis with Prosody Transfer,http://arxiv.org/abs/2009.01475v1,2020-09-03 06:31:34+00:00
+18,1506.00196,Sequence-to-Sequence Neural Net Models for Grapheme-to-Phoneme Conversion,http://arxiv.org/abs/1506.00196v3,2015-05-31 05:14:06+00:00
+19,2503.13407,Kernel-based error bounds of bilinear Koopman surrogate models for nonlinear data-driven control,http://arxiv.org/abs/2503.13407v4,2025-03-17 17:38:19+00:00
+20,,A Finite State and Data-Oriented Method for Grapheme to Phoneme Conversion,http://arxiv.org/abs/cs/0003074v1,2000-03-23 11:29:15+00:00
+21,1807.03475,On Controller Design for Systems on Manifolds in Euclidean Space,http://arxiv.org/abs/1807.03475v1,2018-07-10 04:18:41+00:00
+22,2303.17963,Learning-Based Optimal Control with Performance Guarantees for Unknown Systems with Latent States,http://arxiv.org/abs/2303.17963v4,2023-03-31 11:06:09+00:00
+23,2503.19228,Bridging the Sim-to-real Gap: A Control Framework for Imitation Learning of Model Predictive Control,http://arxiv.org/abs/2503.19228v4,2025-03-25 00:30:08+00:00
+24,2011.11355,Data-Driven Control of Nonlinear Systems: Beyond Polynomial Dynamics,http://arxiv.org/abs/2011.11355v3,2020-11-23 12:14:28+00:00
+25,0912.2881,Representing human and machine dictionaries in Markup languages,http://arxiv.org/abs/0912.2881v2,2009-12-15 13:30:14+00:00
+26,1507.07190,Sampling-based Learning Control for Quantum Systems with Uncertainties,http://arxiv.org/abs/1507.07190v1,2015-07-26 11:35:07+00:00
+27,2010.00268,Encrypted control for networked systems -- An illustrative introduction and current challenges,http://arxiv.org/abs/2010.00268v1,2020-10-01 09:19:30+00:00

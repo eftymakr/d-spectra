@@ -1,0 +1,25 @@
+arxiv_id,title,url,date,category,cited_in_text
+2503.06882,Maximum Inner Product is Query-Scaled Nearest Neighbor,http://arxiv.org/abs/2503.06882v2,2025-03-10 03:17:13+00:00,Graph-based MIPS Methods,True
+1812.06360,A Bandit Approach to Maximum Inner Product Search,http://arxiv.org/abs/1812.06360v1,2018-12-15 21:33:56+00:00,IP-based MIPS Approaches,False
+1706.01449,To Index or Not to Index: Optimizing Exact Maximum Inner Product Search,http://arxiv.org/abs/1706.01449v3,2017-06-05 17:56:43+00:00,IP-based MIPS Approaches,False
+1509.01469,Quantization based Fast Inner Product Search,http://arxiv.org/abs/1509.01469v1,2015-09-04 14:43:11+00:00,IP-based MIPS Approaches,True
+2402.13858,Diversity-Aware $k$-Maximum Inner Product Search Revisited,http://arxiv.org/abs/2402.13858v1,2024-02-21 15:09:51+00:00,IP-based MIPS Approaches,False
+2212.07551,Faster Maximum Inner Product Search in High Dimensions,http://arxiv.org/abs/2212.07551v3,2022-12-14 23:46:23+00:00,Algorithmic Complexity Analysis,True
+1610.03317,A Greedy Approach for Budgeted Maximum Inner Product Search,http://arxiv.org/abs/1610.03317v1,2016-10-11 13:10:48+00:00,IP-based MIPS Approaches,False
+2012.11098,Sublinear Maximum Inner Product Search using Concomitants of Extreme Order Statistics,http://arxiv.org/abs/2012.11098v2,2020-12-21 03:24:22+00:00,Algorithmic Complexity Analysis,False
+2405.12207,Optimistic Query Routing in Clustering-based Approximate Maximum Inner Product Search,http://arxiv.org/abs/2405.12207v4,2024-05-20 17:47:18+00:00,Clustering-based MIPS Methods,False
+1909.13459,Understanding and Improving Proximity Graph based Maximum Inner Product Search,http://arxiv.org/abs/1909.13459v2,2019-09-30 05:12:49+00:00,Graph-based MIPS Methods,True
+1410.5410,Improved Asymmetric Locality Sensitive Hashing (ALSH) for Maximum Inner Product Search (MIPS),http://arxiv.org/abs/1410.5410v2,2014-10-20 19:54:58+00:00,Hashing Techniques for MIPS,True
+1908.08656,Revisiting Wedge Sampling for Budgeted Maximum Inner Product Search,http://arxiv.org/abs/1908.08656v2,2019-08-23 04:05:25+00:00,IP-based MIPS Approaches,True
+2110.07131,Reverse Maximum Inner Product Search: How to efficiently find users who would like to buy my item?,http://arxiv.org/abs/2110.07131v1,2021-10-14 03:24:47+00:00,IP-based MIPS Approaches,False
+1507.05910,Clustering is Efficient for Approximate Maximum Inner Product Search,http://arxiv.org/abs/1507.05910v3,2015-07-21 16:53:12+00:00,Clustering-based MIPS Methods,True
+1809.08782,Norm-Ranging LSH for Maximum Inner Product Search,http://arxiv.org/abs/1809.08782v2,2018-09-24 07:20:45+00:00,Hashing Techniques for MIPS,True
+2309.09013,Bridging Dense and Sparse Maximum Inner Product Search,http://arxiv.org/abs/2309.09013v1,2023-09-16 14:52:28+00:00,Clustering-based MIPS Methods,False
+2211.12751,SAH: Shifting-aware Asymmetric Hashing for Reverse $k$-Maximum Inner Product Search,http://arxiv.org/abs/2211.12751v1,2022-11-23 07:26:41+00:00,Hashing Techniques for MIPS,True
+2104.04406,ProMIPS: Efficient High-Dimensional c-Approximate Maximum Inner Product Search with a Lightweight Index,http://arxiv.org/abs/2104.04406v1,2021-04-09 14:55:19+00:00,IP-based MIPS Approaches,False
+1405.5869,Asymmetric LSH (ALSH) for Sublinear Time Maximum Inner Product Search (MIPS),http://arxiv.org/abs/1405.5869v1,2014-05-22 19:42:57+00:00,Hashing Techniques for MIPS,True
+,Weak metrics on Euclidean domains,http://arxiv.org/abs/math/0609236v1,2006-09-08 13:28:51+00:00,Euclidean-based MIPS Approaches,False
+2407.03030,An isometric extensor of metrics,http://arxiv.org/abs/2407.03030v4,2024-07-03 11:48:45+00:00,Metric Integration Strategies,False
+1506.01749,Metric Dimension Parameterized by Max Leaf Number,http://arxiv.org/abs/1506.01749v1,2015-06-04 23:23:52+00:00,Algorithmic Complexity Analysis,False
+1702.00740,New characterizations of Ricci curvature on RCD metric measure spaces,http://arxiv.org/abs/1702.00740v2,2017-02-02 16:33:56+00:00,Metric Integration Strategies,False
+2006.07954,An efficient algorithm for three-component key index construction,http://arxiv.org/abs/2006.07954v1,2020-06-14 16:52:07+00:00,Parameter Tuning Indicators,True
