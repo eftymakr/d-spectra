@@ -1,6 +1,6 @@
 # D-SPECTRA
 
-Direction-aware spectral evidence acquisition for deep research agents. Course project by Eftychia Makri (em2388) and Mateo Bastidas (mib37).
+Direction-aware spectral evidence acquisition for deep research agents. 
 
 D-SPECTRA chooses which papers a deep-research agent gives its writer LLM. It builds a directed citation graph around the query, fits a directed version of [SPECTRA](https://arxiv.org/abs/2605.11142), and picks papers that cover the graph's spectral modes, not just the most relevant ones.
 
