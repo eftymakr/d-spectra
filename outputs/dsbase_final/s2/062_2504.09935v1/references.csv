@@ -1,0 +1,14 @@
+arxiv_id,title,url,date,category,cited_in_text
+2306.12756,On the Robustness of Generative Retrieval Models: An Out-of-Distribution Perspective,http://arxiv.org/abs/2306.12756v1,2023-06-22 09:18:52+00:00,Generalization and Out-of-Distribution Robustness,True
+2408.02152,Generative Retrieval with Few-shot Indexing,http://arxiv.org/abs/2408.02152v3,2024-08-04 22:00:34+00:00,Recent Advances in Generative Retrieval Models,True
+2210.02068,Nonparametric Decoding for Generative Retrieval,http://arxiv.org/abs/2210.02068v3,2022-10-05 07:42:54+00:00,Recent Advances in Generative Retrieval Models,True
+2504.05181,Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval,http://arxiv.org/abs/2504.05181v2,2025-04-07 15:27:37+00:00,Document Relevance Optimization,True
+2404.08137,Generative Information Retrieval Evaluation,http://arxiv.org/abs/2404.08137v3,2024-04-11 21:48:54+00:00,Evaluation and Benchmarking Methods,True
+1807.05631,Joint Modeling and Optimization of Search and Recommendation,http://arxiv.org/abs/1807.05631v1,2018-07-15 23:34:54+00:00,Recent Advances in Generative Retrieval Models,True
+2503.21098,Alleviating LLM-based Generative Retrieval Hallucination in Alipay Search,http://arxiv.org/abs/2503.21098v3,2025-03-27 02:36:48+00:00,Document Relevance Optimization,True
+2301.05508,Do the Findings of Document and Passage Retrieval Generalize to the Retrieval of Responses for Dialogues?,http://arxiv.org/abs/2301.05508v1,2023-01-13 12:18:43+00:00,Generalization and Out-of-Distribution Robustness,True
+2305.03881,Fairness in Image Search: A Study of Occupational Stereotyping in Image Retrieval and its Debiasing,http://arxiv.org/abs/2305.03881v2,2023-05-06 00:24:44+00:00,Evaluation and Benchmarking Methods,True
+2210.03116,Content-Based Search for Deep Generative Models,http://arxiv.org/abs/2210.03116v4,2022-10-06 17:59:51+00:00,Recent Advances in Generative Retrieval Models,True
+2411.00744,CARROT: A Learned Cost-Constrained Retrieval Optimization System for RAG,http://arxiv.org/abs/2411.00744v2,2024-11-01 17:11:16+00:00,Cost-Constrained Retrieval Systems,True
+1806.02734,Spectral lower bounds for the orthogonal and projective ranks of a graph,http://arxiv.org/abs/1806.02734v3,2018-06-07 15:40:14+00:00,Theoretical Foundations of Generative Retrieval,True
+2302.06869,Concentration Bounds for Discrete Distribution Estimation in KL Divergence,http://arxiv.org/abs/2302.06869v2,2023-02-14 07:17:19+00:00,Theoretical Foundations of Generative Retrieval,False

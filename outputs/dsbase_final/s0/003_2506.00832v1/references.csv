@@ -1,10 +1,31 @@
 arxiv_id,title,url,date,category,cited_in_text
-2110.02952,Hierarchical prosody modeling and control in non-autoregressive parallel neural TTS,http://arxiv.org/abs/2110.02952v2,2021-10-06 17:58:42+00:00,Non-Autoregressive TTS Models,True
-2106.04312,Speech BERT Embedding For Improving Prosody in Neural TTS,http://arxiv.org/abs/2106.04312v3,2021-06-08 13:23:18+00:00,Prosody Control in TTS Systems,True
-2206.14643,Simple and Effective Multi-sentence TTS with Expressive and Coherent Prosody,http://arxiv.org/abs/2206.14643v1,2022-06-29 13:37:03+00:00,Context-Aware Prosody Modeling,True
-2110.02854,Prosody-TTS: An end-to-end speech synthesis system with prosody control,http://arxiv.org/abs/2110.02854v1,2021-10-06 15:29:35+00:00,Prosody Control in TTS Systems,True
-1804.09543,The Future of Prosody: It's about Time,http://arxiv.org/abs/1804.09543v4,2018-04-23 20:54:43+00:00,Context-Aware Prosody Modeling,True
-2206.13443,CopyCat2: A Single Model for Multi-Speaker TTS and Many-to-Many Fine-Grained Prosody Transfer,http://arxiv.org/abs/2206.13443v1,2022-06-27 16:48:23+00:00,Context-Aware Prosody Modeling,True
-2403.06640,Passive iFIR Filters for Data-Driven Control,http://arxiv.org/abs/2403.06640v2,2024-03-11 11:59:24+00:00,Post-Hoc Model Manipulation,True
-2211.13533,Prosody-controllable spontaneous TTS with neural HMMs,http://arxiv.org/abs/2211.13533v2,2022-11-24 11:06:11+00:00,Prosody Control in TTS Systems,True
-1105.3788,A Control-Oriented Notion of Finite State Approximation,http://arxiv.org/abs/1105.3788v3,2011-05-19 04:55:00+00:00,Post-Hoc Model Manipulation,True
+2408.06827,PRESENT: Zero-Shot Text-to-Prosody Control,http://arxiv.org/abs/2408.06827v1,2024-08-13 11:39:07+00:00,Prosody Control in TTS,True
+2202.07816,ProsoSpeech: Enhancing Prosody With Quantized Vector Pre-training in Text-to-Speech,http://arxiv.org/abs/2202.07816v1,2022-02-16 01:42:32+00:00,Neural Prosody Modeling,True
+2102.08328,Context-Aware Prosody Correction for Text-Based Speech Editing,http://arxiv.org/abs/2102.08328v1,2021-02-16 18:16:30+00:00,Prosody Transfer and Alignment,True
+2110.02952,Hierarchical prosody modeling and control in non-autoregressive parallel neural TTS,http://arxiv.org/abs/2110.02952v2,2021-10-06 17:58:42+00:00,Prosody Control in TTS,True
+2008.03388,Controllable Neural Prosody Synthesis,http://arxiv.org/abs/2008.03388v2,2020-08-07 22:11:58+00:00,Prosody Control in TTS,True
+2206.12229,Exact Prosody Cloning in Zero-Shot Multispeaker Text-to-Speech,http://arxiv.org/abs/2206.12229v2,2022-06-24 11:54:59+00:00,Prosody Transfer and Alignment,True
+1811.02122,Robust and fine-grained prosody control of end-to-end speech synthesis,http://arxiv.org/abs/1811.02122v2,2018-11-06 01:54:22+00:00,Prosody Control in TTS,True
+2110.02854,Prosody-TTS: An end-to-end speech synthesis system with prosody control,http://arxiv.org/abs/2110.02854v1,2021-10-06 15:29:35+00:00,Prosody Control in TTS,True
+2008.05656,Prosody Learning Mechanism for Speech Synthesis System Without Text Length Limit,http://arxiv.org/abs/2008.05656v1,2020-08-13 02:54:50+00:00,Neural Prosody Modeling,True
+2209.15032,Detection of Prosodic Boundaries in Speech Using Wav2Vec 2.0,http://arxiv.org/abs/2209.15032v1,2022-09-29 18:12:26+00:00,Speech BERT and Prosody Extraction,True
+2108.02271,Daft-Exprt: Cross-Speaker Prosody Transfer on Any Text for Expressive Speech Synthesis,http://arxiv.org/abs/2108.02271v2,2021-08-04 20:13:00+00:00,Prosody Transfer and Alignment,False
+2307.16679,Comparing normalizing flows and diffusion models for prosody and acoustic modelling in text-to-speech,http://arxiv.org/abs/2307.16679v1,2023-07-31 13:57:04+00:00,Neural Prosody Modeling,False
+2304.00714,Ensemble prosody prediction for expressive speech synthesis,http://arxiv.org/abs/2304.00714v1,2023-04-03 04:21:04+00:00,Neural Prosody Modeling,False
+2011.06465,Hierarchical Prosody Modeling for Non-Autoregressive Speech Synthesis,http://arxiv.org/abs/2011.06465v3,2020-11-12 16:16:41+00:00,Non-Autoregressive TTS Architectures,False
+2003.06686,Perception of prosodic variation for speech synthesis using an unsupervised discrete representation of F0,http://arxiv.org/abs/2003.06686v1,2020-03-14 19:17:42+00:00,Prosody Control in TTS,False
+2307.16549,DiffProsody: Diffusion-based Latent Prosody Generation for Expressive Speech Synthesis with Prosody Conditional Adversarial Training,http://arxiv.org/abs/2307.16549v1,2023-07-31 10:28:45+00:00,Neural Prosody Modeling,False
+2202.07200,Unsupervised word-level prosody tagging for controllable speech synthesis,http://arxiv.org/abs/2202.07200v2,2022-02-15 05:28:23+00:00,Prosody Control in TTS,False
+1907.02479,Fine-grained robust prosody transfer for single-speaker neural text-to-speech,http://arxiv.org/abs/1907.02479v1,2019-07-04 16:20:42+00:00,Prosody Transfer and Alignment,False
+2206.07956,Automatic Prosody Annotation with Pre-Trained Text-Speech Model,http://arxiv.org/abs/2206.07956v1,2022-06-16 06:54:16+00:00,Speech BERT and Prosody Extraction,False
+2211.02336,Improving Speech Prosody of Audiobook Text-to-Speech Synthesis with Acoustic and Textual Contexts,http://arxiv.org/abs/2211.02336v1,2022-11-04 09:23:02+00:00,Prosody Control in TTS,False
+2412.08283,A Preliminary Analysis of Automatic Word and Syllable Prominence Detection in Non-Native Speech With Text-to-Speech Prosody Embeddings,http://arxiv.org/abs/2412.08283v1,2024-12-11 10:58:14+00:00,Speech BERT and Prosody Extraction,False
+1911.09645,Prosody Transfer in Neural Text to Speech Using Global Pitch and Loudness Features,http://arxiv.org/abs/1911.09645v2,2019-11-21 18:04:47+00:00,Prosody Transfer and Alignment,False
+2311.17876,Enhancing Post-Hoc Explanation Benchmark Reliability for Image Classification,http://arxiv.org/abs/2311.17876v1,2023-11-29 18:21:24+00:00,Post-Hoc TTS Modifications,False
+1804.09543,The Future of Prosody: It's about Time,http://arxiv.org/abs/1804.09543v4,2018-04-23 20:54:43+00:00,Neural Prosody Modeling,False
+2111.04730,Emotional Prosody Control for Speech Generation,http://arxiv.org/abs/2111.04730v1,2021-11-07 08:52:04+00:00,Prosody Control in TTS,False
+2107.02527,"Location, Location: Enhancing the Evaluation of Text-to-Speech Synthesis Using the Rapid Prosody Transcription Paradigm",http://arxiv.org/abs/2107.02527v1,2021-07-06 10:36:40+00:00,Prosody Control in TTS,False
+2009.01475,Voice Conversion by Cascading Automatic Speech Recognition and Text-to-Speech Synthesis with Prosody Transfer,http://arxiv.org/abs/2009.01475v1,2020-09-03 06:31:34+00:00,Prosody Transfer and Alignment,False
+1906.04774,Issues with post-hoc counterfactual explanations: a discussion,http://arxiv.org/abs/1906.04774v1,2019-06-11 19:04:54+00:00,Post-Hoc TTS Modifications,False
+2306.12020,Visual-Aware Text-to-Speech,http://arxiv.org/abs/2306.12020v1,2023-06-21 05:11:39+00:00,Prosody Control in TTS,False
+2406.03421,Post-hoc Part-prototype Networks,http://arxiv.org/abs/2406.03421v1,2024-06-05 16:16:03+00:00,Post-Hoc TTS Modifications,False

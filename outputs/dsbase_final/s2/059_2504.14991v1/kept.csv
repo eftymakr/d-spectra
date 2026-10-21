@@ -1,0 +1,31 @@
+rank,arxiv_id,title,url,date
+1,2404.17826,A Taxation Perspective for Fair Re-ranking,http://arxiv.org/abs/2404.17826v1,2024-04-27 08:21:29+00:00
+2,1809.02921,Personalizing Fairness-aware Re-ranking,http://arxiv.org/abs/1809.02921v2,2018-09-09 04:51:51+00:00
+3,2005.12974,Opportunistic Multi-aspect Fairness through Personalized Re-ranking,http://arxiv.org/abs/2005.12974v1,2020-05-21 04:25:20+00:00
+4,1809.03577,Using Image Fairness Representations in Diversity-Based Re-ranking for Recommendations,http://arxiv.org/abs/1809.03577v1,2018-09-10 20:18:47+00:00
+5,2310.12785,A Theoretical Approach to Characterize the Accuracy-Fairness Trade-off Pareto Frontier,http://arxiv.org/abs/2310.12785v1,2023-10-19 14:35:26+00:00
+6,1910.07870,Is There a Trade-Off Between Fairness and Accuracy? A Perspective Using Mismatched Hypothesis Testing,http://arxiv.org/abs/1910.07870v2,2019-10-17 12:59:25+00:00
+7,2204.08085,CPFair: Personalized Consumer and Producer Fairness Re-ranking for Recommender Systems,http://arxiv.org/abs/2204.08085v1,2022-04-17 20:38:02+00:00
+8,2012.02972,Empirical observation of negligible fairness-accuracy trade-offs in machine learning for public policy,http://arxiv.org/abs/2012.02972v3,2020-12-05 08:10:47+00:00
+9,2004.03424,FACT: A Diagnostic for Group Fairness Trade-offs,http://arxiv.org/abs/2004.03424v3,2020-04-07 14:15:51+00:00
+10,2205.08704,Accurate Fairness: Improving Individual Fairness without Trading Accuracy,http://arxiv.org/abs/2205.08704v2,2022-05-18 03:24:16+00:00
+11,2405.16120,Guaranteeing Accuracy and Fairness under Fluctuating User Traffic: A Bankruptcy-Inspired Re-ranking Approach,http://arxiv.org/abs/2405.16120v2,2024-05-25 08:17:19+00:00
+12,2305.09319,Fairness and Diversity in Information Access Systems,http://arxiv.org/abs/2305.09319v1,2023-05-16 09:53:03+00:00
+13,2008.01132,Accuracy and Fairness Trade-offs in Machine Learning: A Stochastic Multi-Objective Approach,http://arxiv.org/abs/2008.01132v3,2020-08-03 18:51:24+00:00
+14,2310.08349,Performativity and Prospective Fairness,http://arxiv.org/abs/2310.08349v3,2023-10-12 14:18:13+00:00
+15,2405.15443,Fairness-Accuracy Trade-Offs: A Causal Perspective,http://arxiv.org/abs/2405.15443v2,2024-05-24 11:19:52+00:00
+16,2408.10002,The Fairness-Quality Trade-off in Clustering,http://arxiv.org/abs/2408.10002v1,2024-08-19 13:57:15+00:00
+17,2102.01203,Emergent Unfairness in Algorithmic Fairness-Accuracy Trade-Off Research,http://arxiv.org/abs/2102.01203v3,2021-02-01 22:02:14+00:00
+18,2501.14710,Overcoming Fairness Trade-offs via Pre-processing: A Causal Perspective,http://arxiv.org/abs/2501.14710v1,2025-01-24 18:33:18+00:00
+19,2503.07066,You Only Debias Once: Towards Flexible Accuracy-Fairness Trade-offs at Inference Time,http://arxiv.org/abs/2503.07066v1,2025-03-10 08:50:55+00:00
+20,2011.02066,University of Washington at TREC 2020 Fairness Ranking Track,http://arxiv.org/abs/2011.02066v2,2020-11-03 23:40:54+00:00
+21,2303.06660,P-MMF: Provider Max-min Fairness Re-ranking in Recommender System,http://arxiv.org/abs/2303.06660v1,2023-03-12 13:42:50+00:00
+22,2411.16965,Understanding trade-offs in classifier bias with quality-diversity optimization: an application to talent management,http://arxiv.org/abs/2411.16965v2,2024-11-25 22:14:02+00:00
+23,2201.09932,"Learning Optimal Fair Classification Trees: Trade-offs Between Interpretability, Fairness, and Accuracy",http://arxiv.org/abs/2201.09932v5,2022-01-24 19:47:10+00:00
+24,2404.19371,Fairness in AI: challenges in bridging the gap between algorithms and law,http://arxiv.org/abs/2404.19371v1,2024-04-30 08:59:00+00:00
+25,2504.14550,Regret-aware Re-ranking for Guaranteeing Two-sided Fairness and Accuracy in Recommender Systems,http://arxiv.org/abs/2504.14550v1,2025-04-20 09:43:23+00:00
+26,2109.00708,Efficient Algorithms For Fair Clustering with a New Fairness Notion,http://arxiv.org/abs/2109.00708v3,2021-09-02 04:52:49+00:00
+27,,The Cauchy Relations in Linear Elasticity Theory,http://arxiv.org/abs/cond-mat/0206175v1,2002-06-11 11:36:14+00:00
+28,2105.14930,Minimal functional bases for elasticity tensor symmetry classes,http://arxiv.org/abs/2105.14930v2,2021-05-31 12:53:34+00:00
+29,1902.09328,Sparse Elasticity Reconstruction and Clustering using Local Displacement Fields,http://arxiv.org/abs/1902.09328v1,2019-02-21 11:44:56+00:00
+30,2310.13007,A Critical Survey on Fairness Benefits of Explainable AI,http://arxiv.org/abs/2310.13007v6,2023-10-15 08:17:45+00:00

@@ -1,31 +1,29 @@
 rank,arxiv_id,title,url,date
-1,2504.09265,Mixture of Group Experts for Learning Invariant Representations,http://arxiv.org/abs/2504.09265v2,2025-04-12 15:58:02+00:00
-2,2204.09179,On the Representation Collapse of Sparse Mixture of Experts,http://arxiv.org/abs/2204.09179v3,2022-04-20 01:40:19+00:00
-3,1805.07702,Predicting drug response of tumors from integrated genomic profiles by deep neural networks,http://arxiv.org/abs/1805.07702v1,2018-05-20 04:27:09+00:00
-4,2110.05231,Multi-modal Self-supervised Pre-training for Regulatory Genome Across Cell Types,http://arxiv.org/abs/2110.05231v2,2021-10-11 12:48:44+00:00
-5,2411.11158,Leveraging genomic deep learning models for the prediction of non-coding variant effects,http://arxiv.org/abs/2411.11158v2,2024-11-17 19:15:42+00:00
-6,1605.01133,Deep Motif: Visualizing Genomic Sequence Classifications,http://arxiv.org/abs/1605.01133v2,2016-05-04 03:33:48+00:00
-7,2112.05340,Tradeoffs Between Contrastive and Supervised Learning: An Empirical Study,http://arxiv.org/abs/2112.05340v1,2021-12-10 05:19:32+00:00
-8,2405.09585,An Embarrassingly Simple Approach to Enhance Transformer Performance in Genomic Selection for Crop Breeding,http://arxiv.org/abs/2405.09585v3,2024-05-15 07:31:06+00:00
-9,2101.06480,SelfMatch: Combining Contrastive Self-Supervision and Consistency for Semi-Supervised Learning,http://arxiv.org/abs/2101.06480v1,2021-01-16 17:03:53+00:00
-10,1305.3347,featureCounts: An efficient general-purpose program for assigning sequence reads to genomic features,http://arxiv.org/abs/1305.3347v2,2013-05-15 03:00:48+00:00
-11,1401.4725,Information profiles for DNA pattern discovery,http://arxiv.org/abs/1401.4725v1,2014-01-19 19:44:07+00:00
-12,2203.06041,Embedding Earth: Self-supervised contrastive pre-training for dense land cover classification,http://arxiv.org/abs/2203.06041v1,2022-03-11 16:14:14+00:00
-13,2402.06079,DiscDiff: Latent Diffusion Model for DNA Sequence Generation,http://arxiv.org/abs/2402.06079v2,2024-02-08 22:06:55+00:00
-14,1810.12836,Learning Cross-Lingual Sentence Representations via a Multi-task Dual-Encoder Model,http://arxiv.org/abs/1810.12836v4,2018-10-30 16:18:05+00:00
-15,2208.08789,"Towards Label-efficient Automatic Diagnosis and Analysis: A Comprehensive Survey of Advanced Deep Learning-based Weakly-supervised, Semi-supervised and Self-supervised Techniques in Histopathological Image Analysis",http://arxiv.org/abs/2208.08789v2,2022-08-18 11:49:41+00:00
-16,2101.05870,From Genotype to Phenotype: polygenic prediction of complex human traits,http://arxiv.org/abs/2101.05870v1,2021-01-14 21:06:18+00:00
-17,1511.08445,Characterization of DNA methylation as a function of biological complexity via dinucleotide inter-distances,http://arxiv.org/abs/1511.08445v1,2015-11-26 16:30:39+00:00
-18,2111.04518,Bayesian profile regression for clustering analysis involving a longitudinal response and explanatory variables,http://arxiv.org/abs/2111.04518v1,2021-11-08 14:04:19+00:00
-19,1210.7091,Development of Hydrogen Bonding Magnetic Reaction-based Gene Regulation through Cyclic Electromagnetic DNA Simulation in Double-Stranded DNA,http://arxiv.org/abs/1210.7091v2,2012-10-26 10:25:03+00:00
-20,2306.15111,Self-Supervised Image Captioning with CLIP,http://arxiv.org/abs/2306.15111v2,2023-06-26 23:29:16+00:00
-21,2005.11841,"scadnano: A browser-based, scriptable tool for designing DNA nanostructures",http://arxiv.org/abs/2005.11841v3,2020-05-24 21:00:29+00:00
-22,,Multifractal analysis of DNA walks and trails,http://arxiv.org/abs/cond-mat/0209396v2,2002-09-17 14:11:36+00:00
-23,2407.19385,Multi-modal Imaging Genomics Transformer: Attentive Integration of Imaging with Genomic Biomarkers for Schizophrenia Classification,http://arxiv.org/abs/2407.19385v1,2024-07-28 03:54:08+00:00
-24,2310.11284,Self-Supervised 3D Scene Flow Estimation and Motion Prediction using Local Rigidity Prior,http://arxiv.org/abs/2310.11284v1,2023-10-17 14:06:55+00:00
-25,2201.08443,Diversifying the Genomic Data Science Research Community,http://arxiv.org/abs/2201.08443v2,2022-01-20 20:36:18+00:00
-26,2105.03431,DNA Nanotechnology Meets Nanophotonics,http://arxiv.org/abs/2105.03431v1,2021-05-10 13:32:46+00:00
-27,1806.08200,Mixtures of Experts Models,http://arxiv.org/abs/1806.08200v1,2018-06-21 12:30:12+00:00
-28,,Conformations of closed DNA,http://arxiv.org/abs/cond-mat/9903364v1,1999-03-24 18:00:27+00:00
-29,,Charge Transport in DNA-Based Devices,http://arxiv.org/abs/cond-mat/0403640v2,2004-03-25 17:47:52+00:00
-30,1910.07640,A Combined Deep Learning-Gradient Boosting Machine Framework for Fluid Intelligence Prediction,http://arxiv.org/abs/1910.07640v1,2019-10-16 22:32:13+00:00
+1,2307.05628,DNAGPT: A Generalized Pre-trained Tool for Versatile DNA Sequence Analysis Tasks,http://arxiv.org/abs/2307.05628v3,2023-07-11 06:30:43+00:00
+2,2204.02130,SemanticCAP: Chromatin Accessibility Prediction Enhanced by Features Learning from a Language Model,http://arxiv.org/abs/2204.02130v2,2022-04-05 11:47:58+00:00
+3,2405.09585,An Embarrassingly Simple Approach to Enhance Transformer Performance in Genomic Selection for Crop Breeding,http://arxiv.org/abs/2405.09585v3,2024-05-15 07:31:06+00:00
+4,2203.06041,Embedding Earth: Self-supervised contrastive pre-training for dense land cover classification,http://arxiv.org/abs/2203.06041v1,2022-03-11 16:14:14+00:00
+5,2412.14651,Dual Photonics Probing of Nano- to Submicron-Scale Structural Alterations in Human Brain Tissues or Cells and Chromatin or DNA with the Progression of Alzheimers Disease,http://arxiv.org/abs/2412.14651v1,2024-12-19 09:02:22+00:00
+6,2402.08698,AMEND: A Mixture of Experts Framework for Long-tailed Trajectory Prediction,http://arxiv.org/abs/2402.08698v2,2024-02-13 02:43:41+00:00
+7,,Intercalation and buckling instability of DNA linker within locked chromatin fiber,http://arxiv.org/abs/cond-mat/0211177v1,2002-11-09 08:50:31+00:00
+8,1607.06640,Ephemeral protein binding to DNA shapes stable nuclear bodies and chromatin domains,http://arxiv.org/abs/1607.06640v1,2016-07-22 11:51:24+00:00
+9,2412.18804,Optical detection of the spatial structural alteration in the human brain tissues and cells and DNA and chromatin due to Parkinsons disease,http://arxiv.org/abs/2412.18804v1,2024-12-25 07:05:11+00:00
+10,2407.19385,Multi-modal Imaging Genomics Transformer: Attentive Integration of Imaging with Genomic Biomarkers for Schizophrenia Classification,http://arxiv.org/abs/2407.19385v1,2024-07-28 03:54:08+00:00
+11,,Multifractal analysis of DNA walks and trails,http://arxiv.org/abs/cond-mat/0209396v2,2002-09-17 14:11:36+00:00
+12,2209.15329,SpeechLM: Enhanced Speech Pre-Training with Unpaired Textual Data,http://arxiv.org/abs/2209.15329v3,2022-09-30 09:12:10+00:00
+13,,Controlled DNA compaction within chromatin: the tail-bridging effect,http://arxiv.org/abs/q-bio/0503007v1,2005-03-02 09:57:47+00:00
+14,1210.7091,Development of Hydrogen Bonding Magnetic Reaction-based Gene Regulation through Cyclic Electromagnetic DNA Simulation in Double-Stranded DNA,http://arxiv.org/abs/1210.7091v2,2012-10-26 10:25:03+00:00
+15,2210.10599,Self-supervised Graph Masking Pre-training for Graph-to-Text Generation,http://arxiv.org/abs/2210.10599v1,2022-10-19 14:44:56+00:00
+16,2501.17557,Heuristic-Informed Mixture of Experts for Link Prediction in Multilayer Networks,http://arxiv.org/abs/2501.17557v1,2025-01-29 10:46:43+00:00
+17,2001.11314,ERNIE-GEN: An Enhanced Multi-Flow Pre-training and Fine-tuning Framework for Natural Language Generation,http://arxiv.org/abs/2001.11314v3,2020-01-26 02:54:49+00:00
+18,2201.08443,Diversifying the Genomic Data Science Research Community,http://arxiv.org/abs/2201.08443v2,2022-01-20 20:36:18+00:00
+19,2105.03431,DNA Nanotechnology Meets Nanophotonics,http://arxiv.org/abs/2105.03431v1,2021-05-10 13:32:46+00:00
+20,1605.01133,Deep Motif: Visualizing Genomic Sequence Classifications,http://arxiv.org/abs/1605.01133v2,2016-05-04 03:33:48+00:00
+21,1401.4725,Information profiles for DNA pattern discovery,http://arxiv.org/abs/1401.4725v1,2014-01-19 19:44:07+00:00
+22,1806.08200,Mixtures of Experts Models,http://arxiv.org/abs/1806.08200v1,2018-06-21 12:30:12+00:00
+23,2408.10371,Galaxy cluster profiles: A Gaussian mixture model approach to halo miscentering,http://arxiv.org/abs/2408.10371v1,2024-08-19 19:32:32+00:00
+24,2005.11841,"scadnano: A browser-based, scriptable tool for designing DNA nanostructures",http://arxiv.org/abs/2005.11841v3,2020-05-24 21:00:29+00:00
+25,,Folding DNA into nucleosome and chromatin: dynamics,http://arxiv.org/abs/physics/0108008v1,2001-08-06 17:55:47+00:00
+26,2410.14099,ST-MoE-BERT: A Spatial-Temporal Mixture-of-Experts Framework for Long-Term Cross-City Mobility Prediction,http://arxiv.org/abs/2410.14099v1,2024-10-18 00:32:18+00:00
+27,,The physics of chromatin,http://arxiv.org/abs/cond-mat/0303455v1,2003-03-21 11:04:08+00:00
+28,1004.5514,Statistical-mechanical lattice models for protein-DNA binding in chromatin,http://arxiv.org/abs/1004.5514v1,2010-04-30 12:30:29+00:00

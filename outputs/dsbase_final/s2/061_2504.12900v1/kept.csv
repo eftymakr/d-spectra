@@ -1,0 +1,23 @@
+rank,arxiv_id,title,url,date
+1,2502.00992,FCBoost-Net: A Generative Network for Synthesizing Multiple Collocated Outfits via Fashion Compatibility Boosting,http://arxiv.org/abs/2502.00992v1,2025-02-03 02:18:09+00:00
+2,2409.12150,Decoding Style: Efficient Fine-Tuning of LLMs for Image-Guided Outfit Recommendation with Preference,http://arxiv.org/abs/2409.12150v1,2024-09-18 17:15:06+00:00
+3,2504.09915,StePO-Rec: Towards Personalized Outfit Styling Assistant via Knowledge-Guided Multi-Step Reasoning,http://arxiv.org/abs/2504.09915v1,2025-04-14 06:24:56+00:00
+4,2404.18040,Fashion Recommendation: Outfit Compatibility using GNN,http://arxiv.org/abs/2404.18040v1,2024-04-28 00:57:17+00:00
+5,1906.07273,Coherent and Controllable Outfit Generation,http://arxiv.org/abs/1906.07273v2,2019-06-17 21:12:36+00:00
+6,2205.00663,An Application to Generate Style Guided Compatible Outfit,http://arxiv.org/abs/2205.00663v1,2022-05-02 05:45:05+00:00
+7,2310.11523,Group Preference Optimization: Few-Shot Alignment of Large Language Models,http://arxiv.org/abs/2310.11523v2,2023-10-17 18:41:57+00:00
+8,2407.14477,Data-Centric Human Preference with Rationales for Direct Preference Alignment,http://arxiv.org/abs/2407.14477v4,2024-07-19 17:27:52+00:00
+9,1902.08009,Dressing as a Whole: Outfit Compatibility Learning Based on Node-wise Graph Neural Networks,http://arxiv.org/abs/1902.08009v1,2019-02-21 12:50:01+00:00
+10,1907.11496,Outfit Compatibility Prediction and Diagnosis with Multi-Layered Comparison Network,http://arxiv.org/abs/1907.11496v2,2019-07-26 11:39:15+00:00
+11,2007.02388,Learning Color Compatibility in Fashion Outfits,http://arxiv.org/abs/2007.02388v1,2020-07-05 17:09:31+00:00
+12,1807.03133,Outfit Generation and Style Extraction via Bidirectional LSTM and Autoencoder,http://arxiv.org/abs/1807.03133v3,2018-06-29 18:00:03+00:00
+13,2110.06483,False Negative Distillation and Contrastive Learning for Personalized Outfit Recommendation,http://arxiv.org/abs/2110.06483v1,2021-10-13 04:11:32+00:00
+14,2203.16161,Recommendation of Compatible Outfits Conditioned on Style,http://arxiv.org/abs/2203.16161v1,2022-03-30 09:23:32+00:00
+15,1608.03016,Mining Fashion Outfit Composition Using An End-to-End Deep Learning Approach on Set Data,http://arxiv.org/abs/1608.03016v2,2016-08-10 01:11:32+00:00
+16,2304.08098,Transformer-based Graph Neural Networks for Outfit Generation,http://arxiv.org/abs/2304.08098v1,2023-04-17 09:18:45+00:00
+17,2107.12533,Toward Co-creative Dungeon Generation via Transfer Learning,http://arxiv.org/abs/2107.12533v1,2021-07-27 00:54:55+00:00
+18,2107.12524,Ensemble Learning For Mega Man Level Generation,http://arxiv.org/abs/2107.12524v1,2021-07-27 00:16:23+00:00
+19,2107.12506,TaikoNation: Patterning-focused Chart Generation for Rhythm Action Games,http://arxiv.org/abs/2107.12506v1,2021-07-26 22:55:57+00:00
+20,1809.05450,User preferences in Bayesian multi-objective optimization: the expected weighted hypervolume improvement criterion,http://arxiv.org/abs/1809.05450v1,2018-09-14 14:55:13+00:00
+21,1604.01464,Feedback Bits Allocation for Interference Minimization in Cognitive Radio Communications,http://arxiv.org/abs/1604.01464v1,2016-04-06 02:09:49+00:00
+22,1908.10548,A Global-Local Emebdding Module for Fashion Landmark Detection,http://arxiv.org/abs/1908.10548v1,2019-08-28 04:57:12+00:00
