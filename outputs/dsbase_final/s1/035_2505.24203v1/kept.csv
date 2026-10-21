@@ -1,0 +1,24 @@
+rank,arxiv_id,title,url,date
+1,2402.10433,Fusing Neural and Physical: Augment Protein Conformation Sampling with Tractable Simulations,http://arxiv.org/abs/2402.10433v2,2024-02-16 03:48:55+00:00
+2,2505.17478,ConfRover: Simultaneous Modeling of Protein Conformation and Dynamics via Autoregression,http://arxiv.org/abs/2505.17478v2,2025-05-23 05:00:15+00:00
+3,2403.14088,Protein Conformation Generation via Force-Guided SE(3) Diffusion Models,http://arxiv.org/abs/2403.14088v2,2024-03-21 02:44:08+00:00
+4,2410.18403,Structure Language Models for Protein Conformation Generation,http://arxiv.org/abs/2410.18403v2,2024-10-24 03:38:51+00:00
+5,2411.08154,Fast Sampling of Protein Conformational Dynamics,http://arxiv.org/abs/2411.08154v3,2024-11-12 20:02:43+00:00
+6,2312.03397,Generalized Contrastive Divergence: Joint Training of Energy-Based Model and Diffusion Model through Inverse Reinforcement Learning,http://arxiv.org/abs/2312.03397v1,2023-12-06 10:10:21+00:00
+7,2304.02198,EigenFold: Generative Protein Structure Prediction with Diffusion Models,http://arxiv.org/abs/2304.02198v1,2023-04-05 02:46:13+00:00
+8,1012.5916,Amino acid composition and thermal stability of protein structures: the free energy geography of the Protein Data Bank,http://arxiv.org/abs/1012.5916v2,2010-12-29 11:50:28+00:00
+9,2004.13167,Energy-based models for atomic-resolution protein conformations,http://arxiv.org/abs/2004.13167v1,2020-04-27 20:45:12+00:00
+10,2310.01768,Backdiff: a diffusion model for generalized transferable protein backmapping,http://arxiv.org/abs/2310.01768v2,2023-10-03 03:32:07+00:00
+11,1908.11739,A Continuous Effective Model of the Protein Dynamics,http://arxiv.org/abs/1908.11739v1,2019-08-30 13:48:18+00:00
+12,1409.2584,Conformational selection in protein binding and function,http://arxiv.org/abs/1409.2584v1,2014-09-09 03:36:46+00:00
+13,2311.16052,Exploring Attribute Variations in Style-based GANs using Diffusion Models,http://arxiv.org/abs/2311.16052v1,2023-11-27 18:14:03+00:00
+14,2001.01161,Using physical features of protein core packing to distinguish real proteins from decoys,http://arxiv.org/abs/2001.01161v1,2020-01-05 03:32:15+00:00
+15,2307.02175,Thermodynamics of Protein Folding,http://arxiv.org/abs/2307.02175v2,2023-07-05 10:13:10+00:00
+16,2307.11118,Diffusion Sampling with Momentum for Mitigating Divergence Artifacts,http://arxiv.org/abs/2307.11118v1,2023-07-20 14:37:30+00:00
+17,2501.00258,Optimal design of frame structures with mixed categorical and continuous design variables using the Gumbel-Softmax method,http://arxiv.org/abs/2501.00258v1,2024-12-31 03:59:24+00:00
+18,1211.6013,Online Stochastic Optimization with Multiple Objectives,http://arxiv.org/abs/1211.6013v2,2012-11-26 16:27:18+00:00
+19,2402.07211,Towards Fast Stochastic Sampling in Diffusion Generative Models,http://arxiv.org/abs/2402.07211v2,2024-02-11 14:04:13+00:00
+20,1206.3509,A Novel Approach for Protein Structure Prediction,http://arxiv.org/abs/1206.3509v1,2012-06-15 16:31:45+00:00
+21,1104.2995,Algorithm engineering for optimal alignment of protein structure distance matrices,http://arxiv.org/abs/1104.2995v1,2011-04-15 09:17:16+00:00
+22,1301.0091,On the Robust Optimal Stopping Problem,http://arxiv.org/abs/1301.0091v10,2013-01-01 14:26:49+00:00
+23,1711.10540,ISLAND: In-Silico Prediction of Proteins Binding Affinity Using Sequence Descriptors,http://arxiv.org/abs/1711.10540v2,2017-11-22 07:54:31+00:00

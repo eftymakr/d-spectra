@@ -1,0 +1,24 @@
+arxiv_id,title,url,date,category,cited_in_text
+2409.03384,Hardware Acceleration of LLMs: A comprehensive survey and comparison,http://arxiv.org/abs/2409.03384v1,2024-09-05 09:43:25+00:00,Hardware Acceleration for LLMs,True
+2502.15816,GenAI at the Edge: Comprehensive Survey on Empowering Edge Devices,http://arxiv.org/abs/2502.15816v1,2025-02-19 20:43:14+00:00,Edge Computing Platforms and Latency,True
+2110.00478,SECDA: Efficient Hardware/Software Co-Design of FPGA-based DNN Accelerators for Edge Inference,http://arxiv.org/abs/2110.00478v1,2021-10-01 15:20:29+00:00,Algorithm-Hardware Co-Design,True
+2205.15437,AMED: Automatic Mixed-Precision Quantization for Edge Devices,http://arxiv.org/abs/2205.15437v2,2022-05-30 21:23:22+00:00,Model Compression Techniques,True
+2402.12065,WKVQuant: Quantizing Weight and Key/Value Cache for Large Language Models Gains More,http://arxiv.org/abs/2402.12065v2,2024-02-19 11:33:21+00:00,Model Compression Techniques,True
+2505.03745,AccLLM: Accelerating Long-Context LLM Inference Via Algorithm-Hardware Co-Design,http://arxiv.org/abs/2505.03745v1,2025-04-07 02:52:30+00:00,Algorithm-Hardware Co-Design,True
+2408.00462,Designing Efficient LLM Accelerators for Edge Devices,http://arxiv.org/abs/2408.00462v1,2024-08-01 11:06:05+00:00,Hardware Acceleration for LLMs,True
+2408.15395,SCAN-Edge: Finding MobileNet-speed Hybrid Networks for Diverse Edge Devices via Hardware-Aware Evolutionary Search,http://arxiv.org/abs/2408.15395v1,2024-08-27 20:39:09+00:00,Edge Computing Platforms and Latency,True
+2412.12178,Activation Sparsity Opportunities for Compressing General Large Language Models,http://arxiv.org/abs/2412.12178v2,2024-12-13 02:26:54+00:00,Model Compression Techniques,True
+2402.09977,Fast Vocabulary Transfer for Language Model Compression,http://arxiv.org/abs/2402.09977v1,2024-02-15 14:37:07+00:00,Model Compression Techniques,True
+1810.12640,Neuromorphic hardware as a self-organizing computing system,http://arxiv.org/abs/1810.12640v1,2018-10-30 10:35:07+00:00,Neuromorphic Computing Systems,True
+2309.01446,Open Sesame! Universal Black Box Jailbreaking of Large Language Models,http://arxiv.org/abs/2309.01446v4,2023-09-04 08:54:20+00:00,Data Privacy and Secure Computing,True
+2309.02144,Making Large Language Models Better Reasoners with Alignment,http://arxiv.org/abs/2309.02144v1,2023-09-05 11:32:48+00:00,Low-Rank Adaptation and Knowledge Distillation,True
+2402.14800,Not All Experts are Equal: Efficient Expert Pruning and Skipping for Mixture-of-Experts Large Language Models,http://arxiv.org/abs/2402.14800v2,2024-02-22 18:56:07+00:00,Model Compression Techniques,True
+2409.15256,Behavioral Bias of Vision-Language Models: A Behavioral Finance View,http://arxiv.org/abs/2409.15256v1,2024-09-23 17:54:47+00:00,Low-Rank Adaptation and Knowledge Distillation,False
+2206.05128,Real-time Hyper-Dimensional Reconfiguration at the Edge using Hardware Accelerators,http://arxiv.org/abs/2206.05128v1,2022-06-10 14:08:41+00:00,Edge Computing Platforms and Latency,False
+2304.12244,WizardLM: Empowering large pre-trained language models to follow complex instructions,http://arxiv.org/abs/2304.12244v3,2023-04-24 16:31:06+00:00,Low-Rank Adaptation and Knowledge Distillation,False
+2109.03934,Resistive Neural Hardware Accelerators,http://arxiv.org/abs/2109.03934v1,2021-09-08 21:11:48+00:00,Neural Network-Based Hardware Design,False
+2209.07275,Phonon-blocked junction refrigerators for cryogenic quantum devices,http://arxiv.org/abs/2209.07275v1,2022-09-13 05:56:18+00:00,Energy Efficiency in Edge Computing,False
+2403.17811,Are Compressed Language Models Less Subgroup Robust?,http://arxiv.org/abs/2403.17811v1,2024-03-26 15:50:37+00:00,Low-Rank Adaptation and Knowledge Distillation,False
+2403.09676,Unmasking the Shadows of AI: Investigating Deceptive Capabilities in Large Language Models,http://arxiv.org/abs/2403.09676v1,2024-02-07 00:21:46+00:00,Data Privacy and Secure Computing,False
+2407.01505,Self-Cognition in Large Language Models: An Exploratory Study,http://arxiv.org/abs/2407.01505v1,2024-07-01 17:52:05+00:00,Low-Rank Adaptation and Knowledge Distillation,False
+2405.19266,PediatricsGPT: Large Language Models as Chinese Medical Assistants for Pediatric Applications,http://arxiv.org/abs/2405.19266v4,2024-05-29 16:59:38+00:00,Low-Rank Adaptation and Knowledge Distillation,False

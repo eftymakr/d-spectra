@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2406.02540,ViDiT-Q: Efficient and Accurate Quantization of Diffusion Transformers for Image and Video Generation,http://arxiv.org/abs/2406.02540v3,2024-06-04 17:57:10+00:00,Model Compression and Deployment Constraints,True
+2505.18663,DVD-Quant: Data-free Video Diffusion Transformers Quantization,http://arxiv.org/abs/2505.18663v4,2025-05-24 11:56:02+00:00,Efficiency and Quality Trade-offs in Quantization,True
+2502.15077,Hardware-Friendly Static Quantization Method for Video Diffusion Transformers,http://arxiv.org/abs/2502.15077v3,2025-02-20 22:29:24+00:00,Model Compression and Deployment Constraints,True
+2302.04304,Q-Diffusion: Quantizing Diffusion Models,http://arxiv.org/abs/2302.04304v3,2023-02-08 19:38:59+00:00,Quantization Techniques for Image Models,True
+2411.14172,TaQ-DiT: Time-aware Quantization for Diffusion Transformers,http://arxiv.org/abs/2411.14172v2,2024-11-21 14:34:46+00:00,Efficiency and Quality Trade-offs in Quantization,True
+1904.07846,Temporal Cycle-Consistency Learning,http://arxiv.org/abs/1904.07846v1,2019-04-16 17:49:50+00:00,Temporal Consistency in Video Generation,True
+1904.03567,Image and Video Compression with Neural Networks: A Review,http://arxiv.org/abs/1904.03567v2,2019-04-07 01:59:57+00:00,Spatiotemporal Correlation Preservation,True
+2505.02831,No Other Representation Component Is Needed: Diffusion Transformers Can Provide Representation Guidance by Themselves,http://arxiv.org/abs/2505.02831v5,2025-05-05 17:58:05+00:00,Spatiotemporal Correlation Preservation,True
+2209.07474,On the Surprising Effectiveness of Transformers in Low-Labeled Video Recognition,http://arxiv.org/abs/2209.07474v3,2022-09-15 17:12:30+00:00,Benchmarking and Evaluation Metrics,True
+2501.07563,Training-Free Motion-Guided Video Generation with Enhanced Temporal Consistency Using Motion Consistency Loss,http://arxiv.org/abs/2501.07563v1,2025-01-13 18:53:08+00:00,Temporal Consistency in Video Generation,True
+2501.05442,Progressive Growing of Video Tokenizers for Temporally Compact Latent Spaces,http://arxiv.org/abs/2501.05442v2,2025-01-09 18:55:15+00:00,Efficiency and Quality Trade-offs in Quantization,True
+2312.06640,Upscale-A-Video: Temporal-Consistent Diffusion Model for Real-World Video Super-Resolution,http://arxiv.org/abs/2312.06640v1,2023-12-11 18:54:52+00:00,Temporal Consistency in Video Generation,True
+2312.14134,Diffusion Reward: Learning Rewards via Conditional Video Diffusion,http://arxiv.org/abs/2312.14134v3,2023-12-21 18:55:05+00:00,Temporal Consistency in Video Generation,True
+2405.03150,Video Diffusion Models: A Survey,http://arxiv.org/abs/2405.03150v2,2024-05-06 04:01:42+00:00,Temporal Consistency in Video Generation,True
+2108.08305,Temporal Kernel Consistency for Blind Video Super-Resolution,http://arxiv.org/abs/2108.08305v1,2021-08-18 13:09:38+00:00,Temporal Consistency in Video Generation,True
+2206.10590,Temporally Consistent Semantic Video Editing,http://arxiv.org/abs/2206.10590v1,2022-06-21 17:59:59+00:00,Temporal Consistency in Video Generation,True
+2210.02396,Temporally Consistent Transformers for Video Generation,http://arxiv.org/abs/2210.02396v2,2022-10-05 17:15:10+00:00,Temporal Consistency in Video Generation,False
+2207.10357,Synthesizing Light Field Video from Monocular Video,http://arxiv.org/abs/2207.10357v1,2022-07-21 08:23:27+00:00,Temporal Consistency in Video Generation,False
+2201.01893,Flow-Guided Sparse Transformer for Video Deblurring,http://arxiv.org/abs/2201.01893v3,2022-01-06 02:05:32+00:00,Spatiotemporal Correlation Preservation,False
+1502.06080,Intra-and-Inter-Constraint-based Video Enhancement based on Piecewise Tone Mapping,http://arxiv.org/abs/1502.06080v1,2015-02-21 07:36:26+00:00,Temporal Consistency in Video Generation,False
+2005.06803,TAM: Temporal Adaptive Module for Video Recognition,http://arxiv.org/abs/2005.06803v3,2020-05-14 08:22:45+00:00,Temporal Consistency in Video Generation,False
+2410.09380,Prompting Video-Language Foundation Models with Domain-specific Fine-grained Heuristics for Video Question Answering,http://arxiv.org/abs/2410.09380v1,2024-10-12 06:22:23+00:00,Benchmarking and Evaluation Metrics,False
+2312.06662,Photorealistic Video Generation with Diffusion Models,http://arxiv.org/abs/2312.06662v1,2023-12-11 18:59:57+00:00,Video Generation Models Overview,True
+2207.09067,Time Is MattEr: Temporal Self-supervision for Video Transformers,http://arxiv.org/abs/2207.09067v1,2022-07-19 04:44:08+00:00,Spatiotemporal Correlation Preservation,False
+2309.17444,LLM-grounded Video Diffusion Models,http://arxiv.org/abs/2309.17444v3,2023-09-29 17:54:46+00:00,Temporal Consistency in Video Generation,False
+1110.2796,"Initial Stages of Wind-Waves Evolution, Temporal vs. Spatial Cases",http://arxiv.org/abs/1110.2796v1,2011-10-12 20:35:01+00:00,Temporal Consistency in Video Generation,False
+1709.06342,Assessing Visual Quality of Omnidirectional Videos,http://arxiv.org/abs/1709.06342v4,2017-09-19 10:54:24+00:00,Benchmarking and Evaluation Metrics,False
+2301.13173,Shape-aware Text-driven Layered Video Editing,http://arxiv.org/abs/2301.13173v1,2023-01-30 18:41:58+00:00,Temporal Consistency in Video Generation,False
+2407.03563,Learning Video Temporal Dynamics with Cross-Modal Attention for Robust Audio-Visual Speech Recognition,http://arxiv.org/abs/2407.03563v3,2024-07-04 01:25:20+00:00,Temporal Consistency in Video Generation,False
+2309.14364,Automata Quest: NCAs as a Video Game Life Mechanic,http://arxiv.org/abs/2309.14364v1,2023-09-23 11:14:09+00:00,Temporal Consistency in Video Generation,False

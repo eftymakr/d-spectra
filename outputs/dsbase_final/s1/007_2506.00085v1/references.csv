@@ -1,0 +1,23 @@
+arxiv_id,title,url,date,category,cited_in_text
+2306.14920,A Cosine Similarity-based Method for Out-of-Distribution Detection,http://arxiv.org/abs/2306.14920v1,2023-06-23 05:02:16+00:00,Cosine Similarity Applications in Alignment,True
+2406.10984,Revisiting Cosine Similarity via Normalized ICA-transformed Embeddings,http://arxiv.org/abs/2406.10984v3,2024-06-16 15:44:37+00:00,Cosine Similarity Applications in Alignment,True
+2407.08623,Surpassing Cosine Similarity for Multidimensional Comparisons: Dimension Insensitive Euclidean Metric,http://arxiv.org/abs/2407.08623v4,2024-07-11 16:00:22+00:00,Multidimensional Alignment Metrics,True
+2403.05440,Is Cosine-Similarity of Embeddings Really About Similarity?,http://arxiv.org/abs/2403.05440v1,2024-03-08 16:48:20+00:00,Cosine Similarity Applications in Alignment,True
+1702.05870,Cosine Normalization: Using Cosine Similarity Instead of Dot Product in Neural Networks,http://arxiv.org/abs/1702.05870v5,2017-02-20 06:17:02+00:00,Cosine Similarity Applications in Alignment,True
+2107.04071,A Triangle Inequality for Cosine Similarity,http://arxiv.org/abs/2107.04071v1,2021-07-08 19:13:34+00:00,Information Retrieval and Cosine Similarity,True
+2406.01252,Towards Scalable Automated Alignment of LLMs: A Survey,http://arxiv.org/abs/2406.01252v3,2024-06-03 12:10:26+00:00,Reinforcement Learning for Alignment,True
+2407.15645,Psychometric Alignment: Capturing Human Knowledge Distributions via Language Models,http://arxiv.org/abs/2407.15645v1,2024-07-22 14:02:59+00:00,Multidimensional Alignment Metrics,True
+2309.02144,Making Large Language Models Better Reasoners with Alignment,http://arxiv.org/abs/2309.02144v1,2023-09-05 11:32:48+00:00,Reinforcement Learning for Alignment,True
+2501.03012,Analyzing Finetuning Representation Shift for Multimodal LLMs Steering,http://arxiv.org/abs/2501.03012v2,2025-01-06 13:37:13+00:00,Attention-Based Steering Mechanisms,True
+2505.03532,Joint Generalized Cosine Similarity: A Novel Method for N-Modal Semantic Alignment Based on Contrastive Learning,http://arxiv.org/abs/2505.03532v1,2025-05-06 13:41:31+00:00,Cosine Similarity Applications in Alignment,True
+2205.05092,Problems with Cosine as a Measure of Embedding Similarity for High Frequency Words,http://arxiv.org/abs/2205.05092v1,2022-05-10 18:00:06+00:00,High-Frequency Word Similarity Limitations,True
+2407.07530,How Aligned are Different Alignment Metrics?,http://arxiv.org/abs/2407.07530v1,2024-07-10 10:36:11+00:00,Multidimensional Alignment Metrics,True
+1008.1047,Robust Adaptive Beamforming Based on Steering Vector Estimation via Semidefinite Programming Relaxation,http://arxiv.org/abs/1008.1047v1,2010-08-05 19:30:56+00:00,Signal Processing and Cosine Similarity,True
+2401.12990,Topic Modelling: Going Beyond Token Outputs,http://arxiv.org/abs/2401.12990v1,2024-01-16 16:05:54+00:00,Multidimensional Alignment Metrics,True
+2406.00638,COS-Mix: Cosine Similarity and Distance Fusion for Improved Information Retrieval,http://arxiv.org/abs/2406.00638v1,2024-06-02 06:48:43+00:00,Information Retrieval and Cosine Similarity,True
+2203.14996,Comparing in context: Improving cosine similarity measures with a metric tensor,http://arxiv.org/abs/2203.14996v1,2022-03-28 18:04:26+00:00,Cosine Similarity Applications in Alignment,True
+2301.02229,All in Tokens: Unifying Output Space of Visual Tasks via Soft Token,http://arxiv.org/abs/2301.02229v2,2023-01-05 18:55:20+00:00,Multidimensional Alignment Metrics,True
+0911.5107,Sparse Convolved Multiple Output Gaussian Processes,http://arxiv.org/abs/0911.5107v1,2009-11-26 16:01:20+00:00,Signal Processing and Cosine Similarity,True
+2208.04369,Understanding Weight Similarity of Neural Networks via Chain Normalization Rule and Hypothesis-Training-Testing,http://arxiv.org/abs/2208.04369v1,2022-08-08 19:11:03+00:00,Multidimensional Alignment Metrics,True
+0902.3495,Sharpening and generalizations of Carlson's inequality for the arc cosine function,http://arxiv.org/abs/0902.3495v3,2009-02-20 01:11:04+00:00,Information Retrieval and Cosine Similarity,True
+2312.03893,Deliberative Technology for Alignment,http://arxiv.org/abs/2312.03893v1,2023-12-06 20:34:32+00:00,Model Output-Independent Alignment Techniques,True

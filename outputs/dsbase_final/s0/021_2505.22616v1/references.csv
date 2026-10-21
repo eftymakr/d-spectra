@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2206.10886,Optical Flow Regularization of Implicit Neural Representations for Video Frame Interpolation,http://arxiv.org/abs/2206.10886v1,2022-06-22 07:35:06+00:00,Video Frame Interpolation Techniques,True
+2112.01161,Video Frame Interpolation without Temporal Priors,http://arxiv.org/abs/2112.01161v1,2021-12-02 12:13:56+00:00,Video Frame Interpolation Techniques,True
+2503.18897,Online 3D Scene Reconstruction Using Neural Object Priors,http://arxiv.org/abs/2503.18897v1,2025-03-24 17:09:36+00:00,Integration of Frame Interpolation in Neural Rendering,True
+2210.11170,Coordinates Are NOT Lonely -- Codebook Prior Helps Implicit Neural 3D Representations,http://arxiv.org/abs/2210.11170v2,2022-10-20 11:13:50+00:00,Multi-View Reconstruction Limitations,True
+2211.10791,AdaFNIO: Adaptive Fourier Neural Interpolation Operator for video frame interpolation,http://arxiv.org/abs/2211.10791v2,2022-11-19 20:30:47+00:00,Video Frame Interpolation Techniques,True
+1906.05928,Unsupervised Video Interpolation Using Cycle Consistency,http://arxiv.org/abs/1906.05928v3,2019-06-13 21:04:10+00:00,Video Frame Interpolation Techniques,True
+2203.00137,Learning Cross-Video Neural Representations for High-Quality Frame Interpolation,http://arxiv.org/abs/2203.00137v1,2022-02-28 23:16:02+00:00,Video Frame Interpolation Techniques,True
+1904.00830,Depth-Aware Video Frame Interpolation,http://arxiv.org/abs/1904.00830v1,2019-04-01 13:19:59+00:00,Video Frame Interpolation Techniques,True
+2206.13454,Optimizing Video Prediction via Video Frame Interpolation,http://arxiv.org/abs/2206.13454v1,2022-06-27 17:03:46+00:00,Video Frame Interpolation Techniques,True
+2210.01879,A Perceptual Quality Metric for Video Frame Interpolation,http://arxiv.org/abs/2210.01879v1,2022-10-04 19:56:10+00:00,Video Frame Interpolation Techniques,True
+2307.16144,Video Frame Interpolation with Flow Transformer,http://arxiv.org/abs/2307.16144v1,2023-07-30 06:44:37+00:00,Video Frame Interpolation Techniques,True
+2303.09508,LDMVFI: Video Frame Interpolation with Latent Diffusion Models,http://arxiv.org/abs/2303.09508v3,2023-03-16 17:24:41+00:00,Video Frame Interpolation Techniques,True
+1708.01692,Video Frame Interpolation via Adaptive Separable Convolution,http://arxiv.org/abs/1708.01692v1,2017-08-05 00:18:03+00:00,Video Frame Interpolation Techniques,True
+2210.00823,BVI-VFI: A Video Quality Database for Video Frame Interpolation,http://arxiv.org/abs/2210.00823v3,2022-10-03 11:15:05+00:00,Video Frame Interpolation Techniques,True
+2207.12305,Error-Aware Spatial Ensembles for Video Frame Interpolation,http://arxiv.org/abs/2207.12305v1,2022-07-25 16:15:38+00:00,Video Frame Interpolation Techniques,False
+2309.07021,Exploiting Multiple Priors for Neural 3D Indoor Reconstruction,http://arxiv.org/abs/2309.07021v1,2023-09-13 15:23:43+00:00,Multi-View Reconstruction Limitations,False
+1804.00884,PhaseNet for Video Frame Interpolation,http://arxiv.org/abs/1804.00884v1,2018-04-03 09:41:36+00:00,Video Frame Interpolation Techniques,False
+2407.14066,360VFI: A Dataset and Benchmark for Omnidirectional Video Frame Interpolation,http://arxiv.org/abs/2407.14066v3,2024-07-19 06:50:24+00:00,Video Frame Interpolation Techniques,False
+2312.15659,Perceptual Quality Assessment for Video Frame Interpolation,http://arxiv.org/abs/2312.15659v1,2023-12-25 09:02:48+00:00,Video Frame Interpolation Techniques,False
+2411.14384,Baking Gaussian Splatting into Diffusion Denoiser for Fast and Scalable Single-stage Image-to-3D Generation and Reconstruction,http://arxiv.org/abs/2411.14384v5,2024-11-21 18:21:24+00:00,Multi-View Reconstruction Limitations,False
+2201.12288,VRT: A Video Restoration Transformer,http://arxiv.org/abs/2201.12288v2,2022-01-28 17:54:43+00:00,Video Frame Interpolation Techniques,False
+1703.07514,Video Frame Interpolation via Adaptive Convolution,http://arxiv.org/abs/1703.07514v1,2017-03-22 04:31:38+00:00,Video Frame Interpolation Techniques,False
+2406.15982,Learning with Noisy Ground Truth: From 2D Classification to 3D Reconstruction,http://arxiv.org/abs/2406.15982v1,2024-06-23 02:21:48+00:00,Data Augmentation in Neural Rendering,False
+1903.06708,Live Reconstruction of Large-Scale Dynamic Outdoor Worlds,http://arxiv.org/abs/1903.06708v2,2019-03-15 15:50:59+00:00,Multi-View Reconstruction Limitations,False
+2101.06860,Mending Neural Implicit Modeling for 3D Vehicle Reconstruction in the Wild,http://arxiv.org/abs/2101.06860v2,2021-01-18 03:24:48+00:00,Multi-View Reconstruction Limitations,False
+2106.14132,Robust Pose Transfer with Dynamic Details using Neural Video Rendering,http://arxiv.org/abs/2106.14132v3,2021-06-27 03:40:22+00:00,Integration of Frame Interpolation in Neural Rendering,False
+2102.13520,Texture-aware Video Frame Interpolation,http://arxiv.org/abs/2102.13520v1,2021-02-26 14:46:56+00:00,Video Frame Interpolation Techniques,False
+2503.02316,Unified Arbitrary-Time Video Frame Interpolation and Prediction,http://arxiv.org/abs/2503.02316v1,2025-03-04 06:17:17+00:00,Video Frame Interpolation Techniques,False
+2110.11599,High Fidelity 3D Reconstructions with Limited Physical Views,http://arxiv.org/abs/2110.11599v1,2021-10-22 05:27:24+00:00,Multi-View Reconstruction Limitations,False
+2110.15678,A Shading-Guided Generative Implicit Model for Shape-Accurate 3D-Aware Image Synthesis,http://arxiv.org/abs/2110.15678v3,2021-10-29 10:53:12+00:00,Neural Rendering Foundations,False

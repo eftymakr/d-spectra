@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2106.00116,Effect of Pre-Training Scale on Intra- and Inter-Domain Full and Few-Shot Transfer Learning for Natural and Medical X-Ray Chest Images,http://arxiv.org/abs/2106.00116v4,2021-05-31 21:55:56+00:00,Model Generalization Across Datasets,True
+2310.03059,Point-PEFT: Parameter-Efficient Fine-Tuning for 3D Pre-trained Models,http://arxiv.org/abs/2310.03059v8,2023-10-04 16:49:36+00:00,Computational Efficiency and Resource Constraints,True
+2412.14100,Parameter-efficient Fine-tuning for improved Convolutional Baseline for Brain Tumor Segmentation in Sub-Saharan Africa Adult Glioma Dataset,http://arxiv.org/abs/2412.14100v1,2024-12-18 17:48:32+00:00,Computational Efficiency and Resource Constraints,True
+2112.00113,Beyond Flatland: Pre-training with a Strong 3D Inductive Bias,http://arxiv.org/abs/2112.00113v1,2021-11-30 21:30:24+00:00,Transfer Learning from 2D to 3D Domains,True
+2202.05268,HNF-Netv2 for Brain Tumor Segmentation using multi-modal MR Imaging,http://arxiv.org/abs/2202.05268v1,2022-02-10 06:34:32+00:00,Multi-Modal MRI Data Processing,True
+2206.03726,Hub-Pathway: Transfer Learning from A Hub of Pre-trained Models,http://arxiv.org/abs/2206.03726v2,2022-06-08 08:00:12+00:00,Model Generalization Across Datasets,True
+2011.11052,Efficient embedding network for 3D brain tumor segmentation,http://arxiv.org/abs/2011.11052v1,2020-11-22 16:17:29+00:00,Transfer Learning from 2D to 3D Domains,True
+1705.03820,Automatic Brain Tumor Detection and Segmentation Using U-Net Based Fully Convolutional Networks,http://arxiv.org/abs/1705.03820v3,2017-05-10 15:29:52+00:00,Performance Evaluation on BraTS Datasets,True
+2108.06772,Dilated Inception U-Net (DIU-Net) for Brain Tumor Segmentation,http://arxiv.org/abs/2108.06772v1,2021-08-15 16:04:09+00:00,Comparison with State-of-the-Art Methods,True
+2011.03188,Automatic Brain Tumor Segmentation with Scale Attention Network,http://arxiv.org/abs/2011.03188v3,2020-11-06 04:45:49+00:00,Performance Evaluation on BraTS Datasets,True
+1811.02629,"Identifying the Best Machine Learning Algorithms for Brain Tumor Segmentation, Progression Assessment, and Overall Survival Prediction in the BRATS Challenge",http://arxiv.org/abs/1811.02629v3,2018-11-05 05:10:18+00:00,Performance Evaluation on BraTS Datasets,False
+2010.13082,Context Aware 3D UNet for Brain Tumor Segmentation,http://arxiv.org/abs/2010.13082v2,2020-10-25 10:32:25+00:00,Performance Evaluation on BraTS Datasets,False
+1710.02316,A Multiscale Patch Based Convolutional Network for Brain Tumor Segmentation,http://arxiv.org/abs/1710.02316v1,2017-10-06 09:04:28+00:00,Performance Evaluation on BraTS Datasets,False
+2001.02040,Robust Semantic Segmentation of Brain Tumor Regions from 3D MRIs,http://arxiv.org/abs/2001.02040v1,2020-01-06 07:47:42+00:00,Performance Evaluation on BraTS Datasets,False
+1908.01279,Automatic segmentation of kidney and liver tumors in CT images,http://arxiv.org/abs/1908.01279v2,2019-08-04 06:31:02+00:00,Model Generalization Across Datasets,False
+2009.12188,Brain Tumor Segmentation using 3D-CNNs with Uncertainty Estimation,http://arxiv.org/abs/2009.12188v1,2020-09-24 10:50:12+00:00,Uncertainty Estimation in Segmentation Models,False
+2311.14148,Automated 3D Tumor Segmentation using Temporal Cubic PatchGAN (TCuP-GAN),http://arxiv.org/abs/2311.14148v1,2023-11-23 18:37:26+00:00,Performance Evaluation on BraTS Datasets,False
+2204.12833,Transfer Learning with Pre-trained Conditional Generative Models,http://arxiv.org/abs/2204.12833v3,2022-04-27 10:36:32+00:00,Model Generalization Across Datasets,False
+1812.11588,Cascaded V-Net using ROI masks for brain tumor segmentation,http://arxiv.org/abs/1812.11588v1,2018-12-30 18:51:37+00:00,Handling Class Imbalance in Medical Data,False
+2402.05975,A Deep Learning Approach for Brain Tumor Classification and Segmentation Using a Multiscale Convolutional Neural Network,http://arxiv.org/abs/2402.05975v1,2024-02-04 17:47:03+00:00,Comparison with State-of-the-Art Methods,False
+2011.02881,A Two-Stage Cascade Model with Variational Autoencoders and Attention Gates for MRI Brain Tumor Segmentation,http://arxiv.org/abs/2011.02881v2,2020-11-04 05:55:06+00:00,Performance Evaluation on BraTS Datasets,False
+1809.06191,Multi Modal Convolutional Neural Networks for Brain Tumor Segmentation,http://arxiv.org/abs/1809.06191v2,2018-09-17 13:33:21+00:00,Multi-Modal MRI Data Processing,False
+2011.02840,DR-Unet104 for Multimodal MRI brain tumor segmentation,http://arxiv.org/abs/2011.02840v2,2020-11-04 01:24:26+00:00,Performance Evaluation on BraTS Datasets,False
+1909.06337,MRI Brain Tumor Segmentation using Random Forests and Fully Convolutional Networks,http://arxiv.org/abs/1909.06337v1,2019-09-13 17:26:56+00:00,Multi-Modal MRI Data Processing,False
+1811.08883,Rethinking ImageNet Pre-training,http://arxiv.org/abs/1811.08883v1,2018-11-21 18:55:58+00:00,Model Generalization Across Datasets,False
+2306.17555,Why does my medical AI look at pictures of birds? Exploring the efficacy of transfer learning across domain boundaries,http://arxiv.org/abs/2306.17555v2,2023-06-30 11:15:26+00:00,Model Generalization Across Datasets,False
+2103.01542,TransTailor: Pruning the Pre-trained Model for Improved Transfer Learning,http://arxiv.org/abs/2103.01542v1,2021-03-02 07:58:35+00:00,Computational Efficiency and Resource Constraints,False
+2109.05580,A Joint Graph and Image Convolution Network for Automatic Brain Tumor Segmentation,http://arxiv.org/abs/2109.05580v2,2021-09-12 18:16:59+00:00,Performance Evaluation on BraTS Datasets,False
+2108.05930,A Systematic Benchmarking Analysis of Transfer Learning for Medical Image Analysis,http://arxiv.org/abs/2108.05930v1,2021-08-12 19:08:34+00:00,Pre-trained Model Integration in Segmentation,False
+1903.10150,Enhanced Transfer Learning with ImageNet Trained Classification Layer,http://arxiv.org/abs/1903.10150v2,2019-03-25 06:43:26+00:00,Model Generalization Across Datasets,False

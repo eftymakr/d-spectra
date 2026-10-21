@@ -1,0 +1,17 @@
+arxiv_id,title,url,date,category,cited_in_text
+2306.14289,Faster Segment Anything: Towards Lightweight SAM for Mobile Applications,http://arxiv.org/abs/2306.14289v2,2023-06-25 16:37:25+00:00,MobileSAM and Lightweight Vision Models,True
+2411.01431,Efficient Deep Learning Infrastructures for Embedded Computing Systems: A Comprehensive Survey and Future Envision,http://arxiv.org/abs/2411.01431v2,2024-11-03 03:55:04+00:00,Lightweight Models for Embedded Systems,True
+2408.15113,AnomalousPatchCore: Exploring the Use of Anomalous Samples in Industrial Anomaly Detection,http://arxiv.org/abs/2408.15113v2,2024-08-27 14:51:34+00:00,Vision Models in Industrial Anomaly Detection,True
+2403.04932,Divide and Conquer: High-Resolution Industrial Anomaly Detection via Memory Efficient Tiled Ensemble,http://arxiv.org/abs/2403.04932v2,2024-03-07 22:39:02+00:00,Vision Models in Industrial Anomaly Detection,True
+2504.08115,Benchmarking Suite for Synthetic Aperture Radar Imagery Anomaly Detection (SARIAD) Algorithms,http://arxiv.org/abs/2504.08115v1,2025-04-10 20:31:25+00:00,Performance Metrics and Evaluation Benchmarks,True
+2404.06832,SplatPose & Detect: Pose-Agnostic 3D Anomaly Detection,http://arxiv.org/abs/2404.06832v1,2024-04-10 08:48:09+00:00,Deep Learning Approaches in Image-Based Anomaly Detection,True
+2303.03611,TinyAD: Memory-efficient anomaly detection for time series data in Industrial IoT,http://arxiv.org/abs/2303.03611v1,2023-03-07 02:56:15+00:00,Lightweight Models for Embedded Systems,True
+2406.11507,Prior Normality Prompt Transformer for Multi-class Industrial Image Anomaly Detection,http://arxiv.org/abs/2406.11507v1,2024-06-17 13:10:04+00:00,Vision Models in Industrial Anomaly Detection,True
+2505.17551,Center-aware Residual Anomaly Synthesis for Multi-class Industrial Anomaly Detection,http://arxiv.org/abs/2505.17551v1,2025-05-23 06:56:44+00:00,Vision Models in Industrial Anomaly Detection,True
+1912.02549,Deep Anomaly Detection in Packet Payload,http://arxiv.org/abs/1912.02549v1,2019-12-05 13:03:38+00:00,Deep Learning Approaches in Image-Based Anomaly Detection,True
+2011.06296,Real-World Anomaly Detection by using Digital Twin Systems and Weakly-Supervised Learning,http://arxiv.org/abs/2011.06296v1,2020-11-12 10:15:56+00:00,Weakly-Supervised and Synthetic Data Approaches,True
+2111.11714,Challenges and Opportunities in Securing the Industrial Internet of Things,http://arxiv.org/abs/2111.11714v1,2021-11-23 08:13:58+00:00,Deployment Challenges on Embedded Devices,True
+2307.11085,"Representation Learning in Anomaly Detection: Successes, Limits and a Grand Challenge",http://arxiv.org/abs/2307.11085v1,2023-07-20 17:59:11+00:00,Deep Learning Approaches in Image-Based Anomaly Detection,True
+1911.04831,Anomaly Detection for Industrial Control Systems Using Sequence-to-Sequence Neural Networks,http://arxiv.org/abs/1911.04831v1,2019-11-12 13:16:15+00:00,Deep Learning Approaches in Image-Based Anomaly Detection,True
+2305.08977,Autoencoder-based Anomaly Detection in Streaming Data with Incremental Learning and Concept Drift Adaptation,http://arxiv.org/abs/2305.08977v2,2023-05-15 19:40:04+00:00,Comparative Analysis of Model Efficiency and Accuracy,False
+2303.05000,Learning Representation for Anomaly Detection of Vehicle Trajectories,http://arxiv.org/abs/2303.05000v1,2023-03-09 02:48:59+00:00,Deep Learning Approaches in Image-Based Anomaly Detection,False

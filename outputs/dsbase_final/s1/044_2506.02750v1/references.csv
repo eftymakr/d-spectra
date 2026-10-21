@@ -1,0 +1,21 @@
+arxiv_id,title,url,date,category,cited_in_text
+2203.15789,Revisiting Neighborhood-based Link Prediction for Collaborative Filtering,http://arxiv.org/abs/2203.15789v1,2022-03-29 17:48:05+00:00,Graph-Based Collaborative Filtering,True
+1906.01829,Binarized Collaborative Filtering with Distilling Graph Convolutional Networks,http://arxiv.org/abs/1906.01829v1,2019-06-05 05:11:43+00:00,Binarization Techniques for Efficiency,True
+2202.06200,Improving Graph Collaborative Filtering with Neighborhood-enriched Contrastive Learning,http://arxiv.org/abs/2202.06200v2,2022-02-13 04:18:18+00:00,Graph-Based Collaborative Filtering,True
+2408.02404,Feedback Reciprocal Graph Collaborative Filtering,http://arxiv.org/abs/2408.02404v1,2024-08-05 11:57:11+00:00,Graph-Based Collaborative Filtering,True
+2312.03167,Adaptive spectral graph wavelets for collaborative filtering,http://arxiv.org/abs/2312.03167v1,2023-12-05 22:22:25+00:00,Graph-Based Collaborative Filtering,True
+2001.00267,Multi-Graph Convolution Collaborative Filtering,http://arxiv.org/abs/2001.00267v1,2020-01-01 20:52:29+00:00,Graph-Based Collaborative Filtering,True
+2302.02113,Personalized Graph Signal Processing for Collaborative Filtering,http://arxiv.org/abs/2302.02113v1,2023-02-04 06:49:52+00:00,Graph-Based Collaborative Filtering,True
+2007.01764,Disentangled Graph Collaborative Filtering,http://arxiv.org/abs/2007.01764v1,2020-07-03 15:37:25+00:00,Graph-Based Collaborative Filtering,True
+1803.03502,Collaborative Filtering with Graph-based Implicit Feedback,http://arxiv.org/abs/1803.03502v1,2018-03-09 13:25:54+00:00,Graph-Based Collaborative Filtering,True
+2311.06777,Alleviating Behavior Data Imbalance for Multi-Behavior Graph Collaborative Filtering,http://arxiv.org/abs/2311.06777v1,2023-11-12 08:46:07+00:00,Graph-Based Collaborative Filtering,True
+1905.08108,Neural Graph Collaborative Filtering,http://arxiv.org/abs/1905.08108v2,2019-05-20 13:41:16+00:00,Graph-Based Collaborative Filtering,True
+1804.08891,A multi-level collaborative filtering method that improves recommendations,http://arxiv.org/abs/1804.08891v1,2018-04-24 08:20:45+00:00,Comparison with State-of-the-Art Models,True
+1502.04163,A Distributional Representation Model For Collaborative Filtering,http://arxiv.org/abs/1502.04163v1,2015-02-14 03:23:53+00:00,Comparison with State-of-the-Art Models,True
+1309.6786,One-class Collaborative Filtering with Random Graphs: Annotated Version,http://arxiv.org/abs/1309.6786v4,2013-09-26 10:32:43+00:00,Graph-Based Collaborative Filtering,False
+2401.12590,PolyCF: Towards the Optimal Spectral Graph Filters for Collaborative Filtering,http://arxiv.org/abs/2401.12590v2,2024-01-23 09:45:49+00:00,Graph-Based Collaborative Filtering,False
+1809.06120,cf2vec: Collaborative Filtering algorithm selection using graph distributed representations,http://arxiv.org/abs/1809.06120v1,2018-09-17 10:36:16+00:00,Graph-Based Collaborative Filtering,False
+1603.02493,Clifford theory for glider representations,http://arxiv.org/abs/1603.02493v4,2016-03-08 12:02:48+00:00,Comparison with State-of-the-Art Models,False
+,"On mutual information, likelihood-ratios and estimation error for the additive Gaussian channel",http://arxiv.org/abs/math/0409548v2,2004-09-28 12:04:54+00:00,Comparison with State-of-the-Art Models,False
+2402.05132,TexShape: Information Theoretic Sentence Embedding for Language Models,http://arxiv.org/abs/2402.05132v2,2024-02-05 22:48:28+00:00,Comparison with State-of-the-Art Models,False
+1904.09631,HCFContext: Smartphone Context Inference via Sequential History-based Collaborative Filtering,http://arxiv.org/abs/1904.09631v2,2019-04-21 17:09:35+00:00,Implementation and Availability of Proposed Framework,False

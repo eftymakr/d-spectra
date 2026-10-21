@@ -1,0 +1,21 @@
+arxiv_id,title,url,date,category,cited_in_text
+2501.14753,ABACUS: A FinOps Service for Cloud Cost Optimization,http://arxiv.org/abs/2501.14753v1,2024-12-22 20:26:54+00:00,Cloud Infrastructure Cost Optimization Techniques,True
+2006.15275,XI Commandments of Kubernetes Security: A Systematization of Knowledge Related to Kubernetes Security Practices,http://arxiv.org/abs/2006.15275v1,2020-06-27 03:57:48+00:00,Kubernetes Security Practices,True
+2502.02842,A Study on 5G Network Slice Isolation Based on Native Cloud and Edge Computing Tools,http://arxiv.org/abs/2502.02842v2,2025-02-05 02:58:03+00:00,Performance and Efficiency Optimization in Containerized Workloads,False
+2501.05323,Distributed Learning and Inference Systems: A Networking Perspective,http://arxiv.org/abs/2501.05323v1,2025-01-09 15:48:29+00:00,Cost Modeling and Measurement Methodologies,False
+1409.1730,Decentralized Protection Strategies against SIS Epidemics in Networks,http://arxiv.org/abs/1409.1730v2,2014-09-05 10:25:18+00:00,Cost Modeling and Measurement Methodologies,False
+2207.01222,KubeAdaptor: A Docking Framework for Workflow Containerization on Kubernetes,http://arxiv.org/abs/2207.01222v1,2022-07-04 06:17:34+00:00,Performance and Efficiency Optimization in Containerized Workloads,False
+2104.02423,Rearchitecting Kubernetes for the Edge,http://arxiv.org/abs/2104.02423v1,2021-04-06 10:56:42+00:00,Performance and Efficiency Optimization in Containerized Workloads,False
+1911.11381,On the Complexity of Minimum-Cost Networked Estimation of Self-Damped Dynamical Systems,http://arxiv.org/abs/1911.11381v1,2019-11-26 07:44:23+00:00,Cost Modeling and Measurement Methodologies,False
+2104.09003,A Unified Framework for Multistage and Multilevel Mixed Integer Linear Optimization,http://arxiv.org/abs/2104.09003v1,2021-04-19 01:39:11+00:00,Cost Modeling and Measurement Methodologies,False
+1412.0829,Optimal strategies for operating energy storage in an arbitrage market,http://arxiv.org/abs/1412.0829v1,2014-12-02 09:44:16+00:00,Cost Modeling and Measurement Methodologies,False
+2301.01178,Extending Kubernetes Networking to make use of Segment Routing over IPv6 (SRv6),http://arxiv.org/abs/2301.01178v1,2023-01-03 16:19:16+00:00,Performance and Efficiency Optimization in Containerized Workloads,False
+1408.0919,On non-improvability of full-memory strategies in problems of optimization of the guaranteed result,http://arxiv.org/abs/1408.0919v1,2014-08-05 10:51:18+00:00,Cost Modeling and Measurement Methodologies,False
+1905.03193,Blockchain-enabled Authentication Handover with Efficient Privacy Protection in SDN-based 5G Networks,http://arxiv.org/abs/1905.03193v1,2019-05-08 16:22:37+00:00,Performance and Efficiency Optimization in Containerized Workloads,False
+2402.00726,A Bi-Objective Optimization Based Acquisition Strategy for Batch Bayesian Global Optimization,http://arxiv.org/abs/2402.00726v1,2024-02-01 16:20:03+00:00,Cost Modeling and Measurement Methodologies,False
+2501.00258,Optimal design of frame structures with mixed categorical and continuous design variables using the Gumbel-Softmax method,http://arxiv.org/abs/2501.00258v1,2024-12-31 03:59:24+00:00,Cost Modeling and Measurement Methodologies,False
+2105.01939,Comparative Analysis of Box-Covering Algorithms for Fractal Networks,http://arxiv.org/abs/2105.01939v2,2021-05-05 09:16:34+00:00,Cost Modeling and Measurement Methodologies,False
+1301.0091,On the Robust Optimal Stopping Problem,http://arxiv.org/abs/1301.0091v10,2013-01-01 14:26:49+00:00,Cost Modeling and Measurement Methodologies,False
+1601.02323,Optimal Power Flow with Inelastic Demands for Demand Response in Radial Distribution Networks,http://arxiv.org/abs/1601.02323v3,2016-01-11 05:10:31+00:00,Cost Modeling and Measurement Methodologies,False
+2303.08710,Two-Scale Optimization of Graded Lattice Structures respecting Buckling on Micro- and Macroscale,http://arxiv.org/abs/2303.08710v1,2023-03-15 15:44:31+00:00,Cost Modeling and Measurement Methodologies,False
+,"Bayesian analysis of biological networks: clusters, motifs, cross-species correlations",http://arxiv.org/abs/q-bio/0609050v1,2006-09-28 08:40:44+00:00,Cost Modeling and Measurement Methodologies,False

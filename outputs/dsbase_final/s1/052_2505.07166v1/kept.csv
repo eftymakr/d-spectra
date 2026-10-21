@@ -1,0 +1,27 @@
+rank,arxiv_id,title,url,date
+1,2112.09118,Unsupervised Dense Information Retrieval with Contrastive Learning,http://arxiv.org/abs/2112.09118v4,2021-12-16 18:57:37+00:00
+2,2306.16478,Pre-Training Multi-Modal Dense Retrievers for Outside-Knowledge Visual Question Answering,http://arxiv.org/abs/2306.16478v1,2023-06-28 18:06:40+00:00
+3,2204.10641,Pre-train a Discriminative Text Encoder for Dense Retrieval via Contrastive Span Prediction,http://arxiv.org/abs/2204.10641v1,2022-04-22 11:22:29+00:00
+4,2108.06279,On Single and Multiple Representations in Dense Passage Retrieval,http://arxiv.org/abs/2108.06279v2,2021-08-13 15:01:53+00:00
+5,2408.15011,Pre-training Everywhere: Parameter-Efficient Fine-Tuning for Medical Image Analysis via Target Parameter Pre-training,http://arxiv.org/abs/2408.15011v2,2024-08-27 12:48:46+00:00
+6,2007.00808,Approximate Nearest Neighbor Negative Contrastive Learning for Dense Text Retrieval,http://arxiv.org/abs/2007.00808v2,2020-07-01 23:15:56+00:00
+7,2306.03166,Unsupervised Dense Retrieval with Relevance-Aware Contrastive Pre-Training,http://arxiv.org/abs/2306.03166v1,2023-06-05 18:20:27+00:00
+8,2403.16915,Coarse-Tuning for Ad-hoc Document Retrieval Using Pre-trained Language Models,http://arxiv.org/abs/2403.16915v3,2024-03-25 16:32:50+00:00
+9,2303.10464,SPDF: Sparse Pre-training and Dense Fine-tuning for Large Language Models,http://arxiv.org/abs/2303.10464v2,2023-03-18 17:56:01+00:00
+10,2403.14074,M3: A Multi-Task Mixed-Objective Learning Framework for Open-Domain Multi-Hop Dense Sentence Retrieval,http://arxiv.org/abs/2403.14074v1,2024-03-21 01:52:07+00:00
+11,2408.06663,Amuro and Char: Analyzing the Relationship between Pre-Training and Fine-Tuning of Large Language Models,http://arxiv.org/abs/2408.06663v5,2024-08-13 06:28:43+00:00
+12,2304.08138,Typos-aware Bottlenecked Pre-Training for Robust Dense Retrieval,http://arxiv.org/abs/2304.08138v2,2023-04-17 10:42:30+00:00
+13,2108.05540,Unsupervised Corpus Aware Language Model Pre-training for Dense Passage Retrieval,http://arxiv.org/abs/2108.05540v1,2021-08-12 05:20:27+00:00
+14,2201.04458,Diagnosing BERT with Retrieval Heuristics,http://arxiv.org/abs/2201.04458v1,2022-01-12 13:11:17+00:00
+15,2209.15329,SpeechLM: Enhanced Speech Pre-Training with Unpaired Textual Data,http://arxiv.org/abs/2209.15329v3,2022-09-30 09:12:10+00:00
+16,2403.00946,Fine-tuning with Very Large Dropout,http://arxiv.org/abs/2403.00946v3,2024-03-01 19:50:22+00:00
+17,2408.07888,Evaluating Fine-Tuning Efficiency of Human-Inspired Learning Strategies in Medical Question Answering,http://arxiv.org/abs/2408.07888v2,2024-08-15 02:22:48+00:00
+18,2202.00373,Improving BERT-based Query-by-Document Retrieval with Multi-Task Optimization,http://arxiv.org/abs/2202.00373v2,2022-02-01 12:27:59+00:00
+19,2108.12848,Span Fine-tuning for Pre-trained Language Models,http://arxiv.org/abs/2108.12848v2,2021-08-29 14:11:38+00:00
+20,1811.08772,Overcoming low-utility facets for complex answer retrieval,http://arxiv.org/abs/1811.08772v1,2018-11-21 15:09:00+00:00
+21,2104.08253,Condenser: a Pre-training Architecture for Dense Retrieval,http://arxiv.org/abs/2104.08253v2,2021-04-16 17:36:44+00:00
+22,2210.15212,COCO-DR: Combating Distribution Shifts in Zero-Shot Dense Retrieval with Contrastive and Distributionally Robust Learning,http://arxiv.org/abs/2210.15212v2,2022-10-27 06:51:39+00:00
+23,2105.08021,Stage-wise Fine-tuning for Graph-to-Text Generation,http://arxiv.org/abs/2105.08021v2,2021-05-17 17:15:29+00:00
+24,2207.02578,SimLM: Pre-training with Representation Bottleneck for Dense Passage Retrieval,http://arxiv.org/abs/2207.02578v2,2022-07-06 10:51:33+00:00
+25,2203.06041,Embedding Earth: Self-supervised contrastive pre-training for dense land cover classification,http://arxiv.org/abs/2203.06041v1,2022-03-11 16:14:14+00:00
+26,2212.07841,MASTER: Multi-task Pre-trained Bottlenecked Masked Autoencoders are Better Dense Retrievers,http://arxiv.org/abs/2212.07841v2,2022-12-15 13:57:07+00:00

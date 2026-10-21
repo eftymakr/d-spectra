@@ -1,0 +1,17 @@
+arxiv_id,title,url,date,category,cited_in_text
+2002.00741,Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation,http://arxiv.org/abs/2002.00741v1,2020-01-29 20:27:42+00:00,Contextual Temporal Attention Mechanisms,True
+2404.13878,Multi-Level Sequence Denoising with Cross-Signal Contrastive Learning for Sequential Recommendation,http://arxiv.org/abs/2404.13878v2,2024-04-22 04:57:33+00:00,Attention Mechanisms in Sequential Recommendation,True
+2503.03213,Convergence Rates for Softmax Gating Mixture of Experts,http://arxiv.org/abs/2503.03213v1,2025-03-05 06:11:24+00:00,Mixture-of-Experts (MoE) Architectures,True
+2310.02367,Linear Recurrent Units for Sequential Recommendation,http://arxiv.org/abs/2310.02367v2,2023-10-03 18:44:17+00:00,Efficient Sequence Processing Techniques,True
+2109.11059,Exploring Heterogeneous Metadata for Video Recommendation with Two-tower Model,http://arxiv.org/abs/2109.11059v2,2021-09-22 22:13:54+00:00,Multi-Modal and Multi-Task Recommendation Systems,True
+2410.17954,ExpertFlow: Efficient Mixture-of-Experts Inference via Predictive Expert Caching and Token Scheduling,http://arxiv.org/abs/2410.17954v2,2024-10-23 15:24:54+00:00,Mixture-of-Experts (MoE) Architectures,True
+1806.08200,Mixtures of Experts Models,http://arxiv.org/abs/1806.08200v1,2018-06-21 12:30:12+00:00,Mixture-of-Experts (MoE) Architectures,True
+2012.03323,KATRec: Knowledge Aware aTtentive Sequential Recommendations,http://arxiv.org/abs/2012.03323v3,2020-12-06 17:03:52+00:00,Attention Mechanisms in Sequential Recommendation,True
+2002.05063,A Bayesian Approach to Conversational Recommendation Systems,http://arxiv.org/abs/2002.05063v1,2020-02-12 15:59:31+00:00,Dynamic User Behavior Modeling,True
+2209.11801,Solutions to preference manipulation in recommender systems require knowledge of meta-preferences,http://arxiv.org/abs/2209.11801v1,2022-09-14 15:01:13+00:00,Preference-Aware Modeling in Recommendations,True
+2402.14800,Not All Experts are Equal: Efficient Expert Pruning and Skipping for Mixture-of-Experts Large Language Models,http://arxiv.org/abs/2402.14800v2,2024-02-22 18:56:07+00:00,Mixture-of-Experts (MoE) Architectures,True
+2210.01942,IGNiteR: News Recommendation in Microblogging Applications (Extended Version),http://arxiv.org/abs/2210.01942v1,2022-10-04 22:33:58+00:00,Contextual Temporal Attention Mechanisms,False
+1002.1150,Finding Sequential Patterns from Large Sequence Data,http://arxiv.org/abs/1002.1150v1,2010-02-05 08:43:45+00:00,Efficient Sequence Processing Techniques,False
+2411.07569,Towards Automated Model Design on Recommender Systems,http://arxiv.org/abs/2411.07569v1,2024-11-12 06:03:47+00:00,Multi-Modal and Multi-Task Recommendation Systems,False
+2305.12976,Attentive Graph-based Text-aware Preference Modeling for Top-N Recommendation,http://arxiv.org/abs/2305.12976v1,2023-05-22 12:32:06+00:00,Preference-Aware Modeling in Recommendations,False
+2203.06641,Exploring Customer Price Preference and Product Profit Role in Recommender Systems,http://arxiv.org/abs/2203.06641v1,2022-03-13 12:08:06+00:00,Preference-Aware Modeling in Recommendations,False

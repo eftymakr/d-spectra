@@ -1,0 +1,16 @@
+arxiv_id,title,url,date,category,cited_in_text
+2412.06748,Refusal Tokens: A Simple Way to Calibrate Refusals in Large Language Models,http://arxiv.org/abs/2412.06748v2,2024-12-09 18:40:44+00:00,Safety and Reliability of LLMs,True
+2505.17306,Refusal Direction is Universal Across Safety-Aligned Languages,http://arxiv.org/abs/2505.17306v2,2025-05-22 21:54:46+00:00,Safety and Reliability of LLMs,True
+2406.16468,The Hidden Pitfalls of the Cosine Similarity Loss,http://arxiv.org/abs/2406.16468v1,2024-06-24 09:16:59+00:00,Cosine Similarity for Steering LLMs,True
+2505.19333,Evaluating Steering Techniques using Human Similarity Judgments,http://arxiv.org/abs/2505.19333v2,2025-05-25 21:40:26+00:00,Comparison of Steering Methods,True
+2406.00638,COS-Mix: Cosine Similarity and Distance Fusion for Improved Information Retrieval,http://arxiv.org/abs/2406.00638v1,2024-06-02 06:48:43+00:00,Cosine Similarity for Steering LLMs,True
+2502.18862,One-shot Optimized Steering Vectors Mediate Safety-relevant Behaviors in LLMs,http://arxiv.org/abs/2502.18862v2,2025-02-26 06:13:01+00:00,Safety and Reliability of LLMs,True
+2311.14307,Cosine Similarity Knowledge Distillation for Individual Class Information Transfer,http://arxiv.org/abs/2311.14307v1,2023-11-24 06:34:47+00:00,Cosine Similarity for Steering LLMs,True
+2403.05440,Is Cosine-Similarity of Embeddings Really About Similarity?,http://arxiv.org/abs/2403.05440v1,2024-03-08 16:48:20+00:00,Cosine Similarity for Steering LLMs,True
+2308.03243,Unsupervised Adversarial Detection without Extra Model: Training Loss Should Change,http://arxiv.org/abs/2308.03243v1,2023-08-07 01:41:21+00:00,Robustness in Adversarial Settings,True
+2205.05092,Problems with Cosine as a Measure of Embedding Similarity for High Frequency Words,http://arxiv.org/abs/2205.05092v1,2022-05-10 18:00:06+00:00,Cosine Similarity for Steering LLMs,True
+1411.2188,Semantic-based Detection of Segment Outliers and Unusual Events for Wireless Sensor Networks,http://arxiv.org/abs/1411.2188v1,2014-11-09 02:58:33+00:00,Safety and Reliability of LLMs,True
+2204.07322,Quantum cloning of steering,http://arxiv.org/abs/2204.07322v4,2022-04-15 04:07:15+00:00,Safety and Reliability of LLMs,True
+2106.04595,New-generation dust emission templates for star-forming galaxies,http://arxiv.org/abs/2106.04595v1,2021-06-08 18:00:01+00:00,Safety and Reliability of LLMs,True
+1411.0444,Einstein-Podolsky-Rosen steering measure for two-mode continuous variable states,http://arxiv.org/abs/1411.0444v2,2014-11-03 11:57:10+00:00,Comparison of Steering Methods,True
+1705.10075,An extensive VLT/X-Shooter library of photospheric templates of pre-main sequence stars,http://arxiv.org/abs/1705.10075v2,2017-05-29 08:46:38+00:00,Safety and Reliability of LLMs,False

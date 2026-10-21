@@ -1,0 +1,11 @@
+arxiv_id,title,url,date,category,cited_in_text
+2412.12481,if-ZKP: Intel FPGA-Based Acceleration of Zero Knowledge Proofs,http://arxiv.org/abs/2412.12481v1,2024-12-17 02:35:32+00:00,Multi-scalar Multiplication (MSM) Acceleration,True
+2408.05890,SZKP: A Scalable Accelerator Architecture for Zero-Knowledge Proofs,http://arxiv.org/abs/2408.05890v1,2024-08-12 01:53:58+00:00,Full-chip Architecture for ZKP Acceleration,True
+1801.06027,In-RDBMS Hardware Acceleration of Advanced Analytics,http://arxiv.org/abs/1801.06027v2,2018-01-08 19:04:13+00:00,Middleware and Integration Solutions for ZKPs,True
+2411.06350,AMAZE: Accelerated MiMC Hardware Architecture for Zero-Knowledge Applications on the Edge,http://arxiv.org/abs/2411.06350v1,2024-11-10 03:55:08+00:00,Hardware Acceleration for ZKP Primitives,True
+0801.4917,Zero-Knowledge Proofs of the Conjugacy for Permutation Groups,http://arxiv.org/abs/0801.4917v1,2008-01-31 16:33:15+00:00,ZKP Applications in Blockchain and Machine Learning,True
+2104.02251,Being-ahead: Benchmarking and Exploring Accelerators for Hardware-Efficient AI Deployment,http://arxiv.org/abs/2104.02251v1,2021-04-06 02:33:20+00:00,ZKP Applications in Blockchain and Machine Learning,True
+1704.04186,Video Acceleration Magnification,http://arxiv.org/abs/1704.04186v2,2017-04-13 15:55:19+00:00,ZKP Applications in Blockchain and Machine Learning,False
+1911.07782,QMA-hardness of Consistency of Local Density Matrices with Applications to Quantum Zero-Knowledge,http://arxiv.org/abs/1911.07782v3,2019-11-18 17:30:11+00:00,ZKP Applications in Blockchain and Machine Learning,False
+1705.10535,Introduction to Plasma Accelerators: the Basics,http://arxiv.org/abs/1705.10535v1,2017-05-30 10:35:56+00:00,Middleware and Integration Solutions for ZKPs,False
+2401.16448,LLM4SecHW: Leveraging Domain Specific Large Language Model for Hardware Debugging,http://arxiv.org/abs/2401.16448v1,2024-01-28 19:45:25+00:00,Middleware and Integration Solutions for ZKPs,False

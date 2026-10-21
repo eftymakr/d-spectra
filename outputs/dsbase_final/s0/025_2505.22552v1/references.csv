@@ -1,0 +1,22 @@
+arxiv_id,title,url,date,category,cited_in_text
+2308.12060,FlexKBQA: A Flexible LLM-Powered Framework for Few-Shot Knowledge Base Question Answering,http://arxiv.org/abs/2308.12060v3,2023-08-23 11:00:36+00:00,KG Integration with LLMs for Reasoning,True
+2505.05583,KG-HTC: Integrating Knowledge Graphs into LLMs for Effective Zero-shot Hierarchical Text Classification,http://arxiv.org/abs/2505.05583v1,2025-05-08 18:27:27+00:00,Alignment Between KGs and LLMs,True
+2404.07677,ODA: Observation-Driven Agent for integrating LLMs and Knowledge Graphs,http://arxiv.org/abs/2404.07677v2,2024-04-11 12:16:16+00:00,KG Integration with LLMs for Reasoning,True
+2306.08302,Unifying Large Language Models and Knowledge Graphs: A Roadmap,http://arxiv.org/abs/2306.08302v3,2023-06-14 07:15:26+00:00,KG Integration with LLMs for Reasoning,True
+2112.10006,Zero-shot and Few-shot Learning with Knowledge Graphs: A Comprehensive Survey,http://arxiv.org/abs/2112.10006v6,2021-12-18 21:40:50+00:00,KG Construction and Extraction Methods,True
+2310.05253,Explainable Claim Verification via Knowledge-Grounded Reasoning with Large Language Models,http://arxiv.org/abs/2310.05253v2,2023-10-08 18:04:05+00:00,KG Integration with LLMs for Reasoning,True
+2406.06621,LinkQ: An LLM-Assisted Visual Interface for Knowledge Graph Question-Answering,http://arxiv.org/abs/2406.06621v2,2024-06-07 15:28:31+00:00,LLM-Based Knowledge Engineering,True
+2502.20988,Reviewing Clinical Knowledge in Medical Large Language Models: Training and Beyond,http://arxiv.org/abs/2502.20988v2,2025-02-28 12:00:51+00:00,KG Integration with LLMs for Reasoning,True
+2505.12348,Reasoning-CV: Fine-tuning Powerful Reasoning LLMs for Knowledge-Assisted Claim Verification,http://arxiv.org/abs/2505.12348v1,2025-05-18 10:28:54+00:00,Claim Verification Frameworks,True
+2410.05821,"Towards Zero-Shot, Controllable Dialog Planning with LLMs",http://arxiv.org/abs/2410.05821v2,2024-10-08 08:51:44+00:00,KG Integration with LLMs for Reasoning,True
+2505.18607,From Entity-Centric to Goal-Oriented Graphs: Enhancing LLM Knowledge Retrieval in Minecraft,http://arxiv.org/abs/2505.18607v2,2025-05-24 09:09:20+00:00,KG Integration with LLMs for Reasoning,False
+2007.08304,Dual Graph Embedding for Object-Tag LinkPrediction on the Knowledge Graph,http://arxiv.org/abs/2007.08304v1,2020-07-16 12:46:32+00:00,Knowledge Graph Refinement Techniques,False
+2406.15444,Cutting Through the Noise: Boosting LLM Performance on Math Word Problems,http://arxiv.org/abs/2406.15444v5,2024-05-30 18:07:13+00:00,Performance Metrics and Baselines,False
+2410.19000,Make LLMs better zero-shot reasoners: Structure-orientated autonomous reasoning,http://arxiv.org/abs/2410.19000v1,2024-10-18 05:30:33+00:00,Zero-Shot Generalizability in Verification,False
+2405.17249,Assessing LLMs Suitability for Knowledge Graph Completion,http://arxiv.org/abs/2405.17249v2,2024-05-27 15:04:50+00:00,KG Integration with LLMs for Reasoning,False
+2305.17369,Modularized Zero-shot VQA with Pre-trained Models,http://arxiv.org/abs/2305.17369v2,2023-05-27 05:00:14+00:00,Zero-Shot Generalizability in Verification,False
+2206.07296,Enhanced Knowledge Selection for Grounded Dialogues via Document Semantic Graphs,http://arxiv.org/abs/2206.07296v2,2022-06-15 04:51:32+00:00,Graph Neural Networks and LLMs,False
+2011.08508,Generalized Continual Zero-Shot Learning,http://arxiv.org/abs/2011.08508v3,2020-11-17 08:47:54+00:00,Zero-Shot Generalizability in Verification,False
+2106.04509,MoCL: Data-driven Molecular Fingerprint via Knowledge-aware Contrastive Learning from Molecular Graph,http://arxiv.org/abs/2106.04509v2,2021-06-05 18:00:51+00:00,Graph Neural Networks and LLMs,False
+2004.14843,Knowledge Graph Embeddings and Explainable AI,http://arxiv.org/abs/2004.14843v1,2020-04-30 14:55:09+00:00,KG Quality Evaluation and Validation,False
+2207.14000,Multi-Step Deductive Reasoning Over Natural Language: An Empirical Study on Out-of-Distribution Generalisation,http://arxiv.org/abs/2207.14000v4,2022-07-28 10:44:46+00:00,KG Integration with LLMs for Reasoning,False

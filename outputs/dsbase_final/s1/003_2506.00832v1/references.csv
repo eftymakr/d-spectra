@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2008.03388,Controllable Neural Prosody Synthesis,http://arxiv.org/abs/2008.03388v2,2020-08-07 22:11:58+00:00,Prosody Control in TTS,True
+2408.06827,PRESENT: Zero-Shot Text-to-Prosody Control,http://arxiv.org/abs/2408.06827v1,2024-08-13 11:39:07+00:00,Prosody Control in TTS,True
+2110.02854,Prosody-TTS: An end-to-end speech synthesis system with prosody control,http://arxiv.org/abs/2110.02854v1,2021-10-06 15:29:35+00:00,Prosody Control in TTS,True
+2108.05517,Masked Acoustic Unit for Mispronunciation Detection and Correction,http://arxiv.org/abs/2108.05517v2,2021-08-12 03:44:27+00:00,Mispronunciation Correction Techniques,True
+2110.02952,Hierarchical prosody modeling and control in non-autoregressive parallel neural TTS,http://arxiv.org/abs/2110.02952v2,2021-10-06 17:58:42+00:00,Prosody Control in TTS,True
+2011.06465,Hierarchical Prosody Modeling for Non-Autoregressive Speech Synthesis,http://arxiv.org/abs/2011.06465v3,2020-11-12 16:16:41+00:00,Neural Prosody Modeling,True
+2206.12229,Exact Prosody Cloning in Zero-Shot Multispeaker Text-to-Speech,http://arxiv.org/abs/2206.12229v2,2022-06-24 11:54:59+00:00,Multi-Speaker TTS Systems,True
+2204.03238,Unsupervised Quantized Prosody Representation for Controllable Speech Synthesis,http://arxiv.org/abs/2204.03238v1,2022-04-07 06:09:47+00:00,Prosody Control in TTS,True
+2102.08328,Context-Aware Prosody Correction for Text-Based Speech Editing,http://arxiv.org/abs/2102.08328v1,2021-02-16 18:16:30+00:00,Neural Prosody Modeling,True
+2008.05656,Prosody Learning Mechanism for Speech Synthesis System Without Text Length Limit,http://arxiv.org/abs/2008.05656v1,2020-08-13 02:54:50+00:00,Neural Prosody Modeling,True
+2304.00714,Ensemble prosody prediction for expressive speech synthesis,http://arxiv.org/abs/2304.00714v1,2023-04-03 04:21:04+00:00,Neural Prosody Modeling,False
+2202.07816,ProsoSpeech: Enhancing Prosody With Quantized Vector Pre-training in Text-to-Speech,http://arxiv.org/abs/2202.07816v1,2022-02-16 01:42:32+00:00,Neural Prosody Modeling,False
+2412.08283,A Preliminary Analysis of Automatic Word and Syllable Prominence Detection in Non-Native Speech With Text-to-Speech Prosody Embeddings,http://arxiv.org/abs/2412.08283v1,2024-12-11 10:58:14+00:00,Prosody Embeddings and Their Applications,False
+2307.16324,Mispronunciation detection using self-supervised speech representations,http://arxiv.org/abs/2307.16324v1,2023-07-30 21:20:58+00:00,Mispronunciation Correction Techniques,False
+2309.01576,A Comparative Analysis of Pretrained Language Models for Text-to-Speech,http://arxiv.org/abs/2309.01576v1,2023-09-04 13:02:27+00:00,Neural Prosody Modeling,False
+2307.16549,DiffProsody: Diffusion-based Latent Prosody Generation for Expressive Speech Synthesis with Prosody Conditional Adversarial Training,http://arxiv.org/abs/2307.16549v1,2023-07-31 10:28:45+00:00,Neural Prosody Modeling,False
+2003.06686,Perception of prosodic variation for speech synthesis using an unsupervised discrete representation of F0,http://arxiv.org/abs/2003.06686v1,2020-03-14 19:17:42+00:00,Emotion and Intensity Modeling in TTS,False
+2308.08442,Mitigating the Exposure Bias in Sentence-Level Grapheme-to-Phoneme (G2P) Transduction,http://arxiv.org/abs/2308.08442v1,2023-08-16 15:49:36+00:00,Grapheme-to-Phoneme (G2P) Approaches,False
+1907.02479,Fine-grained robust prosody transfer for single-speaker neural text-to-speech,http://arxiv.org/abs/1907.02479v1,2019-07-04 16:20:42+00:00,Prosody Embeddings and Their Applications,False
+2304.11976,Zero-shot text-to-speech synthesis conditioned using self-supervised speech representation model,http://arxiv.org/abs/2304.11976v1,2023-04-24 10:15:58+00:00,Multi-Speaker TTS Systems,False
+2307.16679,Comparing normalizing flows and diffusion models for prosody and acoustic modelling in text-to-speech,http://arxiv.org/abs/2307.16679v1,2023-07-31 13:57:04+00:00,Neural Prosody Modeling,False
+2303.00171,DTW-SiameseNet: Dynamic Time Warped Siamese Network for Mispronunciation Detection and Correction,http://arxiv.org/abs/2303.00171v1,2023-03-01 01:53:11+00:00,Mispronunciation Correction Techniques,False
+2201.10198,Improved Mispronunciation detection system using a hybrid CTC-ATT based approach for L2 English speakers,http://arxiv.org/abs/2201.10198v1,2022-01-25 09:28:54+00:00,Mispronunciation Correction Techniques,False
+2306.00535,The Effects of Input Type and Pronunciation Dictionary Usage in Transfer Learning for Low-Resource Text-to-Speech,http://arxiv.org/abs/2306.00535v1,2023-06-01 10:42:56+00:00,Low-Resource Speech Synthesis Challenges,False
+2206.07956,Automatic Prosody Annotation with Pre-Trained Text-Speech Model,http://arxiv.org/abs/2206.07956v1,2022-06-16 06:54:16+00:00,Neural Prosody Modeling,False
+2104.01704,Safe Control Synthesis via Input Constrained Control Barrier Functions,http://arxiv.org/abs/2104.01704v1,2021-04-04 21:50:42+00:00,Low-Resource Speech Synthesis Challenges,False
+2305.07875,On $\ell_2$-performance of weakly-hard real-time control systems,http://arxiv.org/abs/2305.07875v3,2023-05-13 09:18:35+00:00,Low-Resource Speech Synthesis Challenges,False
+,Gravitational Correction and Weak Gravity Conjecture,http://arxiv.org/abs/hep-th/0703039v2,2007-03-05 11:11:17+00:00,Low-Resource Speech Synthesis Challenges,False
+1804.09543,The Future of Prosody: It's about Time,http://arxiv.org/abs/1804.09543v4,2018-04-23 20:54:43+00:00,Neural Prosody Modeling,False
+1610.04013,Entanglement-Assisted Quantum Error-Correcting Codes,http://arxiv.org/abs/1610.04013v1,2016-10-13 10:31:34+00:00,Others,False

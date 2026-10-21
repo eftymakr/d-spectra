@@ -1,0 +1,16 @@
+rank,arxiv_id,title,url,date
+1,2210.02068,Nonparametric Decoding for Generative Retrieval,http://arxiv.org/abs/2210.02068v3,2022-10-05 07:42:54+00:00
+2,2408.02152,Generative Retrieval with Few-shot Indexing,http://arxiv.org/abs/2408.02152v3,2024-08-04 22:00:34+00:00
+3,2404.07220,Blended RAG: Improving RAG (Retriever-Augmented Generation) Accuracy with Semantic Search and Hybrid Query-Based Retrievers,http://arxiv.org/abs/2404.07220v2,2024-03-22 17:13:46+00:00
+4,2504.05181,Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval,http://arxiv.org/abs/2504.05181v2,2025-04-07 15:27:37+00:00
+5,2404.08137,Generative Information Retrieval Evaluation,http://arxiv.org/abs/2404.08137v3,2024-04-11 21:48:54+00:00
+6,2304.07466,Asymptotic Breakdown Point Analysis for a General Class of Minimum Divergence Estimators,http://arxiv.org/abs/2304.07466v3,2023-04-15 03:58:56+00:00
+7,2010.10789,ProphetNet-Ads: A Looking Ahead Strategy for Generative Retrieval Models in Sponsored Search Engine,http://arxiv.org/abs/2010.10789v1,2020-10-21 07:03:20+00:00
+8,2301.05508,Do the Findings of Document and Passage Retrieval Generalize to the Retrieval of Responses for Dialogues?,http://arxiv.org/abs/2301.05508v1,2023-01-13 12:18:43+00:00
+9,2404.14600,Planning Ahead in Generative Retrieval: Guiding Autoregressive Generation through Simultaneous Decoding,http://arxiv.org/abs/2404.14600v1,2024-04-22 21:50:01+00:00
+10,2411.00744,CARROT: A Learned Cost-Constrained Retrieval Optimization System for RAG,http://arxiv.org/abs/2411.00744v2,2024-11-01 17:11:16+00:00
+11,2009.13836,SIR: Similar Image Retrieval for Product Search in E-Commerce,http://arxiv.org/abs/2009.13836v1,2020-09-29 07:53:03+00:00
+12,1407.5416,Privacy-Preserving Important Passage Retrieval,http://arxiv.org/abs/1407.5416v1,2014-07-21 08:56:09+00:00
+13,1606.04648,A Study of MatchPyramid Models on Ad-hoc Retrieval,http://arxiv.org/abs/1606.04648v1,2016-06-15 05:39:30+00:00
+14,1708.08291,On Type-Aware Entity Retrieval,http://arxiv.org/abs/1708.08291v1,2017-08-28 12:47:04+00:00
+15,2102.11903,Neural ranking models for document retrieval,http://arxiv.org/abs/2102.11903v2,2021-02-23 19:30:37+00:00

@@ -1,0 +1,24 @@
+arxiv_id,title,url,date,category,cited_in_text
+2501.01242,An Efficient Attention Mechanism for Sequential Recommendation Tasks: HydraRec,http://arxiv.org/abs/2501.01242v1,2025-01-02 13:03:06+00:00,Efficient Computational Methods for Long Sequences,True
+2407.13135,MLSA4Rec: Mamba Combined with Low-Rank Decomposed Self-Attention for Sequential Recommendation,http://arxiv.org/abs/2407.13135v1,2024-07-18 03:46:21+00:00,Attention Mechanisms in Sequential Recommendation,True
+2409.01192,SSD4Rec: A Structured State Space Duality Model for Efficient Sequential Recommendation,http://arxiv.org/abs/2409.01192v2,2024-09-02 11:58:56+00:00,State-Space Models for Variable-Length Sequences,True
+2304.09184,Frequency Enhanced Hybrid Attention Network for Sequential Recommendation,http://arxiv.org/abs/2304.09184v3,2023-04-18 15:28:53+00:00,Attention Mechanisms in Sequential Recommendation,True
+2403.16371,Uncovering Selective State Space Model's Capabilities in Lifelong Sequential Recommendation,http://arxiv.org/abs/2403.16371v1,2024-03-25 02:31:57+00:00,Efficient Computational Methods for Long Sequences,True
+2403.03900,Mamba4Rec: Towards Efficient Sequential Recommendation with Selective State Space Models,http://arxiv.org/abs/2403.03900v2,2024-03-06 18:00:15+00:00,Efficient Computational Methods for Long Sequences,True
+2406.02638,EchoMamba4Rec: Harmonizing Bidirectional State Space Models with Spectral Filtering for Advanced Sequential Recommendation,http://arxiv.org/abs/2406.02638v2,2024-06-04 09:07:58+00:00,Efficient Computational Methods for Long Sequences,True
+2502.08132,SS4Rec: Continuous-Time Sequential Recommendation with State Space Models,http://arxiv.org/abs/2502.08132v3,2025-02-12 05:28:08+00:00,Temporal and Contextual Awareness,True
+2312.04693,GraphMETRO: Mitigating Complex Graph Distribution Shifts via Mixture of Aligned Experts,http://arxiv.org/abs/2312.04693v3,2023-12-07 20:56:07+00:00,Mixture-of-Experts (MoE) Frameworks,True
+1707.08913,Multi-Stakeholder Recommendation: Applications and Challenges,http://arxiv.org/abs/1707.08913v1,2017-07-27 15:52:18+00:00,Evaluation and Benchmarking of Sequential Models,True
+2409.05022,Sequential Recommendation via Adaptive Robust Attention with Multi-dimensional Embeddings,http://arxiv.org/abs/2409.05022v1,2024-09-08 08:27:22+00:00,Attention Mechanisms in Sequential Recommendation,True
+2410.21048,Pay Attention to Attention for Sequential Recommendation,http://arxiv.org/abs/2410.21048v1,2024-10-28 14:03:39+00:00,Attention Mechanisms in Sequential Recommendation,False
+2311.08272,Mixed Attention Network for Cross-domain Sequential Recommendation,http://arxiv.org/abs/2311.08272v1,2023-11-14 16:07:16+00:00,Attention Mechanisms in Sequential Recommendation,False
+2012.03323,KATRec: Knowledge Aware aTtentive Sequential Recommendations,http://arxiv.org/abs/2012.03323v3,2020-12-06 17:03:52+00:00,Attention Mechanisms in Sequential Recommendation,False
+2109.05261,CauseRec: Counterfactual User Sequence Synthesis for Sequential Recommendation,http://arxiv.org/abs/2109.05261v1,2021-09-11 11:41:07+00:00,Integration of Negative Feedback and Contrastive Learning,False
+2310.02367,Linear Recurrent Units for Sequential Recommendation,http://arxiv.org/abs/2310.02367v2,2023-10-03 18:44:17+00:00,Efficient Computational Methods for Long Sequences,False
+2504.05323,Multi-Perspective Attention Mechanism for Bias-Aware Sequential Recommendation,http://arxiv.org/abs/2504.05323v1,2025-02-26 14:16:58+00:00,Attention Mechanisms in Sequential Recommendation,False
+2308.09419,Attention Calibration for Transformer-based Sequential Recommendation,http://arxiv.org/abs/2308.09419v3,2023-08-18 09:38:57+00:00,Attention Mechanisms in Sequential Recommendation,False
+2404.13878,Multi-Level Sequence Denoising with Cross-Signal Contrastive Learning for Sequential Recommendation,http://arxiv.org/abs/2404.13878v2,2024-04-22 04:57:33+00:00,Integration of Negative Feedback and Contrastive Learning,False
+2211.01297,Self-Attentive Sequential Recommendation with Cheap Causal Convolutions,http://arxiv.org/abs/2211.01297v4,2022-11-02 17:19:45+00:00,Attention Mechanisms in Sequential Recommendation,False
+1002.1150,Finding Sequential Patterns from Large Sequence Data,http://arxiv.org/abs/1002.1150v1,2010-02-05 08:43:45+00:00,Efficient Computational Methods for Long Sequences,False
+2503.03213,Convergence Rates for Softmax Gating Mixture of Experts,http://arxiv.org/abs/2503.03213v1,2025-03-05 06:11:24+00:00,Mixture-of-Experts (MoE) Frameworks,False
+2402.14800,Not All Experts are Equal: Efficient Expert Pruning and Skipping for Mixture-of-Experts Large Language Models,http://arxiv.org/abs/2402.14800v2,2024-02-22 18:56:07+00:00,Mixture-of-Experts (MoE) Frameworks,False

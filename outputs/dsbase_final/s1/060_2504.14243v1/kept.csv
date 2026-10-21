@@ -1,0 +1,26 @@
+rank,arxiv_id,title,url,date
+1,1908.05164,Unconstrained Monotonic Neural Networks,http://arxiv.org/abs/1908.05164v3,2019-08-14 15:11:31+00:00
+2,2303.10761,Calibration of Neural Networks,http://arxiv.org/abs/2303.10761v1,2023-03-19 20:27:51+00:00
+3,2305.18764,When Does Optimizing a Proper Loss Yield Calibration?,http://arxiv.org/abs/2305.18764v2,2023-05-30 05:53:34+00:00
+4,2309.12236,Smooth ECE: Principled Reliability Diagrams via Kernel Smoothing,http://arxiv.org/abs/2309.12236v1,2023-09-21 16:30:22+00:00
+5,2411.02988,Confidence Calibration of Classifiers with Many Classes,http://arxiv.org/abs/2411.02988v2,2024-11-05 10:51:01+00:00
+6,2411.13343,Fact-Level Confidence Calibration and Self-Correction,http://arxiv.org/abs/2411.13343v1,2024-11-20 14:15:18+00:00
+7,2209.15028,A smooth variational principle on Wasserstein space,http://arxiv.org/abs/2209.15028v2,2022-09-29 18:07:53+00:00
+8,2103.00233,Learning with Smooth Hinge Losses,http://arxiv.org/abs/2103.00233v2,2021-02-27 14:50:02+00:00
+9,2205.08701,"Extrinsic Calibration of LiDAR, IMU and Camera",http://arxiv.org/abs/2205.08701v1,2022-05-18 03:20:15+00:00
+10,2501.19047,Understanding Model Calibration -- A gentle introduction and visual exploration of calibration and the expected calibration error (ECE),http://arxiv.org/abs/2501.19047v5,2025-01-31 11:18:45+00:00
+11,1911.00104,Towards calibrated and scalable uncertainty representations for neural networks,http://arxiv.org/abs/1911.00104v3,2019-10-28 02:29:55+00:00
+12,1502.06094,Positive Neural Networks in Discrete Time Implement Monotone-Regular Behaviors,http://arxiv.org/abs/1502.06094v2,2015-02-21 11:17:08+00:00
+13,2209.09163,Validation of the Reference Impedance in Multiline Calibration with Stepped Impedance Standards,http://arxiv.org/abs/2209.09163v3,2022-09-19 16:32:37+00:00
+14,2004.08463,A Unified Calibration Framework for 21 cm Cosmology,http://arxiv.org/abs/2004.08463v2,2020-04-17 21:49:35+00:00
+15,2404.02544,Semi-Supervised Unconstrained Head Pose Estimation in the Wild,http://arxiv.org/abs/2404.02544v4,2024-04-03 08:01:00+00:00
+16,1802.05792,Masked Conditional Neural Networks for Automatic Sound Events Recognition,http://arxiv.org/abs/1802.05792v2,2018-02-15 23:24:39+00:00
+17,2104.00035,Strengthening the Training of Convolutional Neural Networks By Using Walsh Matrix,http://arxiv.org/abs/2104.00035v1,2021-03-31 18:06:11+00:00
+18,1902.10586,Road is Enough! Extrinsic Calibration of Non-overlapping Stereo Camera and LiDAR using Road Information,http://arxiv.org/abs/1902.10586v2,2019-02-27 15:27:00+00:00
+19,1206.6695,"Addressing the Photometric Calibration Challenge: Explicit Determination of the Instrumental Response and Atmospheric Response Functions, and Tying it All Together",http://arxiv.org/abs/1206.6695v1,2012-06-28 14:07:39+00:00
+20,2106.07998,Revisiting the Calibration of Modern Neural Networks,http://arxiv.org/abs/2106.07998v2,2021-06-15 09:24:43+00:00
+21,1901.06610,Hierarchical Attentional Hybrid Neural Networks for Document Classification,http://arxiv.org/abs/1901.06610v2,2019-01-20 01:48:43+00:00
+22,1804.02665,Environmental Sound Recognition using Masked Conditional Neural Networks,http://arxiv.org/abs/1804.02665v2,2018-04-08 10:22:02+00:00
+23,1905.05918,A Neural Network-Evolutionary Computational Framework for Remaining Useful Life Estimation of Mechanical Systems,http://arxiv.org/abs/1905.05918v1,2019-05-15 02:31:45+00:00
+24,1904.03601,VoiceID Loss: Speech Enhancement for Speaker Verification,http://arxiv.org/abs/1904.03601v2,2019-04-07 08:07:20+00:00
+25,1606.00825,Training a Hidden Markov Model with a Bayesian Spiking Neural Network,http://arxiv.org/abs/1606.00825v2,2016-06-02 19:48:22+00:00

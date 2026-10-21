@@ -1,0 +1,23 @@
+rank,arxiv_id,title,url,date
+1,2309.09261,Leveraging Large Language Models for Sequential Recommendation,http://arxiv.org/abs/2309.09261v1,2023-09-17 12:53:53+00:00
+2,2012.00485,Mixed Information Flow for Cross-domain Sequential Recommendations,http://arxiv.org/abs/2012.00485v3,2020-12-01 13:45:26+00:00
+3,2406.03085,Exploring User Retrieval Integration towards Large Language Models for Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2406.03085v1,2024-06-05 09:19:54+00:00
+4,2209.10163,DDGHM: Dual Dynamic Graph with Hybrid Metric Training for Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2209.10163v1,2022-09-21 07:53:06+00:00
+5,2503.13254,Federated Mixture-of-Expert for Non-Overlapped Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2503.13254v1,2025-03-17 15:12:37+00:00
+6,2411.19862,Cross-Domain Recommendation Meets Large Language Models,http://arxiv.org/abs/2411.19862v1,2024-11-29 17:25:00+00:00
+7,2408.08209,Modeling Domain and Feedback Transitions for Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2408.08209v2,2024-08-15 15:18:55+00:00
+8,2311.04760,Towards Open-world Cross-Domain Sequential Recommendation: A Model-Agnostic Contrastive Denoising Approach,http://arxiv.org/abs/2311.04760v3,2023-11-08 15:33:06+00:00
+9,2105.03300,DA-GCN: A Domain-aware Attentive Graph Convolution Network for Shared-account Cross-domain Sequential Recommendation,http://arxiv.org/abs/2105.03300v1,2021-05-07 14:52:06+00:00
+10,2304.04218,Automated Prompting for Non-overlapping Cross-domain Sequential Recommendation,http://arxiv.org/abs/2304.04218v1,2023-04-09 11:34:54+00:00
+11,2502.15694,Image Fusion for Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2502.15694v2,2024-12-31 02:44:38+00:00
+12,2104.08490,Dual Metric Learning for Effective and Efficient Cross-Domain Recommendations,http://arxiv.org/abs/2104.08490v2,2021-04-17 09:18:59+00:00
+13,2002.00741,Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation,http://arxiv.org/abs/2002.00741v1,2020-01-29 20:27:42+00:00
+14,2409.14810,Pre-trained Language Model and Knowledge Distillation for Lightweight Sequential Recommendation,http://arxiv.org/abs/2409.14810v1,2024-09-23 08:39:07+00:00
+15,2311.04590,Rethinking Cross-Domain Sequential Recommendation under Open-World Assumptions,http://arxiv.org/abs/2311.04590v6,2023-11-08 10:44:20+00:00
+16,2410.23180,ReasoningRec: Bridging Personalized Recommendations and Human-Interpretable Explanations through LLM Reasoning,http://arxiv.org/abs/2410.23180v1,2024-10-30 16:37:04+00:00
+17,2405.17890,SLMRec: Distilling Large Language Models into Small for Sequential Recommendation,http://arxiv.org/abs/2405.17890v4,2024-05-28 07:12:06+00:00
+18,2407.01505,Self-Cognition in Large Language Models: An Exploratory Study,http://arxiv.org/abs/2407.01505v1,2024-07-01 17:52:05+00:00
+19,2312.05434,Beneath the Surface: Unveiling Harmful Memes with Multimodal Reasoning Distilled from Large Language Models,http://arxiv.org/abs/2312.05434v1,2023-12-09 01:59:11+00:00
+20,2401.15369,Privacy-Preserving Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2401.15369v1,2024-01-27 10:14:21+00:00
+21,2402.14679,Is Self-knowledge and Action Consistent or Not: Investigating Large Language Model's Personality,http://arxiv.org/abs/2402.14679v2,2024-02-22 16:32:08+00:00
+22,2305.03715,Large Language Models in Ambulatory Devices for Home Health Diagnostics: A case study of Sickle Cell Anemia Management,http://arxiv.org/abs/2305.03715v1,2023-05-05 17:55:49+00:00

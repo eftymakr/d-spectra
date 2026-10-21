@@ -1,0 +1,22 @@
+arxiv_id,title,url,date,category,cited_in_text
+2402.09642,Answer is All You Need: Instruction-following Text Embedding via Answering the Question,http://arxiv.org/abs/2402.09642v1,2024-02-15 01:02:41+00:00,Instruction-Following Text Embedding Frameworks,True
+2505.21439,Towards Better Instruction Following Retrieval Models,http://arxiv.org/abs/2505.21439v1,2025-05-27 17:14:37+00:00,Instruction-Following Text Embedding Frameworks,True
+2303.10475,Large Language Model Instruction Following: A Survey of Progresses and Challenges,http://arxiv.org/abs/2303.10475v8,2023-03-18 19:17:47+00:00,Instruction-Tuning with Label-Annotated Data,True
+2311.13133,LIMIT: Less Is More for Instruction Tuning Across Evaluation Paradigms,http://arxiv.org/abs/2311.13133v1,2023-11-22 03:37:01+00:00,Instruction-Tuning with Label-Annotated Data,True
+2409.00096,Non-instructional Fine-tuning: Enabling Instruction-Following Capabilities in Pre-trained Language Models without Instruction-Following Data,http://arxiv.org/abs/2409.00096v1,2024-08-27 01:21:53+00:00,Fine-Tuning with Non-Instructional Data,True
+2503.03669,Attentive Reasoning Queries: A Systematic Method for Optimizing Instruction-Following in Large Language Models,http://arxiv.org/abs/2503.03669v1,2025-03-05 17:03:48+00:00,Structured Reasoning for Instruction Compliance,True
+2311.16338,Releasing the CRaQAn (Coreference Resolution in Question-Answering): An open-source dataset and dataset creation methodology using instruction-following models,http://arxiv.org/abs/2311.16338v1,2023-11-27 21:54:50+00:00,Internal Representation Analysis for Instruction Understanding,True
+2304.03277,Instruction Tuning with GPT-4,http://arxiv.org/abs/2304.03277v1,2023-04-06 17:58:09+00:00,Instruction-Tuning with Label-Annotated Data,True
+2410.14516,"Do LLMs ""know"" internally when they follow instructions?",http://arxiv.org/abs/2410.14516v5,2024-10-18 14:55:14+00:00,Internal Representation Analysis for Instruction Understanding,True
+2005.09382,Human Instruction-Following with Deep Reinforcement Learning via Transfer-Learning from Text,http://arxiv.org/abs/2005.09382v1,2020-05-19 12:16:58+00:00,Instruction-Following Text Embedding Frameworks,False
+2405.19874,Is In-Context Learning Sufficient for Instruction Following in LLMs?,http://arxiv.org/abs/2405.19874v3,2024-05-30 09:28:56+00:00,Instruction-Tuning with Label-Annotated Data,False
+2409.14254,Instruction Following without Instruction Tuning,http://arxiv.org/abs/2409.14254v1,2024-09-21 22:36:22+00:00,Fine-Tuning with Non-Instructional Data,False
+2009.02471,Archaeology in a Vacuum: Obstacles to and Solutions for Developing a Real Space Archaeology,http://arxiv.org/abs/2009.02471v1,2020-09-05 06:05:33+00:00,Internal Representation Analysis for Instruction Understanding,False
+2210.00721,Efficient acoustic feature transformation in mismatched environments using a Guided-GAN,http://arxiv.org/abs/2210.00721v3,2022-10-03 05:33:28+00:00,Efficiency Improvements in Instruction-Aware Embeddings,False
+1707.04892,"A secure approach for embedding message text on an elliptic curve defined over prime fields, and building 'EC-RSA-ELGamal' Cryptographic System",http://arxiv.org/abs/1707.04892v1,2017-07-16 14:49:36+00:00,Instruction-Following Text Embedding Frameworks,False
+2211.04591,Learning to Follow Instructions in Text-Based Games,http://arxiv.org/abs/2211.04591v1,2022-11-08 22:20:17+00:00,Structured Reasoning for Instruction Compliance,False
+1805.07467,Unsupervised Cross-Modal Alignment of Speech and Text Embedding Spaces,http://arxiv.org/abs/1805.07467v2,2018-05-18 22:59:18+00:00,Embedding Optimization for Task-Specific Similarity,False
+1710.07210,Multi-Task Label Embedding for Text Classification,http://arxiv.org/abs/1710.07210v1,2017-10-17 23:35:58+00:00,Embedding Optimization for Task-Specific Similarity,False
+1502.06123,United Nations Human Space Technology Initiative (HSTI),http://arxiv.org/abs/1502.06123v1,2015-02-21 18:16:04+00:00,Internal Representation Analysis for Instruction Understanding,False
+2105.13227,What Sustained Multi-Disciplinary Research Can Achieve: The Space Weather Modeling Framework,http://arxiv.org/abs/2105.13227v1,2021-05-27 15:17:25+00:00,Internal Representation Analysis for Instruction Understanding,False
+2009.04211,Domain of Influence analysis: implications for Data Assimilation in space weather forecasting,http://arxiv.org/abs/2009.04211v1,2020-09-09 11:13:46+00:00,Internal Representation Analysis for Instruction Understanding,False

@@ -1,0 +1,23 @@
+rank,arxiv_id,title,url,date
+1,2502.16879,A Multi-LLM-Agent-Based Framework for Economic and Public Policy Analysis,http://arxiv.org/abs/2502.16879v1,2025-02-24 06:27:07+00:00
+2,2402.09563,ABIDES-Economist: Agent-Based Simulator of Economic Systems with Learning Agents,http://arxiv.org/abs/2402.09563v2,2024-02-14 20:26:52+00:00
+3,2412.16591,Data-Driven Economic Agent-Based Models,http://arxiv.org/abs/2412.16591v1,2024-12-21 11:49:50+00:00
+4,2006.05048,Policy-focused Agent-based Modeling using RL Behavioral Models,http://arxiv.org/abs/2006.05048v3,2020-06-09 04:55:07+00:00
+5,2504.01242,An Agent-based Model Simulation Approach to Demonstrate Effects of Aging Population and Social Service Policies on Pensions Fund and Its Long-term Socio-economic Consequences,http://arxiv.org/abs/2504.01242v1,2025-04-01 23:14:29+00:00
+6,2408.12038,Empirical Equilibria in Agent-based Economic systems with Learning agents,http://arxiv.org/abs/2408.12038v1,2024-08-21 23:47:46+00:00
+7,1311.5108,A Methodology to Engineer and Validate Dynamic Multi-level Multi-agent Based Simulations,http://arxiv.org/abs/1311.5108v1,2013-11-20 15:44:26+00:00
+8,1303.3693,Agent-based and macroscopic modeling of the complex socio-economic systems,http://arxiv.org/abs/1303.3693v2,2013-03-15 07:19:53+00:00
+9,1901.03951,"Inequality, mobility and the financial accumulation process: A computational economic analysis",http://arxiv.org/abs/1901.03951v1,2019-01-13 09:14:52+00:00
+10,1811.07029,Modelling the Dynamic Joint Policy of Teammates with Attention Multi-agent DDPG,http://arxiv.org/abs/1811.07029v1,2018-11-13 11:30:29+00:00
+11,2412.11937,Precise Length Control in Large Language Models,http://arxiv.org/abs/2412.11937v1,2024-12-16 16:22:27+00:00
+12,2202.13695,Taxpayer deductions and the endogenous probability of tax penalisation,http://arxiv.org/abs/2202.13695v1,2022-02-28 11:30:03+00:00
+13,2402.11651,Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents,http://arxiv.org/abs/2402.11651v2,2024-02-18 17:10:07+00:00
+14,2502.04355,LLM-ProS: Analyzing Large Language Models' Performance in Competitive Problem Solving,http://arxiv.org/abs/2502.04355v1,2025-02-04 18:55:14+00:00
+15,2309.02144,Making Large Language Models Better Reasoners with Alignment,http://arxiv.org/abs/2309.02144v1,2023-09-05 11:32:48+00:00
+16,2503.21676,"How do language models learn facts? Dynamics, curricula and hallucinations",http://arxiv.org/abs/2503.21676v2,2025-03-27 16:43:45+00:00
+17,2308.16118,Response: Emergent analogical reasoning in large language models,http://arxiv.org/abs/2308.16118v2,2023-08-30 16:17:26+00:00
+18,2303.13994,An Agent-Based Model for Poverty and Discrimination Policy-Making,http://arxiv.org/abs/2303.13994v1,2023-03-24 13:48:21+00:00
+19,2409.08066,Self-Supervised Learning of Iterative Solvers for Constrained Optimization,http://arxiv.org/abs/2409.08066v3,2024-09-12 14:17:23+00:00
+20,2409.15256,Behavioral Bias of Vision-Language Models: A Behavioral Finance View,http://arxiv.org/abs/2409.15256v1,2024-09-23 17:54:47+00:00
+21,2305.14982,LAraBench: Benchmarking Arabic AI with Large Language Models,http://arxiv.org/abs/2305.14982v2,2023-05-24 10:16:16+00:00
+22,2408.16440,Instruction-tuned Large Language Models for Machine Translation in the Medical Domain,http://arxiv.org/abs/2408.16440v2,2024-08-29 11:05:54+00:00

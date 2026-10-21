@@ -1,0 +1,25 @@
+arxiv_id,title,url,date,category,cited_in_text
+1203.6364,Exploring single-sample SNP and INDEL calling with whole-genome de novo assembly,http://arxiv.org/abs/1203.6364v2,2012-03-28 20:04:10+00:00,Comparative Analysis of Approaches,True
+2004.06719,Genome assembly using quantum and quantum-inspired annealing,http://arxiv.org/abs/2004.06719v3,2020-04-14 15:41:27+00:00,Comparative Analysis of Approaches,True
+2309.07270,GPU Scheduler for De Novo Genome Assembly with Multiple MPI Processes,http://arxiv.org/abs/2309.07270v2,2023-09-13 19:20:46+00:00,GPU and Parallel Processing Techniques,True
+2404.07164,PIM-Opt: Demystifying Distributed Optimization Algorithms on a Real-World Processing-In-Memory System,http://arxiv.org/abs/2404.07164v2,2024-04-10 17:00:04+00:00,Hardware Acceleration Solutions,True
+1106.2603,SparseAssembler: de novo Assembly with the Sparse de Bruijn Graph,http://arxiv.org/abs/1106.2603v1,2011-06-14 04:06:06+00:00,Memory Footprint Reduction,True
+1801.04453,Scalable De Novo Genome Assembly Using Pregel,http://arxiv.org/abs/1801.04453v1,2018-01-13 15:15:08+00:00,Distributed Computing Approaches,True
+2207.04350,Distributed-Memory Parallel Contig Generation for De Novo Long-Read Genome Assembly,http://arxiv.org/abs/2207.04350v1,2022-07-10 00:03:03+00:00,Distributed Computing Approaches,True
+2308.07877,Genome assembly in the telomere-to-telomere era,http://arxiv.org/abs/2308.07877v1,2023-08-15 16:50:40+00:00,De Novo Assembly Fundamentals,True
+2407.07718,High-Performance Sorting-Based k-mer Counting in Distributed Memory with Flexible Hybrid Parallelism,http://arxiv.org/abs/2407.07718v1,2024-07-10 14:50:00+00:00,Distributed Computing Approaches,True
+1512.01801,Minimap and miniasm: fast mapping and de novo assembly for noisy long sequences,http://arxiv.org/abs/1512.01801v2,2015-12-06 15:16:02+00:00,Software Optimization Strategies,True
+1703.10242,I CAN HAS SUPERCOMPUTER? A Novel Approach to Teaching Parallel and Distributed Computing Concepts Using a Meme-Based Programming Language,http://arxiv.org/abs/1703.10242v1,2017-03-29 20:42:28+00:00,Distributed Computing Approaches,True
+2208.05429,Designing a 3D Parallel Memory-Aware Lattice Boltzmann Algorithm on Manycore Systems,http://arxiv.org/abs/2208.05429v1,2022-08-10 16:27:38+00:00,GPU and Parallel Processing Techniques,True
+1703.10231,"A $4,000 Workstation for Mammalian Genome Assembly with Long Reads",http://arxiv.org/abs/1703.10231v1,2017-03-20 10:05:54+00:00,Software Optimization Strategies,True
+1506.05538,Bermuda: Bidirectional de novo assembly of transcripts with new insights for handling uneven coverage,http://arxiv.org/abs/1506.05538v1,2015-06-18 03:06:55+00:00,Comparative Analysis of Approaches,True
+2302.11443,Engineering a Distributed-Memory Triangle Counting Algorithm,http://arxiv.org/abs/2302.11443v2,2023-02-22 15:26:44+00:00,Distributed Computing Approaches,True
+2008.01237,Haplotype-resolved de novo assembly with phased assembly graphs,http://arxiv.org/abs/2008.01237v1,2020-08-03 23:10:44+00:00,Comparative Analysis of Approaches,True
+1305.6760,SOAPdenovo-Trans: De novo transcriptome assembly with short RNA-Seq reads,http://arxiv.org/abs/1305.6760v2,2013-05-29 11:32:48+00:00,Comparative Analysis of Approaches,True
+2107.07108,Improving I/O Performance for Exascale Applications through Online Data Layout Reorganization,http://arxiv.org/abs/2107.07108v1,2021-07-15 04:17:16+00:00,Software Optimization Strategies,True
+1211.1737,De novo genomic analyses for non-model organisms: an evaluation of methods across a multi-species data set,http://arxiv.org/abs/1211.1737v1,2012-11-08 00:42:04+00:00,Comparative Analysis of Approaches,True
+2007.06722,First results on ProtoDUNE-SP liquid argon time projection chamber performance from a beam test at the CERN Neutrino Platform,http://arxiv.org/abs/2007.06722v4,2020-07-13 22:14:15+00:00,Performance Evaluation Metrics,True
+2112.12609,Predição da Idade Cerebral a partir de Imagens de Ressonância Magnética utilizando Redes Neurais Convolucionais,http://arxiv.org/abs/2112.12609v1,2021-12-23 14:51:45+00:00,Comparative Analysis of Approaches,True
+2403.13918,Automated Calibration of Parallel and Distributed Computing Simulators: A Case Study,http://arxiv.org/abs/2403.13918v2,2024-03-20 18:39:47+00:00,Distributed Computing Approaches,False
+2409.18288,The track-length extension fitting algorithm for energy measurement of interacting particles in liquid argon TPCs and its performance with ProtoDUNE-SP data,http://arxiv.org/abs/2409.18288v3,2024-09-26 21:00:31+00:00,Performance Evaluation Metrics,False
+1611.05360,The Life of Lazarillo de Tormes and of His Machine Learning Adversities,http://arxiv.org/abs/1611.05360v1,2016-11-16 16:55:42+00:00,Comparative Analysis of Approaches,False

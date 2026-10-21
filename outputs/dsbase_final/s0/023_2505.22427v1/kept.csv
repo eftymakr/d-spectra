@@ -1,0 +1,21 @@
+rank,arxiv_id,title,url,date
+1,2307.15264,3D Radar and Camera Co-Calibration: A Flexible and Accurate Method for Target-based Extrinsic Calibration,http://arxiv.org/abs/2307.15264v1,2023-07-28 02:17:48+00:00
+2,2211.01871,Spatiotemporal Calibration of 3D Millimetre-Wavelength Radar-Camera Pairs,http://arxiv.org/abs/2211.01871v4,2022-11-03 15:03:28+00:00
+3,2309.03734,ClusterFusion: Leveraging Radar Spatial Features for Radar-Camera 3D Object Detection in Autonomous Vehicles,http://arxiv.org/abs/2309.03734v2,2023-09-07 14:23:47+00:00
+4,2304.10410,Radar-Camera Fusion for Object Detection and Semantic Segmentation in Autonomous Driving: A Comprehensive Review,http://arxiv.org/abs/2304.10410v2,2023-04-20 15:48:50+00:00
+5,2309.00787,Online Targetless Radar-Camera Extrinsic Calibration Based on the Common Features of Radar and Camera,http://arxiv.org/abs/2309.00787v2,2023-09-02 01:38:29+00:00
+6,2305.15883,RC-BEVFusion: A Plug-In Module for Radar-Camera Bird's Eye View Feature Fusion,http://arxiv.org/abs/2305.15883v2,2023-05-25 09:26:04+00:00
+7,2103.07505,A Continuous-Time Approach for 3D Radar-to-Camera Extrinsic Calibration,http://arxiv.org/abs/2103.07505v2,2021-03-12 19:54:22+00:00
+8,2309.15465,Cross-Dataset Experimental Study of Radar-Camera Fusion in Bird's-Eye View,http://arxiv.org/abs/2309.15465v1,2023-09-27 08:02:58+00:00
+9,1904.08743,Targetless Rotational Auto-Calibration of Radar and Camera for Intelligent Transportation Systems,http://arxiv.org/abs/1904.08743v2,2019-04-18 13:02:34+00:00
+10,2309.00268,Concept for an Automatic Annotation of Automotive Radar Data Using AI-segmented Aerial Camera Images,http://arxiv.org/abs/2309.00268v1,2023-09-01 05:59:28+00:00
+11,2504.09086,RICCARDO: Radar Hit Prediction and Convolution for Camera-Radar 3D Object Detection,http://arxiv.org/abs/2504.09086v1,2025-04-12 05:37:42+00:00
+12,2501.19047,Understanding Model Calibration -- A gentle introduction and visual exploration of calibration and the expected calibration error (ECE),http://arxiv.org/abs/2501.19047v5,2025-01-31 11:18:45+00:00
+13,1207.4147,Regret Minimizing Equilibria and Mechanisms for Games with Strict Type Uncertainty,http://arxiv.org/abs/1207.4147v1,2012-07-11 14:55:55+00:00
+14,1301.0595,Mechanism Design with Execution Uncertainty,http://arxiv.org/abs/1301.0595v1,2012-12-12 15:58:02+00:00
+15,1003.1598,Information Fusion in the Immune System,http://arxiv.org/abs/1003.1598v1,2010-03-08 11:18:01+00:00
+16,1112.2954,Synthesis of Spherical 4R Mechanism for Path Generation using Differential Evolution,http://arxiv.org/abs/1112.2954v2,2011-12-13 16:48:05+00:00
+17,1607.07288,Validation of Information Fusion,http://arxiv.org/abs/1607.07288v1,2016-07-22 17:18:05+00:00
+18,2004.08463,A Unified Calibration Framework for 21 cm Cosmology,http://arxiv.org/abs/2004.08463v2,2020-04-17 21:49:35+00:00
+19,1109.1997,Correlation length scalings in fusion edge plasma turbulence computations,http://arxiv.org/abs/1109.1997v1,2011-09-09 13:10:04+00:00
+20,2302.04024,InMyFace: Inertial and Mechanomyography-Based Sensor Fusion for Wearable Facial Activity Recognition,http://arxiv.org/abs/2302.04024v1,2023-02-08 12:49:02+00:00

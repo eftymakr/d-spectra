@@ -1,0 +1,18 @@
+arxiv_id,title,url,date,category,cited_in_text
+2207.02463,Gender Biases and Where to Find Them: Exploring Gender Bias in Pre-Trained Transformer-based Language Models Using Movement Pruning,http://arxiv.org/abs/2207.02463v1,2022-07-06 06:20:35+00:00,Evaluation of ICL Performance Under Noisy Conditions,True
+2408.06717,Proficient Graph Neural Network Design by Accumulating Knowledge on Large Language Models,http://arxiv.org/abs/2408.06717v3,2024-08-13 08:22:01+00:00,Domain-Specific Knowledge and Perplexity Bias,True
+2404.04108,Large language models as oracles for instantiating ontologies with domain-specific knowledge,http://arxiv.org/abs/2404.04108v2,2024-04-05 14:04:07+00:00,Domain-Specific Knowledge and Perplexity Bias,True
+2406.13677,Leveraging Large Language Models to Measure Gender Representation Bias in Gendered Language Corpora,http://arxiv.org/abs/2406.13677v3,2024-06-19 16:30:58+00:00,Evaluation of ICL Performance Under Noisy Conditions,True
+2306.04338,Changing Data Sources in the Age of Machine Learning for Official Statistics,http://arxiv.org/abs/2306.04338v1,2023-06-07 11:08:12+00:00,Evaluation of ICL Performance Under Noisy Conditions,True
+2405.14554,SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge,http://arxiv.org/abs/2405.14554v2,2024-05-23 13:32:07+00:00,Data Augmentation Techniques for ICL,True
+2406.12785,In-Context Learning of Energy Functions,http://arxiv.org/abs/2406.12785v1,2024-06-18 16:54:43+00:00,Synthetic Data Generation for ICL Improvement,True
+2012.11854,A Second-Order Approach to Learning with Instance-Dependent Label Noise,http://arxiv.org/abs/2012.11854v2,2020-12-22 06:36:58+00:00,Evaluation of ICL Performance Under Noisy Conditions,False
+2309.02144,Making Large Language Models Better Reasoners with Alignment,http://arxiv.org/abs/2309.02144v1,2023-09-05 11:32:48+00:00,Evaluation of ICL Performance Under Noisy Conditions,False
+2312.05933,Temporal Supervised Contrastive Learning for Modeling Patient Risk Progression,http://arxiv.org/abs/2312.05933v1,2023-12-10 16:43:15+00:00,Data Augmentation Techniques for ICL,False
+2410.08355,Metalic: Meta-Learning In-Context with Protein Language Models,http://arxiv.org/abs/2410.08355v3,2024-10-10 20:19:35+00:00,Evaluation of ICL Performance Under Noisy Conditions,False
+1905.13613,Regression Networks for Meta-Learning Few-Shot Classification,http://arxiv.org/abs/1905.13613v2,2019-05-31 13:35:41+00:00,Evaluation of ICL Performance Under Noisy Conditions,False
+1905.05461,Learning Generative Models across Incomparable Spaces,http://arxiv.org/abs/1905.05461v2,2019-05-14 08:56:12+00:00,Synthetic Data Generation for ICL Improvement,False
+1612.03430,Quantum and Classical Frontiers of Noise,http://arxiv.org/abs/1612.03430v1,2016-12-11 16:08:16+00:00,Evaluation of ICL Performance Under Noisy Conditions,False
+2306.13549,A Survey on Multimodal Large Language Models,http://arxiv.org/abs/2306.13549v4,2023-06-23 15:21:52+00:00,Evaluation of ICL Performance Under Noisy Conditions,False
+2312.12006,Can ChatGPT be Your Personal Medical Assistant?,http://arxiv.org/abs/2312.12006v1,2023-12-19 09:54:27+00:00,Evaluation of ICL Performance Under Noisy Conditions,False
+2312.12141,Neuron-Level Knowledge Attribution in Large Language Models,http://arxiv.org/abs/2312.12141v4,2023-12-19 13:23:18+00:00,Evaluation of ICL Performance Under Noisy Conditions,False

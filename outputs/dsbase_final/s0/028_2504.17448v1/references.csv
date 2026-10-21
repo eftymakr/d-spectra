@@ -1,0 +1,21 @@
+arxiv_id,title,url,date,category,cited_in_text
+2408.09545,Seamless Integration: Sampling Strategies in Federated Learning Systems,http://arxiv.org/abs/2408.09545v2,2024-08-18 17:16:49+00:00,Federated Learning (FL) Challenges,True
+2207.08187,Federated Self-Supervised Learning in Heterogeneous Settings: Limits of a Baseline Approach on HAR,http://arxiv.org/abs/2207.08187v1,2022-07-17 14:15:45+00:00,Federated Learning (FL) Challenges,True
+2008.06767,Heterogeneous Federated Learning,http://arxiv.org/abs/2008.06767v2,2020-08-15 19:06:59+00:00,Federated Learning (FL) Challenges,True
+2504.11216,FedDiverse: Tackling Data Heterogeneity in Federated Learning with Diversity-Driven Client Selection,http://arxiv.org/abs/2504.11216v2,2025-04-15 14:20:42+00:00,Data Heterogeneity in FL,True
+1910.07796,Overcoming Forgetting in Federated Learning on Non-IID Data,http://arxiv.org/abs/1910.07796v1,2019-10-17 09:53:16+00:00,Federated Learning (FL) Challenges,True
+1910.04956,Central Server Free Federated Learning over Single-sided Trust Social Networks,http://arxiv.org/abs/1910.04956v2,2019-10-11 03:36:53+00:00,Federated Learning (FL) Challenges,True
+2011.06393,Heterogeneous Data-Aware Federated Learning,http://arxiv.org/abs/2011.06393v1,2020-11-12 14:07:09+00:00,Federated Learning (FL) Challenges,True
+2004.11794,A Review of Privacy-preserving Federated Learning for the Internet-of-Things,http://arxiv.org/abs/2004.11794v2,2020-04-24 15:27:23+00:00,Federated Learning (FL) Challenges,True
+2007.04806,Client Adaptation improves Federated Learning with Simulated Non-IID Clients,http://arxiv.org/abs/2007.04806v1,2020-07-09 13:48:39+00:00,Client Adaptation Techniques,True
+2006.13041,Byzantine-Resilient High-Dimensional Federated Learning,http://arxiv.org/abs/2006.13041v2,2020-06-22 03:54:36+00:00,Federated Learning (FL) Challenges,True
+2302.08893,Active learning for data streams: a survey,http://arxiv.org/abs/2302.08893v4,2023-02-17 14:24:13+00:00,Active Learning in FL Integration,True
+2007.06081,VAFL: a Method of Vertical Asynchronous Federated Learning,http://arxiv.org/abs/2007.06081v1,2020-07-12 20:09:25+00:00,Federated Learning (FL) Challenges,True
+2011.06803,Federated Learning System without Model Sharing through Integration of Dimensional Reduced Data Representations,http://arxiv.org/abs/2011.06803v1,2020-11-13 08:12:00+00:00,Federated Learning (FL) Challenges,False
+1912.06733,Private Federated Learning with Domain Adaptation,http://arxiv.org/abs/1912.06733v1,2019-12-13 22:48:43+00:00,Federated Learning (FL) Challenges,False
+,Baryon resonances in large $N_c$ QCD,http://arxiv.org/abs/hep-ph/0611096v1,2006-11-08 10:47:50+00:00,Data Selection Efficiency,False
+2212.02084,End-to-end Recording Device Identification Based on Deep Representation Learning,http://arxiv.org/abs/2212.02084v1,2022-12-05 07:56:04+00:00,Data Selection Efficiency,False
+2402.00342,Survey of Privacy Threats and Countermeasures in Federated Learning,http://arxiv.org/abs/2402.00342v2,2024-02-01 05:13:14+00:00,Federated Learning (FL) Challenges,False
+1406.2018,Perceptual Quality of Video with Periodic Frame Rate and Quantization Variation-Subjective Studies and Analytical Modeling,http://arxiv.org/abs/1406.2018v1,2014-06-08 19:37:06+00:00,Evaluation of FAL Approaches,False
+1305.4199,Quickest Change Point Detection and Identification Across a Generic Sensor Array,http://arxiv.org/abs/1305.4199v1,2013-05-17 22:15:55+00:00,Data Selection Efficiency,False
+0705.3704,Variation of fundamental constants: theory and observations,http://arxiv.org/abs/0705.3704v2,2007-05-25 07:00:00+00:00,Epistemic Variation Tracking,False

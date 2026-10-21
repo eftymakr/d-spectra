@@ -1,0 +1,15 @@
+arxiv_id,title,url,date,category,cited_in_text
+2307.06052,Visualization for Multivariate Gaussian Anomaly Detection in Images,http://arxiv.org/abs/2307.06052v1,2023-07-12 10:12:57+00:00,Anomaly Detection Frameworks,True
+1610.06761,Maximally Divergent Intervals for Anomaly Detection,http://arxiv.org/abs/1610.06761v1,2016-10-21 12:30:30+00:00,Anomaly Detection Frameworks,True
+2107.02821,New Methods and Datasets for Group Anomaly Detection From Fundamental Physics,http://arxiv.org/abs/2107.02821v1,2021-07-06 18:00:57+00:00,Industrial Anomaly Detection Datasets,True
+2404.06832,SplatPose & Detect: Pose-Agnostic 3D Anomaly Detection,http://arxiv.org/abs/2404.06832v1,2024-04-10 08:48:09+00:00,Anomaly Detection Frameworks,True
+2406.16308,Anomaly Detection of Tabular Data Using LLMs,http://arxiv.org/abs/2406.16308v1,2024-06-24 04:17:03+00:00,Pre-Trained Models for Anomaly Detection,True
+1908.09288,Locally Linear Image Structural Embedding for Image Structure Manifold Learning,http://arxiv.org/abs/1908.09288v1,2019-08-25 09:32:45+00:00,Model Evaluation Metrics,True
+2407.18439,Impact of Recurrent Neural Networks and Deep Learning Frameworks on Real-time Lightweight Time Series Anomaly Detection,http://arxiv.org/abs/2407.18439v1,2024-07-26 00:38:51+00:00,Real-Time Anomaly Detection,True
+2210.01707,Multiple Instance Learning for Detecting Anomalies over Sequential Real-World Datasets,http://arxiv.org/abs/2210.01707v1,2022-10-04 16:02:09+00:00,Anomaly Detection Frameworks,True
+2105.07346,Understanding the Effect of Bias in Deep Anomaly Detection,http://arxiv.org/abs/2105.07346v1,2021-05-16 03:55:02+00:00,Model Evaluation Metrics,True
+2412.19286,Time Series Foundational Models: Their Role in Anomaly Detection and Prediction,http://arxiv.org/abs/2412.19286v1,2024-12-26 17:15:30+00:00,Pre-Trained Models for Anomaly Detection,True
+2205.15508,Rethinking Graph Neural Networks for Anomaly Detection,http://arxiv.org/abs/2205.15508v1,2022-05-31 02:39:05+00:00,Anomaly Detection Frameworks,True
+2202.07787,Trustworthy Anomaly Detection: A Survey,http://arxiv.org/abs/2202.07787v1,2022-02-15 23:25:37+00:00,Deployment in Industrial Settings,True
+2106.13556,SRPN: similarity-based region proposal networks for nuclei and cells detection in histology images,http://arxiv.org/abs/2106.13556v1,2021-06-25 10:56:54+00:00,Supervised Learning Approaches,True
+2502.10682,CAE-Net: Generalized Deepfake Image Detection using Convolution and Attention Mechanisms with Spatial and Frequency Domain Features,http://arxiv.org/abs/2502.10682v3,2025-02-15 06:02:11+00:00,Anomaly Detection Frameworks,True

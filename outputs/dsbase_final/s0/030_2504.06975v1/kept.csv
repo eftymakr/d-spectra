@@ -1,0 +1,17 @@
+rank,arxiv_id,title,url,date
+1,2504.02344,Boosting End-to-End Database Isolation Checking via Mini-Transactions (Extended Version),http://arxiv.org/abs/2504.02344v1,2025-04-03 07:26:00+00:00
+2,2012.01085,"Average-case algorithms for testing isomorphism of polynomials, algebras, and multilinear forms",http://arxiv.org/abs/2012.01085v4,2020-12-02 11:20:06+00:00
+3,2103.02830,MonkeyDB: Effectively Testing Correctness against Weak Isolation Levels,http://arxiv.org/abs/2103.02830v1,2021-03-04 04:35:35+00:00
+4,2105.13480,Efficient distributed algorithms for Convolutional Neural Networks,http://arxiv.org/abs/2105.13480v2,2021-05-27 22:25:38+00:00
+5,2202.12139,Testing Deep Learning Models: A First Comparative Study of Multiple Testing Techniques,http://arxiv.org/abs/2202.12139v1,2022-02-24 15:05:19+00:00
+6,2305.16086,Efficient Approximation Algorithms for Spanning Centrality,http://arxiv.org/abs/2305.16086v2,2023-05-25 14:19:04+00:00
+7,2504.01477,Online Timestamp-based Transactional Isolation Checking of Database Systems (Extended Version),http://arxiv.org/abs/2504.01477v1,2025-04-02 08:30:48+00:00
+8,2206.14602,Coo: Consistency Check for Transactional Databases,http://arxiv.org/abs/2206.14602v1,2022-06-29 13:06:11+00:00
+9,2204.08348,Automated Test Generation for REST APIs: No Time to Rest Yet,http://arxiv.org/abs/2204.08348v3,2022-04-18 14:46:24+00:00
+10,1602.01871,Identifying the Major Sources of Variance in Transaction Latencies: Towards More Predictable Databases,http://arxiv.org/abs/1602.01871v3,2016-02-04 22:20:59+00:00
+11,1906.09744,Improving the Effectiveness and Efficiency of Stochastic Neighbour Embedding with Isolation Kernel,http://arxiv.org/abs/1906.09744v3,2019-06-24 06:49:04+00:00
+12,2501.14421,Reasoning about Weak Isolation Levels in Separation Logic,http://arxiv.org/abs/2501.14421v2,2025-01-24 11:46:38+00:00
+13,0908.1512,The All-Sky Catalog of Isolated Galaxies selected from 2MASS,http://arxiv.org/abs/0908.1512v1,2009-08-11 13:19:42+00:00
+14,2109.07960,Efficient and Effective Generation of Test Cases for Pedestrian Detection -- Search-based Software Testing of Baidu Apollo in SVL,http://arxiv.org/abs/2109.07960v2,2021-09-16 13:11:53+00:00
+15,1808.09571,Full Speed Ahead: 3D Spatial Database Acceleration with GPUs,http://arxiv.org/abs/1808.09571v1,2018-08-28 22:55:44+00:00
+16,2107.11458,Variant interpretation using population databases: lessons from gnomAD,http://arxiv.org/abs/2107.11458v3,2021-07-23 20:56:50+00:00

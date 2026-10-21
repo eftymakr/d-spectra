@@ -1,0 +1,18 @@
+arxiv_id,title,url,date,category,cited_in_text
+2406.11734,LibProf: A Python Profiler for Improving Cold Start Performance in Serverless Applications,http://arxiv.org/abs/2406.11734v1,2024-06-17 16:50:23+00:00,Library Initialization Optimization,True
+2304.00396,Managing Cold-start in The Serverless Cloud with Temporal Convolutional Networks,http://arxiv.org/abs/2304.00396v1,2023-04-01 21:54:22+00:00,Machine Learning for Cold-Start Mitigation,True
+2207.08175,FaaSLight: General Application-Level Cold-Start Latency Optimization for Function-as-a-Service in Serverless Computing,http://arxiv.org/abs/2207.08175v2,2022-07-17 13:48:31+00:00,Cold-Start Latency Challenges,True
+2310.08437,"Cold Start Latency in Serverless Computing: A Systematic Review, Taxonomy, and Future Directions",http://arxiv.org/abs/2310.08437v2,2023-10-12 16:01:46+00:00,Cold-Start Latency Challenges,True
+2010.04312,Proactive Serverless Function Resource Management,http://arxiv.org/abs/2010.04312v1,2020-10-09 00:50:18+00:00,Cold-Start Latency Challenges,True
+1903.12221,Mitigating Cold Starts in Serverless Platforms: A Pool-Based Approach,http://arxiv.org/abs/1903.12221v1,2019-03-28 18:55:30+00:00,Cold-Start Latency Challenges,True
+2502.15524,HydraServe: Minimizing Cold Start Latency for Serverless LLM Serving in Public Clouds,http://arxiv.org/abs/2502.15524v2,2025-02-21 15:25:21+00:00,Cold-Start Latency Challenges,True
+2308.07541,On-demand Cold Start Frequency Reduction with Off-Policy Reinforcement Learning in Serverless Computing,http://arxiv.org/abs/2308.07541v2,2023-08-15 03:01:41+00:00,Machine Learning for Cold-Start Mitigation,True
+2403.17574,SPES: Towards Optimizing Performance-Resource Trade-Off for Serverless Functions,http://arxiv.org/abs/2403.17574v2,2024-03-26 10:28:41+00:00,Cold-Start Latency Challenges,True
+2108.11240,Pagurus: Eliminating Cold Startup in Serverless Computing with Inter-Action Container Sharing,http://arxiv.org/abs/2108.11240v1,2021-08-25 13:50:36+00:00,Cold-Start Latency Challenges,True
+1810.05633,"Stochastic (Approximate) Proximal Point Methods: Convergence, Optimality, and Adaptivity",http://arxiv.org/abs/1810.05633v2,2018-10-12 17:56:08+00:00,Dynamic Optimization Approaches,True
+2411.09065,Language-Model Prior Overcomes Cold-Start Items,http://arxiv.org/abs/2411.09065v1,2024-11-13 22:45:52+00:00,Machine Learning for Cold-Start Mitigation,True
+2406.16778,Finding Transformer Circuits with Edge Pruning,http://arxiv.org/abs/2406.16778v3,2024-06-24 16:40:54+00:00,Dynamic Optimization Approaches,True
+2406.12315,A Comprehensive Study of Structural Pruning for Vision Models,http://arxiv.org/abs/2406.12315v7,2024-06-18 06:37:26+00:00,Performance Evaluation Metrics,True
+2402.07064,Piecewise SOS-Convex Moment Optimization and Applications via Exact Semi-Definite Programs,http://arxiv.org/abs/2402.07064v6,2024-02-10 23:13:17+00:00,Workload-Dependent Inefficiencies,True
+2210.04212,Migrating from Microservices to Serverless: An IoT Platform Case Study,http://arxiv.org/abs/2210.04212v1,2022-10-09 09:57:05+00:00,Architectural Improvements,True
+2210.15831,Cost Control and Efficiency Optimization in Maintainability Implementation of Wireless Sensor Networks based on Serverless Computing,http://arxiv.org/abs/2210.15831v1,2022-10-28 01:50:59+00:00,Architectural Improvements,False

@@ -1,0 +1,15 @@
+arxiv_id,title,url,date,category,cited_in_text
+2412.12481,if-ZKP: Intel FPGA-Based Acceleration of Zero Knowledge Proofs,http://arxiv.org/abs/2412.12481v1,2024-12-17 02:35:32+00:00,Hardware Acceleration for ZKP Primitives,True
+2408.05890,SZKP: A Scalable Accelerator Architecture for Zero-Knowledge Proofs,http://arxiv.org/abs/2408.05890v1,2024-08-12 01:53:58+00:00,Hardware Acceleration for ZKP Primitives,True
+2301.02161,Streaming Zero-Knowledge Proofs,http://arxiv.org/abs/2301.02161v2,2023-01-05 17:19:20+00:00,Theoretical Foundations of ZKP Security,True
+1911.02459,zksk: A Library for Composable Zero-Knowledge Proofs,http://arxiv.org/abs/1911.02459v2,2019-11-06 16:25:45+00:00,ZKP Protocol Overview and Challenges,True
+,On Concurrent and Resettable Zero-Knowledge Proofs for NP,http://arxiv.org/abs/cs/0107004v1,2001-07-03 18:28:24+00:00,ZKP Protocol Overview and Challenges,True
+2411.06350,AMAZE: Accelerated MiMC Hardware Architecture for Zero-Knowledge Applications on the Edge,http://arxiv.org/abs/2411.06350v1,2024-11-10 03:55:08+00:00,Hardware Acceleration for ZKP Primitives,True
+2310.15934,Redactable Signature Schemes and Zero-knowledge Proofs: A comparative examination for applications in Decentralized Digital Identity Systems,http://arxiv.org/abs/2310.15934v1,2023-10-24 15:30:33+00:00,Trusted Setup and Verification Cost Trade-offs,True
+2401.16448,LLM4SecHW: Leveraging Domain Specific Large Language Model for Hardware Debugging,http://arxiv.org/abs/2401.16448v1,2024-01-28 19:45:25+00:00,Future Directions in ZKP Acceleration,True
+1002.1154,Performance Analysis of Software to Hardware Task Migration in Codesign,http://arxiv.org/abs/1002.1154v1,2010-02-05 08:51:44+00:00,Comparison of Existing ZKP Acceleration Methods,True
+,A Fundamental Scale for Acceleration from the Holographic Principle,http://arxiv.org/abs/physics/0505175v4,2005-05-25 02:55:32+00:00,Future Directions in ZKP Acceleration,True
+2411.13717,Hardware Accelerators for Artificial Intelligence,http://arxiv.org/abs/2411.13717v2,2024-11-20 21:33:21+00:00,GPU and ASIC-Based Acceleration Approaches,True
+1002.1162,Node Disjoint Multipath Routing Considering Link and Node Stability protocol: A characteristic Evaluation,http://arxiv.org/abs/1002.1162v1,2010-02-05 09:14:56+00:00,Comparison of Existing ZKP Acceleration Methods,True
+2205.04454,OpenPodcar: an Open Source Vehicle for Self-Driving Car Research,http://arxiv.org/abs/2205.04454v2,2022-05-09 17:55:56+00:00,Comparison of Existing ZKP Acceleration Methods,True
+1610.09628,Cosmic ray acceleration via magnetic reconnection of magnetic islands/flux-ropes,http://arxiv.org/abs/1610.09628v2,2016-10-30 10:47:56+00:00,Others,True

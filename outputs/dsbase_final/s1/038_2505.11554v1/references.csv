@@ -1,0 +1,18 @@
+arxiv_id,title,url,date,category,cited_in_text
+2310.02959,Co-Optimizing Cache Partitioning and Multi-Core Task Scheduling: Exploit Cache Sensitivity or Not?,http://arxiv.org/abs/2310.02959v1,2023-10-04 16:50:23+00:00,Cache Partitioning Methods,True
+1907.02184,TicToc: Enabling Bandwidth-Efficient DRAM Caching for both Hits and Misses in Hybrid Memory Systems,http://arxiv.org/abs/1907.02184v1,2019-07-04 01:39:34+00:00,Memory Bandwidth Regulation Techniques,True
+2102.11528,"CBP: Coordinated management of cache partitioning, bandwidth partitioning and prefetch throttling",http://arxiv.org/abs/2102.11528v1,2021-02-23 07:29:34+00:00,Memory Bandwidth Regulation Techniques,True
+1705.00138,Contego: An Adaptive Framework for Integrating Security Tasks in Real-Time Systems,http://arxiv.org/abs/1705.00138v3,2017-04-29 06:22:32+00:00,Embedded Platform Evaluation,True
+1602.04415,Phase distance mapping: a phase-based cache tuning methodology for embedded systems,http://arxiv.org/abs/1602.04415v1,2016-02-14 04:42:38+00:00,Heuristic Optimization Strategies,True
+2502.02437,H-MBR: Hypervisor-level Memory Bandwidth Reservation for Mixed Criticality Systems,http://arxiv.org/abs/2502.02437v1,2025-02-04 16:03:52+00:00,Memory Bandwidth Regulation Techniques,True
+1610.08129,Memshare: a Dynamic Multi-tenant Memory Key-value Cache,http://arxiv.org/abs/1610.08129v1,2016-10-26 00:37:34+00:00,Cache Partitioning Methods,True
+1112.5472,Cache-Oblivious Implicit Predecessor Dictionaries with the Working Set Property,http://arxiv.org/abs/1112.5472v3,2011-12-22 21:45:16+00:00,Memory Bandwidth Regulation Techniques,True
+1309.7082,A Cache Reconfiguration Approach for Saving Leakage and Refresh Energy in Embedded DRAM Caches,http://arxiv.org/abs/1309.7082v1,2013-09-26 22:18:43+00:00,Heuristic Optimization Strategies,True
+2204.08846,Differentiating Network Flows for Priority-Aware Scheduling of Incoming Packets in Real-Time IoT Systems,http://arxiv.org/abs/2204.08846v1,2022-04-19 12:23:21+00:00,Partitioned Scheduling Frameworks,True
+1309.5647,A Cache-Coloring Based Technique for Saving Leakage Energy In Multitasking Systems,http://arxiv.org/abs/1309.5647v1,2013-09-22 20:44:49+00:00,Heuristic Optimization Strategies,True
+2009.00466,toki: A Build- and Test-Platform for Prototyping and Evaluating Operating System Concepts in Real-Time Environments,http://arxiv.org/abs/2009.00466v1,2020-09-01 14:24:20+00:00,Embedded Platform Evaluation,True
+1205.1871,Design Space Exploration to Find the Optimum Cache and Register File Size for Embedded Applications,http://arxiv.org/abs/1205.1871v1,2012-05-09 05:23:13+00:00,Multi-Objective Optimization Frameworks,True
+1402.0087,A novel datatype architecture support for programming languages,http://arxiv.org/abs/1402.0087v1,2014-02-01 14:07:59+00:00,Heuristic Optimization Strategies,True
+1507.01451,A model building framework for Answer Set Programming with external computations,http://arxiv.org/abs/1507.01451v2,2015-07-06 13:31:39+00:00,Partitioned Scheduling Frameworks,True
+1602.04414,Temperature-aware Dynamic Optimization of Embedded Systems,http://arxiv.org/abs/1602.04414v1,2016-02-14 04:42:19+00:00,Multi-Objective Optimization Frameworks,True
+2504.02268,Advancing Semantic Caching for LLMs with Domain-Specific Embeddings and Synthetic Data,http://arxiv.org/abs/2504.02268v1,2025-04-03 04:27:02+00:00,Heuristic Optimization Strategies,True

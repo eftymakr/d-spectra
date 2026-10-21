@@ -1,0 +1,10 @@
+arxiv_id,title,url,date,category,cited_in_text
+2110.02952,Hierarchical prosody modeling and control in non-autoregressive parallel neural TTS,http://arxiv.org/abs/2110.02952v2,2021-10-06 17:58:42+00:00,Non-Autoregressive TTS Models,True
+2106.04312,Speech BERT Embedding For Improving Prosody in Neural TTS,http://arxiv.org/abs/2106.04312v3,2021-06-08 13:23:18+00:00,Prosody Control in TTS Systems,True
+2206.14643,Simple and Effective Multi-sentence TTS with Expressive and Coherent Prosody,http://arxiv.org/abs/2206.14643v1,2022-06-29 13:37:03+00:00,Context-Aware Prosody Modeling,True
+2110.02854,Prosody-TTS: An end-to-end speech synthesis system with prosody control,http://arxiv.org/abs/2110.02854v1,2021-10-06 15:29:35+00:00,Prosody Control in TTS Systems,True
+1804.09543,The Future of Prosody: It's about Time,http://arxiv.org/abs/1804.09543v4,2018-04-23 20:54:43+00:00,Context-Aware Prosody Modeling,True
+2206.13443,CopyCat2: A Single Model for Multi-Speaker TTS and Many-to-Many Fine-Grained Prosody Transfer,http://arxiv.org/abs/2206.13443v1,2022-06-27 16:48:23+00:00,Context-Aware Prosody Modeling,True
+2403.06640,Passive iFIR Filters for Data-Driven Control,http://arxiv.org/abs/2403.06640v2,2024-03-11 11:59:24+00:00,Post-Hoc Model Manipulation,True
+2211.13533,Prosody-controllable spontaneous TTS with neural HMMs,http://arxiv.org/abs/2211.13533v2,2022-11-24 11:06:11+00:00,Prosody Control in TTS Systems,True
+1105.3788,A Control-Oriented Notion of Finite State Approximation,http://arxiv.org/abs/1105.3788v3,2011-05-19 04:55:00+00:00,Post-Hoc Model Manipulation,True

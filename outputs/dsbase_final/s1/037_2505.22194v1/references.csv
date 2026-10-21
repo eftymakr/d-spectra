@@ -1,0 +1,18 @@
+arxiv_id,title,url,date,category,cited_in_text
+2009.08605,Hardware Accelerator for Multi-Head Attention and Position-Wise Feed-Forward in the Transformer,http://arxiv.org/abs/2009.08605v1,2020-09-18 03:13:19+00:00,Specialized Hardware for ViT Operations,True
+2208.06118,An Algorithm-Hardware Co-Optimized Framework for Accelerating N:M Sparse Transformers,http://arxiv.org/abs/2208.06118v1,2022-08-12 04:51:49+00:00,Efficient Token Pruning and Sparsity Exploitation,True
+2402.10118,Reusing Softmax Hardware Unit for GELU Computation in Transformers,http://arxiv.org/abs/2402.10118v2,2024-02-15 17:16:33+00:00,Specialized Hardware for ViT Operations,True
+2412.18948,A Power-Efficient Hardware Implementation of L-Mul,http://arxiv.org/abs/2412.18948v1,2024-12-25 17:05:00+00:00,Novel Data Formats for Improved Efficiency,True
+2302.09108,ViTA: A Vision Transformer Inference Accelerator for Edge Applications,http://arxiv.org/abs/2302.09108v1,2023-02-17 19:35:36+00:00,Hardware Acceleration Approaches for ViTs,True
+2405.00314,Model Quantization and Hardware Acceleration for Vision Transformers: A Comprehensive Survey,http://arxiv.org/abs/2405.00314v1,2024-05-01 04:32:07+00:00,Quantization and Low-Precision Arithmetic in ViTs,True
+2405.04134,Geometry and Dynamics of LayerNorm,http://arxiv.org/abs/2405.04134v1,2024-05-07 09:01:02+00:00,Novel Data Formats for Improved Efficiency,True
+2303.15105,Vision Transformer with Quadrangle Attention,http://arxiv.org/abs/2303.15105v1,2023-03-27 11:13:50+00:00,ViT Architecture and Its Advantages Over CNNs,True
+2412.00214,C2HLSC: Leveraging Large Language Models to Bridge the Software-to-Hardware Design Gap,http://arxiv.org/abs/2412.00214v2,2024-11-29 19:22:52+00:00,Novel Data Formats for Improved Efficiency,True
+1805.02867,Online normalizer calculation for softmax,http://arxiv.org/abs/1805.02867v2,2018-05-08 07:34:17+00:00,Prior Work on Matrix Multiplication Optimization,True
+2211.05109,ViTALiTy: Unifying Low-rank and Sparse Approximation for Vision Transformer Acceleration with a Linear Taylor Attention,http://arxiv.org/abs/2211.05109v1,2022-11-09 18:58:21+00:00,Hardware Acceleration Approaches for ViTs,False
+2503.03213,Convergence Rates for Softmax Gating Mixture of Experts,http://arxiv.org/abs/2503.03213v1,2025-03-05 06:11:24+00:00,Performance and Accuracy Trade-offs in ViT Acceleration,False
+2305.13649,Analog Implementation of the Softmax Function,http://arxiv.org/abs/2305.13649v1,2023-05-23 03:47:06+00:00,Performance and Accuracy Trade-offs in ViT Acceleration,False
+2104.02251,Being-ahead: Benchmarking and Exploring Accelerators for Hardware-Efficient AI Deployment,http://arxiv.org/abs/2104.02251v1,2021-04-06 02:33:20+00:00,Hardware Acceleration Approaches for ViTs,False
+2001.04543,Hardware Implementation of Neural Self-Interference Cancellation,http://arxiv.org/abs/2001.04543v2,2020-01-13 21:51:20+00:00,Specialized Hardware for ViT Operations,False
+2407.17790,Exploring the Limitations of Kolmogorov-Arnold Networks in Classification: Insights to Software Training and Hardware Implementation,http://arxiv.org/abs/2407.17790v2,2024-07-25 05:52:48+00:00,Performance and Accuracy Trade-offs in ViT Acceleration,False
+2410.12614,Mixed-precision finite element kernels and assembly: Rounding error analysis and hardware acceleration,http://arxiv.org/abs/2410.12614v1,2024-10-16 14:32:10+00:00,Quantization and Low-Precision Arithmetic in ViTs,False

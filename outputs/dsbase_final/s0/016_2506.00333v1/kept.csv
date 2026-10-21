@@ -1,0 +1,31 @@
+rank,arxiv_id,title,url,date
+1,1612.00576,Guided Open Vocabulary Image Captioning with Constrained Beam Search,http://arxiv.org/abs/1612.00576v2,2016-12-02 06:50:49+00:00
+2,2405.10053,SHiNe: Semantic Hierarchy Nexus for Open-vocabulary Object Detection,http://arxiv.org/abs/2405.10053v1,2024-05-16 12:42:06+00:00
+3,2312.12437,Weakly Supervised Open-Vocabulary Object Detection,http://arxiv.org/abs/2312.12437v1,2023-12-19 18:59:53+00:00
+4,2405.08593,Open-Vocabulary Object Detection via Neighboring Region Attention Alignment,http://arxiv.org/abs/2405.08593v1,2024-05-14 13:35:39+00:00
+5,1711.05557,Phrase-based Image Captioning with Hierarchical LSTM Model,http://arxiv.org/abs/1711.05557v1,2017-11-11 10:48:59+00:00
+6,2206.11134,Open Vocabulary Object Detection with Proposal Mining and Prediction Equalization,http://arxiv.org/abs/2206.11134v4,2022-06-22 14:30:41+00:00
+7,2404.09216,DetCLIPv3: Towards Versatile Generative Open-vocabulary Object Detection,http://arxiv.org/abs/2404.09216v1,2024-04-14 11:01:44+00:00
+8,2411.18207,From Open Vocabulary to Open World: Teaching Vision Language Models to Detect Novel Objects,http://arxiv.org/abs/2411.18207v4,2024-11-27 10:33:51+00:00
+9,2207.03482,Bridging the Gap between Object and Image-level Representations for Open-Vocabulary Detection,http://arxiv.org/abs/2207.03482v3,2022-07-07 17:59:56+00:00
+10,2306.15880,Towards Open Vocabulary Learning: A Survey,http://arxiv.org/abs/2306.15880v4,2023-06-28 02:33:06+00:00
+11,2405.19854,RTGen: Generating Region-Text Pairs for Open-Vocabulary Object Detection,http://arxiv.org/abs/2405.19854v1,2024-05-30 09:03:23+00:00
+12,2406.11739,V3Det Challenge 2024 on Vast Vocabulary and Open Vocabulary Object Detection: Methods and Results,http://arxiv.org/abs/2406.11739v1,2024-06-17 16:58:51+00:00
+13,2503.14862,"Fine-Grained Open-Vocabulary Object Detection with Fined-Grained Prompts: Task, Dataset and Benchmark",http://arxiv.org/abs/2503.14862v3,2025-03-19 03:41:46+00:00
+14,2408.11221,On the Potential of Open-Vocabulary Models for Object Detection in Unusual Street Scenes,http://arxiv.org/abs/2408.11221v1,2024-08-20 22:39:52+00:00
+15,2304.00788,Open-Vocabulary Point-Cloud Object Detection without 3D Annotation,http://arxiv.org/abs/2304.00788v2,2023-04-03 08:22:02+00:00
+16,2211.12914,Open-vocabulary Attribute Detection,http://arxiv.org/abs/2211.12914v2,2022-11-23 12:34:43+00:00
+17,2409.09401,Towards Diverse and Efficient Audio Captioning via Diffusion Models,http://arxiv.org/abs/2409.09401v2,2024-09-14 10:23:35+00:00
+18,2309.09456,Object2Scene: Putting Objects in Context for Open-Vocabulary 3D Detection,http://arxiv.org/abs/2309.09456v1,2023-09-18 03:31:53+00:00
+19,2503.14604,Image Captioning Evaluation in the Age of Multimodal LLMs: Challenges and Future Perspectives,http://arxiv.org/abs/2503.14604v2,2025-03-18 18:03:56+00:00
+20,2306.09683,Scaling Open-Vocabulary Object Detection,http://arxiv.org/abs/2306.09683v3,2023-06-16 08:27:46+00:00
+21,2408.13936,OpenNav: Efficient Open Vocabulary 3D Object Detection for Smart Wheelchair Navigation,http://arxiv.org/abs/2408.13936v1,2024-08-25 20:53:53+00:00
+22,2408.09110,Locate Anything on Earth: Advancing Open-Vocabulary Object Detection for Remote Sensing Community,http://arxiv.org/abs/2408.09110v3,2024-08-17 06:24:43+00:00
+23,2205.06230,Simple Open-Vocabulary Object Detection with Vision Transformers,http://arxiv.org/abs/2205.06230v2,2022-05-12 17:20:36+00:00
+24,1806.08854,RUC+CMU: System Report for Dense Captioning Events in Videos,http://arxiv.org/abs/1806.08854v1,2018-06-22 21:03:47+00:00
+25,2312.08876,OpenSight: A Simple Open-Vocabulary Framework for LiDAR-Based Object Detection,http://arxiv.org/abs/2312.08876v1,2023-12-12 07:49:30+00:00
+26,2411.15657,Training an Open-Vocabulary Monocular 3D Object Detection Model without 3D Data,http://arxiv.org/abs/2411.15657v1,2024-11-23 21:37:21+00:00
+27,2106.00404,Single-Pixel Compressive Imaging in Shift-Invariant Spaces via Exact Wavelet Frames,http://arxiv.org/abs/2106.00404v2,2021-06-01 11:30:50+00:00
+28,2504.08531,Embodied Image Captioning: Self-supervised Learning Agents for Spatially Coherent Image Descriptions,http://arxiv.org/abs/2504.08531v2,2025-04-11 13:41:17+00:00
+29,2412.01496,Fréchet Radiomic Distance (FRD): A Versatile Metric for Comparing Medical Imaging Datasets,http://arxiv.org/abs/2412.01496v2,2024-12-02 13:49:14+00:00
+30,2205.06160,Localized Vision-Language Matching for Open-vocabulary Object Detection,http://arxiv.org/abs/2205.06160v2,2022-05-12 15:34:37+00:00

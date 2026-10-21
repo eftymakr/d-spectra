@@ -1,0 +1,22 @@
+arxiv_id,title,url,date,category,cited_in_text
+2407.02641,Learning Graph Structures and Uncertainty for Accurate and Calibrated Time-series Forecasting,http://arxiv.org/abs/2407.02641v1,2024-07-02 20:14:32+00:00,Uncertainty Quantification Techniques,True
+2107.03743,Probabilistic Time Series Forecasting with Implicit Quantile Networks,http://arxiv.org/abs/2107.03743v1,2021-07-08 10:37:24+00:00,Uncertainty Quantification Techniques,True
+1810.08418,Probabilistic Forecasting in Day-Ahead Electricity Markets: Simulating Peak and Off-Peak Prices,http://arxiv.org/abs/1810.08418v2,2018-10-19 09:27:16+00:00,Uncertainty Quantification Techniques,True
+2306.12086,What Constitutes Good Contrastive Learning in Time-Series Forecasting?,http://arxiv.org/abs/2306.12086v2,2023-06-21 08:05:05+00:00,End-to-End Training for Objective Alignment,True
+1211.4108,On the Risk Management with Application of Econophysics Analysis in Central Banks and Financial Institutions,http://arxiv.org/abs/1211.4108v1,2012-11-17 10:12:52+00:00,Uncertainty Quantification Techniques,True
+2410.19025,Large Language Models for Financial Aid in Financial Time-series Forecasting,http://arxiv.org/abs/2410.19025v1,2024-10-24 12:41:47+00:00,Large Language Models for Time Series Analysis,True
+2407.06567,FinCon: A Synthesized LLM Multi-Agent System with Conceptual Verbal Reinforcement for Enhanced Financial Decision Making,http://arxiv.org/abs/2407.06567v3,2024-07-09 05:52:26+00:00,Large Language Models for Time Series Analysis,True
+1809.09588,No Arbitrage in Continuous Financial Markets,http://arxiv.org/abs/1809.09588v5,2018-09-25 16:58:35+00:00,Uncertainty Quantification Techniques,True
+2106.09305,SCINet: Time Series Modeling and Forecasting with Sample Convolution and Interaction,http://arxiv.org/abs/2106.09305v3,2021-06-17 08:15:04+00:00,Performance Comparison with Baselines,True
+2502.18410,TSKANMixer: Kolmogorov-Arnold Networks with MLP-Mixer Model for Time Series Forecasting,http://arxiv.org/abs/2502.18410v2,2025-02-25 18:04:45+00:00,Performance Comparison with Baselines,True
+1912.07211,Fairness Assessment for Artificial Intelligence in Financial Industry,http://arxiv.org/abs/1912.07211v1,2019-12-16 06:09:39+00:00,Offline Evaluation in Financial Applications,True
+2206.10209,Propagation of Measurement and Model Uncertainties through Multiline TRL Calibration,http://arxiv.org/abs/2206.10209v2,2022-06-21 09:16:41+00:00,Uncertainty Quantification Techniques,True
+2410.16214,Asymmetries in Financial Spillovers,http://arxiv.org/abs/2410.16214v1,2024-10-21 17:14:58+00:00,Uncertainty Quantification Techniques,True
+2410.14630,On the Regularization of Learnable Embeddings for Time Series Forecasting,http://arxiv.org/abs/2410.14630v2,2024-10-18 17:30:20+00:00,Large Language Models for Time Series Analysis,True
+2301.09279,StockEmotions: Discover Investor Emotions for Financial Sentiment Analysis and Multivariate Time Series,http://arxiv.org/abs/2301.09279v2,2023-01-23 05:32:42+00:00,Large Language Models for Time Series Analysis,True
+1002.1188,Framework for Visualizing Model-Driven Software Evolution and its Application,http://arxiv.org/abs/1002.1188v1,2010-02-05 10:35:59+00:00,Performance Comparison with Baselines,False
+2109.14906,DICoE@FinSim-3: Financial Hypernym Detection using Augmented Terms and Distance-based Features,http://arxiv.org/abs/2109.14906v1,2021-09-30 08:01:48+00:00,Performance Comparison with Baselines,False
+2112.13215,Continual Learning for Unsupervised Anomaly Detection in Continuous Auditing of Financial Accounting Data,http://arxiv.org/abs/2112.13215v2,2021-12-25 09:21:14+00:00,Online Experimentation in Real-World Scenarios,False
+2504.15800,FinDER: Financial Dataset for Question Answering and Evaluating Retrieval-Augmented Generation,http://arxiv.org/abs/2504.15800v3,2025-04-22 11:30:13+00:00,Large Language Models for Time Series Analysis,False
+2403.14724,Six Levels of Privacy: A Framework for Financial Synthetic Data,http://arxiv.org/abs/2403.14724v1,2024-03-20 20:41:26+00:00,Offline Evaluation in Financial Applications,False
+2011.06125,Hurricane Forecasting: A Novel Multimodal Machine Learning Framework,http://arxiv.org/abs/2011.06125v4,2020-11-11 23:55:33+00:00,Performance Comparison with Baselines,False

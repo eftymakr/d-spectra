@@ -1,0 +1,17 @@
+arxiv_id,title,url,date,category,cited_in_text
+2304.13874,"Exploiting Simulated User Feedback for Conversational Search: Ranking, Rewriting, and Beyond",http://arxiv.org/abs/2304.13874v3,2023-04-26 23:40:55+00:00,Simulated User Approaches for Evaluation,True
+2409.13948,Aligning Language Models Using Follow-up Likelihood as Reward Signal,http://arxiv.org/abs/2409.13948v3,2024-09-20 23:47:25+00:00,Reward Signal Optimization,True
+2309.10691,MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback,http://arxiv.org/abs/2309.10691v3,2023-09-19 15:25:42+00:00,Simulated User Approaches for Evaluation,False
+2103.01287,DEUS: A Data-driven Approach to Estimate User Satisfaction in Multi-turn Dialogues,http://arxiv.org/abs/2103.01287v2,2021-03-01 20:00:28+00:00,User Preference Modeling in Conversational Systems,True
+2002.05063,A Bayesian Approach to Conversational Recommendation Systems,http://arxiv.org/abs/2002.05063v1,2020-02-12 15:59:31+00:00,User Preference Modeling in Conversational Systems,False
+1707.09258,Patterns of Multistakeholder Recommendation,http://arxiv.org/abs/1707.09258v1,2017-07-28 14:42:34+00:00,User Behavior Simulation,False
+2211.01154,Mitigating Popularity Bias in Recommendation with Unbalanced Interactions: A Gradient Perspective,http://arxiv.org/abs/2211.01154v1,2022-10-31 01:01:41+00:00,User Behavior Simulation,False
+2408.01972,RVI-SAC: Average Reward Off-Policy Deep Reinforcement Learning,http://arxiv.org/abs/2408.01972v1,2024-08-04 09:26:00+00:00,Reward Signal Optimization,False
+2001.02912,Conversational Search for Learning Technologies,http://arxiv.org/abs/2001.02912v1,2020-01-09 10:35:27+00:00,User Behavior Simulation,True
+2409.02392,Building Math Agents with Multi-Turn Iterative Preference Learning,http://arxiv.org/abs/2409.02392v2,2024-09-04 02:41:04+00:00,Reward Signal Optimization,False
+2310.11188,Adversarial Bandits with Multi-User Delayed Feedback: Theory and Application,http://arxiv.org/abs/2310.11188v2,2023-10-17 12:08:15+00:00,Feedback Mechanisms in Recommendation Systems,True
+1811.00967,Neural Response Ranking for Social Conversation: A Data-Efficient Approach,http://arxiv.org/abs/1811.00967v1,2018-11-02 16:31:22+00:00,Candidate Ranking Methods,True
+2203.13553,Preprocessing Reward Functions for Interpretability,http://arxiv.org/abs/2203.13553v1,2022-03-25 10:19:35+00:00,Reward Signal Optimization,False
+1802.05895,Dealing with Uncertainties in User Feedback: Strategies Between Denying and Accepting,http://arxiv.org/abs/1802.05895v1,2018-02-16 11:15:01+00:00,Feedback Mechanisms in Recommendation Systems,True
+2406.01388,AutoStudio: Crafting Consistent Subjects in Multi-turn Interactive Image Generation,http://arxiv.org/abs/2406.01388v3,2024-06-03 14:51:24+00:00,Generative Models for User Interaction,False
+2406.10162,Sycophancy to Subterfuge: Investigating Reward-Tampering in Large Language Models,http://arxiv.org/abs/2406.10162v3,2024-06-14 16:26:20+00:00,Reward Signal Optimization,False

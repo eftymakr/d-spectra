@@ -1,0 +1,20 @@
+arxiv_id,title,url,date,category,cited_in_text
+2408.02152,Generative Retrieval with Few-shot Indexing,http://arxiv.org/abs/2408.02152v3,2024-08-04 22:00:34+00:00,Adaptive Retrieval Systems for Evolving Document Sets,True
+2305.18952,Exploring the Practicality of Generative Retrieval on Dynamic Corpora,http://arxiv.org/abs/2305.18952v5,2023-05-27 16:05:00+00:00,Adaptive Retrieval Systems for Evolving Document Sets,True
+2304.04171,Learning to Tokenize for Generative Retrieval,http://arxiv.org/abs/2304.04171v1,2023-04-09 06:18:19+00:00,DocID Design and Its Impact on Retrieval Performance,True
+2305.13859,Generative Retrieval via Term Set Generation,http://arxiv.org/abs/2305.13859v3,2023-05-23 09:30:36+00:00,Term-Based DocID Generation Techniques,True
+2404.08137,Generative Information Retrieval Evaluation,http://arxiv.org/abs/2404.08137v3,2024-04-11 21:48:54+00:00,Adaptive Retrieval Systems for Evolving Document Sets,True
+2404.07220,Blended RAG: Improving RAG (Retriever-Augmented Generation) Accuracy with Semantic Search and Hybrid Query-Based Retrievers,http://arxiv.org/abs/2404.07220v2,2024-03-22 17:13:46+00:00,Hybrid Retrieval Strategies for Dynamic Environments,False
+2504.05181,Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval,http://arxiv.org/abs/2504.05181v2,2025-04-07 15:27:37+00:00,Term-Based DocID Generation Techniques,True
+2504.09935,Constrained Auto-Regressive Decoding Constrains Generative Retrieval,http://arxiv.org/abs/2504.09935v1,2025-04-14 06:54:49+00:00,Adaptive Retrieval Systems for Evolving Document Sets,False
+2102.11903,Neural ranking models for document retrieval,http://arxiv.org/abs/2102.11903v2,2021-02-23 19:30:37+00:00,Overfitting and Initial Document Set Bias in Numeric-Based DocIDs,False
+2102.07660,Comparative Code Structure Analysis using Deep Learning for Performance Prediction,http://arxiv.org/abs/2102.07660v2,2021-02-12 16:59:12+00:00,Overfitting and Initial Document Set Bias in Numeric-Based DocIDs,False
+1805.07274,Language Expansion In Text-Based Games,http://arxiv.org/abs/1805.07274v1,2018-05-17 10:43:04+00:00,Term-Based DocID Generation Techniques,True
+2010.01547,It's all about data movement: Optimising FPGA data access to boost performance,http://arxiv.org/abs/2010.01547v1,2020-10-04 11:30:22+00:00,Overfitting and Initial Document Set Bias in Numeric-Based DocIDs,True
+2102.12740,Performance Comparison for Scientific Computations on the Edge via Relative Performance,http://arxiv.org/abs/2102.12740v2,2021-02-25 09:10:27+00:00,Adaptive Retrieval Systems for Evolving Document Sets,False
+2210.11392,Deep reinforcement learning oriented for real world dynamic scenarios,http://arxiv.org/abs/2210.11392v1,2022-10-20 16:37:37+00:00,Overfitting and Initial Document Set Bias in Numeric-Based DocIDs,False
+2410.15373,DynaVINS++: Robust Visual-Inertial State Estimator in Dynamic Environments by Adaptive Truncated Least Squares and Stable State Recovery,http://arxiv.org/abs/2410.15373v1,2024-10-20 12:13:45+00:00,Hybrid Retrieval Strategies for Dynamic Environments,False
+2310.09243,Augmented Computational Design: Methodical Application of Artificial Intelligence in Generative Design,http://arxiv.org/abs/2310.09243v1,2023-10-13 16:47:35+00:00,Adaptive Retrieval Systems for Evolving Document Sets,True
+2310.16122,A Performance-Portable SYCL Implementation of CRK-HACC for Exascale,http://arxiv.org/abs/2310.16122v1,2023-10-24 18:52:24+00:00,Overfitting and Initial Document Set Bias in Numeric-Based DocIDs,True
+2009.07935,Towards an Objective Metric for the Performance of Exact Triangle Count,http://arxiv.org/abs/2009.07935v3,2020-09-16 21:08:27+00:00,Overfitting and Initial Document Set Bias in Numeric-Based DocIDs,False
+2005.13144,A review of analytical performance modeling and its role in computer engineering and science,http://arxiv.org/abs/2005.13144v1,2020-05-27 03:53:41+00:00,Overfitting and Initial Document Set Bias in Numeric-Based DocIDs,False

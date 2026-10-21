@@ -1,0 +1,26 @@
+rank,arxiv_id,title,url,date
+1,2410.18403,Structure Language Models for Protein Conformation Generation,http://arxiv.org/abs/2410.18403v2,2024-10-24 03:38:51+00:00
+2,2403.14088,Protein Conformation Generation via Force-Guided SE(3) Diffusion Models,http://arxiv.org/abs/2403.14088v2,2024-03-21 02:44:08+00:00
+3,2310.02391,SE(3)-Stochastic Flow Matching for Protein Backbone Generation,http://arxiv.org/abs/2310.02391v4,2023-10-03 19:24:24+00:00
+4,1208.2680,Atomic-accuracy prediction of protein loop structures through an RNA-inspired ansatz,http://arxiv.org/abs/1208.2680v2,2012-08-02 19:06:33+00:00
+5,2001.01161,Using physical features of protein core packing to distinguish real proteins from decoys,http://arxiv.org/abs/2001.01161v1,2020-01-05 03:32:15+00:00
+6,2004.13167,Energy-based models for atomic-resolution protein conformations,http://arxiv.org/abs/2004.13167v1,2020-04-27 20:45:12+00:00
+7,1008.4006,"Potentials of Mean Force for Protein Structure Prediction Vindicated, Formalized and Generalized",http://arxiv.org/abs/1008.4006v3,2010-08-24 10:49:18+00:00
+8,2505.17478,ConfRover: Simultaneous Modeling of Protein Conformation and Dynamics via Autoregression,http://arxiv.org/abs/2505.17478v2,2025-05-23 05:00:15+00:00
+9,1607.06113,Guided macro-mutation in a graded energy based genetic algorithm for protein structure prediction,http://arxiv.org/abs/1607.06113v1,2016-03-07 20:47:07+00:00
+10,2209.03855,SE(3)-DiffusionFields: Learning smooth cost functions for joint grasp and motion optimization through diffusion,http://arxiv.org/abs/2209.03855v4,2022-09-08 14:50:23+00:00
+11,2201.07338,Controllable Protein Design with Language Models,http://arxiv.org/abs/2201.07338v2,2022-01-18 22:23:03+00:00
+12,2501.02680,From thermodynamics to protein design: Diffusion models for biomolecule generation towards autonomous protein engineering,http://arxiv.org/abs/2501.02680v1,2025-01-05 22:36:43+00:00
+13,1206.3509,A Novel Approach for Protein Structure Prediction,http://arxiv.org/abs/1206.3509v1,2012-06-15 16:31:45+00:00
+14,1605.03004,MUST-CNN: A Multilayer Shift-and-Stitch Deep Convolutional Architecture for Sequence-based Protein Structure Prediction,http://arxiv.org/abs/1605.03004v1,2016-05-10 13:31:52+00:00
+15,1801.09442,Preface to Introduction to Protein Structural Bioinformatics,http://arxiv.org/abs/1801.09442v3,2018-01-29 10:54:27+00:00
+16,1711.10540,ISLAND: In-Silico Prediction of Proteins Binding Affinity Using Sequence Descriptors,http://arxiv.org/abs/1711.10540v2,2017-11-22 07:54:31+00:00
+17,2401.06151,Towards Joint Sequence-Structure Generation of Nucleic Acid and Protein Complexes with SE(3)-Discrete Diffusion,http://arxiv.org/abs/2401.06151v1,2023-12-21 05:53:33+00:00
+18,2212.11685,Text Generation with Diffusion Language Models: A Pre-training Approach with Continuous Paragraph Denoise,http://arxiv.org/abs/2212.11685v2,2022-12-22 13:17:11+00:00
+19,2402.17156,TaxDiff: Taxonomic-Guided Diffusion Model for Protein Sequence Generation,http://arxiv.org/abs/2402.17156v1,2024-02-27 02:41:46+00:00
+20,1908.11739,A Continuous Effective Model of the Protein Dynamics,http://arxiv.org/abs/1908.11739v1,2019-08-30 13:48:18+00:00
+21,2211.05409,Radiomics-enhanced Deep Multi-task Learning for Outcome Prediction in Head and Neck Cancer,http://arxiv.org/abs/2211.05409v1,2022-11-10 08:28:56+00:00
+22,2202.02944,Prompt-Guided Injection of Conformation to Pre-trained Protein Model,http://arxiv.org/abs/2202.02944v1,2022-02-07 05:07:44+00:00
+23,2504.06806,Mass Balance Approximation of Unfolding Improves Potential-Like Methods for Protein Stability Predictions,http://arxiv.org/abs/2504.06806v1,2025-04-09 11:53:02+00:00
+24,2302.02277,SE(3) diffusion model with application to protein backbone generation,http://arxiv.org/abs/2302.02277v3,2023-02-05 01:47:02+00:00
+25,1303.4033,Two-dimensional magnetic interactions in LaFeAsO,http://arxiv.org/abs/1303.4033v1,2013-03-17 05:50:14+00:00

@@ -1,0 +1,16 @@
+arxiv_id,title,url,date,category,cited_in_text
+1906.08850,Implicitly Adaptive Importance Sampling,http://arxiv.org/abs/1906.08850v2,2019-06-20 21:16:35+00:00,Probabilistic Frameworks for Event Importance,True
+2412.00816,Motion-Aware Optical Camera Communication with Event Cameras,http://arxiv.org/abs/2412.00816v1,2024-12-01 14:06:31+00:00,Vision Tasks with Event Cameras,True
+1212.0582,Compositional Stochastic Modeling and Probabilistic Programming,http://arxiv.org/abs/1212.0582v1,2012-12-03 23:05:30+00:00,Probabilistic Frameworks for Event Importance,True
+2505.11282,MTevent: A Multi-Task Event Camera Dataset for 6D Pose Estimation and Moving Object Detection,http://arxiv.org/abs/2505.11282v2,2025-05-16 14:18:21+00:00,Vision Tasks with Event Cameras,True
+2503.19916,EventFly: Event Camera Perception from Ground to the Sky,http://arxiv.org/abs/2503.19916v1,2025-03-25 17:59:59+00:00,Cross-Platform Event Camera Adaptation,True
+2405.17769,Microsaccade-inspired Event Camera for Robotics,http://arxiv.org/abs/2405.17769v1,2024-05-28 02:49:46+00:00,Vision Tasks with Event Cameras,True
+1910.04076,FisheyeDistanceNet: Self-Supervised Scale-Aware Distance Estimation using Monocular Fisheye Camera for Autonomous Driving,http://arxiv.org/abs/1910.04076v4,2019-10-07 14:51:38+00:00,Vision Tasks with Event Cameras,True
+1807.09480,Attention Mechanisms for Object Recognition with Event-Based Cameras,http://arxiv.org/abs/1807.09480v2,2018-07-25 08:39:25+00:00,Deep Learning Integration with Event Cameras,True
+2105.00409,Feedback control of event cameras,http://arxiv.org/abs/2105.00409v1,2021-05-02 07:41:39+00:00,Adaptive Event Sampling Methods,True
+2504.18235,BiasBench: A reproducible benchmark for tuning the biases of event cameras,http://arxiv.org/abs/2504.18235v2,2025-04-25 10:33:24+00:00,Vision Tasks with Event Cameras,True
+1212.0967,Compiling Relational Database Schemata into Probabilistic Graphical Models,http://arxiv.org/abs/1212.0967v1,2012-12-05 08:52:33+00:00,Probabilistic Frameworks for Event Importance,False
+2003.00847,Learning to Deblur and Generate High Frame Rate Video with an Event Camera,http://arxiv.org/abs/2003.00847v2,2020-03-02 13:02:05+00:00,Deep Learning Integration with Event Cameras,False
+2004.09632,Intelligent Querying for Target Tracking in Camera Networks using Deep Q-Learning with n-Step Bootstrapping,http://arxiv.org/abs/2004.09632v1,2020-04-20 20:49:52+00:00,Deep Learning Integration with Event Cameras,False
+1706.09163,Probabilistic and Piecewise Deterministic models in Biology,http://arxiv.org/abs/1706.09163v1,2017-06-28 08:12:37+00:00,Probabilistic Frameworks for Event Importance,False
+2011.14860,Infinite Probabilistic Databases,http://arxiv.org/abs/2011.14860v6,2020-11-30 14:57:38+00:00,Probabilistic Frameworks for Event Importance,False

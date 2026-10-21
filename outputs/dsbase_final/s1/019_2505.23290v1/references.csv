@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2305.19556,Exploring Phonetic Context-Aware Lip-Sync For Talking Face Generation,http://arxiv.org/abs/2305.19556v3,2023-05-31 04:50:32+00:00,Speech-Driven Facial Animation Overview,True
+2210.02509,Revisiting Syllables in Language Modelling and their Application on Low-Resource Machine Translation,http://arxiv.org/abs/2210.02509v1,2022-10-05 18:55:52+00:00,Challenges in Generalization and Data Requirements,True
+2310.07236,AdaMesh: Personalized Facial Expressions and Head Poses for Adaptive Speech-Driven 3D Facial Animation,http://arxiv.org/abs/2310.07236v4,2023-10-11 06:56:08+00:00,Challenges in Generalization and Data Requirements,True
+2311.04766,DualTalker: A Cross-Modal Dual Learning Approach for Speech-Driven 3D Facial Animation,http://arxiv.org/abs/2311.04766v2,2023-11-08 15:39:56+00:00,Challenges in Generalization and Data Requirements,True
+2303.05416,FaceXHuBERT: Text-less Speech-driven E(X)pressive 3D Facial Animation Synthesis Using Self-Supervised Speech Representation Learning,http://arxiv.org/abs/2303.05416v1,2023-03-09 17:05:19+00:00,Self-Supervised Learning for Facial Animation,True
+2301.02379,CodeTalker: Speech-Driven 3D Facial Animation with Discrete Motion Prior,http://arxiv.org/abs/2301.02379v2,2023-01-06 05:04:32+00:00,Challenges in Generalization and Data Requirements,True
+1906.06337,Realistic Speech-Driven Facial Animation with GANs,http://arxiv.org/abs/1906.06337v1,2019-06-14 16:52:27+00:00,Speech-Driven Facial Animation Overview,True
+2008.10004,Geometry-guided Dense Perspective Network for Speech-Driven Facial Animation,http://arxiv.org/abs/2008.10004v1,2020-08-23 09:48:09+00:00,Speech-Driven Facial Animation Overview,True
+1209.4982,Using multimodal speech production data to evaluate articulatory animation for audiovisual speech synthesis,http://arxiv.org/abs/1209.4982v1,2012-09-22 10:36:11+00:00,Challenges in Generalization and Data Requirements,False
+1805.09313,End-to-End Speech-Driven Facial Animation with Temporal GANs,http://arxiv.org/abs/1805.09313v4,2018-05-23 17:54:32+00:00,Speech-Driven Facial Animation Overview,False
+2408.01826,GLDiTalker: Speech-Driven 3D Facial Animation with Graph Latent Diffusion Transformer,http://arxiv.org/abs/2408.01826v5,2024-08-03 17:18:26+00:00,Diffusion Models in Facial Animation,False
+2112.02214,Joint Audio-Text Model for Expressive Speech-Driven 3D Facial Animation,http://arxiv.org/abs/2112.02214v2,2021-12-04 01:37:22+00:00,Semantic Feature Extraction in Audio,True
+1912.05833,Speech-driven facial animation using polynomial fusion of features,http://arxiv.org/abs/1912.05833v2,2019-12-12 08:46:57+00:00,Speech-Driven Facial Animation Overview,False
+2301.02008,Expressive Speech-driven Facial Animation with controllable emotions,http://arxiv.org/abs/2301.02008v2,2023-01-05 11:17:19+00:00,Emotion and Expression Controllability,False
+2211.00924,SyncTalkFace: Talking Face Generation with Precise Lip-Syncing via Audio-Lip Memory,http://arxiv.org/abs/2211.00924v2,2022-11-02 07:17:49+00:00,Speech-Driven Facial Animation Overview,True
+2309.11306,FaceDiffuser: Speech-Driven 3D Facial Animation Synthesis Using Diffusion,http://arxiv.org/abs/2309.11306v1,2023-09-20 13:33:00+00:00,Diffusion Models in Facial Animation,False
+2308.05428,Speech-Driven 3D Face Animation with Composite and Regional Facial Movements,http://arxiv.org/abs/2308.05428v1,2023-08-10 08:42:20+00:00,Speech-Driven Facial Animation Overview,False
+2409.01113,KMTalk: Speech-Driven 3D Facial Animation with Key Motion Embedding,http://arxiv.org/abs/2409.01113v1,2024-09-02 09:41:24+00:00,Speech-Driven Facial Animation Overview,False
+2409.19143,Diverse Code Query Learning for Speech-Driven Facial Animation,http://arxiv.org/abs/2409.19143v1,2024-09-27 21:15:21+00:00,Speech-Driven Facial Animation Overview,False
+2404.18604,CSTalk: Correlation Supervised Speech-driven 3D Emotional Facial Animation Generation,http://arxiv.org/abs/2404.18604v1,2024-04-29 11:19:15+00:00,Emotion and Expression Controllability,False
+2407.01034,Enhancing Speech-Driven 3D Facial Animation with Audio-Visual Guidance from Lip Reading Expert,http://arxiv.org/abs/2407.01034v1,2024-07-01 07:39:28+00:00,Speech-Driven Facial Animation Overview,False
+2303.17480,Seeing What You Said: Talking Face Generation Guided by a Lip Reading Expert,http://arxiv.org/abs/2303.17480v1,2023-03-29 07:51:07+00:00,Self-Supervised Learning for Facial Animation,False
+1710.00920,End-to-end Learning for 3D Facial Animation from Raw Waveforms of Speech,http://arxiv.org/abs/1710.00920v2,2017-10-02 21:44:32+00:00,Speech-Driven Facial Animation Overview,False
+2401.08655,SAiD: Speech-driven Blendshape Facial Animation with Diffusion,http://arxiv.org/abs/2401.08655v2,2023-12-25 04:40:32+00:00,Diffusion Models in Facial Animation,True
+2107.06831,Parallel and High-Fidelity Text-to-Lip Generation,http://arxiv.org/abs/2107.06831v2,2021-07-14 16:44:04+00:00,Speech-Driven Facial Animation Overview,False
+2310.00863,Syllable-level lyrics generation from melody exploiting character-level language model,http://arxiv.org/abs/2310.00863v3,2023-10-02 02:53:29+00:00,Challenges in Generalization and Data Requirements,True
+2203.03984,Attention-Based Lip Audio-Visual Synthesis for Talking Face Generation in the Wild,http://arxiv.org/abs/2203.03984v1,2022-03-08 10:18:25+00:00,Speech-Driven Facial Animation Overview,False
+1001.2263,Syllable Analysis to Build a Dictation System in Telugu language,http://arxiv.org/abs/1001.2263v1,2010-01-13 18:51:08+00:00,Challenges in Generalization and Data Requirements,False
+2409.07966,ProbTalk3D: Non-Deterministic Emotion Controllable Speech-Driven 3D Facial Animation Synthesis Using VQ-VAE,http://arxiv.org/abs/2409.07966v4,2024-09-12 11:53:05+00:00,Emotion and Expression Controllability,False
+1803.10404,Lip Movements Generation at a Glance,http://arxiv.org/abs/1803.10404v3,2018-03-28 04:02:33+00:00,Speech-Driven Facial Animation Overview,False

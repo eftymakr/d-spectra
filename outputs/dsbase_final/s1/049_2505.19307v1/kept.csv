@@ -1,0 +1,19 @@
+rank,arxiv_id,title,url,date
+1,2403.13468,DESIRE-ME: Domain-Enhanced Supervised Information REtrieval using Mixture-of-Experts,http://arxiv.org/abs/2403.13468v1,2024-03-20 10:18:05+00:00
+2,2007.14271,Declarative Experimentation in Information Retrieval using PyTerrier,http://arxiv.org/abs/2007.14271v1,2020-07-28 14:36:29+00:00
+3,2407.12325,Optimizing Query Generation for Enhanced Document Retrieval in RAG,http://arxiv.org/abs/2407.12325v1,2024-07-17 05:50:32+00:00
+4,2301.05508,Do the Findings of Document and Passage Retrieval Generalize to the Retrieval of Responses for Dialogues?,http://arxiv.org/abs/2301.05508v1,2023-01-13 12:18:43+00:00
+5,2503.00238,Passage Query Methods for Retrieval and Reranking in Conversational Agents,http://arxiv.org/abs/2503.00238v1,2025-02-28 22:53:56+00:00
+6,2102.11903,Neural ranking models for document retrieval,http://arxiv.org/abs/2102.11903v2,2021-02-23 19:30:37+00:00
+7,2412.15453,Northeastern Uni at Multilingual Counterspeech Generation: Enhancing Counter Speech Generation with LLM Alignment through Direct Preference Optimization,http://arxiv.org/abs/2412.15453v1,2024-12-19 23:22:11+00:00
+8,1707.06112,Microblog Retrieval for Post-Disaster Relief: Applying and Comparing Neural IR Models,http://arxiv.org/abs/1707.06112v1,2017-07-19 14:28:05+00:00
+9,2005.03328,Bitvector-aware Query Optimization for Decision Support Queries (extended version),http://arxiv.org/abs/2005.03328v1,2020-05-07 08:56:53+00:00
+10,1401.3510,Improving Performance Of English-Hindi Cross Language Information Retrieval Using Transliteration Of Query Terms,http://arxiv.org/abs/1401.3510v1,2014-01-15 08:07:08+00:00
+11,2406.06729,Synthetic Query Generation using Large Language Models for Virtual Assistants,http://arxiv.org/abs/2406.06729v1,2024-06-10 18:50:57+00:00
+12,2505.11856,Telco-oRAG: Optimizing Retrieval-augmented Generation for Telecom Queries via Hybrid Retrieval and Neural Routing,http://arxiv.org/abs/2505.11856v2,2025-05-17 05:46:30+00:00
+13,2202.00373,Improving BERT-based Query-by-Document Retrieval with Multi-Task Optimization,http://arxiv.org/abs/2202.00373v2,2022-02-01 12:27:59+00:00
+14,2405.19749,Generating Query Recommendations via LLMs,http://arxiv.org/abs/2405.19749v2,2024-05-30 06:52:01+00:00
+15,1404.1664,Icon Based Information Retrieval and Disease Identification in Agriculture,http://arxiv.org/abs/1404.1664v1,2014-04-07 06:20:53+00:00
+16,2402.12317,EVOR: Evolving Retrieval for Code Generation,http://arxiv.org/abs/2402.12317v2,2024-02-19 17:37:28+00:00
+17,2411.00744,CARROT: A Learned Cost-Constrained Retrieval Optimization System for RAG,http://arxiv.org/abs/2411.00744v2,2024-11-01 17:11:16+00:00
+18,1401.6891,Unsupervised Visual and Textual Information Fusion in Multimedia Retrieval - A Graph-based Point of View,http://arxiv.org/abs/1401.6891v1,2014-01-27 15:29:14+00:00

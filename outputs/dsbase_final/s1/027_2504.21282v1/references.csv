@@ -1,0 +1,21 @@
+arxiv_id,title,url,date,category,cited_in_text
+2202.06991,Transformer Memory as a Differentiable Search Index,http://arxiv.org/abs/2202.06991v3,2022-02-14 19:12:43+00:00,Differentiable Search Index Frameworks,True
+2305.02073,Understanding Differential Search Index for Text Retrieval,http://arxiv.org/abs/2305.02073v2,2023-05-03 12:22:39+00:00,Differentiable Search Index Frameworks,True
+2504.15849,NLCTables: A Dataset for Marrying Natural Language Conditions with Table Discovery,http://arxiv.org/abs/2504.15849v1,2025-04-22 12:44:59+00:00,Datasets for Natural Language-Driven Table Discovery,True
+2502.02788,Inducing Diversity in Differentiable Search Indexing,http://arxiv.org/abs/2502.02788v1,2025-02-05 00:21:17+00:00,Differentiable Search Index Frameworks,True
+1706.02427,Content-Based Table Retrieval for Web Queries,http://arxiv.org/abs/1706.02427v1,2017-06-08 02:03:32+00:00,Datasets for Natural Language-Driven Table Discovery,True
+2404.12237,De-DSI: Decentralised Differentiable Search Index,http://arxiv.org/abs/2404.12237v2,2024-04-18 14:51:55+00:00,Differentiable Search Index Frameworks,True
+2410.00169,(Almost) Smooth Sailing: Towards Numerical Stability of Neural Networks Through Differentiable Regularization of the Condition Number,http://arxiv.org/abs/2410.00169v1,2024-09-30 19:18:15+00:00,Differentiable Search Index Frameworks,True
+1208.4016,Concept driven framework for Latent Table Discovery,http://arxiv.org/abs/1208.4016v1,2012-08-20 14:09:01+00:00,Query-Table Semantic Alignment Challenges,True
+2404.09473,Exploring the Nexus Between Retrievability and Query Generation Strategies,http://arxiv.org/abs/2404.09473v1,2024-04-15 05:56:13+00:00,Large Language Model Applications in Query Generation,True
+2411.03356,Enhancing Table Representations with LLM-powered Synthetic Data Generation,http://arxiv.org/abs/2411.03356v1,2024-11-04 19:54:07+00:00,Synthetic Data Generation for Model Training,True
+2202.00373,Improving BERT-based Query-by-Document Retrieval with Multi-Task Optimization,http://arxiv.org/abs/2202.00373v2,2022-02-01 12:27:59+00:00,Differentiable Search Index Frameworks,True
+2009.10669,"There is No Such Thing as an ""Index""! or: The next 500 Indexing Papers",http://arxiv.org/abs/2009.10669v2,2020-09-22 16:44:27+00:00,Differentiable Search Index Frameworks,True
+2407.12346,Object-Aware Query Perturbation for Cross-Modal Image-Text Retrieval,http://arxiv.org/abs/2407.12346v2,2024-07-17 06:42:14+00:00,Query-Table Semantic Alignment Challenges,True
+2007.07987,Deep Reinforced Query Reformulation for Information Retrieval,http://arxiv.org/abs/2007.07987v1,2020-07-15 20:40:54+00:00,Large Language Model Applications in Query Generation,True
+2203.10791,IoT Data Discovery: Routing Table and Summarization Techniques,http://arxiv.org/abs/2203.10791v2,2022-03-21 08:12:54+00:00,Datasets for Natural Language-Driven Table Discovery,True
+2501.07793,Unsupervised Query Routing for Retrieval Augmented Generation,http://arxiv.org/abs/2501.07793v1,2025-01-14 02:27:06+00:00,Synthetic Data Generation for Model Training,False
+2406.19708,A Differentiable Approach to Multi-scale Brain Modeling,http://arxiv.org/abs/2406.19708v3,2024-06-28 07:41:31+00:00,Differentiable Search Index Frameworks,False
+1704.07625,Indexing Weighted Sequences: Neat and Efficient,http://arxiv.org/abs/1704.07625v2,2017-04-25 10:46:49+00:00,Error Accumulation in Representation and Indexing,False
+2406.06729,Synthetic Query Generation using Large Language Models for Virtual Assistants,http://arxiv.org/abs/2406.06729v1,2024-06-10 18:50:57+00:00,Large Language Model Applications in Query Generation,False
+2107.05145,Discovery of Bayes' Table at Tunbridge Wells,http://arxiv.org/abs/2107.05145v1,2021-07-11 23:37:00+00:00,Datasets for Natural Language-Driven Table Discovery,False
