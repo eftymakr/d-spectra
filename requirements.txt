@@ -1,0 +1,9 @@
+torch==2.5.1
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.9.1
+pandas==3.0.6
+matplotlib==3.11.2
+requests==2.34.2
+sentence-transformers==3.3.1
+transformers==4.46.3
