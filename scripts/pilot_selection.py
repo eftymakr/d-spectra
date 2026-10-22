@@ -49,7 +49,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 
 BUDGETS = [10, 20, 30, 45, 60]
 COMPARE = ["relevance_only", "dspectra_eta0", "symmetrized", "raw_svd", "usvt",
-           "semantic_modes", "vendi", "search_only", "most_cited"]
+           "semantic_modes", "vendi", "search_only", "most_cited", "deepscholar_kept"]
 
 
 def load_graph(path):
@@ -173,16 +173,34 @@ def evaluate_query(path, args):
     # model is still fitted on the whole expanded graph)
     cand = seeds if args.select_from == "seeds" else None
 
+    # DeepScholar-base's own picks (its LLM filter's kept list), when given;
+    # every method is then also evaluated at that per-query budget, stored as B = 0
+    kept_idx, n_kept_listed = None, None
+    if args.kept_dir:
+        import pandas as pd
+        qdirs = glob.glob(f"{args.kept_dir}/*_{aid}v*/")
+        if qdirs and os.path.isfile(qdirs[0] + "kept.csv"):
+            kept = pd.read_csv(qdirs[0] + "kept.csv", dtype={"arxiv_id": str})
+            n_kept_listed = len(kept)
+            by_ax = {nd["arxiv_id"]: k for k, nd in enumerate(g["nodes"]) if nd.get("arxiv_id")}
+            core = kept.arxiv_id.astype(str).str.extract(r"(\d{4}\.\d{4,5})")[0].dropna()
+            kept_idx = list(dict.fromkeys(by_ax[a] for a in core if a in by_ax))
+
     vendi_order = greedy_vendi(En, r, max(BUDGETS), args.alpha, candidates=cand)
     selections = {}
-    for B in BUDGETS:
-        selections[("search_only", B)] = top_k(r, B, candidates=seeds)
-        selections[("relevance_only", B)] = top_k(r, B, candidates=cand)
-        selections[("most_cited", B)] = top_k(A.sum(0) + 1e-6 * r, B, candidates=cand)
-        selections[("vendi", B)] = vendi_order[:B]
+    budgets = list(BUDGETS)
+    if kept_idx:
+        selections[("deepscholar_kept", 0)] = kept_idx
+        budgets.append(0)
+    for B_label in budgets:
+        B = len(kept_idx) if B_label == 0 else B_label
+        selections[("search_only", B_label)] = top_k(r, B, candidates=seeds)
+        selections[("relevance_only", B_label)] = top_k(r, B, candidates=cand)
+        selections[("most_cited", B_label)] = top_k(A.sum(0) + 1e-6 * r, B, candidates=cand)
+        selections[("vendi", B_label)] = vendi_order[:B]
         for name, (V, p) in operators.items():
-            selections[(name, B)] = greedy_select(V, p, r, B, args.alpha, args.gamma,
-                                                  candidates=cand)
+            selections[(name, B_label)] = greedy_select(V, p, r, B, args.alpha, args.gamma,
+                                                        candidates=cand)
 
     n_gt_all = g["gt"]["n_cited_in_related_work"]
     n_imp_all = g["gt"]["n_important"]
@@ -216,6 +234,7 @@ def evaluate_query(path, args):
                        for s in range(20)]))}
     return {"arxiv_id": aid, "n_nodes": n, "n_edges": int(A.sum()),
             "n_gt_in_pool": len(keys_in_pool), "n_gt_all": n_gt_all, "fit": fit_info,
+            "n_kept_listed": n_kept_listed, "n_kept_in_graph": len(kept_idx) if kept_idx else None,
             "premise": premise, "rows": rows,
             "selections": {f"{m}@{B}": [int(i) for i in S] for (m, B), S in selections.items()}}
 
@@ -232,10 +251,12 @@ def aggregate(out_dir):
                         "diversity", "mean_relevance"]}
     tests = []
     for other in COMPARE:
-        for B in BUDGETS:
+        for B in sorted(reach.B.unique()):
             a = reach[(reach.method == "dspectra") & (reach.B == B)].set_index("arxiv_id").recall
             b = reach[(reach.method == other) & (reach.B == B)].set_index("arxiv_id").recall
             a, b = a.align(b, join="inner")
+            if len(a) == 0:
+                continue
             diff = a - b
             p = wilcoxon(a, b).pvalue if (diff != 0).any() else 1.0
             tests.append({"vs": other, "B": B, "n": len(a), "mean_diff": diff.mean(),
@@ -264,7 +285,8 @@ def aggregate(out_dir):
                           "rho_size": spearmanr(d["size"], d.recall)[0]})
     track = pd.DataFrame(track)
 
-    fit_names = [k for k in per_q[0]["fit"] if not k.startswith("_")]
+    # extra targets may exist for a subset of queries only (fit_sensitivity.py)
+    fit_names = sorted({k for q in per_q for k in q["fit"] if not k.startswith("_")})
     summary = {
         "n_queries": len(per_q),
         "n_queries_with_gt_in_pool": len(reach_ids),
@@ -274,8 +296,11 @@ def aggregate(out_dir):
             "pooled_gt_reachable_frac": float(sum(q["n_gt_in_pool"] for q in per_q)
                                               / sum(q["n_gt_all"] for q in per_q)),
         },
-        "fit": {name: {"mean_d_ev": float(np.mean([q["fit"][name]["d_ev"] for q in per_q])),
-                       "mean_eta": float(np.mean([q["fit"][name]["eta"] for q in per_q]))}
+        "fit": {name: {"mean_d_ev": float(np.mean([q["fit"][name]["d_ev"] for q in per_q
+                                                   if name in q["fit"]])),
+                       "mean_eta": float(np.mean([q["fit"][name]["eta"] for q in per_q
+                                                  if name in q["fit"]])),
+                       "n_queries": sum(name in q["fit"] for q in per_q)}
                 for name in fit_names},
         "mean_fit_seconds": float(np.mean([q["fit"]["_seconds"] for q in per_q])),
         "premise": prem_test,
@@ -309,6 +334,9 @@ def main():
                     help="select from the whole expanded graph or only the search pool")
     ap.add_argument("--operators", default=None,
                     help="directory of fitted operators (default: <out>/operators)")
+    ap.add_argument("--kept_dir", default=None,
+                    help="DeepScholar-base outputs for one seed (folders with kept.csv); adds its "
+                         "picks as a method and a per-query matched budget, stored as B = 0")
     ap.add_argument("--aggregate", action="store_true")
     ap.add_argument("--rank", type=int, default=32)
     ap.add_argument("--epochs", type=int, default=1500)
