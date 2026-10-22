@@ -23,7 +23,7 @@ from collections import Counter
 import pandas as pd
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-from build_graphs import arxiv_core, norm_title, title_matcher  # noqa: E402
+from build_graphs import arxiv_core, is_query_version, norm_title, title_matcher  # noqa: E402
 from pool_edges_s2 import s2_batch  # noqa: E402
 
 META = "paperId,title,abstract,year,publicationDate,citationCount,externalIds,references.paperId"
@@ -52,7 +52,7 @@ def build(q, pool, cit_rows, imp_keys, args):
     t_q = dt.date.fromisoformat(str(q["published_date"])[:10])
     ax = list(dict.fromkeys(a for a in pool.arxiv_id_from_url.map(arxiv_core) if a))
     snippet = {arxiv_core(a): s for a, s in zip(pool.arxiv_id_from_url, pool.snippet)
-               if isinstance(s, str)}
+               if isinstance(s, str) and arxiv_core(a)}
     seeds = [d for d in batch([f"ARXIV:{a}" for a in ax], META, 100) if d]
     seed_ids = [d["paperId"] for d in seeds]
     q_norm = norm_title(q["title"])
@@ -75,7 +75,7 @@ def build(q, pool, cit_rows, imp_keys, args):
     nodes, index = [], {}
     for pid in seed_ids + extra:
         d = meta.get(pid)
-        if d is None or pid in index or not d.get("title") or norm_title(d["title"]) == q_norm:
+        if d is None or pid in index or not d.get("title") or is_query_version(d["title"], q_norm):
             continue
         is_seed = pid in seed_ids
         if not is_seed and not before(d, t_q):
@@ -83,11 +83,32 @@ def build(q, pool, cit_rows, imp_keys, args):
         a = arxiv_core((d.get("externalIds") or {}).get("ArXiv", ""))
         index[pid] = len(nodes)
         nodes.append({"s2_id": pid, "title": d["title"], "arxiv_id": a,
-                      "abstract": d.get("abstract") or snippet.get(a, ""),
+                      "abstract": d.get("abstract") or (snippet.get(a, "") if a else ""),
                       "publication_date": d.get("publicationDate"),
                       "cited_by_count": d.get("citationCount") or 0,
                       "source": "seed" if is_seed else ("ref" if pid in ref_count else "citer"),
                       "_refs": [r["paperId"] for r in (d.get("references") or []) if r.get("paperId")]})
+
+    # pool papers Semantic Scholar does not know stay in as candidates without
+    # citation links (text from the pool file), so the candidates are the whole pool
+    present_ax = {nd["arxiv_id"] for nd in nodes if nd["arxiv_id"]}
+    present_t = {norm_title(nd["title"]) for nd in nodes}
+    n_unresolved = 0
+    for _, row in pool.iterrows():
+        a = arxiv_core(row.arxiv_id_from_url)
+        title = row.title if isinstance(row.title, str) else ""
+        if (not title or (a and a in present_ax) or norm_title(title) in present_t
+                or is_query_version(title, q_norm)):
+            continue
+        present_t.add(norm_title(title))
+        if a:
+            present_ax.add(a)
+        n_unresolved += 1
+        nodes.append({"s2_id": None, "title": title, "arxiv_id": a,
+                      "abstract": row.snippet if isinstance(row.snippet, str) else "",
+                      "publication_date": str(row.date)[:10] if isinstance(row.date, str) else None,
+                      "cited_by_count": 0, "source": "seed", "_refs": []})
+
     edges = sorted({(k, index[r]) for k, nd in enumerate(nodes) for r in nd.pop("_refs")
                     if r in index and index[r] != k})
 
@@ -119,6 +140,7 @@ def build(q, pool, cit_rows, imp_keys, args):
                "n_in_pool": len(set(node_keys.values()))},
         "stats": {"n_nodes": len(nodes), "n_edges": len(edges),
                   "n_seeds": sum(nd["source"] == "seed" for nd in nodes),
+                  "n_pool_without_s2": n_unresolved,
                   "n_refs": sum(nd["source"] == "ref" for nd in nodes),
                   "n_citers": sum(nd["source"] == "citer" for nd in nodes),
                   "frac_with_abstract": sum(bool(nd["abstract"]) for nd in nodes) / max(len(nodes), 1)},
@@ -132,30 +154,45 @@ def main():
     ap.add_argument("--out", default="data/graphs_ds")
     ap.add_argument("--n_refs", type=int, default=250)
     ap.add_argument("--n_citers", type=int, default=130)
+    ap.add_argument("--passes", type=int, default=3)
     args = ap.parse_args()
     os.makedirs(args.out, exist_ok=True)
     papers = pd.read_csv(os.path.join(args.dataset_dir, "papers.csv"))
     abstracts = dict(zip(papers.arxiv_id, papers.abstract))
     cits = pd.read_csv(os.path.join(args.dataset_dir, "citations.csv"))
     imp = pd.read_csv(os.path.join(args.dataset_dir, "important_citations.csv"))
-    for qdir in sorted(glob.glob(os.path.join(args.pools, "*/"))):
-        with open(os.path.join(qdir, "query.json")) as f:
-            q = json.load(f)
-        q["abstract"] = abstracts.get(q["arxiv_id"], "")
-        path = os.path.join(args.out, f"{arxiv_core(q['arxiv_id'])}.json")
-        if os.path.isfile(path):
-            continue
-        pool = pd.read_csv(os.path.join(qdir, "pool_all.csv"))
-        rows = cits[cits.parent_paper_arxiv_id == q["arxiv_id"]]
-        imp_keys = set(imp[imp.parent_paper_arxiv_id == q["arxiv_id"]].citation_shorthand)
-        g = build(q, pool, rows, imp_keys, args)
-        with open(path, "w") as f:
-            json.dump(g, f)
-        st, gt = g["stats"], g["gt"]
-        print(f"{g['arxiv_id']}: {st['n_nodes']} nodes ({st['n_seeds']} pool, {st['n_refs']} refs, "
-              f"{st['n_citers']} citers), {st['n_edges']} edges, refs found "
-              f"{gt['n_in_seed_pool']} in pool / {gt['n_in_pool']} expanded of "
-              f"{gt['n_cited_in_related_work']}", flush=True)
+    # a query that fails (e.g. Semantic Scholar rate limits outlasting the
+    # retries) is skipped and retried in the next pass
+    for attempt in range(args.passes):
+        failed = []
+        for qdir in sorted(glob.glob(os.path.join(args.pools, "*/"))):
+            with open(os.path.join(qdir, "query.json")) as f:
+                q = json.load(f)
+            q["abstract"] = abstracts.get(q["arxiv_id"], "")
+            path = os.path.join(args.out, f"{arxiv_core(q['arxiv_id'])}.json")
+            if os.path.isfile(path):
+                continue
+            # read IDs as text: as numbers, 2411.16260 would become 2411.1626
+            pool = pd.read_csv(os.path.join(qdir, "pool_all.csv"), dtype={"arxiv_id_from_url": str})
+            rows = cits[cits.parent_paper_arxiv_id == q["arxiv_id"]]
+            imp_keys = set(imp[imp.parent_paper_arxiv_id == q["arxiv_id"]].citation_shorthand)
+            try:
+                g = build(q, pool, rows, imp_keys, args)
+            except RuntimeError as e:
+                failed.append(q["arxiv_id"])
+                print(f"{q['arxiv_id']}: failed ({e}); will retry", flush=True)
+                continue
+            with open(path + ".tmp", "w") as f:  # rename so readers never see a partial file
+                json.dump(g, f)
+            os.replace(path + ".tmp", path)
+            st, gt = g["stats"], g["gt"]
+            print(f"{g['arxiv_id']}: {st['n_nodes']} nodes ({st['n_seeds']} pool, {st['n_refs']} refs, "
+                  f"{st['n_citers']} citers), {st['n_edges']} edges, refs found "
+                  f"{gt['n_in_seed_pool']} in pool / {gt['n_in_pool']} expanded of "
+                  f"{gt['n_cited_in_related_work']}", flush=True)
+        if not failed:
+            break
+        print(f"pass {attempt + 1}: {len(failed)} queries failed", flush=True)
 
 
 if __name__ == "__main__":

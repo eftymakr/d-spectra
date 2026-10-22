@@ -73,6 +73,10 @@ def arxiv_core(s) -> str:
     return m.group(1) if m else ""
 
 
+def is_query_version(title: str, q_norm: str, cutoff: float = 0.9) -> bool:
+    return difflib.SequenceMatcher(None, norm_title(title), q_norm).ratio() >= cutoff
+
+
 def titles_agree(a: str, b: str, cutoff: float = 0.6) -> bool:
     return difflib.SequenceMatcher(None, norm_title(a), norm_title(b)).ratio() >= cutoff
 
@@ -125,7 +129,9 @@ def build_one(oa: OpenAlexClient, q, cit_rows, imp_keys, args):
     q_norm = norm_title(q["title"])
 
     def ok(w):
-        return (w.get("title") and norm_title(w["title"]) != q_norm
+        # also drop other versions of the query paper (e.g. a venue record dated
+        # before the arXiv one), whose reference lists would leak the answers
+        return (w.get("title") and not is_query_version(w["title"], q_norm)
                 and (w.get("publication_date") or "9999") <= cutoff)
 
     queries = search_queries(q["title"], q["abstract"])

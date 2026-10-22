@@ -26,23 +26,27 @@ from build_graphs import arxiv_core  # noqa: E402
 BATCH = "https://api.semanticscholar.org/graph/v1/paper/batch"
 
 
-def s2_batch(ids, fields, cache_dir="data/s2_cache"):
+def s2_batch(ids, fields, cache_dir="data/s2_cache", max_tries=20):
     key = hashlib.sha1(json.dumps([sorted(ids), fields]).encode()).hexdigest()
     path = os.path.join(cache_dir, key + ".json")
     if os.path.isfile(path):
         with open(path) as f:
             return json.load(f)
-    delay = 5.0
-    for _ in range(10):
-        r = requests.post(BATCH, params={"fields": fields}, json={"ids": ids}, timeout=120)
-        if r.status_code == 200:
+    delay, status = 5.0, None
+    for _ in range(max_tries):
+        try:
+            r = requests.post(BATCH, params={"fields": fields}, json={"ids": ids}, timeout=120)
+            status = r.status_code
+        except requests.RequestException as e:
+            r, status = None, type(e).__name__
+        if r is not None and r.status_code == 200:
             os.makedirs(cache_dir, exist_ok=True)
             with open(path, "w") as f:
                 json.dump(r.json(), f)
             return r.json()
         time.sleep(delay)
         delay = min(delay * 2, 120)
-    raise RuntimeError(f"S2 batch failed: HTTP {r.status_code}")
+    raise RuntimeError(f"S2 batch failed after {max_tries} tries: {status}")
 
 
 def main():
@@ -52,7 +56,8 @@ def main():
     args = ap.parse_args()
     rows = []
     for qdir in sorted(glob.glob(os.path.join(args.pools, "*/"))):
-        pool = pd.read_csv(os.path.join(qdir, "pool_all.csv"))
+        # read IDs as text: as numbers, 2411.16260 would become 2411.1626
+        pool = pd.read_csv(os.path.join(qdir, "pool_all.csv"), dtype={"arxiv_id_from_url": str})
         ax = sorted({a for a in pool.arxiv_id_from_url.map(arxiv_core) if a})
         round_of = {}
         for a, c in zip(pool.arxiv_id_from_url.map(arxiv_core), pool._call):

@@ -98,7 +98,8 @@ def main():
     for qdir in sorted(glob.glob(os.path.join(args.pools, "*/"))):
         with open(os.path.join(qdir, "query.json")) as f:
             q = json.load(f)
-        pool = pd.read_csv(os.path.join(qdir, "pool_all.csv"))
+        # read IDs as text: as numbers, 2411.16260 would become 2411.1626
+        pool = pd.read_csv(os.path.join(qdir, "pool_all.csv"), dtype={"arxiv_id_from_url": str})
         cit_rows = cits[cits.parent_paper_arxiv_id == q["arxiv_id"]]
         nodes, edges, node_keys = build_pool_graph(oa, pool, cit_rows)
         n_gt = int(cit_rows.citation_shorthand.nunique())
