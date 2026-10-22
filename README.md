@@ -15,6 +15,7 @@ D-SPECTRA chooses which papers a deep-research agent gives its writer LLM. It bu
 - `scripts/export_selections.py`: each method's selected papers, at DeepScholar's per-query budget, for the shared writer and judge.
 - `scripts/pool_graphs.py`, `scripts/pool_edges_s2.py`: diagnostics of citations between pool papers (OpenAlex, Semantic Scholar).
 - `results/`: fitted operators and per-query selections and recall for the runs below.
+- `selections/final_s0/{expanded,pool_only}/<method>.csv`: each method's papers per query, in selection order, at DeepScholar's per-query budget (columns: query, rank, arxiv_id, s2_id, title, abstract, date, in_pool, source).
 
 ## Run
 
