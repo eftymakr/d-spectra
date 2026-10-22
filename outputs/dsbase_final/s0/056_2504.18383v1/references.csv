@@ -1,0 +1,24 @@
+arxiv_id,title,url,date,category,cited_in_text
+2012.00485,Mixed Information Flow for Cross-domain Sequential Recommendations,http://arxiv.org/abs/2012.00485v3,2020-12-01 13:45:26+00:00,Mixed Information Flow Networks,True
+2406.11156,DELRec: Distilling Sequential Pattern to Enhance LLMs-based Sequential Recommendation,http://arxiv.org/abs/2406.11156v4,2024-06-17 02:47:09+00:00,Large Language Models (LLMs) Integration in CDSR,True
+2502.15694,Image Fusion for Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2502.15694v2,2024-12-31 02:44:38+00:00,Cross-Domain Sequential Recommendation (CDSR) Overview,True
+2309.08420,FedDCSR: Federated Cross-domain Sequential Recommendation via Disentangled Representation Learning,http://arxiv.org/abs/2309.08420v7,2023-09-15 14:23:20+00:00,Federated Learning in CDSR,True
+2503.13254,Federated Mixture-of-Expert for Non-Overlapped Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2503.13254v1,2025-03-17 15:12:37+00:00,Federated Learning in CDSR,True
+2401.04971,A Survey on Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2401.04971v4,2024-01-10 07:31:26+00:00,Cross-Domain Sequential Recommendation (CDSR) Overview,True
+2504.15085,Cognitive-Inspired Hierarchical Attention Fusion With Visual and Textual for Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2504.15085v5,2025-04-21 13:18:54+00:00,Cross-Domain Sequential Recommendation (CDSR) Overview,True
+2311.04760,Towards Open-world Cross-Domain Sequential Recommendation: A Model-Agnostic Contrastive Denoising Approach,http://arxiv.org/abs/2311.04760v3,2023-11-08 15:33:06+00:00,Overlap Dilemma in CDSR,True
+2209.10163,DDGHM: Dual Dynamic Graph with Hybrid Metric Training for Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2209.10163v1,2022-09-21 07:53:06+00:00,Cross-Domain Sequential Recommendation (CDSR) Overview,True
+2410.20580,Coherence-guided Preference Disentanglement for Cross-domain Recommendations,http://arxiv.org/abs/2410.20580v2,2024-10-27 20:21:14+00:00,Overlap Dilemma in CDSR,True
+2311.08272,Mixed Attention Network for Cross-domain Sequential Recommendation,http://arxiv.org/abs/2311.08272v1,2023-11-14 16:07:16+00:00,Non-Overlapping Cross-Domain Sequential Recommendation (NCSR),True
+2311.04590,Rethinking Cross-Domain Sequential Recommendation under Open-World Assumptions,http://arxiv.org/abs/2311.04590v6,2023-11-08 10:44:20+00:00,Cross-Domain Sequential Recommendation (CDSR) Overview,True
+2304.03891,Contrastive Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2304.03891v1,2023-04-08 02:19:40+00:00,Cross-Domain Sequential Recommendation (CDSR) Overview,True
+2410.13588,Cross-Domain Sequential Recommendation via Neural Process,http://arxiv.org/abs/2410.13588v1,2024-10-17 14:22:57+00:00,Overlap Dilemma in CDSR,True
+2409.07367,Enhancing Sequential Music Recommendation with Negative Feedback-informed Contrastive Learning,http://arxiv.org/abs/2409.07367v1,2024-09-11 15:56:05+00:00,Contextualized Temporal Attention Mechanisms,True
+2104.08490,Dual Metric Learning for Effective and Efficient Cross-Domain Recommendations,http://arxiv.org/abs/2104.08490v2,2021-04-17 09:18:59+00:00,Overlap Dilemma in CDSR,True
+2408.08209,Modeling Domain and Feedback Transitions for Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2408.08209v2,2024-08-15 15:18:55+00:00,Transition Complexity in CDSR,True
+2002.00741,Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation,http://arxiv.org/abs/2002.00741v1,2020-01-29 20:27:42+00:00,Contextualized Temporal Attention Mechanisms,True
+2304.04218,Automated Prompting for Non-overlapping Cross-domain Sequential Recommendation,http://arxiv.org/abs/2304.04218v1,2023-04-09 11:34:54+00:00,Non-Overlapping Cross-Domain Sequential Recommendation (NCSR),True
+2408.14238,Are LLM-based Recommenders Already the Best? Simple Scaled Cross-entropy Unleashes the Potential of Traditional Sequential Recommenders,http://arxiv.org/abs/2408.14238v1,2024-08-26 12:52:02+00:00,Large Language Models (LLMs) Integration in CDSR,False
+1803.01542,Cross-domain novelty seeking trait mining for sequential recommendation,http://arxiv.org/abs/1803.01542v1,2018-03-05 08:02:25+00:00,Cross-Domain Sequential Recommendation (CDSR) Overview,False
+1601.00741,Learning Preferences for Manipulation Tasks from Online Coactive Feedback,http://arxiv.org/abs/1601.00741v1,2016-01-05 05:47:09+00:00,Reinforcement Learning for User Preference Modeling,False
+0903.1878,Contracting preference relations for database applications,http://arxiv.org/abs/0903.1878v1,2009-03-10 22:34:46+00:00,Mixed Information Flow Networks,False

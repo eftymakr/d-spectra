@@ -1,0 +1,24 @@
+rank,arxiv_id,title,url,date
+1,2503.06928,FinTSBridge: A New Evaluation Suite for Real-world Financial Prediction with Advanced Time Series Models,http://arxiv.org/abs/2503.06928v2,2025-03-10 05:19:13+00:00
+2,2305.10721,Revisiting Long-term Time Series Forecasting: An Investigation on Linear Mapping,http://arxiv.org/abs/2305.10721v2,2023-05-18 05:39:46+00:00
+3,2304.04912,Financial Time Series Forecasting using CNN and Transformer,http://arxiv.org/abs/2304.04912v1,2023-04-11 00:56:57+00:00
+4,2306.12086,What Constitutes Good Contrastive Learning in Time-Series Forecasting?,http://arxiv.org/abs/2306.12086v2,2023-06-21 08:05:05+00:00
+5,2307.08853,"Comparative Analysis of Machine Learning, Hybrid, and Deep Learning Forecasting Models Evidence from European Financial Markets and Bitcoins",http://arxiv.org/abs/2307.08853v1,2023-07-17 21:25:00+00:00
+6,2005.12496,CRUDE: Calibrating Regression Uncertainty Distributions Empirically,http://arxiv.org/abs/2005.12496v6,2020-05-26 03:08:43+00:00
+7,2406.09578,Dynamic Asset Allocation with Asset-Specific Regime Forecasts,http://arxiv.org/abs/2406.09578v2,2024-06-13 20:35:41+00:00
+8,2410.14630,On the Regularization of Learnable Embeddings for Time Series Forecasting,http://arxiv.org/abs/2410.14630v2,2024-10-18 17:30:20+00:00
+9,2206.03246,Portfolio Transformer for Attention-Based Asset Allocation,http://arxiv.org/abs/2206.03246v1,2022-06-07 13:00:29+00:00
+10,2503.11499,Tactical Asset Allocation with Macroeconomic Regime Detection,http://arxiv.org/abs/2503.11499v2,2025-03-14 15:26:10+00:00
+11,1906.05264,GluonTS: Probabilistic Time Series Models in Python,http://arxiv.org/abs/1906.05264v2,2019-06-12 17:44:53+00:00
+12,2401.03006,The Rise of Diffusion Models in Time-Series Forecasting,http://arxiv.org/abs/2401.03006v2,2024-01-05 11:35:10+00:00
+13,2401.00249,Forecasting CPI inflation under economic policy and geopolitical uncertainties,http://arxiv.org/abs/2401.00249v2,2023-12-30 14:34:22+00:00
+14,2004.01504,Machine Learning Algorithms for Financial Asset Price Forecasting,http://arxiv.org/abs/2004.01504v1,2020-03-31 18:14:18+00:00
+15,2106.09305,SCINet: Time Series Modeling and Forecasting with Sample Convolution and Interaction,http://arxiv.org/abs/2106.09305v3,2021-06-17 08:15:04+00:00
+16,2302.01800,Creating Probabilistic Forecasts from Arbitrary Deterministic Forecasts using Conditional Invertible Neural Networks,http://arxiv.org/abs/2302.01800v1,2023-02-03 15:11:39+00:00
+17,2406.11886,Financial Assets Dependency Prediction Utilizing Spatiotemporal Patterns,http://arxiv.org/abs/2406.11886v1,2024-06-13 09:42:28+00:00
+18,2307.11494,"Predict, Refine, Synthesize: Self-Guiding Diffusion Models for Probabilistic Time Series Forecasting",http://arxiv.org/abs/2307.11494v3,2023-07-21 10:56:36+00:00
+19,2502.18410,TSKANMixer: Kolmogorov-Arnold Networks with MLP-Mixer Model for Time Series Forecasting,http://arxiv.org/abs/2502.18410v2,2025-02-25 18:04:45+00:00
+20,1904.03825,Application of data compression techniques to time series forecasting,http://arxiv.org/abs/1904.03825v1,2019-04-08 03:59:18+00:00
+21,2207.01242,Parametric and Multivariate Uncertainty Calibration for Regression and Object Detection,http://arxiv.org/abs/2207.01242v2,2022-07-04 08:00:20+00:00
+22,2206.10209,Propagation of Measurement and Model Uncertainties through Multiline TRL Calibration,http://arxiv.org/abs/2206.10209v2,2022-06-21 09:16:41+00:00
+23,1906.12338,High Speed Cognitive Domain Ontologies for Asset Allocation Using Loihi Spiking Neurons,http://arxiv.org/abs/1906.12338v1,2019-06-28 17:41:46+00:00

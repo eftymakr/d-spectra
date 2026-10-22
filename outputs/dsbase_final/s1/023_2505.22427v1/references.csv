@@ -1,0 +1,23 @@
+arxiv_id,title,url,date,category,cited_in_text
+2404.03015,DPFT: Dual Perspective Fusion Transformer for Camera-Radar-based Object Detection,http://arxiv.org/abs/2404.03015v2,2024-04-03 18:54:27+00:00,Deep Learning for Sensor Fusion,False
+2309.00787,Online Targetless Radar-Camera Extrinsic Calibration Based on the Common Features of Radar and Camera,http://arxiv.org/abs/2309.00787v2,2023-09-02 01:38:29+00:00,Data-Driven Targetless Calibration,False
+2103.07825,Radar Camera Fusion via Representation Learning in Autonomous Driving,http://arxiv.org/abs/2103.07825v3,2021-03-14 01:32:03+00:00,Deep Learning for Sensor Fusion,False
+2403.16440,RCBEVDet: Radar-camera Fusion in Bird's Eye View for 3D Object Detection,http://arxiv.org/abs/2403.16440v1,2024-03-25 06:02:05+00:00,Multi-Modal Cross-Attention Mechanisms,False
+2211.01871,Spatiotemporal Calibration of 3D Millimetre-Wavelength Radar-Camera Pairs,http://arxiv.org/abs/2211.01871v4,2022-11-03 15:03:28+00:00,Data-Driven Targetless Calibration,False
+2305.15883,RC-BEVFusion: A Plug-In Module for Radar-Camera Bird's Eye View Feature Fusion,http://arxiv.org/abs/2305.15883v2,2023-05-25 09:26:04+00:00,Deep Learning for Sensor Fusion,False
+1904.08743,Targetless Rotational Auto-Calibration of Radar and Camera for Intelligent Transportation Systems,http://arxiv.org/abs/1904.08743v2,2019-04-18 13:02:34+00:00,Data-Driven Targetless Calibration,False
+2309.15465,Cross-Dataset Experimental Study of Radar-Camera Fusion in Bird's-Eye View,http://arxiv.org/abs/2309.15465v1,2023-09-27 08:02:58+00:00,Deep Learning for Sensor Fusion,False
+2412.12799,RCTrans: Radar-Camera Transformer via Radar Densifier and Sequential Decoder for 3D Object Detection,http://arxiv.org/abs/2412.12799v1,2024-12-17 11:02:36+00:00,Deep Learning for Sensor Fusion,False
+2307.10249,RCM-Fusion: Radar-Camera Multi-Level Fusion for 3D Object Detection,http://arxiv.org/abs/2307.10249v5,2023-07-17 07:22:25+00:00,Deep Learning for Sensor Fusion,True
+2307.15264,3D Radar and Camera Co-Calibration: A Flexible and Accurate Method for Target-based Extrinsic Calibration,http://arxiv.org/abs/2307.15264v1,2023-07-28 02:17:48+00:00,Target-Based Calibration Methods,False
+2302.10511,MVFusion: Multi-View 3D Object Detection with Semantic-aligned Radar and Camera Fusion,http://arxiv.org/abs/2302.10511v1,2023-02-21 08:25:50+00:00,Deep Learning for Sensor Fusion,False
+2410.19872,Radar and Camera Fusion for Object Detection and Tracking: A Comprehensive Survey,http://arxiv.org/abs/2410.19872v1,2024-10-24 07:37:57+00:00,Deep Learning for Sensor Fusion,True
+2007.08076,Memory based fusion for multi-modal deep learning,http://arxiv.org/abs/2007.08076v3,2020-07-16 02:05:54+00:00,Deep Learning for Sensor Fusion,False
+2304.10410,Radar-Camera Fusion for Object Detection and Semantic Segmentation in Autonomous Driving: A Comprehensive Review,http://arxiv.org/abs/2304.10410v2,2023-04-20 15:48:50+00:00,Deep Learning for Sensor Fusion,False
+2108.10637,Full-Velocity Radar Returns by Radar-Camera Fusion,http://arxiv.org/abs/2108.10637v1,2021-08-24 10:42:16+00:00,Deep Learning for Sensor Fusion,True
+2501.19047,Understanding Model Calibration -- A gentle introduction and visual exploration of calibration and the expected calibration error (ECE),http://arxiv.org/abs/2501.19047v5,2025-01-31 11:18:45+00:00,Benchmarking and Performance Evaluation,False
+0806.0037,The height and range of watermelons without wall,http://arxiv.org/abs/0806.0037v2,2008-05-30 22:03:09+00:00,Benchmarking and Performance Evaluation,False
+1905.11933,A Survey of Data Fusion in Smart City Applications,http://arxiv.org/abs/1905.11933v1,2019-05-14 12:07:31+00:00,Benchmarking and Performance Evaluation,False
+0709.4141,On representation theory of affine Hecke algebras of type B,http://arxiv.org/abs/0709.4141v1,2007-09-26 11:55:24+00:00,Benchmarking and Performance Evaluation,False
+1108.3250,The Statistical methods of Pixel-Based Image Fusion Techniques,http://arxiv.org/abs/1108.3250v1,2011-08-12 16:51:21+00:00,Benchmarking and Performance Evaluation,False
+1511.01807,The height of piecewise-testable languages and the complexity of the logic of subwords,http://arxiv.org/abs/1511.01807v4,2015-11-05 16:45:19+00:00,Handling Height Uncertainty in Radar Data,False

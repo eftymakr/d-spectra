@@ -1,0 +1,25 @@
+arxiv_id,title,url,date,category,cited_in_text
+2112.07428,Obtaining Calibrated Probabilities with Personalized Ranking Models,http://arxiv.org/abs/2112.07428v2,2021-12-09 11:08:41+00:00,Calibration of Predictive Models,True
+1908.05164,Unconstrained Monotonic Neural Networks,http://arxiv.org/abs/1908.05164v3,2019-08-14 15:11:31+00:00,Monotonicity Constraints in Neural Networks,True
+2208.06164,Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model,http://arxiv.org/abs/2208.06164v2,2022-08-12 08:32:13+00:00,Online Deployment of Calibration Methods,True
+1408.2764,Convex Calibration Dimension for Multiclass Loss Matrices,http://arxiv.org/abs/1408.2764v2,2014-08-12 16:13:50+00:00,Calibration of Predictive Models,True
+2303.10761,Calibration of Neural Networks,http://arxiv.org/abs/2303.10761v1,2023-03-19 20:27:51+00:00,Calibration of Predictive Models,True
+1509.00174,A Telescopic Binary Learning Machine for Training Neural Networks,http://arxiv.org/abs/1509.00174v1,2015-09-01 08:22:33+00:00,Monotonicity Constraints in Neural Networks,True
+1809.03941,Fast calibration of two-factor models for energy option pricing,http://arxiv.org/abs/1809.03941v6,2018-09-11 14:47:43+00:00,Open-Source Implementation of Calibration Techniques,True
+2106.07998,Revisiting the Calibration of Modern Neural Networks,http://arxiv.org/abs/2106.07998v2,2021-06-15 09:24:43+00:00,Calibration of Predictive Models,True
+,Stellar models in IR calibration,http://arxiv.org/abs/astro-ph/0105045v1,2001-05-03 06:48:36+00:00,Calibration of Predictive Models,True
+2411.02988,Confidence Calibration of Classifiers with Many Classes,http://arxiv.org/abs/2411.02988v2,2024-11-05 10:51:01+00:00,Calibration of Predictive Models,True
+1802.05792,Masked Conditional Neural Networks for Automatic Sound Events Recognition,http://arxiv.org/abs/1802.05792v2,2018-02-15 23:24:39+00:00,Monotonicity Constraints in Neural Networks,True
+2306.04590,Proximity-Informed Calibration for Deep Neural Networks,http://arxiv.org/abs/2306.04590v2,2023-06-07 16:40:51+00:00,Calibration of Predictive Models,False
+2411.13343,Fact-Level Confidence Calibration and Self-Correction,http://arxiv.org/abs/2411.13343v1,2024-11-20 14:15:18+00:00,Calibration of Predictive Models,False
+1901.06610,Hierarchical Attentional Hybrid Neural Networks for Document Classification,http://arxiv.org/abs/1901.06610v2,2019-01-20 01:48:43+00:00,Monotonicity Constraints in Neural Networks,False
+1802.02271,Universal Deep Neural Network Compression,http://arxiv.org/abs/1802.02271v2,2018-02-07 00:39:56+00:00,Monotonicity Constraints in Neural Networks,False
+2112.01019,Unconstrained Face Sketch Synthesis via Perception-Adaptive Network and A New Benchmark,http://arxiv.org/abs/2112.01019v1,2021-12-02 07:08:31+00:00,Open-Source Implementation of Calibration Techniques,False
+2501.19047,Understanding Model Calibration -- A gentle introduction and visual exploration of calibration and the expected calibration error (ECE),http://arxiv.org/abs/2501.19047v5,2025-01-31 11:18:45+00:00,Calibration of Predictive Models,False
+2312.04410,Smooth Diffusion: Crafting Smooth Latent Spaces in Diffusion Models,http://arxiv.org/abs/2312.04410v1,2023-12-07 16:26:23+00:00,Open-Source Implementation of Calibration Techniques,False
+1610.05267,Rule Extraction Algorithm for Deep Neural Networks: A Review,http://arxiv.org/abs/1610.05267v1,2016-09-16 18:10:18+00:00,Monotonicity Constraints in Neural Networks,False
+2008.02460,DeText: A Deep Text Ranking Framework with BERT,http://arxiv.org/abs/2008.02460v1,2020-08-06 05:12:11+00:00,Open-Source Implementation of Calibration Techniques,False
+2310.02576,A Prototype-Based Neural Network for Image Anomaly Detection and Localization,http://arxiv.org/abs/2310.02576v2,2023-10-04 04:27:16+00:00,Open-Source Implementation of Calibration Techniques,False
+1906.10015,A Review on Neural Network Models of Schizophrenia and Autism Spectrum Disorder,http://arxiv.org/abs/1906.10015v2,2019-06-24 15:10:44+00:00,Monotonicity Constraints in Neural Networks,False
+2311.18598,Generalisable Agents for Neural Network Optimisation,http://arxiv.org/abs/2311.18598v2,2023-11-30 14:45:51+00:00,Monotonicity Constraints in Neural Networks,False
+2502.01654,Predicting concentration levels of air pollutants by transfer learning and recurrent neural network,http://arxiv.org/abs/2502.01654v1,2025-01-30 23:39:19+00:00,Offline Experimentation in Calibration,False

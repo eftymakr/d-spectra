@@ -1,0 +1,17 @@
+arxiv_id,title,url,date,category,cited_in_text
+1906.01829,Binarized Collaborative Filtering with Distilling Graph Convolutional Networks,http://arxiv.org/abs/1906.01829v1,2019-06-05 05:11:43+00:00,Binarization Techniques for Efficiency,False
+1905.08108,Neural Graph Collaborative Filtering,http://arxiv.org/abs/1905.08108v2,2019-05-20 13:41:16+00:00,Graph Neural Networks in Collaborative Filtering,False
+2505.11552,GSPRec: On Improving Item Representations in Graph Signal Processing for Collaborative Filtering,http://arxiv.org/abs/2505.11552v3,2025-05-15 15:49:56+00:00,Graph Signal Processing in Recommendations,False
+2011.06807,Heterogeneous Graph Collaborative Filtering,http://arxiv.org/abs/2011.06807v2,2020-11-13 08:34:53+00:00,Heterogeneous Graph Collaborative Filtering,True
+2001.00267,Multi-Graph Convolution Collaborative Filtering,http://arxiv.org/abs/2001.00267v1,2020-01-01 20:52:29+00:00,Multi-Graph Modeling for User-Item Interactions,True
+1711.00146,A multitask deep learning model for real-time deployment in embedded systems,http://arxiv.org/abs/1711.00146v1,2017-10-31 23:59:23+00:00,Evaluation of Binarization Impact on Performance,False
+1905.12278,An Inertial Newton Algorithm for Deep Learning,http://arxiv.org/abs/1905.12278v6,2019-05-29 09:00:49+00:00,Disentangled Representation Learning,False
+1309.6786,One-class Collaborative Filtering with Random Graphs: Annotated Version,http://arxiv.org/abs/1309.6786v4,2013-09-26 10:32:43+00:00,Graph Signal Processing in Recommendations,False
+2210.17101,Unrolled Graph Learning for Multi-Agent Collaboration,http://arxiv.org/abs/2210.17101v3,2022-10-31 07:05:44+00:00,Graph Neural Networks in Collaborative Filtering,False
+1812.00922,Multi-agent Deep Reinforcement Learning with Extremely Noisy Observations,http://arxiv.org/abs/1812.00922v1,2018-12-03 17:27:41+00:00,Disentangled Representation Learning,False
+1903.04717,Activation Analysis of a Byte-Based Deep Neural Network for Malware Classification,http://arxiv.org/abs/1903.04717v2,2019-03-12 04:00:42+00:00,Evaluation of Binarization Impact on Performance,False
+1305.2505,On the Generalization Ability of Online Learning Algorithms for Pairwise Loss Functions,http://arxiv.org/abs/1305.2505v1,2013-05-11 13:52:37+00:00,Evaluation of Binarization Impact on Performance,False
+1708.01867,An Information-Theoretic Optimality Principle for Deep Reinforcement Learning,http://arxiv.org/abs/1708.01867v5,2017-08-06 09:23:22+00:00,Disentangled Representation Learning,False
+1912.06732,On the approximation of rough functions with deep neural networks,http://arxiv.org/abs/1912.06732v2,2019-12-13 22:48:36+00:00,Evaluation of Binarization Impact on Performance,False
+1801.00904,ScreenerNet: Learning Self-Paced Curriculum for Deep Neural Networks,http://arxiv.org/abs/1801.00904v4,2018-01-03 05:49:37+00:00,Disentangled Representation Learning,False
+1902.09154,Deep Bayesian Multi-Target Learning for Recommender Systems,http://arxiv.org/abs/1902.09154v1,2019-02-25 09:11:53+00:00,Multi-Graph Modeling for User-Item Interactions,False

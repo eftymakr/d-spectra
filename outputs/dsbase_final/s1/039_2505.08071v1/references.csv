@@ -1,0 +1,20 @@
+arxiv_id,title,url,date,category,cited_in_text
+1106.2603,SparseAssembler: de novo Assembly with the Sparse de Bruijn Graph,http://arxiv.org/abs/1106.2603v1,2011-06-14 04:06:06+00:00,Sparse Graph Structures for Memory Reduction,True
+2010.10055,Parallel String Graph Construction and Transitive Reduction for De Novo Genome Assembly,http://arxiv.org/abs/2010.10055v1,2020-10-20 06:20:24+00:00,Distributed Computing and Parallel Processing in Assembly,True
+1705.11147,Extreme-Scale De Novo Genome Assembly,http://arxiv.org/abs/1705.11147v1,2017-05-31 15:34:36+00:00,Distributed Computing and Parallel Processing in Assembly,True
+1305.6760,SOAPdenovo-Trans: De novo transcriptome assembly with short RNA-Seq reads,http://arxiv.org/abs/1305.6760v2,2013-05-29 11:32:48+00:00,Software Optimizations for Memory Footprint Reduction,True
+1301.5406,Assemblathon 2: evaluating de novo methods of genome assembly in three vertebrate species,http://arxiv.org/abs/1301.5406v3,2013-01-23 06:16:08+00:00,Long-Read Sequencing and Mapping Tools,True
+2207.04350,Distributed-Memory Parallel Contig Generation for De Novo Long-Read Genome Assembly,http://arxiv.org/abs/2207.04350v1,2022-07-10 00:03:03+00:00,Distributed Computing and Parallel Processing in Assembly,True
+2102.02649,A step toward a reinforcement learning de novo genome assembler,http://arxiv.org/abs/2102.02649v4,2021-02-02 23:43:42+00:00,Quantum-Inspired Computational Approaches,True
+1505.04019,Linear-Time Superbubble Identification Algorithm for Genome Assembly,http://arxiv.org/abs/1505.04019v6,2015-05-15 10:52:50+00:00,Software Optimizations for Memory Footprint Reduction,True
+2002.10498,"Genome assembly, from practice to theory: safe, complete and linear-time",http://arxiv.org/abs/2002.10498v3,2020-02-24 19:27:43+00:00,Software Optimizations for Memory Footprint Reduction,True
+1101.4898,The Genomic HyperBrowser: inferential genomics at the sequence level,http://arxiv.org/abs/1101.4898v1,2011-01-25 18:57:24+00:00,Software Optimizations for Memory Footprint Reduction,True
+1607.03955,A draft genome assembly of southern bluefin tuna Thunnus maccoyii,http://arxiv.org/abs/1607.03955v1,2016-07-13 23:20:06+00:00,Long-Read Sequencing and Mapping Tools,True
+2409.18288,The track-length extension fitting algorithm for energy measurement of interacting particles in liquid argon TPCs and its performance with ProtoDUNE-SP data,http://arxiv.org/abs/2409.18288v3,2024-09-26 21:00:31+00:00,Software Optimizations for Memory Footprint Reduction,False
+2011.05013,A step towards neural genome assembly,http://arxiv.org/abs/2011.05013v1,2020-11-10 10:12:19+00:00,Software Optimizations for Memory Footprint Reduction,False
+2308.07877,Genome assembly in the telomere-to-telomere era,http://arxiv.org/abs/2308.07877v1,2023-08-15 16:50:40+00:00,Long-Read Sequencing and Mapping Tools,False
+1207.2424,Compression of next-generation sequencing reads aided by highly efficient de novo assembly,http://arxiv.org/abs/1207.2424v1,2012-07-10 17:49:17+00:00,Software Optimizations for Memory Footprint Reduction,False
+2004.06719,Genome assembly using quantum and quantum-inspired annealing,http://arxiv.org/abs/2004.06719v3,2020-04-14 15:41:27+00:00,Quantum-Inspired Computational Approaches,False
+1703.01534,Secure Count Query on Encrypted Genomic Data,http://arxiv.org/abs/1703.01534v1,2017-03-04 23:17:25+00:00,Software Optimizations for Memory Footprint Reduction,False
+2001.03092,De Novo Assembly of Uca minax Transcriptome from Next Generation Sequencing,http://arxiv.org/abs/2001.03092v1,2020-01-09 16:46:34+00:00,Software Optimizations for Memory Footprint Reduction,False
+1308.1388,Bayesian genome assembly and assessment by Markov Chain Monte Carlo sampling,http://arxiv.org/abs/1308.1388v2,2013-08-06 19:40:08+00:00,Long-Read Sequencing and Mapping Tools,False

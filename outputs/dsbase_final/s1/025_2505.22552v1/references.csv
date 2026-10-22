@@ -1,0 +1,21 @@
+arxiv_id,title,url,date,category,cited_in_text
+2410.11588,Causal Reasoning in Large Language Models: A Knowledge Graph Approach,http://arxiv.org/abs/2410.11588v1,2024-10-15 13:24:44+00:00,Causal reasoning in LLMs using KG structures,True
+2306.08302,Unifying Large Language Models and Knowledge Graphs: A Roadmap,http://arxiv.org/abs/2306.08302v3,2023-06-14 07:15:26+00:00,Enhancing LLMs with external knowledge from KGs,True
+2408.13521,HRGraph: Leveraging LLMs for HR Data Knowledge Graphs with Information Propagation-based Job Recommendation,http://arxiv.org/abs/2408.13521v1,2024-08-24 08:50:25+00:00,LLM-driven knowledge engineering and KG completion,True
+2502.20988,Reviewing Clinical Knowledge in Medical Large Language Models: Training and Beyond,http://arxiv.org/abs/2502.20988v2,2025-02-28 12:00:51+00:00,Enhancing LLMs with external knowledge from KGs,True
+2109.04223,KELM: Knowledge Enhanced Pre-Trained Language Representations with Message Passing on Hierarchical Relational Graphs,http://arxiv.org/abs/2109.04223v2,2021-09-09 12:39:17+00:00,Enhancing LLMs with external knowledge from KGs,True
+2410.12096,Bridging Large Language Models and Graph Structure Learning Models for Robust Representation Learning,http://arxiv.org/abs/2410.12096v1,2024-10-15 22:43:32+00:00,LLM-driven knowledge engineering and KG completion,True
+2408.14317,Claim Verification in the Age of Large Language Models: A Survey,http://arxiv.org/abs/2408.14317v2,2024-08-26 14:45:03+00:00,Enhancing LLMs with external knowledge from KGs,True
+1908.11722,Fact-Checking Meets Fauxtography: Verifying Claims About Images,http://arxiv.org/abs/1908.11722v1,2019-08-30 13:12:21+00:00,Limitations of existing unstructured text-based verification methods,True
+2408.06717,Proficient Graph Neural Network Design by Accumulating Knowledge on Large Language Models,http://arxiv.org/abs/2408.06717v3,2024-08-13 08:22:01+00:00,Enhancing LLMs with external knowledge from KGs,True
+2309.02144,Making Large Language Models Better Reasoners with Alignment,http://arxiv.org/abs/2309.02144v1,2023-09-05 11:32:48+00:00,Enhancing LLMs with external knowledge from KGs,True
+2103.07769,Automated Fact-Checking for Assisting Human Fact-Checkers,http://arxiv.org/abs/2103.07769v2,2021-03-13 18:29:14+00:00,Enhancing LLMs with external knowledge from KGs,True
+2312.11539,KGLens: Towards Efficient and Effective Knowledge Probing of Large Language Models with Knowledge Graphs,http://arxiv.org/abs/2312.11539v3,2023-12-15 23:34:05+00:00,LLM-based KG probing and alignment measurement,True
+2308.16118,Response: Emergent analogical reasoning in large language models,http://arxiv.org/abs/2308.16118v2,2023-08-30 16:17:26+00:00,Limitations of existing unstructured text-based verification methods,True
+2405.11357,Large Language Models Lack Understanding of Character Composition of Words,http://arxiv.org/abs/2405.11357v3,2024-05-18 18:08:58+00:00,Limitations of existing unstructured text-based verification methods,True
+2402.14679,Is Self-knowledge and Action Consistent or Not: Investigating Large Language Model's Personality,http://arxiv.org/abs/2402.14679v2,2024-02-22 16:32:08+00:00,LLM-based KG probing and alignment measurement,True
+2505.04921,"Perception, Reason, Think, and Plan: A Survey on Large Multimodal Reasoning Models",http://arxiv.org/abs/2505.04921v2,2025-05-08 03:35:23+00:00,Enhancing LLMs with external knowledge from KGs,True
+2311.04589,TEAL: Tokenize and Embed ALL for Multi-modal Large Language Models,http://arxiv.org/abs/2311.04589v3,2023-11-08 10:34:16+00:00,Enhancing LLMs with external knowledge from KGs,True
+2407.01505,Self-Cognition in Large Language Models: An Exploratory Study,http://arxiv.org/abs/2407.01505v1,2024-07-01 17:52:05+00:00,Enhancing LLMs with external knowledge from KGs,True
+2410.05339,Proceedings of the First International Workshop on Next-Generation Language Models for Knowledge Representation and Reasoning (NeLaMKRR 2024),http://arxiv.org/abs/2410.05339v2,2024-10-07 02:31:47+00:00,Enhancing LLMs with external knowledge from KGs,True
+2412.16117,PruneVid: Visual Token Pruning for Efficient Video Large Language Models,http://arxiv.org/abs/2412.16117v1,2024-12-20 18:01:58+00:00,Enhancing LLMs with external knowledge from KGs,False

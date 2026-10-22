@@ -1,0 +1,28 @@
+rank,arxiv_id,title,url,date
+1,2304.03891,Contrastive Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2304.03891v1,2023-04-08 02:19:40+00:00
+2,2206.08050,Time Interval-enhanced Graph Neural Network for Shared-account Cross-domain Sequential Recommendation,http://arxiv.org/abs/2206.08050v1,2022-06-16 10:06:01+00:00
+3,2503.20232,Learnable Sequence Augmenter for Triplet Contrastive Learning in Sequential Recommendation,http://arxiv.org/abs/2503.20232v1,2025-03-26 04:56:29+00:00
+4,1910.02448,Parallel Split-Join Networks for Shared-account Cross-domain Sequential Recommendations,http://arxiv.org/abs/1910.02448v4,2019-10-06 13:35:31+00:00
+5,2105.03300,DA-GCN: A Domain-aware Attentive Graph Convolution Network for Shared-account Cross-domain Sequential Recommendation,http://arxiv.org/abs/2105.03300v1,2021-05-07 14:52:06+00:00
+6,2002.00741,Déjà vu: A Contextualized Temporal Attention Mechanism for Sequential Recommendation,http://arxiv.org/abs/2002.00741v1,2020-01-29 20:27:42+00:00
+7,2310.13925,Meta-optimized Joint Generative and Contrastive Learning for Sequential Recommendation,http://arxiv.org/abs/2310.13925v1,2023-10-21 07:19:51+00:00
+8,2205.14837,Enhancing Sequential Recommendation with Graph Contrastive Learning,http://arxiv.org/abs/2205.14837v2,2022-05-30 03:53:31+00:00
+9,2307.05476,Fisher-Weighted Merge of Contrastive Learning Models in Sequential Recommendation,http://arxiv.org/abs/2307.05476v1,2023-07-05 05:58:56+00:00
+10,2104.10376,Towards Corruption-Agnostic Robust Domain Adaptation,http://arxiv.org/abs/2104.10376v1,2021-04-21 06:27:48+00:00
+11,2209.02544,XSimGCL: Towards Extremely Simple Graph Contrastive Learning for Recommendation,http://arxiv.org/abs/2209.02544v4,2022-09-06 14:50:51+00:00
+12,2405.09369,Diffusion-based Contrastive Learning for Sequential Recommendation,http://arxiv.org/abs/2405.09369v5,2024-05-15 14:20:37+00:00
+13,2103.06560,Heterogeneous Information Network-based Interest Composition with Graph Neural Network for Recommendation,http://arxiv.org/abs/2103.06560v3,2021-03-11 09:39:39+00:00
+14,2106.14226,Sequential Recommendation with Graph Neural Networks,http://arxiv.org/abs/2106.14226v2,2021-06-27 12:57:31+00:00
+15,1901.06610,Hierarchical Attentional Hybrid Neural Networks for Document Classification,http://arxiv.org/abs/1901.06610v2,2019-01-20 01:48:43+00:00
+16,1702.05374,Domain Adaptation for Visual Applications: A Comprehensive Survey,http://arxiv.org/abs/1702.05374v2,2017-02-17 15:07:40+00:00
+17,2009.14776,Joint Contrastive Learning with Infinite Possibilities,http://arxiv.org/abs/2009.14776v2,2020-09-30 16:24:21+00:00
+18,2206.03600,OneRing: A Simple Method for Source-free Open-partial Domain Adaptation,http://arxiv.org/abs/2206.03600v2,2022-06-07 21:39:54+00:00
+19,1905.01907,Missing Data Imputation with Adversarially-trained Graph Convolutional Networks,http://arxiv.org/abs/1905.01907v2,2019-05-06 10:04:02+00:00
+20,2104.11641,Social Influence Prediction with Train and Test Time Augmentation for Graph Neural Networks,http://arxiv.org/abs/2104.11641v1,2021-04-23 14:46:44+00:00
+21,2307.05639,Learning Active Subspaces and Discovering Important Features with Gaussian Radial Basis Functions Neural Networks,http://arxiv.org/abs/2307.05639v2,2023-07-11 09:54:30+00:00
+22,2408.10259,Contrastive Learning on Medical Intents for Sequential Prescription Recommendation,http://arxiv.org/abs/2408.10259v1,2024-08-13 20:10:28+00:00
+23,2309.07380,Domain-adaptive Graph Attention-supervised Network for Cross-network Edge Classification,http://arxiv.org/abs/2309.07380v1,2023-09-14 01:45:41+00:00
+24,1911.06009,A Recurrent Probabilistic Neural Network with Dimensionality Reduction Based on Time-series Discriminant Component Analysis,http://arxiv.org/abs/1911.06009v1,2019-11-14 09:48:41+00:00
+25,2205.13273,Acute Lymphoblastic Leukemia Detection Using Hypercomplex-Valued Convolutional Neural Networks,http://arxiv.org/abs/2205.13273v1,2022-05-26 11:16:34+00:00
+26,2304.07501,Transition Propagation Graph Neural Networks for Temporal Networks,http://arxiv.org/abs/2304.07501v1,2023-04-15 08:06:16+00:00
+27,2006.03243,mFI-PSO: A Flexible and Effective Method in Adversarial Image Generation for Deep Neural Networks,http://arxiv.org/abs/2006.03243v3,2020-06-05 05:42:58+00:00

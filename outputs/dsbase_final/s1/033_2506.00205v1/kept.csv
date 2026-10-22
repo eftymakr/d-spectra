@@ -1,0 +1,21 @@
+rank,arxiv_id,title,url,date
+1,2203.14544,Gradient-Matching Coresets for Rehearsal-Based Continual Learning,http://arxiv.org/abs/2203.14544v1,2022-03-28 07:37:17+00:00
+2,2004.10862,Continual Learning of Object Instances,http://arxiv.org/abs/2004.10862v1,2020-04-22 21:09:02+00:00
+3,2104.07446,Rehearsal revealed: The limits and merits of revisiting samples in continual learning,http://arxiv.org/abs/2104.07446v1,2021-04-15 13:28:14+00:00
+4,1810.10612,Continual Classification Learning Using Generative Models,http://arxiv.org/abs/1810.10612v1,2018-10-24 20:41:13+00:00
+5,1810.12488,Re-evaluating Continual Learning Scenarios: A Categorization and Case for Strong Baselines,http://arxiv.org/abs/1810.12488v4,2018-10-30 02:08:35+00:00
+6,2109.06099,Uniform Generalization Bounds for Overparameterized Neural Networks,http://arxiv.org/abs/2109.06099v3,2021-09-13 16:20:13+00:00
+7,2308.10328,A Comprehensive Empirical Evaluation on Online Continual Learning,http://arxiv.org/abs/2308.10328v3,2023-08-20 17:52:02+00:00
+8,2308.13646,GRASP: A Rehearsal Policy for Efficient Online Continual Learning,http://arxiv.org/abs/2308.13646v2,2023-08-25 19:34:21+00:00
+9,2303.02954,Centroid Distance Distillation for Effective Rehearsal in Continual Learning,http://arxiv.org/abs/2303.02954v1,2023-03-06 07:54:37+00:00
+10,2504.10561,Self-Controlled Dynamic Expansion Model for Continual Learning,http://arxiv.org/abs/2504.10561v2,2025-04-14 15:22:51+00:00
+11,1811.12273,On the Transferability of Representations in Neural Networks Between Datasets and Tasks,http://arxiv.org/abs/1811.12273v1,2018-11-29 16:06:57+00:00
+12,1904.07734,Three scenarios for continual learning,http://arxiv.org/abs/1904.07734v1,2019-04-15 12:22:36+00:00
+13,2312.00276,Metalearning Continual Learning Algorithms,http://arxiv.org/abs/2312.00276v3,2023-12-01 01:25:04+00:00
+14,1905.12019,Unified Probabilistic Deep Continual Learning through Generative Replay and Open Set Recognition,http://arxiv.org/abs/1905.12019v5,2019-05-28 18:26:04+00:00
+15,2206.07932,Lifelong Wandering: A realistic few-shot online continual learning setting,http://arxiv.org/abs/2206.07932v1,2022-06-16 05:39:08+00:00
+16,2410.19925,Improving Multimodal Large Language Models Using Continual Learning,http://arxiv.org/abs/2410.19925v2,2024-10-25 18:50:40+00:00
+17,1905.12588,Meta-Learning Representations for Continual Learning,http://arxiv.org/abs/1905.12588v2,2019-05-29 17:09:31+00:00
+18,2011.12216,Energy-Based Models for Continual Learning,http://arxiv.org/abs/2011.12216v3,2020-11-24 17:08:13+00:00
+19,2011.08508,Generalized Continual Zero-Shot Learning,http://arxiv.org/abs/2011.08508v3,2020-11-17 08:47:54+00:00
+20,1810.03880,Continual State Representation Learning for Reinforcement Learning using Generative Replay,http://arxiv.org/abs/1810.03880v3,2018-10-09 09:42:53+00:00

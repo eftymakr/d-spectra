@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2408.01826,GLDiTalker: Speech-Driven 3D Facial Animation with Graph Latent Diffusion Transformer,http://arxiv.org/abs/2408.01826v5,2024-08-03 17:18:26+00:00,Speech-Driven Facial Animation Techniques,True
+2308.05428,Speech-Driven 3D Face Animation with Composite and Regional Facial Movements,http://arxiv.org/abs/2308.05428v1,2023-08-10 08:42:20+00:00,Speech-Driven Facial Animation Techniques,True
+2303.05416,FaceXHuBERT: Text-less Speech-driven E(X)pressive 3D Facial Animation Synthesis Using Self-Supervised Speech Representation Learning,http://arxiv.org/abs/2303.05416v1,2023-03-09 17:05:19+00:00,Speech-Driven Facial Animation Techniques,True
+2308.05734,AudioLDM 2: Learning Holistic Audio Generation with Self-supervised Pretraining,http://arxiv.org/abs/2308.05734v3,2023-08-10 17:55:13+00:00,Pre-Trained Audio Models in Animation,True
+2408.07005,Content and Style Aware Audio-Driven Facial Animation,http://arxiv.org/abs/2408.07005v2,2024-08-13 16:12:25+00:00,Disentangled Facial Animation Frameworks,True
+2203.13628,DeLoRes: Decorrelating Latent Spaces for Low-Resource Audio Representation Learning,http://arxiv.org/abs/2203.13628v3,2022-03-25 12:59:55+00:00,Semantic Feature Extraction for Audio,True
+2409.19143,Diverse Code Query Learning for Speech-Driven Facial Animation,http://arxiv.org/abs/2409.19143v1,2024-09-27 21:15:21+00:00,Speech-Driven Facial Animation Techniques,False
+2310.20240,Breathing Life into Faces: Speech-driven 3D Facial Animation with Natural Head Pose and Detailed Shape,http://arxiv.org/abs/2310.20240v1,2023-10-31 07:47:19+00:00,Speech-Driven Facial Animation Techniques,False
+2411.09209,JoyVASA: Portrait and Animal Image Animation with Diffusion-Based Audio-Driven Facial Dynamics and Head Motion Generation,http://arxiv.org/abs/2411.09209v5,2024-11-14 06:13:05+00:00,Disentangled Facial Animation Frameworks,False
+1805.09313,End-to-End Speech-Driven Facial Animation with Temporal GANs,http://arxiv.org/abs/1805.09313v4,2018-05-23 17:54:32+00:00,Speech-Driven Facial Animation Techniques,False
+1912.05833,Speech-driven facial animation using polynomial fusion of features,http://arxiv.org/abs/1912.05833v2,2019-12-12 08:46:57+00:00,Speech-Driven Facial Animation Techniques,False
+2312.02781,PMMTalk: Speech-Driven 3D Facial Animation from Complementary Pseudo Multi-modal Features,http://arxiv.org/abs/2312.02781v1,2023-12-05 14:12:38+00:00,Speech-Driven Facial Animation Techniques,False
+2304.08945,Audio-Driven Talking Face Generation with Diverse yet Realistic Facial Animations,http://arxiv.org/abs/2304.08945v1,2023-04-18 12:36:15+00:00,Speech-Driven Facial Animation Techniques,False
+2310.07236,AdaMesh: Personalized Facial Expressions and Head Poses for Adaptive Speech-Driven 3D Facial Animation,http://arxiv.org/abs/2310.07236v4,2023-10-11 06:56:08+00:00,Speech-Driven Facial Animation Techniques,False
+2112.05329,FaceFormer: Speech-Driven 3D Facial Animation with Transformers,http://arxiv.org/abs/2112.05329v4,2021-12-10 04:21:59+00:00,Speech-Driven Facial Animation Techniques,False
+2301.00023,Imitator: Personalized Speech-driven 3D Facial Animation,http://arxiv.org/abs/2301.00023v1,2022-12-30 19:00:02+00:00,Speech-Driven Facial Animation Techniques,False
+2308.06076,Versatile Face Animator: Driving Arbitrary 3D Facial Avatar in RGBD Space,http://arxiv.org/abs/2308.06076v1,2023-08-11 11:29:01+00:00,Disentangled Facial Animation Frameworks,False
+2401.08655,SAiD: Speech-driven Blendshape Facial Animation with Diffusion,http://arxiv.org/abs/2401.08655v2,2023-12-25 04:40:32+00:00,Speech-Driven Facial Animation Techniques,False
+2310.17011,Personalized Speech-driven Expressive 3D Facial Animation Synthesis with Style Control,http://arxiv.org/abs/2310.17011v1,2023-10-25 21:22:28+00:00,Speech-Driven Facial Animation Techniques,False
+1906.06337,Realistic Speech-Driven Facial Animation with GANs,http://arxiv.org/abs/1906.06337v1,2019-06-14 16:52:27+00:00,Speech-Driven Facial Animation Techniques,False
+2301.02008,Expressive Speech-driven Facial Animation with controllable emotions,http://arxiv.org/abs/2301.02008v2,2023-01-05 11:17:19+00:00,Emotion and Expression in Facial Animation,False
+2007.04134,Learning Speech Representations from Raw Audio by Joint Audiovisual Self-Supervision,http://arxiv.org/abs/2007.04134v1,2020-07-08 14:07:06+00:00,Semantic Feature Extraction for Audio,False
+2404.18604,CSTalk: Correlation Supervised Speech-driven 3D Emotional Facial Animation Generation,http://arxiv.org/abs/2404.18604v1,2024-04-29 11:19:15+00:00,Emotion and Expression in Facial Animation,False
+2409.10848,3DFacePolicy: Audio-Driven 3D Facial Animation Based on Action Control,http://arxiv.org/abs/2409.10848v2,2024-09-17 02:30:34+00:00,Speech-Driven Facial Animation Techniques,False
+2503.11028,EmoDiffusion: Enhancing Emotional 3D Facial Animation with Latent Diffusion Models,http://arxiv.org/abs/2503.11028v1,2025-03-14 02:54:22+00:00,Emotion and Expression in Facial Animation,False
+2204.08084,Learning 3D Semantics from Pose-Noisy 2D Images with Hierarchical Full Attention Network,http://arxiv.org/abs/2204.08084v3,2022-04-17 20:24:26+00:00,3D Facial Dataset Construction,False
+2008.10004,Geometry-guided Dense Perspective Network for Speech-Driven Facial Animation,http://arxiv.org/abs/2008.10004v1,2020-08-23 09:48:09+00:00,Speech-Driven Facial Animation Techniques,False
+2505.12863,"Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio",http://arxiv.org/abs/2505.12863v1,2025-05-19 08:46:45+00:00,Semantic Feature Extraction for Audio,False
+1609.08475,Blind Facial Image Quality Enhancement using Non-Rigid Semantic Patches,http://arxiv.org/abs/1609.08475v2,2016-09-27 14:29:33+00:00,3D Facial Dataset Construction,False
+1209.4982,Using multimodal speech production data to evaluate articulatory animation for audiovisual speech synthesis,http://arxiv.org/abs/1209.4982v1,2012-09-22 10:36:11+00:00,Speech-Driven Facial Animation Techniques,False

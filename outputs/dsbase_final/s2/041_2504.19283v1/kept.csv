@@ -1,0 +1,18 @@
+rank,arxiv_id,title,url,date
+1,2406.11734,LibProf: A Python Profiler for Improving Cold Start Performance in Serverless Applications,http://arxiv.org/abs/2406.11734v1,2024-06-17 16:50:23+00:00
+2,2403.17574,SPES: Towards Optimizing Performance-Resource Trade-Off for Serverless Functions,http://arxiv.org/abs/2403.17574v2,2024-03-26 10:28:41+00:00
+3,2310.08437,"Cold Start Latency in Serverless Computing: A Systematic Review, Taxonomy, and Future Directions",http://arxiv.org/abs/2310.08437v2,2023-10-12 16:01:46+00:00
+4,2504.11338,Transformer-Based Model for Cold Start Mitigation in FaaS Architecture,http://arxiv.org/abs/2504.11338v1,2025-04-15 16:12:07+00:00
+5,2010.04312,Proactive Serverless Function Resource Management,http://arxiv.org/abs/2010.04312v1,2020-10-09 00:50:18+00:00
+6,2410.06145,Serverless Cold Starts and Where to Find Them,http://arxiv.org/abs/2410.06145v1,2024-10-08 15:45:29+00:00
+7,2206.15176,A Time Series Forecasting Approach to Minimize Cold Start Time in Cloud-Serverless Platform,http://arxiv.org/abs/2206.15176v1,2022-06-30 10:27:46+00:00
+8,1903.12221,Mitigating Cold Starts in Serverless Platforms: A Pool-Based Approach,http://arxiv.org/abs/1903.12221v1,2019-03-28 18:55:30+00:00
+9,2304.00396,Managing Cold-start in The Serverless Cloud with Temporal Convolutional Networks,http://arxiv.org/abs/2304.00396v1,2023-04-01 21:54:22+00:00
+10,2308.07541,On-demand Cold Start Frequency Reduction with Off-Policy Reinforcement Learning in Serverless Computing,http://arxiv.org/abs/2308.07541v2,2023-08-15 03:01:41+00:00
+11,1507.06243,A Smooth Primal-Dual Optimization Framework for Nonsmooth Composite Convex Minimization,http://arxiv.org/abs/1507.06243v7,2015-07-22 16:32:06+00:00
+12,2105.13646,Conic-Optimization Based Algorithms for Nonnegative Matrix Factorization,http://arxiv.org/abs/2105.13646v3,2021-05-28 07:48:56+00:00
+13,1808.06100,On the solution existence and stability of polynomial optimization problems,http://arxiv.org/abs/1808.06100v6,2018-08-18 16:27:40+00:00
+14,2211.08056,MeSHwA: The case for a Memory-Safe Software and Hardware Architecture for Serverless Computing,http://arxiv.org/abs/2211.08056v1,2022-11-15 11:15:46+00:00
+15,2204.12651,Generating Self-Serendipity Preference in Recommender Systems for Addressing Cold Start Problems,http://arxiv.org/abs/2204.12651v1,2022-04-27 01:29:47+00:00
+16,1107.4497,libCreme: An optimization library for evaluating convex-roof entanglement measures,http://arxiv.org/abs/1107.4497v1,2011-07-22 12:38:41+00:00
+17,2210.04212,Migrating from Microservices to Serverless: An IoT Platform Case Study,http://arxiv.org/abs/2210.04212v1,2022-10-09 09:57:05+00:00

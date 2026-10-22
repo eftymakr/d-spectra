@@ -1,0 +1,31 @@
+rank,arxiv_id,title,url,date
+1,1901.05733,Multiple Sclerosis Lesion Synthesis in MRI using an encoder-decoder U-NET,http://arxiv.org/abs/1901.05733v1,2019-01-17 11:25:50+00:00
+2,2412.10492,QSM-RimDS: A detection and segmentation tool for paramagnetic rim lesions in multiple sclerosis,http://arxiv.org/abs/2412.10492v2,2024-12-13 18:18:00+00:00
+3,2005.00031,Unsupervised Lesion Detection via Image Restoration with a Normative Prior,http://arxiv.org/abs/2005.00031v1,2020-04-30 18:03:18+00:00
+4,2312.16835,RimSet: Quantitatively Identifying and Characterizing Chronic Active Multiple Sclerosis Lesion on Quantitative Susceptibility Maps,http://arxiv.org/abs/2312.16835v2,2023-12-28 05:44:15+00:00
+5,2008.05524,Mitigating Dataset Imbalance via Joint Generation and Classification,http://arxiv.org/abs/2008.05524v1,2020-08-12 18:40:38+00:00
+6,2207.14709,Robust Quantitative Susceptibility Mapping via Approximate Message Passing with Parameter Estimation,http://arxiv.org/abs/2207.14709v3,2022-07-29 14:38:03+00:00
+7,2304.10790,Boosting multiple sclerosis lesion segmentation through attention mechanism,http://arxiv.org/abs/2304.10790v1,2023-04-21 07:46:32+00:00
+8,2206.09065,Free-form Lesion Synthesis Using a Partial Convolution Generative Adversarial Network for Enhanced Deep Learning Liver Tumor Segmentation,http://arxiv.org/abs/2206.09065v2,2022-06-18 00:40:41+00:00
+9,2009.04251,Probabilistic Dipole Inversion for Adaptive Quantitative Susceptibility Mapping,http://arxiv.org/abs/2009.04251v6,2020-09-07 18:49:19+00:00
+10,2008.04690,Implanting Synthetic Lesions for Improving Liver Lesion Segmentation in CT Exams,http://arxiv.org/abs/2008.04690v1,2020-08-11 13:23:04+00:00
+11,2410.01766,SegHeD: Segmentation of Heterogeneous Data for Multiple Sclerosis Lesions with Anatomical Constraints,http://arxiv.org/abs/2410.01766v1,2024-10-02 17:21:43+00:00
+12,2002.00952,Improved inter-scanner MS lesion segmentation by adversarial training on longitudinal data,http://arxiv.org/abs/2002.00952v2,2020-02-03 16:56:05+00:00
+13,2412.10946,SegHeD+: Segmentation of Heterogeneous Data for Multiple Sclerosis Lesions with Anatomical Constraints and Lesion-aware Augmentation,http://arxiv.org/abs/2412.10946v1,2024-12-14 19:44:25+00:00
+14,1904.03041,Automatic detection of lesion load change in Multiple Sclerosis using convolutional neural networks with segmentation confidence,http://arxiv.org/abs/1904.03041v1,2019-04-05 12:59:58+00:00
+15,2504.05207,Correcting Class Imbalances with Self-Training for Improved Universal Lesion Detection and Tagging,http://arxiv.org/abs/2504.05207v1,2025-04-07 15:57:03+00:00
+16,1807.07144,CT Image Enhancement Using Stacked Generative Adversarial Networks and Transfer Learning for Lesion Segmentation Improvement,http://arxiv.org/abs/1807.07144v1,2018-07-18 21:01:37+00:00
+17,1803.09172,Multiple Sclerosis Lesion Segmentation from Brain MRI via Fully Convolutional Neural Networks,http://arxiv.org/abs/1803.09172v1,2018-03-24 22:43:16+00:00
+18,2009.13755,Geometric Loss for Deep Multiple Sclerosis lesion Segmentation,http://arxiv.org/abs/2009.13755v1,2020-09-29 03:49:28+00:00
+19,2104.11797,Ensembles of GANs for synthetic training data generation,http://arxiv.org/abs/2104.11797v1,2021-04-23 19:38:48+00:00
+20,1703.02182,Using Deep Learning Method for Classification: A Proposed Algorithm for the ISIC 2017 Skin Lesion Classification Challenge,http://arxiv.org/abs/1703.02182v2,2017-03-07 02:26:21+00:00
+21,1809.03185,Shallow vs deep learning architectures for white matter lesion segmentation in the early stages of multiple sclerosis,http://arxiv.org/abs/1809.03185v1,2018-09-10 08:50:34+00:00
+22,1903.03313,A Mutual Bootstrapping Model for Automated Skin Lesion Segmentation and Classification,http://arxiv.org/abs/1903.03313v4,2019-03-08 07:57:40+00:00
+23,1909.04797,Hybrid Cascaded Neural Network for Liver Lesion Segmentation,http://arxiv.org/abs/1909.04797v3,2019-09-11 00:11:14+00:00
+24,2409.16382,Towards Synthetic Data Generation for Improved Pain Recognition in Videos under Patient Constraints,http://arxiv.org/abs/2409.16382v1,2024-09-24 18:33:57+00:00
+25,2411.15497,AeroGen: Enhancing Remote Sensing Object Detection with Diffusion-Driven Data Generation,http://arxiv.org/abs/2411.15497v3,2024-11-23 09:04:33+00:00
+26,2409.05215,Synthetic Tabular Data Generation for Class Imbalance and Fairness: A Comparative Study,http://arxiv.org/abs/2409.05215v1,2024-09-08 20:08:09+00:00
+27,2307.00161,"FFPDG: Fast, Fair and Private Data Generation",http://arxiv.org/abs/2307.00161v1,2023-06-30 22:32:44+00:00
+28,1809.10388,Queue-based Resampling for Online Class Imbalance Learning,http://arxiv.org/abs/1809.10388v2,2018-09-27 07:59:33+00:00
+29,2504.10987,Leveraging Vertical Public-Private Split for Improved Synthetic Data Generation,http://arxiv.org/abs/2504.10987v1,2025-04-15 08:59:03+00:00
+30,2004.09216,4D Deep Learning for Multiple Sclerosis Lesion Activity Segmentation,http://arxiv.org/abs/2004.09216v2,2020-04-20 11:41:01+00:00

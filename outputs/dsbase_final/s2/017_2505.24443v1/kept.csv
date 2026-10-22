@@ -1,0 +1,31 @@
+rank,arxiv_id,title,url,date
+1,2105.14148,OpenMatch: Open-set Consistency Regularization for Semi-supervised Learning with Outliers,http://arxiv.org/abs/2105.14148v2,2021-05-28 23:57:15+00:00
+2,2311.10572,SSB: Simple but Strong Baseline for Boosting Performance of Open-Set Semi-Supervised Learning,http://arxiv.org/abs/2311.10572v1,2023-11-17 15:14:40+00:00
+3,2107.08943,OpenCoS: Contrastive Semi-supervised Learning for Handling Open-set Unlabeled Data,http://arxiv.org/abs/2107.08943v3,2021-06-29 06:10:05+00:00
+4,2308.13168,IOMatch: Simplifying Open-Set Semi-Supervised Learning with Joint Inliers and Outliers Utilization,http://arxiv.org/abs/2308.13168v1,2023-08-25 04:14:02+00:00
+5,2303.12091,Adaptive Negative Evidential Deep Learning for Open-set Semi-supervised Learning,http://arxiv.org/abs/2303.12091v4,2023-03-21 09:07:15+00:00
+6,2305.13802,Online Open-set Semi-supervised Object Detection with Dual Competing Head,http://arxiv.org/abs/2305.13802v3,2023-05-23 08:15:02+00:00
+7,2405.06979,Robust Semi-supervised Learning by Wisely Leveraging Open-set Data,http://arxiv.org/abs/2405.06979v2,2024-05-11 10:22:32+00:00
+8,2301.10127,Improving Open-Set Semi-Supervised Learning with Self-Supervision,http://arxiv.org/abs/2301.10127v3,2023-01-24 16:46:37+00:00
+9,2208.13722,Open-Set Semi-Supervised Object Detection,http://arxiv.org/abs/2208.13722v1,2022-08-29 17:04:30+00:00
+10,2403.10658,InterLUDE: Interactions between Labeled and Unlabeled Data to Enhance Semi-Supervised Learning,http://arxiv.org/abs/2403.10658v1,2024-03-15 19:54:10+00:00
+11,1812.04606,Deep Anomaly Detection with Outlier Exposure,http://arxiv.org/abs/1812.04606v3,2018-12-11 18:49:50+00:00
+12,2201.09196,Learning to Predict Gradients for Semi-Supervised Continual Learning,http://arxiv.org/abs/2201.09196v2,2022-01-23 06:45:47+00:00
+13,2104.08094,Personalized Semi-Supervised Federated Learning for Human Activity Recognition,http://arxiv.org/abs/2104.08094v3,2021-04-15 10:24:18+00:00
+14,2205.14467,Divide to Adapt: Mitigating Confirmation Bias for Domain Adaptation of Black-Box Predictors,http://arxiv.org/abs/2205.14467v1,2022-05-28 16:00:44+00:00
+15,1906.10343,Exploring Self-Supervised Regularization for Supervised and Semi-Supervised Learning,http://arxiv.org/abs/1906.10343v2,2019-06-25 06:42:05+00:00
+16,2408.12355,Class-balanced Open-set Semi-supervised Object Detection for Medical Images,http://arxiv.org/abs/2408.12355v1,2024-08-22 12:54:15+00:00
+17,2303.05122,M-Tuning: Prompt Tuning with Mitigated Label Bias in Open-Set Scenarios,http://arxiv.org/abs/2303.05122v3,2023-03-09 09:05:47+00:00
+18,2208.05561,SSDBCODI: Semi-Supervised Density-Based Clustering with Outliers Detection Integrated,http://arxiv.org/abs/2208.05561v1,2022-08-10 21:06:38+00:00
+19,2106.15792,Learning Bounds for Open-Set Learning,http://arxiv.org/abs/2106.15792v1,2021-06-30 03:10:06+00:00
+20,2212.00966,A Hybrid Deep Learning Anomaly Detection Framework for Intrusion Detection,http://arxiv.org/abs/2212.00966v1,2022-12-02 04:40:54+00:00
+21,2312.07169,Semi-supervised Active Learning for Video Action Detection,http://arxiv.org/abs/2312.07169v3,2023-12-12 11:13:17+00:00
+22,1806.11258,Collective decision for open set recognition,http://arxiv.org/abs/1806.11258v5,2018-06-29 03:32:29+00:00
+23,2211.01154,Mitigating Popularity Bias in Recommendation with Unbalanced Interactions: A Gradient Perspective,http://arxiv.org/abs/2211.01154v1,2022-10-31 01:01:41+00:00
+24,2101.06480,SelfMatch: Combining Contrastive Self-Supervision and Consistency for Semi-Supervised Learning,http://arxiv.org/abs/2101.06480v1,2021-01-16 17:03:53+00:00
+25,2503.17057,Semi-supervised Cervical Segmentation on Ultrasound by A Dual Framework for Neural Networks,http://arxiv.org/abs/2503.17057v1,2025-03-21 11:16:44+00:00
+26,1912.10364,Learning to Impute: A General Framework for Semi-supervised Learning,http://arxiv.org/abs/1912.10364v3,2019-12-22 00:27:21+00:00
+27,2405.11320,Sampling Strategies for Mitigating Bias in Face Synthesis Methods,http://arxiv.org/abs/2405.11320v1,2024-05-18 15:30:14+00:00
+28,1911.07440,Large Scale Open-Set Deep Logo Detection,http://arxiv.org/abs/1911.07440v4,2019-11-18 05:44:17+00:00
+29,2202.13446,The Unfairness of Popularity Bias in Book Recommendation,http://arxiv.org/abs/2202.13446v1,2022-02-27 20:21:46+00:00
+30,2111.02174,Unsupervised detection and open-set classification of fast-ramped flexibility activation events,http://arxiv.org/abs/2111.02174v3,2021-11-03 12:29:09+00:00

@@ -1,0 +1,22 @@
+rank,arxiv_id,title,url,date
+1,2409.14583,"LLM Bias Evaluation: Gender, Racial, and Age Disparities in Occupational and Crime Scenarios",http://arxiv.org/abs/2409.14583v4,2024-09-22 20:21:20+00:00
+2,2504.15941,FairTranslate: An English-French Dataset for Gender Bias Evaluation in Machine Translation by Overcoming Gender Binarity,http://arxiv.org/abs/2504.15941v2,2025-04-22 14:35:16+00:00
+3,2407.10853,Bring Your Own Prompts: Use-Case-Specific Bias and Fairness Evaluation for LLMs,http://arxiv.org/abs/2407.10853v6,2024-07-15 16:04:44+00:00
+4,2505.02456,Colombian Waitresses y Jueces canadienses: Gender and Country Biases in Occupation Recommendations from LLMs,http://arxiv.org/abs/2505.02456v2,2025-05-05 08:40:51+00:00
+5,2311.18580,"FFT: Towards Harmlessness Evaluation and Analysis for LLMs with Factuality, Fairness, Toxicity",http://arxiv.org/abs/2311.18580v2,2023-11-30 14:18:47+00:00
+6,2404.19371,Fairness in AI: challenges in bridging the gap between algorithms and law,http://arxiv.org/abs/2404.19371v1,2024-04-30 08:59:00+00:00
+7,1711.05144,Preventing Fairness Gerrymandering: Auditing and Learning for Subgroup Fairness,http://arxiv.org/abs/1711.05144v5,2017-11-14 15:34:27+00:00
+8,2001.09784,Algorithmic Fairness,http://arxiv.org/abs/2001.09784v1,2020-01-21 19:01:38+00:00
+9,2310.00905,All Languages Matter: On the Multilingual Safety of Large Language Models,http://arxiv.org/abs/2310.00905v2,2023-10-02 05:23:34+00:00
+10,2503.06792,On the Mutual Influence of Gender and Occupation in LLM Representations,http://arxiv.org/abs/2503.06792v1,2025-03-09 22:11:30+00:00
+11,1906.10256,"Good Secretaries, Bad Truck Drivers? Occupational Gender Stereotypes in Sentiment Analysis",http://arxiv.org/abs/1906.10256v2,2019-06-24 22:31:33+00:00
+12,2408.16130,Using Backbone Foundation Model for Evaluating Fairness in Chest Radiography Without Demographic Data,http://arxiv.org/abs/2408.16130v1,2024-08-28 20:35:38+00:00
+13,2312.06056,METAL: Metamorphic Testing Framework for Analyzing Large-Language Model Qualities,http://arxiv.org/abs/2312.06056v1,2023-12-11 01:29:19+00:00
+14,2403.09832,Scaling Behavior of Machine Translation with Large Language Models under Prompt Injection Attacks,http://arxiv.org/abs/2403.09832v1,2024-03-14 19:39:10+00:00
+15,2503.21676,"How do language models learn facts? Dynamics, curricula and hallucinations",http://arxiv.org/abs/2503.21676v2,2025-03-27 16:43:45+00:00
+16,2106.05498,It's COMPASlicated: The Messy Relationship between RAI Datasets and Algorithmic Fairness Benchmarks,http://arxiv.org/abs/2106.05498v3,2021-06-10 04:59:06+00:00
+17,2412.16117,PruneVid: Visual Token Pruning for Efficient Video Large Language Models,http://arxiv.org/abs/2412.16117v1,2024-12-20 18:01:58+00:00
+18,2410.07069,ReIFE: Re-evaluating Instruction-Following Evaluation,http://arxiv.org/abs/2410.07069v1,2024-10-09 17:14:50+00:00
+19,2501.05032,Enhancing Human-Like Responses in Large Language Models,http://arxiv.org/abs/2501.05032v2,2025-01-09 07:44:06+00:00
+20,2409.15256,Behavioral Bias of Vision-Language Models: A Behavioral Finance View,http://arxiv.org/abs/2409.15256v1,2024-09-23 17:54:47+00:00
+21,2305.14982,LAraBench: Benchmarking Arabic AI with Large Language Models,http://arxiv.org/abs/2305.14982v2,2023-05-24 10:16:16+00:00

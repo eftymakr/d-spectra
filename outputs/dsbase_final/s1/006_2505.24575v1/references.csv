@@ -1,0 +1,25 @@
+arxiv_id,title,url,date,category,cited_in_text
+2205.09641,SNaC: Coherence Error Detection for Narrative Summarization,http://arxiv.org/abs/2205.09641v2,2022-05-19 16:01:47+00:00,Evaluation Metrics for Summarization Quality,True
+2412.20138,TradingAgents: Multi-Agents LLM Financial Trading Framework,http://arxiv.org/abs/2412.20138v7,2024-12-28 12:54:06+00:00,Multi-Agent Collaboration Frameworks,True
+2007.04874,CompRes: A Dataset for Narrative Structure in News,http://arxiv.org/abs/2007.04874v2,2020-07-09 15:21:59+00:00,Dataset Development for Narrative Understanding,True
+2306.10508,QCNeXt: A Next-Generation Framework For Joint Multi-Agent Trajectory Prediction,http://arxiv.org/abs/2306.10508v1,2023-06-18 09:40:40+00:00,Multi-Agent Collaboration Frameworks,True
+2202.01709,Towards Coherent and Consistent Use of Entities in Narrative Generation,http://arxiv.org/abs/2202.01709v1,2022-02-03 17:19:21+00:00,Evaluation Metrics for Summarization Quality,True
+2504.07459,Beyond LLMs: A Linguistic Approach to Causal Graph Generation from Narrative Texts,http://arxiv.org/abs/2504.07459v2,2025-04-10 05:09:07+00:00,Dataset Development for Narrative Understanding,True
+2008.09961,"An automated pipeline for the discovery of conspiracy and conspiracy theory narrative frameworks: Bridgegate, Pizzagate and storytelling on the web",http://arxiv.org/abs/2008.09961v1,2020-08-23 05:14:38+00:00,Dataset Development for Narrative Understanding,True
+2412.02897,MLD-EA: Check and Complete Narrative Coherence by Introducing Emotions and Actions,http://arxiv.org/abs/2412.02897v1,2024-12-03 23:01:21+00:00,Dataset Development for Narrative Understanding,True
+2502.07165,"Don't Just Demo, Teach Me the Principles: A Principle-Based Multi-Agent Prompting Strategy for Text Classification",http://arxiv.org/abs/2502.07165v1,2025-02-11 01:10:13+00:00,Multi-Agent Collaboration Frameworks,True
+2106.06828,A Game-Theoretic Approach to Multi-Agent Trust Region Optimization,http://arxiv.org/abs/2106.06828v1,2021-06-12 18:21:26+00:00,Reward Learning in Multi-Agent Systems,True
+1808.06945,A Skeleton-Based Model for Promoting Coherence Among Sentences in Narrative Story Generation,http://arxiv.org/abs/1808.06945v2,2018-08-21 14:55:34+00:00,Evaluation Metrics for Summarization Quality,True
+1809.07124,Pommerman: A Multi-Agent Playground,http://arxiv.org/abs/1809.07124v2,2018-09-19 11:27:25+00:00,Multi-Agent Collaboration Frameworks,True
+2004.04722,Re-conceptualising the Language Game Paradigm in the Framework of Multi-Agent Reinforcement Learning,http://arxiv.org/abs/2004.04722v1,2020-04-09 17:55:15+00:00,Reward Learning in Multi-Agent Systems,True
+2201.04612,Agent-Temporal Attention for Reward Redistribution in Episodic Multi-Agent Reinforcement Learning,http://arxiv.org/abs/2201.04612v1,2022-01-12 18:35:46+00:00,Reward Learning in Multi-Agent Systems,True
+2102.08370,Quantifying the effects of environment and population diversity in multi-agent reinforcement learning,http://arxiv.org/abs/2102.08370v2,2021-02-16 18:54:39+00:00,Reward Learning in Multi-Agent Systems,True
+2405.01839,SocialGFs: Learning Social Gradient Fields for Multi-Agent Reinforcement Learning,http://arxiv.org/abs/2405.01839v1,2024-05-03 04:12:19+00:00,Reward Learning in Multi-Agent Systems,False
+1702.03219,Coherence number as a discrete quantum resource,http://arxiv.org/abs/1702.03219v4,2017-02-10 15:33:06+00:00,Domain Adaptability of Summarization Models,False
+1311.5108,A Methodology to Engineer and Validate Dynamic Multi-level Multi-agent Based Simulations,http://arxiv.org/abs/1311.5108v1,2013-11-20 15:44:26+00:00,Multi-Agent Collaboration Frameworks,False
+1807.02648,How game complexity affects the playing behavior of synthetic agents,http://arxiv.org/abs/1807.02648v1,2018-07-07 11:57:21+00:00,Reward Learning in Multi-Agent Systems,False
+2412.06333,Augmenting the action space with conventions to improve multi-agent cooperation in Hanabi,http://arxiv.org/abs/2412.06333v3,2024-12-09 09:34:40+00:00,Implicit Communication in Multi-Agent Cooperation,False
+2202.07305,ViNTER: Image Narrative Generation with Emotion-Arc-Aware Transformer,http://arxiv.org/abs/2202.07305v2,2022-02-15 10:53:08+00:00,Dataset Development for Narrative Understanding,False
+0902.0242,Coherence resonance in an unijunction transistor relaxation oscillator,http://arxiv.org/abs/0902.0242v2,2009-02-02 10:43:02+00:00,Evaluation Metrics for Summarization Quality,False
+2410.04430,Global Coherence in Quantum Discord as a Resource,http://arxiv.org/abs/2410.04430v5,2024-10-06 09:50:28+00:00,Implicit Communication in Multi-Agent Cooperation,False
+1401.3218,Ground State Quantum Coherences: from Quantum Beats to Strong Control,http://arxiv.org/abs/1401.3218v1,2014-01-14 15:21:35+00:00,Domain Adaptability of Summarization Models,False

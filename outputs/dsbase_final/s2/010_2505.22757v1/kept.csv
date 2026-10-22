@@ -1,0 +1,15 @@
+rank,arxiv_id,title,url,date
+1,2404.19737,Better & Faster Large Language Models via Multi-token Prediction,http://arxiv.org/abs/2404.19737v1,2024-04-30 17:33:57+00:00
+2,2505.17505,L-MTP: Leap Multi-Token Prediction Beyond Adjacent Context for Large Language Models,http://arxiv.org/abs/2505.17505v2,2025-05-23 05:59:46+00:00
+3,2003.04960,Curriculum Learning for Reinforcement Learning Domains: A Framework and Survey,http://arxiv.org/abs/2003.04960v2,2020-03-10 20:41:24+00:00
+4,2503.21801,Efficient Joint Prediction of Multiple Future Tokens,http://arxiv.org/abs/2503.21801v1,2025-03-24 19:52:42+00:00
+5,2502.09419,On multi-token prediction for efficient LLM inference,http://arxiv.org/abs/2502.09419v1,2025-02-13 15:42:44+00:00
+6,2410.19925,Improving Multimodal Large Language Models Using Continual Learning,http://arxiv.org/abs/2410.19925v2,2024-10-25 18:50:40+00:00
+7,2407.10194,Curriculum Learning for Small Code Language Models,http://arxiv.org/abs/2407.10194v1,2024-07-14 13:32:24+00:00
+8,1901.11478,An Optimization Framework for Task Sequencing in Curriculum Learning,http://arxiv.org/abs/1901.11478v3,2019-01-31 17:08:27+00:00
+9,2410.12096,Bridging Large Language Models and Graph Structure Learning Models for Robust Representation Learning,http://arxiv.org/abs/2410.12096v1,2024-10-15 22:43:32+00:00
+10,2410.22886,Less is More: Pre-Training Cross-Lingual Small-Scale Language Models with Cognitively-Plausible Curriculum Learning Strategies,http://arxiv.org/abs/2410.22886v2,2024-10-30 10:31:54+00:00
+11,2304.12877,Proximal Curriculum for Reinforcement Learning Agents,http://arxiv.org/abs/2304.12877v1,2023-04-25 14:49:34+00:00
+12,2412.16117,PruneVid: Visual Token Pruning for Efficient Video Large Language Models,http://arxiv.org/abs/2412.16117v1,2024-12-20 18:01:58+00:00
+13,2502.02007,Reasoning Bias of Next Token Prediction Training,http://arxiv.org/abs/2502.02007v2,2025-02-04 04:46:41+00:00
+14,1805.09921,Meta-Learning Probabilistic Inference For Prediction,http://arxiv.org/abs/1805.09921v4,2018-05-24 22:08:27+00:00

@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2104.07446,Rehearsal revealed: The limits and merits of revisiting samples in continual learning,http://arxiv.org/abs/2104.07446v1,2021-04-15 13:28:14+00:00,Empirical Evaluation of Rehearsal Techniques,True
+2405.17583,Understanding Forgetting in Continual Learning with Linear Regression,http://arxiv.org/abs/2405.17583v1,2024-05-27 18:33:37+00:00,Catastrophic Forgetting Mitigation Techniques,True
+1904.07734,Three scenarios for continual learning,http://arxiv.org/abs/1904.07734v1,2019-04-15 12:22:36+00:00,Empirical Evaluation of Rehearsal Techniques,True
+2502.10442,Analysis of Overparameterization in Continual Learning under a Linear Model,http://arxiv.org/abs/2502.10442v1,2025-02-11 00:15:38+00:00,Overparameterized Linear Models in CL,True
+1904.10644,Facilitating Bayesian Continual Learning by Natural Gradients and Stein Gradients,http://arxiv.org/abs/1904.10644v1,2019-04-24 05:18:32+00:00,Catastrophic Forgetting Mitigation Techniques,True
+2503.18511,Global Convergence of Continual Learning on Non-IID Data,http://arxiv.org/abs/2503.18511v1,2025-03-24 10:06:07+00:00,Theoretical Analysis of Rehearsal,True
+2304.01239,Online Distillation with Continual Learning for Cyclic Domain Shifts,http://arxiv.org/abs/2304.01239v1,2023-04-03 11:15:05+00:00,Catastrophic Forgetting Mitigation Techniques,True
+2110.11526,Wide Neural Networks Forget Less Catastrophically,http://arxiv.org/abs/2110.11526v3,2021-10-21 23:49:23+00:00,Catastrophic Forgetting Mitigation Techniques,True
+2202.09826,Continual Learning Beyond a Single Model,http://arxiv.org/abs/2202.09826v3,2022-02-20 14:30:39+00:00,Catastrophic Forgetting Mitigation Techniques,True
+2006.10974,Optimization and Generalization of Regularization-Based Continual Learning: a Loss Approximation Viewpoint,http://arxiv.org/abs/2006.10974v3,2020-06-19 06:08:40+00:00,Catastrophic Forgetting Mitigation Techniques,True
+2102.07686,Does the Adam Optimizer Exacerbate Catastrophic Forgetting?,http://arxiv.org/abs/2102.07686v4,2021-02-15 17:32:39+00:00,Catastrophic Forgetting Mitigation Techniques,True
+1708.02072,Measuring Catastrophic Forgetting in Neural Networks,http://arxiv.org/abs/1708.02072v4,2017-08-07 11:18:43+00:00,Catastrophic Forgetting Mitigation Techniques,True
+2011.12216,Energy-Based Models for Continual Learning,http://arxiv.org/abs/2011.12216v3,2020-11-24 17:08:13+00:00,Catastrophic Forgetting Mitigation Techniques,True
+2312.00276,Metalearning Continual Learning Algorithms,http://arxiv.org/abs/2312.00276v3,2023-12-01 01:25:04+00:00,Catastrophic Forgetting Mitigation Techniques,True
+2312.17210,Continual Learning via Sequential Function-Space Variational Inference,http://arxiv.org/abs/2312.17210v1,2023-12-28 18:44:32+00:00,Catastrophic Forgetting Mitigation Techniques,False
+1906.06635,Conditional Computation for Continual Learning,http://arxiv.org/abs/1906.06635v1,2019-06-16 02:11:39+00:00,Catastrophic Forgetting Mitigation Techniques,False
+2308.13646,GRASP: A Rehearsal Policy for Efficient Online Continual Learning,http://arxiv.org/abs/2308.13646v2,2023-08-25 19:34:21+00:00,Empirical Evaluation of Rehearsal Techniques,False
+2203.13167,"Towards Exemplar-Free Continual Learning in Vision Transformers: an Account of Attention, Functional and Weight Regularization",http://arxiv.org/abs/2203.13167v4,2022-03-24 16:40:36+00:00,Catastrophic Forgetting Mitigation Techniques,False
+2203.17269,A Closer Look at Rehearsal-Free Continual Learning,http://arxiv.org/abs/2203.17269v2,2022-03-31 17:59:00+00:00,Catastrophic Forgetting Mitigation Techniques,True
+2010.04003,A Theoretical Analysis of Catastrophic Forgetting through the NTK Overlap Matrix,http://arxiv.org/abs/2010.04003v2,2020-10-07 17:35:31+00:00,Catastrophic Forgetting Mitigation Techniques,False
+1912.09091,Overcoming Long-term Catastrophic Forgetting through Adversarial Neural Pruning and Synaptic Consolidation,http://arxiv.org/abs/1912.09091v3,2019-12-19 09:51:54+00:00,Catastrophic Forgetting Mitigation Techniques,False
+2005.01004,Explaining How Deep Neural Networks Forget by Deep Visualization,http://arxiv.org/abs/2005.01004v3,2020-05-03 06:44:38+00:00,Catastrophic Forgetting Mitigation Techniques,False
+2004.07941,Continual Learning for Anomaly Detection in Surveillance Videos,http://arxiv.org/abs/2004.07941v1,2020-04-15 16:41:20+00:00,Catastrophic Forgetting Mitigation Techniques,False
+2403.01244,Mitigating Catastrophic Forgetting in Large Language Models with Self-Synthesized Rehearsal,http://arxiv.org/abs/2403.01244v2,2024-03-02 16:11:23+00:00,Catastrophic Forgetting Mitigation Techniques,False
+1811.12273,On the Transferability of Representations in Neural Networks Between Datasets and Tasks,http://arxiv.org/abs/1811.12273v1,2018-11-29 16:06:57+00:00,Empirical Evaluation of Rehearsal Techniques,False
+1804.06679,Understanding Neural Networks and Individual Neuron Importance via Information-Ordered Cumulative Ablation,http://arxiv.org/abs/1804.06679v4,2018-04-18 12:29:24+00:00,Empirical Evaluation of Rehearsal Techniques,False
+2206.07932,Lifelong Wandering: A realistic few-shot online continual learning setting,http://arxiv.org/abs/2206.07932v1,2022-06-16 05:39:08+00:00,Catastrophic Forgetting Mitigation Techniques,False
+1910.02509,REMIND Your Neural Network to Prevent Catastrophic Forgetting,http://arxiv.org/abs/1910.02509v3,2019-10-06 19:48:23+00:00,Human-Inspired Learning Strategies,False
+2504.10561,Self-Controlled Dynamic Expansion Model for Continual Learning,http://arxiv.org/abs/2504.10561v2,2025-04-14 15:22:51+00:00,Catastrophic Forgetting Mitigation Techniques,False
+1903.05202,Continual Learning in Practice,http://arxiv.org/abs/1903.05202v2,2019-03-12 20:41:36+00:00,Catastrophic Forgetting Mitigation Techniques,False

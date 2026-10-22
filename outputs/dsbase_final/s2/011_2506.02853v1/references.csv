@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2304.14045,Interweaved Graph and Attention Network for 3D Human Pose Estimation,http://arxiv.org/abs/2304.14045v1,2023-04-27 09:21:15+00:00,Graph-Based Human Pose Estimation,True
+2107.07797,Conditional Directed Graph Convolution for 3D Human Pose Estimation,http://arxiv.org/abs/2107.07797v2,2021-07-16 09:50:40+00:00,Graph-Based Human Pose Estimation,True
+2007.07053,Unsupervised 3D Human Pose Representation with Viewpoint and Pose Disentanglement,http://arxiv.org/abs/2007.07053v2,2020-07-14 14:25:22+00:00,Occlusion and Viewpoint Robustness,True
+2203.08534,Capturing Humans in Motion: Temporal-Attentive 3D Human Pose and Shape Estimation from Monocular Video,http://arxiv.org/abs/2203.08534v1,2022-03-16 11:00:24+00:00,Efficient Attention Mechanisms,True
+2401.16700,Towards Precise 3D Human Pose Estimation with Multi-Perspective Spatial-Temporal Relational Transformers,http://arxiv.org/abs/2401.16700v2,2024-01-30 03:00:25+00:00,Multi-View and Depth Map Utilization,True
+2003.14179,A Graph Attention Spatio-temporal Convolutional Network for 3D Human Pose Estimation in Video,http://arxiv.org/abs/2003.14179v4,2020-03-11 14:54:40+00:00,2D to 3D Pose Estimation Methods,True
+2103.16385,Graph Stacked Hourglass Networks for 3D Human Pose Estimation,http://arxiv.org/abs/2103.16385v1,2021-03-30 14:25:43+00:00,Graph-Based Human Pose Estimation,True
+2109.02303,Encoder-decoder with Multi-level Attention for 3D Human Shape and Pose Estimation,http://arxiv.org/abs/2109.02303v1,2021-09-06 09:06:17+00:00,Transformer Applications in Pose Estimation,True
+2307.16074,Iterative Graph Filtering Network for 3D Human Pose Estimation,http://arxiv.org/abs/2307.16074v2,2023-07-29 20:46:44+00:00,Graph-Based Human Pose Estimation,True
+2003.11163,Fusing Wearable IMUs with Multi-View Images for Human Pose Estimation: A Geometric Approach,http://arxiv.org/abs/2003.11163v2,2020-03-25 00:26:54+00:00,Multi-Modal Input Integration,True
+1901.03798,3D Human Pose Machines with Self-supervised Learning,http://arxiv.org/abs/1901.03798v2,2019-01-12 04:55:26+00:00,2D to 3D Pose Estimation Methods,True
+2206.06420,GraphMLP: A Graph MLP-Like Architecture for 3D Human Pose Estimation,http://arxiv.org/abs/2206.06420v5,2022-06-13 18:59:31+00:00,Graph-Based Human Pose Estimation,True
+2110.09554,TransFusion: Cross-view Fusion with Transformer for 3D Human Pose Estimation,http://arxiv.org/abs/2110.09554v3,2021-10-18 18:08:18+00:00,Transformer Applications in Pose Estimation,True
+1711.07399,V2V-PoseNet: Voxel-to-Voxel Prediction Network for Accurate 3D Hand and Human Pose Estimation from a Single Depth Map,http://arxiv.org/abs/1711.07399v3,2017-11-20 16:41:13+00:00,Multi-View and Depth Map Utilization,True
+1611.09813,Monocular 3D Human Pose Estimation In The Wild Using Improved CNN Supervision,http://arxiv.org/abs/1611.09813v5,2016-11-29 20:03:19+00:00,2D to 3D Pose Estimation Methods,True
+2003.07516,Augmented Parallel-Pyramid Net for Attention Guided Pose-Estimation,http://arxiv.org/abs/2003.07516v1,2020-03-17 03:52:17+00:00,Benchmark Dataset Performance,True
+2411.06553,Extended multi-stream temporal-attention module for skeleton-based human action recognition (HAR),http://arxiv.org/abs/2411.06553v1,2024-11-10 18:28:52+00:00,Graph Attention Networks,True
+2104.01797,Monocular 3D Multi-Person Pose Estimation by Integrating Top-Down and Bottom-Up Networks,http://arxiv.org/abs/2104.01797v2,2021-04-05 07:05:21+00:00,Occlusion and Viewpoint Robustness,False
+2210.15121,Bootstrapping Human Optical Flow and Pose,http://arxiv.org/abs/2210.15121v2,2022-10-27 02:14:00+00:00,Benchmark Dataset Performance,False
+2308.00628,Human-M3: A Multi-view Multi-modal Dataset for 3D Human Pose Estimation in Outdoor Scenes,http://arxiv.org/abs/2308.00628v2,2023-08-01 15:55:41+00:00,Multi-Modal Input Integration,False
+2111.11927,Hierarchical Graph Networks for 3D Human Pose Estimation,http://arxiv.org/abs/2111.11927v2,2021-11-23 15:09:03+00:00,Graph-Based Human Pose Estimation,False
+1911.09245,Consensus-based Optimization for 3D Human Pose Estimation in Camera Coordinates,http://arxiv.org/abs/1911.09245v3,2019-11-21 02:19:08+00:00,Multi-View and Depth Map Utilization,False
+2412.18883,MotionMap: Representing Multimodality in Human Pose Forecasting,http://arxiv.org/abs/2412.18883v2,2024-12-25 11:47:26+00:00,Efficient Attention Mechanisms,False
+1810.01616,Cascaded Pyramid Network for 3D Human Pose Estimation Challenge,http://arxiv.org/abs/1810.01616v1,2018-10-03 07:58:18+00:00,2D to 3D Pose Estimation Methods,False
+2010.10008,Towards Accurate Human Pose Estimation in Videos of Crowded Scenes,http://arxiv.org/abs/2010.10008v2,2020-10-16 13:19:11+00:00,Occlusion and Viewpoint Robustness,False
+2110.05805,Real-time Skeletonization for Sketch-based Modeling,http://arxiv.org/abs/2110.05805v1,2021-10-12 08:02:20+00:00,2D to 3D Pose Estimation Methods,False
+2206.13316,Humans are not Boltzmann Distributions: Challenges and Opportunities for Modelling Human Feedback and Interaction in Reinforcement Learning,http://arxiv.org/abs/2206.13316v1,2022-06-27 13:58:51+00:00,Graph Attention Networks,False
+1805.08315,Learning long-range spatial dependencies with horizontal gated-recurrent units,http://arxiv.org/abs/1805.08315v4,2018-05-21 22:52:25+00:00,Long-Range Dependency Modeling,False
+2204.09232,Visual-based Positioning and Pose Estimation,http://arxiv.org/abs/2204.09232v1,2022-04-20 05:30:34+00:00,Occlusion and Viewpoint Robustness,False
+1905.08231,Patch-based 3D Human Pose Refinement,http://arxiv.org/abs/1905.08231v1,2019-05-20 17:51:41+00:00,Multi-Modal Input Integration,False

@@ -1,0 +1,28 @@
+arxiv_id,title,url,date,category,cited_in_text
+1906.07273,Coherent and Controllable Outfit Generation,http://arxiv.org/abs/1906.07273v2,2019-06-17 21:12:36+00:00,Compatibility and Diversity in Outfit Generation,True
+2402.17279,Diffusion Models for Generative Outfit Recommendation,http://arxiv.org/abs/2402.17279v3,2024-02-27 07:51:06+00:00,Generative AI in Fashion Generation,True
+2502.00992,FCBoost-Net: A Generative Network for Synthesizing Multiple Collocated Outfits via Fashion Compatibility Boosting,http://arxiv.org/abs/2502.00992v1,2025-02-03 02:18:09+00:00,Compatibility and Diversity in Outfit Generation,True
+2203.16161,Recommendation of Compatible Outfits Conditioned on Style,http://arxiv.org/abs/2203.16161v1,2022-03-30 09:23:32+00:00,Compatibility and Diversity in Outfit Generation,True
+2502.08674,COutfitGAN: Learning to Synthesize Compatible Outfits Supervised by Silhouette Masks and Fashion Styles,http://arxiv.org/abs/2502.08674v1,2025-02-12 03:32:28+00:00,Generative AI in Fashion Generation,True
+2211.16353,Outfit Generation and Recommendation -- An Experimental Study,http://arxiv.org/abs/2211.16353v1,2022-11-29 16:36:00+00:00,Generative AI in Fashion Generation,True
+2502.06827,Learning to Synthesize Compatible Fashion Items Using Semantic Alignment and Collocation Classification: An Outfit Generation Framework,http://arxiv.org/abs/2502.06827v1,2025-02-05 12:13:53+00:00,Generative AI in Fashion Generation,True
+1807.03133,Outfit Generation and Style Extraction via Bidirectional LSTM and Autoencoder,http://arxiv.org/abs/1807.03133v3,2018-06-29 18:00:03+00:00,Generative AI in Fashion Generation,True
+1908.08327,Session-based Complementary Fashion Recommendations,http://arxiv.org/abs/1908.08327v1,2019-08-22 11:46:43+00:00,Comparison with Prior Personalization Techniques,True
+1608.03016,Mining Fashion Outfit Composition Using An End-to-End Deep Learning Approach on Set Data,http://arxiv.org/abs/1608.03016v2,2016-08-10 01:11:32+00:00,Compatibility and Diversity in Outfit Generation,True
+2407.00289,Personalised Outfit Recommendation via History-aware Transformers,http://arxiv.org/abs/2407.00289v2,2024-06-29 02:58:44+00:00,Compatibility and Diversity in Outfit Generation,True
+2402.18571,Arithmetic Control of LLMs for Diverse User Preferences: Directional Preference Alignment with Multi-Objective Rewards,http://arxiv.org/abs/2402.18571v3,2024-02-28 18:58:25+00:00,Reinforcement Learning with Human Feedback (RLHF),True
+2311.16630,Outfit Completion via Conditional Set Transformation,http://arxiv.org/abs/2311.16630v1,2023-11-28 09:30:52+00:00,Compatibility and Diversity in Outfit Generation,True
+2402.16660,BOXREC: Recommending a Box of Preferred Outfits in Online Shopping,http://arxiv.org/abs/2402.16660v1,2024-02-26 15:34:06+00:00,Compatibility and Diversity in Outfit Generation,True
+2005.12566,Hierarchical Fashion Graph Network for Personalized Outfit Recommendation,http://arxiv.org/abs/2005.12566v1,2020-05-26 08:23:35+00:00,Compatibility and Diversity in Outfit Generation,True
+2204.04812,OutfitTransformer: Learning Outfit Representations for Fashion Recommendation,http://arxiv.org/abs/2204.04812v2,2022-04-11 00:55:40+00:00,Pre-trained Models and Fine-tuning Approaches,False
+2404.18040,Fashion Recommendation: Outfit Compatibility using GNN,http://arxiv.org/abs/2404.18040v1,2024-04-28 00:57:17+00:00,Compatibility and Diversity in Outfit Generation,False
+2002.00460,Regularizing Reasons for Outfit Evaluation with Gradient Penalty,http://arxiv.org/abs/2002.00460v1,2020-02-02 18:59:55+00:00,Multi-Expert Feedback Generation for Outfit Evaluation,False
+2304.08098,Transformer-based Graph Neural Networks for Outfit Generation,http://arxiv.org/abs/2304.08098v1,2023-04-17 09:18:45+00:00,Compatibility and Diversity in Outfit Generation,False
+1912.08967,Fashion Outfit Complementary Item Retrieval,http://arxiv.org/abs/1912.08967v2,2019-12-19 00:53:41+00:00,Compatibility and Diversity in Outfit Generation,False
+2502.19312,FSPO: Few-Shot Optimization of Synthetic Preferences Personalizes to Real Users,http://arxiv.org/abs/2502.19312v2,2025-02-26 17:08:46+00:00,Pre-trained Models and Fine-tuning Approaches,False
+2103.13192,On Preference Learning Based on Sequential Bayesian Optimization with Pairwise Comparison,http://arxiv.org/abs/2103.13192v3,2021-03-24 13:46:27+00:00,Reinforcement Learning with Human Feedback (RLHF),False
+1810.09941,Brand > Logo: Visual Analysis of Fashion Brands,http://arxiv.org/abs/1810.09941v1,2018-10-23 16:06:22+00:00,Pre-trained Models and Fine-tuning Approaches,False
+2501.00258,Optimal design of frame structures with mixed categorical and continuous design variables using the Gumbel-Softmax method,http://arxiv.org/abs/2501.00258v1,2024-12-31 03:59:24+00:00,Comparison with Prior Personalization Techniques,False
+1908.08847,Generating High-Resolution Fashion Model Images Wearing Custom Outfits,http://arxiv.org/abs/1908.08847v1,2019-08-23 14:46:41+00:00,Generative AI in Fashion Generation,False
+1806.11371,Personalizing Similar Product Recommendations in Fashion E-commerce,http://arxiv.org/abs/1806.11371v1,2018-06-29 12:05:02+00:00,Multimodal Data Integration for Personalization,False
+1203.6577,Accelerated Particle Swarm Optimization and Support Vector Machine for Business Optimization and Applications,http://arxiv.org/abs/1203.6577v1,2012-03-29 16:28:18+00:00,Comparison with Prior Personalization Techniques,False

@@ -1,0 +1,15 @@
+arxiv_id,title,url,date,category,cited_in_text
+2410.18160,Future Token Prediction -- Causal Language Modelling with Per-Token Semantic State Vector for Multi-Token Prediction,http://arxiv.org/abs/2410.18160v1,2024-10-23 14:50:15+00:00,Comparison with Next-Token Prediction (NTP),True
+2407.10194,Curriculum Learning for Small Code Language Models,http://arxiv.org/abs/2407.10194v1,2024-07-14 13:32:24+00:00,Curriculum Learning Strategies for MTP Training,False
+2108.02170,Curriculum learning for language modeling,http://arxiv.org/abs/2108.02170v1,2021-08-04 16:53:43+00:00,Curriculum Learning Strategies for MTP Training,False
+1901.11478,An Optimization Framework for Task Sequencing in Curriculum Learning,http://arxiv.org/abs/1901.11478v3,2019-01-31 17:08:27+00:00,Curriculum Learning in Other Domains,False
+2405.00888,DynaMo: Accelerating Language Model Inference with Dynamic Multi-Token Sampling,http://arxiv.org/abs/2405.00888v1,2024-05-01 22:17:57+00:00,Multi-Token Prediction in Non-Autoregressive Generation,True
+2404.19737,Better & Faster Large Language Models via Multi-token Prediction,http://arxiv.org/abs/2404.19737v1,2024-04-30 17:33:57+00:00,Benefits of MTP for Large Language Models,True
+2505.17505,L-MTP: Leap Multi-Token Prediction Beyond Adjacent Context for Large Language Models,http://arxiv.org/abs/2505.17505v2,2025-05-23 05:59:46+00:00,Comparison with Next-Token Prediction (NTP),False
+2505.10518,Multi-Token Prediction Needs Registers,http://arxiv.org/abs/2505.10518v1,2025-05-15 17:25:03+00:00,Multi-Token Prediction Across Modalities,False
+2408.14964,Cross-Modal Learning for Chemistry Property Prediction: Large Language Models Meet Graph Machine Learning,http://arxiv.org/abs/2408.14964v1,2024-08-27 11:10:39+00:00,Multi-Token Prediction Across Modalities,False
+2408.13040,SpeechPrompt: Prompting Speech Language Models for Speech Processing Tasks,http://arxiv.org/abs/2408.13040v1,2024-08-23 13:00:10+00:00,Multi-Token Prediction Across Modalities,True
+2402.09949,Multi-word Tokenization for Sequence Compression,http://arxiv.org/abs/2402.09949v2,2024-02-15 13:52:23+00:00,Benefits of MTP for Large Language Models,False
+2211.05409,Radiomics-enhanced Deep Multi-task Learning for Outcome Prediction in Head and Neck Cancer,http://arxiv.org/abs/2211.05409v1,2022-11-10 08:28:56+00:00,Multi-Token Prediction Across Modalities,True
+2007.01135,Student-Teacher Curriculum Learning via Reinforcement Learning: Predicting Hospital Inpatient Admission Location,http://arxiv.org/abs/2007.01135v1,2020-07-01 15:00:43+00:00,Curriculum Learning in Other Domains,True
+2407.02419,Quantum Curriculum Learning,http://arxiv.org/abs/2407.02419v4,2024-07-02 16:44:14+00:00,Curriculum Learning in Other Domains,False

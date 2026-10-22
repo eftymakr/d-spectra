@@ -1,0 +1,23 @@
+rank,arxiv_id,title,url,date
+1,2407.12580,E5-V: Universal Embeddings with Multimodal Large Language Models,http://arxiv.org/abs/2407.12580v1,2024-07-17 14:04:12+00:00
+2,2308.12898,Can Linguistic Knowledge Improve Multimodal Alignment in Vision-Language Pretraining?,http://arxiv.org/abs/2308.12898v2,2023-08-24 16:17:40+00:00
+3,2407.02751,Emotion and Intent Joint Understanding in Multimodal Conversation: A Benchmarking Dataset,http://arxiv.org/abs/2407.02751v2,2024-07-03 01:56:00+00:00
+4,2501.10857,Learning Nonverbal Cues in Multiparty Social Interactions for Robotic Facilitators,http://arxiv.org/abs/2501.10857v1,2025-01-18 19:24:54+00:00
+5,2404.07214,Exploring the Frontier of Vision-Language Models: A Survey of Current Methodologies and Future Directions,http://arxiv.org/abs/2404.07214v4,2024-02-20 18:57:34+00:00
+6,2207.10574,Co-Located Human-Human Interaction Analysis using Nonverbal Cues: A Survey,http://arxiv.org/abs/2207.10574v2,2022-07-20 13:37:57+00:00
+7,2309.10783,Language as the Medium: Multimodal Video Classification through text only,http://arxiv.org/abs/2309.10783v1,2023-09-19 17:32:21+00:00
+8,1811.09362,Words Can Shift: Dynamically Adjusting Word Representations Using Nonverbal Behaviors,http://arxiv.org/abs/1811.09362v2,2018-11-23 05:13:38+00:00
+9,2310.14025,Large Language Models and Multimodal Retrieval for Visual Word Sense Disambiguation,http://arxiv.org/abs/2310.14025v1,2023-10-21 14:35:42+00:00
+10,2403.14168,"M$^3$AV: A Multimodal, Multigenre, and Multipurpose Audio-Visual Academic Lecture Dataset",http://arxiv.org/abs/2403.14168v3,2024-03-21 06:43:59+00:00
+11,2407.20962,MMTrail: A Multimodal Trailer Video Dataset with Language and Music Descriptions,http://arxiv.org/abs/2407.20962v3,2024-07-30 16:43:24+00:00
+12,2410.21652,Accessible Nonverbal Cues to Support Conversations in VR for Blind and Low Vision People,http://arxiv.org/abs/2410.21652v1,2024-10-29 01:42:27+00:00
+13,2411.12287,CUE-M: Contextual Understanding and Enhanced Search with Multimodal Large Language Model,http://arxiv.org/abs/2411.12287v3,2024-11-19 07:16:48+00:00
+14,2209.08691,MECCANO: A Multimodal Egocentric Dataset for Humans Behavior Understanding in the Industrial-like Domain,http://arxiv.org/abs/2209.08691v1,2022-09-19 00:52:42+00:00
+15,1805.02997,Category-Based Deep CCA for Fine-Grained Venue Discovery from Multimodal Data,http://arxiv.org/abs/1805.02997v1,2018-05-08 13:17:57+00:00
+16,2312.05434,Beneath the Surface: Unveiling Harmful Memes with Multimodal Reasoning Distilled from Large Language Models,http://arxiv.org/abs/2312.05434v1,2023-12-09 01:59:11+00:00
+17,2403.09513,AdaShield: Safeguarding Multimodal Large Language Models from Structure-based Attack via Adaptive Shield Prompting,http://arxiv.org/abs/2403.09513v1,2024-03-14 15:57:13+00:00
+18,2304.11293,Nonverbal Cues in Human-Robot Interaction: A Communication Studies Perspective,http://arxiv.org/abs/2304.11293v1,2023-04-22 02:15:48+00:00
+19,2007.00105,The Venus Life Equation,http://arxiv.org/abs/2007.00105v2,2020-06-30 21:06:55+00:00
+20,2208.05582,Mission Architecture to Characterize Habitability of Venus Cloud Layers via an Aerial Platform,http://arxiv.org/abs/2208.05582v1,2022-08-10 22:23:34+00:00
+21,2503.21676,"How do language models learn facts? Dynamics, curricula and hallucinations",http://arxiv.org/abs/2503.21676v2,2025-03-27 16:43:45+00:00
+22,2211.07786,Ammonia and Phosphine in the Clouds of Venus as Potentially Biological Anomalies,http://arxiv.org/abs/2211.07786v1,2022-11-14 22:44:21+00:00

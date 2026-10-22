@@ -1,0 +1,24 @@
+arxiv_id,title,url,date,category,cited_in_text
+2311.15563,Noisy Self-Training with Synthetic Queries for Dense Retrieval,http://arxiv.org/abs/2311.15563v1,2023-11-27 06:19:50+00:00,Neural Retrieval Models and Their Training Requirements,True
+2504.05181,Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval,http://arxiv.org/abs/2504.05181v2,2025-04-07 15:27:37+00:00,Direct Preference Optimization (DPO) Framework,True
+2404.13846,Filtered Direct Preference Optimization,http://arxiv.org/abs/2404.13846v4,2024-04-22 03:05:19+00:00,Direct Preference Optimization (DPO) Framework,True
+2210.12084,Decoding a Neural Retriever's Latent Space for Query Suggestion,http://arxiv.org/abs/2210.12084v1,2022-10-21 16:19:31+00:00,Synthetic Query Generation Using Large Language Models,True
+1705.06979,End-to-End Cross-Modality Retrieval with CCA Projections and Pairwise Ranking Loss,http://arxiv.org/abs/1705.06979v2,2017-05-19 13:23:46+00:00,Comparative Analysis of Retrieval Approaches,True
+2111.13057,Evaluating the Robustness of Retrieval Pipelines with Query Variation Generators,http://arxiv.org/abs/2111.13057v3,2021-11-25 12:39:51+00:00,Challenges of Synthetic Query Quality in Retrieval,True
+2405.19749,Generating Query Recommendations via LLMs,http://arxiv.org/abs/2405.19749v2,2024-05-30 06:52:01+00:00,Synthetic Query Generation Using Large Language Models,True
+2307.08803,Mixed-initiative Query Rewriting in Conversational Passage Retrieval,http://arxiv.org/abs/2307.08803v3,2023-07-17 19:38:40+00:00,Alternative Methods for Improving Query Quality,True
+2407.14477,Data-Centric Human Preference with Rationales for Direct Preference Alignment,http://arxiv.org/abs/2407.14477v4,2024-07-19 17:27:52+00:00,DPO in Human Preference Alignment,True
+2007.02503,Tree-Augmented Cross-Modal Encoding for Complex-Query Video Retrieval,http://arxiv.org/abs/2007.02503v1,2020-07-06 02:50:27+00:00,Alternative Methods for Improving Query Quality,True
+2212.06370,Dual Accuracy-Quality-Driven Neural Network for Prediction Interval Generation,http://arxiv.org/abs/2212.06370v4,2022-12-13 05:03:16+00:00,Comparative Analysis of Retrieval Approaches,True
+2406.06729,Synthetic Query Generation using Large Language Models for Virtual Assistants,http://arxiv.org/abs/2406.06729v1,2024-06-10 18:50:57+00:00,Synthetic Query Generation Using Large Language Models,True
+2301.05508,Do the Findings of Document and Passage Retrieval Generalize to the Retrieval of Responses for Dialogues?,http://arxiv.org/abs/2301.05508v1,2023-01-13 12:18:43+00:00,Comparative Analysis of Retrieval Approaches,True
+1508.02496,A Practical Guide to CNNs and Fisher Vectors for Image Instance Retrieval,http://arxiv.org/abs/1508.02496v3,2015-08-11 07:15:07+00:00,Comparative Analysis of Retrieval Approaches,True
+2112.05662,Match Your Words! A Study of Lexical Matching in Neural Information Retrieval,http://arxiv.org/abs/2112.05662v2,2021-12-10 16:49:49+00:00,Comparative Analysis of Retrieval Approaches,True
+1904.05737,Investigating Retrieval Method Selection with Axiomatic Features,http://arxiv.org/abs/1904.05737v1,2019-04-11 14:50:58+00:00,Comparative Analysis of Retrieval Approaches,True
+2105.13646,Conic-Optimization Based Algorithms for Nonnegative Matrix Factorization,http://arxiv.org/abs/2105.13646v3,2021-05-28 07:48:56+00:00,Multi-Task Optimization for Retrieval Performance,False
+2102.11903,Neural ranking models for document retrieval,http://arxiv.org/abs/2102.11903v2,2021-02-23 19:30:37+00:00,Comparative Analysis of Retrieval Approaches,True
+1109.1320,Examples of inconsistency in optimization by expected improvement,http://arxiv.org/abs/1109.1320v2,2011-09-06 22:49:39+00:00,Alternative Methods for Improving Query Quality,False
+1809.05450,User preferences in Bayesian multi-objective optimization: the expected weighted hypervolume improvement criterion,http://arxiv.org/abs/1809.05450v1,2018-09-14 14:55:13+00:00,Multi-Task Optimization for Retrieval Performance,False
+2307.09574,Optimal control for a nonlinear stochastic PDE model of cancer growth,http://arxiv.org/abs/2307.09574v1,2023-07-18 19:33:01+00:00,Multi-Task Optimization for Retrieval Performance,False
+2303.08710,Two-Scale Optimization of Graded Lattice Structures respecting Buckling on Micro- and Macroscale,http://arxiv.org/abs/2303.08710v1,2023-03-15 15:44:31+00:00,Multi-Task Optimization for Retrieval Performance,False
+1808.06100,On the solution existence and stability of polynomial optimization problems,http://arxiv.org/abs/1808.06100v6,2018-08-18 16:27:40+00:00,Comparative Analysis of Retrieval Approaches,False

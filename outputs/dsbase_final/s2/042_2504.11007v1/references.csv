@@ -1,0 +1,20 @@
+arxiv_id,title,url,date,category,cited_in_text
+2307.06318,SAGE -- A Tool for Optimal Deployments in Kubernetes Clusters,http://arxiv.org/abs/2307.06318v1,2023-07-12 17:29:28+00:00,Optimal Control and Dynamic System Optimization,True
+2207.01222,KubeAdaptor: A Docking Framework for Workflow Containerization on Kubernetes,http://arxiv.org/abs/2207.01222v1,2022-07-04 06:17:34+00:00,Kubernetes Scheduling and Workflow Integration,False
+1805.11750,On seeking efficient Pareto optimal points in multi-player minimum cost flow problems with application to transportation systems,http://arxiv.org/abs/1805.11750v2,2018-05-30 00:03:26+00:00,Network Topology and Resource Allocation Techniques,False
+1207.2799,Optimal recovery of damaged infrastructure network,http://arxiv.org/abs/1207.2799v1,2012-07-11 21:53:19+00:00,Infrastructure Network Recovery and Optimization,False
+2106.03998,Asynchronous Distributed Optimization with Redundancy in Cost Functions,http://arxiv.org/abs/2106.03998v1,2021-06-07 22:40:18+00:00,Optimal Control and Dynamic System Optimization,False
+2001.01357,Average Cost Optimality Inequality for Markov Decision Processes with Borel Spaces and Universally Measurable Policies,http://arxiv.org/abs/2001.01357v3,2020-01-06 01:51:07+00:00,Optimal Control and Dynamic System Optimization,False
+1905.03193,Blockchain-enabled Authentication Handover with Efficient Privacy Protection in SDN-based 5G Networks,http://arxiv.org/abs/1905.03193v1,2019-05-08 16:22:37+00:00,Network Topology and Resource Allocation Techniques,False
+1608.05493,Network Volume Anomaly Detection and Identification in Large-scale Networks based on Online Time-structured Traffic Tensor Tracking,http://arxiv.org/abs/1608.05493v1,2016-08-19 05:06:58+00:00,Network Topology and Resource Allocation Techniques,False
+1507.05492,Parallel Toolkit for Measuring the Quality of Network Community Structure,http://arxiv.org/abs/1507.05492v1,2015-07-20 13:48:11+00:00,Network Topology and Resource Allocation Techniques,False
+1810.05633,"Stochastic (Approximate) Proximal Point Methods: Convergence, Optimality, and Adaptivity",http://arxiv.org/abs/1810.05633v2,2018-10-12 17:56:08+00:00,Cost Modeling and Financial Analysis in Cloud Environments,False
+2105.01939,Comparative Analysis of Box-Covering Algorithms for Fractal Networks,http://arxiv.org/abs/2105.01939v2,2021-05-05 09:16:34+00:00,Network Topology and Resource Allocation Techniques,False
+2208.13177,Analysis and Estimation of Consumer Expenditure assuming uniform prices across FSUs: A step towards cost effectiveness,http://arxiv.org/abs/2208.13177v1,2022-08-28 09:10:18+00:00,Cost Modeling and Financial Analysis in Cloud Environments,False
+1409.0407,Optimal dividend problems for a jump-diffusion model with capital injections and proportional transaction costs,http://arxiv.org/abs/1409.0407v1,2014-09-01 13:16:48+00:00,Optimal Control and Dynamic System Optimization,True
+2001.07411,Structural analysis of an $L$-infinity variational problem and relations to distance functions,http://arxiv.org/abs/2001.07411v2,2020-01-21 09:41:28+00:00,Optimal Control and Dynamic System Optimization,True
+1812.01105,Correspondence Analysis of Government Expenditure Patterns,http://arxiv.org/abs/1812.01105v1,2018-11-29 19:30:08+00:00,Cost Modeling and Financial Analysis in Cloud Environments,True
+1504.03152,Bayesian computational algorithms for social network analysis,http://arxiv.org/abs/1504.03152v1,2015-04-13 12:40:55+00:00,Cost Modeling and Financial Analysis in Cloud Environments,False
+1607.01655,L1 penalization of volumetric dose objectives in optimal control of PDEs,http://arxiv.org/abs/1607.01655v3,2016-07-06 15:03:32+00:00,Optimal Control and Dynamic System Optimization,True
+2111.09854,Towards semi-classical analysis for sub-elliptic operators,http://arxiv.org/abs/2111.09854v1,2021-11-18 18:30:47+00:00,Optimal Control and Dynamic System Optimization,False
+1301.0091,On the Robust Optimal Stopping Problem,http://arxiv.org/abs/1301.0091v10,2013-01-01 14:26:49+00:00,Optimal Control and Dynamic System Optimization,False

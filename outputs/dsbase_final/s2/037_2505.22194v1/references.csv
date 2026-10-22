@@ -1,0 +1,18 @@
+arxiv_id,title,url,date,category,cited_in_text
+2103.09301,Softermax: Hardware/Software Co-Design of an Efficient Softmax for Transformers,http://arxiv.org/abs/2103.09301v1,2021-03-16 20:04:09+00:00,Algorithm-Hardware Co-Design,True
+2403.14302,SpikingResformer: Bridging ResNet and Vision Transformer in Spiking Neural Networks,http://arxiv.org/abs/2403.14302v2,2024-03-21 11:16:42+00:00,ViT Architecture and Competitors,True
+2302.09108,ViTA: A Vision Transformer Inference Accelerator for Edge Applications,http://arxiv.org/abs/2302.09108v1,2023-02-17 19:35:36+00:00,Custom Hardware Implementation,True
+2206.10552,Vicinity Vision Transformer,http://arxiv.org/abs/2206.10552v2,2022-06-21 17:33:53+00:00,ViT Architecture and Competitors,True
+2503.03213,Convergence Rates for Softmax Gating Mixture of Experts,http://arxiv.org/abs/2503.03213v1,2025-03-05 06:11:24+00:00,Arithmetic Operation Complexity,True
+1805.02867,Online normalizer calculation for softmax,http://arxiv.org/abs/1805.02867v2,2018-05-08 07:34:17+00:00,Algorithm-Hardware Co-Design,True
+2108.01390,Evo-ViT: Slow-Fast Token Evolution for Dynamic Vision Transformer,http://arxiv.org/abs/2108.01390v5,2021-08-03 09:56:07+00:00,ViT Architecture and Competitors,True
+2402.04563,Attention Guided CAM: Visual Explanations of Vision Transformer Guided by Self-Attention,http://arxiv.org/abs/2402.04563v1,2024-02-07 03:43:56+00:00,ViT Architecture and Competitors,True
+1902.11269,Efficient Contextual Representation Learning Without Softmax Layer,http://arxiv.org/abs/1902.11269v1,2019-02-28 18:19:14+00:00,Self-Supervised Training Methods,True
+2005.14187,HAT: Hardware-Aware Transformers for Efficient Natural Language Processing,http://arxiv.org/abs/2005.14187v1,2020-05-28 17:58:56+00:00,Algorithm-Hardware Co-Design,True
+2310.05572,A Simple and Robust Framework for Cross-Modality Medical Image Segmentation applied to Vision Transformers,http://arxiv.org/abs/2310.05572v1,2023-10-09 09:51:44+00:00,ViT Architecture and Competitors,True
+2211.05109,ViTALiTy: Unifying Low-rank and Sparse Approximation for Vision Transformer Acceleration with a Linear Taylor Attention,http://arxiv.org/abs/2211.05109v1,2022-11-09 18:58:21+00:00,Algorithm-Hardware Co-Design,True
+2211.08110,HeatViT: Hardware-Efficient Adaptive Token Pruning for Vision Transformers,http://arxiv.org/abs/2211.08110v2,2022-11-15 13:00:43+00:00,Algorithm-Hardware Co-Design,True
+2103.04037,Perspectives and Prospects on Transformer Architecture for Cross-Modal Tasks with Language and Vision,http://arxiv.org/abs/2103.04037v2,2021-03-06 05:44:27+00:00,Self-Supervised Training Methods,True
+2310.14079,"To Copy, or not to Copy; That is a Critical Issue of the Output Softmax Layer in Neural Sequential Recommenders",http://arxiv.org/abs/2310.14079v1,2023-10-21 18:04:04+00:00,Mixed-Precision Techniques,True
+2210.09573,ViTCoD: Vision Transformer Acceleration via Dedicated Algorithm and Accelerator Co-Design,http://arxiv.org/abs/2210.09573v3,2022-10-18 04:07:23+00:00,Algorithm-Hardware Co-Design,False
+2205.01729,Pre-RTL DNN Hardware Evaluator With Fused Layer Support,http://arxiv.org/abs/2205.01729v1,2022-05-02 09:58:57+00:00,Hardware Acceleration Challenges,False

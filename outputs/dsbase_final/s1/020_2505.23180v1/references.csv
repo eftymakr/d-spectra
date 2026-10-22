@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2306.07233,Generative Plug and Play: Posterior Sampling for Inverse Problems,http://arxiv.org/abs/2306.07233v1,2023-06-12 16:49:08+00:00,PnP Methods and Their Limitations,False
+2204.13940,PnP-ReG: Learned Regularizing Gradient for Plug-and-Play Gradient Descent,http://arxiv.org/abs/2204.13940v3,2022-04-29 08:33:33+00:00,PnP Methods and Their Limitations,False
+2006.03224,Scalable Plug-and-Play ADMM with Convergence Guarantees,http://arxiv.org/abs/2006.03224v2,2020-06-05 04:10:15+00:00,PnP Methods and Their Limitations,False
+2404.13866,Plug-and-Play Algorithm Convergence Analysis From The Standpoint of Stochastic Differential Equation,http://arxiv.org/abs/2404.13866v1,2024-04-22 04:31:09+00:00,Convergence Analysis of PnP Algorithms,False
+2311.01216,Convergent plug-and-play with proximal denoiser and unconstrained regularization parameter,http://arxiv.org/abs/2311.01216v1,2023-11-02 13:18:39+00:00,Convergence Analysis of PnP Algorithms,False
+1801.00605,Scene-Adapted Plug-and-Play Algorithm with Guaranteed Convergence: Applications to Data Fusion in Imaging,http://arxiv.org/abs/1801.00605v1,2018-01-02 10:59:10+00:00,Convergence Analysis of PnP Algorithms,False
+2402.12872,"Deep, convergent, unrolled half-quadratic splitting for image deconvolution",http://arxiv.org/abs/2402.12872v2,2024-02-20 10:06:30+00:00,Unrolling Techniques and Their Advantages,False
+2412.11108,Plug-and-Play Priors as a Score-Based Method,http://arxiv.org/abs/2412.11108v1,2024-12-15 08:10:39+00:00,PnP Methods and Their Limitations,False
+2005.07685,Provable Convergence of Plug-and-Play Priors with MMSE denoisers,http://arxiv.org/abs/2005.07685v1,2020-05-15 17:55:03+00:00,Convergence Analysis of PnP Algorithms,False
+2105.05177,On Plug-and-Play Regularization using Linear Denoisers,http://arxiv.org/abs/2105.05177v1,2021-05-11 16:30:13+00:00,PnP Methods and Their Limitations,False
+2310.16869,Single-pixel imaging based on deep learning,http://arxiv.org/abs/2310.16869v2,2023-10-25 13:35:25+00:00,Deep Learning-Based SPI Approaches,False
+1912.10557,"Algorithm Unrolling: Interpretable, Efficient Deep Learning for Signal and Image Processing",http://arxiv.org/abs/1912.10557v3,2019-12-22 23:02:18+00:00,Unrolling Techniques and Their Advantages,False
+2312.16024,Plug-and-Play Regularization on Magnitude with Deep Priors for 3D Near-Field MIMO Imaging,http://arxiv.org/abs/2312.16024v2,2023-12-26 12:25:09+00:00,Deep Learning-Based SPI Approaches,False
+2109.01655,Instabilities in Plug-and-Play (PnP) algorithms from a learned denoiser,http://arxiv.org/abs/2109.01655v1,2021-08-17 05:55:34+00:00,PnP Methods and Their Limitations,False
+2309.16899,On the Contractivity of Plug-and-Play Operators,http://arxiv.org/abs/2309.16899v3,2023-09-28 23:58:02+00:00,Convergence Analysis of PnP Algorithms,True
+2202.02388,Bregman Plug-and-Play Priors,http://arxiv.org/abs/2202.02388v1,2022-02-04 21:00:55+00:00,PnP Methods and Their Limitations,False
+2301.13731,A relaxed proximal gradient descent algorithm for convergent plug-and-play with proximal denoiser,http://arxiv.org/abs/2301.13731v2,2023-01-31 16:11:47+00:00,PnP Methods and Their Limitations,False
+2410.02423,PnP-Flow: Plug-and-Play Image Restoration with Flow Matching,http://arxiv.org/abs/2410.02423v3,2024-10-03 12:13:56+00:00,PnP Methods and Their Limitations,False
+2502.11749,JotlasNet: Joint Tensor Low-Rank and Attention-based Sparse Unrolling Network for Accelerating Dynamic MRI,http://arxiv.org/abs/2502.11749v1,2025-02-17 12:43:04+00:00,Deep Unrolling for SPI Reconstruction,False
+2505.15318,Linear Convergence of Plug-and-Play Algorithms with Kernel Denoisers,http://arxiv.org/abs/2505.15318v1,2025-05-21 09:49:11+00:00,Convergence Analysis of PnP Algorithms,False
+2004.03145,Plug-and-play ISTA converges with kernel denoisers,http://arxiv.org/abs/2004.03145v2,2020-04-07 06:25:34+00:00,Convergence Analysis of PnP Algorithms,False
+2209.02854,Video Restoration with a Deep Plug-and-Play Prior,http://arxiv.org/abs/2209.02854v2,2022-09-06 23:31:20+00:00,Deep Plug-and-Play Priors for Video Restoration,True
+1706.08383,Hadamard single-pixel imaging versus Fourier single-pixel imaging,http://arxiv.org/abs/1706.08383v1,2017-06-26 14:09:25+00:00,Early SPI Methods and Iterative Algorithms,False
+2203.11156,Operator Sketching for Deep Unrolling Networks,http://arxiv.org/abs/2203.11156v3,2022-03-21 17:34:18+00:00,Operator Sketching for Deep Unrolling,True
+1905.05406,Plug-and-Play Methods Provably Converge with Properly Trained Denoisers,http://arxiv.org/abs/1905.05406v1,2019-05-14 06:12:42+00:00,Convergence Analysis of PnP Algorithms,True
+2303.12787,EPro-PnP: Generalized End-to-End Probabilistic Perspective-n-Points for Monocular Object Pose Estimation,http://arxiv.org/abs/2303.12787v3,2023-03-22 17:57:36+00:00,PnP Methods and Their Limitations,False
+2202.05820,Expectation Consistent Plug-and-Play for MRI,http://arxiv.org/abs/2202.05820v1,2022-02-11 18:32:15+00:00,PnP Methods and Their Limitations,False
+2008.11625,High-resolution Multi-spectral Imaging with Diffractive Lenses and Learned Reconstruction,http://arxiv.org/abs/2008.11625v3,2020-08-26 15:33:00+00:00,Deep Unrolling for SPI Reconstruction,False
+2008.04221,Deep learning for photoacoustic imaging: a survey,http://arxiv.org/abs/2008.04221v4,2020-08-10 15:53:30+00:00,Deep Learning-Based SPI Approaches,False
+2108.06637,Deep Algorithm Unrolling for Biomedical Imaging,http://arxiv.org/abs/2108.06637v1,2021-08-15 01:06:26+00:00,Unrolling Techniques and Their Advantages,False

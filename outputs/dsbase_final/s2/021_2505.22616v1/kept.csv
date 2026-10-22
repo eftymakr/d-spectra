@@ -1,0 +1,31 @@
+rank,arxiv_id,title,url,date
+1,1904.00830,Depth-Aware Video Frame Interpolation,http://arxiv.org/abs/1904.00830v1,2019-04-01 13:19:59+00:00
+2,2005.06684,W-Cell-Net: Multi-frame Interpolation of Cellular Microscopy Videos,http://arxiv.org/abs/2005.06684v1,2020-05-14 01:33:38+00:00
+3,2112.01161,Video Frame Interpolation without Temporal Priors,http://arxiv.org/abs/2112.01161v1,2021-12-02 12:13:56+00:00
+4,2210.01879,A Perceptual Quality Metric for Video Frame Interpolation,http://arxiv.org/abs/2210.01879v1,2022-10-04 19:56:10+00:00
+5,2206.10886,Optical Flow Regularization of Implicit Neural Representations for Video Frame Interpolation,http://arxiv.org/abs/2206.10886v1,2022-06-22 07:35:06+00:00
+6,2303.00050,Dynamic Multi-View Scene Reconstruction Using Neural Implicit Surface,http://arxiv.org/abs/2303.00050v1,2023-02-28 19:47:30+00:00
+7,2303.09508,LDMVFI: Video Frame Interpolation with Latent Diffusion Models,http://arxiv.org/abs/2303.09508v3,2023-03-16 17:24:41+00:00
+8,2206.13454,Optimizing Video Prediction via Video Frame Interpolation,http://arxiv.org/abs/2206.13454v1,2022-06-27 17:03:46+00:00
+9,2203.00137,Learning Cross-Video Neural Representations for High-Quality Frame Interpolation,http://arxiv.org/abs/2203.00137v1,2022-02-28 23:16:02+00:00
+10,2202.04901,FILM: Frame Interpolation for Large Motion,http://arxiv.org/abs/2202.04901v4,2022-02-10 08:48:18+00:00
+11,1906.05928,Unsupervised Video Interpolation Using Cycle Consistency,http://arxiv.org/abs/1906.05928v3,2019-06-13 21:04:10+00:00
+12,2303.02025,MAEVI: Motion Aware Event-Based Video Frame Interpolation,http://arxiv.org/abs/2303.02025v1,2023-03-03 15:44:00+00:00
+13,2503.22491,Coupled Video Frame Interpolation and Encoding with Hybrid Event Cameras for Low-Power High-Framerate Video,http://arxiv.org/abs/2503.22491v1,2025-03-28 14:55:12+00:00
+14,2210.06853,NeuralRoom: Geometry-Constrained Neural Implicit Surfaces for Indoor Scene Reconstruction,http://arxiv.org/abs/2210.06853v2,2022-10-13 09:04:22+00:00
+15,2210.08772,Signal Processing for Implicit Neural Representations,http://arxiv.org/abs/2210.08772v3,2022-10-17 06:29:07+00:00
+16,2207.12305,Error-Aware Spatial Ensembles for Video Frame Interpolation,http://arxiv.org/abs/2207.12305v1,2022-07-25 16:15:38+00:00
+17,2407.14066,360VFI: A Dataset and Benchmark for Omnidirectional Video Frame Interpolation,http://arxiv.org/abs/2407.14066v3,2024-07-19 06:50:24+00:00
+18,1708.01692,Video Frame Interpolation via Adaptive Separable Convolution,http://arxiv.org/abs/1708.01692v1,2017-08-05 00:18:03+00:00
+19,2111.13817,Video Frame Interpolation Transformer,http://arxiv.org/abs/2111.13817v3,2021-11-27 05:35:10+00:00
+20,2211.10791,AdaFNIO: Adaptive Fourier Neural Interpolation Operator for video frame interpolation,http://arxiv.org/abs/2211.10791v2,2022-11-19 20:30:47+00:00
+21,1703.07514,Video Frame Interpolation via Adaptive Convolution,http://arxiv.org/abs/1703.07514v1,2017-03-22 04:31:38+00:00
+22,2107.14735,Neural Relighting and Expression Transfer On Video Portraits,http://arxiv.org/abs/2107.14735v4,2021-07-30 16:20:45+00:00
+23,2310.06020,DyST: Towards Dynamic Neural Scene Representations on Real-World Videos,http://arxiv.org/abs/2310.06020v2,2023-10-09 18:00:01+00:00
+24,2210.00823,BVI-VFI: A Video Quality Database for Video Frame Interpolation,http://arxiv.org/abs/2210.00823v3,2022-10-03 11:15:05+00:00
+25,2201.10075,Splatting-based Synthesis for Video Frame Interpolation,http://arxiv.org/abs/2201.10075v2,2022-01-25 03:31:15+00:00
+26,2205.02079,SDF-based RGB-D Camera Tracking in Neural Scene Representations,http://arxiv.org/abs/2205.02079v1,2022-05-04 14:18:39+00:00
+27,2011.10379,Neural Scene Graphs for Dynamic Scenes,http://arxiv.org/abs/2011.10379v3,2020-11-20 12:37:10+00:00
+28,2306.12957,Siamese SIREN: Audio Compression with Implicit Neural Representations,http://arxiv.org/abs/2306.12957v1,2023-06-22 15:16:06+00:00
+29,1804.00884,PhaseNet for Video Frame Interpolation,http://arxiv.org/abs/1804.00884v1,2018-04-03 09:41:36+00:00
+30,1807.01462,Video Frame Interpolation by Plug-and-Play Deep Locally Linear Embedding,http://arxiv.org/abs/1807.01462v1,2018-07-04 06:49:03+00:00

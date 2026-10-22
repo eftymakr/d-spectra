@@ -1,0 +1,27 @@
+arxiv_id,title,url,date,category,cited_in_text
+1911.04654,Norm-Explicit Quantization: Improving Vector Quantization for Maximum Inner Product Search,http://arxiv.org/abs/1911.04654v2,2019-11-12 03:35:17+00:00,Efficient Indexing and Search Algorithms,True
+1812.06360,A Bandit Approach to Maximum Inner Product Search,http://arxiv.org/abs/1812.06360v1,2018-12-15 21:33:56+00:00,Adaptive and Scalable MIPS Solutions,True
+1405.5869,Asymmetric LSH (ALSH) for Sublinear Time Maximum Inner Product Search (MIPS),http://arxiv.org/abs/1405.5869v1,2014-05-22 19:42:57+00:00,Hashing and Approximate Nearest Neighbor Methods,True
+2309.09013,Bridging Dense and Sparse Maximum Inner Product Search,http://arxiv.org/abs/2309.09013v1,2023-09-16 14:52:28+00:00,Efficient Indexing and Search Algorithms,True
+1406.4966,Inner Product Similarity Search using Compositional Codes,http://arxiv.org/abs/1406.4966v2,2014-06-19 07:42:05+00:00,Adaptive and Scalable MIPS Solutions,True
+2301.10622,An Approximate Algorithm for Maximum Inner Product Search over Streaming Sparse Vectors,http://arxiv.org/abs/2301.10622v1,2023-01-25 15:01:00+00:00,Adaptive and Scalable MIPS Solutions,True
+1908.08656,Revisiting Wedge Sampling for Budgeted Maximum Inner Product Search,http://arxiv.org/abs/1908.08656v2,2019-08-23 04:05:25+00:00,Efficient Indexing and Search Algorithms,True
+2110.07131,Reverse Maximum Inner Product Search: How to efficiently find users who would like to buy my item?,http://arxiv.org/abs/2110.07131v1,2021-10-14 03:24:47+00:00,Efficient Indexing and Search Algorithms,True
+1909.13459,Understanding and Improving Proximity Graph based Maximum Inner Product Search,http://arxiv.org/abs/1909.13459v2,2019-09-30 05:12:49+00:00,Graph-Based MIPS Techniques,True
+1809.08782,Norm-Ranging LSH for Maximum Inner Product Search,http://arxiv.org/abs/1809.08782v2,2018-09-24 07:20:45+00:00,Hashing and Approximate Nearest Neighbor Methods,True
+1410.5410,Improved Asymmetric Locality Sensitive Hashing (ALSH) for Maximum Inner Product Search (MIPS),http://arxiv.org/abs/1410.5410v2,2014-10-20 19:54:58+00:00,Hashing and Approximate Nearest Neighbor Methods,True
+1509.01469,Quantization based Fast Inner Product Search,http://arxiv.org/abs/1509.01469v1,2015-09-04 14:43:11+00:00,Adaptive and Scalable MIPS Solutions,True
+2402.13858,Diversity-Aware $k$-Maximum Inner Product Search Revisited,http://arxiv.org/abs/2402.13858v1,2024-02-21 15:09:51+00:00,Efficient Indexing and Search Algorithms,False
+1202.6101,Maximum Inner-Product Search using Tree Data-structures,http://arxiv.org/abs/1202.6101v1,2012-02-28 01:32:01+00:00,Efficient Indexing and Search Algorithms,False
+2405.12207,Optimistic Query Routing in Clustering-based Approximate Maximum Inner Product Search,http://arxiv.org/abs/2405.12207v4,2024-05-20 17:47:18+00:00,Efficient Indexing and Search Algorithms,False
+1706.01449,To Index or Not to Index: Optimizing Exact Maximum Inner Product Search,http://arxiv.org/abs/1706.01449v3,2017-06-05 17:56:43+00:00,Efficient Indexing and Search Algorithms,False
+2410.18987,Point Cloud Synthesis Using Inner Product Transforms,http://arxiv.org/abs/2410.18987v5,2024-10-09 17:19:22+00:00,Adaptive and Scalable MIPS Solutions,False
+1610.03317,A Greedy Approach for Budgeted Maximum Inner Product Search,http://arxiv.org/abs/1610.03317v1,2016-10-11 13:10:48+00:00,Adaptive and Scalable MIPS Solutions,False
+2211.12751,SAH: Shifting-aware Asymmetric Hashing for Reverse $k$-Maximum Inner Product Search,http://arxiv.org/abs/2211.12751v1,2022-11-23 07:26:41+00:00,Hashing and Approximate Nearest Neighbor Methods,False
+2403.14479,Weak Carleson conditions in uniformly rectifiable metric spaces: the WCD and alpha numbers,http://arxiv.org/abs/2403.14479v3,2024-03-21 15:25:32+00:00,Data Topology and Its Impact on MIPS,False
+1701.05000,Angles between curves in metric measure spaces,http://arxiv.org/abs/1701.05000v1,2017-01-18 10:31:12+00:00,Adaptive and Scalable MIPS Solutions,False
+,Isoperimetric inequalities of euclidean type in metric spaces,http://arxiv.org/abs/math/0306089v1,2003-06-05 14:57:06+00:00,Euclidean Metric Reduction Methods,False
+,"Maximum entropy, fluctuations and priors",http://arxiv.org/abs/math-ph/0008017v1,2000-08-07 15:28:30+00:00,Adaptive and Scalable MIPS Solutions,False
+1812.05648,Euclidean distance degree of the multiview variety,http://arxiv.org/abs/1812.05648v1,2018-12-13 19:31:08+00:00,Euclidean Metric Reduction Methods,False
+2107.00216,Almost-Orthogonal Bases for Inner Product Polynomials,http://arxiv.org/abs/2107.00216v2,2021-07-01 04:55:58+00:00,Data Topology and Its Impact on MIPS,False
+2502.15660,The Euclidean $k$-Matching Problem is NP-hard,http://arxiv.org/abs/2502.15660v3,2025-02-21 18:30:53+00:00,Euclidean Metric Reduction Methods,False

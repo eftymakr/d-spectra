@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2407.10099,STGFormer: Spatio-Temporal GraphFormer for 3D Human Pose Estimation in Video,http://arxiv.org/abs/2407.10099v2,2024-07-14 06:45:27+00:00,Graph-Based Pose Estimation Models,True
+2304.14045,Interweaved Graph and Attention Network for 3D Human Pose Estimation,http://arxiv.org/abs/2304.14045v1,2023-04-27 09:21:15+00:00,Graph Convolutional Networks for Human Pose,True
+2401.16700,Towards Precise 3D Human Pose Estimation with Multi-Perspective Spatial-Temporal Relational Transformers,http://arxiv.org/abs/2401.16700v2,2024-01-30 03:00:25+00:00,Attention Mechanisms in Pose Estimation,True
+1609.05522,Learning camera viewpoint using CNN to improve 3D body pose estimation,http://arxiv.org/abs/1609.05522v1,2016-09-18 17:56:15+00:00,2D to 3D Reconstruction Methods,True
+2405.03055,Multi-hop graph transformer network for 3D human pose estimation,http://arxiv.org/abs/2405.03055v1,2024-05-05 21:29:20+00:00,Graph-Based Pose Estimation Models,True
+2103.16385,Graph Stacked Hourglass Networks for 3D Human Pose Estimation,http://arxiv.org/abs/2103.16385v1,2021-03-30 14:25:43+00:00,Graph Convolutional Networks for Human Pose,True
+1901.03798,3D Human Pose Machines with Self-supervised Learning,http://arxiv.org/abs/1901.03798v2,2019-01-12 04:55:26+00:00,2D to 3D Reconstruction Methods,True
+2305.05785,Regular Splitting Graph Network for 3D Human Pose Estimation,http://arxiv.org/abs/2305.05785v1,2023-05-09 22:13:04+00:00,Graph-Based Pose Estimation Models,True
+2505.01003,3D Human Pose Estimation via Spatial Graph Order Attention and Temporal Body Aware Transformer,http://arxiv.org/abs/2505.01003v1,2025-05-02 04:58:04+00:00,Graph-Based Pose Estimation Models,True
+2110.09554,TransFusion: Cross-view Fusion with Transformer for 3D Human Pose Estimation,http://arxiv.org/abs/2110.09554v3,2021-10-18 18:08:18+00:00,2D to 3D Reconstruction Methods,True
+1805.08315,Learning long-range spatial dependencies with horizontal gated-recurrent units,http://arxiv.org/abs/1805.08315v4,2018-05-21 22:52:25+00:00,Long-Range Dependency Modeling Challenges,True
+2003.11163,Fusing Wearable IMUs with Multi-View Images for Human Pose Estimation: A Geometric Approach,http://arxiv.org/abs/2003.11163v2,2020-03-25 00:26:54+00:00,2D to 3D Reconstruction Methods,True
+2107.11214,A3GC-IP: Attention-Oriented Adjacency Adaptive Recurrent Graph Convolutions for Human Pose Estimation from Sparse Inertial Measurements,http://arxiv.org/abs/2107.11214v4,2021-07-23 13:23:10+00:00,Graph Convolutional Networks for Human Pose,True
+2103.15534,An Adversarial Human Pose Estimation Network Injected with Graph Structure,http://arxiv.org/abs/2103.15534v2,2021-03-29 12:07:08+00:00,Graph-Based Pose Estimation Models,True
+2204.07878,3D Human Pose Estimation for Free-from and Moving Activities Using WiFi,http://arxiv.org/abs/2204.07878v1,2022-04-16 21:58:24+00:00,2D to 3D Reconstruction Methods,False
+2301.05175,Scene-Aware 3D Multi-Human Motion Capture from a Single Camera,http://arxiv.org/abs/2301.05175v3,2023-01-12 18:01:28+00:00,2D to 3D Reconstruction Methods,False
+1612.06524,3D Human Pose Estimation = 2D Pose Estimation + Matching,http://arxiv.org/abs/1612.06524v2,2016-12-20 06:45:49+00:00,2D to 3D Reconstruction Methods,False
+2010.10008,Towards Accurate Human Pose Estimation in Videos of Crowded Scenes,http://arxiv.org/abs/2010.10008v2,2020-10-16 13:19:11+00:00,Performance Evaluation on Benchmark Datasets,False
+1711.07399,V2V-PoseNet: Voxel-to-Voxel Prediction Network for Accurate 3D Hand and Human Pose Estimation from a Single Depth Map,http://arxiv.org/abs/1711.07399v3,2017-11-20 16:41:13+00:00,2D to 3D Reconstruction Methods,False
+2308.00628,Human-M3: A Multi-view Multi-modal Dataset for 3D Human Pose Estimation in Outdoor Scenes,http://arxiv.org/abs/2308.00628v2,2023-08-01 15:55:41+00:00,Performance Evaluation on Benchmark Datasets,False
+2406.16384,High-resolution open-vocabulary object 6D pose estimation,http://arxiv.org/abs/2406.16384v2,2024-06-24 07:53:46+00:00,Performance Evaluation on Benchmark Datasets,False
+2412.18883,MotionMap: Representing Multimodality in Human Pose Forecasting,http://arxiv.org/abs/2412.18883v2,2024-12-25 11:47:26+00:00,Performance Evaluation on Benchmark Datasets,False
+1611.09813,Monocular 3D Human Pose Estimation In The Wild Using Improved CNN Supervision,http://arxiv.org/abs/1611.09813v5,2016-11-29 20:03:19+00:00,Performance Evaluation on Benchmark Datasets,False
+2402.10077,Towards a large-scale fused and labeled dataset of human pose while interacting with robots in shared urban areas,http://arxiv.org/abs/2402.10077v1,2024-01-28 18:24:34+00:00,Performance Evaluation on Benchmark Datasets,False
+2412.06227,Attention-Enhanced Lightweight Hourglass Network for Human Pose Estimation,http://arxiv.org/abs/2412.06227v2,2024-12-09 06:02:07+00:00,Attention Mechanisms in Pose Estimation,False
+2501.09994,Multi-Modal Attention Networks for Enhanced Segmentation and Depth Estimation of Subsurface Defects in Pulse Thermography,http://arxiv.org/abs/2501.09994v1,2025-01-17 07:24:58+00:00,Performance Evaluation on Benchmark Datasets,False
+2505.13061,3D Visual Illusion Depth Estimation,http://arxiv.org/abs/2505.13061v4,2025-05-19 12:51:03+00:00,2D to 3D Reconstruction Methods,False
+2501.15648,Can Pose Transfer Models Generate Realistic Human Motion?,http://arxiv.org/abs/2501.15648v1,2025-01-26 19:17:05+00:00,Model Complexity and Noise Issues,False
+1702.00768,Scaling Properties of Human Brain Functional Networks,http://arxiv.org/abs/1702.00768v1,2017-02-02 18:01:07+00:00,Model Complexity and Noise Issues,False
+1106.5992,On the Dynamics of Human Proximity for Data Diffusion in Ad-Hoc Networks,http://arxiv.org/abs/1106.5992v1,2011-06-29 16:24:36+00:00,Model Complexity and Noise Issues,False

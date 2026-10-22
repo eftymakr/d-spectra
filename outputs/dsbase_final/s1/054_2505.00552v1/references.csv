@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2007.03383,RGCF: Refined Graph Convolution Collaborative Filtering with concise and expressive embedding,http://arxiv.org/abs/2007.03383v2,2020-07-07 12:26:10+00:00,Graph Convolutional Networks in Collaborative Filtering,True
+2107.04755,Beyond Low-pass Filtering: Graph Convolutional Networks with Automatic Filtering,http://arxiv.org/abs/2107.04755v3,2021-07-10 04:11:25+00:00,Spectral Graph Theory and Frequency Spectrum Cutoff,True
+2401.12590,PolyCF: Towards the Optimal Spectral Graph Filters for Collaborative Filtering,http://arxiv.org/abs/2401.12590v2,2024-01-23 09:45:49+00:00,Chebyshev Polynomial Approximation in Graph Filters,True
+2203.14748,"Universal Graph Filter Design based on Butterworth, Chebyshev and Elliptic Functions",http://arxiv.org/abs/2203.14748v1,2022-03-28 13:38:10+00:00,Non-Linear Graph Filtering Approaches,True
+1811.10435,On Filter Size in Graph Convolutional Networks,http://arxiv.org/abs/1811.10435v1,2018-11-23 13:45:30+00:00,Efficiency and Expressiveness of Graph Filters,True
+2412.01378,A Survey on Deep Neural Networks in Collaborative Filtering Recommendation Systems,http://arxiv.org/abs/2412.01378v1,2024-12-02 11:06:34+00:00,Comparative Analysis of Existing Methods,True
+2404.05962,Wasserstein Dependent Graph Attention Network for Collaborative Filtering with Uncertainty,http://arxiv.org/abs/2404.05962v2,2024-04-09 02:51:09+00:00,Comparative Analysis of Existing Methods,True
+2406.13996,Unifying Graph Convolution and Contrastive Learning in Collaborative Filtering,http://arxiv.org/abs/2406.13996v2,2024-06-20 04:50:28+00:00,Graph Convolutional Networks in Collaborative Filtering,True
+1411.2389,On Filter Banks and Wavelets Based on Chebyshev Polynomials,http://arxiv.org/abs/1411.2389v1,2014-11-10 11:46:51+00:00,Chebyshev Polynomial Approximation in Graph Filters,True
+1804.08891,A multi-level collaborative filtering method that improves recommendations,http://arxiv.org/abs/1804.08891v1,2018-04-24 08:20:45+00:00,Comparative Analysis of Existing Methods,True
+2004.14734,A Robust Hierarchical Graph Convolutional Network Model for Collaborative Filtering,http://arxiv.org/abs/2004.14734v1,2020-04-30 12:50:39+00:00,Graph Convolutional Networks in Collaborative Filtering,True
+2008.00240,On the filtered polynomial interpolation at Chebyshev nodes,http://arxiv.org/abs/2008.00240v1,2020-08-01 10:49:11+00:00,Chebyshev Polynomial Approximation in Graph Filters,False
+2105.06339,Graph Learning based Recommender Systems: A Review,http://arxiv.org/abs/2105.06339v1,2021-05-13 14:50:45+00:00,Comparative Analysis of Existing Methods,False
+1905.08108,Neural Graph Collaborative Filtering,http://arxiv.org/abs/1905.08108v2,2019-05-20 13:41:16+00:00,Graph Convolutional Networks in Collaborative Filtering,False
+2209.02544,XSimGCL: Towards Extremely Simple Graph Contrastive Learning for Recommendation,http://arxiv.org/abs/2209.02544v4,2022-09-06 14:50:51+00:00,Comparative Analysis of Existing Methods,False
+1911.03975,Graph Neural Net using Analytical Graph Filters and Topology Optimization for Image Denoising,http://arxiv.org/abs/1911.03975v2,2019-11-10 18:45:54+00:00,Spectral Graph Theory and Frequency Spectrum Cutoff,False
+1611.08706,Improved error bound for multivariate Chebyshev polynomial interpolation,http://arxiv.org/abs/1611.08706v1,2016-11-26 12:15:54+00:00,Chebyshev Polynomial Approximation in Graph Filters,False
+2403.16066,A Temporal Graph Network Framework for Dynamic Recommendation,http://arxiv.org/abs/2403.16066v2,2024-03-24 08:33:13+00:00,Raw Interaction History Utilization,False
+1910.00942,Keep It Simple: Graph Autoencoders Without Graph Convolutional Networks,http://arxiv.org/abs/1910.00942v1,2019-10-02 13:30:08+00:00,Comparative Analysis of Existing Methods,False
+2001.00846,Multi-Gradient Descent for Multi-Objective Recommender Systems,http://arxiv.org/abs/2001.00846v3,2019-12-09 19:56:08+00:00,Comparative Analysis of Existing Methods,False
+2103.06560,Heterogeneous Information Network-based Interest Composition with Graph Neural Network for Recommendation,http://arxiv.org/abs/2103.06560v3,2021-03-11 09:39:39+00:00,Comparative Analysis of Existing Methods,False
+2002.10306,Adaptive Propagation Graph Convolutional Network,http://arxiv.org/abs/2002.10306v3,2020-02-24 15:31:16+00:00,Neighborhood Aggregation Mechanisms,False
+2201.03158,Collaborative Reflection-Augmented Autoencoder Network for Recommender Systems,http://arxiv.org/abs/2201.03158v1,2022-01-10 04:36:15+00:00,Comparative Analysis of Existing Methods,False
+1511.04564,Multivariate polynomial interpolation on Lissajous-Chebyshev nodes,http://arxiv.org/abs/1511.04564v2,2015-11-14 14:32:55+00:00,Chebyshev Polynomial Approximation in Graph Filters,False
+2412.01376,Convolutional Transformer Neural Collaborative Filtering,http://arxiv.org/abs/2412.01376v1,2024-12-02 11:01:31+00:00,Graph Convolutional Networks in Collaborative Filtering,False
+1505.04648,Chebyshev Interpolation for Parametric Option Pricing,http://arxiv.org/abs/1505.04648v2,2015-05-18 14:08:55+00:00,Chebyshev Polynomial Approximation in Graph Filters,False
+1810.04282,Chebyshev Interpolation for Function in 1D,http://arxiv.org/abs/1810.04282v1,2018-09-24 19:21:10+00:00,Chebyshev Polynomial Approximation in Graph Filters,False
+1309.6908,A Collaborative Filtering Based Approach for Recommending Elective Courses,http://arxiv.org/abs/1309.6908v1,2013-09-26 14:15:07+00:00,Raw Interaction History Utilization,False
+2303.15532,Stance Inference in Twitter through Graph Convolutional Collaborative Filtering Networks with Minimal Supervision,http://arxiv.org/abs/2303.15532v2,2023-03-27 18:14:47+00:00,Graph Convolutional Networks in Collaborative Filtering,False
+1812.11422,Loss Aversion in Recommender Systems: Utilizing Negative User Preference to Improve Recommendation Quality,http://arxiv.org/abs/1812.11422v1,2018-12-29 18:49:13+00:00,Raw Interaction History Utilization,False

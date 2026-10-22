@@ -1,0 +1,31 @@
+rank,arxiv_id,title,url,date
+1,1912.10557,"Algorithm Unrolling: Interpretable, Efficient Deep Learning for Signal and Image Processing",http://arxiv.org/abs/1912.10557v3,2019-12-22 23:02:18+00:00
+2,2310.16869,Single-pixel imaging based on deep learning,http://arxiv.org/abs/2310.16869v2,2023-10-25 13:35:25+00:00
+3,2402.12872,"Deep, convergent, unrolled half-quadratic splitting for image deconvolution",http://arxiv.org/abs/2402.12872v2,2024-02-20 10:06:30+00:00
+4,1706.08383,Hadamard single-pixel imaging versus Fourier single-pixel imaging,http://arxiv.org/abs/1706.08383v1,2017-06-26 14:09:25+00:00
+5,2109.14025,Deep Unrolled Recovery in Sparse Biological Imaging,http://arxiv.org/abs/2109.14025v1,2021-09-28 20:22:44+00:00
+6,2306.12698,Interferometric lensless imaging: rank-one projections of image frequencies with speckle illuminations,http://arxiv.org/abs/2306.12698v3,2023-06-22 07:05:02+00:00
+7,1902.03493,Deep Algorithm Unrolling for Blind Image Deblurring,http://arxiv.org/abs/1902.03493v3,2019-02-09 21:19:35+00:00
+8,2008.11625,High-resolution Multi-spectral Imaging with Diffractive Lenses and Learned Reconstruction,http://arxiv.org/abs/2008.11625v3,2020-08-26 15:33:00+00:00
+9,1906.09807,Proximal Distilled Evolutionary Reinforcement Learning,http://arxiv.org/abs/1906.09807v4,2019-06-24 09:31:09+00:00
+10,2204.12833,Transfer Learning with Pre-trained Conditional Generative Models,http://arxiv.org/abs/2204.12833v3,2022-04-27 10:36:32+00:00
+11,2004.07064,Fully Automated Myocardial Strain Estimation from CMR Tagged Images using a Deep Learning Framework in the UK Biobank,http://arxiv.org/abs/2004.07064v1,2020-04-15 12:49:15+00:00
+12,1905.13613,Regression Networks for Meta-Learning Few-Shot Classification,http://arxiv.org/abs/1905.13613v2,2019-05-31 13:35:41+00:00
+13,1803.08691,Deep learning and its application to medical image segmentation,http://arxiv.org/abs/1803.08691v1,2018-03-23 08:55:10+00:00
+14,2108.06637,Deep Algorithm Unrolling for Biomedical Imaging,http://arxiv.org/abs/2108.06637v1,2021-08-15 01:06:26+00:00
+15,1804.08934,A Toeplitz-like operator with rational symbol having poles on the unit circle I: Fredholm properties,http://arxiv.org/abs/1804.08934v1,2018-04-24 09:54:15+00:00
+16,2002.04881,Learning Flat Latent Manifolds with VAEs,http://arxiv.org/abs/2002.04881v3,2020-02-12 09:54:52+00:00
+17,1904.13223,Unsupervised Representation Learning with Minimax Distance Measures,http://arxiv.org/abs/1904.13223v3,2019-04-27 16:13:08+00:00
+18,1705.05172,Emotion in Reinforcement Learning Agents and Robots: A Survey,http://arxiv.org/abs/1705.05172v1,2017-05-15 11:49:56+00:00
+19,2011.02656,A Sufficient condition for compactness of Hankel operators,http://arxiv.org/abs/2011.02656v2,2020-11-05 04:28:23+00:00
+20,2504.02480,Graph Attention-Driven Bayesian Deep Unrolling for Dual-Peak Single-Photon Lidar Imaging,http://arxiv.org/abs/2504.02480v2,2025-04-03 10:57:26+00:00
+21,2011.03712,DeepCFL: Deep Contextual Features Learning from a Single Image,http://arxiv.org/abs/2011.03712v1,2020-11-07 06:54:59+00:00
+22,2107.09957,Memorization in Deep Neural Networks: Does the Loss Function matter?,http://arxiv.org/abs/2107.09957v2,2021-07-21 09:08:51+00:00
+23,2110.10381,Medical Knowledge-Guided Deep Curriculum Learning for Elbow Fracture Diagnosis from X-Ray Images,http://arxiv.org/abs/2110.10381v1,2021-10-20 05:24:35+00:00
+24,1905.05461,Learning Generative Models across Incomparable Spaces,http://arxiv.org/abs/1905.05461v2,2019-05-14 08:56:12+00:00
+25,2008.04221,Deep learning for photoacoustic imaging: a survey,http://arxiv.org/abs/2008.04221v4,2020-08-10 15:53:30+00:00
+26,2007.01135,Student-Teacher Curriculum Learning via Reinforcement Learning: Predicting Hospital Inpatient Admission Location,http://arxiv.org/abs/2007.01135v1,2020-07-01 15:00:43+00:00
+27,2303.02304,Coupled Multiwavelet Neural Operator Learning for Coupled Partial Differential Equations,http://arxiv.org/abs/2303.02304v5,2023-03-04 03:06:47+00:00
+28,2302.04143,Predicting Thrombectomy Recanalization from CT Imaging Using Deep Learning Models,http://arxiv.org/abs/2302.04143v2,2023-02-08 15:41:21+00:00
+29,2306.04338,Changing Data Sources in the Age of Machine Learning for Official Statistics,http://arxiv.org/abs/2306.04338v1,2023-06-07 11:08:12+00:00
+30,2009.08438,Competitiveness of MAP-Elites against Proximal Policy Optimization on locomotion tasks in deterministic simulations,http://arxiv.org/abs/2009.08438v2,2020-09-17 17:41:46+00:00

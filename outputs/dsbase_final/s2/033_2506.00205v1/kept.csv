@@ -1,0 +1,31 @@
+rank,arxiv_id,title,url,date
+1,2203.14544,Gradient-Matching Coresets for Rehearsal-Based Continual Learning,http://arxiv.org/abs/2203.14544v1,2022-03-28 07:37:17+00:00
+2,2010.04003,A Theoretical Analysis of Catastrophic Forgetting through the NTK Overlap Matrix,http://arxiv.org/abs/2010.04003v2,2020-10-07 17:35:31+00:00
+3,1708.02072,Measuring Catastrophic Forgetting in Neural Networks,http://arxiv.org/abs/1708.02072v4,2017-08-07 11:18:43+00:00
+4,2007.07400,Anatomy of Catastrophic Forgetting: Hidden Representations and Task Semantics,http://arxiv.org/abs/2007.07400v1,2020-07-14 23:31:14+00:00
+5,2306.10181,Catastrophic Forgetting in the Context of Model Updates,http://arxiv.org/abs/2306.10181v1,2023-06-16 21:21:41+00:00
+6,2203.17269,A Closer Look at Rehearsal-Free Continual Learning,http://arxiv.org/abs/2203.17269v2,2022-03-31 17:59:00+00:00
+7,2105.07385,Statistical Mechanical Analysis of Catastrophic Forgetting in Continual Learning with Teacher and Student Networks,http://arxiv.org/abs/2105.07385v1,2021-05-16 09:02:48+00:00
+8,2505.21942,Continual Learning Beyond Experience Rehearsal and Full Model Surrogates,http://arxiv.org/abs/2505.21942v1,2025-05-28 03:52:34+00:00
+9,2402.08096,An Efficient Rehearsal Scheme for Catastrophic Forgetting Mitigation during Multi-stage Fine-tuning,http://arxiv.org/abs/2402.08096v3,2024-02-12 22:32:12+00:00
+10,2004.14046,Reducing catastrophic forgetting with learning on synthetic data,http://arxiv.org/abs/2004.14046v1,2020-04-29 09:45:06+00:00
+11,1801.01423,Overcoming catastrophic forgetting with hard attention to the task,http://arxiv.org/abs/1801.01423v3,2018-01-04 16:22:22+00:00
+12,2303.02954,Centroid Distance Distillation for Effective Rehearsal in Continual Learning,http://arxiv.org/abs/2303.02954v1,2023-03-06 07:54:37+00:00
+13,2410.10521,Continual Deep Reinforcement Learning to Prevent Catastrophic Forgetting in Jamming Mitigation,http://arxiv.org/abs/2410.10521v1,2024-10-14 14:00:32+00:00
+14,1904.07734,Three scenarios for continual learning,http://arxiv.org/abs/1904.07734v1,2019-04-15 12:22:36+00:00
+15,2308.10328,A Comprehensive Empirical Evaluation on Online Continual Learning,http://arxiv.org/abs/2308.10328v3,2023-08-20 17:52:02+00:00
+16,2206.07932,Lifelong Wandering: A realistic few-shot online continual learning setting,http://arxiv.org/abs/2206.07932v1,2022-06-16 05:39:08+00:00
+17,1904.10644,Facilitating Bayesian Continual Learning by Natural Gradients and Stein Gradients,http://arxiv.org/abs/1904.10644v1,2019-04-24 05:18:32+00:00
+18,2110.11526,Wide Neural Networks Forget Less Catastrophically,http://arxiv.org/abs/2110.11526v3,2021-10-21 23:49:23+00:00
+19,2104.07446,Rehearsal revealed: The limits and merits of revisiting samples in continual learning,http://arxiv.org/abs/2104.07446v1,2021-04-15 13:28:14+00:00
+20,2001.01578,Dissecting Catastrophic Forgetting in Continual Learning by Deep Visualization,http://arxiv.org/abs/2001.01578v2,2020-01-06 13:49:32+00:00
+21,2011.06220,"Artificial Neural Variability for Deep Learning: On Overfitting, Noise Memorization, and Catastrophic Forgetting",http://arxiv.org/abs/2011.06220v3,2020-11-12 06:06:33+00:00
+22,1905.12588,Meta-Learning Representations for Continual Learning,http://arxiv.org/abs/1905.12588v2,2019-05-29 17:09:31+00:00
+23,2406.09384,Reflecting on the State of Rehearsal-free Continual Learning with Pretrained Models,http://arxiv.org/abs/2406.09384v2,2024-06-13 17:57:10+00:00
+24,2405.04101,Continual Learning in the Presence of Repetition,http://arxiv.org/abs/2405.04101v2,2024-05-07 08:15:48+00:00
+25,1812.02464,Pseudo-Rehearsal: Achieving Deep Reinforcement Learning without Catastrophic Forgetting,http://arxiv.org/abs/1812.02464v6,2018-12-06 11:20:18+00:00
+26,2004.13414,Pseudo Rehearsal using non photo-realistic images,http://arxiv.org/abs/2004.13414v1,2020-04-28 10:44:57+00:00
+27,2009.04381,Routing Networks with Co-training for Continual Learning,http://arxiv.org/abs/2009.04381v1,2020-09-09 15:58:51+00:00
+28,2312.17210,Continual Learning via Sequential Function-Space Variational Inference,http://arxiv.org/abs/2312.17210v1,2023-12-28 18:44:32+00:00
+29,2005.01004,Explaining How Deep Neural Networks Forget by Deep Visualization,http://arxiv.org/abs/2005.01004v3,2020-05-03 06:44:38+00:00
+30,2211.14177,Overcoming Catastrophic Forgetting by XAI,http://arxiv.org/abs/2211.14177v1,2022-11-25 15:32:07+00:00

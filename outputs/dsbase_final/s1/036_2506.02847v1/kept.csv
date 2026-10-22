@@ -1,0 +1,25 @@
+rank,arxiv_id,title,url,date
+1,2412.12178,Activation Sparsity Opportunities for Compressing General Large Language Models,http://arxiv.org/abs/2412.12178v2,2024-12-13 02:26:54+00:00
+2,2502.15816,GenAI at the Edge: Comprehensive Survey on Empowering Edge Devices,http://arxiv.org/abs/2502.15816v1,2025-02-19 20:43:14+00:00
+3,2402.14800,Not All Experts are Equal: Efficient Expert Pruning and Skipping for Mixture-of-Experts Large Language Models,http://arxiv.org/abs/2402.14800v2,2024-02-22 18:56:07+00:00
+4,2406.01698,Demystifying AI Platform Design for Distributed Inference of Next-Generation LLM models,http://arxiv.org/abs/2406.01698v3,2024-06-03 18:00:50+00:00
+5,2110.00478,SECDA: Efficient Hardware/Software Co-Design of FPGA-based DNN Accelerators for Edge Inference,http://arxiv.org/abs/2110.00478v1,2021-10-01 15:20:29+00:00
+6,2205.15437,AMED: Automatic Mixed-Precision Quantization for Edge Devices,http://arxiv.org/abs/2205.15437v2,2022-05-30 21:23:22+00:00
+7,2410.04466,Large Language Model Inference Acceleration: A Comprehensive Hardware Perspective,http://arxiv.org/abs/2410.04466v4,2024-10-06 12:42:04+00:00
+8,2410.00531,TPI-LLM: Serving 70B-scale LLMs Efficiently on Low-resource Edge Devices,http://arxiv.org/abs/2410.00531v1,2024-10-01 09:18:56+00:00
+9,2505.03745,AccLLM: Accelerating Long-Context LLM Inference Via Algorithm-Hardware Co-Design,http://arxiv.org/abs/2505.03745v1,2025-04-07 02:52:30+00:00
+10,2302.00282,Xenos: Dataflow-Centric Optimization to Accelerate Model Inference on Edge Devices,http://arxiv.org/abs/2302.00282v1,2023-02-01 07:25:08+00:00
+11,2504.08242,Jupiter: Fast and Resource-Efficient Collaborative Inference of Generative LLMs on Edge Devices,http://arxiv.org/abs/2504.08242v1,2025-04-11 03:58:59+00:00
+12,2408.00462,Designing Efficient LLM Accelerators for Edge Devices,http://arxiv.org/abs/2408.00462v1,2024-08-01 11:06:05+00:00
+13,2402.12065,WKVQuant: Quantizing Weight and Key/Value Cache for Large Language Models Gains More,http://arxiv.org/abs/2402.12065v2,2024-02-19 11:33:21+00:00
+14,2305.14019,ChipGPT: How far are we from natural language hardware design,http://arxiv.org/abs/2305.14019v4,2023-05-23 12:54:02+00:00
+15,2309.02144,Making Large Language Models Better Reasoners with Alignment,http://arxiv.org/abs/2309.02144v1,2023-09-05 11:32:48+00:00
+16,2412.05830,Large Language Models Merging for Enhancing the Link Stealing Attack on Graph Neural Networks,http://arxiv.org/abs/2412.05830v1,2024-12-08 06:37:05+00:00
+17,2402.11651,Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents,http://arxiv.org/abs/2402.11651v2,2024-02-18 17:10:07+00:00
+18,2104.02251,Being-ahead: Benchmarking and Exploring Accelerators for Hardware-Efficient AI Deployment,http://arxiv.org/abs/2104.02251v1,2021-04-06 02:33:20+00:00
+19,2402.05964,A Survey on Transformer Compression,http://arxiv.org/abs/2402.05964v2,2024-02-05 12:16:28+00:00
+20,2210.05476,Medha: Microcoded Hardware Accelerator for computing on Encrypted Data,http://arxiv.org/abs/2210.05476v2,2022-10-11 14:21:54+00:00
+21,1801.06027,In-RDBMS Hardware Acceleration of Advanced Analytics,http://arxiv.org/abs/1801.06027v2,2018-01-08 19:04:13+00:00
+22,2407.01505,Self-Cognition in Large Language Models: An Exploratory Study,http://arxiv.org/abs/2407.01505v1,2024-07-01 17:52:05+00:00
+23,2305.03715,Large Language Models in Ambulatory Devices for Home Health Diagnostics: A case study of Sickle Cell Anemia Management,http://arxiv.org/abs/2305.03715v1,2023-05-05 17:55:49+00:00
+24,2306.14152,Low-Rank Prune-And-Factorize for Language Model Compression,http://arxiv.org/abs/2306.14152v1,2023-06-25 07:38:43+00:00

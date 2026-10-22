@@ -1,0 +1,31 @@
+rank,arxiv_id,title,url,date
+1,2502.03502,DC-VSR: Spatially and Temporally Consistent Video Super-Resolution with Video Diffusion Prior,http://arxiv.org/abs/2502.03502v2,2025-02-05 10:15:00+00:00
+2,2502.07381,Spatial Degradation-Aware and Temporal Consistent Diffusion Model for Compressed Video Super-Resolution,http://arxiv.org/abs/2502.07381v3,2025-02-11 08:57:45+00:00
+3,2501.02976,STAR: Spatial-Temporal Augmentation with Text-to-Video Models for Real-World Video Super-Resolution,http://arxiv.org/abs/2501.02976v1,2025-01-06 12:36:21+00:00
+4,2311.15908,Enhancing Perceptual Quality in Video Super-Resolution through Temporally-Consistent Detail Synthesis using Diffusion Models,http://arxiv.org/abs/2311.15908v2,2023-11-27 15:14:38+00:00
+5,2312.00853,Motion-Guided Latent Diffusion for Temporally Consistent Real-world Video Super-resolution,http://arxiv.org/abs/2312.00853v2,2023-12-01 14:40:07+00:00
+6,2401.10404,Inflation with Diffusion: Efficient Temporal Adaptation for Text-to-Video Super-Resolution,http://arxiv.org/abs/2401.10404v1,2024-01-18 22:25:16+00:00
+7,2211.01639,Temporal Consistency Learning of inter-frames for Video Super-Resolution,http://arxiv.org/abs/2211.01639v1,2022-11-03 08:23:57+00:00
+8,2008.05765,Revisiting Temporal Modeling for Video Super-resolution,http://arxiv.org/abs/2008.05765v2,2020-08-13 09:09:37+00:00
+9,2208.11608,Sliding Window Recurrent Network for Efficient Video Super-Resolution,http://arxiv.org/abs/2208.11608v1,2022-08-24 15:23:44+00:00
+10,2304.04421,Local-Global Temporal Difference Learning for Satellite Video Super-Resolution,http://arxiv.org/abs/2304.04421v3,2023-04-10 07:04:40+00:00
+11,1807.07930,Perceptual Video Super Resolution with Enhanced Temporal Consistency,http://arxiv.org/abs/1807.07930v2,2018-07-20 16:39:15+00:00
+12,2201.12288,VRT: A Video Restoration Transformer,http://arxiv.org/abs/2201.12288v2,2022-01-28 17:54:43+00:00
+13,2212.11187,Similarity Contrastive Estimation for Image and Video Soft Contrastive Self-Supervised Learning,http://arxiv.org/abs/2212.11187v1,2022-12-21 16:56:55+00:00
+14,2104.07473,Zooming SlowMo: An Efficient One-Stage Framework for Space-Time Video Super-Resolution,http://arxiv.org/abs/2104.07473v1,2021-04-15 17:59:23+00:00
+15,2403.17000,Learning Spatial Adaptation and Temporal Coherence in Diffusion Models for Video Super-Resolution,http://arxiv.org/abs/2403.17000v1,2024-03-25 17:59:26+00:00
+16,2108.08305,Temporal Kernel Consistency for Blind Video Super-Resolution,http://arxiv.org/abs/2108.08305v1,2021-08-18 13:09:38+00:00
+17,2201.11632,Deep Video Prior for Video Consistency and Propagation,http://arxiv.org/abs/2201.11632v1,2022-01-27 16:38:52+00:00
+18,2401.14641,Super Efficient Neural Network for Compression Artifacts Reduction and Super Resolution,http://arxiv.org/abs/2401.14641v1,2024-01-26 04:11:14+00:00
+19,2503.03355,Rethinking Video Super-Resolution: Towards Diffusion-Based Methods without Motion Alignment,http://arxiv.org/abs/2503.03355v5,2025-03-05 10:37:51+00:00
+20,2103.10081,Self-Supervised Adaptation for Video Super-Resolution,http://arxiv.org/abs/2103.10081v1,2021-03-18 08:30:24+00:00
+21,2412.18933,Temporal Inconsistency Guidance for Super-resolution Video Quality Assessment,http://arxiv.org/abs/2412.18933v2,2024-12-25 15:43:41+00:00
+22,2010.12609,Iterative Graph Self-Distillation,http://arxiv.org/abs/2010.12609v3,2020-10-23 18:37:06+00:00
+23,2106.03839,NTIRE 2021 Challenge on Burst Super-Resolution: Methods and Results,http://arxiv.org/abs/2106.03839v1,2021-06-07 17:55:28+00:00
+24,2006.08967,Robot Perception enables Complex Navigation Behavior via Self-Supervised Learning,http://arxiv.org/abs/2006.08967v1,2020-06-16 07:45:47+00:00
+25,1901.09005,Revisiting Self-Supervised Visual Representation Learning,http://arxiv.org/abs/1901.09005v1,2019-01-25 18:08:31+00:00
+26,2011.09634,Watch and Learn: Mapping Language and Noisy Real-world Videos with Self-supervision,http://arxiv.org/abs/2011.09634v2,2020-11-19 03:43:56+00:00
+27,2012.13083,Self-Supervised Representation Learning for Astronomical Images,http://arxiv.org/abs/2012.13083v2,2020-12-24 03:25:36+00:00
+28,2312.02246,Conditional Variational Diffusion Models,http://arxiv.org/abs/2312.02246v4,2023-12-04 14:45:56+00:00
+29,1709.06342,Assessing Visual Quality of Omnidirectional Videos,http://arxiv.org/abs/1709.06342v4,2017-09-19 10:54:24+00:00
+30,2408.08455,SuperNANO: Enabling Nano-Scale Laser an-ti-counterfeiting Marking and Precision Cutting with Super-Resolution Imaging,http://arxiv.org/abs/2408.08455v1,2024-08-15 23:39:43+00:00

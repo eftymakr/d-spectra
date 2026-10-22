@@ -1,0 +1,14 @@
+arxiv_id,title,url,date,category,cited_in_text
+2306.02267,Proteus: Simulating the Performance of Distributed DNN Training,http://arxiv.org/abs/2306.02267v1,2023-06-04 05:47:32+00:00,Performance Modeling in LLM Training,True
+1904.09538,A mechanism for balancing accuracy and scope in cross-machine black-box GPU performance modeling,http://arxiv.org/abs/1904.09538v3,2019-04-21 03:50:20+00:00,High-Performance Computing (HPC) Models,True
+2410.02425,LLM-Pilot: Characterize and Optimize Performance of your LLM Inference Services,http://arxiv.org/abs/2410.02425v1,2024-10-03 12:19:06+00:00,GPU Utilization and Performance Analysis,True
+2007.03970,Distributed Training of Deep Learning Models: A Taxonomic Perspective,http://arxiv.org/abs/2007.03970v1,2020-07-08 08:56:58+00:00,Distributed Training Optimization Techniques,True
+2310.16122,A Performance-Portable SYCL Implementation of CRK-HACC for Exascale,http://arxiv.org/abs/2310.16122v1,2023-10-24 18:52:24+00:00,High-Performance Computing (HPC) Models,True
+2406.00552,Graph Neural Network Training Systems: A Performance Comparison of Full-Graph and Mini-Batch,http://arxiv.org/abs/2406.00552v4,2024-06-01 21:07:24+00:00,Distributed Training Optimization Techniques,True
+1712.01887,Deep Gradient Compression: Reducing the Communication Bandwidth for Distributed Training,http://arxiv.org/abs/1712.01887v3,2017-12-05 19:48:11+00:00,Distributed Training Optimization Techniques,True
+2409.16005,Bridging Speech and Text: Enhancing ASR with Pinyin-to-Character Pre-training in LLMs,http://arxiv.org/abs/2409.16005v1,2024-09-24 12:06:31+00:00,Post-Training Techniques for LLMs,True
+2209.12769,Optimizing DNN Compilation for Distributed Training with Joint OP and Tensor Fusion,http://arxiv.org/abs/2209.12769v1,2022-09-26 15:27:14+00:00,Distributed Training Optimization Techniques,False
+1204.1373,Spectra: Robust Estimation of Distribution Functions in Networks,http://arxiv.org/abs/1204.1373v1,2012-04-05 22:53:35+00:00,Communication Efficiency in Distributed Systems,False
+2409.13313,Performance Enhancement of the Ozaki Scheme on Integer Matrix Multiplication Unit,http://arxiv.org/abs/2409.13313v1,2024-09-20 08:15:42+00:00,GPU Utilization and Performance Analysis,False
+2502.21321,LLM Post-Training: A Deep Dive into Reasoning Large Language Models,http://arxiv.org/abs/2502.21321v2,2025-02-28 18:59:54+00:00,Post-Training Techniques for LLMs,True
+1808.04357,RedSync : Reducing Synchronization Traffic for Distributed Deep Learning,http://arxiv.org/abs/1808.04357v3,2018-08-13 19:02:47+00:00,Communication Efficiency in Distributed Systems,True

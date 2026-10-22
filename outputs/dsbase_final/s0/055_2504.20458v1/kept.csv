@@ -1,0 +1,17 @@
+rank,arxiv_id,title,url,date
+1,2405.17740,MobileConvRec: A Conversational Dataset for Mobile Apps Recommendations,http://arxiv.org/abs/2405.17740v1,2024-05-28 01:53:16+00:00
+2,2112.05197,Self-Supervised Bot Play for Conversational Recommendation with Justifications,http://arxiv.org/abs/2112.05197v1,2021-12-09 20:07:41+00:00
+3,2112.08140,Improving Conversational Recommendation Systems' Quality with Context-Aware Item Meta Information,http://arxiv.org/abs/2112.08140v1,2021-12-15 14:12:48+00:00
+4,2405.14249,Identifying Breakdowns in Conversational Recommender Systems using User Simulation,http://arxiv.org/abs/2405.14249v1,2024-05-23 07:28:26+00:00
+5,2309.03645,VideolandGPT: A User Study on a Conversational Recommender System,http://arxiv.org/abs/2309.03645v1,2023-09-07 11:24:47+00:00
+6,2109.07576,"""It doesn't look good for a date"": Transforming Critiques into Preferences for Conversational Recommendation Systems",http://arxiv.org/abs/2109.07576v1,2021-09-15 21:10:33+00:00
+7,1708.04378,Towards Learning Reward Functions from User Interactions,http://arxiv.org/abs/1708.04378v1,2017-08-15 01:53:12+00:00
+8,2312.06145,Proxy-based Item Representation for Attribute and Context-aware Recommendation,http://arxiv.org/abs/2312.06145v1,2023-12-11 06:22:34+00:00
+9,2203.16942,Sequential Recommendation with User Evolving Preference Decomposition,http://arxiv.org/abs/2203.16942v1,2022-03-31 10:57:59+00:00
+10,1904.07854,End-to-End Robotic Reinforcement Learning without Reward Engineering,http://arxiv.org/abs/1904.07854v2,2019-04-16 17:59:23+00:00
+11,2306.14462,Multi-task Item-attribute Graph Pre-training for Strict Cold-start Item Recommendation,http://arxiv.org/abs/2306.14462v1,2023-06-26 07:04:47+00:00
+12,2301.01737,Episodes Discovery Recommendation with Multi-Source Augmentations,http://arxiv.org/abs/2301.01737v2,2023-01-04 18:10:26+00:00
+13,2209.13422,Efficient On-Device Session-Based Recommendation,http://arxiv.org/abs/2209.13422v4,2022-09-27 14:23:08+00:00
+14,2402.09872,Social Reward: Evaluating and Enhancing Generative AI through Million-User Feedback from an Online Creative Community,http://arxiv.org/abs/2402.09872v1,2024-02-15 10:56:31+00:00
+15,2203.13553,Preprocessing Reward Functions for Interpretability,http://arxiv.org/abs/2203.13553v1,2022-03-25 10:19:35+00:00
+16,1806.02056,Learning Hierarchical Item Categories from Implicit Feedback Data for Efficient Recommendations and Browsing,http://arxiv.org/abs/1806.02056v2,2018-06-06 08:25:58+00:00

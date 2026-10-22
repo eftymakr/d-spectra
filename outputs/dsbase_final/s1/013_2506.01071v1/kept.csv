@@ -1,0 +1,26 @@
+rank,arxiv_id,title,url,date
+1,2111.13998,Targeted Supervised Contrastive Learning for Long-Tailed Recognition,http://arxiv.org/abs/2111.13998v2,2021-11-27 22:40:10+00:00
+2,2305.01160,Long-Tailed Recognition by Mutual Information Maximization between Latent Features and Ground-Truth Labels,http://arxiv.org/abs/2305.01160v3,2023-05-02 02:29:18+00:00
+3,2306.15925,Subclass-balancing Contrastive Learning for Long-tailed Recognition,http://arxiv.org/abs/2306.15925v2,2023-06-28 05:08:43+00:00
+4,2207.09052,Balanced Contrastive Learning for Long-Tailed Visual Recognition,http://arxiv.org/abs/2207.09052v3,2022-07-19 03:48:59+00:00
+5,2206.01010,Long-tailed Recognition by Learning from Latent Categories,http://arxiv.org/abs/2206.01010v3,2022-06-02 12:19:51+00:00
+6,2403.06151,Decoupled Contrastive Learning for Long-Tailed Recognition,http://arxiv.org/abs/2403.06151v1,2024-03-10 09:46:28+00:00
+7,2309.16135,A dual-branch model with inter- and intra-branch contrastive loss for long-tailed recognition,http://arxiv.org/abs/2309.16135v1,2023-09-28 03:31:11+00:00
+8,2211.11938,Supervised Contrastive Learning on Blended Images for Long-tailed Recognition,http://arxiv.org/abs/2211.11938v1,2022-11-22 01:19:00+00:00
+9,2407.04911,Enhanced Long-Tailed Recognition with Contrastive CutMix Augmentation,http://arxiv.org/abs/2407.04911v1,2024-07-06 01:31:49+00:00
+10,2410.06109,Continuous Contrastive Learning for Long-Tailed Semi-Supervised Recognition,http://arxiv.org/abs/2410.06109v1,2024-10-08 15:06:10+00:00
+11,2403.06726,Probabilistic Contrastive Learning for Long-Tailed Visual Recognition,http://arxiv.org/abs/2403.06726v2,2024-03-11 13:44:49+00:00
+12,2009.12991,Long-Tailed Classification by Keeping the Good and Removing the Bad Momentum Causal Effect,http://arxiv.org/abs/2009.12991v5,2020-09-28 00:32:11+00:00
+13,2406.02223,SMCL: Saliency Masked Contrastive Learning for Long-tailed Recognition,http://arxiv.org/abs/2406.02223v1,2024-06-04 11:33:40+00:00
+14,2007.10740,Balanced Meta-Softmax for Long-Tailed Visual Recognition,http://arxiv.org/abs/2007.10740v3,2020-07-21 12:05:00+00:00
+15,2207.00391,A Theoretical Analysis of the Learning Dynamics under Class Imbalance,http://arxiv.org/abs/2207.00391v4,2022-07-01 12:54:38+00:00
+16,1810.12513,Weak-supervision for Deep Representation Learning under Class Imbalance,http://arxiv.org/abs/1810.12513v1,2018-10-30 03:37:09+00:00
+17,2004.03706,Long-Tailed Recognition Using Class-Balanced Experts,http://arxiv.org/abs/2004.03706v2,2020-04-07 20:57:44+00:00
+18,2207.01160,Partial and Asymmetric Contrastive Learning for Out-of-Distribution Detection in Long-Tailed Recognition,http://arxiv.org/abs/2207.01160v1,2022-07-04 01:53:07+00:00
+19,2312.11939,Time-Series Contrastive Learning against False Negatives and Class Imbalance,http://arxiv.org/abs/2312.11939v2,2023-12-19 08:38:03+00:00
+20,2207.09504,Invariant Feature Learning for Generalized Long-Tailed Classification,http://arxiv.org/abs/2207.09504v3,2022-07-19 18:27:42+00:00
+21,2302.09195,Data-Efficient Contrastive Self-supervised Learning: Most Beneficial Examples for Supervised Learning Contribute the Least,http://arxiv.org/abs/2302.09195v5,2023-02-18 00:15:06+00:00
+22,2505.13784,Transfer Learning from Visual Speech Recognition to Mouthing Recognition in German Sign Language,http://arxiv.org/abs/2505.13784v2,2025-05-20 00:15:51+00:00
+23,2011.02803,Intriguing Properties of Contrastive Losses,http://arxiv.org/abs/2011.02803v3,2020-11-05 13:19:48+00:00
+24,2008.05524,Mitigating Dataset Imbalance via Joint Generation and Classification,http://arxiv.org/abs/2008.05524v1,2020-08-12 18:40:38+00:00
+25,1909.02410,Semantic-Aware Scene Recognition,http://arxiv.org/abs/1909.02410v3,2019-09-05 13:44:03+00:00

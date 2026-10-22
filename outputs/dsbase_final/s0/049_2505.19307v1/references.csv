@@ -1,0 +1,19 @@
+arxiv_id,title,url,date,category,cited_in_text
+2404.09473,Exploring the Nexus Between Retrievability and Query Generation Strategies,http://arxiv.org/abs/2404.09473v1,2024-04-15 05:56:13+00:00,Comparative Analysis of Synthetic vs. Labeled Data in Retrieval,True
+2407.19829,Generative Retrieval with Preference Optimization for E-commerce Search,http://arxiv.org/abs/2407.19829v2,2024-07-29 09:31:19+00:00,Direct Preference Optimization (DPO) for Query Generation,False
+2111.13057,Evaluating the Robustness of Retrieval Pipelines with Query Variation Generators,http://arxiv.org/abs/2111.13057v3,2021-11-25 12:39:51+00:00,Quality Variability in Synthetic Queries and Its Impact on Retrieval,False
+2412.00657,Improving Vietnamese Legal Document Retrieval using Synthetic Data,http://arxiv.org/abs/2412.00657v1,2024-12-01 03:28:26+00:00,Synthetic Query Generation as an Alternative to Labeled Data,True
+2102.11903,Neural ranking models for document retrieval,http://arxiv.org/abs/2102.11903v2,2021-02-23 19:30:37+00:00,Neural Retrieval Models and Their Training Requirements,False
+2404.07220,Blended RAG: Improving RAG (Retriever-Augmented Generation) Accuracy with Semantic Search and Hybrid Query-Based Retrievers,http://arxiv.org/abs/2404.07220v2,2024-03-22 17:13:46+00:00,Semantic Query Expansion and Reranking Methods,False
+2412.15453,Northeastern Uni at Multilingual Counterspeech Generation: Enhancing Counter Speech Generation with LLM Alignment through Direct Preference Optimization,http://arxiv.org/abs/2412.15453v1,2024-12-19 23:22:11+00:00,DPO Applications in Preference Alignment and LLM Training,True
+1401.6891,Unsupervised Visual and Textual Information Fusion in Multimedia Retrieval - A Graph-based Point of View,http://arxiv.org/abs/1401.6891v1,2014-01-27 15:29:14+00:00,Comparative Analysis of Synthetic vs. Labeled Data in Retrieval,False
+2407.14477,Data-Centric Human Preference with Rationales for Direct Preference Alignment,http://arxiv.org/abs/2407.14477v4,2024-07-19 17:27:52+00:00,DPO Applications in Preference Alignment and LLM Training,False
+1601.04605,Dynamic Information Retrieval: Theoretical Framework and Application,http://arxiv.org/abs/1601.04605v1,2016-01-18 17:01:34+00:00,Semantic Query Expansion and Reranking Methods,False
+2406.06729,Synthetic Query Generation using Large Language Models for Virtual Assistants,http://arxiv.org/abs/2406.06729v1,2024-06-10 18:50:57+00:00,Synthetic Query Generation as an Alternative to Labeled Data,False
+2405.19749,Generating Query Recommendations via LLMs,http://arxiv.org/abs/2405.19749v2,2024-05-30 06:52:01+00:00,Synthetic Query Generation as an Alternative to Labeled Data,False
+1404.7099,Editorial for the Bibliometric-enhanced Information Retrieval Workshop at ECIR 2014,http://arxiv.org/abs/1404.7099v1,2014-04-28 19:17:49+00:00,Semantic Query Expansion and Reranking Methods,False
+2503.17876,Satisfactory Medical Consultation based on Terminology-Enhanced Information Retrieval and Emotional In-Context Learning,http://arxiv.org/abs/2503.17876v1,2025-03-22 23:01:07+00:00,Semantic Query Expansion and Reranking Methods,False
+1404.1664,Icon Based Information Retrieval and Disease Identification in Agriculture,http://arxiv.org/abs/1404.1664v1,2014-04-07 06:20:53+00:00,Comparative Analysis of Synthetic vs. Labeled Data in Retrieval,False
+2411.00744,CARROT: A Learned Cost-Constrained Retrieval Optimization System for RAG,http://arxiv.org/abs/2411.00744v2,2024-11-01 17:11:16+00:00,Semantic Query Expansion and Reranking Methods,True
+1501.02646,Bibliometric-enhanced Information Retrieval: 2nd International BIR Workshop,http://arxiv.org/abs/1501.02646v1,2015-01-12 13:59:13+00:00,Semantic Query Expansion and Reranking Methods,False
+2007.14271,Declarative Experimentation in Information Retrieval using PyTerrier,http://arxiv.org/abs/2007.14271v1,2020-07-28 14:36:29+00:00,Comparative Analysis of Synthetic vs. Labeled Data in Retrieval,False

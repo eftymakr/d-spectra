@@ -1,0 +1,22 @@
+arxiv_id,title,url,date,category,cited_in_text
+2104.06569,Preventing Manipulation Attack in Local Differential Privacy using Verifiable Randomization Mechanism,http://arxiv.org/abs/2104.06569v2,2021-04-14 01:00:57+00:00,Local Differential Privacy and Verifiable Randomized Response,True
+2502.18535,A Survey of Zero-Knowledge Proof Based Verifiable Machine Learning,http://arxiv.org/abs/2502.18535v2,2025-02-25 05:04:27+00:00,Zero-Knowledge Proofs and Privacy,True
+2208.09011,Verifiable Differential Privacy,http://arxiv.org/abs/2208.09011v2,2022-08-18 18:20:22+00:00,Verifiable Differential Privacy Mechanisms,True
+2208.08662,"Private, Efficient, and Accurate: Protecting Models Trained by Multi-party Learning with Differential Privacy",http://arxiv.org/abs/2208.08662v1,2022-08-18 06:48:25+00:00,Evaluation of Privacy and Performance Trade-offs,True
+2209.14086,Momentum Gradient Descent Federated Learning with Local Differential Privacy,http://arxiv.org/abs/2209.14086v2,2022-09-28 13:30:38+00:00,Local Differential Privacy and Verifiable Randomized Response,True
+0803.3946,On the `Semantics' of Differential Privacy: A Bayesian Formulation,http://arxiv.org/abs/0803.3946v4,2008-03-27 15:00:45+00:00,Differential Privacy Foundations,True
+1601.06426,Robust Privacy-Utility Tradeoffs under Differential Privacy and Hamming Distortion,http://arxiv.org/abs/1601.06426v3,2016-01-24 20:12:03+00:00,Evaluation of Privacy and Performance Trade-offs,True
+1803.02139,"Connecting Randomized Response, Post-Randomization, Differential Privacy and t-Closeness via Deniability and Permutation",http://arxiv.org/abs/1803.02139v1,2018-03-06 12:20:08+00:00,Local Differential Privacy and Verifiable Randomized Response,True
+2003.00973,Differential Privacy at Risk: Bridging Randomness and Privacy Budget,http://arxiv.org/abs/2003.00973v2,2020-03-02 15:44:14+00:00,Evaluation of Privacy and Performance Trade-offs,True
+2105.12615,Consistent Spectral Clustering of Network Block Models under Local Differential Privacy,http://arxiv.org/abs/2105.12615v3,2021-05-26 15:09:46+00:00,Local Differential Privacy and Verifiable Randomized Response,True
+2402.04840,Efficient Estimation of a Gaussian Mean with Local Differential Privacy,http://arxiv.org/abs/2402.04840v3,2024-02-07 13:41:45+00:00,Local Differential Privacy and Verifiable Randomized Response,True
+2409.10667,Benchmarking Secure Sampling Protocols for Differential Privacy,http://arxiv.org/abs/2409.10667v2,2024-09-16 19:04:47+00:00,Evaluation of Privacy and Performance Trade-offs,True
+1212.1186,The Optimal Mechanism in Differential Privacy,http://arxiv.org/abs/1212.1186v3,2012-12-05 21:35:29+00:00,Evaluation of Privacy and Performance Trade-offs,True
+2412.16916,On the Differential Privacy and Interactivity of Privacy Sandbox Reports,http://arxiv.org/abs/2412.16916v3,2024-12-22 08:22:57+00:00,Data Aggregation in Privacy-Preserving Systems,False
+1911.02459,zksk: A Library for Composable Zero-Knowledge Proofs,http://arxiv.org/abs/1911.02459v2,2019-11-06 16:25:45+00:00,Zero-Knowledge Proofs and Privacy,False
+2012.12803,Hiding Among the Clones: A Simple and Nearly Optimal Analysis of Privacy Amplification by Shuffling,http://arxiv.org/abs/2012.12803v3,2020-12-23 17:07:26+00:00,Differential Privacy Foundations,False
+2109.02496,Statistical Privacy Guarantees of Machine Learning Preprocessing Techniques,http://arxiv.org/abs/2109.02496v1,2021-09-06 14:08:47+00:00,Evaluation of Privacy and Performance Trade-offs,False
+1504.06998,Heterogeneous Differential Privacy,http://arxiv.org/abs/1504.06998v1,2015-04-27 09:35:46+00:00,Differential Privacy Foundations,False
+2006.05609,Learning With Differential Privacy,http://arxiv.org/abs/2006.05609v2,2020-06-10 02:04:13+00:00,Local Differential Privacy and Verifiable Randomized Response,False
+2504.17523,From Randomized Response to Randomized Index: Answering Subset Counting Queries with Local Differential Privacy,http://arxiv.org/abs/2504.17523v1,2025-04-24 13:08:11+00:00,Local Differential Privacy and Verifiable Randomized Response,False
+2408.08475,Models Matter: Setting Accurate Privacy Expectations for Local and Central Differential Privacy,http://arxiv.org/abs/2408.08475v2,2024-08-16 01:21:57+00:00,Local Differential Privacy and Verifiable Randomized Response,False

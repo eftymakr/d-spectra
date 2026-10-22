@@ -1,0 +1,18 @@
+rank,arxiv_id,title,url,date
+1,2412.07906,Rethinking Emotion Annotations in the Era of Large Language Models,http://arxiv.org/abs/2412.07906v1,2024-12-10 20:30:51+00:00
+2,2408.01063,Leveraging Encoder-only Large Language Models for Mobile App Review Feature Extraction,http://arxiv.org/abs/2408.01063v2,2024-08-02 07:31:57+00:00
+3,1412.4682,Rule-based Emotion Detection on Social Media: Putting Tweets on Plutchik's Wheel,http://arxiv.org/abs/1412.4682v1,2014-12-15 17:20:47+00:00
+4,1703.02256,On the Emotion of Users in App Reviews,http://arxiv.org/abs/1703.02256v1,2017-03-07 07:51:46+00:00
+5,2006.09739,Comparative Sentiment Analysis of App Reviews,http://arxiv.org/abs/2006.09739v1,2020-06-17 09:28:07+00:00
+6,2405.11357,Large Language Models Lack Understanding of Character Composition of Words,http://arxiv.org/abs/2405.11357v3,2024-05-18 18:08:58+00:00
+7,1309.2853,General Purpose Textual Sentiment Analysis and Emotion Detection Tools,http://arxiv.org/abs/1309.2853v1,2013-09-11 15:16:26+00:00
+8,2401.11063,The Best Ends by the Best Means: Ethical Concerns in App Reviews,http://arxiv.org/abs/2401.11063v2,2024-01-19 23:53:26+00:00
+9,2005.11882,"Sentiment Analysis: Automatically Detecting Valence, Emotions, and Other Affectual States from Text",http://arxiv.org/abs/2005.11882v2,2020-05-25 01:37:31+00:00
+10,2204.00916,BERT-Assisted Semantic Annotation Correction for Emotion-Related Questions,http://arxiv.org/abs/2204.00916v1,2022-04-02 18:00:49+00:00
+11,1511.02385,Review-Level Sentiment Classification with Sentence-Level Polarity Correction,http://arxiv.org/abs/1511.02385v1,2015-11-07 18:38:22+00:00
+12,2005.09837,Positive emotions help rank negative reviews in e-commerce,http://arxiv.org/abs/2005.09837v1,2020-05-20 03:34:20+00:00
+13,2404.16891,Attacks on Third-Party APIs of Large Language Models,http://arxiv.org/abs/2404.16891v1,2024-04-24 19:27:02+00:00
+14,2305.14982,LAraBench: Benchmarking Arabic AI with Large Language Models,http://arxiv.org/abs/2305.14982v2,2023-05-24 10:16:16+00:00
+15,2312.09597,Deep Generative Models for Detector Signature Simulation: A Taxonomic Review,http://arxiv.org/abs/2312.09597v2,2023-12-15 08:27:39+00:00
+16,2312.15561,README: Bridging Medical Jargon and Lay Understanding for Patient Education through Data-Centric NLP,http://arxiv.org/abs/2312.15561v5,2023-12-24 23:01:00+00:00
+17,2503.21676,"How do language models learn facts? Dynamics, curricula and hallucinations",http://arxiv.org/abs/2503.21676v2,2025-03-27 16:43:45+00:00

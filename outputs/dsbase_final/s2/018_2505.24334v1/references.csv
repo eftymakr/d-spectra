@@ -1,0 +1,12 @@
+arxiv_id,title,url,date,category,cited_in_text
+2408.15113,AnomalousPatchCore: Exploring the Use of Anomalous Samples in Industrial Anomaly Detection,http://arxiv.org/abs/2408.15113v2,2024-08-27 14:51:34+00:00,Pre-trained Model Fine-tuning for Industrial Anomaly Detection,False
+2303.03611,TinyAD: Memory-efficient anomaly detection for time series data in Industrial IoT,http://arxiv.org/abs/2303.03611v1,2023-03-07 02:56:15+00:00,Deployment Challenges in Resource-Constrained Systems,False
+2011.06296,Real-World Anomaly Detection by using Digital Twin Systems and Weakly-Supervised Learning,http://arxiv.org/abs/2011.06296v1,2020-11-12 10:15:56+00:00,Deep Learning-Based Anomaly Detection Approaches,True
+2105.07346,Understanding the Effect of Bias in Deep Anomaly Detection,http://arxiv.org/abs/2105.07346v1,2021-05-16 03:55:02+00:00,Impact of Biased Anomaly Datasets on Performance,False
+2406.11507,Prior Normality Prompt Transformer for Multi-class Industrial Image Anomaly Detection,http://arxiv.org/abs/2406.11507v1,2024-06-17 13:10:04+00:00,Deep Learning-Based Anomaly Detection Approaches,False
+2012.08100,Anomaly Detection and Localization based on Double Kernelized Scoring and Matrix Kernels,http://arxiv.org/abs/2012.08100v1,2020-12-15 05:25:43+00:00,Comparative Evaluation of Anomaly Detection Models,False
+1710.09627,SRE: Semantic Rules Engine For the Industrial Internet-Of-Things Gateways,http://arxiv.org/abs/1710.09627v1,2017-10-26 10:17:00+00:00,Deployment Challenges in Resource-Constrained Systems,False
+2504.08115,Benchmarking Suite for Synthetic Aperture Radar Imagery Anomaly Detection (SARIAD) Algorithms,http://arxiv.org/abs/2504.08115v1,2025-04-10 20:31:25+00:00,Deep Learning-Based Anomaly Detection Approaches,False
+2503.07253,AnomalyPainter: Vision-Language-Diffusion Synergy for Zero-Shot Realistic and Diverse Industrial Anomaly Synthesis,http://arxiv.org/abs/2503.07253v2,2025-03-10 12:35:35+00:00,Vision Foundation Models in Semantic Anomaly Detection,False
+2404.06832,SplatPose & Detect: Pose-Agnostic 3D Anomaly Detection,http://arxiv.org/abs/2404.06832v1,2024-04-10 08:48:09+00:00,Deep Learning-Based Anomaly Detection Approaches,True
+1607.05974,Anomaly Detection and Localisation using Mixed Graphical Models,http://arxiv.org/abs/1607.05974v1,2016-07-20 14:31:30+00:00,Graph Neural Networks for Anomaly Detection,False

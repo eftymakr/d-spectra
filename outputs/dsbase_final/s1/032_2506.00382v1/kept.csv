@@ -1,0 +1,21 @@
+rank,arxiv_id,title,url,date
+1,2112.09305,Gaussian RBF Centered Kernel Alignment (CKA) in the Large Bandwidth Limit,http://arxiv.org/abs/2112.09305v1,2021-12-17 03:59:15+00:00
+2,2411.15382,On the Impact of Fine-Tuning on Chain-of-Thought Reasoning,http://arxiv.org/abs/2411.15382v2,2024-11-22 23:54:37+00:00
+3,1812.08238,Nonlinear demixed component analysis for neural population data as a low-rank kernel regression problem,http://arxiv.org/abs/1812.08238v3,2018-12-19 20:53:46+00:00
+4,2401.11824,Rethinking Centered Kernel Alignment in Knowledge Distillation,http://arxiv.org/abs/2401.11824v4,2024-01-22 10:37:59+00:00
+5,2406.01563,LoFiT: Localized Fine-tuning on LLM Representations,http://arxiv.org/abs/2406.01563v2,2024-06-03 17:45:41+00:00
+6,2505.03793,LENSLLM: Unveiling Fine-Tuning Dynamics for LLM Selection,http://arxiv.org/abs/2505.03793v3,2025-05-01 15:07:32+00:00
+7,2406.02913,Zeroth-Order Fine-Tuning of LLMs with Extreme Sparsity,http://arxiv.org/abs/2406.02913v1,2024-06-05 04:07:35+00:00
+8,2102.06605,Unleashing the Power of Contrastive Self-Supervised Visual Models via Contrast-Regularized Fine-Tuning,http://arxiv.org/abs/2102.06605v2,2021-02-12 16:31:24+00:00
+9,2501.19389,Federated Sketching LoRA: A Flexible Framework for Heterogeneous Collaborative Fine-Tuning of LLMs,http://arxiv.org/abs/2501.19389v4,2025-01-31 18:44:35+00:00
+10,2309.00363,FederatedScope-LLM: A Comprehensive Package for Fine-tuning Large Language Models in Federated Learning,http://arxiv.org/abs/2309.00363v1,2023-09-01 09:40:36+00:00
+11,2402.18571,Arithmetic Control of LLMs for Diverse User Preferences: Directional Preference Alignment with Multi-Objective Rewards,http://arxiv.org/abs/2402.18571v3,2024-02-28 18:58:25+00:00
+12,2312.10793,Demystifying Instruction Mixing for Fine-tuning Large Language Models,http://arxiv.org/abs/2312.10793v3,2023-12-17 18:44:26+00:00
+13,2105.08021,Stage-wise Fine-tuning for Graph-to-Text Generation,http://arxiv.org/abs/2105.08021v2,2021-05-17 17:15:29+00:00
+14,2408.04693,Understanding the Performance and Estimating the Cost of LLM Fine-Tuning,http://arxiv.org/abs/2408.04693v1,2024-08-08 16:26:07+00:00
+15,1402.3849,Scalable Kernel Clustering: Approximate Kernel k-means,http://arxiv.org/abs/1402.3849v1,2014-02-16 22:19:40+00:00
+16,2110.06573,"A Parametric and Feasibility Study for Data Sampling of the Dynamic Mode Decomposition--Range, Resolution, and Universal Convergence States",http://arxiv.org/abs/2110.06573v2,2021-10-13 08:38:56+00:00
+17,2410.12614,Mixed-precision finite element kernels and assembly: Rounding error analysis and hardware acceleration,http://arxiv.org/abs/2410.12614v1,2024-10-16 14:32:10+00:00
+18,1603.02493,Clifford theory for glider representations,http://arxiv.org/abs/1603.02493v4,2016-03-08 12:02:48+00:00
+19,2503.14504,Aligning Multimodal LLM with Human Preference: A Survey,http://arxiv.org/abs/2503.14504v2,2025-03-18 17:59:56+00:00
+20,2012.04128,Direct Numerical Simulation of the Moist Stably Stratified Surface Layer: Turbulence and Fog Formation,http://arxiv.org/abs/2012.04128v1,2020-12-08 00:26:29+00:00

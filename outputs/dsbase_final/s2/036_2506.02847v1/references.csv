@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2504.03360,"Sustainable LLM Inference for Edge AI: Evaluating Quantized LLMs for Energy Efficiency, Output Accuracy, and Inference Latency",http://arxiv.org/abs/2504.03360v1,2025-04-04 11:29:30+00:00,Energy Efficiency and Latency Trade-offs,True
+2505.03745,AccLLM: Accelerating Long-Context LLM Inference Via Algorithm-Hardware Co-Design,http://arxiv.org/abs/2505.03745v1,2025-04-07 02:52:30+00:00,Algorithm-Hardware Co-Design Approaches,True
+2502.15816,GenAI at the Edge: Comprehensive Survey on Empowering Edge Devices,http://arxiv.org/abs/2502.15816v1,2025-02-19 20:43:14+00:00,Edge Device Constraints and LLM Deployment Challenges,True
+2411.16158,MixPE: Quantization and Hardware Co-design for Efficient LLM Inference,http://arxiv.org/abs/2411.16158v1,2024-11-25 07:34:53+00:00,Algorithm-Hardware Co-Design Approaches,True
+2407.12070,Co-Designing Binarized Transformer and Hardware Accelerator for Efficient End-to-End Edge Deployment,http://arxiv.org/abs/2407.12070v1,2024-07-16 12:36:10+00:00,Algorithm-Hardware Co-Design Approaches,True
+2504.08242,Jupiter: Fast and Resource-Efficient Collaborative Inference of Generative LLMs on Edge Devices,http://arxiv.org/abs/2504.08242v1,2025-04-11 03:58:59+00:00,Efficient Inference Optimization Strategies,True
+2504.00002,Are We There Yet? A Measurement Study of Efficiency for LLM Applications on Mobile Devices,http://arxiv.org/abs/2504.00002v1,2025-03-10 16:27:17+00:00,Edge Device Constraints and LLM Deployment Challenges,True
+2403.05465,Algorithm-Hardware Co-Design of Distribution-Aware Logarithmic-Posit Encodings for Efficient DNN Inference,http://arxiv.org/abs/2403.05465v2,2024-03-08 17:28:49+00:00,Algorithm-Hardware Co-Design Approaches,True
+2407.00088,T-MAC: CPU Renaissance via Table Lookup for Low-Bit LLM Deployment on Edge,http://arxiv.org/abs/2407.00088v2,2024-06-25 08:38:38+00:00,Efficient Inference Optimization Strategies,True
+2205.15437,AMED: Automatic Mixed-Precision Quantization for Edge Devices,http://arxiv.org/abs/2205.15437v2,2022-05-30 21:23:22+00:00,Model Pruning and Quantization Techniques,True
+1806.07846,Rethinking Machine Learning Development and Deployment for Edge Devices,http://arxiv.org/abs/1806.07846v1,2018-06-20 17:11:54+00:00,Lightweight Model Deployment Frameworks,True
+2010.07185,Effective Algorithm-Accelerator Co-design for AI Solutions on Edge Devices,http://arxiv.org/abs/2010.07185v2,2020-10-14 15:59:10+00:00,Algorithm-Hardware Co-Design Approaches,True
+2401.12350,Scaling Up Quantization-Aware Neural Architecture Search for Efficient Deep Learning on the Edge,http://arxiv.org/abs/2401.12350v1,2024-01-22 20:32:31+00:00,Model Pruning and Quantization Techniques,True
+2103.15750,Enabling Design Methodologies and Future Trends for Edge AI: Specialization and Co-design,http://arxiv.org/abs/2103.15750v2,2021-03-25 16:29:55+00:00,Algorithm-Hardware Co-Design Approaches,True
+2502.08381,"The MoE-Empowered Edge LLMs Deployment: Architecture, Challenges, and Opportunities",http://arxiv.org/abs/2502.08381v1,2025-02-12 13:16:07+00:00,Edge Device Constraints and LLM Deployment Challenges,True
+2105.01585,HASCO: Towards Agile HArdware and Software CO-design for Tensor Computation,http://arxiv.org/abs/2105.01585v1,2021-05-04 15:48:27+00:00,Algorithm-Hardware Co-Design Approaches,True
+2409.11418,Hardware Acceleration of Kolmogorov-Arnold Network (KAN) for Lightweight Edge Inference,http://arxiv.org/abs/2409.11418v1,2024-09-09 17:56:01+00:00,Algorithm-Hardware Co-Design Approaches,False
+2209.09570,Adaptable Butterfly Accelerator for Attention-based NNs via Hardware and Algorithm Co-design,http://arxiv.org/abs/2209.09570v1,2022-09-20 09:28:26+00:00,Algorithm-Hardware Co-Design Approaches,False
+2310.18329,"Unveiling Energy Efficiency in Deep Learning: Measurement, Prediction, and Scoring across Edge Devices",http://arxiv.org/abs/2310.18329v2,2023-10-19 23:55:00+00:00,Energy Efficiency and Latency Trade-offs,False
+2007.04193,Mobility driven Cloud-Fog-Edge Framework for Location-aware Services: A Comprehensive Review,http://arxiv.org/abs/2007.04193v2,2020-07-05 05:55:50+00:00,Energy Efficiency and Latency Trade-offs,False
+2304.11842,Gen-NeRF: Efficient and Generalizable Neural Radiance Fields via Algorithm-Hardware Co-Design,http://arxiv.org/abs/2304.11842v4,2023-04-24 06:22:06+00:00,Algorithm-Hardware Co-Design Approaches,False
+2502.15260,LightMamba: Efficient Mamba Acceleration on FPGA with Quantization and Hardware Co-design,http://arxiv.org/abs/2502.15260v2,2025-02-21 07:23:23+00:00,Algorithm-Hardware Co-Design Approaches,False
+1703.10340,Exploiting Massive D2D Collaboration for Energy-Efficient Mobile Edge Computing,http://arxiv.org/abs/1703.10340v1,2017-03-30 07:48:43+00:00,Energy Efficiency and Latency Trade-offs,False
+1805.05995,Data Analytics Service Composition and Deployment on Edge Devices,http://arxiv.org/abs/1805.05995v1,2018-04-14 00:41:39+00:00,Lightweight Model Deployment Frameworks,False
+2409.19389,"Co-design of a novel CMOS highly parallel, low-power, multi-chip neural network accelerator",http://arxiv.org/abs/2409.19389v1,2024-09-28 15:47:16+00:00,Algorithm-Hardware Co-Design Approaches,False
+2504.03656,Comparative Analysis of Lightweight Kubernetes Distributions for Edge Computing: Performance and Resource Efficiency,http://arxiv.org/abs/2504.03656v1,2025-03-04 20:03:51+00:00,Lightweight Model Deployment Frameworks,False
+,The Dark Energy Survey,http://arxiv.org/abs/astro-ph/0510346v1,2005-10-12 13:33:59+00:00,Evaluation Metrics for Edge AI Performance,False
+2111.01916,Accelerating Genome Sequence Analysis via Efficient Hardware/Algorithm Co-Design,http://arxiv.org/abs/2111.01916v1,2021-11-02 22:09:29+00:00,Algorithm-Hardware Co-Design Approaches,False
+2402.14152,ModSRAM: Algorithm-Hardware Co-Design for Large Number Modular Multiplication in SRAM,http://arxiv.org/abs/2402.14152v1,2024-02-21 22:26:44+00:00,Algorithm-Hardware Co-Design Approaches,False
+,Exciting molecular hydrogen in the central galaxies of cooling flows,http://arxiv.org/abs/astro-ph/0206382v1,2002-06-21 13:53:17+00:00,Evaluation Metrics for Edge AI Performance,False

@@ -1,0 +1,21 @@
+rank,arxiv_id,title,url,date
+1,2108.02170,Curriculum learning for language modeling,http://arxiv.org/abs/2108.02170v1,2021-08-04 16:53:43+00:00
+2,2410.17765,Faster Language Models with Better Multi-Token Prediction Using Tensor Decomposition,http://arxiv.org/abs/2410.17765v2,2024-10-23 11:06:36+00:00
+3,2505.17505,L-MTP: Leap Multi-Token Prediction Beyond Adjacent Context for Large Language Models,http://arxiv.org/abs/2505.17505v2,2025-05-23 05:59:46+00:00
+4,2502.09419,On multi-token prediction for efficient LLM inference,http://arxiv.org/abs/2502.09419v1,2025-02-13 15:42:44+00:00
+5,1901.11478,An Optimization Framework for Task Sequencing in Curriculum Learning,http://arxiv.org/abs/1901.11478v3,2019-01-31 17:08:27+00:00
+6,2410.18160,Future Token Prediction -- Causal Language Modelling with Per-Token Semantic State Vector for Multi-Token Prediction,http://arxiv.org/abs/2410.18160v1,2024-10-23 14:50:15+00:00
+7,2404.19737,Better & Faster Large Language Models via Multi-token Prediction,http://arxiv.org/abs/2404.19737v1,2024-04-30 17:33:57+00:00
+8,2503.21801,Efficient Joint Prediction of Multiple Future Tokens,http://arxiv.org/abs/2503.21801v1,2025-03-24 19:52:42+00:00
+9,2505.10518,Multi-Token Prediction Needs Registers,http://arxiv.org/abs/2505.10518v1,2025-05-15 17:25:03+00:00
+10,2003.04960,Curriculum Learning for Reinforcement Learning Domains: A Framework and Survey,http://arxiv.org/abs/2003.04960v2,2020-03-10 20:41:24+00:00
+11,1905.05461,Learning Generative Models across Incomparable Spaces,http://arxiv.org/abs/1905.05461v2,2019-05-14 08:56:12+00:00
+12,2505.08588,Small but Significant: On the Promise of Small Language Models for Accessible AIED,http://arxiv.org/abs/2505.08588v1,2025-05-13 13:58:29+00:00
+13,2403.06963,The pitfalls of next-token prediction,http://arxiv.org/abs/2403.06963v3,2024-03-11 17:47:30+00:00
+14,2304.10464,Learning to Plan with Natural Language,http://arxiv.org/abs/2304.10464v4,2023-04-20 17:09:12+00:00
+15,2410.22886,Less is More: Pre-Training Cross-Lingual Small-Scale Language Models with Cognitively-Plausible Curriculum Learning Strategies,http://arxiv.org/abs/2410.22886v2,2024-10-30 10:31:54+00:00
+16,2412.15321,Next Patch Prediction for Autoregressive Visual Generation,http://arxiv.org/abs/2412.15321v3,2024-12-19 18:59:36+00:00
+17,1805.09921,Meta-Learning Probabilistic Inference For Prediction,http://arxiv.org/abs/1805.09921v4,2018-05-24 22:08:27+00:00
+18,2305.18310,Motion-Scenario Decoupling for Rat-Aware Video Position Prediction: Strategy and Benchmark,http://arxiv.org/abs/2305.18310v2,2023-05-17 14:14:31+00:00
+19,1002.1144,A CHAID Based Performance Prediction Model in Educational Data Mining,http://arxiv.org/abs/1002.1144v1,2010-02-05 08:27:17+00:00
+20,2311.04589,TEAL: Tokenize and Embed ALL for Multi-modal Large Language Models,http://arxiv.org/abs/2311.04589v3,2023-11-08 10:34:16+00:00

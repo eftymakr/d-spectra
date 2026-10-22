@@ -1,0 +1,27 @@
+arxiv_id,title,url,date,category,cited_in_text
+2502.07381,Spatial Degradation-Aware and Temporal Consistent Diffusion Model for Compressed Video Super-Resolution,http://arxiv.org/abs/2502.07381v3,2025-02-11 08:57:45+00:00,Diffusion Models in Video Super-Resolution,True
+2212.07339,Mitigating Artifacts in Real-World Video Super-Resolution Models,http://arxiv.org/abs/2212.07339v1,2022-12-14 17:02:16+00:00,Global Spatio-Temporal Attention Mechanisms,True
+2312.06640,Upscale-A-Video: Temporal-Consistent Diffusion Model for Real-World Video Super-Resolution,http://arxiv.org/abs/2312.06640v1,2023-12-11 18:54:52+00:00,Diffusion Models in Video Super-Resolution,True
+2501.02976,STAR: Spatial-Temporal Augmentation with Text-to-Video Models for Real-World Video Super-Resolution,http://arxiv.org/abs/2501.02976v1,2025-01-06 12:36:21+00:00,Diffusion Models in Video Super-Resolution,True
+2008.05765,Revisiting Temporal Modeling for Video Super-resolution,http://arxiv.org/abs/2008.05765v2,2020-08-13 09:09:37+00:00,Supervised Learning Approaches in VSR,True
+2403.17000,Learning Spatial Adaptation and Temporal Coherence in Diffusion Models for Video Super-Resolution,http://arxiv.org/abs/2403.17000v1,2024-03-25 17:59:26+00:00,Diffusion Models in Video Super-Resolution,True
+2305.14669,NegVSR: Augmenting Negatives for Generalized Noise Modeling in Real-World Video Super-Resolution,http://arxiv.org/abs/2305.14669v3,2023-05-24 03:23:35+00:00,Noise-Robust VSR Techniques,True
+2104.05778,Efficient Space-time Video Super Resolution using Low-Resolution Flow and Mask Upsampling,http://arxiv.org/abs/2104.05778v3,2021-04-12 19:11:57+00:00,Supervised Learning Approaches in VSR,True
+2111.12265,Distribution Estimation to Automate Transformation Policies for Self-Supervision,http://arxiv.org/abs/2111.12265v1,2021-11-24 04:40:00+00:00,Self-Supervised Learning Frameworks for VSR,True
+2503.03355,Rethinking Video Super-Resolution: Towards Diffusion-Based Methods without Motion Alignment,http://arxiv.org/abs/2503.03355v5,2025-03-05 10:37:51+00:00,Diffusion Models in Video Super-Resolution,True
+2106.03839,NTIRE 2021 Challenge on Burst Super-Resolution: Methods and Results,http://arxiv.org/abs/2106.03839v1,2021-06-07 17:55:28+00:00,Perceptual Quality Evaluation in Real-World VSR,True
+2104.07473,Zooming SlowMo: An Efficient One-Stage Framework for Space-Time Video Super-Resolution,http://arxiv.org/abs/2104.07473v1,2021-04-15 17:59:23+00:00,Global Spatio-Temporal Attention Mechanisms,True
+2307.11118,Diffusion Sampling with Momentum for Mitigating Divergence Artifacts,http://arxiv.org/abs/2307.11118v1,2023-07-20 14:37:30+00:00,Diffusion Models in Video Super-Resolution,True
+2401.12945,Lumiere: A Space-Time Diffusion Model for Video Generation,http://arxiv.org/abs/2401.12945v2,2024-01-23 18:05:25+00:00,Diffusion Models in Video Super-Resolution,True
+2311.11335,Self-Distilled Representation Learning for Time Series,http://arxiv.org/abs/2311.11335v1,2023-11-19 14:34:01+00:00,Self-Supervised Learning Frameworks for VSR,True
+1906.11951,Supervise Thyself: Examining Self-Supervised Representations in Interactive Environments,http://arxiv.org/abs/1906.11951v1,2019-06-27 20:38:47+00:00,Self-Supervised Learning Frameworks for VSR,True
+1707.02921,Enhanced Deep Residual Networks for Single Image Super-Resolution,http://arxiv.org/abs/1707.02921v1,2017-07-10 16:07:30+00:00,Supervised Learning Approaches in VSR,False
+2204.08332,BSRT: Improving Burst Super-Resolution with Swin Transformer and Flow-Guided Deformable Alignment,http://arxiv.org/abs/2204.08332v2,2022-04-18 14:23:10+00:00,Global Spatio-Temporal Attention Mechanisms,False
+2312.02246,Conditional Variational Diffusion Models,http://arxiv.org/abs/2312.02246v4,2023-12-04 14:45:56+00:00,Diffusion Models in Video Super-Resolution,False
+2410.09380,Prompting Video-Language Foundation Models with Domain-specific Fine-grained Heuristics for Video Question Answering,http://arxiv.org/abs/2410.09380v1,2024-10-12 06:22:23+00:00,Self-Supervised Learning Frameworks for VSR,False
+2211.05304,Contrastive Self-Supervised Learning for Skeleton Representations,http://arxiv.org/abs/2211.05304v1,2022-11-10 02:45:36+00:00,Contrastive Learning in VSR,False
+1901.09005,Revisiting Self-Supervised Visual Representation Learning,http://arxiv.org/abs/1901.09005v1,2019-01-25 18:08:31+00:00,Self-Supervised Learning Frameworks for VSR,False
+2011.13120,Evaluation of Out-of-Distribution Detection Performance of Self-Supervised Learning in a Controllable Environment,http://arxiv.org/abs/2011.13120v2,2020-11-26 04:11:48+00:00,Self-Supervised Learning Frameworks for VSR,False
+2410.18137,Advancing Super-Resolution in Neural Radiance Fields via Variational Diffusion Strategies,http://arxiv.org/abs/2410.18137v2,2024-10-22 00:02:26+00:00,Diffusion Models in Video Super-Resolution,False
+1709.06342,Assessing Visual Quality of Omnidirectional Videos,http://arxiv.org/abs/1709.06342v4,2017-09-19 10:54:24+00:00,Perceptual Quality Evaluation in Real-World VSR,False
+2408.08455,SuperNANO: Enabling Nano-Scale Laser an-ti-counterfeiting Marking and Precision Cutting with Super-Resolution Imaging,http://arxiv.org/abs/2408.08455v1,2024-08-15 23:39:43+00:00,Diffusion Models in Video Super-Resolution,False

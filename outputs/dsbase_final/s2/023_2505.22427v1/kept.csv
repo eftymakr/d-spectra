@@ -1,0 +1,28 @@
+rank,arxiv_id,title,url,date
+1,2309.00787,Online Targetless Radar-Camera Extrinsic Calibration Based on the Common Features of Radar and Camera,http://arxiv.org/abs/2309.00787v2,2023-09-02 01:38:29+00:00
+2,2404.03015,DPFT: Dual Perspective Fusion Transformer for Camera-Radar-based Object Detection,http://arxiv.org/abs/2404.03015v2,2024-04-03 18:54:27+00:00
+3,1904.08743,Targetless Rotational Auto-Calibration of Radar and Camera for Intelligent Transportation Systems,http://arxiv.org/abs/1904.08743v2,2019-04-18 13:02:34+00:00
+4,2307.15264,3D Radar and Camera Co-Calibration: A Flexible and Accurate Method for Target-based Extrinsic Calibration,http://arxiv.org/abs/2307.15264v1,2023-07-28 02:17:48+00:00
+5,2211.01871,Spatiotemporal Calibration of 3D Millimetre-Wavelength Radar-Camera Pairs,http://arxiv.org/abs/2211.01871v4,2022-11-03 15:03:28+00:00
+6,2208.12079,Bridging the View Disparity Between Radar and Camera Features for Multi-modal Fusion 3D Object Detection,http://arxiv.org/abs/2208.12079v2,2022-08-25 13:21:37+00:00
+7,2107.05150,CFTrack: Center-based Radar and Camera Fusion for 3D Multi-Object Tracking,http://arxiv.org/abs/2107.05150v1,2021-07-11 23:56:53+00:00
+8,2409.04979,RCBEVDet++: Toward High-accuracy Radar-Camera Fusion 3D Perception Network,http://arxiv.org/abs/2409.04979v1,2024-09-08 05:14:27+00:00
+9,2103.07505,A Continuous-Time Approach for 3D Radar-to-Camera Extrinsic Calibration,http://arxiv.org/abs/2103.07505v2,2021-03-12 19:54:22+00:00
+10,2403.15183,CRPlace: Camera-Radar Fusion with BEV Representation for Place Recognition,http://arxiv.org/abs/2403.15183v1,2024-03-22 13:12:30+00:00
+11,2410.19872,Radar and Camera Fusion for Object Detection and Tracking: A Comprehensive Survey,http://arxiv.org/abs/2410.19872v1,2024-10-24 07:37:57+00:00
+12,2307.10249,RCM-Fusion: Radar-Camera Multi-Level Fusion for 3D Object Detection,http://arxiv.org/abs/2307.10249v5,2023-07-17 07:22:25+00:00
+13,2212.03239,Perspective Fields for Single Image Camera Calibration,http://arxiv.org/abs/2212.03239v2,2022-12-06 18:59:50+00:00
+14,2411.10293,RETR: Multi-View Radar Detection Transformer for Indoor Perception,http://arxiv.org/abs/2411.10293v3,2024-11-15 15:51:25+00:00
+15,2307.00741,"UnLoc: A Universal Localization Method for Autonomous Vehicles using LiDAR, Radar and/or Camera Input",http://arxiv.org/abs/2307.00741v1,2023-07-03 04:10:55+00:00
+16,2210.09267,CramNet: Camera-Radar Fusion with Ray-Constrained Cross-Attention for Robust 3D Object Detection,http://arxiv.org/abs/2210.09267v2,2022-10-17 17:18:47+00:00
+17,2205.08701,"Extrinsic Calibration of LiDAR, IMU and Camera",http://arxiv.org/abs/2205.08701v1,2022-05-18 03:20:15+00:00
+18,2005.07431,A Deep Learning-based Radar and Camera Sensor Fusion Architecture for Object Detection,http://arxiv.org/abs/2005.07431v1,2020-05-15 09:28:01+00:00
+19,2410.14505,Neural Real-Time Recalibration for Infrared Multi-Camera Systems,http://arxiv.org/abs/2410.14505v1,2024-10-18 14:37:37+00:00
+20,2407.19491,Multi-modal Crowd Counting via Modal Emulation,http://arxiv.org/abs/2407.19491v1,2024-07-28 13:14:57+00:00
+21,2403.09327,Perspective-Equivariance for Unsupervised Imaging with Camera Geometry,http://arxiv.org/abs/2403.09327v2,2024-03-14 12:17:07+00:00
+22,2406.04723,A Deep Automotive Radar Detector using the RaDelft Dataset,http://arxiv.org/abs/2406.04723v3,2024-06-07 08:07:20+00:00
+23,1905.11987,Automated Ground Truth Estimation For Automotive Radar Tracking Applications With Portable GNSS And IMU Devices,http://arxiv.org/abs/1905.11987v2,2019-05-28 09:21:17+00:00
+24,2305.03192,LSTM Framework for Classification of Radar and Communications Signals,http://arxiv.org/abs/2305.03192v2,2023-05-04 22:31:03+00:00
+25,2307.06505,WaterScenes: A Multi-Task 4D Radar-Camera Fusion Dataset and Benchmarks for Autonomous Driving on Water Surfaces,http://arxiv.org/abs/2307.06505v3,2023-07-13 01:05:12+00:00
+26,1909.04223,MAJoRCom: A Dual-Function Radar Communication System Using Index Modulation,http://arxiv.org/abs/1909.04223v1,2019-09-10 01:20:05+00:00
+27,2302.04024,InMyFace: Inertial and Mechanomyography-Based Sensor Fusion for Wearable Facial Activity Recognition,http://arxiv.org/abs/2302.04024v1,2023-02-08 12:49:02+00:00

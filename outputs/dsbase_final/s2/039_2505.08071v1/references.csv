@@ -1,0 +1,29 @@
+arxiv_id,title,url,date,category,cited_in_text
+1108.3556,SparseAssembler2: Sparse k-mer Graph for Memory Efficient Genome Assembly,http://arxiv.org/abs/1108.3556v2,2011-08-17 19:24:45+00:00,Memory Usage and Computational Challenges,True
+1705.11147,Extreme-Scale De Novo Genome Assembly,http://arxiv.org/abs/1705.11147v1,2017-05-31 15:34:36+00:00,Distributed Computing in Genome Assembly,True
+2010.10055,Parallel String Graph Construction and Transitive Reduction for De Novo Genome Assembly,http://arxiv.org/abs/2010.10055v1,2020-10-20 06:20:24+00:00,Distributed Computing in Genome Assembly,True
+2011.12635,The Hydrostructure: a Universal Framework for Safe and Complete Algorithms for Genome Assembly,http://arxiv.org/abs/2011.12635v3,2020-11-25 10:50:02+00:00,Efficient Algorithms for Large-Scale Genomics,True
+2002.10498,"Genome assembly, from practice to theory: safe, complete and linear-time",http://arxiv.org/abs/2002.10498v3,2020-02-24 19:27:43+00:00,Efficient Algorithms for Large-Scale Genomics,True
+1703.10231,"A $4,000 Workstation for Mammalian Genome Assembly with Long Reads",http://arxiv.org/abs/1703.10231v1,2017-03-20 10:05:54+00:00,Efficient Algorithms for Large-Scale Genomics,True
+2308.07877,Genome assembly in the telomere-to-telomere era,http://arxiv.org/abs/2308.07877v1,2023-08-15 16:50:40+00:00,Efficient Algorithms for Large-Scale Genomics,True
+2011.05013,A step towards neural genome assembly,http://arxiv.org/abs/2011.05013v1,2020-11-10 10:12:19+00:00,Machine Learning in Genome Assembly,True
+1203.6364,Exploring single-sample SNP and INDEL calling with whole-genome de novo assembly,http://arxiv.org/abs/1203.6364v2,2012-03-28 20:04:10+00:00,Efficient Algorithms for Large-Scale Genomics,True
+1505.04019,Linear-Time Superbubble Identification Algorithm for Genome Assembly,http://arxiv.org/abs/1505.04019v6,2015-05-15 10:52:50+00:00,Efficient Algorithms for Large-Scale Genomics,True
+1512.01801,Minimap and miniasm: fast mapping and de novo assembly for noisy long sequences,http://arxiv.org/abs/1512.01801v2,2015-12-06 15:16:02+00:00,Efficient Algorithms for Large-Scale Genomics,True
+1807.00205,Fast Characterization of Segmental Duplications in Genome Assemblies,http://arxiv.org/abs/1807.00205v2,2018-06-30 17:03:01+00:00,Efficient Algorithms for Large-Scale Genomics,True
+1801.04453,Scalable De Novo Genome Assembly Using Pregel,http://arxiv.org/abs/1801.04453v1,2018-01-13 15:15:08+00:00,Distributed Computing in Genome Assembly,True
+1302.4391,Constructing a genome assembly that has the maximum likelihood,http://arxiv.org/abs/1302.4391v3,2013-02-18 19:14:38+00:00,Efficient Algorithms for Large-Scale Genomics,False
+1305.3556,Viral genome structures are optimal for capsid assembly,http://arxiv.org/abs/1305.3556v1,2013-05-15 17:26:57+00:00,Performance Evaluation of Assembly Methods,False
+2404.16653,Análise de ambiguidade linguística em modelos de linguagem de grande escala (LLMs),http://arxiv.org/abs/2404.16653v1,2024-04-25 14:45:07+00:00,Machine Learning in Genome Assembly,False
+2109.11885,Towards Goal-Oriented Semantic Signal Processing: Applications and Future Challenges,http://arxiv.org/abs/2109.11885v1,2021-09-24 11:12:24+00:00,Machine Learning in Genome Assembly,False
+2501.00258,Optimal design of frame structures with mixed categorical and continuous design variables using the Gumbel-Softmax method,http://arxiv.org/abs/2501.00258v1,2024-12-31 03:59:24+00:00,Machine Learning in Genome Assembly,False
+1411.4413,Observation of the rare $B^0_s\toμ^+μ^-$ decay from the combined analysis of CMS and LHCb data,http://arxiv.org/abs/1411.4413v2,2014-11-17 10:10:25+00:00,Performance Evaluation of Assembly Methods,False
+1310.1653,Theoretical Bounds on Mate-Pair Information for Accurate Genome Assembly,http://arxiv.org/abs/1310.1653v3,2013-10-07 01:45:40+00:00,Efficient Algorithms for Large-Scale Genomics,False
+1305.0062,Distilled Single Cell Genome Sequencing and De Novo Assembly for Sparse Microbial Communities,http://arxiv.org/abs/1305.0062v2,2013-05-01 00:49:29+00:00,Efficient Algorithms for Large-Scale Genomics,False
+1506.05538,Bermuda: Bidirectional de novo assembly of transcripts with new insights for handling uneven coverage,http://arxiv.org/abs/1506.05538v1,2015-06-18 03:06:55+00:00,Performance Evaluation of Assembly Methods,False
+2205.05897,"CAGI, the Critical Assessment of Genome Interpretation, establishes progress and prospects for computational genetic variant interpretation methods",http://arxiv.org/abs/2205.05897v1,2022-05-12 06:34:39+00:00,Performance Evaluation of Assembly Methods,False
+2405.05734,On the Coverage Required for Diploid Genome Assembly,http://arxiv.org/abs/2405.05734v3,2024-05-09 12:50:18+00:00,Efficient Algorithms for Large-Scale Genomics,False
+1308.1388,Bayesian genome assembly and assessment by Markov Chain Monte Carlo sampling,http://arxiv.org/abs/1308.1388v2,2013-08-06 19:40:08+00:00,Machine Learning in Genome Assembly,False
+,Anti-de Sitter Supersymmetry,http://arxiv.org/abs/hep-th/9908005v1,1999-08-01 15:47:41+00:00,Performance Evaluation of Assembly Methods,False
+1306.4353,Hypergraph covering problems motivated by genome assembly questions,http://arxiv.org/abs/1306.4353v2,2013-06-18 21:01:08+00:00,Efficient Algorithms for Large-Scale Genomics,False
+1611.05360,The Life of Lazarillo de Tormes and of His Machine Learning Adversities,http://arxiv.org/abs/1611.05360v1,2016-11-16 16:55:42+00:00,Machine Learning in Genome Assembly,False

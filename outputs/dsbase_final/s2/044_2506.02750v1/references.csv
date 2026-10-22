@@ -1,0 +1,22 @@
+arxiv_id,title,url,date,category,cited_in_text
+1906.01829,Binarized Collaborative Filtering with Distilling Graph Convolutional Networks,http://arxiv.org/abs/1906.01829v1,2019-06-05 05:11:43+00:00,Graph Neural Networks in Recommendation Systems,True
+2102.03135,Graph Attention Collaborative Similarity Embedding for Recommender System,http://arxiv.org/abs/2102.03135v1,2021-02-05 12:26:43+00:00,Graph Neural Networks in Recommendation Systems,True
+2203.15789,Revisiting Neighborhood-based Link Prediction for Collaborative Filtering,http://arxiv.org/abs/2203.15789v1,2022-03-29 17:48:05+00:00,Graph Neural Networks in Recommendation Systems,True
+2302.02113,Personalized Graph Signal Processing for Collaborative Filtering,http://arxiv.org/abs/2302.02113v1,2023-02-04 06:49:52+00:00,Graph-Based Collaborative Filtering Methods,True
+1611.01600,Loss-aware Binarization of Deep Networks,http://arxiv.org/abs/1611.01600v3,2016-11-05 04:23:42+00:00,Information Loss in Binarization,True
+1906.11171,Modeling Embedding Dimension Correlations via Convolutional Neural Collaborative Filtering,http://arxiv.org/abs/1906.11171v1,2019-06-26 15:36:37+00:00,Deep Learning Approaches for Collaborative Filtering,True
+1708.03058,Online Interactive Collaborative Filtering Using Multi-Armed Bandit with Dependent Arms,http://arxiv.org/abs/1708.03058v2,2017-08-10 02:52:57+00:00,Graph Neural Networks in Recommendation Systems,True
+2010.07027,A Light Heterogeneous Graph Collaborative Filtering Model using Textual Information,http://arxiv.org/abs/2010.07027v5,2020-10-04 11:10:37+00:00,Graph Neural Networks in Recommendation Systems,True
+2408.02404,Feedback Reciprocal Graph Collaborative Filtering,http://arxiv.org/abs/2408.02404v1,2024-08-05 11:57:11+00:00,Graph-Based Collaborative Filtering Methods,True
+1809.06120,cf2vec: Collaborative Filtering algorithm selection using graph distributed representations,http://arxiv.org/abs/1809.06120v1,2018-09-17 10:36:16+00:00,Graph Neural Networks in Recommendation Systems,True
+2303.08537,Graph-less Collaborative Filtering,http://arxiv.org/abs/2303.08537v3,2023-03-15 11:30:16+00:00,Graph Neural Networks in Recommendation Systems,True
+2102.02549,Dual-embedding based Neural Collaborative Filtering for Recommender Systems,http://arxiv.org/abs/2102.02549v2,2021-02-04 11:32:11+00:00,Deep Learning Approaches for Collaborative Filtering,True
+1309.6908,A Collaborative Filtering Based Approach for Recommending Elective Courses,http://arxiv.org/abs/1309.6908v1,2013-09-26 14:15:07+00:00,Performance Evaluation and Benchmarking,True
+2002.12312,Advances in Collaborative Filtering and Ranking,http://arxiv.org/abs/2002.12312v1,2020-02-27 18:30:47+00:00,Graph-Based Collaborative Filtering Methods,True
+1805.03352,Learning Heterogeneous Knowledge Base Embeddings for Explainable Recommendation,http://arxiv.org/abs/1805.03352v2,2018-05-09 02:32:19+00:00,Graph Neural Networks in Recommendation Systems,False
+2108.07574,When Product Search Meets Collaborative Filtering: A Hierarchical Heterogeneous Graph Neural Network Approach,http://arxiv.org/abs/2108.07574v2,2021-08-17 11:58:37+00:00,Graph Neural Networks in Recommendation Systems,False
+0908.0709,Toward Collaborative Information Seeking (CIS),http://arxiv.org/abs/0908.0709v1,2009-08-05 17:33:03+00:00,Graph Neural Networks in Recommendation Systems,False
+1212.2508,Collaborative Ensemble Learning: Combining Collaborative and Content-Based Information Filtering via Hierarchical Bayes,http://arxiv.org/abs/1212.2508v1,2012-10-19 15:08:51+00:00,Performance Evaluation and Benchmarking,False
+0908.0586,Understanding Groups' Properties as a Means of Improving Collaborative Search Systems,http://arxiv.org/abs/0908.0586v1,2009-08-05 05:05:03+00:00,Embedding Sample Synthesis and Inference Distillation,False
+0908.0912,Evaluation of Coordination Techniques in Synchronous Collaborative Information Retrieval,http://arxiv.org/abs/0908.0912v1,2009-08-06 17:23:01+00:00,Performance Evaluation and Benchmarking,False
+2311.15289,Counting cliques without generalized theta graphs,http://arxiv.org/abs/2311.15289v2,2023-11-26 13:09:04+00:00,Performance Evaluation and Benchmarking,False

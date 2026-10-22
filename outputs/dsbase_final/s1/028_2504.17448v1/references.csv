@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2308.00155,Federated Learning for Data and Model Heterogeneity in Medical Imaging,http://arxiv.org/abs/2308.00155v1,2023-07-31 21:08:45+00:00,Data Heterogeneity in Federated Learning,True
+2206.05507,Federated Learning with GAN-based Data Synthesis for Non-IID Clients,http://arxiv.org/abs/2206.05507v1,2022-06-11 11:43:25+00:00,Data Heterogeneity in Federated Learning,True
+2206.10032,Communication-Efficient Federated Learning With Data and Client Heterogeneity,http://arxiv.org/abs/2206.10032v4,2022-06-20 22:39:39+00:00,Data Heterogeneity in Federated Learning,True
+2311.13267,FedFN: Feature Normalization for Alleviating Data Heterogeneity Problem in Federated Learning,http://arxiv.org/abs/2311.13267v1,2023-11-22 09:37:33+00:00,Data Heterogeneity in Federated Learning,True
+2504.11216,FedDiverse: Tackling Data Heterogeneity in Federated Learning with Diversity-Driven Client Selection,http://arxiv.org/abs/2504.11216v2,2025-04-15 14:20:42+00:00,Data Heterogeneity in Federated Learning,True
+2504.01921,Client Selection in Federated Learning with Data Heterogeneity and Network Latencies,http://arxiv.org/abs/2504.01921v1,2025-04-02 17:31:15+00:00,Data Heterogeneity in Federated Learning,True
+1912.06733,Private Federated Learning with Domain Adaptation,http://arxiv.org/abs/1912.06733v1,2019-12-13 22:48:43+00:00,Client Adaptation Techniques,True
+2207.08187,Federated Self-Supervised Learning in Heterogeneous Settings: Limits of a Baseline Approach on HAR,http://arxiv.org/abs/2207.08187v1,2022-07-17 14:15:45+00:00,Data Heterogeneity in Federated Learning,True
+2409.13004,Data Poisoning and Leakage Analysis in Federated Learning,http://arxiv.org/abs/2409.13004v1,2024-09-19 16:50:29+00:00,Federated Learning Overview,True
+2206.02535,Certified Robustness in Federated Learning,http://arxiv.org/abs/2206.02535v2,2022-06-06 12:10:53+00:00,Federated Learning Overview,True
+2010.13723,Optimal Client Sampling for Federated Learning,http://arxiv.org/abs/2010.13723v3,2020-10-26 17:05:13+00:00,Client Adaptation Techniques,True
+2205.12493,Federated Self-supervised Learning for Heterogeneous Clients,http://arxiv.org/abs/2205.12493v3,2022-05-25 05:07:44+00:00,Data Heterogeneity in Federated Learning,True
+2001.01523,"Think Locally, Act Globally: Federated Learning with Local and Global Representations",http://arxiv.org/abs/2001.01523v3,2020-01-06 12:40:21+00:00,Federated Learning Overview,True
+2206.05575,MammoFL: Mammographic Breast Density Estimation using Federated Learning,http://arxiv.org/abs/2206.05575v5,2022-06-11 17:38:09+00:00,Model Generalization Strategies,True
+2311.15382,Evaluating Multi-Global Server Architecture for Federated Learning,http://arxiv.org/abs/2311.15382v1,2023-11-26 18:55:46+00:00,Federated Learning Overview,True
+2209.05395,Communication-Efficient and Privacy-Preserving Feature-based Federated Transfer Learning,http://arxiv.org/abs/2209.05395v1,2022-09-12 16:48:52+00:00,Federated Learning Overview,True
+2206.09262,Motley: Benchmarking Heterogeneity and Personalization in Federated Learning,http://arxiv.org/abs/2206.09262v6,2022-06-18 18:18:49+00:00,Data Heterogeneity in Federated Learning,True
+2103.13822,FedCor: Correlation-Based Active Client Selection Strategy for Heterogeneous Federated Learning,http://arxiv.org/abs/2103.13822v3,2021-03-24 03:25:14+00:00,Data Heterogeneity in Federated Learning,True
+2008.06767,Heterogeneous Federated Learning,http://arxiv.org/abs/2008.06767v2,2020-08-15 19:06:59+00:00,Data Heterogeneity in Federated Learning,True
+2402.02230,Federated Learning with Differential Privacy,http://arxiv.org/abs/2402.02230v1,2024-02-03 18:21:38+00:00,Data Heterogeneity in Federated Learning,True
+2111.11066,FedCV: A Federated Learning Framework for Diverse Computer Vision Tasks,http://arxiv.org/abs/2111.11066v1,2021-11-22 09:26:08+00:00,Data Heterogeneity in Federated Learning,True
+2007.14390,Flower: A Friendly Federated Learning Research Framework,http://arxiv.org/abs/2007.14390v5,2020-07-28 17:59:07+00:00,Data Heterogeneity in Federated Learning,False
+2004.11794,A Review of Privacy-preserving Federated Learning for the Internet-of-Things,http://arxiv.org/abs/2004.11794v2,2020-04-24 15:27:23+00:00,Federated Learning Overview,False
+2206.00686,Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data,http://arxiv.org/abs/2206.00686v2,2022-06-01 18:00:48+00:00,Data Heterogeneity in Federated Learning,False
+2408.09545,Seamless Integration: Sampling Strategies in Federated Learning Systems,http://arxiv.org/abs/2408.09545v2,2024-08-18 17:16:49+00:00,Data Heterogeneity in Federated Learning,False
+2006.07026,Backdoor Attacks on Federated Meta-Learning,http://arxiv.org/abs/2006.07026v2,2020-06-12 09:23:24+00:00,Federated Learning Overview,False
+2411.08374,Federated Graph Learning with Graphless Clients,http://arxiv.org/abs/2411.08374v1,2024-11-13 06:54:05+00:00,Data Heterogeneity in Federated Learning,False
+2110.07661,Distribution-Free Federated Learning with Conformal Predictions,http://arxiv.org/abs/2110.07661v2,2021-10-14 18:41:17+00:00,Epistemic Uncertainty Estimation,False
+2110.06978,WAFFLE: Weighted Averaging for Personalized Federated Learning,http://arxiv.org/abs/2110.06978v2,2021-10-13 18:40:54+00:00,Data Heterogeneity in Federated Learning,False
+1910.07796,Overcoming Forgetting in Federated Learning on Non-IID Data,http://arxiv.org/abs/1910.07796v1,2019-10-17 09:53:16+00:00,Data Heterogeneity in Federated Learning,False

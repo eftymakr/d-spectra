@@ -1,0 +1,18 @@
+arxiv_id,title,url,date,category,cited_in_text
+2308.14968,Continual Learning for Generative Retrieval over Dynamic Corpora,http://arxiv.org/abs/2308.14968v2,2023-08-29 01:46:06+00:00,Continual Learning in Dynamic Retrieval,True
+2304.04171,Learning to Tokenize for Generative Retrieval,http://arxiv.org/abs/2304.04171v1,2023-04-09 06:18:19+00:00,Generalization to Unseen Documents,True
+2305.18952,Exploring the Practicality of Generative Retrieval on Dynamic Corpora,http://arxiv.org/abs/2305.18952v5,2023-05-27 16:05:00+00:00,Continual Learning in Dynamic Retrieval,True
+2111.13057,Evaluating the Robustness of Retrieval Pipelines with Query Variation Generators,http://arxiv.org/abs/2111.13057v3,2021-11-25 12:39:51+00:00,Semantic Alignment with Pretrained Models,True
+2504.05181,Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval,http://arxiv.org/abs/2504.05181v2,2025-04-07 15:27:37+00:00,Generative Retrieval (GR) Frameworks,False
+2408.02152,Generative Retrieval with Few-shot Indexing,http://arxiv.org/abs/2408.02152v3,2024-08-04 22:00:34+00:00,Few-Shot Generative Retrieval Approaches,True
+2301.05508,Do the Findings of Document and Passage Retrieval Generalize to the Retrieval of Responses for Dialogues?,http://arxiv.org/abs/2301.05508v1,2023-01-13 12:18:43+00:00,Generalization to Unseen Documents,False
+2504.09935,Constrained Auto-Regressive Decoding Constrains Generative Retrieval,http://arxiv.org/abs/2504.09935v1,2025-04-14 06:54:49+00:00,Generalization to Unseen Documents,False
+1708.08291,On Type-Aware Entity Retrieval,http://arxiv.org/abs/1708.08291v1,2017-08-28 12:47:04+00:00,Efficiency vs. Effectiveness Trade-offs,False
+1708.08715,Design Patterns for Fusion-Based Object Retrieval,http://arxiv.org/abs/1708.08715v1,2017-08-29 12:05:38+00:00,Efficiency vs. Effectiveness Trade-offs,False
+1511.05800,The Retrieval Effectiveness of Web Search Engines: Considering Results Descriptions,http://arxiv.org/abs/1511.05800v1,2015-11-18 14:29:50+00:00,Efficiency vs. Effectiveness Trade-offs,False
+2404.07220,Blended RAG: Improving RAG (Retriever-Augmented Generation) Accuracy with Semantic Search and Hybrid Query-Based Retrievers,http://arxiv.org/abs/2404.07220v2,2024-03-22 17:13:46+00:00,Generative Retrieval (GR) Frameworks,False
+2102.11903,Neural ranking models for document retrieval,http://arxiv.org/abs/2102.11903v2,2021-02-23 19:30:37+00:00,Efficiency vs. Effectiveness Trade-offs,False
+2210.09877,Towards Proactive Information Retrieval in Noisy Text with Wikipedia Concepts,http://arxiv.org/abs/2210.09877v1,2022-10-18 14:12:06+00:00,Semantic Alignment with Pretrained Models,False
+1601.04605,Dynamic Information Retrieval: Theoretical Framework and Application,http://arxiv.org/abs/1601.04605v1,2016-01-18 17:01:34+00:00,Continual Learning in Dynamic Retrieval,False
+1907.01117,Exploring Feasible Design Spaces for Heterogeneous Constraints,http://arxiv.org/abs/1907.01117v2,2019-07-02 01:11:49+00:00,Efficiency vs. Effectiveness Trade-offs,False
+2005.12739,An Effective Pipeline for a Real-world Clothes Retrieval System,http://arxiv.org/abs/2005.12739v1,2020-05-26 14:08:49+00:00,Efficiency vs. Effectiveness Trade-offs,False

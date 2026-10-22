@@ -1,0 +1,17 @@
+arxiv_id,title,url,date,category,cited_in_text
+2402.12065,WKVQuant: Quantizing Weight and Key/Value Cache for Large Language Models Gains More,http://arxiv.org/abs/2402.12065v2,2024-02-19 11:33:21+00:00,Evaluation of Model and Deployment Configurations,True
+2304.12244,WizardLM: Empowering large pre-trained language models to follow complex instructions,http://arxiv.org/abs/2304.12244v3,2023-04-24 16:31:06+00:00,Evaluation of Model and Deployment Configurations,True
+2307.07950,Accelerating Distributed ML Training via Selective Synchronization,http://arxiv.org/abs/2307.07950v2,2023-07-16 05:28:59+00:00,Distributed Training Optimization Techniques,True
+2312.03140,FlexModel: A Framework for Interpretability of Distributed Large Language Models,http://arxiv.org/abs/2312.03140v1,2023-12-05 21:19:33+00:00,Distributed Training Optimization Techniques,True
+2305.14982,LAraBench: Benchmarking Arabic AI with Large Language Models,http://arxiv.org/abs/2305.14982v2,2023-05-24 10:16:16+00:00,Evaluation of Model and Deployment Configurations,True
+2409.08066,Self-Supervised Learning of Iterative Solvers for Constrained Optimization,http://arxiv.org/abs/2409.08066v3,2024-09-12 14:17:23+00:00,Iterative Solvers for Constrained Optimization,True
+2003.03009,Communication optimization strategies for distributed deep neural network training: A survey,http://arxiv.org/abs/2003.03009v2,2020-03-06 02:32:54+00:00,Communication Efficiency in Distributed Systems,True
+2302.06126,Expediting Distributed DNN Training with Device Topology-Aware Graph Deployment,http://arxiv.org/abs/2302.06126v1,2023-02-13 06:30:24+00:00,Distributed Training Optimization Techniques,True
+1507.06243,A Smooth Primal-Dual Optimization Framework for Nonsmooth Composite Convex Minimization,http://arxiv.org/abs/1507.06243v7,2015-07-22 16:32:06+00:00,Iterative Solvers for Constrained Optimization,True
+1908.05630,Distributed Path Planning for Executing Cooperative Tasks with Time Windows,http://arxiv.org/abs/1908.05630v1,2019-08-15 16:41:56+00:00,Iterative Solvers for Constrained Optimization,True
+2306.13549,A Survey on Multimodal Large Language Models,http://arxiv.org/abs/2306.13549v4,2023-06-23 15:21:52+00:00,Evaluation of Model and Deployment Configurations,False
+2407.01505,Self-Cognition in Large Language Models: An Exploratory Study,http://arxiv.org/abs/2407.01505v1,2024-07-01 17:52:05+00:00,Evaluation of Model and Deployment Configurations,False
+,Space-time distributions,http://arxiv.org/abs/gr-qc/9810059v1,1998-10-18 19:09:37+00:00,Iterative Solvers for Constrained Optimization,False
+2312.05434,Beneath the Surface: Unveiling Harmful Memes with Multimodal Reasoning Distilled from Large Language Models,http://arxiv.org/abs/2312.05434v1,2023-12-09 01:59:11+00:00,Evaluation of Model and Deployment Configurations,False
+0907.3282,An Optimal Execution Problem with Market Impact,http://arxiv.org/abs/0907.3282v8,2009-07-20 09:56:35+00:00,Iterative Solvers for Constrained Optimization,False
+2402.14679,Is Self-knowledge and Action Consistent or Not: Investigating Large Language Model's Personality,http://arxiv.org/abs/2402.14679v2,2024-02-22 16:32:08+00:00,Evaluation of Model and Deployment Configurations,False

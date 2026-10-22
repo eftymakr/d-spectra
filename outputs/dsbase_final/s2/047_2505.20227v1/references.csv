@@ -1,0 +1,14 @@
+arxiv_id,title,url,date,category,cited_in_text
+2302.05990,Exploiting Graph Structured Cross-Domain Representation for Multi-Domain Recommendation,http://arxiv.org/abs/2302.05990v2,2023-02-12 19:51:32+00:00,Efficient Multi-Domain Recommendation Systems,True
+2303.01003,Target Domain Data induces Negative Transfer in Mixed Domain Training with Disjoint Classes,http://arxiv.org/abs/2303.01003v1,2023-03-02 06:44:21+00:00,Negative Transfer Problem (NTP) Mitigation Strategies,True
+2309.06217,HAMUR: Hyper Adapter for Multi-Domain Recommendation,http://arxiv.org/abs/2309.06217v2,2023-09-12 13:34:33+00:00,Efficient Multi-Domain Recommendation Systems,True
+2311.13188,Cracking the Code of Negative Transfer: A Cooperative Game Theoretic Approach for Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2311.13188v1,2023-11-22 06:30:54+00:00,Negative Transfer Problem (NTP) Mitigation Strategies,True
+1812.06229,Domain-to-Domain Translation Model for Recommender System,http://arxiv.org/abs/1812.06229v1,2018-12-15 03:42:27+00:00,Domain Feature Extraction and Integration Methods,True
+2306.06302,Knowledge Enhanced Multi-Domain Recommendations in an AI Assistant Application,http://arxiv.org/abs/2306.06302v2,2023-06-09 23:40:03+00:00,Efficient Multi-Domain Recommendation Systems,True
+1210.7056,Selective Transfer Learning for Cross Domain Recommendation,http://arxiv.org/abs/1210.7056v1,2012-10-26 05:36:57+00:00,Domain-Level Gap Measurement Approaches,True
+2202.12524,MAMDR: A Model Agnostic Learning Method for Multi-Domain Recommendation,http://arxiv.org/abs/2202.12524v4,2022-02-25 06:58:28+00:00,Efficient Multi-Domain Recommendation Systems,True
+2405.12892,Retrievable Domain-Sensitive Feature Memory for Multi-Domain Recommendation,http://arxiv.org/abs/2405.12892v2,2024-05-21 16:02:06+00:00,Domain Feature Extraction and Integration Methods,True
+2108.05930,A Systematic Benchmarking Analysis of Transfer Learning for Medical Image Analysis,http://arxiv.org/abs/2108.05930v1,2021-08-12 19:08:34+00:00,Domain-Specific Adaptation Techniques,True
+2201.05867,Transferability in Deep Learning: A Survey,http://arxiv.org/abs/2201.05867v1,2022-01-15 15:03:17+00:00,Negative Transfer Problem (NTP) Mitigation Strategies,True
+2312.10602,A Weighted K-Center Algorithm for Data Subset Selection,http://arxiv.org/abs/2312.10602v1,2023-12-17 04:41:07+00:00,Domain Feature Extraction and Integration Methods,True
+2304.10767,How good are variational autoencoders at transfer learning?,http://arxiv.org/abs/2304.10767v1,2023-04-21 06:32:32+00:00,Domain-Level Gap Measurement Approaches,True

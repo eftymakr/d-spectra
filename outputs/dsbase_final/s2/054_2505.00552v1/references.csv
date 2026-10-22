@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2107.04755,Beyond Low-pass Filtering: Graph Convolutional Networks with Automatic Filtering,http://arxiv.org/abs/2107.04755v3,2021-07-10 04:11:25+00:00,State-of-the-Art Contributions and Innovations,True
+2003.03777,"Graphs, Convolutions, and Neural Networks: From Graph Filters to Graph Neural Networks",http://arxiv.org/abs/2003.03777v5,2020-03-08 13:02:15+00:00,State-of-the-Art Contributions and Innovations,True
+2001.00267,Multi-Graph Convolution Collaborative Filtering,http://arxiv.org/abs/2001.00267v1,2020-01-01 20:52:29+00:00,Graph Convolutional Networks in Collaborative Filtering,True
+2209.02544,XSimGCL: Towards Extremely Simple Graph Contrastive Learning for Recommendation,http://arxiv.org/abs/2209.02544v4,2022-09-06 14:50:51+00:00,State-of-the-Art Contributions and Innovations,True
+1901.01343,Graph Neural Networks with convolutional ARMA filters,http://arxiv.org/abs/1901.01343v7,2019-01-05 00:16:00+00:00,State-of-the-Art Contributions and Innovations,True
+2001.10167,Revisiting Graph based Collaborative Filtering: A Linear Residual Graph Convolutional Network Approach,http://arxiv.org/abs/2001.10167v1,2020-01-28 04:41:25+00:00,Graph Convolutional Networks in Collaborative Filtering,True
+2004.14734,A Robust Hierarchical Graph Convolutional Network Model for Collaborative Filtering,http://arxiv.org/abs/2004.14734v1,2020-04-30 12:50:39+00:00,Graph Convolutional Networks in Collaborative Filtering,True
+2105.06339,Graph Learning based Recommender Systems: A Review,http://arxiv.org/abs/2105.06339v1,2021-05-13 14:50:45+00:00,State-of-the-Art Contributions and Innovations,True
+2007.03383,RGCF: Refined Graph Convolution Collaborative Filtering with concise and expressive embedding,http://arxiv.org/abs/2007.03383v2,2020-07-07 12:26:10+00:00,Graph Convolutional Networks in Collaborative Filtering,True
+1911.10699,Multi-Component Graph Convolutional Collaborative Filtering,http://arxiv.org/abs/1911.10699v1,2019-11-25 04:41:43+00:00,Graph Convolutional Networks in Collaborative Filtering,True
+2406.13996,Unifying Graph Convolution and Contrastive Learning in Collaborative Filtering,http://arxiv.org/abs/2406.13996v2,2024-06-20 04:50:28+00:00,State-of-the-Art Contributions and Innovations,True
+1208.5224,Titchmarsh-Weyl theory for Schrödinger operators on unbounded domains,http://arxiv.org/abs/1208.5224v3,2012-08-26 13:49:02+00:00,Spectral Graph Theory Applications,True
+1805.03352,Learning Heterogeneous Knowledge Base Embeddings for Explainable Recommendation,http://arxiv.org/abs/1805.03352v2,2018-05-09 02:32:19+00:00,State-of-the-Art Contributions and Innovations,True
+2109.11059,Exploring Heterogeneous Metadata for Video Recommendation with Two-tower Model,http://arxiv.org/abs/2109.11059v2,2021-09-22 22:13:54+00:00,State-of-the-Art Contributions and Innovations,True
+1905.08108,Neural Graph Collaborative Filtering,http://arxiv.org/abs/1905.08108v2,2019-05-20 13:41:16+00:00,State-of-the-Art Contributions and Innovations,True
+2008.12578,Graph Convolutional Neural Networks with Node Transition Probability-based Message Passing and DropNode Regularization,http://arxiv.org/abs/2008.12578v2,2020-08-28 10:51:03+00:00,State-of-the-Art Contributions and Innovations,True
+1010.0094,An Inverse Spectral Theorem,http://arxiv.org/abs/1010.0094v1,2010-10-01 08:35:27+00:00,Spectral Graph Theory Applications,False
+2006.15772,Multi-sided Exposure Bias in Recommendation,http://arxiv.org/abs/2006.15772v2,2020-06-29 02:00:25+00:00,Comparative Analysis of GCN Variants,False
+2303.15532,Stance Inference in Twitter through Graph Convolutional Collaborative Filtering Networks with Minimal Supervision,http://arxiv.org/abs/2303.15532v2,2023-03-27 18:14:47+00:00,State-of-the-Art Contributions and Innovations,False
+1811.10435,On Filter Size in Graph Convolutional Networks,http://arxiv.org/abs/1811.10435v1,2018-11-23 13:45:30+00:00,State-of-the-Art Contributions and Innovations,False
+2504.03566,Nonlinear spectral graph theory,http://arxiv.org/abs/2504.03566v2,2025-04-04 16:13:27+00:00,Spectral Graph Theory Applications,False
+1804.08891,A multi-level collaborative filtering method that improves recommendations,http://arxiv.org/abs/1804.08891v1,2018-04-24 08:20:45+00:00,State-of-the-Art Contributions and Innovations,False
+1309.6786,One-class Collaborative Filtering with Random Graphs: Annotated Version,http://arxiv.org/abs/1309.6786v4,2013-09-26 10:32:43+00:00,State-of-the-Art Contributions and Innovations,True
+1708.03058,Online Interactive Collaborative Filtering Using Multi-Armed Bandit with Dependent Arms,http://arxiv.org/abs/1708.03058v2,2017-08-10 02:52:57+00:00,State-of-the-Art Contributions and Innovations,False
+,A Model of a Trust-based Recommendation System on a Social Network,http://arxiv.org/abs/nlin/0611054v3,2006-11-28 16:06:34+00:00,Comparative Analysis of GCN Variants,False
+1609.04880,Die-out Probability in SIS Epidemic Processes on Networks,http://arxiv.org/abs/1609.04880v2,2016-09-15 22:50:55+00:00,Spectral Graph Theory Applications,False
+2103.02236,Multi-Task Representation Learning with Multi-View Graph Convolutional Networks,http://arxiv.org/abs/2103.02236v1,2021-03-03 08:00:25+00:00,State-of-the-Art Contributions and Innovations,False
+1904.09631,HCFContext: Smartphone Context Inference via Sequential History-based Collaborative Filtering,http://arxiv.org/abs/1904.09631v2,2019-04-21 17:09:35+00:00,State-of-the-Art Contributions and Innovations,False
+1910.00942,Keep It Simple: Graph Autoencoders Without Graph Convolutional Networks,http://arxiv.org/abs/1910.00942v1,2019-10-02 13:30:08+00:00,State-of-the-Art Contributions and Innovations,False
+2403.16066,A Temporal Graph Network Framework for Dynamic Recommendation,http://arxiv.org/abs/2403.16066v2,2024-03-24 08:33:13+00:00,State-of-the-Art Contributions and Innovations,False

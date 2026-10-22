@@ -1,0 +1,23 @@
+arxiv_id,title,url,date,category,cited_in_text
+2403.14088,Protein Conformation Generation via Force-Guided SE(3) Diffusion Models,http://arxiv.org/abs/2403.14088v2,2024-03-21 02:44:08+00:00,Diffusion Models in Protein Structure Prediction,False
+2209.15611,Protein structure generation via folding diffusion,http://arxiv.org/abs/2209.15611v2,2022-09-30 17:35:53+00:00,Diffusion Models in Protein Structure Prediction,False
+2505.17478,ConfRover: Simultaneous Modeling of Protein Conformation and Dynamics via Autoregression,http://arxiv.org/abs/2505.17478v2,2025-05-23 05:00:15+00:00,Protein Conformational Dynamics Sampling,False
+2410.18403,Structure Language Models for Protein Conformation Generation,http://arxiv.org/abs/2410.18403v2,2024-10-24 03:38:51+00:00,Language Modeling for Protein Conformation Generation,False
+2410.20317,ProtScape: A molecular structure and energy-aware representation for protein conformation generation,http://arxiv.org/abs/2410.20317v2,2024-10-27 02:59:48+00:00,Protein Conformational Dynamics Sampling,False
+2303.09642,SUD$^2$: Supervision by Denoising Diffusion Models for Image Reconstruction,http://arxiv.org/abs/2303.09642v2,2023-03-16 20:42:24+00:00,Physical Supervision in Generative Modeling,False
+2004.13167,Energy-based models for atomic-resolution protein conformations,http://arxiv.org/abs/2004.13167v1,2020-04-27 20:45:12+00:00,Physical Supervision in Generative Modeling,False
+2412.07815,Mask prior-guided denoising diffusion improves inverse protein folding,http://arxiv.org/abs/2412.07815v2,2024-12-10 09:10:28+00:00,Diffusion Models in Protein Structure Prediction,False
+1206.3509,A Novel Approach for Protein Structure Prediction,http://arxiv.org/abs/1206.3509v1,2012-06-15 16:31:45+00:00,Physical Supervision in Generative Modeling,False
+1208.2680,Atomic-accuracy prediction of protein loop structures through an RNA-inspired ansatz,http://arxiv.org/abs/1208.2680v2,2012-08-02 19:06:33+00:00,Protein Conformational Dynamics Sampling,False
+2104.13147,Quadratic Optimization-Based Nonlinear Control for Protein Conformation Prediction,http://arxiv.org/abs/2104.13147v1,2021-04-27 12:50:57+00:00,Protein Conformational Dynamics Sampling,False
+1409.2584,Conformational selection in protein binding and function,http://arxiv.org/abs/1409.2584v1,2014-09-09 03:36:46+00:00,Protein Conformational Dynamics Sampling,False
+2312.02966,Diffusion-SS3D: Diffusion Model for Semi-supervised 3D Object Detection,http://arxiv.org/abs/2312.02966v1,2023-12-05 18:54:03+00:00,Efficiency and Robustness of Diffusion Models,False
+1812.05965,Localization of Energetic Frustration in Proteins,http://arxiv.org/abs/1812.05965v1,2018-12-14 14:47:03+00:00,Protein Conformational Dynamics Sampling,False
+1101.5865,"Disordered proteins and network disorder in network descriptions of protein structure, dynamics and function. Hypotheses and a comprehensive review",http://arxiv.org/abs/1101.5865v3,2011-01-31 07:55:53+00:00,Protein Conformational Dynamics Sampling,False
+2407.16375,Ranking protein-protein models with large language models and graph neural networks,http://arxiv.org/abs/2407.16375v1,2024-07-23 10:51:35+00:00,Language Modeling for Protein Conformation Generation,False
+2311.16052,Exploring Attribute Variations in Style-based GANs using Diffusion Models,http://arxiv.org/abs/2311.16052v1,2023-11-27 18:14:03+00:00,Efficiency and Robustness of Diffusion Models,False
+0811.3094,Simulating Protein Conformations through Global Optimization,http://arxiv.org/abs/0811.3094v1,2008-11-19 11:50:46+00:00,Protein Conformational Dynamics Sampling,False
+2302.03018,DDM$^2$: Self-Supervised Diffusion MRI Denoising with Generative Diffusion Models,http://arxiv.org/abs/2302.03018v1,2023-02-06 18:56:39+00:00,Posterior Sampling Techniques in Diffusion Models,False
+2401.14404,Deconstructing Denoising Diffusion Models for Self-Supervised Learning,http://arxiv.org/abs/2401.14404v1,2024-01-25 18:59:57+00:00,Diffusion Models in Protein Structure Prediction,False
+2311.03226,LDM3D-VR: Latent Diffusion Model for 3D VR,http://arxiv.org/abs/2311.03226v1,2023-11-06 16:12:10+00:00,Efficiency and Robustness of Diffusion Models,False
+2501.05336,Stream Aligner: Efficient Sentence-Level Alignment via Distribution Induction,http://arxiv.org/abs/2501.05336v1,2025-01-09 16:02:51+00:00,Efficiency and Robustness of Diffusion Models,False

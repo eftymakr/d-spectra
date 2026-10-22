@@ -1,0 +1,11 @@
+rank,arxiv_id,title,url,date
+1,2407.10853,Bring Your Own Prompts: Use-Case-Specific Bias and Fairness Evaluation for LLMs,http://arxiv.org/abs/2407.10853v6,2024-07-15 16:04:44+00:00
+2,2503.06792,On the Mutual Influence of Gender and Occupation in LLM Representations,http://arxiv.org/abs/2503.06792v1,2025-03-09 22:11:30+00:00
+3,2001.09784,Algorithmic Fairness,http://arxiv.org/abs/2001.09784v1,2020-01-21 19:01:38+00:00
+4,2505.02456,Colombian Waitresses y Jueces canadienses: Gender and Country Biases in Occupation Recommendations from LLMs,http://arxiv.org/abs/2505.02456v2,2025-05-05 08:40:51+00:00
+5,1707.00093,Multisided Fairness for Recommendation,http://arxiv.org/abs/1707.00093v2,2017-07-01 04:14:02+00:00
+6,2406.20098,Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs,http://arxiv.org/abs/2406.20098v2,2024-06-28 17:59:46+00:00
+7,1707.00391,Fair Pipelines,http://arxiv.org/abs/1707.00391v1,2017-07-03 03:53:29+00:00
+8,2503.21676,"How do language models learn facts? Dynamics, curricula and hallucinations",http://arxiv.org/abs/2503.21676v2,2025-03-27 16:43:45+00:00
+9,2408.16440,Instruction-tuned Large Language Models for Machine Translation in the Medical Domain,http://arxiv.org/abs/2408.16440v2,2024-08-29 11:05:54+00:00
+10,2312.12006,Can ChatGPT be Your Personal Medical Assistant?,http://arxiv.org/abs/2312.12006v1,2023-12-19 09:54:27+00:00

@@ -1,0 +1,31 @@
+rank,arxiv_id,title,url,date
+1,2208.06507,Continual Unsupervised Domain Adaptation for Semantic Segmentation using a Class-Specific Transfer,http://arxiv.org/abs/2208.06507v1,2022-08-12 21:30:49+00:00
+2,2012.08226,Cross-Domain Grouping and Alignment for Domain Adaptive Semantic Segmentation,http://arxiv.org/abs/2012.08226v2,2020-12-15 11:36:21+00:00
+3,2206.03600,OneRing: A Simple Method for Source-free Open-partial Domain Adaptation,http://arxiv.org/abs/2206.03600v2,2022-06-07 21:39:54+00:00
+4,2108.06383,DensePASS: Dense Panoramic Semantic Segmentation via Unsupervised Domain Adaptation with Attention-Augmented Context Exchange,http://arxiv.org/abs/2108.06383v1,2021-08-13 20:15:46+00:00
+5,2204.02111,Birds of A Feather Flock Together: Category-Divergence Guidance for Domain Adaptive Segmentation,http://arxiv.org/abs/2204.02111v1,2022-04-05 11:17:19+00:00
+6,2405.19899,Open-Set Domain Adaptation for Semantic Segmentation,http://arxiv.org/abs/2405.19899v1,2024-05-30 09:55:19+00:00
+7,1911.11981,Class-Conditional Domain Adaptation on Semantic Segmentation,http://arxiv.org/abs/1911.11981v2,2019-11-27 06:38:28+00:00
+8,2302.06378,Semantic Image Segmentation: Two Decades of Research,http://arxiv.org/abs/2302.06378v1,2023-02-13 14:11:05+00:00
+9,2110.11062,Transfer beyond the Field of View: Dense Panoramic Semantic Segmentation via Unsupervised Domain Adaptation,http://arxiv.org/abs/2110.11062v1,2021-10-21 11:22:05+00:00
+10,1910.03548,Multi-Source Domain Adaptation and Semi-Supervised Domain Adaptation with Focus on Visual Domain Adaptation Challenge 2019,http://arxiv.org/abs/1910.03548v2,2019-10-08 17:17:35+00:00
+11,2106.01656,Generalized Domain Adaptation,http://arxiv.org/abs/2106.01656v1,2021-06-03 07:55:18+00:00
+12,2103.15467,Category-Adaptive Domain Adaptation for Semantic Segmentation,http://arxiv.org/abs/2103.15467v2,2021-03-29 10:00:50+00:00
+13,2203.16557,COSMOS: Cross-Modality Unsupervised Domain Adaptation for 3D Medical Image Segmentation based on Target-aware Domain Translation and Iterative Self-Training,http://arxiv.org/abs/2203.16557v2,2022-03-30 18:00:07+00:00
+14,1812.04351,Multichannel Semantic Segmentation with Unsupervised Domain Adaptation,http://arxiv.org/abs/1812.04351v1,2018-12-11 12:26:38+00:00
+15,1908.05959,Multi-Domain Adaptation in Brain MRI through Paired Consistency and Adversarial Learning,http://arxiv.org/abs/1908.05959v2,2019-08-16 13:06:18+00:00
+16,1702.05374,Domain Adaptation for Visual Applications: A Comprehensive Survey,http://arxiv.org/abs/1702.05374v2,2017-02-17 15:07:40+00:00
+17,1806.00600,Semantic-Aware Generative Adversarial Nets for Unsupervised Domain Adaptation in Chest X-ray Segmentation,http://arxiv.org/abs/1806.00600v2,2018-06-02 07:59:55+00:00
+18,2011.08502,Unsupervised BatchNorm Adaptation (UBNA): A Domain Adaptation Method for Semantic Segmentation Without Using Source Domain Representations,http://arxiv.org/abs/2011.08502v2,2020-11-17 08:37:40+00:00
+19,2106.06237,KRADA: Known-region-aware Domain Alignment for Open-set Domain Adaptation in Semantic Segmentation,http://arxiv.org/abs/2106.06237v3,2021-06-11 08:43:59+00:00
+20,2210.12852,1st Place Solution of The Robust Vision Challenge 2022 Semantic Segmentation Track,http://arxiv.org/abs/2210.12852v3,2022-10-23 20:52:22+00:00
+21,2112.03241,Unsupervised Domain Adaptation for Semantic Image Segmentation: a Comprehensive Survey,http://arxiv.org/abs/2112.03241v1,2021-12-06 18:47:41+00:00
+22,2412.16859,Adversarially Domain-adaptive Latent Diffusion for Unsupervised Semantic Segmentation,http://arxiv.org/abs/2412.16859v2,2024-12-22 04:55:41+00:00
+23,2110.02833,Shallow Features Guide Unsupervised Domain Adaptation for Semantic Segmentation at Class Boundaries,http://arxiv.org/abs/2110.02833v1,2021-10-06 15:05:48+00:00
+24,2208.14227,CLUDA : Contrastive Learning in Unsupervised Domain Adaptation for Semantic Segmentation,http://arxiv.org/abs/2208.14227v2,2022-08-27 05:13:14+00:00
+25,2409.18340,DRL-STNet: Unsupervised Domain Adaptation for Cross-modality Medical Image Segmentation via Disentangled Representation Learning,http://arxiv.org/abs/2409.18340v1,2024-09-26 23:30:40+00:00
+26,2208.10716,Threshold-adaptive Unsupervised Focal Loss for Domain Adaptation of Semantic Segmentation,http://arxiv.org/abs/2208.10716v1,2022-08-23 03:48:48+00:00
+27,1904.10620,Bidirectional Learning for Domain Adaptation of Semantic Segmentation,http://arxiv.org/abs/1904.10620v1,2019-04-24 03:00:22+00:00
+28,2109.09736,Unsupervised Domain Adaptation with Semantic Consistency across Heterogeneous Modalities for MRI Prostate Lesion Segmentation,http://arxiv.org/abs/2109.09736v1,2021-09-19 17:33:26+00:00
+29,1804.08286,Fully Convolutional Adaptation Networks for Semantic Segmentation,http://arxiv.org/abs/1804.08286v1,2018-04-23 08:44:52+00:00
+30,2101.00588,Style Normalization and Restitution for Domain Generalization and Adaptation,http://arxiv.org/abs/2101.00588v3,2021-01-03 09:01:39+00:00

@@ -1,0 +1,31 @@
+rank,arxiv_id,title,url,date
+1,2204.08085,CPFair: Personalized Consumer and Producer Fairness Re-ranking for Recommender Systems,http://arxiv.org/abs/2204.08085v1,2022-04-17 20:38:02+00:00
+2,2404.17826,A Taxation Perspective for Fair Re-ranking,http://arxiv.org/abs/2404.17826v1,2024-04-27 08:21:29+00:00
+3,2501.14710,Overcoming Fairness Trade-offs via Pre-processing: A Causal Perspective,http://arxiv.org/abs/2501.14710v1,2025-01-24 18:33:18+00:00
+4,2503.07066,You Only Debias Once: Towards Flexible Accuracy-Fairness Trade-offs at Inference Time,http://arxiv.org/abs/2503.07066v1,2025-03-10 08:50:55+00:00
+5,2310.12785,A Theoretical Approach to Characterize the Accuracy-Fairness Trade-off Pareto Frontier,http://arxiv.org/abs/2310.12785v1,2023-10-19 14:35:26+00:00
+6,2005.12974,Opportunistic Multi-aspect Fairness through Personalized Re-ranking,http://arxiv.org/abs/2005.12974v1,2020-05-21 04:25:20+00:00
+7,2309.04250,Provider Fairness and Beyond-Accuracy Trade-offs in Recommender Systems,http://arxiv.org/abs/2309.04250v1,2023-09-08 10:28:41+00:00
+8,2406.11720,Cross-Document Neural Re-Ranking via Query-Induced Subgraphs,http://arxiv.org/abs/2406.11720v2,2024-06-17 16:38:19+00:00
+9,2405.16120,Guaranteeing Accuracy and Fairness under Fluctuating User Traffic: A Bankruptcy-Inspired Re-ranking Approach,http://arxiv.org/abs/2405.16120v2,2024-05-25 08:17:19+00:00
+10,2105.01447,Moving Towards Centers: Re-ranking with Attention and Memory for Re-identification,http://arxiv.org/abs/2105.01447v2,2021-05-04 12:14:30+00:00
+11,2406.18740,Re-Ranking Step by Step: Investigating Pre-Filtering for Re-Ranking with Large Language Models,http://arxiv.org/abs/2406.18740v1,2024-06-26 20:12:24+00:00
+12,1512.03740,Improving Human Activity Recognition Through Ranking and Re-ranking,http://arxiv.org/abs/1512.03740v1,2015-12-11 17:41:53+00:00
+13,2102.01203,Emergent Unfairness in Algorithmic Fairness-Accuracy Trade-Off Research,http://arxiv.org/abs/2102.01203v3,2021-02-01 22:02:14+00:00
+14,2306.01417,The Flawed Foundations of Fair Machine Learning,http://arxiv.org/abs/2306.01417v1,2023-06-02 10:07:12+00:00
+15,2305.13057,Causality-Aided Trade-off Analysis for Machine Learning Fairness,http://arxiv.org/abs/2305.13057v3,2023-05-22 14:14:43+00:00
+16,2405.15443,Fairness-Accuracy Trade-Offs: A Causal Perspective,http://arxiv.org/abs/2405.15443v2,2024-05-24 11:19:52+00:00
+17,2101.06980,Mitigating the Position Bias of Transformer Models in Passage Re-Ranking,http://arxiv.org/abs/2101.06980v1,2021-01-18 10:38:03+00:00
+18,2307.08484,Navigating Fairness Measures and Trade-Offs,http://arxiv.org/abs/2307.08484v1,2023-07-17 13:45:47+00:00
+19,1910.07870,Is There a Trade-Off Between Fairness and Accuracy? A Perspective Using Mismatched Hypothesis Testing,http://arxiv.org/abs/1910.07870v2,2019-10-17 12:59:25+00:00
+20,1811.08561,Adaptive Re-ranking of Deep Feature for Person Re-identification,http://arxiv.org/abs/1811.08561v1,2018-11-21 02:22:03+00:00
+21,1701.08398,Re-ranking Person Re-identification with k-reciprocal Encoding,http://arxiv.org/abs/1701.08398v4,2017-01-29 16:31:51+00:00
+22,1807.05618,Improved Person Re-Identification Based on Saliency and Semantic Parsing with Deep Neural Network Models,http://arxiv.org/abs/1807.05618v1,2018-07-15 21:40:00+00:00
+23,2311.15691,"Automated discovery of trade-off between utility, privacy and fairness in machine learning models",http://arxiv.org/abs/2311.15691v1,2023-11-27 10:28:44+00:00
+24,1006.3863,Normalization of peer-evaluation measures of group research quality across academic disciplines,http://arxiv.org/abs/1006.3863v2,2010-06-19 12:36:42+00:00
+25,2007.07101,Re-ranking for Writer Identification and Writer Retrieval,http://arxiv.org/abs/2007.07101v1,2020-07-14 15:21:17+00:00
+26,1903.12542,Re-Ranking Words to Improve Interpretability of Automatically Generated Topics,http://arxiv.org/abs/1903.12542v1,2019-03-29 14:32:02+00:00
+27,2303.06660,P-MMF: Provider Max-min Fairness Re-ranking in Recommender System,http://arxiv.org/abs/2303.06660v1,2023-03-12 13:42:50+00:00
+28,2007.00088,Evaluation of Fairness Trade-offs in Predicting Student Success,http://arxiv.org/abs/2007.00088v1,2020-06-30 20:03:18+00:00
+29,1706.10208,"On Fairness, Diversity and Randomness in Algorithmic Decision Making",http://arxiv.org/abs/1706.10208v1,2017-06-30 14:10:34+00:00
+30,2504.14550,Regret-aware Re-ranking for Guaranteeing Two-sided Fairness and Accuracy in Recommender Systems,http://arxiv.org/abs/2504.14550v1,2025-04-20 09:43:23+00:00

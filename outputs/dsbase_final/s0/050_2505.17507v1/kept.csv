@@ -1,0 +1,18 @@
+rank,arxiv_id,title,url,date
+1,2112.10006,Zero-shot and Few-shot Learning with Knowledge Graphs: A Comprehensive Survey,http://arxiv.org/abs/2112.10006v6,2021-12-18 21:40:50+00:00
+2,2409.16674,A Prompting-Based Representation Learning Method for Recommendation with Large Language Models,http://arxiv.org/abs/2409.16674v3,2024-09-25 07:06:14+00:00
+3,2011.01103,Generating Knowledge Graphs by Employing Natural Language Processing and Machine Learning Techniques within the Scholarly Domain,http://arxiv.org/abs/2011.01103v1,2020-10-28 08:31:40+00:00
+4,2006.15772,Multi-sided Exposure Bias in Recommendation,http://arxiv.org/abs/2006.15772v2,2020-06-29 02:00:25+00:00
+5,2210.01942,IGNiteR: News Recommendation in Microblogging Applications (Extended Version),http://arxiv.org/abs/2210.01942v1,2022-10-04 22:33:58+00:00
+6,1707.08913,Multi-Stakeholder Recommendation: Applications and Challenges,http://arxiv.org/abs/1707.08913v1,2017-07-27 15:52:18+00:00
+7,1707.09258,Patterns of Multistakeholder Recommendation,http://arxiv.org/abs/1707.09258v1,2017-07-28 14:42:34+00:00
+8,2304.02381,Physics-Inspired Interpretability Of Machine Learning Models,http://arxiv.org/abs/2304.02381v2,2023-04-05 11:35:17+00:00
+9,1906.01101,MEMe: An Accurate Maximum Entropy Method for Efficient Approximations in Large-Scale Machine Learning,http://arxiv.org/abs/1906.01101v1,2019-06-03 22:10:52+00:00
+10,1904.10922,The Scientific Method in the Science of Machine Learning,http://arxiv.org/abs/1904.10922v1,2019-04-24 17:01:43+00:00
+11,2407.15100,A General Framework for Data-Use Auditing of ML Models,http://arxiv.org/abs/2407.15100v3,2024-07-21 09:32:34+00:00
+12,2410.23180,ReasoningRec: Bridging Personalized Recommendations and Human-Interpretable Explanations through LLM Reasoning,http://arxiv.org/abs/2410.23180v1,2024-10-30 16:37:04+00:00
+13,2203.16942,Sequential Recommendation with User Evolving Preference Decomposition,http://arxiv.org/abs/2203.16942v1,2022-03-31 10:57:59+00:00
+14,2108.08712,Teaching Uncertainty Quantification in Machine Learning through Use Cases,http://arxiv.org/abs/2108.08712v1,2021-08-19 14:22:17+00:00
+15,2204.12833,Transfer Learning with Pre-trained Conditional Generative Models,http://arxiv.org/abs/2204.12833v3,2022-04-27 10:36:32+00:00
+16,1911.07679,Towards Quantification of Bias in Machine Learning for Healthcare: A Case Study of Renal Failure Prediction,http://arxiv.org/abs/1911.07679v1,2019-11-18 15:04:31+00:00
+17,2211.05075,"Supporting AI/ML Security Workers through an Adversarial Techniques, Tools, and Common Knowledge (AI/ML ATT&CK) Framework",http://arxiv.org/abs/2211.05075v1,2022-11-09 18:07:10+00:00

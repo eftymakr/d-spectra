@@ -1,0 +1,27 @@
+arxiv_id,title,url,date,category,cited_in_text
+2207.09052,Balanced Contrastive Learning for Long-Tailed Visual Recognition,http://arxiv.org/abs/2207.09052v3,2022-07-19 03:48:59+00:00,Class-Balanced Contrastive Learning,True
+2111.13998,Targeted Supervised Contrastive Learning for Long-Tailed Recognition,http://arxiv.org/abs/2111.13998v2,2021-11-27 22:40:10+00:00,Contrastive Learning Approaches,True
+2408.00483,A Systematic Review on Long-Tailed Learning,http://arxiv.org/abs/2408.00483v1,2024-08-01 11:39:45+00:00,Benchmark Datasets for Evaluation,True
+2403.06151,Decoupled Contrastive Learning for Long-Tailed Recognition,http://arxiv.org/abs/2403.06151v1,2024-03-10 09:46:28+00:00,Contrastive Learning Approaches,True
+2406.02223,SMCL: Saliency Masked Contrastive Learning for Long-tailed Recognition,http://arxiv.org/abs/2406.02223v1,2024-06-04 11:33:40+00:00,Saliency Masking Methods,True
+2212.11187,Similarity Contrastive Estimation for Image and Video Soft Contrastive Self-Supervised Learning,http://arxiv.org/abs/2212.11187v1,2022-12-21 16:56:55+00:00,Contrastive Learning Approaches,True
+2211.11938,Supervised Contrastive Learning on Blended Images for Long-tailed Recognition,http://arxiv.org/abs/2211.11938v1,2022-11-22 01:19:00+00:00,Contrastive Learning Approaches,True
+2309.16135,A dual-branch model with inter- and intra-branch contrastive loss for long-tailed recognition,http://arxiv.org/abs/2309.16135v1,2023-09-28 03:31:11+00:00,Contrastive Learning Approaches,True
+2312.02517,Simplifying Neural Network Training Under Class Imbalance,http://arxiv.org/abs/2312.02517v1,2023-12-05 05:52:44+00:00,Data Augmentation Strategies,True
+2101.06480,SelfMatch: Combining Contrastive Self-Supervision and Consistency for Semi-Supervised Learning,http://arxiv.org/abs/2101.06480v1,2021-01-16 17:03:53+00:00,Contrastive Learning Approaches,True
+2309.07186,LCReg: Long-Tailed Image Classification with Latent Categories based Recognition,http://arxiv.org/abs/2309.07186v1,2023-09-13 02:03:17+00:00,Data Augmentation Strategies,True
+2403.06726,Probabilistic Contrastive Learning for Long-Tailed Visual Recognition,http://arxiv.org/abs/2403.06726v2,2024-03-11 13:44:49+00:00,Contrastive Learning Approaches,True
+2009.12991,Long-Tailed Classification by Keeping the Good and Removing the Bad Momentum Causal Effect,http://arxiv.org/abs/2009.12991v5,2020-09-28 00:32:11+00:00,Momentum Causal Effects in SGD,True
+2207.00391,A Theoretical Analysis of the Learning Dynamics under Class Imbalance,http://arxiv.org/abs/2207.00391v4,2022-07-01 12:54:38+00:00,Gradient Analysis in SCL,False
+2007.12229,SeismoFlow -- Data augmentation for the class imbalance problem,http://arxiv.org/abs/2007.12229v2,2020-07-23 19:48:23+00:00,Data Augmentation Strategies,False
+2311.14090,Class Uncertainty: A Measure to Mitigate Class Imbalance,http://arxiv.org/abs/2311.14090v2,2023-11-23 16:36:03+00:00,Benchmark Datasets for Evaluation,False
+2001.05571,On Model Evaluation under Non-constant Class Imbalance,http://arxiv.org/abs/2001.05571v2,2020-01-15 21:52:24+00:00,Data Reweighting Techniques,False
+2402.19449,Heavy-Tailed Class Imbalance and Why Adam Outperforms Gradient Descent on Language Models,http://arxiv.org/abs/2402.19449v2,2024-02-29 18:47:52+00:00,Momentum Causal Effects in SGD,False
+2008.05524,Mitigating Dataset Imbalance via Joint Generation and Classification,http://arxiv.org/abs/2008.05524v1,2020-08-12 18:40:38+00:00,Data Augmentation Strategies,False
+2302.09195,Data-Efficient Contrastive Self-supervised Learning: Most Beneficial Examples for Supervised Learning Contribute the Least,http://arxiv.org/abs/2302.09195v5,2023-02-18 00:15:06+00:00,Theoretical Frameworks for SCL,False
+1909.02410,Semantic-Aware Scene Recognition,http://arxiv.org/abs/1909.02410v3,2019-09-05 13:44:03+00:00,Saliency Masking Methods,False
+2105.00133,Semi-supervised Long-tailed Recognition using Alternate Sampling,http://arxiv.org/abs/2105.00133v1,2021-05-01 00:43:38+00:00,Data Augmentation Strategies,False
+1305.1707,Class Imbalance Problem in Data Mining Review,http://arxiv.org/abs/1305.1707v1,2013-05-08 03:39:17+00:00,Benchmark Datasets for Evaluation,False
+2403.20236,Long-Tailed Anomaly Detection with Learnable Class Names,http://arxiv.org/abs/2403.20236v1,2024-03-29 15:26:44+00:00,Benchmark Datasets for Evaluation,False
+2112.05340,Tradeoffs Between Contrastive and Supervised Learning: An Empirical Study,http://arxiv.org/abs/2112.05340v1,2021-12-10 05:19:32+00:00,Contrastive Learning Approaches,False
+2008.02531,Self-supervised Video Representation Learning Using Inter-intra Contrastive Framework,http://arxiv.org/abs/2008.02531v2,2020-08-06 09:08:14+00:00,Contrastive Learning Approaches,False

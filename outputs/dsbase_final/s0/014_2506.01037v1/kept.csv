@@ -1,0 +1,29 @@
+rank,arxiv_id,title,url,date
+1,2305.14669,NegVSR: Augmenting Negatives for Generalized Noise Modeling in Real-World Video Super-Resolution,http://arxiv.org/abs/2305.14669v3,2023-05-24 03:23:35+00:00
+2,2201.07422,Self-Supervised Deep Blind Video Super-Resolution,http://arxiv.org/abs/2201.07422v1,2022-01-19 05:18:44+00:00
+3,2312.06640,Upscale-A-Video: Temporal-Consistent Diffusion Model for Real-World Video Super-Resolution,http://arxiv.org/abs/2312.06640v1,2023-12-11 18:54:52+00:00
+4,2401.12945,Lumiere: A Space-Time Diffusion Model for Video Generation,http://arxiv.org/abs/2401.12945v2,2024-01-23 18:05:25+00:00
+5,1905.02716,EDVR: Video Restoration with Enhanced Deformable Convolutional Networks,http://arxiv.org/abs/1905.02716v1,2019-05-07 17:58:14+00:00
+6,2104.07473,Zooming SlowMo: An Efficient One-Stage Framework for Space-Time Video Super-Resolution,http://arxiv.org/abs/2104.07473v1,2021-04-15 17:59:23+00:00
+7,2405.02171,Self-Supervised Learning for Real-World Super-Resolution from Dual and Multiple Zoomed Observations,http://arxiv.org/abs/2405.02171v1,2024-05-03 15:20:30+00:00
+8,1906.11951,Supervise Thyself: Examining Self-Supervised Representations in Interactive Environments,http://arxiv.org/abs/1906.11951v1,2019-06-27 20:38:47+00:00
+9,2111.10794,HoughCL: Finding Better Positive Pairs in Dense Self-supervised Learning,http://arxiv.org/abs/2111.10794v1,2021-11-21 11:23:12+00:00
+10,2501.02269,TDM: Temporally-Consistent Diffusion Model for All-in-One Real-World Video Restoration,http://arxiv.org/abs/2501.02269v1,2025-01-04 12:15:37+00:00
+11,2103.10081,Self-Supervised Adaptation for Video Super-Resolution,http://arxiv.org/abs/2103.10081v1,2021-03-18 08:30:24+00:00
+12,2407.01960,Zero-Shot Video Restoration and Enhancement Using Pre-Trained Image Diffusion Model,http://arxiv.org/abs/2407.01960v4,2024-07-02 05:31:59+00:00
+13,2501.01235,SVFR: A Unified Framework for Generalized Video Face Restoration,http://arxiv.org/abs/2501.01235v2,2025-01-02 12:51:20+00:00
+14,2209.02854,Video Restoration with a Deep Plug-and-Play Prior,http://arxiv.org/abs/2209.02854v2,2022-09-06 23:31:20+00:00
+15,2007.12085,Augmentation adversarial training for self-supervised speaker recognition,http://arxiv.org/abs/2007.12085v3,2020-07-23 15:49:52+00:00
+16,2312.03397,Generalized Contrastive Divergence: Joint Training of Energy-Based Model and Diffusion Model through Inverse Reinforcement Learning,http://arxiv.org/abs/2312.03397v1,2023-12-06 10:10:21+00:00
+17,2011.09634,Watch and Learn: Mapping Language and Noisy Real-world Videos with Self-supervision,http://arxiv.org/abs/2011.09634v2,2020-11-19 03:43:56+00:00
+18,1901.09005,Revisiting Self-Supervised Visual Representation Learning,http://arxiv.org/abs/1901.09005v1,2019-01-25 18:08:31+00:00
+19,2407.11087,Restore-RWKV: Efficient and Effective Medical Image Restoration with RWKV,http://arxiv.org/abs/2407.11087v3,2024-07-14 12:22:05+00:00
+20,2012.13083,Self-Supervised Representation Learning for Astronomical Images,http://arxiv.org/abs/2012.13083v2,2020-12-24 03:25:36+00:00
+21,2110.00528,Do Self-Supervised and Supervised Methods Learn Similar Visual Representations?,http://arxiv.org/abs/2110.00528v3,2021-10-01 16:51:29+00:00
+22,2008.10312,Self-Supervised Learning for Large-Scale Unsupervised Image Clustering,http://arxiv.org/abs/2008.10312v2,2020-08-24 10:39:19+00:00
+23,2312.00845,VMC: Video Motion Customization using Temporal Attention Adaption for Text-to-Video Diffusion Models,http://arxiv.org/abs/2312.00845v1,2023-12-01 06:50:11+00:00
+24,2211.05304,Contrastive Self-Supervised Learning for Skeleton Representations,http://arxiv.org/abs/2211.05304v1,2022-11-10 02:45:36+00:00
+25,1709.06342,Assessing Visual Quality of Omnidirectional Videos,http://arxiv.org/abs/1709.06342v4,2017-09-19 10:54:24+00:00
+26,1503.00081,Activity Recognition Using A Combination of Category Components And Local Models for Video Surveillance,http://arxiv.org/abs/1503.00081v1,2015-02-28 06:49:33+00:00
+27,2010.12609,Iterative Graph Self-Distillation,http://arxiv.org/abs/2010.12609v3,2020-10-23 18:37:06+00:00
+28,2306.00003,Detecting Heart Disease from Multi-View Ultrasound Images via Supervised Attention Multiple Instance Learning,http://arxiv.org/abs/2306.00003v3,2023-05-25 18:22:12+00:00

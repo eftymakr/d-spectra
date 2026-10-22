@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2211.16881,Generalized Deep Learning-based Proximal Gradient Descent for MR Reconstruction,http://arxiv.org/abs/2211.16881v2,2022-11-30 10:31:06+00:00,Proximal Operator Approximation in Deep Learning,True
+2310.16869,Single-pixel imaging based on deep learning,http://arxiv.org/abs/2310.16869v2,2023-10-25 13:35:25+00:00,Deep Learning for Single-Pixel Imaging,True
+1912.10557,"Algorithm Unrolling: Interpretable, Efficient Deep Learning for Signal and Image Processing",http://arxiv.org/abs/1912.10557v3,2019-12-22 23:02:18+00:00,Unrolling Approaches and Their Trade-offs,True
+2109.14025,Deep Unrolled Recovery in Sparse Biological Imaging,http://arxiv.org/abs/2109.14025v1,2021-09-28 20:22:44+00:00,Unrolling Approaches and Their Trade-offs,True
+2402.12872,"Deep, convergent, unrolled half-quadratic splitting for image deconvolution",http://arxiv.org/abs/2402.12872v2,2024-02-20 10:06:30+00:00,Unrolling Approaches and Their Trade-offs,True
+2012.06469,DILIE: Deep Internal Learning for Image Enhancement,http://arxiv.org/abs/2012.06469v1,2020-12-11 16:39:44+00:00,Performance Evaluation of Reconstruction Accuracy,True
+1911.03991,Using Deep Neural Networks for Estimating Loop Unrolling Factor,http://arxiv.org/abs/1911.03991v1,2019-11-10 20:19:33+00:00,Unrolling Approaches and Their Trade-offs,True
+1605.07950,On Fast Convergence of Proximal Algorithms for SQRT-Lasso Optimization: Don't Worry About Its Nonsmooth Loss Function,http://arxiv.org/abs/1605.07950v6,2016-05-25 16:08:08+00:00,Proximal Operator Approximation in Deep Learning,True
+2109.02722,Automatic Landmarks Correspondence Detection in Medical Images with an Application to Deformable Image Registration,http://arxiv.org/abs/2109.02722v2,2021-09-06 20:16:27+00:00,Performance Evaluation of Reconstruction Accuracy,True
+2504.02480,Graph Attention-Driven Bayesian Deep Unrolling for Dual-Peak Single-Photon Lidar Imaging,http://arxiv.org/abs/2504.02480v2,2025-04-03 10:57:26+00:00,Unrolling Approaches and Their Trade-offs,True
+2002.04264,The Devil is in the Channels: Mutual-Channel Loss for Fine-Grained Image Classification,http://arxiv.org/abs/2002.04264v3,2020-02-11 09:12:45+00:00,Reference to Prior Work on Proximal Trajectory Loss,True
+,On the proximate order of growth of generating functions of Polya frequency sequences,http://arxiv.org/abs/math/0210429v1,2002-10-28 14:43:19+00:00,Reference to Prior Work on Proximal Trajectory Loss,True
+2106.03129,3D UAV Trajectory and Data Collection Optimisation via Deep Reinforcement Learning,http://arxiv.org/abs/2106.03129v1,2021-06-06 14:08:41+00:00,Reference to Prior Work on Proximal Trajectory Loss,True
+1612.06265,A proximal difference-of-convex algorithm with extrapolation,http://arxiv.org/abs/1612.06265v2,2016-12-19 16:59:37+00:00,Reference to Prior Work on Proximal Trajectory Loss,True
+2306.12698,Interferometric lensless imaging: rank-one projections of image frequencies with speckle illuminations,http://arxiv.org/abs/2306.12698v3,2023-06-22 07:05:02+00:00,Deep Learning for Single-Pixel Imaging,True
+2008.11625,High-resolution Multi-spectral Imaging with Diffractive Lenses and Learned Reconstruction,http://arxiv.org/abs/2008.11625v3,2020-08-26 15:33:00+00:00,Unrolling Approaches and Their Trade-offs,True
+1904.03601,VoiceID Loss: Speech Enhancement for Speaker Verification,http://arxiv.org/abs/1904.03601v2,2019-04-07 08:07:20+00:00,Training Strategies for Unrolled Networks,False
+1403.0150,A Scalarization Proximal Point Method for Quasiconvex Multiobjective Minimization,http://arxiv.org/abs/1403.0150v4,2014-03-02 02:05:45+00:00,Reference to Prior Work on Proximal Trajectory Loss,False
+2302.04143,Predicting Thrombectomy Recanalization from CT Imaging Using Deep Learning Models,http://arxiv.org/abs/2302.04143v2,2023-02-08 15:41:21+00:00,Performance Evaluation of Reconstruction Accuracy,False
+2205.10558,CORAL: Contextual Response Retrievability Loss Function for Training Dialog Generation Models,http://arxiv.org/abs/2205.10558v3,2022-05-21 10:36:22+00:00,Training Strategies for Unrolled Networks,False
+1912.06732,On the approximation of rough functions with deep neural networks,http://arxiv.org/abs/1912.06732v2,2019-12-13 22:48:36+00:00,Performance Evaluation of Reconstruction Accuracy,False
+2407.00967,Deep learning for automated detection of breast cancer in deep ultraviolet fluorescence images with diffusion probabilistic model,http://arxiv.org/abs/2407.00967v1,2024-07-01 05:00:26+00:00,Performance Evaluation of Reconstruction Accuracy,False
+2107.09957,Memorization in Deep Neural Networks: Does the Loss Function matter?,http://arxiv.org/abs/2107.09957v2,2021-07-21 09:08:51+00:00,Reference to Prior Work on Proximal Trajectory Loss,False
+2411.17534,Dynamic Trajectory Adaptation for Efficient UAV Inspections of Wind Energy Units,http://arxiv.org/abs/2411.17534v1,2024-11-26 15:49:39+00:00,Performance Evaluation of Reconstruction Accuracy,False
+1609.03058,A Tube-and-Droplet-based Approach for Representing and Analyzing Motion Trajectories,http://arxiv.org/abs/1609.03058v2,2016-09-10 14:33:06+00:00,Reference to Prior Work on Proximal Trajectory Loss,False
+2201.07606,FRA-LSTM: A Vessel Trajectory Prediction Method Based on Fusion of the Forward and Reverse Sub-Network,http://arxiv.org/abs/2201.07606v2,2022-01-19 14:06:56+00:00,Performance Evaluation of Reconstruction Accuracy,False
+0903.3205,Monolithic Pixel Sensors in Deep-Submicron SOI Technology,http://arxiv.org/abs/0903.3205v1,2009-03-18 17:20:05+00:00,Performance Evaluation of Reconstruction Accuracy,False
+1903.03040,Deep learning observables in computational fluid dynamics,http://arxiv.org/abs/1903.03040v2,2019-03-07 16:57:52+00:00,Training Strategies for Unrolled Networks,False
+2308.15991,DRL-Based Trajectory Tracking for Motion-Related Modules in Autonomous Driving,http://arxiv.org/abs/2308.15991v3,2023-08-30 12:24:30+00:00,Reference to Prior Work on Proximal Trajectory Loss,False
+2303.05000,Learning Representation for Anomaly Detection of Vehicle Trajectories,http://arxiv.org/abs/2303.05000v1,2023-03-09 02:48:59+00:00,Reference to Prior Work on Proximal Trajectory Loss,False

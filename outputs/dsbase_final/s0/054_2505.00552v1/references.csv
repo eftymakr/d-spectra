@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2401.12590,PolyCF: Towards the Optimal Spectral Graph Filters for Collaborative Filtering,http://arxiv.org/abs/2401.12590v2,2024-01-23 09:45:49+00:00,Graph Convolutional Networks in Collaborative Filtering,True
+2108.05552,Graph Trend Filtering Networks for Recommendations,http://arxiv.org/abs/2108.05552v2,2021-08-12 06:09:18+00:00,User-Item Interaction Modeling,True
+2412.01378,A Survey on Deep Neural Networks in Collaborative Filtering Recommendation Systems,http://arxiv.org/abs/2412.01378v1,2024-12-02 11:06:34+00:00,User-Item Interaction Modeling,True
+2107.04755,Beyond Low-pass Filtering: Graph Convolutional Networks with Automatic Filtering,http://arxiv.org/abs/2107.04755v3,2021-07-10 04:11:25+00:00,Spectral Graph Theory Applications,True
+2406.13996,Unifying Graph Convolution and Contrastive Learning in Collaborative Filtering,http://arxiv.org/abs/2406.13996v2,2024-06-20 04:50:28+00:00,Graph Convolutional Networks in Collaborative Filtering,True
+2007.03383,RGCF: Refined Graph Convolution Collaborative Filtering with concise and expressive embedding,http://arxiv.org/abs/2007.03383v2,2020-07-07 12:26:10+00:00,Graph Convolutional Networks in Collaborative Filtering,True
+1905.08108,Neural Graph Collaborative Filtering,http://arxiv.org/abs/1905.08108v2,2019-05-20 13:41:16+00:00,User-Item Interaction Modeling,True
+1611.08706,Improved error bound for multivariate Chebyshev polynomial interpolation,http://arxiv.org/abs/1611.08706v1,2016-11-26 12:15:54+00:00,Chebyshev Polynomial-Based Graph Filters,True
+2203.14748,"Universal Graph Filter Design based on Butterworth, Chebyshev and Elliptic Functions",http://arxiv.org/abs/2203.14748v1,2022-03-28 13:38:10+00:00,Chebyshev Polynomial-Based Graph Filters,True
+2105.06339,Graph Learning based Recommender Systems: A Review,http://arxiv.org/abs/2105.06339v1,2021-05-13 14:50:45+00:00,Interpretability in Graph-Based Models,True
+1804.08891,A multi-level collaborative filtering method that improves recommendations,http://arxiv.org/abs/1804.08891v1,2018-04-24 08:20:45+00:00,Efficient and Scalable Recommendation Models,False
+1901.01343,Graph Neural Networks with convolutional ARMA filters,http://arxiv.org/abs/1901.01343v7,2019-01-05 00:16:00+00:00,Chebyshev Polynomial-Based Graph Filters,False
+2403.16066,A Temporal Graph Network Framework for Dynamic Recommendation,http://arxiv.org/abs/2403.16066v2,2024-03-24 08:33:13+00:00,User-Item Interaction Modeling,False
+2412.01376,Convolutional Transformer Neural Collaborative Filtering,http://arxiv.org/abs/2412.01376v1,2024-12-02 11:01:31+00:00,Efficient and Scalable Recommendation Models,False
+2008.12578,Graph Convolutional Neural Networks with Node Transition Probability-based Message Passing and DropNode Regularization,http://arxiv.org/abs/2008.12578v2,2020-08-28 10:51:03+00:00,Neighborhood Aggregation Mechanisms,False
+2201.03158,Collaborative Reflection-Augmented Autoencoder Network for Recommender Systems,http://arxiv.org/abs/2201.03158v1,2022-01-10 04:36:15+00:00,User-Item Interaction Modeling,False
+2004.14734,A Robust Hierarchical Graph Convolutional Network Model for Collaborative Filtering,http://arxiv.org/abs/2004.14734v1,2020-04-30 12:50:39+00:00,Graph Convolutional Networks in Collaborative Filtering,False
+2402.07659,Multi-Behavior Collaborative Filtering with Partial Order Graph Convolutional Networks,http://arxiv.org/abs/2402.07659v2,2024-02-12 14:03:45+00:00,Graph Convolutional Networks in Collaborative Filtering,False
+2003.03777,"Graphs, Convolutions, and Neural Networks: From Graph Filters to Graph Neural Networks",http://arxiv.org/abs/2003.03777v5,2020-03-08 13:02:15+00:00,Graph Convolutional Networks in Collaborative Filtering,False
+2008.00240,On the filtered polynomial interpolation at Chebyshev nodes,http://arxiv.org/abs/2008.00240v1,2020-08-01 10:49:11+00:00,Chebyshev Polynomial-Based Graph Filters,False
+2002.10306,Adaptive Propagation Graph Convolutional Network,http://arxiv.org/abs/2002.10306v3,2020-02-24 15:31:16+00:00,Performance Evaluation on Benchmark Datasets,False
+2311.03316,Improving Collaborative Filtering Recommendation via Graph Learning,http://arxiv.org/abs/2311.03316v2,2023-11-06 18:08:37+00:00,Efficient and Scalable Recommendation Models,False
+1001.1185,Some Architectures for Chebyshev Interpolation,http://arxiv.org/abs/1001.1185v1,2010-01-08 01:34:47+00:00,Chebyshev Polynomial-Based Graph Filters,False
+0909.3281,Chebyshev diagrams for two-bridge knots,http://arxiv.org/abs/0909.3281v1,2009-09-17 17:27:37+00:00,Chebyshev Polynomial-Based Graph Filters,False
+1603.06759,Convolution in Convolution for Network in Network,http://arxiv.org/abs/1603.06759v1,2016-03-22 12:33:11+00:00,Performance Evaluation on Benchmark Datasets,False
+1212.2150,Collaborative Competitive filtering II: Optimal Recommendation and Collaborative Games,http://arxiv.org/abs/1212.2150v1,2012-12-10 17:57:07+00:00,User-Item Interaction Modeling,False
+2103.04668,The distance backbone of complex networks,http://arxiv.org/abs/2103.04668v2,2021-03-08 11:08:59+00:00,Interpretability in Graph-Based Models,False
+2302.11360,Commonality in Recommender Systems: Evaluating Recommender Systems to Enhance Cultural Citizenship,http://arxiv.org/abs/2302.11360v2,2023-02-22 13:16:55+00:00,User-Item Interaction Modeling,False
+1905.01907,Missing Data Imputation with Adversarially-trained Graph Convolutional Networks,http://arxiv.org/abs/1905.01907v2,2019-05-06 10:04:02+00:00,Graph Convolutional Networks in Collaborative Filtering,False
+2406.03099,Supplementary Materials to Graph Convolutional Branch and Bound,http://arxiv.org/abs/2406.03099v4,2024-06-05 09:42:43+00:00,Performance Evaluation on Benchmark Datasets,False

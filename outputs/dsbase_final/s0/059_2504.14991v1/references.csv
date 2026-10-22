@@ -1,0 +1,20 @@
+arxiv_id,title,url,date,category,cited_in_text
+2404.17826,A Taxation Perspective for Fair Re-ranking,http://arxiv.org/abs/2404.17826v1,2024-04-27 08:21:29+00:00,Taxation Analogy in Re-ranking,True
+1809.02921,Personalizing Fairness-aware Re-ranking,http://arxiv.org/abs/1809.02921v2,2018-09-09 04:51:51+00:00,Provider Fairness Optimization Methods,True
+2405.16120,Guaranteeing Accuracy and Fairness under Fluctuating User Traffic: A Bankruptcy-Inspired Re-ranking Approach,http://arxiv.org/abs/2405.16120v2,2024-05-25 08:17:19+00:00,Fairness-Accuracy Trade-off Frameworks,True
+2204.08085,CPFair: Personalized Consumer and Producer Fairness Re-ranking for Recommender Systems,http://arxiv.org/abs/2204.08085v1,2022-04-17 20:38:02+00:00,Multi-Stakeholder Fairness Approaches,True
+2306.01417,The Flawed Foundations of Fair Machine Learning,http://arxiv.org/abs/2306.01417v1,2023-06-02 10:07:12+00:00,Fairness-Accuracy Trade-off Frameworks,True
+2005.12974,Opportunistic Multi-aspect Fairness through Personalized Re-ranking,http://arxiv.org/abs/2005.12974v1,2020-05-21 04:25:20+00:00,Provider Fairness Optimization Methods,True
+2409.14078,Data Generation via Latent Factor Simulation for Fairness-aware Re-ranking,http://arxiv.org/abs/2409.14078v1,2024-09-21 09:13:50+00:00,Demographic Fairness in Re-ranking,True
+2111.08878,CONFAIR: Configurable and Interpretable Algorithmic Fairness,http://arxiv.org/abs/2111.08878v3,2021-11-17 03:07:18+00:00,Algorithmic Fairness Evaluation Metrics,True
+1706.10208,"On Fairness, Diversity and Randomness in Algorithmic Decision Making",http://arxiv.org/abs/1706.10208v1,2017-06-30 14:10:34+00:00,Algorithmic Fairness Evaluation Metrics,False
+2001.09784,Algorithmic Fairness,http://arxiv.org/abs/2001.09784v1,2020-01-21 19:01:38+00:00,Algorithmic Fairness Evaluation Metrics,False
+2303.06660,P-MMF: Provider Max-min Fairness Re-ranking in Recommender System,http://arxiv.org/abs/2303.06660v1,2023-03-12 13:42:50+00:00,Provider Fairness Optimization Methods,True
+2103.01335,How Fair is Fairness-aware Representative Ranking and Methods for Fair Ranking,http://arxiv.org/abs/2103.01335v1,2021-03-01 22:41:36+00:00,Demographic Fairness in Re-ranking,False
+2206.02237,Enforcing Group Fairness in Algorithmic Decision Making: Utility Maximization Under Sufficiency,http://arxiv.org/abs/2206.02237v1,2022-06-05 18:47:34+00:00,Algorithmic Fairness Evaluation Metrics,False
+2405.04034,Differentially Private Post-Processing for Fair Regression,http://arxiv.org/abs/2405.04034v1,2024-05-07 06:09:37+00:00,Fairness-Accuracy Trade-off Frameworks,False
+2202.03586,Fair SA: Sensitivity Analysis for Fairness in Face Recognition,http://arxiv.org/abs/2202.03586v2,2022-02-08 01:16:09+00:00,Algorithmic Fairness Evaluation Metrics,False
+2310.13007,A Critical Survey on Fairness Benefits of Explainable AI,http://arxiv.org/abs/2310.13007v6,2023-10-15 08:17:45+00:00,Multi-Stakeholder Fairness Approaches,False
+2110.01641,"Investigating Fairness of Ocular Biometrics Among Young, Middle-Aged, and Older Adults",http://arxiv.org/abs/2110.01641v1,2021-10-04 18:03:18+00:00,Algorithmic Fairness Evaluation Metrics,False
+2306.06542,Investigating Practices and Opportunities for Cross-functional Collaboration around AI Fairness in Industry Practice,http://arxiv.org/abs/2306.06542v1,2023-06-10 23:42:26+00:00,Multi-Stakeholder Fairness Approaches,False
+1902.11162,The FAIR Funder pilot programme to make it easy for funders to require and for grantees to produce FAIR Data,http://arxiv.org/abs/1902.11162v2,2019-02-26 08:28:11+00:00,Multi-Stakeholder Fairness Approaches,False

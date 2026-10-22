@@ -1,0 +1,12 @@
+rank,arxiv_id,title,url,date
+1,2504.18235,BiasBench: A reproducible benchmark for tuning the biases of event cameras,http://arxiv.org/abs/2504.18235v2,2025-04-25 10:33:24+00:00
+2,2408.10395,Evaluating Image-Based Face and Eye Tracking with Event Cameras,http://arxiv.org/abs/2408.10395v1,2024-08-19 20:27:08+00:00
+3,2504.12515,Event Quality Score (EQS): Assessing the Realism of Simulated Event Camera Streams via Distances in Latent Space,http://arxiv.org/abs/2504.12515v2,2025-04-16 22:25:57+00:00
+4,2503.19916,EventFly: Event Camera Perception from Ground to the Sky,http://arxiv.org/abs/2503.19916v1,2025-03-25 17:59:59+00:00
+5,2105.00409,Feedback control of event cameras,http://arxiv.org/abs/2105.00409v1,2021-05-02 07:41:39+00:00
+6,2104.15139,Differentiable Event Stream Simulator for Non-Rigid 3D Tracking,http://arxiv.org/abs/2104.15139v1,2021-04-30 17:58:07+00:00
+7,2004.13687,Challenges in Monte Carlo event generator software for High-Luminosity LHC,http://arxiv.org/abs/2004.13687v4,2020-04-28 17:42:03+00:00
+8,0806.1100,Design Patterns for Complex Event Processing,http://arxiv.org/abs/0806.1100v1,2008-06-06 07:39:49+00:00
+9,2007.05686,Event-based Signal Processing for Radioisotope Identification,http://arxiv.org/abs/2007.05686v2,2020-07-11 05:33:58+00:00
+10,2306.10354,LLMVA-GEBC: Large Language Model with Video Adapter for Generic Event Boundary Captioning,http://arxiv.org/abs/2306.10354v2,2023-06-17 13:55:54+00:00
+11,1311.7579,Accelerated Event-by-Event Neutrino Oscillation Reweighting with Matter Effects on a GPU,http://arxiv.org/abs/1311.7579v3,2013-11-29 14:32:12+00:00

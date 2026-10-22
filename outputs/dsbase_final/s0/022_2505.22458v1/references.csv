@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2405.19899,Open-Set Domain Adaptation for Semantic Segmentation,http://arxiv.org/abs/2405.19899v1,2024-05-30 09:55:19+00:00,Domain Adaptation Techniques,True
+1911.11981,Class-Conditional Domain Adaptation on Semantic Segmentation,http://arxiv.org/abs/1911.11981v2,2019-11-27 06:38:28+00:00,Domain Adaptation Techniques,True
+1804.08286,Fully Convolutional Adaptation Networks for Semantic Segmentation,http://arxiv.org/abs/1804.08286v1,2018-04-23 08:44:52+00:00,Domain Adaptation Techniques,True
+2101.00588,Style Normalization and Restitution for Domain Generalization and Adaptation,http://arxiv.org/abs/2101.00588v3,2021-01-03 09:01:39+00:00,Normalization and Representation Learning,True
+2110.10916,Exploiting Inter-pixel Correlations in Unsupervised Domain Adaptation for Semantic Segmentation,http://arxiv.org/abs/2110.10916v1,2021-10-21 06:11:44+00:00,Self-Training and Pseudo-Labeling Methods,True
+2004.01130,Handling new target classes in semantic segmentation with domain adaptation,http://arxiv.org/abs/2004.01130v2,2020-04-02 16:59:57+00:00,Domain Adaptation Techniques,True
+2103.15467,Category-Adaptive Domain Adaptation for Semantic Segmentation,http://arxiv.org/abs/2103.15467v2,2021-03-29 10:00:50+00:00,Domain Adaptation Techniques,True
+2405.06502,Multi-Target Unsupervised Domain Adaptation for Semantic Segmentation without External Data,http://arxiv.org/abs/2405.06502v1,2024-05-10 14:29:51+00:00,Domain Adaptation Techniques,True
+2208.14227,CLUDA : Contrastive Learning in Unsupervised Domain Adaptation for Semantic Segmentation,http://arxiv.org/abs/2208.14227v2,2022-08-27 05:13:14+00:00,Domain Adaptation Techniques,True
+2005.10876,Unsupervised Domain Adaptation in Semantic Segmentation: a Review,http://arxiv.org/abs/2005.10876v1,2020-05-21 20:10:38+00:00,Domain Adaptation Techniques,True
+2302.06378,Semantic Image Segmentation: Two Decades of Research,http://arxiv.org/abs/2302.06378v1,2023-02-13 14:11:05+00:00,Domain Adaptation Techniques,True
+2012.12545,Unsupervised Domain Adaptation for Semantic Segmentation by Content Transfer,http://arxiv.org/abs/2012.12545v1,2020-12-23 09:01:00+00:00,Domain Adaptation Techniques,True
+2108.06383,DensePASS: Dense Panoramic Semantic Segmentation via Unsupervised Domain Adaptation with Attention-Augmented Context Exchange,http://arxiv.org/abs/2108.06383v1,2021-08-13 20:15:46+00:00,Domain Adaptation Techniques,True
+2109.14219,Unsupervised Domain Adaptation in Semantic Segmentation Based on Pixel Alignment and Self-Training,http://arxiv.org/abs/2109.14219v1,2021-09-29 06:56:57+00:00,Cross-Modality Medical Image Segmentation,True
+1908.05959,Multi-Domain Adaptation in Brain MRI through Paired Consistency and Adversarial Learning,http://arxiv.org/abs/1908.05959v2,2019-08-16 13:06:18+00:00,Domain Adaptation Techniques,False
+2308.13515,Robust Core-Periphery Constrained Transformer for Domain Adaptation,http://arxiv.org/abs/2308.13515v5,2023-08-25 17:49:52+00:00,Domain Adaptation Techniques,False
+2206.03600,OneRing: A Simple Method for Source-free Open-partial Domain Adaptation,http://arxiv.org/abs/2206.03600v2,2022-06-07 21:39:54+00:00,Domain Adaptation Techniques,False
+2412.16859,Adversarially Domain-adaptive Latent Diffusion for Unsupervised Semantic Segmentation,http://arxiv.org/abs/2412.16859v2,2024-12-22 04:55:41+00:00,Domain Adaptation Techniques,False
+1904.10620,Bidirectional Learning for Domain Adaptation of Semantic Segmentation,http://arxiv.org/abs/1904.10620v1,2019-04-24 03:00:22+00:00,Domain Adaptation Techniques,False
+2010.12239,Domain Adaptation in LiDAR Semantic Segmentation by Aligning Class Distributions,http://arxiv.org/abs/2010.12239v3,2020-10-23 08:52:15+00:00,Domain Adaptation Techniques,False
+2407.21311,Efficient unsupervised domain adaptation via self-supervised vision transformer and synergistic cross-domain alignment,http://arxiv.org/abs/2407.21311v2,2024-07-31 03:29:28+00:00,Domain Adaptation Techniques,False
+2107.09783,Unsupervised Domain Adaptation in LiDAR Semantic Segmentation with Self-Supervision and Gated Adapters,http://arxiv.org/abs/2107.09783v3,2021-07-20 21:57:18+00:00,Domain Adaptation Techniques,False
+2505.15545,Multi-View Projection for Unsupervised Domain Adaptation in 3D Semantic Segmentation,http://arxiv.org/abs/2505.15545v3,2025-05-21 14:08:42+00:00,Self-Training and Pseudo-Labeling Methods,False
+2208.10716,Threshold-adaptive Unsupervised Focal Loss for Domain Adaptation of Semantic Segmentation,http://arxiv.org/abs/2208.10716v1,2022-08-23 03:48:48+00:00,Domain Adaptation Techniques,False
+2112.03241,Unsupervised Domain Adaptation for Semantic Image Segmentation: a Comprehensive Survey,http://arxiv.org/abs/2112.03241v1,2021-12-06 18:47:41+00:00,Domain Adaptation Techniques,False
+2103.16372,Source-Free Domain Adaptation for Semantic Segmentation,http://arxiv.org/abs/2103.16372v1,2021-03-30 14:14:29+00:00,Domain Adaptation Techniques,False
+2102.06191,Unsupervised Semantic Segmentation by Contrasting Object Mask Proposals,http://arxiv.org/abs/2102.06191v3,2021-02-11 18:54:47+00:00,Normalization and Representation Learning,False
+2208.07360,Three New Validators and a Large-Scale Benchmark Ranking for Unsupervised Domain Adaptation,http://arxiv.org/abs/2208.07360v4,2022-08-15 17:55:26+00:00,Benchmarking and Evaluation Frameworks,False
+2103.13561,On Evolving Attention Towards Domain Adaptation,http://arxiv.org/abs/2103.13561v1,2021-03-25 01:50:28+00:00,Domain Adaptation Techniques,False
+2409.18340,DRL-STNet: Unsupervised Domain Adaptation for Cross-modality Medical Image Segmentation via Disentangled Representation Learning,http://arxiv.org/abs/2409.18340v1,2024-09-26 23:30:40+00:00,Cross-Modality Medical Image Segmentation,True

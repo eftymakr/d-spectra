@@ -1,0 +1,31 @@
+rank,arxiv_id,title,url,date
+1,2504.10335,MorphTok: Morphologically Grounded Tokenization for Indian Languages,http://arxiv.org/abs/2504.10335v2,2025-04-14 15:44:45+00:00
+2,2108.06279,On Single and Multiple Representations in Dense Passage Retrieval,http://arxiv.org/abs/2108.06279v2,2021-08-13 15:01:53+00:00
+3,2403.10939,Improving the Robustness of Dense Retrievers Against Typos via Multi-Positive Contrastive Learning,http://arxiv.org/abs/2403.10939v1,2024-03-16 14:43:30+00:00
+4,2211.14876,Dense Text Retrieval based on Pretrained Language Models: A Survey,http://arxiv.org/abs/2211.14876v1,2022-11-27 16:18:19+00:00
+5,2105.05996,Multilingual Offensive Language Identification for Low-resource Languages,http://arxiv.org/abs/2105.05996v3,2021-05-12 22:50:16+00:00
+6,2103.08052,Crowdsourced Phrase-Based Tokenization for Low-Resourced Neural Machine Translation: The Case of Fon Language,http://arxiv.org/abs/2103.08052v2,2021-03-14 22:12:14+00:00
+7,2204.05814,MuCoT: Multilingual Contrastive Training for Question-Answering in Low-resource Languages,http://arxiv.org/abs/2204.05814v1,2022-04-12 13:52:54+00:00
+8,2404.00684,Generative Retrieval as Multi-Vector Dense Retrieval,http://arxiv.org/abs/2404.00684v1,2024-03-31 13:29:43+00:00
+9,2010.06447,Pagsusuri ng RNN-based Transfer Learning Technique sa Low-Resource Language,http://arxiv.org/abs/2010.06447v2,2020-10-13 15:06:07+00:00
+10,2501.05260,Enhancing Plagiarism Detection in Marathi with a Weighted Ensemble of TF-IDF and BERT Embeddings for Low-Resource Language Processing,http://arxiv.org/abs/2501.05260v1,2025-01-09 14:14:18+00:00
+11,2404.07220,Blended RAG: Improving RAG (Retriever-Augmented Generation) Accuracy with Semantic Search and Hybrid Query-Based Retrievers,http://arxiv.org/abs/2404.07220v2,2024-03-22 17:13:46+00:00
+12,2411.04316,A Multilingual Sentiment Lexicon for Low-Resource Language Translation using Large Languages Models and Explainable AI,http://arxiv.org/abs/2411.04316v1,2024-11-06 23:41:18+00:00
+13,1811.08772,Overcoming low-utility facets for complex answer retrieval,http://arxiv.org/abs/1811.08772v1,2018-11-21 15:09:00+00:00
+14,1601.04605,Dynamic Information Retrieval: Theoretical Framework and Application,http://arxiv.org/abs/1601.04605v1,2016-01-18 17:01:34+00:00
+15,2503.18570,Dense Retrieval for Low Resource Languages -- the Case of Amharic Language,http://arxiv.org/abs/2503.18570v1,2025-03-24 11:26:40+00:00
+16,2304.01492,A Unified Contrastive Transfer Framework with Propagation Structure for Boosting Low-Resource Rumor Detection,http://arxiv.org/abs/2304.01492v5,2023-04-04 03:13:03+00:00
+17,1511.05800,The Retrieval Effectiveness of Web Search Engines: Considering Results Descriptions,http://arxiv.org/abs/1511.05800v1,2015-11-18 14:29:50+00:00
+18,2411.00727,SPRING Lab IITM's submission to Low Resource Indic Language Translation Shared Task,http://arxiv.org/abs/2411.00727v2,2024-11-01 16:39:03+00:00
+19,2307.16779,Lexically-Accelerated Dense Retrieval,http://arxiv.org/abs/2307.16779v1,2023-07-31 15:44:26+00:00
+20,2412.10008,Automated Collection of Evaluation Dataset for Semantic Search in Low-Resource Domain Language,http://arxiv.org/abs/2412.10008v1,2024-12-13 09:47:26+00:00
+21,2202.12288,Toward More Meaningful Resources for Lower-resourced Languages,http://arxiv.org/abs/2202.12288v1,2022-02-24 18:39:57+00:00
+22,2203.11163,Evaluating Token-Level and Passage-Level Dense Retrieval Models for Math Information Retrieval,http://arxiv.org/abs/2203.11163v2,2022-03-21 17:41:54+00:00
+23,2403.13468,DESIRE-ME: Domain-Enhanced Supervised Information REtrieval using Mixture-of-Experts,http://arxiv.org/abs/2403.13468v1,2024-03-20 10:18:05+00:00
+24,1807.00745,Training a Neural Network in a Low-Resource Setting on Automatically Annotated Noisy Data,http://arxiv.org/abs/1807.00745v2,2018-07-02 15:35:02+00:00
+25,2412.16365,Overview of the First Workshop on Language Models for Low-Resource Languages (LoResLM 2025),http://arxiv.org/abs/2412.16365v1,2024-12-20 21:55:32+00:00
+26,1804.07878,Massively Parallel Cross-Lingual Learning in Low-Resource Target Language Translation,http://arxiv.org/abs/1804.07878v2,2018-04-21 02:18:36+00:00
+27,2310.09765,MILPaC: A Novel Benchmark for Evaluating Translation of Legal Text to Indian Languages,http://arxiv.org/abs/2310.09765v2,2023-10-15 07:49:56+00:00
+28,2407.20114,FiCo-ITR: bridging fine-grained and coarse-grained image-text retrieval for comparative performance analysis,http://arxiv.org/abs/2407.20114v3,2024-07-29 15:44:22+00:00
+29,2102.11903,Neural ranking models for document retrieval,http://arxiv.org/abs/2102.11903v2,2021-02-23 19:30:37+00:00
+30,2411.15766,ScalingNote: Scaling up Retrievers with Large Language Models for Real-World Dense Retrieval,http://arxiv.org/abs/2411.15766v1,2024-11-24 09:27:43+00:00

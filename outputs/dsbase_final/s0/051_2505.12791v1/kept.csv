@@ -1,0 +1,31 @@
+rank,arxiv_id,title,url,date
+1,2401.11018,Communication Efficient and Provable Federated Unlearning,http://arxiv.org/abs/2401.11018v1,2024-01-19 20:35:02+00:00
+2,2306.02216,Forgettable Federated Linear Learning with Certified Data Unlearning,http://arxiv.org/abs/2306.02216v3,2023-06-03 23:53:57+00:00
+3,2403.02437,A Survey on Federated Unlearning: Challenges and Opportunities,http://arxiv.org/abs/2403.02437v3,2024-03-04 19:35:08+00:00
+4,2401.05146,"Federated Unlearning: A Survey on Methods, Design Guidelines, and Evaluation Metrics",http://arxiv.org/abs/2401.05146v3,2024-01-10 13:26:19+00:00
+5,2405.15474,Unlearning during Learning: An Efficient Federated Machine Unlearning Method,http://arxiv.org/abs/2405.15474v2,2024-05-24 11:53:13+00:00
+6,2310.20448,"A Survey on Federated Unlearning: Challenges, Methods, and Future Directions",http://arxiv.org/abs/2310.20448v4,2023-10-31 13:32:00+00:00
+7,2406.03078,Towards Federated Domain Unlearning: Verification Methodologies and Challenges,http://arxiv.org/abs/2406.03078v1,2024-06-05 09:05:55+00:00
+8,2310.19218,"Exploring Federated Unlearning: Review, Comparison, and Insights",http://arxiv.org/abs/2310.19218v5,2023-10-30 01:34:33+00:00
+9,2012.13891,Federated Unlearning,http://arxiv.org/abs/2012.13891v3,2020-12-27 08:54:37+00:00
+10,2412.19069,Effective and secure federated online learning to rank,http://arxiv.org/abs/2412.19069v1,2024-12-26 05:53:10+00:00
+11,2405.17462,Ferrari: Federated Feature Unlearning via Optimizing Feature Sensitivity,http://arxiv.org/abs/2405.17462v4,2024-05-23 07:20:45+00:00
+12,2210.16424,Machine Unlearning of Federated Clusters,http://arxiv.org/abs/2210.16424v2,2022-10-28 22:21:29+00:00
+13,2402.01401,An Information Theoretic Approach to Machine Unlearning,http://arxiv.org/abs/2402.01401v4,2024-02-02 13:33:30+00:00
+14,2502.20709,Unlearning through Knowledge Overwriting: Reversible Federated Unlearning via Selective Sparse Adapter,http://arxiv.org/abs/2502.20709v1,2025-02-28 04:35:26+00:00
+15,2410.09947,Efficient Federated Unlearning under Plausible Deniability,http://arxiv.org/abs/2410.09947v1,2024-10-13 18:08:24+00:00
+16,2307.14754,Fair Machine Unlearning: Data Removal while Mitigating Disparities,http://arxiv.org/abs/2307.14754v2,2023-07-27 10:26:46+00:00
+17,2405.17878,An Information Theoretic Evaluation Metric For Strong Unlearning,http://arxiv.org/abs/2405.17878v3,2024-05-28 06:57:01+00:00
+18,2211.11656,SIFU: Sequential Informed Federated Unlearning for Efficient and Provable Client Unlearning in Federated Optimization,http://arxiv.org/abs/2211.11656v5,2022-11-21 17:15:46+00:00
+19,2003.04247,Towards Probabilistic Verification of Machine Unlearning,http://arxiv.org/abs/2003.04247v2,2020-03-09 16:39:46+00:00
+20,2208.10836,Evaluating Machine Unlearning via Epistemic Uncertainty,http://arxiv.org/abs/2208.10836v2,2022-08-23 09:37:31+00:00
+21,2207.05521,Federated Unlearning: How to Efficiently Erase a Client in FL?,http://arxiv.org/abs/2207.05521v3,2022-07-12 13:24:23+00:00
+22,2310.02164,A Survey of Graph Unlearning,http://arxiv.org/abs/2310.02164v4,2023-08-23 20:50:52+00:00
+23,2308.12502,Incentivized Federated Learning and Unlearning,http://arxiv.org/abs/2308.12502v2,2023-08-24 01:57:03+00:00
+24,2312.01235,Strategic Data Revocation in Federated Unlearning,http://arxiv.org/abs/2312.01235v2,2023-12-02 21:57:44+00:00
+25,1910.07796,Overcoming Forgetting in Federated Learning on Non-IID Data,http://arxiv.org/abs/1910.07796v1,2019-10-17 09:53:16+00:00
+26,2501.17396,Poisoning Attacks and Defenses to Federated Unlearning,http://arxiv.org/abs/2501.17396v1,2025-01-29 03:23:46+00:00
+27,2007.14390,Flower: A Friendly Federated Learning Research Framework,http://arxiv.org/abs/2007.14390v5,2020-07-28 17:59:07+00:00
+28,2409.13004,Data Poisoning and Leakage Analysis in Federated Learning,http://arxiv.org/abs/2409.13004v1,2024-09-19 16:50:29+00:00
+29,2006.07026,Backdoor Attacks on Federated Meta-Learning,http://arxiv.org/abs/2006.07026v2,2020-06-12 09:23:24+00:00
+30,1910.04956,Central Server Free Federated Learning over Single-sided Trust Social Networks,http://arxiv.org/abs/1910.04956v2,2019-10-11 03:36:53+00:00

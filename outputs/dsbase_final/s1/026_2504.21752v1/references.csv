@@ -1,0 +1,22 @@
+arxiv_id,title,url,date,category,cited_in_text
+2409.10667,Benchmarking Secure Sampling Protocols for Differential Privacy,http://arxiv.org/abs/2409.10667v2,2024-09-16 19:04:47+00:00,Privacy Guarantees in Distributed Systems,True
+2208.09011,Verifiable Differential Privacy,http://arxiv.org/abs/2208.09011v2,2022-08-18 18:20:22+00:00,Verification Mechanisms for DP,True
+1504.06998,Heterogeneous Differential Privacy,http://arxiv.org/abs/1504.06998v1,2015-04-27 09:35:46+00:00,Foundations of Differential Privacy,True
+0803.3946,On the `Semantics' of Differential Privacy: A Bayesian Formulation,http://arxiv.org/abs/0803.3946v4,2008-03-27 15:00:45+00:00,Foundations of Differential Privacy,True
+2411.09064,Minimax Optimal Two-Sample Testing under Local Differential Privacy,http://arxiv.org/abs/2411.09064v2,2024-11-13 22:44:25+00:00,Foundations of Differential Privacy,True
+2208.08662,"Private, Efficient, and Accurate: Protecting Models Trained by Multi-party Learning with Differential Privacy",http://arxiv.org/abs/2208.08662v1,2022-08-18 06:48:25+00:00,Privacy Guarantees in Distributed Systems,True
+2104.01987,Rejoinder: Gaussian Differential Privacy,http://arxiv.org/abs/2104.01987v2,2021-04-05 16:27:56+00:00,Foundations of Differential Privacy,True
+2211.17230,The Bounded Gaussian Mechanism for Differential Privacy,http://arxiv.org/abs/2211.17230v1,2022-11-30 18:31:50+00:00,Foundations of Differential Privacy,True
+1809.01794,Information-Theoretic Privacy in Distributed Average Consensus,http://arxiv.org/abs/1809.01794v3,2018-09-06 02:43:53+00:00,Privacy Guarantees in Distributed Systems,True
+2406.18940,Efficient Verifiable Differential Privacy with Input Authenticity in the Local and Shuffle Model,http://arxiv.org/abs/2406.18940v2,2024-06-27 07:12:28+00:00,Adversarial Robustness in DP Implementations,True
+1906.01337,SoK: Differential Privacies,http://arxiv.org/abs/1906.01337v6,2019-06-04 10:55:01+00:00,Foundations of Differential Privacy,True
+2411.16121,DP-CDA: An Algorithm for Enhanced Privacy Preservation in Dataset Synthesis Through Randomized Mixing,http://arxiv.org/abs/2411.16121v3,2024-11-25 06:14:06+00:00,Foundations of Differential Privacy,True
+2407.03732,"Collection, usage and privacy of mobility data in the enterprise and public administrations",http://arxiv.org/abs/2407.03732v1,2024-07-04 08:29:27+00:00,Privacy Guarantees in Distributed Systems,True
+2212.00306,Decentralized Matrix Factorization with Heterogeneous Differential Privacy,http://arxiv.org/abs/2212.00306v2,2022-12-01 06:48:18+00:00,Privacy Guarantees in Distributed Systems,True
+2106.12749,Bayesian Differential Privacy for Linear Dynamical Systems,http://arxiv.org/abs/2106.12749v1,2021-06-24 03:19:02+00:00,Foundations of Differential Privacy,True
+1910.04250,Privacy-Preserving Obfuscation for Distributed Power Systems,http://arxiv.org/abs/1910.04250v1,2019-10-07 19:45:34+00:00,Privacy Guarantees in Distributed Systems,True
+2006.05609,Learning With Differential Privacy,http://arxiv.org/abs/2006.05609v2,2020-06-10 02:04:13+00:00,Foundations of Differential Privacy,True
+1812.02890,Three Tools for Practical Differential Privacy,http://arxiv.org/abs/1812.02890v1,2018-12-07 03:28:41+00:00,Foundations of Differential Privacy,False
+1608.00849,"Distributed, End-to-end Verifiable, and Privacy-Preserving Internet Voting Systems",http://arxiv.org/abs/1608.00849v1,2016-08-02 14:49:51+00:00,Privacy Guarantees in Distributed Systems,False
+1911.02459,zksk: A Library for Composable Zero-Knowledge Proofs,http://arxiv.org/abs/1911.02459v2,2019-11-06 16:25:45+00:00,Zero-Knowledge Proofs and DP Integration,False
+2503.11947,Ethical AI for Young Digital Citizens: A Call to Action on Privacy Governance,http://arxiv.org/abs/2503.11947v4,2025-03-15 01:35:56+00:00,Privacy Guarantees in Distributed Systems,False

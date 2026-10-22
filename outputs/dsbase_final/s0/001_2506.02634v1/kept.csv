@@ -1,0 +1,14 @@
+rank,arxiv_id,title,url,date
+1,2412.10319,SCBench: A KV Cache-Centric Analysis of Long-Context Methods,http://arxiv.org/abs/2412.10319v2,2024-12-13 17:59:52+00:00
+2,2504.15364,KeyDiff: Key Similarity-Based KV Cache Eviction for Long-Context LLM Inference in Resource-Constrained Environments,http://arxiv.org/abs/2504.15364v4,2025-04-21 18:12:46+00:00
+3,2505.20334,Lookahead Q-Cache: Achieving More Consistent KV Cache Eviction via Pseudo Query,http://arxiv.org/abs/2505.20334v2,2025-05-24 10:34:38+00:00
+4,2503.16525,KVShare: An LLM Service System with Efficient and Effective Multi-Tenant KV Cache Reuse,http://arxiv.org/abs/2503.16525v2,2025-03-17 16:43:35+00:00
+5,2410.12876,In-context KV-Cache Eviction for LLMs via Attention-Gate,http://arxiv.org/abs/2410.12876v3,2024-10-15 05:01:19+00:00
+6,2407.11550,Ada-KV: Optimizing KV Cache Eviction by Adaptive Budget Allocation for Efficient LLM Inference,http://arxiv.org/abs/2407.11550v5,2024-07-16 09:53:32+00:00
+7,2505.21889,EFIM: Efficient Serving of LLMs for Infilling Tasks with Improved KV Cache Reuse,http://arxiv.org/abs/2505.21889v2,2025-05-28 02:07:03+00:00
+8,2503.12491,CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences,http://arxiv.org/abs/2503.12491v2,2025-03-16 12:49:44+00:00
+9,2503.14647,Towards More Economical Context-Augmented LLM Generation by Reusing Stored KV Cache,http://arxiv.org/abs/2503.14647v1,2025-03-18 18:52:03+00:00
+10,2502.03805,CriticalKV: Optimizing KV Cache Eviction from an Output Perturbation Perspective,http://arxiv.org/abs/2502.03805v2,2025-02-06 06:31:47+00:00
+11,2502.16002,KVLink: Accelerating Large Language Models via Efficient KV Cache Reuse,http://arxiv.org/abs/2502.16002v4,2025-02-21 23:34:29+00:00
+12,2502.04077,AttentionPredictor: Temporal Patterns Matter for KV Cache Compression,http://arxiv.org/abs/2502.04077v3,2025-02-06 13:41:46+00:00
+13,2503.08879,LLMs Know What to Drop: Self-Attention Guided KV Cache Eviction for Efficient Long-Context Inference,http://arxiv.org/abs/2503.08879v1,2025-03-11 20:45:02+00:00

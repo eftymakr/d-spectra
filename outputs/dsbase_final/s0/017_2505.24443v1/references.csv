@@ -1,0 +1,31 @@
+arxiv_id,title,url,date,category,cited_in_text
+2105.14148,OpenMatch: Open-set Consistency Regularization for Semi-supervised Learning with Outliers,http://arxiv.org/abs/2105.14148v2,2021-05-28 23:57:15+00:00,Open-set SSL Frameworks,True
+2311.10572,SSB: Simple but Strong Baseline for Boosting Performance of Open-Set Semi-Supervised Learning,http://arxiv.org/abs/2311.10572v1,2023-11-17 15:14:40+00:00,Open-set SSL Frameworks,True
+2208.13722,Open-Set Semi-Supervised Object Detection,http://arxiv.org/abs/2208.13722v1,2022-08-29 17:04:30+00:00,Open-set SSL Frameworks,True
+2308.13168,IOMatch: Simplifying Open-Set Semi-Supervised Learning with Joint Inliers and Outliers Utilization,http://arxiv.org/abs/2308.13168v1,2023-08-25 04:14:02+00:00,Open-set SSL Frameworks,True
+2405.06979,Robust Semi-supervised Learning by Wisely Leveraging Open-set Data,http://arxiv.org/abs/2405.06979v2,2024-05-11 10:22:32+00:00,Open-set SSL Frameworks,True
+2301.10127,Improving Open-Set Semi-Supervised Learning with Self-Supervision,http://arxiv.org/abs/2301.10127v3,2023-01-24 16:46:37+00:00,Open-set SSL Frameworks,True
+2303.12091,Adaptive Negative Evidential Deep Learning for Open-set Semi-supervised Learning,http://arxiv.org/abs/2303.12091v4,2023-03-21 09:07:15+00:00,Open-set SSL Frameworks,True
+2107.08943,OpenCoS: Contrastive Semi-supervised Learning for Handling Open-set Unlabeled Data,http://arxiv.org/abs/2107.08943v3,2021-06-29 06:10:05+00:00,Open-set SSL Frameworks,True
+2305.13802,Online Open-set Semi-supervised Object Detection with Dual Competing Head,http://arxiv.org/abs/2305.13802v3,2023-05-23 08:15:02+00:00,Open-set SSL Frameworks,True
+2403.10658,InterLUDE: Interactions between Labeled and Unlabeled Data to Enhance Semi-Supervised Learning,http://arxiv.org/abs/2403.10658v1,2024-03-15 19:54:10+00:00,Performance Evaluation of SSL Methods,True
+2211.13314,CoMadOut -- A Robust Outlier Detection Algorithm based on CoMAD,http://arxiv.org/abs/2211.13314v2,2022-11-23 21:33:34+00:00,Robustness Against Outliers,True
+1906.10343,Exploring Self-Supervised Regularization for Supervised and Semi-Supervised Learning,http://arxiv.org/abs/1906.10343v2,2019-06-25 06:42:05+00:00,Self-supervised Learning in SSL,True
+2201.06247,Contrastive Regularization for Semi-Supervised Learning,http://arxiv.org/abs/2201.06247v2,2022-01-17 07:20:11+00:00,Robustness Against Outliers,True
+1906.04161,Self-Supervised Exploration via Disagreement,http://arxiv.org/abs/1906.04161v1,2019-06-10 17:58:32+00:00,Self-supervised Learning in SSL,True
+2201.09196,Learning to Predict Gradients for Semi-Supervised Continual Learning,http://arxiv.org/abs/2201.09196v2,2022-01-23 06:45:47+00:00,Performance Evaluation of SSL Methods,True
+2106.15792,Learning Bounds for Open-Set Learning,http://arxiv.org/abs/2106.15792v1,2021-06-30 03:10:06+00:00,Open-set SSL Frameworks,True
+2408.12355,Class-balanced Open-set Semi-supervised Object Detection for Medical Images,http://arxiv.org/abs/2408.12355v1,2024-08-22 12:54:15+00:00,Open-set SSL Frameworks,True
+2404.02544,Semi-Supervised Unconstrained Head Pose Estimation in the Wild,http://arxiv.org/abs/2404.02544v4,2024-04-03 08:01:00+00:00,Outlier Detection in SSL,True
+2207.05514,A semi-supervised methodology for fishing activity detection using the geometry behind the trajectory of multiple vessels,http://arxiv.org/abs/2207.05514v2,2022-07-12 13:17:37+00:00,Performance Evaluation of SSL Methods,True
+2311.10319,Shifting to Machine Supervision: Annotation-Efficient Semi and Self-Supervised Learning for Automatic Medical Image Segmentation and Classification,http://arxiv.org/abs/2311.10319v6,2023-11-17 04:04:29+00:00,Self-supervised Learning in SSL,False
+2502.02896,A Benchmark for the Detection of Metalinguistic Disagreements between LLMs and Knowledge Graphs,http://arxiv.org/abs/2502.02896v1,2025-02-05 05:37:26+00:00,Performance Evaluation of SSL Methods,False
+1905.12226,Address Instance-level Label Prediction in Multiple Instance Learning,http://arxiv.org/abs/1905.12226v1,2019-05-29 05:36:06+00:00,Performance Evaluation of SSL Methods,False
+2208.08789,"Towards Label-efficient Automatic Diagnosis and Analysis: A Comprehensive Survey of Advanced Deep Learning-based Weakly-supervised, Semi-supervised and Self-supervised Techniques in Histopathological Image Analysis",http://arxiv.org/abs/2208.08789v2,2022-08-18 11:49:41+00:00,Self-supervised Learning in SSL,False
+1909.11944,Multiple Object Forecasting: Predicting Future Object Locations in Diverse Environments,http://arxiv.org/abs/1909.11944v2,2019-09-26 07:11:50+00:00,Performance Evaluation of SSL Methods,False
+1903.03825,Interpolation Consistency Training for Semi-Supervised Learning,http://arxiv.org/abs/1903.03825v5,2019-03-09 16:39:22+00:00,Performance Evaluation of SSL Methods,False
+1910.14655,Enhancing Certifiable Robustness via a Deep Model Ensemble,http://arxiv.org/abs/1910.14655v1,2019-10-31 17:48:33+00:00,Comparison with Naive SSL Approaches,False
+2212.00966,A Hybrid Deep Learning Anomaly Detection Framework for Intrusion Detection,http://arxiv.org/abs/2212.00966v1,2022-12-02 04:40:54+00:00,Generative Adversarial Networks in SSL,False
+2110.06513,Benchmarking the Robustness of Spatial-Temporal Models Against Corruptions,http://arxiv.org/abs/2110.06513v2,2021-10-13 05:59:39+00:00,Robustness Against Outliers,False
+2211.05409,Radiomics-enhanced Deep Multi-task Learning for Outcome Prediction in Head and Neck Cancer,http://arxiv.org/abs/2211.05409v1,2022-11-10 08:28:56+00:00,Performance Evaluation of SSL Methods,False
+1912.00290,XGBOD: Improving Supervised Outlier Detection with Unsupervised Representation Learning,http://arxiv.org/abs/1912.00290v1,2019-12-01 00:09:10+00:00,Outlier Detection in SSL,False

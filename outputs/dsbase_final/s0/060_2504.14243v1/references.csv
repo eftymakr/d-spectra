@@ -1,0 +1,16 @@
+arxiv_id,title,url,date,category,cited_in_text
+1908.05164,Unconstrained Monotonic Neural Networks,http://arxiv.org/abs/1908.05164v3,2019-08-14 15:11:31+00:00,Monotonic Neural Networks for Calibration,True
+2406.08010,A Self-boosted Framework for Calibrated Ranking,http://arxiv.org/abs/2406.08010v1,2024-06-12 09:00:49+00:00,Calibration in Recommendation Systems,True
+2112.07428,Obtaining Calibrated Probabilities with Personalized Ranking Models,http://arxiv.org/abs/2112.07428v2,2021-12-09 11:08:41+00:00,Personalized Ranking and Calibration,True
+2411.02988,Confidence Calibration of Classifiers with Many Classes,http://arxiv.org/abs/2411.02988v2,2024-11-05 10:51:01+00:00,Confidence Calibration in Classification Models,True
+2501.19047,Understanding Model Calibration -- A gentle introduction and visual exploration of calibration and the expected calibration error (ECE),http://arxiv.org/abs/2501.19047v5,2025-01-31 11:18:45+00:00,Confidence Calibration in Classification Models,True
+1408.2764,Convex Calibration Dimension for Multiclass Loss Matrices,http://arxiv.org/abs/1408.2764v2,2014-08-12 16:13:50+00:00,Calibration Challenges in Multi-Class Problems,True
+1903.03238,Ranked List Loss for Deep Metric Learning,http://arxiv.org/abs/1903.03238v8,2019-03-08 01:28:17+00:00,Personalized Ranking and Calibration,True
+2108.08735,SiReN: Sign-Aware Recommendation Using Graph Neural Networks,http://arxiv.org/abs/2108.08735v2,2021-08-19 15:07:06+00:00,Calibration in Recommendation Systems,True
+1609.04846,A Tutorial about Random Neural Networks in Supervised Learning,http://arxiv.org/abs/1609.04846v1,2016-09-15 20:21:30+00:00,References and Citations,True
+1002.1164,Existence and Global Logarithmic Stability of Impulsive Neural Networks with Time Delay,http://arxiv.org/abs/1002.1164v1,2010-02-05 09:20:51+00:00,References and Citations,True
+2110.15725,Batch-Softmax Contrastive Loss for Pairwise Sentence Scoring Tasks,http://arxiv.org/abs/2110.15725v1,2021-10-10 16:43:44+00:00,Personalized Ranking and Calibration,True
+,Stellar models in IR calibration,http://arxiv.org/abs/astro-ph/0105045v1,2001-05-03 06:48:36+00:00,Evaluation of Calibration Techniques,True
+1012.2631,Monte Carlo uncertainty estimation for wavelength calibration,http://arxiv.org/abs/1012.2631v2,2010-12-13 05:14:36+00:00,Evaluation of Calibration Techniques,True
+2004.08463,A Unified Calibration Framework for 21 cm Cosmology,http://arxiv.org/abs/2004.08463v2,2020-04-17 21:49:35+00:00,Traditional Calibration Methods,True
+1911.06009,A Recurrent Probabilistic Neural Network with Dimensionality Reduction Based on Time-series Discriminant Component Analysis,http://arxiv.org/abs/1911.06009v1,2019-11-14 09:48:41+00:00,Confidence Calibration in Classification Models,True
