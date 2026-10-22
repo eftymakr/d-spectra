@@ -1,0 +1,1 @@
+{"dspectra": {"eta": -0.0015625, "probes": 8, "d_ev": 7.982770472246506}, "dspectra_eta0": {"eta": 0.0, "d_ev": 8.16619639135671}, "symmetrized": {"eta": -0.04062500000000001, "probes": 13, "d_ev": 7.6708901951470185}, "_seconds": 750.6004304885864, "_config": {"rank": 32, "epochs": 6000, "target": 8.0, "seed": 0}}
