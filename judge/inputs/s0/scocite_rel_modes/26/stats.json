@@ -1,0 +1,12 @@
+{
+ "query": "026_2504.21752v1",
+ "n_papers": 21,
+ "n_linked": 21,
+ "seconds": 14.085044622421265,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=120771, completion_tokens=19340, total_tokens=140111, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=187047, completion_tokens=22239, total_tokens=209286, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Local Differential Privacy Techniques": 6,
+  "Differential Privacy Techniques": 3,
+  "Privacy Enhancing Techniques": 2
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "query": "042_2504.11007v1",
+ "n_papers": 19,
+ "n_linked": 19,
+ "seconds": 12.735570430755615,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=32199, completion_tokens=5370, total_tokens=37569, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=48074, completion_tokens=6020, total_tokens=54094, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Kubernetes Security and Management": 8,
+  "Infrastructure Code Practices and Security": 3,
+  "Kubernetes Security And Management": 2,
+  "Edge Computing Research": 2
+ }
+}

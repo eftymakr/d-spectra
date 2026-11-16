@@ -1,0 +1,13 @@
+{
+ "query": "016_2506.00333v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 21.208709239959717,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=442194, completion_tokens=68931, total_tokens=511125, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=687832, completion_tokens=75625, total_tokens=763457, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Open Vocabulary Object Detection": 19,
+  "Multi Modal Object Detection Methods": 4,
+  "Object Detection Models": 2,
+  "Vision Language Pre-training Models": 2
+ }
+}

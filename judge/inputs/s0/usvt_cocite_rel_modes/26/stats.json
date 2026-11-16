@@ -1,0 +1,13 @@
+{
+ "query": "026_2504.21752v1",
+ "n_papers": 21,
+ "n_linked": 21,
+ "seconds": 17.052643299102783,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=125803, completion_tokens=21079, total_tokens=146882, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=188306, completion_tokens=22173, total_tokens=210479, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Local Differential Privacy Research": 8,
+  "Differential Privacy Security Mechanisms": 3,
+  "Differential Privacy Techniques": 3,
+  "Differential Privacy Research Trends": 2
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "query": "005_2505.24754v1",
+ "n_papers": 21,
+ "n_linked": 21,
+ "seconds": 71.5529613494873,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=440311, completion_tokens=72208, total_tokens=512519, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=647344, completion_tokens=70029, total_tokens=717373, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Instruction Tuning and Generalization": 9,
+  "Language Understanding Models": 4,
+  "Language Model Research": 2,
+  "Natural Language Processing Techniques": 2,
+  "Language Model Instruction Tuning": 2
+ }
+}

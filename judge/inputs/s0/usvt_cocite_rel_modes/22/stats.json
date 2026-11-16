@@ -1,0 +1,12 @@
+{
+ "query": "022_2505.22458v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 20.334182262420654,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=277260, completion_tokens=41148, total_tokens=318408, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=431120, completion_tokens=47458, total_tokens=478578, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Semantic Segmentation Domain Adaptation": 22,
+  "Domain Adaptation Techniques": 5,
+  "Adversarial Adaptation Techniques": 2
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "query": "044_2506.02750v1",
+ "n_papers": 16,
+ "n_linked": 16,
+ "seconds": 14.131789207458496,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=539756, completion_tokens=83797, total_tokens=623553, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=843498, completion_tokens=92946, total_tokens=936444, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Recommender Systems Research": 7,
+  "Graph Neural Networks Research": 3
+ }
+}

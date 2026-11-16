@@ -1,0 +1,12 @@
+{
+ "query": "001_2506.02634v1",
+ "n_papers": 13,
+ "n_linked": 13,
+ "seconds": 16.32591986656189,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=532556, completion_tokens=83007, total_tokens=615563, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=832007, completion_tokens=91617, total_tokens=923624, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "KV Cache Optimization Techniques": 7,
+  "LLM Quantization Techniques": 2,
+  "LLM KV Cache Compression Techniques": 2
+ }
+}

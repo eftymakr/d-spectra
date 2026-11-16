@@ -1,0 +1,11 @@
+{
+ "query": "029_2504.14861v1",
+ "n_papers": 19,
+ "n_linked": 19,
+ "seconds": 80.61813688278198,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=63716, completion_tokens=11653, total_tokens=75369, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=89554, completion_tokens=10651, total_tokens=100205, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Maximum Inner Product Search Techniques": 8,
+  "Inner Product Search Techniques": 2
+ }
+}

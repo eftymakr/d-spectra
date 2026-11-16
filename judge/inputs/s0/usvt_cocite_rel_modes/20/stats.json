@@ -1,0 +1,13 @@
+{
+ "query": "020_2505.23180v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 20.503313302993774,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=314447, completion_tokens=47183, total_tokens=361630, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=491142, completion_tokens=54090, total_tokens=545232, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Inverse Imaging Deep Learning Methods": 14,
+  "Image Deblurring And Recovery Techniques": 3,
+  "Scene Deblurring Techniques": 2,
+  "Image Restoration Techniques": 2
+ }
+}

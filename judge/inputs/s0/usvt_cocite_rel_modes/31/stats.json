@@ -1,0 +1,14 @@
+{
+ "query": "031_2506.01833v1",
+ "n_papers": 25,
+ "n_linked": 25,
+ "seconds": 19.173412084579468,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=520479, completion_tokens=81448, total_tokens=601927, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=812410, completion_tokens=89392, total_tokens=901802, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Self Supervised Learning Methods": 13,
+  "Unsupervised Feature Learning": 3,
+  "Pretraining Methods for Language Models": 2,
+  "Self Supervised Vision Learning": 2,
+  "Visual Representation Learning": 2
+ }
+}

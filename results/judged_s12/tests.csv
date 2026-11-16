@@ -1,0 +1,45 @@
+family,metric,a,b,n,mean_a,mean_b,diff,wins,losses,p,p_holm
+"1: vs DeepScholar-base rerun, seed-averaged",nugget_coverage,fixed_k,dsbase_rerun,43,0.054366847116505114,0.043454698516258015,0.010912148600247093,12,4,0.055555708095758695,0.27777854047879347
+"1: vs DeepScholar-base rerun, seed-averaged",nugget_coverage,relevance_only,dsbase_rerun,43,0.06104901930015329,0.043454698516258015,0.017594320783895265,12,4,0.04369769639088738,0.26218617834532426
+"1: vs DeepScholar-base rerun, seed-averaged",nugget_coverage,dspectra,dsbase_rerun,43,0.044320394154795474,0.043454698516258015,0.000865695638537457,7,6,0.8067084790004491,1.0
+"1: vs DeepScholar-base rerun, seed-averaged",nugget_coverage,cocite_rel,dsbase_rerun,43,0.05193027173731327,0.043454698516258015,0.008475573221055258,7,7,0.550923682773407,1.0
+"1: vs DeepScholar-base rerun, seed-averaged",nugget_coverage,usvt_cocite_rel,dsbase_rerun,43,0.038333457434904614,0.043454698516258015,-0.0051212410813534035,8,8,0.46911315243545415,1.0
+"1: vs DeepScholar-base rerun, seed-averaged",nugget_coverage,qlink_rel,dsbase_rerun,43,0.05857839291131824,0.043454698516258015,0.01512369439506022,10,5,0.18188306036995905,0.7275322414798362
+"1: vs DeepScholar-base rerun, seed-averaged",nugget_coverage,oracle,dsbase_rerun,42,0.09129463301289927,0.044489334195216536,0.046805298817682715,12,4,0.011285575373529618,0.07899902761470733
+"2: USVT co-citation vs, seed-averaged",nugget_coverage,usvt_cocite_rel,dspectra,43,0.038333457434904614,0.044320394154795474,-0.005986936719890861,5,8,0.6001794871405539,0.6001794871405539
+"2: USVT co-citation vs, seed-averaged",nugget_coverage,usvt_cocite_rel,relevance_only,43,0.038333457434904614,0.06104901930015329,-0.02271556186524867,5,10,0.046826465481518996,0.09365293096303799
+"secondary: vs rerun, seed-averaged (no claim)",nugget_coverage,fixed_k,dsbase_rerun,43,0.054366847116505114,0.043454698516258015,0.010912148600247093,12,4,0.055555708095758695,
+"secondary: vs rerun, seed-averaged (no claim)",reference_coverage,fixed_k,dsbase_rerun,43,0.14423708137821903,0.11705611003651835,0.027180971341700663,15,8,0.06801654474625561,
+"secondary: vs rerun, seed-averaged (no claim)",cite_p,fixed_k,dsbase_rerun,43,0.4185009264847626,0.4127458058626805,0.00575512062208213,22,21,0.9475983824158902,
+"secondary: vs rerun, seed-averaged (no claim)",claim_coverage,fixed_k,dsbase_rerun,43,0.5622822631804559,0.5764534016001396,-0.014171138419683555,17,26,0.3051784201045393,
+"secondary: vs rerun, seed-averaged (no claim)",coverage_relevance_rate,fixed_k,dsbase_rerun,43,1.7130627255015258,1.5736132357028387,0.13944948979868702,29,7,0.0001846678915275841,
+"secondary: vs rerun, seed-averaged (no claim)",nugget_coverage,relevance_only,dsbase_rerun,43,0.06104901930015329,0.043454698516258015,0.017594320783895265,12,4,0.04369769639088738,
+"secondary: vs rerun, seed-averaged (no claim)",reference_coverage,relevance_only,dsbase_rerun,43,0.13250679231503124,0.11705611003651835,0.015450682278512868,17,12,0.36375802063563867,
+"secondary: vs rerun, seed-averaged (no claim)",cite_p,relevance_only,dsbase_rerun,43,0.4460499914568782,0.4127458058626805,0.03330418559419772,25,18,0.15741561977915808,
+"secondary: vs rerun, seed-averaged (no claim)",claim_coverage,relevance_only,dsbase_rerun,43,0.5843811913507356,0.5764534016001396,0.007927789750596038,19,24,0.7243436345333976,
+"secondary: vs rerun, seed-averaged (no claim)",coverage_relevance_rate,relevance_only,dsbase_rerun,43,1.8526924518203587,1.5736132357028387,0.2790792161175198,31,6,1.4419852679197615e-05,
+"secondary: vs rerun, seed-averaged (no claim)",nugget_coverage,dspectra,dsbase_rerun,43,0.044320394154795474,0.043454698516258015,0.000865695638537457,7,6,0.8067084790004491,
+"secondary: vs rerun, seed-averaged (no claim)",reference_coverage,dspectra,dsbase_rerun,43,0.16169339447207134,0.11705611003651835,0.04463728443555301,25,8,0.004754249979030254,
+"secondary: vs rerun, seed-averaged (no claim)",cite_p,dspectra,dsbase_rerun,43,0.4437373015038089,0.4127458058626805,0.030991495641128457,24,19,0.24666774105321565,
+"secondary: vs rerun, seed-averaged (no claim)",claim_coverage,dspectra,dsbase_rerun,43,0.5833499951989091,0.5764534016001396,0.006896593598769561,23,20,0.6281421389451225,
+"secondary: vs rerun, seed-averaged (no claim)",coverage_relevance_rate,dspectra,dsbase_rerun,43,1.7309433223501909,1.5736132357028387,0.1573300866473521,29,9,0.00039141365133115157,
+"secondary: vs rerun, seed-averaged (no claim)",nugget_coverage,cocite_rel,dsbase_rerun,43,0.05193027173731327,0.043454698516258015,0.008475573221055258,7,7,0.550923682773407,
+"secondary: vs rerun, seed-averaged (no claim)",reference_coverage,cocite_rel,dsbase_rerun,43,0.15191983752754395,0.11705611003651835,0.0348637274910256,29,6,0.004965575074509476,
+"secondary: vs rerun, seed-averaged (no claim)",cite_p,cocite_rel,dsbase_rerun,43,0.46620951209879496,0.4127458058626805,0.05346370623611449,30,13,0.05664478208427681,
+"secondary: vs rerun, seed-averaged (no claim)",claim_coverage,cocite_rel,dsbase_rerun,43,0.587085752664628,0.5764534016001396,0.01063235106448848,24,19,0.5537085495654992,
+"secondary: vs rerun, seed-averaged (no claim)",coverage_relevance_rate,cocite_rel,dsbase_rerun,43,1.7780565962714332,1.5736132357028387,0.20444336056859416,31,5,0.00043290120209328413,
+"secondary: vs rerun, seed-averaged (no claim)",nugget_coverage,usvt_cocite_rel,dsbase_rerun,43,0.038333457434904614,0.043454698516258015,-0.0051212410813534035,8,8,0.46911315243545415,
+"secondary: vs rerun, seed-averaged (no claim)",reference_coverage,usvt_cocite_rel,dsbase_rerun,43,0.18646567963219082,0.11705611003651835,0.06940956959567245,28,5,0.0011821993173942531,
+"secondary: vs rerun, seed-averaged (no claim)",cite_p,usvt_cocite_rel,dsbase_rerun,43,0.40199717840114096,0.4127458058626805,-0.01074862746153939,23,20,0.6887680032521075,
+"secondary: vs rerun, seed-averaged (no claim)",claim_coverage,usvt_cocite_rel,dsbase_rerun,43,0.5325791975256519,0.5764534016001396,-0.04387420407448768,17,26,0.09714849642205081,
+"secondary: vs rerun, seed-averaged (no claim)",coverage_relevance_rate,usvt_cocite_rel,dsbase_rerun,43,1.7498372828868185,1.5736132357028387,0.1762240471839795,29,8,0.001658085377423675,
+"secondary: vs rerun, seed-averaged (no claim)",nugget_coverage,qlink_rel,dsbase_rerun,43,0.05857839291131824,0.043454698516258015,0.01512369439506022,10,5,0.18188306036995905,
+"secondary: vs rerun, seed-averaged (no claim)",reference_coverage,qlink_rel,dsbase_rerun,43,0.1773336499780949,0.11705611003651835,0.06027753994157654,29,6,0.0014024462809559236,
+"secondary: vs rerun, seed-averaged (no claim)",cite_p,qlink_rel,dsbase_rerun,43,0.43861409807177676,0.4127458058626805,0.02586829220909626,25,18,0.3720269928376183,
+"secondary: vs rerun, seed-averaged (no claim)",claim_coverage,qlink_rel,dsbase_rerun,43,0.5608622734501596,0.5764534016001396,-0.015591128149979845,22,21,0.5617661740670883,
+"secondary: vs rerun, seed-averaged (no claim)",coverage_relevance_rate,qlink_rel,dsbase_rerun,43,1.7671711295640307,1.5736132357028387,0.19355789386119146,30,6,0.00028430224440528817,
+"secondary: vs rerun, seed-averaged (no claim)",nugget_coverage,oracle,dsbase_rerun,42,0.09129463301289927,0.044489334195216536,0.046805298817682715,12,4,0.011285575373529618,
+"secondary: vs rerun, seed-averaged (no claim)",reference_coverage,oracle,dsbase_rerun,42,0.702465719026903,0.1198431602754831,0.58262255875142,41,0,2.39334716609966e-08,
+"secondary: vs rerun, seed-averaged (no claim)",cite_p,oracle,dsbase_rerun,42,0.46639661114312825,0.41409355479090626,0.05230305635222179,27,15,0.1482689788308562,
+"secondary: vs rerun, seed-averaged (no claim)",claim_coverage,oracle,dsbase_rerun,42,0.5892047874439514,0.5796730523483468,0.00953173509560482,27,15,0.5275240065225262,
+"secondary: vs rerun, seed-averaged (no claim)",coverage_relevance_rate,oracle,dsbase_rerun,42,1.9512471655328798,1.5960228982813016,0.3552242672515782,33,2,2.389348293196679e-06,

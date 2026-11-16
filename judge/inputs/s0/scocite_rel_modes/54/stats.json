@@ -1,0 +1,12 @@
+{
+ "query": "054_2505.00552v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 17.714091062545776,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=132232, completion_tokens=20375, total_tokens=152607, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=206607, completion_tokens=24198, total_tokens=230805, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Graph Based Collaborative Filtering": 10,
+  "Graph Neural Networks for Recommendations": 6,
+  "Recommender Systems Research": 4
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "query": "057_2504.17519v1",
+ "n_papers": 17,
+ "n_linked": 17,
+ "seconds": 17.133188247680664,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=80394, completion_tokens=13379, total_tokens=93773, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=123760, completion_tokens=15245, total_tokens=139005, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Generative Retrieval Research": 15
+ }
+}

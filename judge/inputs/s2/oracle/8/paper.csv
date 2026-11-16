@@ -1,0 +1,502 @@
+id,title,url,snippet
+2211.09110,Holistic Evaluation of Language Models,http://arxiv.org/abs/2211.09110,"Language models (LMs) are becoming the foundation for almost all major
+language technologies, but their capabilities, limitations, and risks are not
+well understood. We present Holistic Evaluation of Language Models (HELM) to
+improve the transparency of language models. First, we taxonomize the vast
+space of potential scenarios (i.e. use cases) and metrics (i.e. desiderata)
+that are of interest for LMs. Then we select a broad subset based on coverage
+and feasibility, noting what's missing or underrepresented (e.g. question
+answering for neglected English dialects, metrics for trustworthiness). Second,
+we adopt a multi-metric approach: We measure 7 metrics (accuracy, calibration,
+robustness, fairness, bias, toxicity, and efficiency) for each of 16 core
+scenarios when possible (87.5% of the time). This ensures metrics beyond
+accuracy don't fall to the wayside, and that trade-offs are clearly exposed. We
+also perform 7 targeted evaluations, based on 26 targeted scenarios, to analyze
+specific aspects (e.g. reasoning, disinformation). Third, we conduct a
+large-scale evaluation of 30 prominent language models (spanning open,
+limited-access, and closed models) on all 42 scenarios, 21 of which were not
+previously used in mainstream LM evaluation. Prior to HELM, models on average
+were evaluated on just 17.9% of the core HELM scenarios, with some prominent
+models not sharing a single scenario in common. We improve this to 96.0%: now
+all 30 models have been densely benchmarked on the same core scenarios and
+metrics under standardized conditions. Our evaluation surfaces 25 top-level
+findings. For full transparency, we release all raw model prompts and
+completions publicly for further analysis, as well as a general modular
+toolkit. We intend for HELM to be a living benchmark for the community,
+continuously updated with new scenarios, metrics, and models."
+2005.14050,"Language (Technology) is Power: A Critical Survey of ""Bias"" in NLP",http://arxiv.org/abs/2005.14050,"We survey 146 papers analyzing ""bias"" in NLP systems, finding that their
+motivations are often vague, inconsistent, and lacking in normative reasoning,
+despite the fact that analyzing ""bias"" is an inherently normative process. We
+further find that these papers' proposed quantitative techniques for measuring
+or mitigating ""bias"" are poorly matched to their motivations and do not engage
+with the relevant literature outside of NLP. Based on these findings, we
+describe the beginnings of a path forward by proposing three recommendations
+that should guide work analyzing ""bias"" in NLP systems. These recommendations
+rest on a greater recognition of the relationships between language and social
+hierarchies, encouraging researchers and practitioners to articulate their
+conceptualizations of ""bias""---i.e., what kinds of system behaviors are
+harmful, in what ways, to whom, and why, as well as the normative reasoning
+underlying these statements---and to center work around the lived experiences
+of members of communities affected by NLP systems, while interrogating and
+reimagining the power relations between technologists and such communities."
+2308.10149,A Survey on Fairness in Large Language Models,http://arxiv.org/abs/2308.10149,"Large Language Models (LLMs) have shown powerful performance and development
+prospects and are widely deployed in the real world. However, LLMs can capture
+social biases from unprocessed training data and propagate the biases to
+downstream tasks. Unfair LLM systems have undesirable social impacts and
+potential harms. In this paper, we provide a comprehensive review of related
+research on fairness in LLMs. Considering the influence of parameter magnitude
+and training paradigm on research strategy, we divide existing fairness
+research into oriented to medium-sized LLMs under pre-training and fine-tuning
+paradigms and oriented to large-sized LLMs under prompting paradigms. First,
+for medium-sized LLMs, we introduce evaluation metrics and debiasing methods
+from the perspectives of intrinsic bias and extrinsic bias, respectively. Then,
+for large-sized LLMs, we introduce recent fairness research, including fairness
+evaluation, reasons for bias, and debiasing methods. Finally, we discuss and
+provide insight on the challenges and future directions for the development of
+fairness in LLMs."
+2412.03537,"Evaluating Gender Bias Transfer between Pre-trained and Prompt-Adapted
+  Language Models",http://arxiv.org/abs/2412.03537,"Large language models (LLMs) are increasingly being adapted to achieve
+task-specificity for deployment in real-world decision systems. Several
+previous works have investigated the bias transfer hypothesis (BTH) by studying
+the effect of the fine-tuning adaptation strategy on model fairness to find
+that fairness in pre-trained masked language models have limited effect on the
+fairness of models when adapted using fine-tuning. In this work, we expand the
+study of BTH to causal models under prompt adaptations, as prompting is an
+accessible, and compute-efficient way to deploy models in real-world systems.
+In contrast to previous works, we establish that intrinsic biases in
+pre-trained Mistral, Falcon and Llama models are strongly correlated (rho >=
+0.94) with biases when the same models are zero- and few-shot prompted, using a
+pronoun co-reference resolution task. Further, we find that bias transfer
+remains strongly correlated even when LLMs are specifically prompted to exhibit
+fair or biased behavior (rho >= 0.92), and few-shot length and stereotypical
+composition are varied (rho >= 0.97). Our findings highlight the importance of
+ensuring fairness in pre-trained LLMs, especially when they are later used to
+perform downstream tasks via prompt adaptation."
+2506.01709,Fairness Dynamics During Training,http://arxiv.org/abs/2506.01709,"We investigate fairness dynamics during Large Language Model (LLM) training
+to enable the diagnoses of biases and mitigations through training
+interventions like early stopping; we find that biases can emerge suddenly and
+do not always follow common performance metrics. We introduce two new metrics
+to evaluate fairness dynamics holistically during model pre-training: Average
+Rank and Jensen-Shannon Divergence by Parts. These metrics provide insights
+into the Pythia models' progression of biases in gender prediction of
+occupations on the WinoBias dataset. By monitoring these dynamics, we find that
+(1) Pythia-6.9b is biased towards men; it becomes more performant and confident
+predicting ""male"" than ""female"" during training, (2) via early-stopping,
+Pythia-6.9b can exchange 1.7% accuracy on LAMBADA for a 92.5% increase in
+fairness, and (3) larger models can exhibit more bias; Pythia-6.9b makes more
+assumptions about gender than Pythia-160m, even when a subject's gender is not
+specified."
+2404.01349,Fairness in Large Language Models: A Taxonomic Survey,http://arxiv.org/abs/2404.01349,"Large Language Models (LLMs) have demonstrated remarkable success across
+various domains. However, despite their promising performance in numerous
+real-world applications, most of these algorithms lack fairness considerations.
+Consequently, they may lead to discriminatory outcomes against certain
+communities, particularly marginalized populations, prompting extensive study
+in fair LLMs. On the other hand, fairness in LLMs, in contrast to fairness in
+traditional machine learning, entails exclusive backgrounds, taxonomies, and
+fulfillment techniques. To this end, this survey presents a comprehensive
+overview of recent advances in the existing literature concerning fair LLMs.
+Specifically, a brief introduction to LLMs is provided, followed by an analysis
+of factors contributing to bias in LLMs. Additionally, the concept of fairness
+in LLMs is discussed categorically, summarizing metrics for evaluating bias in
+LLMs and existing algorithms for promoting fairness. Furthermore, resources for
+evaluating bias in LLMs, including toolkits and datasets, are summarized.
+Finally, existing research challenges and open questions are discussed."
+2407.02408,"CEB: Compositional Evaluation Benchmark for Fairness in Large Language
+  Models",http://arxiv.org/abs/2407.02408,"As Large Language Models (LLMs) are increasingly deployed to handle various
+natural language processing (NLP) tasks, concerns regarding the potential
+negative societal impacts of LLM-generated content have also arisen. To
+evaluate the biases exhibited by LLMs, researchers have recently proposed a
+variety of datasets. However, existing bias evaluation efforts often focus on
+only a particular type of bias and employ inconsistent evaluation metrics,
+leading to difficulties in comparison across different datasets and LLMs. To
+address these limitations, we collect a variety of datasets designed for the
+bias evaluation of LLMs, and further propose CEB, a Compositional Evaluation
+Benchmark that covers different types of bias across different social groups
+and tasks. The curation of CEB is based on our newly proposed compositional
+taxonomy, which characterizes each dataset from three dimensions: bias types,
+social groups, and tasks. By combining the three dimensions, we develop a
+comprehensive evaluation strategy for the bias in LLMs. Our experiments
+demonstrate that the levels of bias vary across these dimensions, thereby
+providing guidance for the development of specific bias mitigation methods."
+2401.12794,Benchmarking LLMs via Uncertainty Quantification,http://arxiv.org/abs/2401.12794,"The proliferation of open-source Large Language Models (LLMs) from various
+institutions has highlighted the urgent need for comprehensive evaluation
+methods. However, current evaluation platforms, such as the widely recognized
+HuggingFace open LLM leaderboard, neglect a crucial aspect -- uncertainty,
+which is vital for thoroughly assessing LLMs. To bridge this gap, we introduce
+a new benchmarking approach for LLMs that integrates uncertainty
+quantification. Our examination involves nine LLMs (LLM series) spanning five
+representative natural language processing tasks. Our findings reveal that: I)
+LLMs with higher accuracy may exhibit lower certainty; II) Larger-scale LLMs
+may display greater uncertainty compared to their smaller counterparts; and
+III) Instruction-finetuning tends to increase the uncertainty of LLMs. These
+results underscore the significance of incorporating uncertainty in the
+evaluation of LLMs."
+2206.04615,"Beyond the Imitation Game: Quantifying and extrapolating the
+  capabilities of language models",http://arxiv.org/abs/2206.04615,"Language models demonstrate both quantitative improvement and new qualitative
+capabilities with increasing scale. Despite their potentially transformative
+impact, these new capabilities are as yet poorly characterized. In order to
+inform future research, prepare for disruptive new model capabilities, and
+ameliorate socially harmful effects, it is vital that we understand the present
+and near-future capabilities and limitations of language models. To address
+this challenge, we introduce the Beyond the Imitation Game benchmark
+(BIG-bench). BIG-bench currently consists of 204 tasks, contributed by 450
+authors across 132 institutions. Task topics are diverse, drawing problems from
+linguistics, childhood development, math, common-sense reasoning, biology,
+physics, social bias, software development, and beyond. BIG-bench focuses on
+tasks that are believed to be beyond the capabilities of current language
+models. We evaluate the behavior of OpenAI's GPT models, Google-internal dense
+transformer architectures, and Switch-style sparse transformers on BIG-bench,
+across model sizes spanning millions to hundreds of billions of parameters. In
+addition, a team of human expert raters performed all tasks in order to provide
+a strong baseline. Findings include: model performance and calibration both
+improve with scale, but are poor in absolute terms (and when compared with
+rater performance); performance is remarkably similar across model classes,
+though with benefits from sparsity; tasks that improve gradually and
+predictably commonly involve a large knowledge or memorization component,
+whereas tasks that exhibit ""breakthrough"" behavior at a critical scale often
+involve multiple steps or components, or brittle metrics; social bias typically
+increases with scale in settings with ambiguous context, but this can be
+improved with prompting."
+2101.11718,"BOLD: Dataset and Metrics for Measuring Biases in Open-Ended Language
+  Generation",http://arxiv.org/abs/2101.11718,"Recent advances in deep learning techniques have enabled machines to generate
+cohesive open-ended text when prompted with a sequence of words as context.
+While these models now empower many downstream applications from conversation
+bots to automatic storytelling, they have been shown to generate texts that
+exhibit social biases. To systematically study and benchmark social biases in
+open-ended language generation, we introduce the Bias in Open-Ended Language
+Generation Dataset (BOLD), a large-scale dataset that consists of 23,679
+English text generation prompts for bias benchmarking across five domains:
+profession, gender, race, religion, and political ideology. We also propose new
+automated metrics for toxicity, psycholinguistic norms, and text gender
+polarity to measure social biases in open-ended text generation from multiple
+angles. An examination of text generated from three popular language models
+reveals that the majority of these models exhibit a larger social bias than
+human-written Wikipedia text across all domains. With these results we
+highlight the need to benchmark biases in open-ended language generation and
+caution users of language generation models on downstream tasks to be cognizant
+of these embedded prejudices."
+2202.01711,Algorithmic Fairness Datasets: the Story so Far,http://arxiv.org/abs/2202.01711,"Data-driven algorithms are studied in diverse domains to support critical
+decisions, directly impacting people's well-being. As a result, a growing
+community of researchers has been investigating the equity of existing
+algorithms and proposing novel ones, advancing the understanding of risks and
+opportunities of automated decision-making for historically disadvantaged
+populations. Progress in fair Machine Learning hinges on data, which can be
+appropriately used only if adequately documented. Unfortunately, the
+algorithmic fairness community suffers from a collective data documentation
+debt caused by a lack of information on specific resources (opacity) and
+scatteredness of available information (sparsity). In this work, we target data
+documentation debt by surveying over two hundred datasets employed in
+algorithmic fairness research, and producing standardized and searchable
+documentation for each of them. Moreover we rigorously identify the three most
+popular fairness datasets, namely Adult, COMPAS and German Credit, for which we
+compile in-depth documentation.
+  This unifying documentation effort supports multiple contributions. Firstly,
+we summarize the merits and limitations of Adult, COMPAS and German Credit,
+adding to and unifying recent scholarship, calling into question their
+suitability as general-purpose fairness benchmarks. Secondly, we document and
+summarize hundreds of available alternatives, annotating their domain and
+supported fairness tasks, along with additional properties of interest for
+fairness researchers. Finally, we analyze these datasets from the perspective
+of five important data curation topics: anonymization, consent, inclusivity,
+sensitive attributes, and transparency. We discuss different approaches and
+levels of attention to these topics, making them tangible, and distill them
+into a set of best practices for the curation of novel resources."
+1804.06876,Gender Bias in Coreference Resolution: Evaluation and Debiasing Methods,http://arxiv.org/abs/1804.06876,"We introduce a new benchmark, WinoBias, for coreference resolution focused on
+gender bias. Our corpus contains Winograd-schema style sentences with entities
+corresponding to people referred by their occupation (e.g. the nurse, the
+doctor, the carpenter). We demonstrate that a rule-based, a feature-rich, and a
+neural coreference system all link gendered pronouns to pro-stereotypical
+entities with higher accuracy than anti-stereotypical entities, by an average
+difference of 21.1 in F1 score. Finally, we demonstrate a data-augmentation
+approach that, in combination with existing word-embedding debiasing
+techniques, removes the bias demonstrated by these systems in WinoBias without
+significantly affecting their performance on existing coreference benchmark
+datasets. Our dataset and code are available at http://winobias.org."
+1804.09301,Gender Bias in Coreference Resolution,http://arxiv.org/abs/1804.09301,"We present an empirical study of gender bias in coreference resolution
+systems. We first introduce a novel, Winograd schema-style set of minimal pair
+sentences that differ only by pronoun gender. With these ""Winogender schemas,""
+we evaluate and confirm systematic gender bias in three publicly-available
+coreference resolution systems, and correlate this bias with real-world and
+textual gender statistics."
+2308.14921,Gender bias and stereotypes in Large Language Models,http://arxiv.org/abs/2308.14921,"Large Language Models (LLMs) have made substantial progress in the past
+several months, shattering state-of-the-art benchmarks in many domains. This
+paper investigates LLMs' behavior with respect to gender stereotypes, a known
+issue for prior models. We use a simple paradigm to test the presence of gender
+bias, building on but differing from WinoBias, a commonly used gender bias
+dataset, which is likely to be included in the training data of current LLMs.
+We test four recently published LLMs and demonstrate that they express biased
+assumptions about men and women's occupations. Our contributions in this paper
+are as follows: (a) LLMs are 3-6 times more likely to choose an occupation that
+stereotypically aligns with a person's gender; (b) these choices align with
+people's perceptions better than with the ground truth as reflected in official
+job statistics; (c) LLMs in fact amplify the bias beyond what is reflected in
+perceptions or the ground truth; (d) LLMs ignore crucial ambiguities in
+sentence structure 95% of the time in our study items, but when explicitly
+prompted, they recognize the ambiguity; (e) LLMs provide explanations for their
+choices that are factually inaccurate and likely obscure the true reason behind
+their predictions. That is, they provide rationalizations of their biased
+behavior. This highlights a key property of these models: LLMs are trained on
+imbalanced datasets; as such, even with the recent successes of reinforcement
+learning with human feedback, they tend to reflect those imbalances back at us.
+As with other types of societal biases, we suggest that LLMs must be carefully
+tested to ensure that they treat minoritized individuals and communities
+equitably."
+2110.08193,BBQ: A Hand-Built Bias Benchmark for Question Answering,http://arxiv.org/abs/2110.08193,"It is well documented that NLP models learn social biases, but little work
+has been done on how these biases manifest in model outputs for applied tasks
+like question answering (QA). We introduce the Bias Benchmark for QA (BBQ), a
+dataset of question sets constructed by the authors that highlight attested
+social biases against people belonging to protected classes along nine social
+dimensions relevant for U.S. English-speaking contexts. Our task evaluates
+model responses at two levels: (i) given an under-informative context, we test
+how strongly responses reflect social biases, and (ii) given an adequately
+informative context, we test whether the model's biases override a correct
+answer choice. We find that models often rely on stereotypes when the context
+is under-informative, meaning the model's outputs consistently reproduce
+harmful biases in this setting. Though models are more accurate when the
+context provides an informative answer, they still rely on stereotypes and
+average up to 3.4 percentage points higher accuracy when the correct answer
+aligns with a social bias than when it conflicts, with this difference widening
+to over 5 points on examples targeting gender for most models tested."
+2109.03858,"Collecting a Large-Scale Gender Bias Dataset for Coreference Resolution
+  and Machine Translation",http://arxiv.org/abs/2109.03858,"Recent works have found evidence of gender bias in models of machine
+translation and coreference resolution using mostly synthetic diagnostic
+datasets. While these quantify bias in a controlled experiment, they often do
+so on a small scale and consist mostly of artificial, out-of-distribution
+sentences. In this work, we find grammatical patterns indicating stereotypical
+and non-stereotypical gender-role assignments (e.g., female nurses versus male
+dancers) in corpora from three domains, resulting in a first large-scale gender
+bias dataset of 108K diverse real-world English sentences. We manually verify
+the quality of our corpus and use it to evaluate gender bias in various
+coreference resolution and machine translation models. We find that all tested
+models tend to over-rely on gender stereotypes when presented with natural
+inputs, which may be especially harmful when deployed in commercial systems.
+Finally, we show that our dataset lends itself to finetuning a coreference
+resolution model, finding it mitigates bias on a held out set. Our dataset and
+models are publicly available at www.github.com/SLAB-NLP/BUG. We hope they will
+spur future research into gender bias evaluation mitigation techniques in
+realistic settings."
+2306.04459,"Uncertainty in Natural Language Processing: Sources, Quantification, and
+  Applications",http://arxiv.org/abs/2306.04459,"As a main field of artificial intelligence, natural language processing (NLP)
+has achieved remarkable success via deep neural networks. Plenty of NLP tasks
+have been addressed in a unified manner, with various tasks being associated
+with each other through sharing the same paradigm. However, neural networks are
+black boxes and rely on probability computation. Making mistakes is inevitable.
+Therefore, estimating the reliability and trustworthiness (in other words,
+uncertainty) of neural networks becomes a key research direction, which plays a
+crucial role in reducing models' risks and making better decisions. Therefore,
+in this survey, we provide a comprehensive review of uncertainty-relevant works
+in the NLP field. Considering the data and paradigms characteristics, we first
+categorize the sources of uncertainty in natural language into three types,
+including input, system, and output. Then, we systemically review uncertainty
+quantification approaches and the main applications. Finally, we discuss the
+challenges of uncertainty estimation in NLP and discuss potential future
+directions, taking into account recent trends in the field. Though there have
+been a few surveys about uncertainty estimation, our work is the first to
+review uncertainty from the NLP perspective."
+2307.10236,"Look Before You Leap: An Exploratory Study of Uncertainty Measurement
+  for Large Language Models",http://arxiv.org/abs/2307.10236,"The recent performance leap of Large Language Models (LLMs) opens up new
+opportunities across numerous industrial applications and domains. However,
+erroneous generations, such as false predictions, misinformation, and
+hallucination made by LLMs, have also raised severe concerns for the
+trustworthiness of LLMs', especially in safety-, security- and
+reliability-sensitive scenarios, potentially hindering real-world adoptions.
+While uncertainty estimation has shown its potential for interpreting the
+prediction risks made by general machine learning (ML) models, little is known
+about whether and to what extent it can help explore an LLM's capabilities and
+counteract its undesired behavior. To bridge the gap, in this paper, we
+initiate an exploratory study on the risk assessment of LLMs from the lens of
+uncertainty. In particular, we experiment with twelve uncertainty estimation
+methods and four LLMs on four prominent natural language processing (NLP) tasks
+to investigate to what extent uncertainty estimation techniques could help
+characterize the prediction risks of LLMs. Our findings validate the
+effectiveness of uncertainty estimation for revealing LLMs'
+uncertain/non-factual predictions. In addition to general NLP tasks, we
+extensively conduct experiments with four LLMs for code generation on two
+datasets. We find that uncertainty estimation can potentially uncover buggy
+programs generated by LLMs. Insights from our study shed light on future design
+and development for reliable LLMs, facilitating further research toward
+enhancing the trustworthiness of LLMs."
+2302.09664,"Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation
+  in Natural Language Generation",http://arxiv.org/abs/2302.09664,"We introduce a method to measure uncertainty in large language models. For
+tasks like question answering, it is essential to know when we can trust the
+natural language outputs of foundation models. We show that measuring
+uncertainty in natural language is challenging because of ""semantic
+equivalence"" -- different sentences can mean the same thing. To overcome these
+challenges we introduce semantic entropy -- an entropy which incorporates
+linguistic invariances created by shared meanings. Our method is unsupervised,
+uses only a single model, and requires no modifications to off-the-shelf
+language models. In comprehensive ablation studies we show that the semantic
+entropy is more predictive of model accuracy on question answering data sets
+than comparable baselines."
+2307.01379,"Shifting Attention to Relevance: Towards the Predictive Uncertainty
+  Quantification of Free-Form Large Language Models",http://arxiv.org/abs/2307.01379,"Large Language Models (LLMs) show promising results in language generation
+and instruction following but frequently ""hallucinate"", making their outputs
+less reliable. Despite Uncertainty Quantification's (UQ) potential solutions,
+implementing it accurately within LLMs is challenging. Our research introduces
+a simple heuristic: not all tokens in auto-regressive LLM text equally
+represent the underlying meaning, as ""linguistic redundancy"" often allows a few
+keywords to convey the essence of long sentences. However, current methods
+underestimate this inequality when assessing uncertainty, causing tokens with
+limited semantics to be equally or excessively weighted in UQ. To correct this,
+we propose Shifting Attention to more Relevant (SAR) components at both token-
+and sentence-levels for better UQ. We conduct extensive experiments involving a
+range of popular ""off-the-shelf"" LLMs, such as Vicuna, WizardLM, and
+LLaMA-2-chat, with model sizes extending up to 33B parameters. We evaluate
+various free-form question-answering tasks, encompassing domains such as
+reading comprehension, science Q&A, and medical Q&A. Our experimental results,
+coupled with a comprehensive demographic analysis, demonstrate the superior
+performance of SAR. The code is available at https://github.com/jinhaoduan/SAR."
+2207.05221,Language Models (Mostly) Know What They Know,http://arxiv.org/abs/2207.05221,"We study whether language models can evaluate the validity of their own
+claims and predict which questions they will be able to answer correctly. We
+first show that larger models are well-calibrated on diverse multiple choice
+and true/false questions when they are provided in the right format. Thus we
+can approach self-evaluation on open-ended sampling tasks by asking models to
+first propose answers, and then to evaluate the probability ""P(True)"" that
+their answers are correct. We find encouraging performance, calibration, and
+scaling for P(True) on a diverse array of tasks. Performance at self-evaluation
+further improves when we allow models to consider many of their own samples
+before predicting the validity of one specific possibility. Next, we
+investigate whether models can be trained to predict ""P(IK)"", the probability
+that ""I know"" the answer to a question, without reference to any particular
+proposed answer. Models perform well at predicting P(IK) and partially
+generalize across tasks, though they struggle with calibration of P(IK) on new
+tasks. The predicted P(IK) probabilities also increase appropriately in the
+presence of relevant source materials in the context, and in the presence of
+hints towards the solution of mathematical word problems. We hope these
+observations lay the groundwork for training more honest models, and for
+investigating how honesty generalizes to cases where models are trained on
+objectives other than the imitation of human writing."
+2504.13677,"Revisiting Uncertainty Quantification Evaluation in Language Models:
+  Spurious Interactions with Response Length Bias Results",http://arxiv.org/abs/2504.13677,"Uncertainty Quantification (UQ) in Language Models (LMs) is key to improving
+their safety and reliability. Evaluations often use metrics like AUROC to
+assess how well UQ methods (e.g., negative sequence probabilities) correlate
+with task correctness functions (e.g., ROUGE-L). We show that mutual
+biases--when both UQ methods and correctness functions are biased by the same
+factors--systematically distort evaluation. First, we formally prove that any
+mutual bias non-randomly skews AUROC rankings, compromising benchmark
+integrity. Second, we confirm this happens empirically by testing 7 widely used
+correctness functions, from lexical-based and embedding-based metrics to
+LM-as-a-judge approaches, across 4 datasets x 4 models x 8 UQ methods. Our
+analysis shows that length biases in correctness functions distort UQ
+assessments by interacting with length biases in UQ methods. We identify
+LM-as-a-judge methods as the least length-biased, offering a promising path for
+a fairer UQ evaluation."
+2201.02387,The Defeat of the Winograd Schema Challenge,http://arxiv.org/abs/2201.02387,"The Winograd Schema Challenge - a set of twin sentences involving pronoun
+reference disambiguation that seem to require the use of commonsense knowledge
+- was proposed by Hector Levesque in 2011. By 2019, a number of AI systems,
+based on large pre-trained transformer-based language models and fine-tuned on
+these kinds of problems, achieved better than 90% accuracy. In this paper, we
+review the history of the Winograd Schema Challenge and discuss the lasting
+contributions of the flurry of research that has taken place on the WSC in the
+last decade. We discuss the significance of various datasets developed for WSC,
+and the research community's deeper understanding of the role of surrogate
+tasks in assessing the intelligence of an AI system."
+2304.03646,Fairness through Aleatoric Uncertainty,http://arxiv.org/abs/2304.03646,"We propose a simple yet effective solution to tackle the often-competing
+goals of fairness and utility in classification tasks. While fairness ensures
+that the model's predictions are unbiased and do not discriminate against any
+particular group or individual, utility focuses on maximizing the model's
+predictive performance. This work introduces the idea of leveraging aleatoric
+uncertainty (e.g., data ambiguity) to improve the fairness-utility trade-off.
+Our central hypothesis is that aleatoric uncertainty is a key factor for
+algorithmic fairness and samples with low aleatoric uncertainty are modeled
+more accurately and fairly than those with high aleatoric uncertainty. We then
+propose a principled model to improve fairness when aleatoric uncertainty is
+high and improve utility elsewhere. Our approach first intervenes in the data
+distribution to better decouple aleatoric uncertainty and epistemic
+uncertainty. It then introduces a fairness-utility bi-objective loss defined
+based on the estimated aleatoric uncertainty. Our approach is theoretically
+guaranteed to improve the fairness-utility trade-off. Experimental results on
+both tabular and image datasets show that the proposed approach outperforms
+state-of-the-art methods w.r.t. the fairness-utility trade-off and w.r.t. both
+group and individual fairness metrics. This work presents a fresh perspective
+on the trade-off between utility and algorithmic fairness and opens a key
+avenue for the potential of using prediction uncertainty in fair machine
+learning."
+2107.03342,A Survey of Uncertainty in Deep Neural Networks,http://arxiv.org/abs/2107.03342,"Due to their increasing spread, confidence in neural network predictions
+became more and more important. However, basic neural networks do not deliver
+certainty estimates or suffer from over or under confidence. Many researchers
+have been working on understanding and quantifying uncertainty in a neural
+network's prediction. As a result, different types and sources of uncertainty
+have been identified and a variety of approaches to measure and quantify
+uncertainty in neural networks have been proposed. This work gives a
+comprehensive overview of uncertainty estimation in neural networks, reviews
+recent advances in the field, highlights current challenges, and identifies
+potential research opportunities. It is intended to give anyone interested in
+uncertainty estimation in neural networks a broad overview and introduction,
+without presupposing prior knowledge in this field. A comprehensive
+introduction to the most crucial sources of uncertainty is given and their
+separation into reducible model uncertainty and not reducible data uncertainty
+is presented. The modeling of these uncertainties based on deterministic neural
+networks, Bayesian neural networks, ensemble of neural networks, and test-time
+data augmentation approaches is introduced and different branches of these
+fields as well as the latest developments are discussed. For a practical
+application, we discuss different measures of uncertainty, approaches for the
+calibration of neural networks and give an overview of existing baselines and
+implementations. Different examples from the wide spectrum of challenges in
+different fields give an idea of the needs and challenges regarding
+uncertainties in practical applications. Additionally, the practical
+limitations of current methods for mission- and safety-critical real world
+applications are discussed and an outlook on the next steps towards a broader
+usage of such methods is given."
+1703.04977,"What Uncertainties Do We Need in Bayesian Deep Learning for Computer
+  Vision?",http://arxiv.org/abs/1703.04977,"There are two major types of uncertainty one can model. Aleatoric uncertainty
+captures noise inherent in the observations. On the other hand, epistemic
+uncertainty accounts for uncertainty in the model -- uncertainty which can be
+explained away given enough data. Traditionally it has been difficult to model
+epistemic uncertainty in computer vision, but with new Bayesian deep learning
+tools this is now possible. We study the benefits of modeling epistemic vs.
+aleatoric uncertainty in Bayesian deep learning models for vision tasks. For
+this we present a Bayesian deep learning framework combining input-dependent
+aleatoric uncertainty together with epistemic uncertainty. We study models
+under the framework with per-pixel semantic segmentation and depth regression
+tasks. Further, our explicit uncertainty formulation leads to new loss
+functions for these tasks, which can be interpreted as learned attenuation.
+This makes the loss more robust to noisy data, also giving new state-of-the-art
+results on segmentation and depth regression benchmarks."
+1506.02142,"Dropout as a Bayesian Approximation: Representing Model Uncertainty in
+  Deep Learning",http://arxiv.org/abs/1506.02142,"Deep learning tools have gained tremendous attention in applied machine
+learning. However such tools for regression and classification do not capture
+model uncertainty. In comparison, Bayesian models offer a mathematically
+grounded framework to reason about model uncertainty, but usually come with a
+prohibitive computational cost. In this paper we develop a new theoretical
+framework casting dropout training in deep neural networks (NNs) as approximate
+Bayesian inference in deep Gaussian processes. A direct result of this theory
+gives us tools to model uncertainty with dropout NNs -- extracting information
+from existing models that has been thrown away so far. This mitigates the
+problem of representing uncertainty in deep learning without sacrificing either
+computational complexity or test accuracy. We perform an extensive study of the
+properties of dropout's uncertainty. Various network architectures and
+non-linearities are assessed on tasks of regression and classification, using
+MNIST as an example. We show a considerable improvement in predictive
+log-likelihood and RMSE compared to existing state-of-the-art methods, and
+finish by using dropout's uncertainty in deep reinforcement learning."
+1802.10501,Predictive Uncertainty Estimation via Prior Networks,http://arxiv.org/abs/1802.10501,"Estimating how uncertain an AI system is in its predictions is important to
+improve the safety of such systems. Uncertainty in predictive can result from
+uncertainty in model parameters, irreducible data uncertainty and uncertainty
+due to distributional mismatch between the test and training data
+distributions. Different actions might be taken depending on the source of the
+uncertainty so it is important to be able to distinguish between them.
+Recently, baseline tasks and metrics have been defined and several practical
+methods to estimate uncertainty developed. These methods, however, attempt to
+model uncertainty due to distributional mismatch either implicitly through
+model uncertainty or as data uncertainty. This work proposes a new framework
+for modeling predictive uncertainty called Prior Networks (PNs) which
+explicitly models distributional uncertainty. PNs do this by parameterizing a
+prior distribution over predictive distributions. This work focuses on
+uncertainty for classification and evaluates PNs on the tasks of identifying
+out-of-distribution (OOD) samples and detecting misclassification on the MNIST
+dataset, where they are found to outperform previous methods. Experiments on
+synthetic and MNIST and CIFAR-10 data show that unlike previous non-Bayesian
+methods PNs are able to distinguish between data and distributional
+uncertainty."
+1610.02136,"A Baseline for Detecting Misclassified and Out-of-Distribution Examples
+  in Neural Networks",http://arxiv.org/abs/1610.02136,"We consider the two related problems of detecting if an example is
+misclassified or out-of-distribution. We present a simple baseline that
+utilizes probabilities from softmax distributions. Correctly classified
+examples tend to have greater maximum softmax probabilities than erroneously
+classified and out-of-distribution examples, allowing for their detection. We
+assess performance by defining several tasks in computer vision, natural
+language processing, and automatic speech recognition, showing the
+effectiveness of this baseline across all. We then show the baseline can
+sometimes be surpassed, demonstrating the room for future research on these
+underexplored detection tasks."

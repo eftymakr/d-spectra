@@ -1,0 +1,156 @@
+## Related Works
+
+Multi-token prediction (MTP) has emerged as a promising pre-training objective for language models, offering potential improvements in downstream performance, inference speed, and training efficiency \[[3](http://arxiv.org/abs/2404.19737)\]. Unlike traditional next-token prediction (NTP), which predicts only the immediate next token, MTP extends the prediction horizon by forecasting the next $k$ tokens at each step using multiple prediction heads \[[3](http://arxiv.org/abs/2404.19737)\]. This approach has shown particular benefits for large models, enabling faster inference and better performance on generative tasks such as coding \[[3](http://arxiv.org/abs/2404.19737)\]. However, smaller language models (SLMs) often struggle with the MTP objective, necessitating the exploration of curriculum learning strategies to facilitate their adaptation \[[3](http://arxiv.org/abs/2404.19737)\].
+
+Curriculum learning, a technique that trains models in a structured, progressive manner from simple to complex tasks, has been widely applied in machine learning \[[1](http://arxiv.org/abs/2101.10382)\]. In the context of MTP, two curriculum learning variants have been explored: the forward curriculum, which gradually increases the complexity of the pre-training objective from NTP to MTP, and the reverse curriculum, which does the opposite \[[3](http://arxiv.org/abs/2404.19737)\]. The forward curriculum enables SLMs to better leverage the MTP objective during pre-training, leading to improved downstream NTP performance and generative output quality, while retaining the benefits of self-speculative decoding \[[3](http://arxiv.org/abs/2404.19737)\]. In contrast, the reverse curriculum achieves stronger NTP performance and output quality but fails to provide any self-speculative decoding benefits \[[3](http://arxiv.org/abs/2404.19737)\].
+
+Self-speculative decoding has been proposed as a method to accelerate LLM inference without compromising quality \[[6](http://arxiv.org/abs/2309.08168)\]. This technique involves a two-stage process: drafting and verification. The drafting stage generates tokens quickly using a lightweight model, while the verification stage uses the full model to validate these tokens \[[6](http://arxiv.org/abs/2309.08168)\]. Several approaches have been developed to enhance this method, including Medusa, which adds extra decoding heads to predict multiple subsequent tokens in parallel \[[9](http://arxiv.org/abs/2401.10774)\], and Kangaroo, which uses a fixed shallow sub-network as a self-draft model with an adapter module to bridge the gap between the sub-network and the full model \[[5](http://arxiv.org/abs/2404.18911)\]. Additionally, SWIFT introduces an on-the-fly self-speculative decoding algorithm that adaptively selects intermediate layers of the LLM to skip during inference, achieving speedups of up to 1.6x \[[7](http://arxiv.org/abs/2410.06916)\].
+
+Furthermore, KOALA enhances speculative decoding by introducing a multi-layer draft head with adversarial learning, improving the accuracy of draft predictions and unlocking the full potential of the draft head \[[8](http://arxiv.org/abs/2408.08146)\]. These methods collectively highlight the ongoing efforts to improve the efficiency and effectiveness of large language models through advanced training and
+## Research papers
+### Outline
+- [Curriculum Learning Strategies in Training [2 papers]](#category-curriculum-learning-strategies-in-training)
+- [Next-Token Prediction (NTP) vs Multi-Token Prediction (MTP) [2 papers]](#category-next-token-prediction-(ntp)-vs-multi-token-prediction-(mtp))
+- [Efficiency and Speed Enhancements in Inference [4 papers]](#category-efficiency-and-speed-enhancements-in-inference)
+- [Self-Speculative Decoding Techniques [2 papers]](#category-self-speculative-decoding-techniques)
+- [Adversarial Learning in Draft Head Optimization [1 papers]](#category-adversarial-learning-in-draft-head-optimization)
+- [Pre-training Objectives for Language Models [1 papers]](#category-pre-training-objectives-for-language-models)
+
+### <a id='category-curriculum-learning-strategies-in-training'></a>Curriculum Learning Strategies in Training: 2 papers found.
+Context: 
+	Document 1: [Category]: «Curriculum Learning Strategies in Training»
+[Snippet]: «Training machine learning models in a meaningful order, from the easy samples to the hard ones, using curriculum learning can provide performance improvements over the standard training approach based on random data shuffling, without any additional computational costs. Curriculum learning strategies have been successfully employed in all areas of machine learning, in a wide range of tasks. However, the necessity of finding a way to rank the samples from easy to hard, as well as the right pacing function for introducing more difficult data can limit the usage of the curriculum approaches. In this survey, we show how these limits have been tackled in the literature, and we present different curriculum learning instantiations for various tasks in machine learning. We construct a multi-perspective taxonomy of curriculum learning approaches by hand, considering various classification criteria. We further build a hierarchical tree of curriculum learning methods using an agglomerative clustering algorithm, linking the discovered clusters with our taxonomy. At the end, we provide some interesting directions for future work.»
+[_citation_number]: «1»
+
+	Document 2: [Category]: «Curriculum Learning Strategies in Training»
+[Snippet]: «»
+[_citation_number]: «10»
+
+
+Instruction:  You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-05-28T18:19:18+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/2404.19737)\]. Further details \[[6](http://arxiv.org/abs/2309.08168)\]\[[7](http://arxiv.org/abs/2410.06916)\]\[[8](http://arxiv.org/abs/2408.08146)\]\[[9](http://arxiv.org/abs/2401.10774)\]\[[10](https://doi.org/10.1145/1553374.1553380)\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Multi-token prediction (MTP) is a recently proposed pre-training objective for language models. Rather than predicting only the next token (NTP), MTP predicts the next $k$ tokens at each prediction step, using multiple prediction heads. MTP has shown promise in improving downstream performance, inference speed, and training efficiency, particularly for
+|    | reference                                                        |   date | key idea/summary                                                                                                                                                                                                         |
+|----|------------------------------------------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Curriculum Learning: A Survey](http://arxiv.org/abs/2101.10382) |    nan | This survey presents a comprehensive overview of curriculum learning methods in machine learning, addressing challenges in sample ranking and pacing, and proposes a taxonomy and hierarchical clustering of approaches. |
+|  1 | [Curriculum learning](https://doi.org/10.1145/1553374.1553380)   |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                |
+### <a id='category-next-token-prediction-(ntp)-vs-multi-token-prediction-(mtp)'></a>Next-Token Prediction (NTP) vs Multi-Token Prediction (MTP): 2 papers found.
+Context: 
+	Document 1: [Category]: «Next-Token Prediction (NTP) vs Multi-Token Prediction (MTP)»
+[Snippet]: «We conjecture that hidden state vectors corresponding to individual input
+tokens encode information sufficient to accurately predict several tokens
+ahead. More concretely, in this paper we ask: Given a hidden (internal)
+representation of a single token at position $t$ in an input, can we reliably
+anticipate the tokens that will appear at positions $\geq t + 2$? To test this,
+we measure linear approximation and causal intervention methods in GPT-J-6B to
+evaluate the degree to which individual hidden states in the network contain
+signal rich enough to predict future hidden states and, ultimately, token
+outputs. We find that, at some layers, we can approximate a model's output with
+more than 48% accuracy with respect to its prediction of subsequent tokens
+through a single hidden state. Finally we present a "Future Lens" visualization
+that uses these methods to create a new view of transformer states.»
+[_citation_number]: «2»
+
+	Document 2: [Category]: «Next-Token Prediction (NTP) vs Multi-Token Prediction (MTP)»
+[Snippet]: «Large language models such as GPT and Llama are trained with a next-token
+prediction loss. In this work, we suggest that training language models to
+predict multiple future tokens at once results in higher sample efficiency.
+More specifically, at each position in the training corpus, we ask the model to
+predict the following n tokens using n independent output heads, operating on
+top of a shared model trunk. Considering multi-token prediction as an auxiliary
+training task, we measure improved downstream capabilities with no overhead in
+training time for both code and natural language models. The method is
+increasingly useful for larger model sizes, and keeps its appeal when training
+for multiple epochs. Gains are especially pronounced on generative benchmarks
+like coding, where our models consistently outperform strong baselines by
+several percentage points. Our 13B parameter models solves 12 % more problems
+on HumanEval and 17 % more on MBPP than comparable next-token models.
+Experiments on small algorithmic tasks demonstrate that multi-token prediction
+is favorable for the development of induction heads and algorithmic reasoning
+capabilities. As an additional benefit, models trained with 4-token prediction
+are up to 3 times faster at inference, even with
+|    | reference                                                                                                 |   date | key idea/summary                                                                                                                                                                                                        |
+|----|-----------------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Future Lens: Anticipating Subsequent Tokens from a Single Hidden State](http://arxiv.org/abs/2311.04897) |    nan | The paper conjectures that hidden state vectors in transformer models can predict future tokens and demonstrates that a single hidden state can approximate model outputs with over 48% accuracy for subsequent tokens. |
+|  1 | [Better & Faster Large Language Models via Multi-token Prediction](http://arxiv.org/abs/2404.19737)       |    nan | Training language models to predict multiple future tokens simultaneously improves sample efficiency and downstream performance, particularly in coding tasks, with additional benefits in inference speed.             |
+### <a id='category-efficiency-and-speed-enhancements-in-inference'></a>Efficiency and Speed Enhancements in Inference: 4 papers found.
+Efficiency and speed enhancements in inference have been a focal point in recent advancements for large language models (LLMs), with several approaches aiming to reduce computational overhead while maintaining or improving performance. Techniques such as blockwise parallel decoding \[[4](http://arxiv.org/abs/1811.03115)\] and self-speculative decoding \[[6](http://arxiv.org/abs/2309.08168)\] have emerged as promising solutions. Blockwise parallel decoding enables parallel prediction of multiple time steps, followed by validation using a scoring model, achieving up to 4x real-time speedups over standard greedy decoding. Similarly, self-speculative decoding introduces a two-stage process—drafting and verification—where draft tokens are generated quickly and then validated by the full model, offering up to 1.99× speedup without quality loss \[[6](http://arxiv.org/abs/2309.08168)\]. Building on these ideas, SWIFT proposes a plug-and-play self-speculative decoding algorithm that leverages layer-skipping in the target LLM, eliminating the need for auxiliary models or additional training, and achieving speedups of 1.3x–1.6x \[[7](http://arxiv.org/abs/2410.06916)\]. Additionally, Medusa introduces an efficient method by adding extra decoding heads to predict multiple tokens in parallel, using a tree-based attention mechanism to construct and verify candidate continuations simultaneously. This approach achieves speedups of up to 3.6x without compromising generation quality \[[9](http://arxiv.org/abs/2401.10774)\]. These methods collectively highlight the growing trend toward parallel and speculative decoding strategies that aim to accelerate inference while preserving model performance.
+|    | reference                                                                                                                     |   date | key idea/summary                                                                                                                                                                                                                            |
+|----|-------------------------------------------------------------------------------------------------------------------------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Blockwise Parallel Decoding for Deep Autoregressive Models](http://arxiv.org/abs/1811.03115)                                 |    nan | The paper introduces a blockwise parallel decoding scheme that significantly improves generation speed in sequence-to-sequence models without compromising quality, achieving up to 2x speedup with state-of-the-art self-attention models. |
+|  1 | [Draft & Verify: Lossless Large Language Model Acceleration via
+  Self-Speculative Decoding](http://arxiv.org/abs/2309.08168) |    nan | Self-speculative decoding accelerates Large Language Models (LLMs) by using a two-stage process of draft generation and verification, achieving speedups without requiring additional training or memory.                                   |
+|  2 | [SWIFT: On-the-Fly Self-Speculative Decoding for LLM Inference
+  Acceleration](http://arxiv.org/abs/2410.06916)               |    nan | SWIFT is a plug-and-play speculative decoding method that accelerates LLM inference by adaptively skipping intermediate layers during inference, without requiring additional training or auxiliary models.                                 |
+|  3 | [Medusa: Simple LLM Inference Acceleration Framework with Multiple
+  Decoding Heads](http://arxiv.org/abs/2401.10774)         |    nan | Medusa is an efficient method that enhances LLM inference by adding decoding heads to predict multiple tokens in parallel, reducing decoding steps and achieving significant speedups without compromising generation quality.              |
+### <a id='category-self-speculative-decoding-techniques'></a>Self-Speculative Decoding Techniques: 2 papers found.
+Context: 
+	Document 1: [Category]: «Self-Speculative Decoding Techniques»
+[Snippet]: «Speculative decoding has demonstrated its effectiveness in accelerating the inference of large language models while maintaining a consistent sampling distribution. However, the conventional approach of training a separate draft model to achieve a satisfactory token acceptance rate can be costly. Drawing inspiration from early exiting, we propose a novel self-speculative decoding framework \emph(Kangaroo), which uses a fixed shallow sub-network as a self-draft model, with the remaining layers serving as the larger target model. We train a lightweight and efficient adapter module on top of the sub-network to bridge the gap between the sub-network and the full model's representation ability. It is noteworthy that the inference latency of the self-draft model may no longer be negligible compared to the large model, necessitating strategies to increase the token acceptance rate while minimizing the drafting steps of the small model. To address this challenge, we introduce an additional early exiting mechanism for generating draft tokens. Specifically, we halt the small model's subsequent prediction during the drafting phase once the confidence level for the current token falls below a certain threshold. Extensive experiments on the Spec-Bench demonstrate the effectiveness of Kangaroo. Under single-sequence verification, Kangaroo achieves speedups up to $1.68\times$ on Spec-Bench, outperforming Medusa-1 with 88.7\% fewer additional parameters (67M compared to 591M). The code for Kangaroo is available at https://github.com/Equationliu/Kangaroo.»
+[_citation_number]: «5»
+
+	Document 2: [Category]: «Self-Speculative Decoding Techniques»
+[Snippet]: «»
+[_citation_number]: «12»
+
+
+Instruction:  You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-05-28T18:19:18+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/2404.19737)\]. Further details \[[6](http://arxiv.org/abs/2309.08168)\]\[[7](http://arxiv.org/abs/2410.06916)\]\[[8](http://arxiv.org/abs/2408.08146)\]\[[9](http://arxiv.org/abs/2401.10774)\]\[[10](https://doi.org/10.1145/1553374.1553380)\].)
+|    | reference                                                                                                                |   date | key idea/summary                                                                                                                                                                                                                              |
+|----|--------------------------------------------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Kangaroo: Lossless Self-Speculative Decoding via Double Early Exiting](http://arxiv.org/abs/2404.18911)                 |    nan | Kangaroo is a self-speculative decoding framework that uses a lightweight sub-network as a self-draft model, combined with an adapter module to enhance representation ability, achieving significant speedups while maintaining performance. |
+|  1 | [(L)ayer(S)kip: Enabling Early Exit Inference and Self-Speculative Decoding](https://aclanthology.org/2024.acl-long.681) |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                     |
+### <a id='category-adversarial-learning-in-draft-head-optimization'></a>Adversarial Learning in Draft Head Optimization: 1 papers found.
+Context: 
+	Document 1: [Category]: «Adversarial Learning in Draft Head Optimization»
+[Snippet]: «Large Language Models (LLMs) exhibit high inference latency due to their
+autoregressive decoding nature. While the draft head in speculative decoding
+mitigates this issue, its full potential remains unexplored. In this paper, we
+introduce KOALA (K-layer Optimized Adversarial Learning Architecture), an
+orthogonal approach to the draft head. By transforming the conventional
+single-layer draft head into a multi-layer architecture and incorporating
+adversarial learning into the traditional supervised training, KOALA
+significantly improves the accuracy of the draft head in predicting subsequent
+tokens, thus more closely mirroring the functionality of LLMs. Although this
+improvement comes at the cost of slightly increased drafting overhead, KOALA
+substantially unlocks the draft head's potential, greatly enhancing speculative
+decoding. We conducted comprehensive evaluations of KOALA, including both
+autoregressive and non-autoregressive draft heads across various tasks,
+demonstrating a latency speedup ratio improvement of 0.24x-0.41x, which is
+10.57%-14.09% faster than the original draft heads.»
+[_citation_number]: «8»
+
+
+Instruction: You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-05-28T18:19:18+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/2404.19737)\]. Further details \[[6](http://arxiv.org/abs/2309.08168)\]\[[7](http://arxiv.org/abs/2410.06916)\]\[[8](http://arxiv.org/abs/2408.08146)\]\[[9](http://arxiv.org/abs/2401.10774)\]\[[10](https://doi.org/10.1145/1553374.1553380)\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Multi-token prediction (MTP) is a recently proposed pre-training objective
+for language models. Rather than predicting only the next token (NTP), MTP
+predicts the next $k$ tokens at each prediction step, using multiple prediction
+|    | reference                                                                                                                                |   date | key idea/summary                                                                                                                                                                         |
+|----|------------------------------------------------------------------------------------------------------------------------------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [KOALA: Enhancing Speculative Decoding for LLM via Multi-Layer Draft
+  Heads with Adversarial Learning](http://arxiv.org/abs/2408.08146) |    nan | KOALA improves the accuracy of draft heads in speculative decoding by using a multi-layer architecture and adversarial learning, leading to better performance and latency improvements. |
+### <a id='category-pre-training-objectives-for-language-models'></a>Pre-training Objectives for Language Models: 1 papers found.
+Context: 
+	Document 1: [Category]: «Pre-training Objectives for Language Models»
+[Snippet]: «»
+[_citation_number]: «11»
+
+
+Instruction:  You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-05-28T18:19:18+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/2404.19737)\]. Further details \[[6](http://arxiv.org/abs/2309.08168)\]\[[7](http://arxiv.org/abs/2410.06916)\]\[[8](http://arxiv.org/abs/2408.08146)\]\[[9](http://arxiv.org/abs/2401.10774)\]\[[10](https://doi.org/10.1145/1553374.1553380)\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Multi-token prediction (MTP) is a recently proposed pre-training objective
+for language models. Rather than predicting only the next token (NTP), MTP
+predicts the next $k$ tokens at each prediction step, using multiple prediction
+heads. MTP has shown promise in improving downstream performance, inference
+speed, and training efficiency, particularly for large models. However, prior
+work has shown that smaller language models (SLMs) struggle with the MTP
+objective. To address this, we propose a curriculum learning strategy for MTP
+training, exploring two variants: a forward curriculum, which gradually
+increases the complexity of the pre-training objective from NTP to MTP, and a
+reverse curriculum, which does the opposite. Our experiments show that the
+forward curriculum enables SLMs to better leverage the MTP objective during
+pre-training, improving downstream NTP performance and generative output
+quality, while retaining the benefits of self-speculative decoding. The reverse
+curriculum achieves stronger NTP performance and output quality, but fails to
+provide any self-speculative decoding benefits.
+Your job is to write a single body paragraph of the full report, focused on introducing the specific Category.
+The paragraph should summarize the key themes that relate to the category, based on relevant sources, given their Snippet. Make sure to cite the sources.
+You should write a short paragraph, specifically focusing on the
+|    | reference                                                                                                                             |   date | key idea/summary                                                                                          |
+|----|---------------------------------------------------------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------|
+|  0 | [(P)rophet(N)et: Predicting Future N-gram for Sequence-to-(S)equence(P)re-training](https://aclanthology.org/2020.findings-emnlp.217) |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary. |

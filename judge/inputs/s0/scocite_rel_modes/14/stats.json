@@ -1,0 +1,12 @@
+{
+ "query": "014_2506.01037v1",
+ "n_papers": 28,
+ "n_linked": 28,
+ "seconds": 19.687755823135376,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=500242, completion_tokens=80139, total_tokens=580381, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=777717, completion_tokens=85742, total_tokens=863459, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Video Super-Resolution Techniques": 18,
+  "Diffusion Models for Images and Video": 6,
+  "Image Super-Resolution Techniques": 3
+ }
+}

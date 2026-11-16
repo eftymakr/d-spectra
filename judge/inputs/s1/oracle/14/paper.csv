@@ -1,0 +1,283 @@
+id,title,url,snippet
+2106.06847,Video Super-Resolution Transformer,http://arxiv.org/abs/2106.06847,"Video super-resolution (VSR), with the aim to restore a high-resolution video
+from its corresponding low-resolution version, is a spatial-temporal sequence
+prediction problem. Recently, Transformer has been gaining popularity due to
+its parallel computing ability for sequence-to-sequence modeling. Thus, it
+seems to be straightforward to apply the vision Transformer to solve VSR.
+However, the typical block design of Transformer with a fully connected
+self-attention layer and a token-wise feed-forward layer does not fit well for
+VSR due to the following two reasons. First, the fully connected self-attention
+layer neglects to exploit the data locality because this layer relies on linear
+layers to compute attention maps. Second, the token-wise feed-forward layer
+lacks the feature alignment which is important for VSR since this layer
+independently processes each of the input token embeddings without any
+interaction among them. In this paper, we make the first attempt to adapt
+Transformer for VSR. Specifically, to tackle the first issue, we present a
+spatial-temporal convolutional self-attention layer with a theoretical
+understanding to exploit the locality information. For the second issue, we
+design a bidirectional optical flow-based feed-forward layer to discover the
+correlations across different video frames and also align features. Extensive
+experiments on several benchmark datasets demonstrate the effectiveness of our
+proposed method. The code will be available at
+https://github.com/caojiezhang/VSR-Transformer."
+2012.02181,"BasicVSR: The Search for Essential Components in Video Super-Resolution
+  and Beyond",http://arxiv.org/abs/2012.02181,"Video super-resolution (VSR) approaches tend to have more components than the
+image counterparts as they need to exploit the additional temporal dimension.
+Complex designs are not uncommon. In this study, we wish to untangle the knots
+and reconsider some most essential components for VSR guided by four basic
+functionalities, i.e., Propagation, Alignment, Aggregation, and Upsampling. By
+reusing some existing components added with minimal redesigns, we show a
+succinct pipeline, BasicVSR, that achieves appealing improvements in terms of
+speed and restoration quality in comparison to many state-of-the-art
+algorithms. We conduct systematic analysis to explain how such gain can be
+obtained and discuss the pitfalls. We further show the extensibility of
+BasicVSR by presenting an information-refill mechanism and a coupled
+propagation scheme to facilitate information aggregation. The BasicVSR and its
+extension, IconVSR, can serve as strong baselines for future VSR approaches."
+2008.00455,Video Super-Resolution with Recurrent Structure-Detail Network,http://arxiv.org/abs/2008.00455,"Most video super-resolution methods super-resolve a single reference frame
+with the help of neighboring frames in a temporal sliding window. They are less
+efficient compared to the recurrent-based methods. In this work, we propose a
+novel recurrent video super-resolution method which is both effective and
+efficient in exploiting previous frames to super-resolve the current frame. It
+divides the input into structure and detail components which are fed to a
+recurrent unit composed of several proposed two-stream structure-detail blocks.
+In addition, a hidden state adaptation module that allows the current frame to
+selectively use information from hidden state is introduced to enhance its
+robustness to appearance change and error accumulation. Extensive ablation
+study validate the effectiveness of the proposed modules. Experiments on
+several benchmark datasets demonstrate the superior performance of the proposed
+method compared to state-of-the-art methods on video super-resolution."
+2206.02146,Recurrent Video Restoration Transformer with Guided Deformable Attention,http://arxiv.org/abs/2206.02146,"Video restoration aims at restoring multiple high-quality frames from
+multiple low-quality frames. Existing video restoration methods generally fall
+into two extreme cases, i.e., they either restore all frames in parallel or
+restore the video frame by frame in a recurrent way, which would result in
+different merits and drawbacks. Typically, the former has the advantage of
+temporal information fusion. However, it suffers from large model size and
+intensive memory consumption; the latter has a relatively small model size as
+it shares parameters across frames; however, it lacks long-range dependency
+modeling ability and parallelizability. In this paper, we attempt to integrate
+the advantages of the two cases by proposing a recurrent video restoration
+transformer, namely RVRT. RVRT processes local neighboring frames in parallel
+within a globally recurrent framework which can achieve a good trade-off
+between model size, effectiveness, and efficiency. Specifically, RVRT divides
+the video into multiple clips and uses the previously inferred clip feature to
+estimate the subsequent clip feature. Within each clip, different frame
+features are jointly updated with implicit feature aggregation. Across
+different clips, the guided deformable attention is designed for clip-to-clip
+alignment, which predicts multiple relevant locations from the whole inferred
+clip and aggregates their features by the attention mechanism. Extensive
+experiments on video super-resolution, deblurring, and denoising show that the
+proposed RVRT achieves state-of-the-art performance on benchmark datasets with
+balanced model size, testing memory and runtime."
+1905.02716,EDVR: Video Restoration with Enhanced Deformable Convolutional Networks,http://arxiv.org/abs/1905.02716,"Video restoration tasks, including super-resolution, deblurring, etc, are
+drawing increasing attention in the computer vision community. A challenging
+benchmark named REDS is released in the NTIRE19 Challenge. This new benchmark
+challenges existing methods from two aspects: (1) how to align multiple frames
+given large motions, and (2) how to effectively fuse different frames with
+diverse motion and blur. In this work, we propose a novel Video Restoration
+framework with Enhanced Deformable networks, termed EDVR, to address these
+challenges. First, to handle large motions, we devise a Pyramid, Cascading and
+Deformable (PCD) alignment module, in which frame alignment is done at the
+feature level using deformable convolutions in a coarse-to-fine manner. Second,
+we propose a Temporal and Spatial Attention (TSA) fusion module, in which
+attention is applied both temporally and spatially, so as to emphasize
+important features for subsequent restoration. Thanks to these modules, our
+EDVR wins the champions and outperforms the second place by a large margin in
+all four tracks in the NTIRE19 video restoration and enhancement challenges.
+EDVR also demonstrates superior performance to state-of-the-art published
+methods on video super-resolution and deblurring. The code is available at
+https://github.com/xinntao/EDVR."
+2111.12704,Investigating Tradeoffs in Real-World Video Super-Resolution,http://arxiv.org/abs/2111.12704,"The diversity and complexity of degradations in real-world video
+super-resolution (VSR) pose non-trivial challenges in inference and training.
+First, while long-term propagation leads to improved performance in cases of
+mild degradations, severe in-the-wild degradations could be exaggerated through
+propagation, impairing output quality. To balance the tradeoff between detail
+synthesis and artifact suppression, we found an image pre-cleaning stage
+indispensable to reduce noises and artifacts prior to propagation. Equipped
+with a carefully designed cleaning module, our RealBasicVSR outperforms
+existing methods in both quality and efficiency. Second, real-world VSR models
+are often trained with diverse degradations to improve generalizability,
+requiring increased batch size to produce a stable gradient. Inevitably, the
+increased computational burden results in various problems, including 1)
+speed-performance tradeoff and 2) batch-length tradeoff. To alleviate the first
+tradeoff, we propose a stochastic degradation scheme that reduces up to 40\% of
+training time without sacrificing performance. We then analyze different
+training settings and suggest that employing longer sequences rather than
+larger batches during training allows more effective uses of temporal
+information, leading to more stable performance during inference. To facilitate
+fair comparisons, we propose the new VideoLQ dataset, which contains a large
+variety of real-world low-quality video sequences containing rich textures and
+patterns. Our dataset can serve as a common ground for benchmarking. Code,
+models, and the dataset will be made publicly available."
+2212.07339,Mitigating Artifacts in Real-World Video Super-Resolution Models,http://arxiv.org/abs/2212.07339,"The recurrent structure is a prevalent framework for the task of video
+super-resolution, which models the temporal dependency between frames via
+hidden states. When applied to real-world scenarios with unknown and complex
+degradations, hidden states tend to contain unpleasant artifacts and propagate
+them to restored frames. In this circumstance, our analyses show that such
+artifacts can be largely alleviated when the hidden state is replaced with a
+cleaner counterpart. Based on the observations, we propose a Hidden State
+Attention (HSA) module to mitigate artifacts in real-world video
+super-resolution. Specifically, we first adopt various cheap filters to produce
+a hidden state pool. For example, Gaussian blur filters are for smoothing
+artifacts while sharpening filters are for enhancing details. To aggregate a
+new hidden state that contains fewer artifacts from the hidden state pool, we
+devise a Selective Cross Attention (SCA) module, in which the attention between
+input features and each hidden state is calculated. Equipped with HSA, our
+proposed method, namely FastRealVSR, is able to achieve 2x speedup while
+obtaining better performance than Real-BasicVSR. Codes will be available at
+https://github.com/TencentARC/FastRealVSR"
+2002.05709,A Simple Framework for Contrastive Learning of Visual Representations,http://arxiv.org/abs/2002.05709,"This paper presents SimCLR: a simple framework for contrastive learning of
+visual representations. We simplify recently proposed contrastive
+self-supervised learning algorithms without requiring specialized architectures
+or a memory bank. In order to understand what enables the contrastive
+prediction tasks to learn useful representations, we systematically study the
+major components of our framework. We show that (1) composition of data
+augmentations plays a critical role in defining effective predictive tasks, (2)
+introducing a learnable nonlinear transformation between the representation and
+the contrastive loss substantially improves the quality of the learned
+representations, and (3) contrastive learning benefits from larger batch sizes
+and more training steps compared to supervised learning. By combining these
+findings, we are able to considerably outperform previous methods for
+self-supervised and semi-supervised learning on ImageNet. A linear classifier
+trained on self-supervised representations learned by SimCLR achieves 76.5%
+top-1 accuracy, which is a 7% relative improvement over previous
+state-of-the-art, matching the performance of a supervised ResNet-50. When
+fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy,
+outperforming AlexNet with 100X fewer labels."
+2201.12288,VRT: A Video Restoration Transformer,http://arxiv.org/abs/2201.12288,"Video restoration (e.g., video super-resolution) aims to restore high-quality
+frames from low-quality frames. Different from single image restoration, video
+restoration generally requires to utilize temporal information from multiple
+adjacent but usually misaligned video frames. Existing deep methods generally
+tackle with this by exploiting a sliding window strategy or a recurrent
+architecture, which either is restricted by frame-by-frame restoration or lacks
+long-range modelling ability. In this paper, we propose a Video Restoration
+Transformer (VRT) with parallel frame prediction and long-range temporal
+dependency modelling abilities. More specifically, VRT is composed of multiple
+scales, each of which consists of two kinds of modules: temporal mutual self
+attention (TMSA) and parallel warping. TMSA divides the video into small clips,
+on which mutual attention is applied for joint motion estimation, feature
+alignment and feature fusion, while self attention is used for feature
+extraction. To enable cross-clip interactions, the video sequence is shifted
+for every other layer. Besides, parallel warping is used to further fuse
+information from neighboring frames by parallel feature warping. Experimental
+results on five tasks, including video super-resolution, video deblurring,
+video denoising, video frame interpolation and space-time video
+super-resolution, demonstrate that VRT outperforms the state-of-the-art methods
+by large margins ($\textbf(up to 2.16dB)$) on fourteen benchmark datasets."
+2401.09417,"Vision Mamba: Efficient Visual Representation Learning with
+  Bidirectional State Space Model",http://arxiv.org/abs/2401.09417,"Recently the state space models (SSMs) with efficient hardware-aware designs,
+i.e., the Mamba deep learning model, have shown great potential for long
+sequence modeling. Meanwhile building efficient and generic vision backbones
+purely upon SSMs is an appealing direction. However, representing visual data
+is challenging for SSMs due to the position-sensitivity of visual data and the
+requirement of global context for visual understanding. In this paper, we show
+that the reliance on self-attention for visual representation learning is not
+necessary and propose a new generic vision backbone with bidirectional Mamba
+blocks (Vim), which marks the image sequences with position embeddings and
+compresses the visual representation with bidirectional state space models. On
+ImageNet classification, COCO object detection, and ADE20k semantic
+segmentation tasks, Vim achieves higher performance compared to
+well-established vision transformers like DeiT, while also demonstrating
+significantly improved computation & memory efficiency. For example, Vim is
+2.8$\times$ faster than DeiT and saves 86.8% GPU memory when performing batch
+inference to extract features on images with a resolution of 1248$\times$1248.
+The results demonstrate that Vim is capable of overcoming the computation &
+memory constraints on performing Transformer-style understanding for
+high-resolution images and it has great potential to be the next-generation
+backbone for vision foundation models. Code is available at
+https://github.com/hustvl/Vim."
+2007.10595,Video Super-resolution with Temporal Group Attention,http://arxiv.org/abs/2007.10595,"Video super-resolution, which aims at producing a high-resolution video from
+its corresponding low-resolution version, has recently drawn increasing
+attention. In this work, we propose a novel method that can effectively
+incorporate temporal information in a hierarchical way. The input sequence is
+divided into several groups, with each one corresponding to a kind of frame
+rate. These groups provide complementary information to recover missing details
+in the reference frame, which is further integrated with an attention module
+and a deep intra-group fusion module. In addition, a fast spatial alignment is
+proposed to handle videos with large motion. Extensive results demonstrate the
+capability of the proposed model in handling videos with various motion. It
+achieves favorable performance against state-of-the-art methods on several
+benchmark datasets."
+2208.04933,Simplified State Space Layers for Sequence Modeling,http://arxiv.org/abs/2208.04933,"Models using structured state space sequence (S4) layers have achieved
+state-of-the-art performance on long-range sequence modeling tasks. An S4 layer
+combines linear state space models (SSMs), the HiPPO framework, and deep
+learning to achieve high performance. We build on the design of the S4 layer
+and introduce a new state space layer, the S5 layer. Whereas an S4 layer uses
+many independent single-input, single-output SSMs, the S5 layer uses one
+multi-input, multi-output SSM. We establish a connection between S5 and S4, and
+use this to develop the initialization and parameterization used by the S5
+model. The result is a state space layer that can leverage efficient and widely
+implemented parallel scans, allowing S5 to match the computational efficiency
+of S4, while also achieving state-of-the-art performance on several long-range
+sequence modeling tasks. S5 averages 87.4% on the long range arena benchmark,
+and 98.5% on the most difficult Path-X task."
+2312.00752,Mamba: Linear-Time Sequence Modeling with Selective State Spaces,http://arxiv.org/abs/2312.00752,"Foundation models, now powering most of the exciting applications in deep
+learning, are almost universally based on the Transformer architecture and its
+core attention module. Many subquadratic-time architectures such as linear
+attention, gated convolution and recurrent models, and structured state space
+models (SSMs) have been developed to address Transformers' computational
+inefficiency on long sequences, but they have not performed as well as
+attention on important modalities such as language. We identify that a key
+weakness of such models is their inability to perform content-based reasoning,
+and make several improvements. First, simply letting the SSM parameters be
+functions of the input addresses their weakness with discrete modalities,
+allowing the model to selectively propagate or forget information along the
+sequence length dimension depending on the current token. Second, even though
+this change prevents the use of efficient convolutions, we design a
+hardware-aware parallel algorithm in recurrent mode. We integrate these
+selective SSMs into a simplified end-to-end neural network architecture without
+attention or even MLP blocks (Mamba). Mamba enjoys fast inference (5$\times$
+higher throughput than Transformers) and linear scaling in sequence length, and
+its performance improves on real data up to million-length sequences. As a
+general sequence model backbone, Mamba achieves state-of-the-art performance
+across several modalities such as language, audio, and genomics. On language
+modeling, our Mamba-3B model outperforms Transformers of the same size and
+matches Transformers twice its size, both in pretraining and downstream
+evaluation."
+2007.11803,"MuCAN: Multi-Correspondence Aggregation Network for Video
+  Super-Resolution",http://arxiv.org/abs/2007.11803,"Video super-resolution (VSR) aims to utilize multiple low-resolution frames
+to generate a high-resolution prediction for each frame. In this process,
+inter- and intra-frames are the key sources for exploiting temporal and spatial
+information. However, there are a couple of limitations for existing VSR
+methods. First, optical flow is often used to establish temporal
+correspondence. But flow estimation itself is error-prone and affects recovery
+results. Second, similar patterns existing in natural images are rarely
+exploited for the VSR task. Motivated by these findings, we propose a temporal
+multi-correspondence aggregation strategy to leverage similar patches across
+frames, and a cross-scale nonlocal-correspondence aggregation scheme to explore
+self-similarity of images across scales. Based on these two new modules, we
+build an effective multi-correspondence aggregation network (MuCAN) for VSR.
+Our method achieves state-of-the-art results on multiple benchmark datasets.
+Extensive experiments justify the effectiveness of our method."
+2006.09882,"Unsupervised Learning of Visual Features by Contrasting Cluster
+  Assignments",http://arxiv.org/abs/2006.09882,"Unsupervised image representations have significantly reduced the gap with
+supervised pretraining, notably with the recent achievements of contrastive
+learning methods. These contrastive methods typically work online and rely on a
+large number of explicit pairwise feature comparisons, which is computationally
+challenging. In this paper, we propose an online algorithm, SwAV, that takes
+advantage of contrastive methods without requiring to compute pairwise
+comparisons. Specifically, our method simultaneously clusters the data while
+enforcing consistency between cluster assignments produced for different
+augmentations (or views) of the same image, instead of comparing features
+directly as in contrastive learning. Simply put, we use a swapped prediction
+mechanism where we predict the cluster assignment of a view from the
+representation of another view. Our method can be trained with large and small
+batches and can scale to unlimited amounts of data. Compared to previous
+contrastive methods, our method is more memory efficient since it does not
+require a large memory bank or a special momentum network. In addition, we also
+propose a new data augmentation strategy, multi-crop, that uses a mix of views
+with different resolutions in place of two full-resolution views, without
+increasing the memory or compute requirements much. We validate our findings by
+achieving 75.3% top-1 accuracy on ImageNet with ResNet-50, as well as
+surpassing supervised pretraining on all the considered transfer tasks."
+1911.05722,Momentum Contrast for Unsupervised Visual Representation Learning,http://arxiv.org/abs/1911.05722,"We present Momentum Contrast (MoCo) for unsupervised visual representation
+learning. From a perspective on contrastive learning as dictionary look-up, we
+build a dynamic dictionary with a queue and a moving-averaged encoder. This
+enables building a large and consistent dictionary on-the-fly that facilitates
+contrastive unsupervised learning. MoCo provides competitive results under the
+common linear protocol on ImageNet classification. More importantly, the
+representations learned by MoCo transfer well to downstream tasks. MoCo can
+outperform its supervised pre-training counterpart in 7 detection/segmentation
+tasks on PASCAL VOC, COCO, and other datasets, sometimes surpassing it by large
+margins. This suggests that the gap between unsupervised and supervised
+representation learning has been largely closed in many vision tasks."

@@ -1,0 +1,177 @@
+id,title,url,snippet
+2006.12694,Limits of Transfer Learning,http://arxiv.org/abs/2006.12694,"Transfer learning involves taking information and insight from one problem
+domain and applying it to a new problem domain. Although widely used in
+practice, theory for transfer learning remains less well-developed. To address
+this, we prove several novel results related to transfer learning, showing the
+need to carefully select which sets of information to transfer and the need for
+dependence between transferred information and target problems. Furthermore, we
+prove how the degree of probabilistic change in an algorithm using transfer
+learning places an upper bound on the amount of improvement possible. These
+results build on the algorithmic search framework for machine learning,
+allowing the results to apply to a wide range of learning problems using
+transfer."
+2102.01530,"Transfer Learning in Magnetic Resonance Brain Imaging: a Systematic
+  Review",http://arxiv.org/abs/2102.01530,"Transfer learning refers to machine learning techniques that focus on
+acquiring knowledge from related tasks to improve generalization in the tasks
+of interest. In MRI, transfer learning is important for developing strategies
+that address the variation in MR images. Additionally, transfer learning is
+beneficial to re-utilize machine learning models that were trained to solve
+related tasks to the task of interest. Our goal is to identify research
+directions, gaps of knowledge, applications, and widely used strategies among
+the transfer learning approaches applied in MR brain imaging. We performed a
+systematic literature search for articles that applied transfer learning to MR
+brain imaging. We screened 433 studies and we categorized and extracted
+relevant information, including task type, application, and machine learning
+methods. Furthermore, we closely examined brain MRI-specific transfer learning
+approaches and other methods that tackled privacy, unseen target domains, and
+unlabeled data. We found 129 articles that applied transfer learning to brain
+MRI tasks. The most frequent applications were dementia related classification
+tasks and brain tumor segmentation. A majority of articles utilized transfer
+learning on convolutional neural networks (CNNs). Only few approaches were
+clearly brain MRI specific, considered privacy issues, unseen target domains or
+unlabeled data. We proposed a new categorization to group specific, widely-used
+approaches. There is an increasing interest in transfer learning within brain
+MRI. Public datasets have contributed to the popularity of Alzheimer's
+diagnostics/prognostics and tumor segmentation. Likewise, the availability of
+pretrained CNNs has promoted their utilization. Finally, the majority of the
+surveyed studies did not examine in detail the interpretation of their
+strategies after applying transfer learning, and did not compare to other
+approaches."
+1406.2661,Generative Adversarial Networks,http://arxiv.org/abs/1406.2661,"We propose a new framework for estimating generative models via an
+adversarial process, in which we simultaneously train two models: a generative
+model G that captures the data distribution, and a discriminative model D that
+estimates the probability that a sample came from the training data rather than
+G. The training procedure for G is to maximize the probability of D making a
+mistake. This framework corresponds to a minimax two-player game. In the space
+of arbitrary functions G and D, a unique solution exists, with G recovering the
+training data distribution and D equal to 1/2 everywhere. In the case where G
+and D are defined by multilayer perceptrons, the entire system can be trained
+with backpropagation. There is no need for any Markov chains or unrolled
+approximate inference networks during either training or generation of samples.
+Experiments demonstrate the potential of the framework through qualitative and
+quantitative evaluation of the generated samples."
+2105.02340,DeepSMOTE: Fusing Deep Learning and SMOTE for Imbalanced Data,http://arxiv.org/abs/2105.02340,"Despite over two decades of progress, imbalanced data is still considered a
+significant challenge for contemporary machine learning models. Modern advances
+in deep learning have magnified the importance of the imbalanced data problem.
+The two main approaches to address this issue are based on loss function
+modifications and instance resampling. Instance sampling is typically based on
+Generative Adversarial Networks (GANs), which may suffer from mode collapse.
+Therefore, there is a need for an oversampling method that is specifically
+tailored to deep learning models, can work on raw images while preserving their
+properties, and is capable of generating high quality, artificial images that
+can enhance minority classes and balance the training set. We propose DeepSMOTE
+- a novel oversampling algorithm for deep learning models. It is simple, yet
+effective in its design. It consists of three major components: (i) an
+encoder/decoder framework; (ii) SMOTE-based oversampling; and (iii) a dedicated
+loss function that is enhanced with a penalty term. An important advantage of
+DeepSMOTE over GAN-based oversampling is that DeepSMOTE does not require a
+discriminator, and it generates high-quality artificial images that are both
+information-rich and suitable for visual inspection. DeepSMOTE code is publicly
+available at: https://github.com/dd1github/DeepSMOTE"
+1411.1784,Conditional Generative Adversarial Nets,http://arxiv.org/abs/1411.1784,"Generative Adversarial Nets [8] were recently introduced as a novel way to
+train generative models. In this work we introduce the conditional version of
+generative adversarial nets, which can be constructed by simply feeding the
+data, y, we wish to condition on to both the generator and discriminator. We
+show that this model can generate MNIST digits conditioned on class labels. We
+also illustrate how this model could be used to learn a multi-modal model, and
+provide preliminary examples of an application to image tagging in which we
+demonstrate how this approach can generate descriptive tags which are not part
+of training labels."
+1811.03205,Robustness of Conditional GANs to Noisy Labels,http://arxiv.org/abs/1811.03205,"We study the problem of learning conditional generators from noisy labeled
+samples, where the labels are corrupted by random noise. A standard training of
+conditional GANs will not only produce samples with wrong labels, but also
+generate poor quality samples. We consider two scenarios, depending on whether
+the noise model is known or not. When the distribution of the noise is known,
+we introduce a novel architecture which we call Robust Conditional GAN (RCGAN).
+The main idea is to corrupt the label of the generated sample before feeding to
+the adversarial discriminator, forcing the generator to produce samples with
+clean labels. This approach of passing through a matching noisy channel is
+justified by corresponding multiplicative approximation bounds between the loss
+of the RCGAN and the distance between the clean real distribution and the
+generator distribution. This shows that the proposed approach is robust, when
+used with a carefully chosen discriminator architecture, known as projection
+discriminator. When the distribution of the noise is not known, we provide an
+extension of our architecture, which we call RCGAN-U, that learns the noise
+model simultaneously while training the generator. We show experimentally on
+MNIST and CIFAR-10 datasets that both the approaches consistently improve upon
+baseline approaches, and RCGAN-U closely matches the performance of RCGAN."
+https://doi.org/10.1371/journal.pone.0267976,SinGAN-Seg: Synthetic training data generation for medical image segmentation,https://doi.org/10.1371/journal.pone.0267976,
+2101.05278,GAN Inversion: A Survey,http://arxiv.org/abs/2101.05278,"GAN inversion aims to invert a given image back into the latent space of a
+pretrained GAN model, for the image to be faithfully reconstructed from the
+inverted code by the generator. As an emerging technique to bridge the real and
+fake image domains, GAN inversion plays an essential role in enabling the
+pretrained GAN models such as StyleGAN and BigGAN to be used for real image
+editing applications. Meanwhile, GAN inversion also provides insights on the
+interpretation of GAN's latent space and how the realistic images can be
+generated. In this paper, we provide an overview of GAN inversion with a focus
+on its recent algorithms and applications. We cover important techniques of GAN
+inversion and their applications to image restoration and image manipulation.
+We further elaborate on some trends and challenges for future directions."
+1901.05733,"Multiple Sclerosis Lesion Synthesis in MRI using an encoder-decoder
+  U-NET",http://arxiv.org/abs/1901.05733,"In this paper, we propose generating synthetic multiple sclerosis (MS)
+lesions on MRI images with the final aim to improve the performance of
+supervised machine learning algorithms, therefore avoiding the problem of the
+lack of available ground truth. We propose a two-input two-output fully
+convolutional neural network model for MS lesion synthesis in MRI images. The
+lesion information is encoded as discrete binary intensity level masks passed
+to the model and stacked with the input images. The model is trained end-to-end
+without the need for manually annotating the lesions in the training set. We
+then perform the generation of synthetic lesions on healthy images via
+registration of patient images, which are subsequently used for data
+augmentation to increase the performance for supervised MS lesion detection
+algorithms. Our pipeline is evaluated on MS patient data from an in-house
+clinical dataset and the public ISBI2015 challenge dataset. The evaluation is
+based on measuring the similarities between the real and the synthetic images
+as well as in terms of lesion detection performance by segmenting both the
+original and synthetic images individually using a state-of-the-art
+segmentation framework. We also demonstrate the usage of synthetic MS lesions
+generated on healthy images as data augmentation. We analyze a scenario of
+limited training data (one-image training) to demonstrate the effect of the
+data augmentation on both datasets. Our results significantly show the
+effectiveness of the usage of synthetic MS lesion images. For the ISBI2015
+challenge, our one-image model trained using only a single image plus the
+synthetic data augmentation strategy showed a performance similar to that of
+other CNN methods that were fully trained using the entire training set,
+yielding a comparable human expert rater performance"
+2502.14281,"Correcting Noisy Multilabel Predictions: Modeling Label Noise through
+  Latent Space Shifts",http://arxiv.org/abs/2502.14281,"Noise in data appears to be inevitable in most real-world machine learning
+applications and would cause severe overfitting problems. Not only can data
+features contain noise, but labels are also prone to be noisy due to human
+input. In this paper, rather than noisy label learning in multiclass
+classifications, we instead focus on the less explored area of noisy label
+learning for multilabel classifications. Specifically, we investigate the
+post-correction of predictions generated from classifiers learned with noisy
+labels. The reasons are two-fold. Firstly, this approach can directly work with
+the trained models to save computational resources. Secondly, it could be
+applied on top of other noisy label correction techniques to achieve further
+improvements. To handle this problem, we appeal to deep generative approaches
+that are possible for uncertainty estimation. Our model posits that label noise
+arises from a stochastic shift in the latent variable, providing a more robust
+and beneficial means for noisy learning. We develop both unsupervised and
+semi-supervised learning methods for our model. The extensive empirical study
+presents solid evidence to that our approach is able to consistently improve
+the independent models and performs better than a number of existing methods
+across various noisy label settings. Moreover, a comprehensive empirical
+analysis of the proposed method is carried out to validate its robustness,
+including sensitivity analysis and an ablation study, among other elements."
+2205.00690,"From Noisy Prediction to True Label: Noisy Prediction Calibration via
+  Generative Model",http://arxiv.org/abs/2205.00690,"Noisy labels are inevitable yet problematic in machine learning society. It
+ruins the generalization of a classifier by making the classifier over-fitted
+to noisy labels. Existing methods on noisy label have focused on modifying the
+classifier during the training procedure. It has two potential problems. First,
+these methods are not applicable to a pre-trained classifier without further
+access to training. Second, it is not easy to train a classifier and regularize
+all negative effects from noisy labels, simultaneously. We suggest a new branch
+of method, Noisy Prediction Calibration (NPC) in learning with noisy labels.
+Through the introduction and estimation of a new type of transition matrix via
+generative model, NPC corrects the noisy prediction from the pre-trained
+classifier to the true label as a post-processing scheme. We prove that NPC
+theoretically aligns with the transition matrix based methods. Yet, NPC
+empirically provides more accurate pathway to estimate true label, even without
+involvement in classifier learning. Also, NPC is applicable to any classifier
+trained with noisy label methods, if training instances and its predictions are
+available. Our method, NPC, boosts the classification performances of all
+baseline models on both synthetic and real-world datasets. The implemented code
+is available at https://github.com/BaeHeeSun/NPC."
+https://doi.org/10.1162/imag\_a\_00337,"Synthetic data in generalizable, learning-based neuroimaging",https://doi.org/10.1162/imag\_a\_00337,
+https://www.sciencedirect.com/science/article/pii/S2213158222000444,QSMRim-Net: Imbalance-aware learning for identification of chronic active multiple sclerosis lesions on quantitative susceptibility maps,https://www.sciencedirect.com/science/article/pii/S2213158222000444,

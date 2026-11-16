@@ -1,0 +1,13 @@
+{
+ "query": "035_2505.24203v1",
+ "n_papers": 25,
+ "n_linked": 25,
+ "seconds": 19.793457984924316,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=366676, completion_tokens=54243, total_tokens=420919, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=575590, completion_tokens=62700, total_tokens=638290, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Protein Structure Prediction Models": 9,
+  "Protein Structure Generation Models": 7,
+  "Generative Models for Protein Structures": 5,
+  "Molecular Dynamics and Deep Learning": 3
+ }
+}

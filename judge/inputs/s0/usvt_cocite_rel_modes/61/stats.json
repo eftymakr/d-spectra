@@ -1,0 +1,14 @@
+{
+ "query": "061_2504.12900v1",
+ "n_papers": 27,
+ "n_linked": 27,
+ "seconds": 19.81373119354248,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=43982, completion_tokens=7866, total_tokens=51848, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=64623, completion_tokens=7760, total_tokens=72383, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Fashion Recommendation Research": 13,
+  "Clothing Compatibility Research": 2,
+  "Fashion Recommendation Systems": 2,
+  "Fashion Outfit Generation And Recommendation": 2,
+  "Fashion Style Representation Learning": 2
+ }
+}

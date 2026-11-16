@@ -1,0 +1,13 @@
+{
+ "query": "045_2505.23452v1",
+ "n_papers": 23,
+ "n_linked": 23,
+ "seconds": 17.139424324035645,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=347440, completion_tokens=54046, total_tokens=401486, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=539919, completion_tokens=59488, total_tokens=599407, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Affect Recognition in Text": 14,
+  "App Review Sentiment Analysis": 2,
+  "Emotion Analysis in Text Data": 2,
+  "Emotion Analysis Datasets": 2
+ }
+}

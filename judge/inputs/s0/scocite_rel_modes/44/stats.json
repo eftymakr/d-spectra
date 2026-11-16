@@ -1,0 +1,12 @@
+{
+ "query": "044_2506.02750v1",
+ "n_papers": 16,
+ "n_linked": 16,
+ "seconds": 13.788938999176025,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=541361, completion_tokens=87460, total_tokens=628821, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=840190, completion_tokens=92905, total_tokens=933095, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Recommender Systems Research": 6,
+  "Graph Neural Networks Research": 4,
+  "Deep Learning Architectures": 2
+ }
+}

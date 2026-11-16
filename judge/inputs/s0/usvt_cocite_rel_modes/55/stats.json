@@ -1,0 +1,11 @@
+{
+ "query": "055_2504.20458v1",
+ "n_papers": 16,
+ "n_linked": 16,
+ "seconds": 16.871145248413086,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=110252, completion_tokens=18259, total_tokens=128511, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=166624, completion_tokens=19512, total_tokens=186136, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Conversational Recommender Systems": 12,
+  "Conversational Recommendation Research": 3
+ }
+}

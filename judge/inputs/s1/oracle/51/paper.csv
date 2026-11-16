@@ -1,0 +1,200 @@
+id,title,url,snippet
+2401.13410,How to Forget Clients in Federated Online Learning to Rank?,http://arxiv.org/abs/2401.13410,"Data protection legislation like the European Union's General Data Protection
+Regulation (GDPR) establishes the \textit(right to be forgotten): a user
+(client) can request contributions made using their data to be removed from
+learned models. In this paper, we study how to remove the contributions made by
+a client participating in a Federated Online Learning to Rank (FOLTR) system.
+In a FOLTR system, a ranker is learned by aggregating local updates to the
+global ranking model. Local updates are learned in an online manner at a
+client-level using queries and implicit interactions that have occurred within
+that specific client. By doing so, each client's local data is not shared with
+other clients or with a centralised search service, while at the same time
+clients can benefit from an effective global ranking model learned from
+contributions of each client in the federation.
+  In this paper, we study an effective and efficient unlearning method that can
+remove a client's contribution without compromising the overall ranker
+effectiveness and without needing to retrain the global ranker from scratch. A
+key challenge is how to measure whether the model has unlearned the
+contributions from the client $c^*$ that has requested removal. For this, we
+instruct $c^*$ to perform a poisoning attack (add noise to this client updates)
+and then we measure whether the impact of the attack is lessened when the
+unlearning process has taken place. Through experiments on four datasets, we
+demonstrate the effectiveness and efficiency of the unlearning strategy under
+different combinations of parameter settings."
+2203.07320,"The Right to be Forgotten in Federated Learning: An Efficient
+  Realization with Rapid Retraining",http://arxiv.org/abs/2203.07320,"In Machine Learning, the emergence of \textit(the right to be forgotten) gave
+birth to a paradigm named \textit(machine unlearning), which enables data
+holders to proactively erase their data from a trained model. Existing machine
+unlearning techniques focus on centralized training, where access to all
+holders' training data is a must for the server to conduct the unlearning
+process. It remains largely underexplored about how to achieve unlearning when
+full access to all training data becomes unavailable. One noteworthy example is
+Federated Learning (FL), where each participating data holder trains locally,
+without sharing their training data to the central server. In this paper, we
+investigate the problem of machine unlearning in FL systems. We start with a
+formal definition of the unlearning problem in FL and propose a rapid
+retraining approach to fully erase data samples from a trained FL model. The
+resulting design allows data holders to jointly conduct the unlearning process
+efficiently while keeping their training data locally. Our formal convergence
+and complexity analysis demonstrate that our design can preserve model utility
+with high efficiency. Extensive evaluations on four real-world datasets
+illustrate the effectiveness and performance of our proposed realization."
+2307.01565,"An Analysis of Untargeted Poisoning Attack and Defense Methods for
+  Federated Online Learning to Rank Systems",http://arxiv.org/abs/2307.01565,"Federated online learning to rank (FOLTR) aims to preserve user privacy by
+not sharing their searchable data and search interactions, while guaranteeing
+high search effectiveness, especially in contexts where individual users have
+scarce training data and interactions. For this, FOLTR trains learning to rank
+models in an online manner -- i.e. by exploiting users' interactions with the
+search systems (queries, clicks), rather than labels -- and federatively --
+i.e. by not aggregating interaction data in a central server for training
+purposes, but by training instances of a model on each user device on their own
+private data, and then sharing the model updates, not the data, across a set of
+users that have formed the federation. Existing FOLTR methods build upon
+advances in federated learning.
+  While federated learning methods have been shown effective at training
+machine learning models in a distributed way without the need of data sharing,
+they can be susceptible to attacks that target either the system's security or
+its overall effectiveness.
+  In this paper, we consider attacks on FOLTR systems that aim to compromise
+their search effectiveness. Within this scope, we experiment with and analyse
+data and model poisoning attack methods to showcase their impact on FOLTR
+search effectiveness. We also explore the effectiveness of defense methods
+designed to counteract attacks on FOLTR systems. We contribute an understanding
+of the effect of attack and defense methods for FOLTR systems, as well as
+identifying the key factors influencing their effectiveness."
+2207.05521,Federated Unlearning: How to Efficiently Erase a Client in FL?,http://arxiv.org/abs/2207.05521,"With privacy legislation empowering the users with the right to be forgotten,
+it has become essential to make a model amenable for forgetting some of its
+training data. However, existing unlearning methods in the machine learning
+context can not be directly applied in the context of distributed settings like
+federated learning due to the differences in learning protocol and the presence
+of multiple actors. In this paper, we tackle the problem of federated
+unlearning for the case of erasing a client by removing the influence of their
+entire local data from the trained global model. To erase a client, we propose
+to first perform local unlearning at the client to be erased, and then use the
+locally unlearned model as the initialization to run very few rounds of
+federated learning between the server and the remaining clients to obtain the
+unlearned global model. We empirically evaluate our unlearning method by
+employing multiple performance measures on three datasets, and demonstrate that
+our unlearning method achieves comparable performance as the gold standard
+unlearning method of federated retraining from scratch, while being
+significantly efficient. Unlike prior works, our unlearning method neither
+requires global access to the data used for training nor the history of the
+parameter updates to be stored by the server or any of the clients."
+2210.10958,Federated Unlearning for On-Device Recommendation,http://arxiv.org/abs/2210.10958,"The increasing data privacy concerns in recommendation systems have made
+federated recommendations (FedRecs) attract more and more attention. Existing
+FedRecs mainly focus on how to effectively and securely learn personal
+interests and preferences from their on-device interaction data. Still, none of
+them considers how to efficiently erase a user's contribution to the federated
+training process. We argue that such a dual setting is necessary. First, from
+the privacy protection perspective, ``the right to be forgotten'' requires that
+users have the right to withdraw their data contributions. Without the
+reversible ability, FedRecs risk breaking data protection regulations. On the
+other hand, enabling a FedRec to forget specific users can improve its
+robustness and resistance to malicious clients' attacks. To support user
+unlearning in FedRecs, we propose an efficient unlearning method FRU (Federated
+Recommendation Unlearning), inspired by the log-based rollback mechanism of
+transactions in database management systems. It removes a user's contribution
+by rolling back and calibrating the historical parameter updates and then uses
+these updates to speed up federated recommender reconstruction. However,
+storing all historical parameter updates on resource-constrained personal
+devices is challenging and even infeasible. In light of this challenge, we
+propose a small-sized negative sampling method to reduce the number of item
+embedding updates and an importance-based update selection mechanism to store
+only important model updates. To evaluate the effectiveness of FRU, we propose
+an attack method to disturb FedRecs via a group of compromised users and use
+FRU to recover recommenders by eliminating these users' influence. Finally, we
+conduct experiments on two real-world recommendation datasets with two widely
+used FedRecs to show the efficiency and effectiveness of our proposed
+approaches."
+2302.02069,"Heterogeneous Federated Knowledge Graph Embedding Learning and
+  Unlearning",http://arxiv.org/abs/2302.02069,"Federated Learning (FL) recently emerges as a paradigm to train a global
+machine learning model across distributed clients without sharing raw data.
+Knowledge Graph (KG) embedding represents KGs in a continuous vector space,
+serving as the backbone of many knowledge-driven applications. As a promising
+combination, federated KG embedding can fully take advantage of knowledge
+learned from different clients while preserving the privacy of local data.
+However, realistic problems such as data heterogeneity and knowledge forgetting
+still remain to be concerned. In this paper, we propose FedLU, a novel FL
+framework for heterogeneous KG embedding learning and unlearning. To cope with
+the drift between local optimization and global convergence caused by data
+heterogeneity, we propose mutual knowledge distillation to transfer local
+knowledge to global, and absorb global knowledge back. Moreover, we present an
+unlearning method based on cognitive neuroscience, which combines retroactive
+interference and passive decay to erase specific knowledge from local clients
+and propagate to the global model by reusing knowledge distillation. We
+construct new datasets for assessing realistic performance of the
+state-of-the-arts. Extensive experiments show that FedLU achieves superior
+results in both link prediction and knowledge forgetting."
+1809.08415,Differentiable Unbiased Online Learning to Rank,http://arxiv.org/abs/1809.08415,"Online Learning to Rank (OLTR) methods optimize rankers based on user
+interactions. State-of-the-art OLTR methods are built specifically for linear
+models. Their approaches do not extend well to non-linear models such as neural
+networks. We introduce an entirely novel approach to OLTR that constructs a
+weighted differentiable pairwise loss after each interaction: Pairwise
+Differentiable Gradient Descent (PDGD). PDGD breaks away from the traditional
+approach that relies on interleaving or multileaving and extensive sampling of
+models to estimate gradients. Instead, its gradient is based on inferring
+preferences between document pairs from user clicks and can optimize any
+differentiable model. We prove that the gradient of PDGD is unbiased w.r.t.
+user document pair preferences. Our experiments on the largest publicly
+available Learning to Rank (LTR) datasets show considerable and significant
+improvements under all levels of interaction noise. PDGD outperforms existing
+OLTR methods both in terms of learning speed as well as final convergence.
+Furthermore, unlike previous OLTR methods, PDGD also allows for non-linear
+models to be optimized effectively. Our results show that using a neural
+network leads to even better performance at convergence than a linear model. In
+summary, PDGD is an efficient and unbiased OLTR approach that provides a better
+user experience than previously possible."
+2201.06658,Learning Neural Ranking Models Online from Implicit User Feedback,http://arxiv.org/abs/2201.06658,"Existing online learning to rank (OL2R) solutions are limited to linear
+models, which are incompetent to capture possible non-linear relations between
+queries and documents. In this work, to unleash the power of representation
+learning in OL2R, we propose to directly learn a neural ranking model from
+users' implicit feedback (e.g., clicks) collected on the fly. We focus on
+RankNet and LambdaRank, due to their great empirical success and wide adoption
+in offline settings, and control the notorious explore-exploit trade-off based
+on the convergence analysis of neural networks using neural tangent kernel.
+Specifically, in each round of result serving, exploration is only performed on
+document pairs where the predicted rank order between the two documents is
+uncertain; otherwise, the ranker's predicted order will be followed in result
+ranking. We prove that under standard assumptions our OL2R solution achieves a
+gap-dependent upper regret bound of $O(\log^2(T))$, in which the regret is
+defined on the total number of mis-ordered pairs over $T$ rounds. Comparisons
+against an extensive set of state-of-the-art OL2R baselines on two public
+learning to rank benchmark datasets demonstrate the effectiveness of the
+proposed solution."
+2204.09272,Is Non-IID Data a Threat in Federated Online Learning to Rank?,http://arxiv.org/abs/2204.09272,"In this perspective paper we study the effect of non independent and
+identically distributed (non-IID) data on federated online learning to rank
+(FOLTR) and chart directions for future work in this new and largely unexplored
+research area of Information Retrieval. In the FOLTR process, clients
+participate in a federation to jointly create an effective ranker from the
+implicit click signal originating in each client, without the need to share
+data (documents, queries, clicks). A well-known factor that affects the
+performance of federated learning systems, and that poses serious challenges to
+these approaches, is that there may be some type of bias in the way data is
+distributed across clients. While FOLTR systems are on their own rights a type
+of federated learning system, the presence and effect of non-IID data in FOLTR
+has not been studied. To this aim, we first enumerate possible data
+distribution settings that may showcase data bias across clients and thus give
+rise to the non-IID problem. Then, we study the impact of each setting on the
+performance of the current state-of-the-art FOLTR approach, the Federated
+Pairwise Differentiable Gradient Descent (FPDGD), and we highlight which data
+distributions may pose a problem for FOLTR methods. We also explore how common
+approaches proposed in the federated learning literature address non-IID issues
+in FOLTR. This allows us to unveil new research gaps that, we argue, future
+research in FOLTR should consider. This is an important contribution to the
+current state of FOLTR field because, for FOLTR systems to be deployed, the
+factors affecting their performance, including the impact of non-IID data, need
+to be thoroughly understood."
+2201.09441,Federated Unlearning with Knowledge Distillation,http://arxiv.org/abs/2201.09441,"Federated Learning (FL) is designed to protect the data privacy of each
+client during the training process by transmitting only models instead of the
+original data. However, the trained model may memorize certain information
+about the training data. With the recent legislation on right to be forgotten,
+it is crucially essential for the FL model to possess the ability to forget
+what it has learned from each client. We propose a novel federated unlearning
+method to eliminate a client's contribution by subtracting the accumulated
+historical updates from the model and leveraging the knowledge distillation
+method to restore the model's performance without using any data from the
+clients. This method does not have any restrictions on the type of neural
+networks and does not rely on clients' participation, so it is practical and
+efficient in the FL system. We further introduce backdoor attacks in the
+training process to help evaluate the unlearning effect. Experiments on three
+canonical datasets demonstrate the effectiveness and efficiency of our method."

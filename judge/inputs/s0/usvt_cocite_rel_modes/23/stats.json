@@ -1,0 +1,12 @@
+{
+ "query": "023_2505.22427v1",
+ "n_papers": 20,
+ "n_linked": 20,
+ "seconds": 18.077803373336792,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=265719, completion_tokens=39315, total_tokens=305034, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=412279, completion_tokens=45464, total_tokens=457743, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Multisensor Calibration and Fusion": 9,
+  "3D Object Detection in Autonomous Driving": 3,
+  "Sensor Calibration Techniques": 2
+ }
+}

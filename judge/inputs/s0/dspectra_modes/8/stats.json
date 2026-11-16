@@ -1,0 +1,12 @@
+{
+ "query": "008_2505.23996v1",
+ "n_papers": 21,
+ "n_linked": 21,
+ "seconds": 72.321209192276,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=387451, completion_tokens=62966, total_tokens=450417, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=574541, completion_tokens=62016, total_tokens=636557, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Algorithmic Fairness and Bias Mitigation": 10,
+  "Fairness in Recommender Systems": 3,
+  "Fairness Bias Machine Learning": 2
+ }
+}

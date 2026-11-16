@@ -1,0 +1,151 @@
+## Related Works
+
+Differential privacy (DP) has emerged as the de facto standard for privacy-preserving data analysis \[[4](http://arxiv.org/abs/1902.07756)\]. However, its implementation is vulnerable to malicious behavior by servers, particularly in distributed settings \[[1](http://arxiv.org/abs/2208.09011)\]. Servers may sample noise from incorrect distributions or generate correlated noise while appearing to follow established protocols \[[1](http://arxiv.org/abs/2208.09011)\]. This issue has been explored in several prior works. For instance, \[[2](http://arxiv.org/abs/2104.06569)\] highlights that local differential privacy (LDP) is vulnerable to malicious data providers who can manipulate their output before sending, thereby gaining plausible deniability. To address this, \[[2](http://arxiv.org/abs/2104.06569)\] proposes a verifiable randomization mechanism that allows the data collector to verify the completeness of the randomization process, thereby preventing output-manipulation attacks.
+
+In the context of verifiability, \[[1](http://arxiv.org/abs/2208.09011)\] introduces the concept of Verifiable Differential Privacy (VDP), which requires the publishing entity to output a zero-knowledge proof that the output is both differentially private and reliable. This approach ensures that the randomness used in DP is faithfully generated without revealing it to the verifier. However, \[[1](http://arxiv.org/abs/2208.09011)\] also notes that computational assumptions are necessary, as a separation exists between information-theoretic DP and computational DP under verifiability. This distinction is crucial for understanding the trade-offs between security and efficiency in verifiable DP systems.
+
+The local model of DP, while offering increased privacy, comes at the cost of reduced utility compared to the central model \[[4](http://arxiv.org/abs/1902.07756)\]. To bridge this gap, \[[4](http://arxiv.org/abs/1902.07756)\] proposes Crypt$ε$, a system that achieves the accuracy and expressibility of the central model without requiring a trusted data collector. Instead, it uses two non-colluding untrusted servers to run DP programs on encrypted data, ensuring that the servers learn nothing more than the noisy outputs. This approach is particularly relevant for distributed settings where trust is limited.
+
+In addition to these works, \[[3](https://doi.org/10.1007/978-3-540-24632-9\_31)\] develops cryptographically secure techniques for randomized response, ensuring that respondents cannot affect the tally beyond their own vote. These techniques are foundational for ensuring the integrity of DP mechanisms in distributed environments. Similarly, \[[9](https://doi.org/10.1145/3319535.3354256)\] presents a method for securely sampling biased coins, which is essential for generating noise in DP protocols. \[[10](https://doi.org/10.1145/3576915.3616641)\] further extends this by proposing a method for securely sampling discrete Gaussian noise, which is critical for multi-party differential privacy applications.
+
+The challenge of efficiently sampling noise in distributed settings has also been addressed in \[[5](http://arxiv.org/abs/2409.10667)\], where a taxonomy of secure sampling protocols is presented, and existing protocols are extended to be resilient against Byzantine attackers. These efforts highlight the ongoing research into improving the
+## Research papers
+### Outline
+- [Verifiable Differential Privacy (VDP) Frameworks [2 papers]](#category-verifiable-differential-privacy-(vdp)-frameworks)
+- [Cryptographic Techniques for Secure Randomization [1 papers]](#category-cryptographic-techniques-for-secure-randomization)
+- [Local vs. Central Differential Privacy Models [1 papers]](#category-local-vs.-central-differential-privacy-models)
+- [Efficient Noise Sampling Mechanisms [3 papers]](#category-efficient-noise-sampling-mechanisms)
+- [Zero-Knowledge Proofs (ZKP) and DP Integration [1 papers]](#category-zero-knowledge-proofs-(zkp)-and-dp-integration)
+- [Secure Sampling of Biased Coins and Discrete Noise [2 papers]](#category-secure-sampling-of-biased-coins-and-discrete-noise)
+
+### <a id='category-verifiable-differential-privacy-(vdp)-frameworks'></a>Verifiable Differential Privacy (VDP) Frameworks: 2 papers found.
+Verifiable Differential Privacy (VDP) frameworks aim to address the vulnerabilities in traditional differential privacy (DP) by ensuring the correctness and reliability of DP mechanisms through verification. This is particularly important in distributed settings where servers may misbehave by sampling noise from incorrect distributions or generating correlated noise while appearing to follow established protocols \[[1](http://arxiv.org/abs/2208.09011)\]. To mitigate these risks, VDP introduces verification mechanisms that allow a verifier to confirm that the output adheres to DP principles without learning the randomness used \[[1](http://arxiv.org/abs/2208.09011)\]. This is achieved by carefully mixing private and public randomness, enabling verifiable DP counting queries with theoretical guarantees \[[1](http://arxiv.org/abs/2208.09011)\]. In the context of local differential privacy (LDP), malicious data providers can manipulate their outputs to create plausible deniability, making it difficult for data collectors to estimate accurate background distributions \[[2](http://arxiv.org/abs/2104.06569)\]. To counter this, verifiable randomization mechanisms are proposed, allowing the data collector to verify the completeness of the randomization process for each data provider, thereby preventing output-manipulation attacks \[[2](http://arxiv.org/abs/2104.06569)\]. These approaches highlight the necessity of computational assumptions in achieving verifiable DP, as a separation exists between information-theoretic and computational DP under verifiability \[[1](http://arxiv.org/abs/2208.09011)\]. The development of efficient VDP mechanisms, such as the Verifiable Distributed Discrete Laplacian Mechanism (VDDLM) and improved Verifiable Randomized Response (VRR), demonstrates the practicality of VDP in real-world deployments \[[1](http://arxiv.org/abs/2208.09011)\].
+|    | reference                                                                                                                                  |   date | key idea/summary                                                                                                                                                                                                                                         |
+|----|--------------------------------------------------------------------------------------------------------------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Verifiable Differential Privacy](http://arxiv.org/abs/2208.09011)                                                                         |    nan | Verifiable Differential Privacy introduces a method to ensure the reliability of differentially private outputs through zero-knowledge proofs, allowing verification without revealing the randomness used, thus closing a security loophole.            |
+|  1 | [Preventing Manipulation Attack in Local Differential Privacy using
+  Verifiable Randomization Mechanism](http://arxiv.org/abs/2104.06569) |    nan | The paper proposes a verifiable randomization mechanism to prevent malicious data providers from manipulating outputs in local differential privacy (LDP) protocols, ensuring the protocol's integrity and security against output-manipulation attacks. |
+### <a id='category-cryptographic-techniques-for-secure-randomization'></a>Cryptographic Techniques for Secure Randomization: 1 papers found.
+Context: 
+	Document 1: [Category]: «Cryptographic Techniques for Secure Randomization»
+[Snippet]: «We develop cryptographically secure techniques to guarantee unconditional
+privacy for respondents to polls. Our constructions are efficient and
+practical, and are shown not to allow cheating respondents to affect the
+``tally'' by more than their own vote -- which will be given the exact same
+weight as that of other respondents. We demonstrate solutions to this problem
+based on both traditional cryptographic techniques and quantum cryptography.»
+[_citation_number]: «3»
+
+
+Instruction: You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-04-30T15:46:55+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](https://doi.org/10.1007/978-3-540-24632-9\_31)\]. Further details \[[6](https://doi.org/10.56553/popets-2023-0086)\]\[[7](https://doi.org/10.1145/3576915.3616681)\]\[[8](https://doi.org/10.1007/11761679\_29)\]\[[9](https://doi.org/10.1145/3319535.3354256)\]\[[10](https://doi.org/10.1145/3576915.3616641)\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Despite differential privacy (DP) often being considered the de facto
+standard for data privacy, its realization is vulnerable to unfaithful
+execution of its mechanisms by servers, especially in distributed settings.
+Specifically, servers may sample noise from incorrect distributions or generate
+correlated noise while appearing to follow established protocols. This work
+analyzes these malicious behaviors in a general differential privacy framework
+within a distributed client-server-verifier setup. To address these adversarial
+problems, we propose a novel definition called Verifiable Distributed
+Differential Privacy (VDDP) by incorporating additional verification
+mechanisms. We also explore the relationship between zero-knowledge proofs
+(ZKP) and DP, demonstrating that while ZKPs are sufficient for achieving DP
+under verifiability requirements, they are not necessary. Furthermore, we
+develop two novel and efficient mechanisms that satisfy VDDP: (1) the
+Verifiable Distributed Discrete Laplacian Mechanism (VDDLM), which offers up to
+a $4 \times 
+|    | reference                                                                                     |   date | key idea/summary                                                                                                                                                              |
+|----|-----------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Cryptographic Randomized Response Techniques](https://doi.org/10.1007/978-3-540-24632-9\_31) |    nan | The paper presents cryptographically secure methods to ensure unconditional privacy for poll respondents, preventing cheating from affecting the tally beyond their own vote. |
+### <a id='category-local-vs.-central-differential-privacy-models'></a>Local vs. Central Differential Privacy Models: 1 papers found.
+Context: 
+	Document 1: [Category]: «Local vs. Central Differential Privacy Models»
+[Snippet]: «Differential privacy (DP) has steadily become the de-facto standard for achieving privacy in data analysis, which is typically implemented either in the "central" or "local" model. The local model has been more popular for commercial deployments as it does not require a trusted data collector. This increased privacy, however, comes at a cost of utility and algorithmic expressibility as compared to the central model. In this work, we propose, Crypt$\epsilon$, a system and programming framework that (1) achieves the accuracy guarantees and algorithmic expressibility of the central model (2) without any trusted data collector like in the local model. Crypt$\epsilon$ achieves the "best of both worlds" by employing two non-colluding untrusted servers that run DP programs on encrypted data from the data owners. Although straightforward implementations of DP programs using secure computation tools can achieve the above goal theoretically, in practice they are beset with many challenges such as poor performance and tricky security proofs. To this end, Crypt$\epsilon$ allows data analysts to author logical DP programs that are automatically translated to secure protocols that work on encrypted data. These protocols ensure that the untrusted servers learn nothing more than the noisy outputs, thereby guaranteeing DP (for computationally bounded adversaries) for all Crypt$\epsilon$ programs. Crypt$\epsilon$ supports a rich class of DP programs that can be expressed via a small set of transformation and measurement operators followed by arbitrary post-processing. Further, we propose performance optimizations leveraging the fact that the output is noisy. We demonstrate Crypt$\epsilon$'s feasibility for practical DP analysis with extensive empirical evaluations on real datasets.»
+[_citation_number]: «4»
+
+
+Instruction: You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-04-30T15:46:55+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](https://doi.org/10.1007/978-3-540-24632-9\_31)\]. Further details \[[6](https://doi.org/10.56553/popets-2023-0086)\]\[[7](https://doi.org/10.1145/3576915.3616681)\]\[[8](https://doi.org/10.1007/11761679\_29)\]\[[9](https://doi.org/10.1145/3319535.3354256)\]\[[10](https://doi.org/10.1145/3576915.3616641)\].) Each in-line citation must
+|    | reference                                                                                                |   date | key idea/summary                                                                                                                                                                                                                                                   |
+|----|----------------------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Crypt$ε$: Crypto-Assisted Differential Privacy on Untrusted
+  Servers](http://arxiv.org/abs/1902.07756) |    nan | Cryptε is a system that enables accurate and expressive differential privacy analysis without a trusted data collector by using two non-colluding untrusted servers to run DP programs on encrypted data, achieving the benefits of both central and local models. |
+### <a id='category-efficient-noise-sampling-mechanisms'></a>Efficient Noise Sampling Mechanisms: 3 papers found.
+Context: 
+	Document 1: [Category]: «Efficient Noise Sampling Mechanisms»
+[Snippet]: «Differential privacy (DP) is widely employed to provide privacy protection for individuals by limiting information leakage from the aggregated data. Two well-known models of DP are the central model and the local model. The former requires a trustworthy server for data aggregation, while the latter requires individuals to add noise, significantly decreasing the utility of aggregated results. Recently, many studies have proposed to achieve DP with Secure Multi-party Computation (MPC) in distributed settings, namely, the distributed model, which has utility comparable to central model while, under specific security assumptions, preventing parties from obtaining others' information. One challenge of realizing DP in distributed model is efficiently sampling noise with MPC. Although many secure sampling methods have been proposed, they have different security assumptions and isolated theoretical analyses. There is a lack of experimental evaluations to measure and compare their performances. We fill this gap by benchmarking existing sampling protocols in MPC and performing comprehensive measurements of their efficiency. First, we present a taxonomy of the underlying techniques of these sampling protocols. Second, we extend widely used distributed noise generation protocols to be resilient against Byzantine attackers. Third, we implement discrete sampling protocols and align their security settings for a fair comparison. We then conduct an extensive evaluation to study their efficiency and utility.»
+[_citation_number]: «5»
+
+	Document 2: [Category]: «Efficient Noise Sampling Mechanisms»
+[Snippet]: «»
+[_citation_number]: «6»
+
+	Document 3: [Category]: «Efficient Noise Sampling Mechanisms»
+[Snippet]: «»
+[_citation_number]: «8»
+
+
+Instruction:  You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-04-30T15:46:55+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](https://doi.org/10.1007/978-3-540-24632-9\_31)\]. Further details \[[6](https://doi.org/10.56553/popets-2023-0086)\]\[[7](https://doi.org/10.1145/3576915.3616681)\]\[[8](https://doi.org/10.1007/11761679\_29)\]\[[9](https://doi.org/10.1145/3319535.3354256)\]\[[10](https://doi.org/10.1145/3576915.3616641)\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not
+|    | reference                                                                                                     |   date | key idea/summary                                                                                                                                                                                                                                                                                          |
+|----|---------------------------------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Benchmarking Secure Sampling Protocols for Differential Privacy](http://arxiv.org/abs/2409.10667)            |    nan | The paper addresses the challenge of efficiently sampling noise in differential privacy using Secure Multi-party Computation (MPC) by benchmarking existing protocols, extending them for resilience against Byzantine attacks, and conducting comprehensive evaluations of their efficiency and utility. |
+|  1 | [DPrio: Efficient Differential Privacy with High Utility for Prio](https://doi.org/10.56553/popets-2023-0086) |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                                                                 |
+|  2 | [Our Data, Ourselves: Privacy Via Distributed Noise Generation](https://doi.org/10.1007/11761679\_29)         |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                                                                 |
+### <a id='category-zero-knowledge-proofs-(zkp)-and-dp-integration'></a>Zero-Knowledge Proofs (ZKP) and DP Integration: 1 papers found.
+Context: 
+	Document 1: [Category]: «Zero-Knowledge Proofs (ZKP) and DP Integration»
+[Snippet]: «»
+[_citation_number]: «7»
+
+Instruction: You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-04-30T15:46:55+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](https://doi.org/10.1007/978-3-540-24632-9\_31)\]. Further details \[[6](https://doi.org/10.56553/popets-2023-0086)\]\[[7](https://doi.org/10.1145/3576915.3616681)\]\[[8](https://doi.org/10.1007/11761679\_29)\]\[[9](https://doi.org/10.1145/3319535.3354256)\]\[[10](https://doi.org/10.1145/3576915.3616641)\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Despite differential privacy (DP) often being considered the de facto
+standard for data privacy, its realization is vulnerable to unfaithful
+execution of its mechanisms by servers, especially in distributed settings.
+Specifically, servers may sample noise from incorrect distributions or generate
+correlated noise while appearing to follow established protocols. This work
+analyzes these malicious behaviors in a general differential privacy framework
+within a distributed client-server-verifier setup. To address these adversarial
+problems, we propose a novel definition called Verifiable Distributed
+Differential Privacy (VDDP) by incorporating additional verification
+mechanisms. We also explore the relationship between zero-knowledge proofs
+(ZKP) and DP, demonstrating that while ZKPs are sufficient for achieving DP
+under verifiability requirements, they are not necessary. Furthermore, we
+develop two novel and efficient mechanisms that satisfy VDDP: (1) the
+Verifiable Distributed Discrete Laplacian Mechanism (VDDLM), which offers up to
+a $4 \times 10^5$x improvement in proof generation efficiency with only
+0.1-0.2x error compared to the previous state-of-the-art verifiable
+differentially private mechanism; (2) an improved solution to Verifiable
+Randomized Response (VRR) under local DP, a special case of VDDP, achieving up
+to a reduction of up
+|    | reference                                                                                         |   date | key idea/summary                                                                                          |
+|----|---------------------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------|
+|  0 | [Interactive Proofs For Differentially Private Counting](https://doi.org/10.1145/3576915.3616681) |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary. |
+### <a id='category-secure-sampling-of-biased-coins-and-discrete-noise'></a>Secure Sampling of Biased Coins and Discrete Noise: 2 papers found.
+Context: 
+	Document 1: [Category]: «Secure Sampling of Biased Coins and Discrete Noise»
+[Snippet]: «»
+[_citation_number]: «9»
+
+	Document 2: [Category]: «Secure Sampling of Biased Coins and Discrete Noise»
+[Snippet]: «»
+[_citation_number]: «10»
+
+
+Instruction:  You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-04-30T15:46:55+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](https://doi.org/10.1007/978-3-540-24632-9\_31)\]. Further details \[[6](https://doi.org/10.56553/popets-2023-0086)\]\[[7](https://doi.org/10.1145/3576915.3616681)\]\[[8](https://doi.org/10.1007/11761679\_29)\]\[[9](https://doi.org/10.1145/3319535.3354256)\]\[[10](https://doi.org/10.1145/3576915.3616641)\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Despite differential privacy (DP) often being considered the de facto
+standard for data privacy, its realization is vulnerable to unfaithful
+execution of its mechanisms by servers, especially in distributed settings.
+Specifically, servers may sample noise from incorrect distributions or generate
+correlated noise while appearing to follow established protocols. This work
+analyzes these malicious behaviors in a general differential privacy framework
+within a distributed client-server-verifier setup. To address these adversarial
+problems, we propose a novel definition called Verifiable Distributed
+Differential Privacy (VDDP) by incorporating additional verification
+mechanisms. We also explore the relationship between zero-knowledge proofs
+(ZKP) and DP, demonstrating that while ZKPs are sufficient for achieving DP
+under verifiability requirements, they are not necessary. Furthermore, we
+develop two novel and efficient mechanisms that satisfy VDDP: (1) the
+Verifiable Distributed Discrete Laplacian Mechanism (VDDLM), which offers up to
+a $4 \times 10^5$x improvement in proof generation efficiency with only
+0.1-0.2x error compared to the previous state-of-the-art verifiable
+differentially private mechanism; (2)
+|    | reference                                                                                                                                   |   date | key idea/summary                                                                                          |
+|----|---------------------------------------------------------------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------|
+|  0 | [Securely Sampling Biased Coins with Applications to Differential Privacy](https://doi.org/10.1145/3319535.3354256)                         |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary. |
+|  1 | [Securely Sampling Discrete Gaussian Noise for Multi-Party Differential
+                  Privacy](https://doi.org/10.1145/3576915.3616641) |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary. |

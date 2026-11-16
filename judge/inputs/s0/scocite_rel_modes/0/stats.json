@@ -1,0 +1,11 @@
+{
+ "query": "000_2506.02838v1",
+ "n_papers": 16,
+ "n_linked": 16,
+ "seconds": 11.407443046569824,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=545710, completion_tokens=88216, total_tokens=633926, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=846464, completion_tokens=94029, total_tokens=940493, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Tax Evasion Agent Based Models": 12,
+  "Economic Models with Reinforcement Learning": 2
+ }
+}

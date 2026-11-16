@@ -1,0 +1,14 @@
+{
+ "query": "042_2504.11007v1",
+ "n_papers": 19,
+ "n_linked": 19,
+ "seconds": 82.73780155181885,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=38468, completion_tokens=7211, total_tokens=45679, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=51954, completion_tokens=6181, total_tokens=58135, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Kubernetes Security Practices": 4,
+  "Kubernetes Resource Management": 3,
+  "Edge Computing and Containerization": 3,
+  "Kubernetes Security Best Practices": 2,
+  "Cloud Cost Optimization Strategies": 2
+ }
+}

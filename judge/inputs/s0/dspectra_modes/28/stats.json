@@ -1,0 +1,14 @@
+{
+ "query": "028_2504.17448v1",
+ "n_papers": 19,
+ "n_linked": 19,
+ "seconds": 85.57911586761475,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=82494, completion_tokens=15383, total_tokens=97877, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=116119, completion_tokens=14159, total_tokens=130278, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Federated Learning with Clustering": 3,
+  "Federated Learning Robustness": 3,
+  "Federated Learning with Heterogeneity": 3,
+  "Federated Learning Research": 2,
+  "Federated Learning Personalization": 2
+ }
+}

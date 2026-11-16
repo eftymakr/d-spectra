@@ -1,0 +1,14 @@
+{
+ "query": "039_2505.08071v1",
+ "n_papers": 24,
+ "n_linked": 24,
+ "seconds": 19.898921728134155,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=167469, completion_tokens=26904, total_tokens=194373, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=253666, completion_tokens=29063, total_tokens=282729, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Long-read genome assembly methods": 5,
+  "Genome Assembly Methods": 4,
+  "Genome Assembly Algorithms": 4,
+  "Genome Assembly Techniques": 2,
+  "Genome Comparison Techniques": 2
+ }
+}

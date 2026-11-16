@@ -1,0 +1,14 @@
+{
+ "query": "023_2505.22427v1",
+ "n_papers": 20,
+ "n_linked": 20,
+ "seconds": 18.4177463054657,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=261423, completion_tokens=39619, total_tokens=301042, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=409306, completion_tokens=45425, total_tokens=454731, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Multisensor Calibration Techniques": 7,
+  "Sensor Fusion and Calibration Techniques": 4,
+  "Camera Calibration Techniques": 2,
+  "Radar Based Object Detection Methods": 2,
+  "Radar Camera Fusion Techniques": 2
+ }
+}

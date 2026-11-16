@@ -1,0 +1,12 @@
+{
+ "query": "048_2505.19356v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 19.964085817337036,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=208249, completion_tokens=32235, total_tokens=240484, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=324395, completion_tokens=37013, total_tokens=361408, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Cross Lingual Information Retrieval": 11,
+  "Text Retrieval and Ranking Models": 6,
+  "Language Model Pretraining And Transfer": 5
+ }
+}

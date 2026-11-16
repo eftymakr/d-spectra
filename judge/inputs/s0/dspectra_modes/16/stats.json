@@ -1,0 +1,14 @@
+{
+ "query": "016_2506.00333v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 79.66794037818909,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=483822, completion_tokens=78331, total_tokens=562153, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=710814, completion_tokens=76908, total_tokens=787722, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Open Vocabulary Object Detection": 15,
+  "Vision Language Pre-training Models": 6,
+  "3D Scene Understanding with Open Vocabularies": 2,
+  "Visual Object Detection Techniques": 2,
+  "Open Vocabulary Scene Understanding": 2
+ }
+}

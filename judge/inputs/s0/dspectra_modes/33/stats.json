@@ -1,0 +1,16 @@
+{
+ "query": "033_2506.00205v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 79.3943362236023,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=470383, completion_tokens=76244, total_tokens=546627, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=690397, completion_tokens=74826, total_tokens=765223, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Continual Learning Research Papers": 8,
+  "Continual Learning Functional Regularization": 3,
+  "Continual Learning Research": 3,
+  "Incremental Learning Techniques": 2,
+  "Continual Learning Techniques": 2,
+  "Continual Learning Mechanisms": 2,
+  "Continual Learning with Generative Models": 2
+ }
+}

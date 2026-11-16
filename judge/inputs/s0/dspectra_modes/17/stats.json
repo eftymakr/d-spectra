@@ -1,0 +1,14 @@
+{
+ "query": "017_2505.24443v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 87.74299144744873,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=421140, completion_tokens=67546, total_tokens=488686, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=622651, completion_tokens=67016, total_tokens=689667, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Semi-Supervised Learning Techniques": 9,
+  "Open Set Semi Supervised Learning": 8,
+  "Semi Supervised Learning Methods": 2,
+  "Outlier Detection And Bias Adaptation": 2,
+  "SemiSupervised Learning Safety": 2
+ }
+}

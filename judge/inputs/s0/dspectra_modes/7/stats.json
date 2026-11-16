@@ -1,0 +1,13 @@
+{
+ "query": "007_2506.00085v1",
+ "n_papers": 15,
+ "n_linked": 15,
+ "seconds": 52.211480379104614,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=455775, completion_tokens=73819, total_tokens=529594, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=671817, completion_tokens=72852, total_tokens=744669, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Language Model Reasoning and Alignment": 5,
+  "Refusal Calibration in LLMs": 2,
+  "Image Recognition and Object Detection": 2,
+  "Deep Learning Models": 2
+ }
+}

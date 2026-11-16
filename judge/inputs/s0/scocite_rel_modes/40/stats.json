@@ -1,0 +1,11 @@
+{
+ "query": "040_2504.06211v1",
+ "n_papers": 10,
+ "n_linked": 10,
+ "seconds": 14.24341630935669,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=4676, completion_tokens=1074, total_tokens=5750, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=6053, completion_tokens=917, total_tokens=6970, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Zero Knowledge Proof Acceleration": 5,
+  "Zero Knowledge Proof Systems": 2
+ }
+}

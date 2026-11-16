@@ -1,0 +1,13 @@
+{
+ "query": "023_2505.22427v1",
+ "n_papers": 20,
+ "n_linked": 20,
+ "seconds": 90.17475581169128,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=287643, completion_tokens=48151, total_tokens=335794, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=421544, completion_tokens=46029, total_tokens=467573, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "3D Object Detection Fusion": 6,
+  "Radar Based Object Detection Networks": 3,
+  "3D Object Detection in Autonomous Driving": 2,
+  "Radar Camera LIDAR Calibration": 2
+ }
+}

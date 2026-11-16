@@ -1,0 +1,12 @@
+{
+ "query": "052_2505.07166v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 20.018028259277344,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=151066, completion_tokens=23809, total_tokens=174875, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=235769, completion_tokens=27476, total_tokens=263245, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Dense Retrieval Pre-training Methods": 20,
+  "Pretraining Methods for Language Models": 6,
+  "Contrastive Learning for Text Representations": 2
+ }
+}

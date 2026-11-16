@@ -1,0 +1,11 @@
+{
+ "query": "000_2506.02838v1",
+ "n_papers": 16,
+ "n_linked": 16,
+ "seconds": 11.65241026878357,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=544290, completion_tokens=84472, total_tokens=628762, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=850096, completion_tokens=94076, total_tokens=944172, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Tax Compliance and Evasion Models": 11,
+  "Economic Models And Reinforcement Learning": 4
+ }
+}

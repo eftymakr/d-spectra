@@ -1,0 +1,11 @@
+{
+ "query": "049_2505.19307v1",
+ "n_papers": 18,
+ "n_linked": 18,
+ "seconds": 14.734565258026123,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=197014, completion_tokens=30668, total_tokens=227682, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=305914, completion_tokens=34990, total_tokens=340904, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Reinforcement Learning from Preferences": 9,
+  "Information Retrieval Techniques": 6
+ }
+}

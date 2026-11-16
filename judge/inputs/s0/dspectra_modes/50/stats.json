@@ -1,0 +1,13 @@
+{
+ "query": "050_2505.17507v1",
+ "n_papers": 17,
+ "n_linked": 17,
+ "seconds": 71.52065515518188,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=209985, completion_tokens=35214, total_tokens=245199, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=305120, completion_tokens=34009, total_tokens=339129, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Hugging Face Repository Studies": 6,
+  "Face Recognition Research Papers": 3,
+  "Machine Learning Documentation Challenges": 2,
+  "HuggingFace Model Reuse Research": 2
+ }
+}

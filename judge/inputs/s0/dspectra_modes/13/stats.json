@@ -1,0 +1,14 @@
+{
+ "query": "013_2506.01071v1",
+ "n_papers": 26,
+ "n_linked": 26,
+ "seconds": 20.78087019920349,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=559739, completion_tokens=93791, total_tokens=653530, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=820250, completion_tokens=88958, total_tokens=909208, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Long Tailed Recognition Methods": 2,
+  "Contrastive Learning for Long-Tailed Recognition": 5,
+  "Long Tailed Classification Methods": 2,
+  "Long-tailed Object Detection Methods": 2,
+  "Long Tailed Recognition Techniques": 2
+ }
+}

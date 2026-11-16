@@ -1,0 +1,12 @@
+{
+ "query": "010_2505.22757v1",
+ "n_papers": 14,
+ "n_linked": 14,
+ "seconds": 78.52194714546204,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=326564, completion_tokens=54399, total_tokens=380963, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=483632, completion_tokens=52878, total_tokens=536510, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Reinforcement Learning Techniques": 6,
+  "Curriculum Learning in NLP": 2,
+  "Language Model Optimization Techniques": 2
+ }
+}

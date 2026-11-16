@@ -1,0 +1,16 @@
+## Related Works
+
+Fine-grained emotion classification in app reviews has received increasing attention in recent years due to its potential applications in software engineering and user experience analysis. Prior work has primarily focused on sentiment polarity classification, such as positive, negative, and neutral, with limited exploration of more nuanced emotional expressions \[[1](http://arxiv.org/abs/2412.07906)\]. This gap is addressed in this paper by introducing a structured annotation framework and dataset adapted from Plutchik's emotion taxonomy \[[10](http://arxiv.org/abs/2012.13624)\]. 
+
+Several studies have explored the use of annotated datasets for emotion analysis. For instance, GoEmotions is a large-scale dataset with 58k English Reddit comments labeled for 27 emotion categories, demonstrating the potential of fine-grained emotion classification \[[2](http://arxiv.org/abs/2005.00547)\]. Similarly, the PO-EMO dataset focuses on aesthetic emotions in poetry, highlighting the importance of capturing mixed and complex emotional responses \[[5](http://arxiv.org/abs/2003.07723)\]. These datasets, while valuable, are often domain-specific and not directly applicable to app reviews. 
+
+The use of large language models (LLMs) for annotation tasks has also been explored. Rethinking emotion annotations in the era of LLMs highlights the potential of models like GPT-4 to reduce manual effort and improve annotation consistency \[[1](http://arxiv.org/abs/2412.07906)\]. However, human input remains crucial due to the subjective nature of emotions \[[1](http://arxiv.org/abs/2412.07906)\]. This aligns with findings from the study on app reviews, which shows that while LLMs can reduce manual effort, full automation remains challenging due to the complexity of emotional interpretation \[[1](http://arxiv.org/abs/2412.07906)\]. 
+
+Automated feature extraction from app reviews has also been a focus of research. The impact of annotation guidelines on the quality of extracted features has been explored, showing that well-defined guidelines can lead to more informative and less noisy features \[[6](http://arxiv.org/abs/1810.05187)\]. Additionally, the use of encoder-only models for feature extraction from mobile app reviews has been investigated, demonstrating improvements in precision and recall \[[8](http://arxiv.org/abs/2408.01063)\]. These findings support the need for structured annotation frameworks and high-quality annotated datasets to enhance the performance of automated systems \[[1](http://arxiv.org/abs/2412.07906)\]. 
+
+The study on fine-grained emotion prediction using emotion definition modeling further advances the field by proposing a multi-task learning framework that improves performance on benchmark datasets \[[4](http://arxiv.org/abs/2107.12135)\]. This approach is relevant to the current work, as it demonstrates the potential of integrating auxiliary tasks to enhance emotion classification accuracy. 
+
+In summary, while existing work has made significant contributions to emotion analysis, the specific challenges of fine-grained emotion classification in app reviews remain underexplored. This paper addresses these challenges by developing a structured annotation framework, an annotated dataset, and insights for developing automated pipelines \[[1](http://arxiv.org/abs/2412.07906)\].
+
+References:
+1.

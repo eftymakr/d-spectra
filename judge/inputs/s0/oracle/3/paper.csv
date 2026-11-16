@@ -1,0 +1,102 @@
+id,title,url,snippet
+1905.09263,"FastSpeech: Fast, Robust and Controllable Text to Speech",http://arxiv.org/abs/1905.09263,"Neural network based end-to-end text to speech (TTS) has significantly
+improved the quality of synthesized speech. Prominent methods (e.g., Tacotron
+2) usually first generate mel-spectrogram from text, and then synthesize speech
+from the mel-spectrogram using vocoder such as WaveNet. Compared with
+traditional concatenative and statistical parametric approaches, neural network
+based end-to-end models suffer from slow inference speed, and the synthesized
+speech is usually not robust (i.e., some words are skipped or repeated) and
+lack of controllability (voice speed or prosody control). In this work, we
+propose a novel feed-forward network based on Transformer to generate
+mel-spectrogram in parallel for TTS. Specifically, we extract attention
+alignments from an encoder-decoder based teacher model for phoneme duration
+prediction, which is used by a length regulator to expand the source phoneme
+sequence to match the length of the target mel-spectrogram sequence for
+parallel mel-spectrogram generation. Experiments on the LJSpeech dataset show
+that our parallel model matches autoregressive models in terms of speech
+quality, nearly eliminates the problem of word skipping and repeating in
+particularly hard cases, and can adjust voice speed smoothly. Most importantly,
+compared with autoregressive Transformer TTS, our model speeds up
+mel-spectrogram generation by 270x and the end-to-end speech synthesis by 38x.
+Therefore, we call our model FastSpeech."
+2006.04558,FastSpeech 2: Fast and High-Quality End-to-End Text to Speech,http://arxiv.org/abs/2006.04558,"Non-autoregressive text to speech (TTS) models such as FastSpeech can
+synthesize speech significantly faster than previous autoregressive models with
+comparable quality. The training of FastSpeech model relies on an
+autoregressive teacher model for duration prediction (to provide more
+information as input) and knowledge distillation (to simplify the data
+distribution in output), which can ease the one-to-many mapping problem (i.e.,
+multiple speech variations correspond to the same text) in TTS. However,
+FastSpeech has several disadvantages: 1) the teacher-student distillation
+pipeline is complicated and time-consuming, 2) the duration extracted from the
+teacher model is not accurate enough, and the target mel-spectrograms distilled
+from teacher model suffer from information loss due to data simplification,
+both of which limit the voice quality. In this paper, we propose FastSpeech 2,
+which addresses the issues in FastSpeech and better solves the one-to-many
+mapping problem in TTS by 1) directly training the model with ground-truth
+target instead of the simplified output from teacher, and 2) introducing more
+variation information of speech (e.g., pitch, energy and more accurate
+duration) as conditional inputs. Specifically, we extract duration, pitch and
+energy from speech waveform and directly take them as conditional inputs in
+training and use predicted values in inference. We further design FastSpeech
+2s, which is the first attempt to directly generate speech waveform from text
+in parallel, enjoying the benefit of fully end-to-end inference. Experimental
+results show that 1) FastSpeech 2 achieves a 3x training speed-up over
+FastSpeech, and FastSpeech 2s enjoys even faster inference speed; 2) FastSpeech
+2 and 2s outperform FastSpeech in voice quality, and FastSpeech 2 can even
+surpass autoregressive models. Audio samples are available at
+https://speechresearch.github.io/fastspeech2/."
+2310.08846,Speaking rate attention-based duration prediction for speed control TTS,http://arxiv.org/abs/2310.08846,"With the advent of high-quality speech synthesis, there is a lot of interest
+in controlling various prosodic attributes of speech. Speaking rate is an
+essential attribute towards modelling the expressivity of speech. In this work,
+we propose a novel approach to control the speaking rate for non-autoregressive
+TTS. We achieve this by conditioning the speaking rate inside the duration
+predictor, allowing implicit speaking rate control. We show the benefits of
+this approach by synthesising audio at various speaking rate factors and
+measuring the quality of speaking rate-controlled synthesised speech. Further,
+we study the effect of the speaking rate distribution of the training data
+towards effective rate control. Finally, we fine-tune a baseline pretrained TTS
+model to obtain speaking rate control TTS. We provide various analyses to
+showcase the benefits of using this proposed approach, along with objective as
+well as subjective metrics. We find that the proposed methods have higher
+subjective scores and lower speaker rate errors across many speaking rate
+factors over the baseline."
+1803.09017,"Style Tokens: Unsupervised Style Modeling, Control and Transfer in
+  End-to-End Speech Synthesis",http://arxiv.org/abs/1803.09017,"In this work, we propose ""global style tokens"" (GSTs), a bank of embeddings
+that are jointly trained within Tacotron, a state-of-the-art end-to-end speech
+synthesis system. The embeddings are trained with no explicit labels, yet learn
+to model a large range of acoustic expressiveness. GSTs lead to a rich set of
+significant results. The soft interpretable ""labels"" they generate can be used
+to control synthesis in novel ways, such as varying speed and speaking style -
+independently of the text content. They can also be used for style transfer,
+replicating the speaking style of a single audio clip across an entire
+long-form text corpus. When trained on noisy, unlabeled found data, GSTs learn
+to factorize noise and speaker identity, providing a path towards highly
+scalable but robust speech synthesis."
+1810.07217,Hierarchical Generative Modeling for Controllable Speech Synthesis,http://arxiv.org/abs/1810.07217,"This paper proposes a neural sequence-to-sequence text-to-speech (TTS) model
+which can control latent attributes in the generated speech that are rarely
+annotated in the training data, such as speaking style, accent, background
+noise, and recording conditions. The model is formulated as a conditional
+generative model based on the variational autoencoder (VAE) framework, with two
+levels of hierarchical latent variables. The first level is a categorical
+variable, which represents attribute groups (e.g. clean/noisy) and provides
+interpretability. The second level, conditioned on the first, is a multivariate
+Gaussian variable, which characterizes specific attribute configurations (e.g.
+noise level, speaking rate) and enables disentangled fine-grained control over
+these attributes. This amounts to using a Gaussian mixture model (GMM) for the
+latent distribution. Extensive evaluation demonstrates its ability to control
+the aforementioned attributes. In particular, we train a high-quality
+controllable TTS model on real found data, which is capable of inferring
+speaker and style attributes from a noisy utterance and use it to synthesize
+clean speech with controllable speaking style."
+1803.09047,"Towards End-to-End Prosody Transfer for Expressive Speech Synthesis with
+  Tacotron",http://arxiv.org/abs/1803.09047,"We present an extension to the Tacotron speech synthesis architecture that
+learns a latent embedding space of prosody, derived from a reference acoustic
+representation containing the desired prosody. We show that conditioning
+Tacotron on this learned embedding space results in synthesized audio that
+matches the prosody of the reference signal with fine time detail even when the
+reference and synthesis speakers are different. Additionally, we show that a
+reference prosody embedding can be used to synthesize text that is different
+from that of the reference utterance. We define several quantitative and
+subjective metrics for evaluating prosody transfer, and report results with
+accompanying audio samples from single-speaker and 44-speaker Tacotron models
+on a prosody transfer task."

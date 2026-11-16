@@ -1,0 +1,448 @@
+id,title,url,snippet
+1607.00653,node2vec: Scalable Feature Learning for Networks,http://arxiv.org/abs/1607.00653,"Prediction tasks over nodes and edges in networks require careful effort in
+engineering features used by learning algorithms. Recent research in the
+broader field of representation learning has led to significant progress in
+automating prediction by learning the features themselves. However, present
+feature learning approaches are not expressive enough to capture the diversity
+of connectivity patterns observed in networks. Here we propose node2vec, an
+algorithmic framework for learning continuous feature representations for nodes
+in networks. In node2vec, we learn a mapping of nodes to a low-dimensional
+space of features that maximizes the likelihood of preserving network
+neighborhoods of nodes. We define a flexible notion of a node's network
+neighborhood and design a biased random walk procedure, which efficiently
+explores diverse neighborhoods. Our algorithm generalizes prior work which is
+based on rigid notions of network neighborhoods, and we argue that the added
+flexibility in exploring neighborhoods is the key to learning richer
+representations. We demonstrate the efficacy of node2vec over existing
+state-of-the-art techniques on multi-label classification and link prediction
+in several real-world networks from diverse domains. Taken together, our work
+represents a new way for efficiently learning state-of-the-art task-independent
+representations in complex networks."
+1609.02907,Semi-Supervised Classification with Graph Convolutional Networks,http://arxiv.org/abs/1609.02907,"We present a scalable approach for semi-supervised learning on
+graph-structured data that is based on an efficient variant of convolutional
+neural networks which operate directly on graphs. We motivate the choice of our
+convolutional architecture via a localized first-order approximation of
+spectral graph convolutions. Our model scales linearly in the number of graph
+edges and learns hidden layer representations that encode both local graph
+structure and features of nodes. In a number of experiments on citation
+networks and on a knowledge graph dataset we demonstrate that our approach
+outperforms related methods by a significant margin."
+1902.07153,Simplifying Graph Convolutional Networks,http://arxiv.org/abs/1902.07153,"Graph Convolutional Networks (GCNs) and their variants have experienced
+significant attention and have become the de facto methods for learning graph
+representations. GCNs derive inspiration primarily from recent deep learning
+approaches, and as a result, may inherit unnecessary complexity and redundant
+computation. In this paper, we reduce this excess complexity through
+successively removing nonlinearities and collapsing weight matrices between
+consecutive layers. We theoretically analyze the resulting linear model and
+show that it corresponds to a fixed low-pass filter followed by a linear
+classifier. Notably, our experimental evaluation demonstrates that these
+simplifications do not negatively impact accuracy in many downstream
+applications. Moreover, the resulting model scales to larger datasets, is
+naturally interpretable, and yields up to two orders of magnitude speedup over
+FastGCN."
+1810.00826,How Powerful are Graph Neural Networks?,http://arxiv.org/abs/1810.00826,"Graph Neural Networks (GNNs) are an effective framework for representation
+learning of graphs. GNNs follow a neighborhood aggregation scheme, where the
+representation vector of a node is computed by recursively aggregating and
+transforming representation vectors of its neighboring nodes. Many GNN variants
+have been proposed and have achieved state-of-the-art results on both node and
+graph classification tasks. However, despite GNNs revolutionizing graph
+representation learning, there is limited understanding of their
+representational properties and limitations. Here, we present a theoretical
+framework for analyzing the expressive power of GNNs to capture different graph
+structures. Our results characterize the discriminative power of popular GNN
+variants, such as Graph Convolutional Networks and GraphSAGE, and show that
+they cannot learn to distinguish certain simple graph structures. We then
+develop a simple architecture that is provably the most expressive among the
+class of GNNs and is as powerful as the Weisfeiler-Lehman graph isomorphism
+test. We empirically validate our theoretical findings on a number of graph
+classification benchmarks, and demonstrate that our model achieves
+state-of-the-art performance."
+2006.07988,Adaptive Universal Generalized PageRank Graph Neural Network,http://arxiv.org/abs/2006.07988,"In many important graph data processing applications the acquired information
+includes both node features and observations of the graph topology. Graph
+neural networks (GNNs) are designed to exploit both sources of evidence but
+they do not optimally trade-off their utility and integrate them in a manner
+that is also universal. Here, universality refers to independence on homophily
+or heterophily graph assumptions. We address these issues by introducing a new
+Generalized PageRank (GPR) GNN architecture that adaptively learns the GPR
+weights so as to jointly optimize node feature and topological information
+extraction, regardless of the extent to which the node labels are homophilic or
+heterophilic. Learned GPR weights automatically adjust to the node label
+pattern, irrelevant on the type of initialization, and thereby guarantee
+excellent learning performance for label patterns that are usually hard to
+handle. Furthermore, they allow one to avoid feature over-smoothing, a process
+which renders feature information nondiscriminative, without requiring the
+network to be shallow. Our accompanying theoretical analysis of the GPR-GNN
+method is facilitated by novel synthetic benchmark datasets generated by the
+so-called contextual stochastic block model. We also compare the performance of
+our GNN architecture with that of several state-of-the-art GNNs on the problem
+of node-classification, using well-known benchmark homophilic and heterophilic
+datasets. The results demonstrate that GPR-GNN offers significant performance
+improvement compared to existing techniques on both synthetic and benchmark
+data."
+2001.10167,"Revisiting Graph based Collaborative Filtering: A Linear Residual Graph
+  Convolutional Network Approach",http://arxiv.org/abs/2001.10167,"Graph Convolutional Networks (GCNs) are state-of-the-art graph based
+representation learning models by iteratively stacking multiple layers of
+convolution aggregation operations and non-linear activation operations.
+Recently, in Collaborative Filtering (CF) based Recommender Systems (RS), by
+treating the user-item interaction behavior as a bipartite graph, some
+researchers model higher-layer collaborative signals with GCNs. These GCN based
+recommender models show superior performance compared to traditional works.
+However, these models suffer from training difficulty with non-linear
+activations for large user-item graphs. Besides, most GCN based models could
+not model deeper layers due to the over smoothing effect with the graph
+convolution operation. In this paper, we revisit GCN based CF models from two
+aspects. First, we empirically show that removing non-linearities would enhance
+recommendation performance, which is consistent with the theories in simple
+graph convolutional networks. Second, we propose a residual network structure
+that is specifically designed for CF with user-item interaction modeling, which
+alleviates the over smoothing problem in graph convolution aggregation
+operation with sparse user-item interaction data. The proposed model is a
+linear model and it is easy to train, scale to large datasets, and yield better
+efficiency and effectiveness on two real datasets. We publish the source code
+at https://github.com/newlei/LRGCCF."
+1905.08108,Neural Graph Collaborative Filtering,http://arxiv.org/abs/1905.08108,"Learning vector representations (aka. embeddings) of users and items lies at
+the core of modern recommender systems. Ranging from early matrix factorization
+to recently emerged deep learning based methods, existing efforts typically
+obtain a user's (or an item's) embedding by mapping from pre-existing features
+that describe the user (or the item), such as ID and attributes. We argue that
+an inherent drawback of such methods is that, the collaborative signal, which
+is latent in user-item interactions, is not encoded in the embedding process.
+As such, the resultant embeddings may not be sufficient to capture the
+collaborative filtering effect.
+  In this work, we propose to integrate the user-item interactions -- more
+specifically the bipartite graph structure -- into the embedding process. We
+develop a new recommendation framework Neural Graph Collaborative Filtering
+(NGCF), which exploits the user-item graph structure by propagating embeddings
+on it. This leads to the expressive modeling of high-order connectivity in
+user-item graph, effectively injecting the collaborative signal into the
+embedding process in an explicit manner. We conduct extensive experiments on
+three public benchmarks, demonstrating significant improvements over several
+state-of-the-art models like HOP-Rec and Collaborative Memory Network. Further
+analysis verifies the importance of embedding propagation for learning better
+user and item representations, justifying the rationality and effectiveness of
+NGCF. Codes are available at
+https://github.com/xiangwang1223/neural_graph_collaborative_filtering."
+2007.01764,Disentangled Graph Collaborative Filtering,http://arxiv.org/abs/2007.01764,"Learning informative representations of users and items from the interaction
+data is of crucial importance to collaborative filtering (CF). Present
+embedding functions exploit user-item relationships to enrich the
+representations, evolving from a single user-item instance to the holistic
+interaction graph. Nevertheless, they largely model the relationships in a
+uniform manner, while neglecting the diversity of user intents on adopting the
+items, which could be to pass time, for interest, or shopping for others like
+families. Such uniform approach to model user interests easily results in
+suboptimal representations, failing to model diverse relationships and
+disentangle user intents in representations.
+  In this work, we pay special attention to user-item relationships at the
+finer granularity of user intents. We hence devise a new model, Disentangled
+Graph Collaborative Filtering (DGCF), to disentangle these factors and yield
+disentangled representations. Specifically, by modeling a distribution over
+intents for each user-item interaction, we iteratively refine the intent-aware
+interaction graphs and representations. Meanwhile, we encourage independence of
+different intents. This leads to disentangled representations, effectively
+distilling information pertinent to each intent. We conduct extensive
+experiments on three benchmark datasets, and DGCF achieves significant
+improvements over several state-of-the-art models like NGCF, DisenGCN, and
+MacridVAE. Further analyses offer insights into the advantages of DGCF on the
+disentanglement of user intents and interpretability of representations. Our
+codes are available in
+https://github.com/xiangwang1223/disentangled_graph_collaborative_filtering."
+2102.10044,Interest-aware Message-Passing GCN for Recommendation,http://arxiv.org/abs/2102.10044,"Graph Convolution Networks (GCNs) manifest great potential in recommendation.
+This is attributed to their capability on learning good user and item
+embeddings by exploiting the collaborative signals from the high-order
+neighbors. Like other GCN models, the GCN based recommendation models also
+suffer from the notorious over-smoothing problem - when stacking more layers,
+node embeddings become more similar and eventually indistinguishable, resulted
+in performance degradation. The recently proposed LightGCN and LR-GCN alleviate
+this problem to some extent, however, we argue that they overlook an important
+factor for the over-smoothing problem in recommendation, that is, high-order
+neighboring users with no common interests of a user can be also involved in
+the user's embedding learning in the graph convolution operation. As a result,
+the multi-layer graph convolution will make users with dissimilar interests
+have similar embeddings. In this paper, we propose a novel Interest-aware
+Message-Passing GCN (IMP-GCN) recommendation model, which performs high-order
+graph convolution inside subgraphs. The subgraph consists of users with similar
+interests and their interacted items. To form the subgraphs, we design an
+unsupervised subgraph generation module, which can effectively identify users
+with common interests by exploiting both user feature and graph structure. To
+this end, our model can avoid propagating negative information from high-order
+neighbors into embedding learning. Experimental results on three large-scale
+benchmark datasets show that our model can gain performance improvement by
+stacking more layers and outperform the state-of-the-art GCN-based
+recommendation models significantly."
+2111.07265,"Linear, or Non-Linear, That is the Question!",http://arxiv.org/abs/2111.07265,"There were fierce debates on whether the non-linear embedding propagation of
+GCNs is appropriate to GCN-based recommender systems. It was recently found
+that the linear embedding propagation shows better accuracy than the non-linear
+embedding propagation. Since this phenomenon was discovered especially in
+recommender systems, it is required that we carefully analyze the linearity and
+non-linearity issue. In this work, therefore, we revisit the issues of i) which
+of the linear or non-linear propagation is better and ii) which factors of
+users/items decide the linearity/non-linearity of the embedding propagation. We
+propose a novel Hybrid Method of Linear and non-linEar collaborative filTering
+method (HMLET, pronounced as Hamlet). In our design, there exist both linear
+and non-linear propagation steps, when processing each user or item node, and
+our gating module chooses one of them, which results in a hybrid model of the
+linear and non-linear GCN-based collaborative filtering (CF). The proposed
+model yields the best accuracy in three public benchmark datasets. Moreover, we
+classify users/items into the following three classes depending on our gating
+modules' selections: Full-Non-Linearity (FNL), Partial-Non-Linearity (PNL), and
+Full-Linearity (FL). We found that there exist strong correlations between
+nodes' centrality and their class membership, i.e., important user/item nodes
+exhibit more preferences towards the non-linearity during the propagation
+steps. To our knowledge, we are the first who design a hybrid method and report
+the correlation between the graph centrality and the linearity/non-linearity of
+nodes. All HMLET codes and datasets are available at:
+https://github.com/qbxlvnf11/HMLET."
+2108.05552,Graph Trend Filtering Networks for Recommendations,http://arxiv.org/abs/2108.05552,"Recommender systems aim to provide personalized services to users and are
+playing an increasingly important role in our daily lives. The key of
+recommender systems is to predict how likely users will interact with items
+based on their historical online behaviors, e.g., clicks, add-to-cart,
+purchases, etc. To exploit these user-item interactions, there are increasing
+efforts on considering the user-item interactions as a user-item bipartite
+graph and then performing information propagation in the graph via Graph Neural
+Networks (GNNs). Given the power of GNNs in graph representation learning,
+these GNNs-based recommendation methods have remarkably boosted the
+recommendation performance. Despite their success, most existing GNNs-based
+recommender systems overlook the existence of interactions caused by unreliable
+behaviors (e.g., random/bait clicks) and uniformly treat all the interactions,
+which can lead to sub-optimal and unstable performance. In this paper, we
+investigate the drawbacks (e.g., non-adaptive propagation and non-robustness)
+of existing GNN-based recommendation methods. To address these drawbacks, we
+introduce a principled graph trend collaborative filtering method and propose
+the Graph Trend Filtering Networks for recommendations (GTN) that can capture
+the adaptive reliability of the interactions. Comprehensive experiments and
+ablation studies are presented to verify and understand the effectiveness of
+the proposed framework. Our implementation based on PyTorch is available at
+https://github.com/wenqifan03/GTN-SIGIR2022."
+2306.03624,"On Manipulating Signals of User-Item Graph: A Jacobi Polynomial-based
+  Graph Collaborative Filtering",http://arxiv.org/abs/2306.03624,"Collaborative filtering (CF) is an important research direction in
+recommender systems that aims to make recommendations given the information on
+user-item interactions. Graph CF has attracted more and more attention in
+recent years due to its effectiveness in leveraging high-order information in
+the user-item bipartite graph for better recommendations. Specifically, recent
+studies show the success of graph neural networks (GNN) for CF is attributed to
+its low-pass filtering effects. However, current researches lack a study of how
+different signal components contributes to recommendations, and how to design
+strategies to properly use them well. To this end, from the view of spectral
+transformation, we analyze the important factors that a graph filter should
+consider to achieve better performance. Based on the discoveries, we design
+JGCF, an efficient and effective method for CF based on Jacobi polynomial bases
+and frequency decomposition strategies. Extensive experiments on four widely
+used public datasets show the effectiveness and efficiency of the proposed
+methods, which brings at most 27.06% performance gain on Alibaba-iFashion.
+Besides, the experimental results also show that JGCF is better at handling
+sparse datasets, which shows potential in making recommendations for cold-start
+users."
+2204.12200,Hypergraph Contrastive Collaborative Filtering,http://arxiv.org/abs/2204.12200,"Collaborative Filtering (CF) has emerged as fundamental paradigms for
+parameterizing users and items into latent representation space, with their
+correlative patterns from interaction data. Among various CF techniques, the
+development of GNN-based recommender systems, e.g., PinSage and LightGCN, has
+offered the state-of-the-art performance. However, two key challenges have not
+been well explored in existing solutions: i) The over-smoothing effect with
+deeper graph-based CF architecture, may cause the indistinguishable user
+representations and degradation of recommendation results. ii) The supervision
+signals (i.e., user-item interactions) are usually scarce and skewed
+distributed in reality, which limits the representation power of CF paradigms.
+To tackle these challenges, we propose a new self-supervised recommendation
+framework Hypergraph Contrastive Collaborative Filtering (HCCF) to jointly
+capture local and global collaborative relations with a hypergraph-enhanced
+cross-view contrastive learning architecture. In particular, the designed
+hypergraph structure learning enhances the discrimination ability of GNN-based
+CF paradigm, so as to comprehensively capture the complex high-order
+dependencies among users. Additionally, our HCCF model effectively integrates
+the hypergraph structure encoding with self-supervised learning to reinforce
+the representation quality of recommender systems, based on the
+hypergraph-enhanced self-discrimination. Extensive experiments on three
+benchmark datasets demonstrate the superiority of our model over various
+state-of-the-art recommendation methods, and the robustness against sparse user
+interaction data. Our model implementation codes are available at
+https://github.com/akaxlh/HCCF."
+2207.06221,Collaboration-Aware Graph Convolutional Network for Recommender Systems,http://arxiv.org/abs/2207.06221,"Graph Neural Networks (GNNs) have been successfully adopted in recommender
+systems by virtue of the message-passing that implicitly captures collaborative
+effect. Nevertheless, most of the existing message-passing mechanisms for
+recommendation are directly inherited from GNNs without scrutinizing whether
+the captured collaborative effect would benefit the prediction of user
+preferences. In this paper, we first analyze how message-passing captures the
+collaborative effect and propose a recommendation-oriented topological metric,
+Common Interacted Ratio (CIR), which measures the level of interaction between
+a specific neighbor of a node with the rest of its neighbors. After
+demonstrating the benefits of leveraging collaborations from neighbors with
+higher CIR, we propose a recommendation-tailored GNN, Collaboration-Aware Graph
+Convolutional Network (CAGCN), that goes beyond 1-Weisfeiler-Lehman(1-WL) test
+in distinguishing non-bipartite-subgraph-isomorphic graphs. Experiments on six
+benchmark datasets show that the best CAGCN variant outperforms the most
+representative GNN-based recommendation model, LightGCN, by nearly 10% in
+Recall@20 and also achieves around 80% speedup. Our code is publicly available
+at https://github.com/YuWVandy/CAGCN."
+2202.06200,"Improving Graph Collaborative Filtering with Neighborhood-enriched
+  Contrastive Learning",http://arxiv.org/abs/2202.06200,"Recently, graph collaborative filtering methods have been proposed as an
+effective recommendation approach, which can capture users' preference over
+items by modeling the user-item interaction graphs. In order to reduce the
+influence of data sparsity, contrastive learning is adopted in graph
+collaborative filtering for enhancing the performance. However, these methods
+typically construct the contrastive pairs by random sampling, which neglect the
+neighboring relations among users (or items) and fail to fully exploit the
+potential of contrastive learning for recommendation. To tackle the above
+issue, we propose a novel contrastive learning approach, named
+Neighborhood-enriched Contrastive Learning, named NCL, which explicitly
+incorporates the potential neighbors into contrastive pairs. Specifically, we
+introduce the neighbors of a user (or an item) from graph structure and
+semantic space respectively. For the structural neighbors on the interaction
+graph, we develop a novel structure-contrastive objective that regards users
+(or items) and their structural neighbors as positive contrastive pairs. In
+implementation, the representations of users (or items) and neighbors
+correspond to the outputs of different GNN layers. Furthermore, to excavate the
+potential neighbor relation in semantic space, we assume that users with
+similar representations are within the semantic neighborhood, and incorporate
+these semantic neighbors into the prototype-contrastive objective. The proposed
+NCL can be optimized with EM algorithm and generalized to apply to graph
+collaborative filtering methods. Extensive experiments on five public datasets
+demonstrate the effectiveness of the proposed NCL, notably with 26% and 17%
+performance gain over a competitive graph collaborative filtering base model on
+the Yelp and Amazon-book datasets respectively. Our code is available at:
+https://github.com/RUCAIBox/NCL."
+2305.10837,Adaptive Graph Contrastive Learning for Recommendation,http://arxiv.org/abs/2305.10837,"Graph neural networks (GNNs) have recently emerged as an effective
+collaborative filtering (CF) approaches for recommender systems. The key idea
+of GNN-based recommender systems is to recursively perform message passing
+along user-item interaction edges to refine encoded embeddings, relying on
+sufficient and high-quality training data. However, user behavior data in
+practical recommendation scenarios is often noisy and exhibits skewed
+distribution. To address these issues, some recommendation approaches, such as
+SGL, leverage self-supervised learning to improve user representations. These
+approaches conduct self-supervised learning through creating contrastive views,
+but they depend on the tedious trial-and-error selection of augmentation
+methods. In this paper, we propose a novel Adaptive Graph Contrastive Learning
+(AdaGCL) framework that conducts data augmentation with two adaptive
+contrastive view generators to better empower the CF paradigm. Specifically, we
+use two trainable view generators - a graph generative model and a graph
+denoising model - to create adaptive contrastive views. With two adaptive
+contrastive views, AdaGCL introduces additional high-quality training signals
+into the CF paradigm, helping to alleviate data sparsity and noise issues.
+Extensive experiments on three real-world datasets demonstrate the superiority
+of our model over various state-of-the-art recommendation methods. Our model
+implementation codes are available at the link https://github.com/HKUDS/AdaGCL."
+2203.15789,"Revisiting Neighborhood-based Link Prediction for Collaborative
+  Filtering",http://arxiv.org/abs/2203.15789,"Collaborative filtering (CF) is one of the most successful and fundamental
+techniques in recommendation systems. In recent years, Graph Neural Network
+(GNN)-based CF models, such as NGCF [31], LightGCN [10] and GTN [9] have
+achieved tremendous success and significantly advanced the state-of-the-art.
+While there is a rich literature of such works using advanced models for
+learning user and item representations separately, item recommendation is
+essentially a link prediction problem between users and items. Furthermore,
+while there have been early works employing link prediction for collaborative
+filtering [5, 6], this trend has largely given way to works focused on
+aggregating information from user and item nodes, rather than modeling links
+directly. In this paper, we propose a new linkage (connectivity) score for
+bipartite graphs, generalizing multiple standard link prediction methods. We
+combine this new score with an iterative degree update process in the user-item
+interaction bipartite graph to exploit local graph structures without any node
+modeling. The result is a simple, non-deep learning model with only six
+learnable parameters. Despite its simplicity, we demonstrate our approach
+significantly outperforms existing state-of-the-art GNN-based CF approaches on
+four widely used benchmarks. In particular, on Amazon-Book, we demonstrate an
+over 60% improvement for both Recall and NDCG. We hope our work would invite
+the community to revisit the link prediction aspect of collaborative filtering,
+where significant performance gains could be achieved through aligning link
+prediction with item recommendations."
+2108.07567,How Powerful is Graph Convolution for Recommendation?,http://arxiv.org/abs/2108.07567,"Graph convolutional networks (GCNs) have recently enabled a popular class of
+algorithms for collaborative filtering (CF). Nevertheless, the theoretical
+underpinnings of their empirical successes remain elusive. In this paper, we
+endeavor to obtain a better understanding of GCN-based CF methods via the lens
+of graph signal processing. By identifying the critical role of smoothness, a
+key concept in graph signal processing, we develop a unified graph
+convolution-based framework for CF. We prove that many existing CF methods are
+special cases of this framework, including the neighborhood-based methods,
+low-rank matrix factorization, linear auto-encoders, and LightGCN,
+corresponding to different low-pass filters. Based on our framework, we then
+present a simple and computationally efficient CF baseline, which we shall
+refer to as Graph Filter based Collaborative Filtering (GF-CF). Given an
+implicit feedback matrix, GF-CF can be obtained in a closed form instead of
+expensive training with back-propagation. Experiments will show that GF-CF
+achieves competitive or better performance against deep learning-based methods
+on three well-known datasets, notably with a $70\%$ performance gain over
+LightGCN on the Amazon-book dataset."
+2311.08744,Graph Signal Diffusion Model for Collaborative Filtering,http://arxiv.org/abs/2311.08744,"Collaborative filtering is a critical technique in recommender systems. It
+has been increasingly viewed as a conditional generative task for user feedback
+data, where newly developed diffusion model shows great potential. However,
+existing studies on diffusion model lack effective solutions for modeling
+implicit feedback. Particularly, the standard isotropic diffusion process
+overlooks correlation between items, misaligned with the graphical structure of
+the interaction space. Meanwhile, Gaussian noise destroys personalized
+information in a user's interaction vector, causing difficulty in its
+reconstruction. In this paper, we adapt standard diffusion model and propose a
+novel Graph Signal Diffusion Model for Collaborative Filtering (named GiffCF).
+To better represent the correlated distribution of user-item interactions, we
+define a generalized diffusion process using heat equation on the item-item
+similarity graph. Our forward process smooths interaction signals with an
+advanced family of graph filters, introducing the graph adjacency as beneficial
+prior knowledge for recommendation. Our reverse process iteratively refines and
+sharpens latent signals in a noise-free manner, where the updates are
+conditioned on the user's history and computed from a carefully designed
+two-stage denoiser, leading to high-quality reconstruction. Finally, through
+extensive experiments, we show that GiffCF effectively leverages the advantages
+of both diffusion model and graph signal processing, and achieves
+state-of-the-art performance on three benchmark datasets."
+2302.02113,Personalized Graph Signal Processing for Collaborative Filtering,http://arxiv.org/abs/2302.02113,"The collaborative filtering (CF) problem with only user-item interaction
+information can be solved by graph signal processing (GSP), which uses low-pass
+filters to smooth the observed interaction signals on the similarity graph to
+obtain the prediction signals. However, the interaction signal may not be
+sufficient to accurately characterize user interests and the low-pass filters
+may ignore the useful information contained in the high-frequency component of
+the observed signals, resulting in suboptimal accuracy. To this end, we propose
+a personalized graph signal processing (PGSP) method for collaborative
+filtering. Firstly, we design the personalized graph signal containing richer
+user information and construct an augmented similarity graph containing more
+graph topology information, to more effectively characterize user interests.
+Secondly, we devise a mixed-frequency graph filter to introduce useful
+information in the high-frequency components of the observed signals by
+combining an ideal low-pass filter that smooths signals globally and a linear
+low-pass filter that smooths signals locally. Finally, we combine the
+personalized graph signal, the augmented similarity graph and the
+mixed-frequency graph filter by proposing a pipeline consisting of three key
+steps: pre-processing, graph convolution and post-processing. Extensive
+experiments show that PGSP can achieve superior accuracy compared with
+state-of-the-art CF methods and, as a nonparametric method, PGSP has very high
+training efficiency."
+1808.10523,Spectral Collaborative Filtering,http://arxiv.org/abs/1808.10523,"Despite the popularity of Collaborative Filtering (CF), CF-based methods are
+haunted by the \textit(cold-start) problem, which has a significantly negative
+impact on users' experiences with Recommender Systems (RS). In this paper, to
+overcome the aforementioned drawback, we first formulate the relationships
+between users and items as a bipartite graph. Then, we propose a new spectral
+convolution operation directly performing in the \textit(spectral domain),
+where not only the proximity information of a graph but also the connectivity
+information hidden in the graph are revealed. With the proposed spectral
+convolution operation, we build a deep recommendation model called Spectral
+Collaborative Filtering (SpectralCF). Benefiting from the rich information of
+connectivity existing in the \textit(spectral domain), SpectralCF is capable of
+discovering deep connections between users and items and therefore, alleviates
+the \textit(cold-start) problem for CF. To the best of our knowledge,
+SpectralCF is the first CF-based method directly learning from the
+\textit(spectral domains) of user-item bipartite graphs. We apply our method on
+several standard datasets. It is shown that SpectralCF significantly
+outperforms state-of-the-art models. Code and data are available at
+\url(https://github.com/lzheng21/SpectralCF)."
+2406.08827,How Powerful is Graph Filtering for Recommendation,http://arxiv.org/abs/2406.08827,"It has been shown that the effectiveness of graph convolutional network (GCN)
+for recommendation is attributed to the spectral graph filtering. Most
+GCN-based methods consist of a graph filter or followed by a low-rank mapping
+optimized based on supervised training. However, we show two limitations
+suppressing the power of graph filtering: (1) Lack of generality. Due to the
+varied noise distribution, graph filters fail to denoise sparse data where
+noise is scattered across all frequencies, while supervised training results in
+worse performance on dense data where noise is concentrated in middle
+frequencies that can be removed by graph filters without training. (2) Lack of
+expressive power. We theoretically show that linear GCN (LGCN) that is
+effective on collaborative filtering (CF) cannot generate arbitrary embeddings,
+implying the possibility that optimal data representation might be unreachable.
+  To tackle the first limitation, we show close relation between noise
+distribution and the sharpness of spectrum where a sharper spectral
+distribution is more desirable causing data noise to be separable from
+important features without training. Based on this observation, we propose a
+generalized graph normalization G^2N to adjust the sharpness of spectral
+distribution in order to redistribute data noise to assure that it can be
+removed by graph filtering without training. As for the second limitation, we
+propose an individualized graph filter (IGF) adapting to the different
+confidence levels of the user preference that interactions can reflect, which
+is proved to be able to generate arbitrary embeddings. By simplifying LGCN, we
+further propose a simplified graph filtering (SGFCF) which only requires the
+top-K singular values for recommendation. Finally, experimental results on four
+datasets with different density settings demonstrate the effectiveness and
+efficiency of our proposed methods."

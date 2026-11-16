@@ -1,0 +1,12 @@
+{
+ "query": "024_2505.22167v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 18.634633779525757,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=248408, completion_tokens=36740, total_tokens=285148, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=384644, completion_tokens=42560, total_tokens=427204, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Diffusion Model Quantization Techniques": 18,
+  "Diffusion Models and Quantization": 7,
+  "Diffusion Models for Text to Image Synthesis": 3
+ }
+}

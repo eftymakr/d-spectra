@@ -1,0 +1,16 @@
+{
+ "query": "005_2505.24754v1",
+ "n_papers": 21,
+ "n_linked": 21,
+ "seconds": 18.88861632347107,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=406661, completion_tokens=61854, total_tokens=468515, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=629299, completion_tokens=68894, total_tokens=698193, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Transformer Based Language Models": 5,
+  "Word Representation Models": 3,
+  "Embodied Navigation Research": 3,
+  "Language Model Instruction Following Research": 2,
+  "Text Embedding Models Benchmark": 2,
+  "Language Model Instruction Tuning": 2,
+  "Language Model Enhancement Techniques": 2
+ }
+}

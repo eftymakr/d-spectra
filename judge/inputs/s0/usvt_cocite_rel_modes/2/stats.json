@@ -1,0 +1,12 @@
+{
+ "query": "002_2506.00958v1",
+ "n_papers": 12,
+ "n_linked": 12,
+ "seconds": 15.776944875717163,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=489912, completion_tokens=76025, total_tokens=565937, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=762711, completion_tokens=83838, total_tokens=846549, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Multimodal Language Model Research": 5,
+  "Video and Language Model Alignment": 2,
+  "Multimodal Language Models Research": 2
+ }
+}

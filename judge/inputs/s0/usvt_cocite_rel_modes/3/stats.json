@@ -1,0 +1,14 @@
+{
+ "query": "003_2506.00832v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 20.575404167175293,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=483203, completion_tokens=74569, total_tokens=557772, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=753863, completion_tokens=82703, total_tokens=836566, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "End-to-End Speech Synthesis Models": 9,
+  "Text to Speech Synthesis Models": 5,
+  "Text to Speech Synthesis Research": 5,
+  "Prosody Modeling in TTS Systems": 3,
+  "Speech Synthesis Generative Models": 2
+ }
+}

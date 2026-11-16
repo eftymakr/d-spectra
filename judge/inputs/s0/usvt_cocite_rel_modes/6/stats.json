@@ -1,0 +1,13 @@
+{
+ "query": "006_2505.24575v1",
+ "n_papers": 18,
+ "n_linked": 18,
+ "seconds": 17.021986961364746,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=394667, completion_tokens=59077, total_tokens=453744, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=616386, completion_tokens=67326, total_tokens=683712, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "LLM Research and Multi-Agent Systems": 7,
+  "Natural Language Processing Models": 6,
+  "Event Storytelling and Narrative Reconstruction": 3,
+  "Narrative Theory And Digital Media": 2
+ }
+}

@@ -1,0 +1,244 @@
+id,title,url,snippet
+2212.07588,DeepJoin: Joinable Table Discovery with Pre-trained Language Models,http://arxiv.org/abs/2212.07588,"Due to the usefulness in data enrichment for data analysis tasks, joinable
+table discovery has become an important operation in data lake management.
+Existing approaches target equi-joins, the most common way of combining tables
+for creating a unified view, or semantic joins, which tolerate misspellings and
+different formats to deliver more join results. They are either exact solutions
+whose running time is linear in the sizes of query column and target table
+repository or approximate solutions lacking precision. In this paper, we
+propose Deepjoin, a deep learning model for accurate and efficient joinable
+table discovery. Our solution is an embedding-based retrieval, which employs a
+pre-trained language model (PLM) and is designed as one framework serving both
+equi- and semantic joins. We propose a set of contextualization options to
+transform column contents to a text sequence. The PLM reads the sequence and is
+fine-tuned to embed columns to vectors such that columns are expected to be
+joinable if they are close to each other in the vector space. Since the output
+of the PLM is fixed in length, the subsequent search procedure becomes
+independent of the column size. With a state-of-the-art approximate nearest
+neighbor search algorithm, the search time is logarithmic in the repository
+size. To train the model, we devise the techniques for preparing training data
+as well as data augmentation. The experiments on real datasets demonstrate that
+by training on a small subset of a corpus, Deepjoin generalizes to large
+datasets and its precision consistently outperforms other approximate
+solutions'. Deepjoin is even more accurate than an exact solution to semantic
+joins when evaluated with labels from experts. Moreover, when equipped with a
+GPU, Deepjoin is up to two orders of magnitude faster than existing solutions."
+2005.09207,Table Search Using a Deep Contextualized Language Model,http://arxiv.org/abs/2005.09207,"Pretrained contextualized language models such as BERT have achieved
+impressive results on various natural language processing benchmarks.
+Benefiting from multiple pretraining tasks and large scale training corpora,
+pretrained models can capture complex syntactic word relations. In this paper,
+we use the deep contextualized language model BERT for the task of ad hoc table
+retrieval. We investigate how to encode table content considering the table
+structure and input length limit of BERT. We also propose an approach that
+incorporates features from prior literature on table retrieval and jointly
+trains them with BERT. In experiments on public datasets, we show that our best
+approach can outperform the previous state-of-the-art method and BERT baselines
+with a large margin under different evaluation metrics."
+2106.09592,Data Lakes: A Survey of Functions and Systems,http://arxiv.org/abs/2106.09592,"Data lakes are becoming increasingly prevalent for big data management and
+data analytics. In contrast to traditional 'schema-on-write' approaches such as
+data warehouses, data lakes are repositories storing raw data in its original
+formats and providing a common access interface. Despite the strong interest
+raised from both academia and industry, there is a large body of ambiguity
+regarding the definition, functions and available technologies for data lakes.
+A complete, coherent picture of data lake challenges and solutions is still
+missing. This survey reviews the development, architectures, and systems of
+data lakes. We provide a comprehensive overview of research questions for
+designing and building data lakes. We classify the existing approaches and
+systems based on their provided functions for data lakes, which makes this
+survey a useful technical reference for designing, implementing and deploying
+data lakes. We hope that the thorough comparison of existing solutions and the
+discussion of open research challenges in this survey will motivate the future
+development of data lake research and practice."
+2210.01922,"Semantics-aware Dataset Discovery from Data Lakes with Contextualized
+  Column-based Representation Learning",http://arxiv.org/abs/2210.01922,"Dataset discovery from data lakes is essential in many real application
+scenarios. In this paper, we propose Starmie, an end-to-end framework for
+dataset discovery from data lakes (with table union search as the main use
+case). Our proposed framework features a contrastive learning method to train
+column encoders from pre-trained language models in a fully unsupervised
+manner. The column encoder of Starmie captures the rich contextual semantic
+information within tables by leveraging a contrastive multi-column pre-training
+strategy. We utilize the cosine similarity between column embedding vectors as
+the column unionability score and propose a filter-and-verification framework
+that allows exploring a variety of design choices to compute the unionability
+score between two tables accordingly. Empirical evaluation results on real
+table benchmark datasets show that Starmie outperforms the best-known solutions
+in the effectiveness of table union search by 6.8 in MAP and recall. Moreover,
+Starmie is the first to employ the HNSW (Hierarchical Navigable Small World)
+index for accelerate query processing of table union search which provides a
+3,000X performance gain over the linear scan baseline and a 400X performance
+gain over an LSH index (the state-of-the-art solution for data lake indexing)."
+1802.06159,Ad Hoc Table Retrieval using Semantic Similarity,http://arxiv.org/abs/1802.06159,"We introduce and address the problem of ad hoc table retrieval: answering a
+keyword query with a ranked list of tables. This task is not only interesting
+on its own account, but is also being used as a core component in many other
+table-based information access scenarios, such as table completion or table
+mining. The main novel contribution of this work is a method for performing
+semantic matching between queries and tables. Specifically, we (i) represent
+queries and tables in multiple semantic spaces (both discrete sparse and
+continuous dense vector representations) and (ii) introduce various similarity
+measures for matching those semantic representations. We consider all possible
+combinations of semantic representations and similarity measures and use these
+as features in a supervised learning model. Using a purpose-built test
+collection based on Wikipedia tables, we demonstrate significant and
+substantial improvements over a state-of-the-art baseline."
+2202.06991,Transformer Memory as a Differentiable Search Index,http://arxiv.org/abs/2202.06991,"In this paper, we demonstrate that information retrieval can be accomplished
+with a single Transformer, in which all information about the corpus is encoded
+in the parameters of the model. To this end, we introduce the Differentiable
+Search Index (DSI), a new paradigm that learns a text-to-text model that maps
+string queries directly to relevant docids; in other words, a DSI model answers
+queries directly using only its parameters, dramatically simplifying the whole
+retrieval process. We study variations in how documents and their identifiers
+are represented, variations in training procedures, and the interplay between
+models and corpus sizes. Experiments demonstrate that given appropriate design
+choices, DSI significantly outperforms strong baselines such as dual encoder
+models. Moreover, DSI demonstrates strong generalization capabilities,
+outperforming a BM25 baseline in a zero-shot setup."
+2206.10128,"Bridging the Gap Between Indexing and Retrieval for Differentiable
+  Search Index with Query Generation",http://arxiv.org/abs/2206.10128,"The Differentiable Search Index (DSI) is an emerging paradigm for information
+retrieval. Unlike traditional retrieval architectures where index and retrieval
+are two different and separate components, DSI uses a single transformer model
+to perform both indexing and retrieval.
+  In this paper, we identify and tackle an important issue of current DSI
+models: the data distribution mismatch that occurs between the DSI indexing and
+retrieval processes. Specifically, we argue that, at indexing, current DSI
+methods learn to build connections between the text of long documents and the
+identifier of the documents, but then retrieval of document identifiers is
+based on queries that are commonly much shorter than the indexed documents.
+This problem is further exacerbated when using DSI for cross-lingual retrieval,
+where document text and query text are in different languages.
+  To address this fundamental problem of current DSI models, we propose a
+simple yet effective indexing framework for DSI, called DSI-QG. When indexing,
+DSI-QG represents documents with a number of potentially relevant queries
+generated by a query generation model and re-ranked and filtered by a
+cross-encoder ranker. The presence of these queries at indexing allows the DSI
+models to connect a document identifier to a set of queries, hence mitigating
+data distribution mismatches present between the indexing and the retrieval
+phases. Empirical results on popular mono-lingual and cross-lingual passage
+retrieval datasets show that DSI-QG significantly outperforms the original DSI
+model."
+2402.01176,"CorpusLM: Towards a Unified Language Model on Corpus for
+  Knowledge-Intensive Tasks",http://arxiv.org/abs/2402.01176,"Large language models (LLMs) have gained significant attention in various
+fields but prone to hallucination, especially in knowledge-intensive (KI)
+tasks. To address this, retrieval-augmented generation (RAG) has emerged as a
+popular solution to enhance factual accuracy. However, traditional retrieval
+modules often rely on large document index and disconnect with generative
+tasks. With the advent of generative retrieval (GR), language models can
+retrieve by directly generating document identifiers (DocIDs), offering
+superior performance in retrieval tasks. However, the potential relationship
+between GR and downstream tasks remains unexplored. In this paper, we propose
+\textbf(CorpusLM), a unified language model that leverages external corpus to
+tackle various knowledge-intensive tasks by integrating generative retrieval,
+closed-book generation, and RAG through a unified greedy decoding process. We
+design the following mechanisms to facilitate effective retrieval and
+generation, and improve the end-to-end effectiveness of KI tasks: (1) We
+develop a ranking-oriented DocID list generation strategy, which refines GR by
+directly learning from a DocID ranking list, to improve retrieval quality. (2)
+We design a continuous DocIDs-References-Answer generation strategy, which
+facilitates effective and efficient RAG. (3) We employ well-designed
+unsupervised DocID understanding tasks, to comprehend DocID semantics and their
+relevance to downstream tasks. We evaluate our approach on the widely used KILT
+benchmark with two variants of backbone models, i.e., T5 and Llama2.
+Experimental results demonstrate the superior performance of our models in both
+retrieval and downstream tasks."
+2308.14968,Continual Learning for Generative Retrieval over Dynamic Corpora,http://arxiv.org/abs/2308.14968,"Generative retrieval (GR) directly predicts the identifiers of relevant
+documents (i.e., docids) based on a parametric model. It has achieved solid
+performance on many ad-hoc retrieval tasks. So far, these tasks have assumed a
+static document collection. In many practical scenarios, however, document
+collections are dynamic, where new documents are continuously added to the
+corpus. The ability to incrementally index new documents while preserving the
+ability to answer queries with both previously and newly indexed relevant
+documents is vital to applying GR models. In this paper, we address this
+practical continual learning problem for GR. We put forward a novel
+Continual-LEarner for generatiVE Retrieval (CLEVER) model and make two major
+contributions to continual learning for GR: (i) To encode new documents into
+docids with low computational cost, we present Incremental Product
+Quantization, which updates a partial quantization codebook according to two
+adaptive thresholds; and (ii) To memorize new documents for querying without
+forgetting previous knowledge, we propose a memory-augmented learning
+mechanism, to form meaningful connections between old and new documents.
+Empirical results demonstrate the effectiveness and efficiency of the proposed
+model."
+2004.02349,TAPAS: Weakly Supervised Table Parsing via Pre-training,http://arxiv.org/abs/2004.02349,"Answering natural language questions over tables is usually seen as a
+semantic parsing task. To alleviate the collection cost of full logical forms,
+one popular approach focuses on weak supervision consisting of denotations
+instead of logical forms. However, training semantic parsers from weak
+supervision poses difficulties, and in addition, the generated logical forms
+are only used as an intermediate step prior to retrieving the denotation. In
+this paper, we present TAPAS, an approach to question answering over tables
+without generating logical forms. TAPAS trains from weak supervision, and
+predicts the denotation by selecting table cells and optionally applying a
+corresponding aggregation operator to such selection. TAPAS extends BERT's
+architecture to encode tables as input, initializes from an effective joint
+pre-training of text segments and tables crawled from Wikipedia, and is trained
+end-to-end. We experiment with three different semantic parsing datasets, and
+find that TAPAS outperforms or rivals semantic parsing models by improving
+state-of-the-art accuracy on SQA from 55.1 to 67.2 and performing on par with
+the state-of-the-art on WIKISQL and WIKITQ, but with a simpler model
+architecture. We additionally find that transfer learning, which is trivial in
+our setting, from WIKISQL to WIKITQ, yields 48.7 accuracy, 4.2 points above the
+state-of-the-art."
+2105.01736,"Retrieving Complex Tables with Multi-Granular Graph Representation
+  Learning",http://arxiv.org/abs/2105.01736,"The task of natural language table retrieval (NLTR) seeks to retrieve
+semantically relevant tables based on natural language queries. Existing
+learning systems for this task often treat tables as plain text based on the
+assumption that tables are structured as dataframes. However, tables can have
+complex layouts which indicate diverse dependencies between subtable
+structures, such as nested headers. As a result, queries may refer to different
+spans of relevant content that is distributed across these structures.
+Moreover, such systems fail to generalize to novel scenarios beyond those seen
+in the training set. Prior methods are still distant from a generalizable
+solution to the NLTR problem, as they fall short in handling complex table
+layouts or queries over multiple granularities. To address these issues, we
+propose Graph-based Table Retrieval (GTR), a generalizable NLTR framework with
+multi-granular graph representation learning. In our framework, a table is
+first converted into a tabular graph, with cell nodes, row nodes and column
+nodes to capture content at different granularities. Then the tabular graph is
+input to a Graph Transformer model that can capture both table cell content and
+the layout structures. To enhance the robustness and generalizability of the
+model, we further incorporate a self-supervised pre-training task based on
+graph-context matching. Experimental results on two benchmarks show that our
+method leads to significant improvements over the current state-of-the-art
+systems. Further experiments demonstrate promising performance of our method on
+cross-dataset generalization, and enhanced capability of handling complex
+tables and fulfilling diverse query intents. Code and data are available at
+https://github.com/FeiWang96/GTR."
+2103.12011,Open Domain Question Answering over Tables via Dense Retrieval,http://arxiv.org/abs/2103.12011,"Recent advances in open-domain QA have led to strong models based on dense
+retrieval, but only focused on retrieving textual passages. In this work, we
+tackle open-domain QA over tables for the first time, and show that retrieval
+can be improved by a retriever designed to handle tabular context. We present
+an effective pre-training procedure for our retriever and improve retrieval
+quality with mined hard negatives. As relevant datasets are missing, we extract
+a subset of Natural Questions (Kwiatkowski et al., 2019) into a Table QA
+dataset. We find that our retriever improves retrieval results from 72.0 to
+81.1 recall@10 and end-to-end QA results from 33.8 to 37.7 exact match, over a
+BERT based retriever."
+2301.03560,"Solo: Data Discovery Using Natural Language Questions Via A
+  Self-Supervised Approach",http://arxiv.org/abs/2301.03560,"Most deployed data discovery systems, such as Google Datasets, and open data
+portals only support keyword search. Keyword search is geared towards general
+audiences but limits the types of queries the systems can answer. We propose a
+new system that lets users write natural language questions directly. A major
+barrier to using this learned data discovery system is it needs
+expensive-to-collect training data, thus limiting its utility. In this paper,
+we introduce a self-supervised approach to assemble training datasets and train
+learned discovery systems without human intervention. It requires addressing
+several challenges, including the design of self-supervised strategies for data
+discovery, table representation strategies to feed to the models, and relevance
+models that work well with the synthetically generated questions. We combine
+all the above contributions into a system, Solo, that solves the problem end to
+end. The evaluation results demonstrate the new techniques outperform
+state-of-the-art approaches on well-known benchmarks. All in all, the technique
+is a stepping stone towards building learned discovery systems. The code is
+open-sourced at https://github.com/TheDataStation/solo"
+2206.02743,A Neural Corpus Indexer for Document Retrieval,http://arxiv.org/abs/2206.02743,"Current state-of-the-art document retrieval solutions mainly follow an
+index-retrieve paradigm, where the index is hard to be directly optimized for
+the final retrieval target. In this paper, we aim to show that an end-to-end
+deep neural network unifying training and indexing stages can significantly
+improve the recall performance of traditional methods. To this end, we propose
+Neural Corpus Indexer (NCI), a sequence-to-sequence network that generates
+relevant document identifiers directly for a designated query. To optimize the
+recall performance of NCI, we invent a prefix-aware weight-adaptive decoder
+architecture, and leverage tailored techniques including query generation,
+semantic document identifiers, and consistency-based regularization. Empirical
+studies demonstrated the superiority of NCI on two commonly used academic
+benchmarks, achieving +21.4% and +16.8% relative enhancement for Recall@1 on
+NQ320k dataset and R-Precision on TriviaQA dataset, respectively, compared to
+the best baseline method."

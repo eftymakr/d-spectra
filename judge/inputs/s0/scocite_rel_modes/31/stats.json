@@ -1,0 +1,14 @@
+{
+ "query": "031_2506.01833v1",
+ "n_papers": 25,
+ "n_linked": 25,
+ "seconds": 19.23775839805603,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=520958, completion_tokens=83953, total_tokens=604911, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=810266, completion_tokens=89345, total_tokens=899611, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Self Supervised Learning Methods": 10,
+  "Self Supervised Visual Learning": 3,
+  "Genome Variation and Selection Studies": 3,
+  "Pretraining Methods for Language Models": 2,
+  "Representation and Context Learning": 2
+ }
+}

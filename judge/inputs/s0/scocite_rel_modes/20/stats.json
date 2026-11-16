@@ -1,0 +1,13 @@
+{
+ "query": "020_2505.23180v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 20.33880639076233,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=314125, completion_tokens=49301, total_tokens=363426, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=487521, completion_tokens=54061, total_tokens=541582, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Inverse Imaging Deep Learning Methods": 14,
+  "Optimization And Learning Techniques": 2,
+  "Image Restoration Techniques": 2,
+  "Image Restoration And Super Resolution": 2
+ }
+}

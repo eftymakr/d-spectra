@@ -1,0 +1,12 @@
+{
+ "query": "049_2505.19307v1",
+ "n_papers": 18,
+ "n_linked": 18,
+ "seconds": 75.40342879295349,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=217798, completion_tokens=36290, total_tokens=254088, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=316847, completion_tokens=35457, total_tokens=352304, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Dense Retrieval and Question Answering": 5,
+  "Ad-hoc Retrieval Models": 5,
+  "Reinforcement Learning Optimization": 2
+ }
+}

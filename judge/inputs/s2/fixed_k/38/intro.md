@@ -1,0 +1,17 @@
+## Related Works
+
+Memory bandwidth regulation and cache partitioning have been widely studied for achieving predictable timing in real-time computing systems \[[1](http://arxiv.org/abs/2310.02959)\]. These techniques are often combined with partitioned scheduling to manage resource allocation and task execution effectively \[[2](http://arxiv.org/abs/1809.05921)\]. Task execution times are strongly influenced by the availability of allocated resources, making co-allocation of tasks and resources to cores a critical challenge \[[3](http://arxiv.org/abs/2410.14003)\]. 
+
+Several studies have explored the joint optimization of cache partitioning and task scheduling. For instance, \[[4](http://arxiv.org/abs/1210.4053)\] proposes a hybrid multi-layer design space exploration technique that interleaves three optimization layers to improve real-time schedulability. The outer layer performs a breadth-first search with proactive pruning, while the middle layer uses a first-fit heuristic for task allocation. The inner layer employs a recurrence relation for schedulability analysis under non-preemptive fixed-priority scheduling \[[4](http://arxiv.org/abs/1210.4053)\]. This work highlights the importance of systematic exploration of cache partitioning and task scheduling interactions \[[4](http://arxiv.org/abs/1210.4053)\]. 
+
+In addition, \[[5](http://arxiv.org/abs/2501.08484)\] investigates the dynamic allocation of main memory bandwidth and shows how response time computation can be reduced to a maximization problem over assignment of memory requests to different time intervals. This approach improves schedulability in integrated modular avionics systems with memory-intensive workloads \[[5](http://arxiv.org/abs/2501.08484)\]. 
+
+The work in \[[6](http://arxiv.org/abs/2102.11528)\] introduces a per-bank bandwidth regulation approach for multi-banked shared LLCs, which prevents unnecessary throttling of cache accesses to non-contended banks. This method improves performance without compromising isolation benefits, protecting real-time tasks from cache bank-aware DoS attacks \[[6](http://arxiv.org/abs/2102.11528)\]. 
+
+Furthermore, \[[7](http://arxiv.org/abs/1712.03209)\] presents a theoretical study of the joint cache partition and job assignment problem, leading to a constant approximation algorithm. The work also shows that this problem is harder than the ordered unrelated machines scheduling problem, which is of independent interest \[[7](http://arxiv.org/abs/1712.03209)\]. 
+
+The paper \[[8](http://arxiv.org/abs/1712.03246)\] introduces a co-design approach for resource allocation and deadline decomposition, leveraging generative profiling to capture time-varying resource use characteristics of tasks under different budgets. This method improves schedulability by jointly allocating resources and deadlines to subtasks \[[8](http://arxiv.org/abs/1712.03246)\]. 
+
+In the context of heterogeneous systems, \[[9](http://arxiv.org/abs/1312.4509)\] presents a formal proof for the optimal scheduling policy for systems with arbitrary number of resource types, including specialized accelerators. The work transforms the optimal scheduling policy into a nonlinear integer optimization problem and proposes a fast, near-optimal algorithm \[[9](http://arxiv.org/abs/1312.4509)\]. 
+
+Additionally, \[[10](http://arxiv.org/abs/1809.02892)\] introduces a dependency-graph approach for multiprocessor real-time synchronization, showing that a simplified version of the synchronization problem is NP-hard. This work develops a

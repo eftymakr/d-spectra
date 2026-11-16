@@ -1,0 +1,11 @@
+{
+ "query": "019_2505.23290v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 19.821776390075684,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=324700, completion_tokens=48322, total_tokens=373022, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=509887, completion_tokens=56081, total_tokens=565968, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "3D Facial Animation from Speech": 14,
+  "Speech Driven 3D Facial Animation": 10
+ }
+}

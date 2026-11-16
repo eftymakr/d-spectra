@@ -1,0 +1,15 @@
+{
+ "query": "054_2505.00552v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 97.0792384147644,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=149131, completion_tokens=25473, total_tokens=174604, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=214314, completion_tokens=24614, total_tokens=238928, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Graph Neural Networks for Recommendation": 13,
+  "Graph Convolutional Networks Research": 3,
+  "Recommender Systems Research": 2,
+  "Network Embedding Techniques": 2,
+  "Graph Based Recommendation Methods": 2,
+  "Collaborative Filtering Research": 2
+ }
+}

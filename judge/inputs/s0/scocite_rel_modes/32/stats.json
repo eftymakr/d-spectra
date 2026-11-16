@@ -1,0 +1,13 @@
+{
+ "query": "032_2506.00382v1",
+ "n_papers": 22,
+ "n_linked": 22,
+ "seconds": 18.518837451934814,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=452266, completion_tokens=70576, total_tokens=522842, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=702366, completion_tokens=77307, total_tokens=779673, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Natural Language Processing Models": 8,
+  "Parameter Efficient Fine Tuning Techniques": 4,
+  "Zero Shot Few Shot Transfer Learning": 3,
+  "Language Model Reasoning And Alignment": 2
+ }
+}

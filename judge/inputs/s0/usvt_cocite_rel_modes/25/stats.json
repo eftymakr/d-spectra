@@ -1,0 +1,12 @@
+{
+ "query": "025_2505.22552v1",
+ "n_papers": 21,
+ "n_linked": 21,
+ "seconds": 18.627016067504883,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=287187, completion_tokens=42454, total_tokens=329641, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=446637, completion_tokens=49031, total_tokens=495668, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Knowledge Graph and Language Models": 8,
+  "Knowledge Graphs and Language Models": 4,
+  "Language Model Reasoning Capabilities": 2
+ }
+}

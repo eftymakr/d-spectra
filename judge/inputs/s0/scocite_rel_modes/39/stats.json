@@ -1,0 +1,14 @@
+{
+ "query": "039_2505.08071v1",
+ "n_papers": 24,
+ "n_linked": 24,
+ "seconds": 19.46662449836731,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=163131, completion_tokens=25599, total_tokens=188730, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=251956, completion_tokens=29144, total_tokens=281100, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Genome Assembly Tools And Techniques": 6,
+  "Genome Assembly Algorithms": 4,
+  "Genome Assembly Methods Comparison": 3,
+  "Genome Analysis Techniques": 3,
+  "Genome Assembly Techniques": 2
+ }
+}

@@ -1,0 +1,17 @@
+## Related Works
+
+Differential privacy (DP) has been extensively studied and applied in various contexts, with numerous works addressing its implementation, verification, and extensions. Early foundational work established DP as a rigorous framework for privacy-preserving data analysis \[[1](http://arxiv.org/abs/1605.02065)\]. The concept of concentrated differential privacy was introduced as a relaxation that allows for sharper analyses and better accuracy \[[17](http://arxiv.org/abs/1603.01887)\]. This approach was further unified with approximate differential privacy, offering a more flexible framework \[[1](http://arxiv.org/abs/1605.02065)\]. 
+
+The formal verification of differential privacy for interactive systems has also been explored, with the development of probabilistic automaton models and sound proof techniques based on probabilistic bisimulation relations \[[2](http://arxiv.org/abs/1101.2819)\]. These techniques are crucial for ensuring that systems adhere to privacy guarantees, especially in distributed settings where unfaithful execution of mechanisms can occur \[[24](http://arxiv.org/abs/2104.06569)\]. 
+
+Local differential privacy (LDP) has been a focus of recent research, particularly in the context of multidimensional data collection and analysis. Several mechanisms have been proposed to improve the accuracy of LDP protocols while maintaining privacy \[[13](http://arxiv.org/abs/1907.00782)\]. However, LDP is vulnerable to data poisoning attacks, where attackers inject fake users to manipulate the results \[[15](http://arxiv.org/abs/1911.02046)\]. These attacks highlight the need for robust verification mechanisms and countermeasures. 
+
+The complexity of differential privacy has also been a topic of interest, with studies analyzing the degradation of privacy levels over multiple queries and the development of composition theorems to characterize this degradation \[[10](http://arxiv.org/abs/1311.0776)\]. These theorems are essential for understanding the cumulative privacy loss in distributed systems. 
+
+Efforts to improve the efficiency and accuracy of differentially private mechanisms have led to the development of new algorithms, such as the matrix mechanism, which optimizes the noise distribution for correlated queries \[[16](http://arxiv.org/abs/0912.4742)\]. Additionally, the discrete Gaussian distribution has been introduced as a practical alternative to continuous Gaussian noise, offering better interpretability and accuracy in discrete data settings \[[12](http://arxiv.org/abs/2004.00010)\]. 
+
+Recent work has also focused on the verification of differential privacy through shadow execution, which allows for the generation of proofs with minimal programmer annotations \[[11](http://arxiv.org/abs/1903.12254)\]. This approach has been applied to verify complex algorithms like Report Noisy Max and Sparse Vector, demonstrating its effectiveness in real-world scenarios \[[11](http://arxiv.org/abs/1903.12254)\]. 
+
+The relationship between zero-knowledge proofs (ZKP) and differential privacy has also been explored, showing that while ZKPs can achieve DP under verifiability requirements, they are not strictly necessary \[[24](http://arxiv.org/abs/2104.06569)\]. This insight is important for developing more flexible and efficient verification mechanisms. 
+
+In summary, the field of differential privacy has seen significant advancements in both theoretical foundations and practical

@@ -1,0 +1,12 @@
+{
+ "query": "019_2505.23290v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 82.63809943199158,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=352054, completion_tokens=58161, total_tokens=410215, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=522080, completion_tokens=56918, total_tokens=578998, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Talking Face Generation Research": 14,
+  "Speech Driven Facial Animation": 6,
+  "Audio Visual Talking Face Generation": 3
+ }
+}

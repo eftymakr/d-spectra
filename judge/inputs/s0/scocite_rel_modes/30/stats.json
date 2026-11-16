@@ -1,0 +1,11 @@
+{
+ "query": "030_2504.06975v1",
+ "n_papers": 16,
+ "n_linked": 16,
+ "seconds": 16.095897674560547,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=11499, completion_tokens=2396, total_tokens=13895, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=16246, completion_tokens=2170, total_tokens=18416, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Database Isolation Verification Tools": 8,
+  "Database Consistency Models And Analysis": 7
+ }
+}

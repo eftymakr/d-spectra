@@ -1,0 +1,13 @@
+{
+ "query": "045_2505.23452v1",
+ "n_papers": 23,
+ "n_linked": 23,
+ "seconds": 16.943448543548584,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=346965, completion_tokens=51463, total_tokens=398428, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=543788, completion_tokens=59486, total_tokens=603274, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Emotion Analysis in Text and Social Media": 13,
+  "Mobile App Review Analysis": 5,
+  "Emotion Analysis in Text Data": 2,
+  "Emotion Analysis Datasets": 2
+ }
+}

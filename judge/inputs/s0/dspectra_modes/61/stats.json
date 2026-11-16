@@ -1,0 +1,14 @@
+{
+ "query": "061_2504.12900v1",
+ "n_papers": 27,
+ "n_linked": 27,
+ "seconds": 91.18387985229492,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=50276, completion_tokens=9268, total_tokens=59544, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=68680, completion_tokens=7986, total_tokens=76666, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Fashion Style and Recommendation Research": 7,
+  "Generative Adversarial Networks": 3,
+  "Outfit Generation and Recommendation": 3,
+  "Recommender Systems Research": 2,
+  "Fashion Generation and Recommendation": 2
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "query": "013_2506.01071v1",
+ "n_papers": 26,
+ "n_linked": 26,
+ "seconds": 19.231794357299805,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=509735, completion_tokens=81488, total_tokens=591223, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=794876, completion_tokens=87581, total_tokens=882457, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Long Tailed Visual Recognition": 19,
+  "Contrastive Learning for Long Tailed Recognition": 6
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "query": "046_2505.21811v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 21.0239315032959,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=228812, completion_tokens=34507, total_tokens=263319, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=360305, completion_tokens=40481, total_tokens=400786, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Cross Domain Sequential Recommendation": 21,
+  "Sequential Recommendation Models": 7
+ }
+}

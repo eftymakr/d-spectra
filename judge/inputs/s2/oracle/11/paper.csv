@@ -1,0 +1,241 @@
+id,title,url,snippet
+1611.07828,Coarse-to-Fine Volumetric Prediction for Single-Image 3D Human Pose,http://arxiv.org/abs/1611.07828,"This paper addresses the challenge of 3D human pose estimation from a single
+color image. Despite the general success of the end-to-end learning paradigm,
+top performing approaches employ a two-step solution consisting of a
+Convolutional Network (ConvNet) for 2D joint localization and a subsequent
+optimization step to recover 3D pose. In this paper, we identify the
+representation of 3D pose as a critical issue with current ConvNet approaches
+and make two important contributions towards validating the value of end-to-end
+learning for this task. First, we propose a fine discretization of the 3D space
+around the subject and train a ConvNet to predict per voxel likelihoods for
+each joint. This creates a natural representation for 3D pose and greatly
+improves performance over the direct regression of joint coordinates. Second,
+to further improve upon initial estimates, we employ a coarse-to-fine
+prediction scheme. This step addresses the large dimensionality increase and
+enables iterative refinement and repeated processing of the image features. The
+proposed approach outperforms all state-of-the-art methods on standard
+benchmarks achieving a relative error reduction greater than 30% on average.
+Additionally, we investigate using our volumetric representation in a related
+architecture which is suboptimal compared to our end-to-end approach, but is of
+practical interest, since it enables training when no image with corresponding
+3D groundtruth is available, and allows us to present compelling results for
+in-the-wild images."
+1705.03098,A simple yet effective baseline for 3d human pose estimation,http://arxiv.org/abs/1705.03098,"Following the success of deep convolutional networks, state-of-the-art
+methods for 3d human pose estimation have focused on deep end-to-end systems
+that predict 3d joint locations given raw image pixels. Despite their excellent
+performance, it is often not easy to understand whether their remaining error
+stems from a limited 2d pose (visual) understanding, or from a failure to map
+2d poses into 3-dimensional positions. With the goal of understanding these
+sources of error, we set out to build a system that given 2d joint locations
+predicts 3d positions. Much to our surprise, we have found that, with current
+technology, ""lifting"" ground truth 2d joint locations to 3d space is a task
+that can be solved with a remarkably low error rate: a relatively simple deep
+feed-forward network outperforms the best reported result by about 30\% on
+Human3.6M, the largest publicly available 3d pose estimation benchmark.
+Furthermore, training our system on the output of an off-the-shelf
+state-of-the-art 2d detector (\ie, using images as input) yields state of the
+art results -- this includes an array of systems that have been trained
+end-to-end specifically for this task. Our results indicate that a large
+portion of the error of modern deep 3d pose estimation systems stems from their
+visual analysis, and suggests directions to further advance the state of the
+art in 3d human pose estimation."
+2111.12707,MHFormer: Multi-Hypothesis Transformer for 3D Human Pose Estimation,http://arxiv.org/abs/2111.12707,"Estimating 3D human poses from monocular videos is a challenging task due to
+depth ambiguity and self-occlusion. Most existing works attempt to solve both
+issues by exploiting spatial and temporal relationships. However, those works
+ignore the fact that it is an inverse problem where multiple feasible solutions
+(i.e., hypotheses) exist. To relieve this limitation, we propose a
+Multi-Hypothesis Transformer (MHFormer) that learns spatio-temporal
+representations of multiple plausible pose hypotheses. In order to effectively
+model multi-hypothesis dependencies and build strong relationships across
+hypothesis features, the task is decomposed into three stages: (i) Generate
+multiple initial hypothesis representations; (ii) Model self-hypothesis
+communication, merge multiple hypotheses into a single converged representation
+and then partition it into several diverged hypotheses; (iii) Learn
+cross-hypothesis communication and aggregate the multi-hypothesis features to
+synthesize the final 3D pose. Through the above processes, the final
+representation is enhanced and the synthesized pose is much more accurate.
+Extensive experiments show that MHFormer achieves state-of-the-art results on
+two challenging datasets: Human3.6M and MPI-INF-3DHP. Without bells and
+whistles, its performance surpasses the previous best result by a large margin
+of 3% on Human3.6M. Code and models are available at
+\url(https://github.com/Vegetebird/MHFormer)."
+2302.01825,HDFormer: High-order Directed Transformer for 3D Human Pose Estimation,http://arxiv.org/abs/2302.01825,"Human pose estimation is a challenging task due to its structured data
+sequence nature. Existing methods primarily focus on pair-wise interaction of
+body joints, which is insufficient for scenarios involving overlapping joints
+and rapidly changing poses. To overcome these issues, we introduce a novel
+approach, the High-order Directed Transformer (HDFormer), which leverages
+high-order bone and joint relationships for improved pose estimation.
+Specifically, HDFormer incorporates both self-attention and high-order
+attention to formulate a multi-order attention module. This module facilitates
+first-order ""joint$\leftrightarrow$joint"", second-order
+""bone$\leftrightarrow$joint"", and high-order ""hyperbone$\leftrightarrow$joint""
+interactions, effectively addressing issues in complex and occlusion-heavy
+situations. In addition, modern CNN techniques are integrated into the
+transformer-based architecture, balancing the trade-off between performance and
+efficiency. HDFormer significantly outperforms state-of-the-art (SOTA) models
+on Human3.6M and MPI-INF-3DHP datasets, requiring only 1/10 of the parameters
+and significantly lower computational costs. Moreover, HDFormer demonstrates
+broad real-world applicability, enabling real-time, accurate 3D pose
+estimation. The source code is in https://github.com/hyer/HDFormer"
+2107.07797,Conditional Directed Graph Convolution for 3D Human Pose Estimation,http://arxiv.org/abs/2107.07797,"Graph convolutional networks have significantly improved 3D human pose
+estimation by representing the human skeleton as an undirected graph. However,
+this representation fails to reflect the articulated characteristic of human
+skeletons as the hierarchical orders among the joints are not explicitly
+presented. In this paper, we propose to represent the human skeleton as a
+directed graph with the joints as nodes and bones as edges that are directed
+from parent joints to child joints. By so doing, the directions of edges can
+explicitly reflect the hierarchical relationships among the nodes. Based on
+this representation, we further propose a spatial-temporal conditional directed
+graph convolution to leverage varying non-local dependence for different poses
+by conditioning the graph topology on input poses. Altogether, we form a
+U-shaped network, named U-shaped Conditional Directed Graph Convolutional
+Network, for 3D human pose estimation from monocular videos. To evaluate the
+effectiveness of our method, we conducted extensive experiments on two
+challenging large-scale benchmarks: Human3.6M and MPI-INF-3DHP. Both
+quantitative and qualitative results show that our method achieves top
+performance. Also, ablation studies show that directed graphs can better
+exploit the hierarchy of articulated human skeletons than undirected graphs,
+and the conditional connections can yield adaptive graph topologies for
+different poses."
+1711.07971,Non-local Neural Networks,http://arxiv.org/abs/1711.07971,"Both convolutional and recurrent operations are building blocks that process
+one local neighborhood at a time. In this paper, we present non-local
+operations as a generic family of building blocks for capturing long-range
+dependencies. Inspired by the classical non-local means method in computer
+vision, our non-local operation computes the response at a position as a
+weighted sum of the features at all positions. This building block can be
+plugged into many computer vision architectures. On the task of video
+classification, even without any bells and whistles, our non-local models can
+compete or outperform current competition winners on both Kinetics and Charades
+datasets. In static image recognition, our non-local models improve object
+detection/segmentation and pose estimation on the COCO suite of tasks. Code is
+available at https://github.com/facebookresearch/video-nonlocal-net ."
+2211.16940,DiffPose: Toward More Reliable 3D Pose Estimation,http://arxiv.org/abs/2211.16940,"Monocular 3D human pose estimation is quite challenging due to the inherent
+ambiguity and occlusion, which often lead to high uncertainty and
+indeterminacy. On the other hand, diffusion models have recently emerged as an
+effective tool for generating high-quality images from noise. Inspired by their
+capability, we explore a novel pose estimation framework (DiffPose) that
+formulates 3D pose estimation as a reverse diffusion process. We incorporate
+novel designs into our DiffPose to facilitate the diffusion process for 3D pose
+estimation: a pose-specific initialization of pose uncertainty distributions, a
+Gaussian Mixture Model-based forward diffusion process, and a
+context-conditioned reverse diffusion process. Our proposed DiffPose
+significantly outperforms existing methods on the widely used pose estimation
+benchmarks Human3.6M and MPI-INF-3DHP. Project page:
+https://gongjia0208.github.io/Diffpose/."
+2211.16487,DiffPose: Multi-hypothesis Human Pose Estimation using Diffusion models,http://arxiv.org/abs/2211.16487,"Traditionally, monocular 3D human pose estimation employs a machine learning
+model to predict the most likely 3D pose for a given input image. However, a
+single image can be highly ambiguous and induces multiple plausible solutions
+for the 2D-3D lifting step which results in overly confident 3D pose
+predictors. To this end, we propose \emph(DiffPose), a conditional diffusion
+model, that predicts multiple hypotheses for a given input image. In comparison
+to similar approaches, our diffusion model is straightforward and avoids
+intensive hyperparameter tuning, complex network structures, mode collapse, and
+unstable training. Moreover, we tackle a problem of the common two-step
+approach that first estimates a distribution of 2D joint locations via
+joint-wise heatmaps and consecutively approximates them based on first- or
+second-moment statistics. Since such a simplification of the heatmaps removes
+valid information about possibly correct, though labeled unlikely, joint
+locations, we propose to represent the heatmaps as a set of 2D joint candidate
+samples. To extract information about the original distribution from these
+samples we introduce our \emph(embedding transformer) that conditions the
+diffusion model. Experimentally, we show that DiffPose slightly improves upon
+the state of the art for multi-hypothesis pose estimation for simple poses and
+outperforms it by a large margin for highly ambiguous poses."
+1710.06513,"Learning Pose Grammar to Encode Human Body Configuration for 3D Pose
+  Estimation",http://arxiv.org/abs/1710.06513,"In this paper, we propose a pose grammar to tackle the problem of 3D human
+pose estimation. Our model directly takes 2D pose as input and learns a
+generalized 2D-3D mapping function. The proposed model consists of a base
+network which efficiently captures pose-aligned features and a hierarchy of
+Bi-directional RNNs (BRNN) on the top to explicitly incorporate a set of
+knowledge regarding human body configuration (i.e., kinematics, symmetry, motor
+coordination). The proposed model thus enforces high-level constraints over
+human poses. In learning, we develop a pose sample simulator to augment
+training samples in virtual camera views, which further improves our model
+generalizability. We validate our method on public 3D human pose benchmarks and
+propose a new evaluation protocol working on cross-view setting to verify the
+generalization capability of different methods. We empirically observe that
+most state-of-the-art methods encounter difficulty under such setting while our
+method can well handle such challenges."
+2103.14304,"Exploiting Temporal Contexts with Strided Transformer for 3D Human Pose
+  Estimation",http://arxiv.org/abs/2103.14304,"Despite the great progress in 3D human pose estimation from videos, it is
+still an open problem to take full advantage of a redundant 2D pose sequence to
+learn representative representations for generating one 3D pose. To this end,
+we propose an improved Transformer-based architecture, called Strided
+Transformer, which simply and effectively lifts a long sequence of 2D joint
+locations to a single 3D pose. Specifically, a Vanilla Transformer Encoder
+(VTE) is adopted to model long-range dependencies of 2D pose sequences. To
+reduce the redundancy of the sequence, fully-connected layers in the
+feed-forward network of VTE are replaced with strided convolutions to
+progressively shrink the sequence length and aggregate information from local
+contexts. The modified VTE is termed as Strided Transformer Encoder (STE),
+which is built upon the outputs of VTE. STE not only effectively aggregates
+long-range information to a single-vector representation in a hierarchical
+global and local fashion, but also significantly reduces the computation cost.
+Furthermore, a full-to-single supervision scheme is designed at both full
+sequence and single target frame scales applied to the outputs of VTE and STE,
+respectively. This scheme imposes extra temporal smoothness constraints in
+conjunction with the single target frame supervision and hence helps produce
+smoother and more accurate 3D poses. The proposed Strided Transformer is
+evaluated on two challenging benchmark datasets, Human3.6M and HumanEva-I, and
+achieves state-of-the-art results with fewer parameters. Code and models are
+available at \url(https://github.com/Vegetebird/StridedTransformer-Pose3D)."
+2203.00859,"MixSTE: Seq2seq Mixed Spatio-Temporal Encoder for 3D Human Pose
+  Estimation in Video",http://arxiv.org/abs/2203.00859,"Recent transformer-based solutions have been introduced to estimate 3D human
+pose from 2D keypoint sequence by considering body joints among all frames
+globally to learn spatio-temporal correlation. We observe that the motions of
+different joints differ significantly. However, the previous methods cannot
+efficiently model the solid inter-frame correspondence of each joint, leading
+to insufficient learning of spatial-temporal correlation. We propose MixSTE
+(Mixed Spatio-Temporal Encoder), which has a temporal transformer block to
+separately model the temporal motion of each joint and a spatial transformer
+block to learn inter-joint spatial correlation. These two blocks are utilized
+alternately to obtain better spatio-temporal feature encoding. In addition, the
+network output is extended from the central frame to entire frames of the input
+video, thereby improving the coherence between the input and output sequences.
+Extensive experiments are conducted on three benchmarks (Human3.6M,
+MPI-INF-3DHP, and HumanEva). The results show that our model outperforms the
+state-of-the-art approach by 10.9% P-MPJPE and 7.6% MPJPE. The code is
+available at https://github.com/JinluZhang1126/MixSTE."
+1706.03762,Attention Is All You Need,http://arxiv.org/abs/1706.03762,"The dominant sequence transduction models are based on complex recurrent or
+convolutional neural networks in an encoder-decoder configuration. The best
+performing models also connect the encoder and decoder through an attention
+mechanism. We propose a new simple network architecture, the Transformer, based
+solely on attention mechanisms, dispensing with recurrence and convolutions
+entirely. Experiments on two machine translation tasks show these models to be
+superior in quality while being more parallelizable and requiring significantly
+less time to train. Our model achieves 28.4 BLEU on the WMT 2014
+English-to-German translation task, improving over the existing best results,
+including ensembles by over 2 BLEU. On the WMT 2014 English-to-French
+translation task, our model establishes a new single-model state-of-the-art
+BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction
+of the training costs of the best models from the literature. We show that the
+Transformer generalizes well to other tasks by applying it successfully to
+English constituency parsing both with large and limited training data."
+1910.12032,"HEMlets Pose: Learning Part-Centric Heatmap Triplets for Accurate 3D
+  Human Pose Estimation",http://arxiv.org/abs/1910.12032,"Estimating 3D human pose from a single image is a challenging task. This work
+attempts to address the uncertainty of lifting the detected 2D joints to the 3D
+space by introducing an intermediate state - Part-Centric Heatmap Triplets
+(HEMlets), which shortens the gap between the 2D observation and the 3D
+interpretation. The HEMlets utilize three joint-heatmaps to represent the
+relative depth information of the end-joints for each skeletal body part. In
+our approach, a Convolutional Network (ConvNet) is first trained to predict
+HEMlests from the input image, followed by a volumetric joint-heatmap
+regression. We leverage on the integral operation to extract the joint
+locations from the volumetric heatmaps, guaranteeing end-to-end learning.
+Despite the simplicity of the network design, the quantitative comparisons show
+a significant performance improvement over the best-of-grade method (by 20% on
+Human3.6M). The proposed method naturally supports training with ""in-the-wild""
+images, where only weakly-annotated relative depth information of skeletal
+joints is available. This further improves the generalization ability of our
+model, as validated by qualitative comparisons on outdoor images."
+2103.16385,Graph Stacked Hourglass Networks for 3D Human Pose Estimation,http://arxiv.org/abs/2103.16385,"In this paper, we propose a novel graph convolutional network architecture,
+Graph Stacked Hourglass Networks, for 2D-to-3D human pose estimation tasks. The
+proposed architecture consists of repeated encoder-decoder, in which
+graph-structured features are processed across three different scales of human
+skeletal representations. This multi-scale architecture enables the model to
+learn both local and global feature representations, which are critical for 3D
+human pose estimation. We also introduce a multi-level feature learning
+approach using different-depth intermediate features and show the performance
+improvements that result from exploiting multi-scale, multi-level feature
+representations. Extensive experiments are conducted to validate our approach,
+and the results show that our model outperforms the state-of-the-art."

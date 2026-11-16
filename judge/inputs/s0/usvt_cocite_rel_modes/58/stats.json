@@ -1,0 +1,10 @@
+{
+ "query": "058_2504.15849v1",
+ "n_papers": 3,
+ "n_linked": 3,
+ "seconds": 12.09803318977356,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=66800, completion_tokens=11992, total_tokens=78792, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=99546, completion_tokens=12340, total_tokens=111886, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Table Recognition Systems": 2
+ }
+}

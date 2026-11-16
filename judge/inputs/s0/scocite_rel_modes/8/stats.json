@@ -1,0 +1,11 @@
+{
+ "query": "008_2505.23996v1",
+ "n_papers": 21,
+ "n_linked": 21,
+ "seconds": 17.23779320716858,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=355269, completion_tokens=55198, total_tokens=410467, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=553044, completion_tokens=60987, total_tokens=614031, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Fairness in Machine Learning": 15,
+  "Bias Fairness Machine Learning": 2
+ }
+}

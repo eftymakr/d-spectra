@@ -1,0 +1,12 @@
+{
+ "query": "021_2505.22616v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 19.493459701538086,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=295385, completion_tokens=45318, total_tokens=340703, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=460074, completion_tokens=50890, total_tokens=510964, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Video Frame Interpolation Techniques": 20,
+  "Neural Radiance Fields Research": 2,
+  "Neural Implicit Surface Reconstruction": 2
+ }
+}

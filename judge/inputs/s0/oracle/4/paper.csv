@@ -1,0 +1,186 @@
+id,title,url,snippet
+2205.12685,"Ground-Truth Labels Matter: A Deeper Look into Input-Label
+  Demonstrations",http://arxiv.org/abs/2205.12685,"Despite recent explosion of interests in in-context learning, the underlying
+mechanism and the precise impact of the quality of demonstrations remain
+elusive. Intuitively, ground-truth labels should have as much impact in
+in-context learning (ICL) as supervised learning, but recent work reported that
+the input-label correspondence is significantly less important than previously
+thought. Intrigued by this counter-intuitive observation, we re-examine the
+importance of ground-truth labels in in-context learning. With the introduction
+of two novel metrics, namely Label-Correctness Sensitivity and Ground-truth
+Label Effect Ratio (GLER), we were able to conduct quantifiable analysis on the
+impact of ground-truth label demonstrations. Through extensive analyses, we
+find that the correct input-label mappings can have varying impacts on the
+downstream in-context learning performances, depending on the experimental
+configuration. Through additional studies, we identify key components, such as
+the verbosity of prompt templates and the language model size, as the
+controlling factor to achieve more noise-resilient ICL."
+2202.12837,"Rethinking the Role of Demonstrations: What Makes In-Context Learning
+  Work?",http://arxiv.org/abs/2202.12837,"Large language models (LMs) are able to in-context learn -- perform a new
+task via inference alone by conditioning on a few input-label pairs
+(demonstrations) and making predictions for new inputs. However, there has been
+little understanding of how the model learns and which aspects of the
+demonstrations contribute to end task performance. In this paper, we show that
+ground truth demonstrations are in fact not required -- randomly replacing
+labels in the demonstrations barely hurts performance on a range of
+classification and multi-choce tasks, consistently over 12 different models
+including GPT-3. Instead, we find that other aspects of the demonstrations are
+the key drivers of end task performance, including the fact that they provide a
+few examples of (1) the label space, (2) the distribution of the input text,
+and (3) the overall format of the sequence. Together, our analysis provides a
+new way of understanding how and why in-context learning works, while opening
+up new questions about how much can be learned from large language models
+through inference alone."
+2411.19581,In-Context Learning with Noisy Labels,http://arxiv.org/abs/2411.19581,"In-context learning refers to the emerging ability of large language models
+(LLMs) to perform a target task without additional training, utilizing
+demonstrations of the task. Recent studies aim to enhance in-context learning
+performance by selecting more useful demonstrations. However, they overlook the
+presence of inevitable noisy labels in task demonstrations that arise during
+the labeling process in the real-world. In this paper, we propose a new task,
+in-context learning with noisy labels, which aims to solve real-world problems
+for in-context learning where labels in task demonstrations would be corrupted.
+Moreover, we propose a new method and baseline methods for the new task,
+inspired by studies in learning with noisy labels. Through experiments, we
+demonstrate that our proposed method can serve as a safeguard against
+performance degradation in in-context learning caused by noisy labels."
+2405.17264,On the Noise Robustness of In-Context Learning for Text Generation,http://arxiv.org/abs/2405.17264,"Large language models (LLMs) have shown impressive performance on downstream
+tasks by in-context learning (ICL), which heavily relies on the quality of
+demonstrations selected from a large set of annotated examples. Recent works
+claim that in-context learning is robust to noisy demonstrations in text
+classification. In this work, we show that, on text generation tasks, noisy
+annotations significantly hurt the performance of in-context learning. To
+circumvent the issue, we propose a simple and effective approach called Local
+Perplexity Ranking (LPR), which replaces the ""noisy"" candidates with their
+nearest neighbors that are more likely to be clean. Our method is motivated by
+analyzing the perplexity deviation caused by noisy labels and decomposing
+perplexity into inherent perplexity and matching perplexity. Our key idea
+behind LPR is thus to decouple the matching perplexity by performing the
+ranking among the neighbors in semantic space. Our approach can prevent the
+selected demonstrations from including mismatched input-label pairs while
+preserving the effectiveness of the original selection methods. Extensive
+experiments demonstrate the effectiveness of LPR, improving the EM score by up
+to 18.75 on common benchmarks with noisy annotations. Our code is available at
+https://github.com/ml-stat-Sustech/Local-Perplexity-Ranking."
+2309.09117,Contrastive Decoding Improves Reasoning in Large Language Models,http://arxiv.org/abs/2309.09117,"We demonstrate that Contrastive Decoding -- a simple, computationally light,
+and training-free text generation method proposed by Li et al 2022 -- achieves
+large out-of-the-box improvements over greedy decoding on a variety of
+reasoning tasks. Originally shown to improve the perceived quality of long-form
+text generation, Contrastive Decoding searches for strings that maximize a
+weighted difference in likelihood between strong and weak models. We show that
+Contrastive Decoding leads LLaMA-65B to outperform LLaMA 2, GPT-3.5 and PaLM
+2-L on the HellaSwag commonsense reasoning benchmark, and to outperform LLaMA
+2, GPT-3.5 and PaLM-540B on the GSM8K math word reasoning benchmark, in
+addition to improvements on a collection of other tasks. Analysis suggests that
+Contrastive Decoding improves over existing methods by preventing some abstract
+reasoning errors, as well as by avoiding simpler modes such as copying sections
+of the input during chain-of-thought. Overall, Contrastive Decoding outperforms
+nucleus sampling for long-form generation and greedy decoding for reasoning
+tasks, making it a powerful general purpose method for generating text from
+language models."
+2305.04320,Unified Demonstration Retriever for In-Context Learning,http://arxiv.org/abs/2305.04320,"In-context learning is a new learning paradigm where a language model
+conditions on a few input-output pairs (demonstrations) and a test input, and
+directly outputs the prediction. It has been shown highly dependent on the
+provided demonstrations and thus promotes the research of demonstration
+retrieval: given a test input, relevant examples are retrieved from the
+training set to serve as informative demonstrations for in-context learning.
+While previous works focus on training task-specific retrievers for several
+tasks separately, these methods are often hard to transfer and scale on various
+tasks, and separately trained retrievers incur a lot of parameter storage and
+deployment cost. In this paper, we propose Unified Demonstration Retriever
+(\textbf(UDR)), a single model to retrieve demonstrations for a wide range of
+tasks. To train UDR, we cast various tasks' training signals into a unified
+list-wise ranking formulation by language model's feedback. Then we propose a
+multi-task list-wise ranking training framework, with an iterative mining
+strategy to find high-quality candidates, which can help UDR fully incorporate
+various tasks' signals. Experiments on 30+ tasks across 13 task families and
+multiple data domains show that UDR significantly outperforms baselines.
+Further analyses show the effectiveness of each proposed component and UDR's
+strong ability in various scenarios including different LMs (1.3B - 175B),
+unseen datasets, varying demonstration quantities, etc."
+2210.15097,Contrastive Decoding: Open-ended Text Generation as Optimization,http://arxiv.org/abs/2210.15097,"Given a language model (LM), maximum probability is a poor decoding objective
+for open-ended generation, because it produces short and repetitive text. On
+the other hand, sampling can often produce incoherent text that drifts from the
+original topics. We propose contrastive decoding (CD), a reliable decoding
+approach that optimizes a contrastive objective subject to a plausibility
+constraint. The contrastive objective returns the difference between the
+likelihood under a large LM (called the expert, e.g. OPT-13B) and a small LM
+(called the amateur, e.g. OPT-125M), and the constraint ensures that the
+outputs are plausible. CD is inspired by the fact that the failures of larger
+LMs (e.g., repetition, incoherence) are even more prevalent in smaller LMs, and
+that this difference signals which texts should be preferred. CD requires zero
+additional training, and produces higher quality text than decoding from the
+larger LM alone. It also works across model scales (OPT-13B and GPT2-1.5B) and
+significantly outperforms four strong decoding algorithms (e.g., nucleus,
+top-k) in automatic and human evaluations across wikipedia, news and story
+domains."
+2405.02750,"Enhancing Contextual Understanding in Large Language Models through
+  Contrastive Decoding",http://arxiv.org/abs/2405.02750,"Large language models (LLMs) tend to inadequately integrate input context
+during text generation, relying excessively on encoded prior knowledge in model
+parameters, potentially resulting in generated text with factual
+inconsistencies or contextually unfaithful content. LLMs utilize two primary
+knowledge sources: 1) prior (parametric) knowledge from pretraining, and 2)
+contextual (non-parametric) knowledge from input prompts. The study addresses
+the open question of how LLMs effectively balance these knowledge sources
+during the generation process, specifically in the context of open-domain
+question answering. To address this issue, we introduce a novel approach
+integrating contrastive decoding with adversarial irrelevant passages as
+negative samples to enhance robust context grounding during generation.
+Notably, our method operates at inference time without requiring further
+training. We conduct comprehensive experiments to demonstrate its applicability
+and effectiveness, providing empirical evidence showcasing its superiority over
+existing methodologies. Our code is publicly available at:
+https://github.com/amazon-science/ContextualUnderstanding-ContrastiveDecoding."
+2311.06668,"In-context Vectors: Making In Context Learning More Effective and
+  Controllable Through Latent Space Steering",http://arxiv.org/abs/2311.06668,"Large language models (LLMs) demonstrate emergent in-context learning
+capabilities, where they adapt to new tasks based on example demonstrations.
+However, in-context learning has seen limited effectiveness in many settings,
+is difficult to quantitatively control and takes up context window space. To
+overcome these limitations, we propose an alternative approach that recasts
+in-context learning as in-context vectors (ICV). Using ICV has two steps. We
+first use a forward pass on demonstration examples to create the in-context
+vector from the latent embedding of the LLM. This vector captures essential
+information about the intended task. On a new query, instead of adding
+demonstrations to the prompt, we shift the latent states of the LLM using the
+ICV. The ICV approach has several benefits: 1) it enables the LLM to more
+effectively follow the demonstration examples; 2) it's easy to control by
+adjusting the magnitude of the ICV; 3) it reduces the length of the prompt by
+removing the in-context demonstrations; 4) ICV is computationally much more
+efficient than fine-tuning. We demonstrate that ICV achieves better performance
+compared to standard in-context learning and fine-tuning on diverse tasks
+including safety, style transfer, role-playing and formatting. Moreover, we
+show that we can flexibly teach LLM to simultaneously follow different types of
+instructions by simple vector arithmetics on the corresponding ICVs."
+2305.19148,Mitigating Label Biases for In-context Learning,http://arxiv.org/abs/2305.19148,"Various design settings for in-context learning (ICL), such as the choice and
+order of the in-context examples, can bias a model toward a particular
+prediction without being reflective of an understanding of the task. While many
+studies discuss these design choices, there have been few systematic
+investigations into categorizing them and mitigating their impact. In this
+work, we define a typology for three types of label biases in ICL for text
+classification: vanilla-label bias, context-label bias, and domain-label bias
+(which we conceptualize and detect for the first time).
+  Our analysis demonstrates that prior label bias calibration methods fall
+short of addressing all three types of biases. Specifically, domain-label bias
+restricts LLMs to random-level performance on many tasks regardless of the
+choice of in-context examples. To mitigate the effect of these biases, we
+propose a simple bias calibration method that estimates a language model's
+label bias using random in-domain words from the task corpus. After controlling
+for this estimated bias when making predictions, our novel domain-context
+calibration significantly improves the ICL performance of GPT-J and GPT-3 on a
+wide range of tasks. The gain is substantial on tasks with large domain-label
+bias (up to 37% in Macro-F1). Furthermore, our results generalize to models
+with different scales, pretraining methods, and manually-designed task
+instructions, showing the prevalence of label biases in ICL."
+2102.09690,Calibrate Before Use: Improving Few-Shot Performance of Language Models,http://arxiv.org/abs/2102.09690,"GPT-3 can perform numerous tasks when provided a natural language prompt that
+contains a few training examples. We show that this type of few-shot learning
+can be unstable: the choice of prompt format, training examples, and even the
+order of the training examples can cause accuracy to vary from near chance to
+near state-of-the-art. We demonstrate that this instability arises from the
+bias of language models towards predicting certain answers, e.g., those that
+are placed near the end of the prompt or are common in the pre-training data.
+To mitigate this, we first estimate the model's bias towards each answer by
+asking for its prediction when given the training prompt and a content-free
+test input such as ""N/A"". We then fit calibration parameters that cause the
+prediction for this input to be uniform across answers. On a diverse set of
+tasks, this contextual calibration procedure substantially improves GPT-3 and
+GPT-2's average accuracy (up to 30.0% absolute) and reduces variance across
+different choices of the prompt."

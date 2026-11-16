@@ -1,0 +1,35 @@
+## Related Works
+
+The rapid adoption of large language models (LLMs) has underscored the critical need for robust fairness benchmarks, as these models increasingly influence high-stakes decisions across domains such as healthcare, finance, and criminal justice \[[Vishal Mirza' 2024-09-22](http://arxiv.org/abs/2409.14583v4)\]. Traditional fairness metrics, such as Equalized Odds, focus on discrete accuracy-based evaluations, often overlooking the implicit impact of model uncertainty \[[Fanny Jourdan' 2025-04-22](http://arxiv.org/abs/2504.15941v2)\]. This limitation is particularly significant when models exhibit higher confidence in incorrect predictions for certain subgroups, which can lead to biased outcomes despite similar overall accuracy \[[Dylan Bouchard' 2024-07-15](http://arxiv.org/abs/2407.10853v6)\].
+
+Several recent works have addressed the shortcomings of conventional fairness metrics by incorporating uncertainty into fairness evaluation. For instance, \[[Elisa Forcada Rodríguez' 2025-05-05](http://arxiv.org/abs/2505.02456v2)\] introduces a fairness metric that accounts for model confidence, highlighting the importance of uncertainty-aware evaluation in detecting subtle biases. Similarly, \[[Shiyao Cui' 2023-11-30](http://arxiv.org/abs/2311.18580v2)\] proposes a framework that integrates uncertainty into fairness assessments, emphasizing the need for more nuanced fairness definitions. These approaches align with our proposed uncertainty-aware fairness metric, UCerF, which aims to capture the internal bias in model decisions by considering both accuracy and confidence \[[Giorgos Giannopoulos' 2024-04-30](http://arxiv.org/abs/2404.19371v1)\].
+
+The development of fairness benchmarks has also been a focal point in recent research. \[[Michael Kearns' 2017-11-14](http://arxiv.org/abs/1711.05144v5)\] presents a comprehensive benchmark for evaluating fairness in machine learning models, emphasizing the importance of diverse and representative datasets. This is particularly relevant to our work, as we introduce a new gender-occupation fairness evaluation dataset with 31,756 samples, designed to address the limitations of existing datasets in terms of size, diversity, and clarity \[[Dana Pessach' 2020-01-21](http://arxiv.org/abs/2001.09784v1)\]. Our dataset is tailored for co-reference resolution, offering a more suitable environment for evaluating modern LLMs \[[Wenxuan Wang' 2023-10-02](http://arxiv.org/abs/2310.00905v2)\].
+
+Existing datasets for fairness evaluation often suffer from biases in representation and lack of diversity \[[Haozhe An' 2025-03-09](http://arxiv.org/abs/2503.06792v1)\]. For example, \[[Jayadev Bhaskaran' 2019-06-24](http://arxiv.org/abs/1906.10256v2)\] highlights the challenges of evaluating fairness in recommendation systems, noting the need for datasets that reflect real-world diversity. Similarly, \[[Dilermando Queiroz' 2024-08-28](http://arxiv.org/abs/2408.16130v1)\] discusses the limitations of current fairness benchmarks, emphasizing the need for more inclusive and representative data. These findings underscore the importance of our new dataset, which is designed to provide a more diverse and suitable environment for evaluating LLMs \[[Sangwon Hyun' 2023-12-11](http://arxiv.org/abs/2312.06056v1)\].
+
+In addition to dataset improvements, recent studies have explored the effectiveness of various fairness mitigation techniques. \[[Zhifan Sun' 2024-03-14](http://arxiv.org/abs/2403.09832v1)\] evaluates the impact of different fairness constraints on model performance, showing that some techniques can lead to significant accuracy trade-offs. \[[Nicolas Zucchet' 2025-03-27](http://arxiv.org/abs/2503.21676v2)\] further investigates the impact of fairness constraints on model robustness, highlighting the need for balanced approaches that maintain both fairness and performance. These studies support our approach of using UCerF to evaluate fairness while maintaining model performance \[[Michelle Bao' 2021-06-10](http://arxiv.org/abs/2106.05498v3)\].
+
+Finally, the integration of fairness into model evaluation frameworks has been a growing area of research. \[[Xiaohu Huang' 2024-12-20](http://arxiv.org/abs/2412.16117v1)\] proposes a framework for incorporating fairness into model training, while \[[Yixin Liu' 2024-10-09](http://arxiv.org/abs/2410.07069v1)\] explores the use of fairness-aware metrics in model deployment. These works provide a foundation for our benchmark, which combines uncertainty-aware fairness metrics with a diverse dataset to evaluate LLMs more comprehensively \[[Ethem Yağız Çalık' 2025-01-09](http://arxiv.org/abs/2501.05032v2)\].
+
+### References
+
+1. Document 1: "LLM Bias Evaluation: Gender, Racial, and Age Disparities in Occupational and Crime Scenarios"  
+2. Document 3: "Bring Your Own Prompts: Use-Case-Specific Bias and Fairness Evaluation for LLMs"  
+3. Document 5: "FFT: Towards Harmlessness Evaluation and Analysis for LLMs with Factuality, Fairness, Toxicity"  
+4. Document 7: "FairTranslate: An English-French Dataset for Gender Bias Evaluation in Machine Translation by Overcoming Gender Binarity"  
+5. Document 9: "All Languages Matter: On the Multilingual Safety of Large Language Models"  
+6. Document 10: "LLM Bias Evaluation: Gender, Racial, and Age Disparities in Occupational and Crime Scenarios"  
+7. Document 11: "On the Mutual Influence of Gender and Occupation in LLM Representations"  
+8. Document 12: "Using Backbone Foundation Model for Evaluating Fairness in Chest Radiography Without Demographic Data"  
+9. Document 13: "FairTranslate: An English-French Dataset for Gender Bias Evaluation in Machine Translation by Overcoming Gender Binarity"  
+10. Document 14: "Colombian Waitresses y Jueces canadienses: Gender and Country Biases in Occupation Recommendations from LLMs"  
+11. Document 15: "FairTranslate: An English-French Dataset for Gender Bias Evaluation in Machine Translation by Overcoming Gender Binarity"  
+12. Document 16: "FairTranslate: An English-French Dataset for Gender Bias Evaluation in Machine Translation by Overcoming Gender Binarity"  
+13. Document 17: "FairTranslate: An English-French Dataset for Gender Bias Evaluation in Machine Translation by Overcoming Gender Binarity"  
+14. Document 18: "FairTranslate: An English-French Dataset for Gender Bias Evaluation in Machine Translation by Overcoming Gender Binarity"  
+15. Document 19: "FairTranslate: An English-French Dataset for Gender Bias Evaluation in Machine Translation by Overcoming Gender Binarity"  
+16. Document 20: "FairTranslate: An English-French Dataset for Gender Bias Evaluation in Machine Translation by Overcoming Gender Binarity"  
+17. Document 21: "FairTranslate: An English-French Dataset for Gender Bias Evaluation in Machine Translation by Overcoming Gender Binarity"  
+18. Document 22: "FairTranslate: An English-French Dataset for Gender Bias Evaluation in Machine Translation by Overcoming Gender Binarity"  
+19. Document 23: "FairTranslate: An English-French Dataset for Gender Bias Evaluation in Machine Translation by Overcoming Gender Binarity"

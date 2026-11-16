@@ -1,0 +1,14 @@
+{
+ "query": "003_2506.00832v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 20.398396253585815,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=482862, completion_tokens=76287, total_tokens=559149, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=751227, completion_tokens=82682, total_tokens=833909, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "End-to-End Speech Synthesis Models": 10,
+  "Text to Speech Synthesis Models": 5,
+  "Speech Synthesis Research": 4,
+  "Text to Speech Synthesis Research": 3,
+  "Speech Synthesis Generative Models": 2
+ }
+}

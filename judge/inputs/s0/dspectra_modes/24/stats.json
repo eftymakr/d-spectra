@@ -1,0 +1,13 @@
+{
+ "query": "024_2505.22167v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 90.94869685173035,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=268016, completion_tokens=44198, total_tokens=312214, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=393109, completion_tokens=43033, total_tokens=436142, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "DiffusionModelQuantizationTechniques": 10,
+  "Diffusion Models for Text to Image and Video": 7,
+  "Video Generation Techniques": 5,
+  "Video Generation and Editing Techniques": 3
+ }
+}

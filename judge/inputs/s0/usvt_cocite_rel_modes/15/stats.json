@@ -1,0 +1,11 @@
+{
+ "query": "015_2506.00434v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 20.145012140274048,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=471099, completion_tokens=72116, total_tokens=543215, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=736038, completion_tokens=80689, total_tokens=816727, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Brain Tumor Segmentation Techniques": 14,
+  "Brain Tumor Segmentation Research": 9
+ }
+}

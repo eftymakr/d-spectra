@@ -1,0 +1,12 @@
+{
+ "query": "014_2506.01037v1",
+ "n_papers": 28,
+ "n_linked": 28,
+ "seconds": 19.682568550109863,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=500409, completion_tokens=77850, total_tokens=578259, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=780002, completion_tokens=85779, total_tokens=865781, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Video Super-Resolution Techniques": 18,
+  "Video Generation And Enhancement": 7,
+  "Image Super-Resolution Techniques": 2
+ }
+}

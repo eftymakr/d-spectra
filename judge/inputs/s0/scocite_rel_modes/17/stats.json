@@ -1,0 +1,12 @@
+{
+ "query": "017_2505.24443v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 20.589521884918213,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=386607, completion_tokens=60035, total_tokens=446642, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=601876, completion_tokens=65980, total_tokens=667856, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Semi-Supervised Learning Methods": 15,
+  "Open Set Semi Supervised Learning": 9,
+  "SemiSupervised Learning Safety": 2
+ }
+}

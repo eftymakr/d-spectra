@@ -1,0 +1,12 @@
+{
+ "query": "033_2506.00205v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 17.56936025619507,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=429648, completion_tokens=66610, total_tokens=496258, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=667515, completion_tokens=73587, total_tokens=741102, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Continual Learning Research Papers": 14,
+  "Continual Learning Methods": 3,
+  "Continual Learning Techniques": 2
+ }
+}

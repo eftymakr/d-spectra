@@ -1,0 +1,12 @@
+{
+ "query": "040_2504.06211v1",
+ "n_papers": 10,
+ "n_linked": 10,
+ "seconds": 14.919699668884277,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=5479, completion_tokens=1103, total_tokens=6582, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=7538, completion_tokens=996, total_tokens=8534, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Zero Knowledge Proof Acceleration": 6,
+  "Zero Knowledge Proof Systems": 2,
+  "HomomorphicEncryptionAccelerators": 2
+ }
+}

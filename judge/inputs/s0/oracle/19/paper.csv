@@ -1,0 +1,290 @@
+id,title,url,snippet
+2112.05329,FaceFormer: Speech-Driven 3D Facial Animation with Transformers,http://arxiv.org/abs/2112.05329,"Speech-driven 3D facial animation is challenging due to the complex geometry
+of human faces and the limited availability of 3D audio-visual data. Prior
+works typically focus on learning phoneme-level features of short audio windows
+with limited context, occasionally resulting in inaccurate lip movements. To
+tackle this limitation, we propose a Transformer-based autoregressive model,
+FaceFormer, which encodes the long-term audio context and autoregressively
+predicts a sequence of animated 3D face meshes. To cope with the data scarcity
+issue, we integrate the self-supervised pre-trained speech representations.
+Also, we devise two biased attention mechanisms well suited to this specific
+task, including the biased cross-modal multi-head (MH) attention and the biased
+causal MH self-attention with a periodic positional encoding strategy. The
+former effectively aligns the audio-motion modalities, whereas the latter
+offers abilities to generalize to longer audio sequences. Extensive experiments
+and a perceptual user study show that our approach outperforms the existing
+state-of-the-arts. The code will be made available."
+2301.02379,CodeTalker: Speech-Driven 3D Facial Animation with Discrete Motion Prior,http://arxiv.org/abs/2301.02379,"Speech-driven 3D facial animation has been widely studied, yet there is still
+a gap to achieving realism and vividness due to the highly ill-posed nature and
+scarcity of audio-visual data. Existing works typically formulate the
+cross-modal mapping into a regression task, which suffers from the
+regression-to-mean problem leading to over-smoothed facial motions. In this
+paper, we propose to cast speech-driven facial animation as a code query task
+in a finite proxy space of the learned codebook, which effectively promotes the
+vividness of the generated motions by reducing the cross-modal mapping
+uncertainty. The codebook is learned by self-reconstruction over real facial
+motions and thus embedded with realistic facial motion priors. Over the
+discrete motion space, a temporal autoregressive model is employed to
+sequentially synthesize facial motions from the input speech signal, which
+guarantees lip-sync as well as plausible facial expressions. We demonstrate
+that our approach outperforms current state-of-the-art methods both
+qualitatively and quantitatively. Also, a user study further justifies our
+superiority in perceptual quality."
+2306.08990,Emotional Speech-Driven Animation with Content-Emotion Disentanglement,http://arxiv.org/abs/2306.08990,"To be widely adopted, 3D facial avatars must be animated easily,
+realistically, and directly from speech signals. While the best recent methods
+generate 3D animations that are synchronized with the input audio, they largely
+ignore the impact of emotions on facial expressions. Realistic facial animation
+requires lip-sync together with the natural expression of emotion. To that end,
+we propose EMOTE (Expressive Model Optimized for Talking with Emotion), which
+generates 3D talking-head avatars that maintain lip-sync from speech while
+enabling explicit control over the expression of emotion. To achieve this, we
+supervise EMOTE with decoupled losses for speech (i.e., lip-sync) and emotion.
+These losses are based on two key observations: (1) deformations of the face
+due to speech are spatially localized around the mouth and have high temporal
+frequency, whereas (2) facial expressions may deform the whole face and occur
+over longer intervals. Thus, we train EMOTE with a per-frame lip-reading loss
+to preserve the speech-dependent content, while supervising emotion at the
+sequence level. Furthermore, we employ a content-emotion exchange mechanism in
+order to supervise different emotions on the same audio, while maintaining the
+lip motion synchronized with the speech. To employ deep perceptual losses
+without getting undesirable artifacts, we devise a motion prior in the form of
+a temporal VAE. Due to the absence of high-quality aligned emotional 3D face
+datasets with speech, EMOTE is trained with 3D pseudo-ground-truth extracted
+from an emotional video dataset (i.e., MEAD). Extensive qualitative and
+perceptual evaluations demonstrate that EMOTE produces speech-driven facial
+animations with better lip-sync than state-of-the-art methods trained on the
+same data, while offering additional, high-quality emotional control."
+2303.11089,EmoTalk: Speech-Driven Emotional Disentanglement for 3D Face Animation,http://arxiv.org/abs/2303.11089,"Speech-driven 3D face animation aims to generate realistic facial expressions
+that match the speech content and emotion. However, existing methods often
+neglect emotional facial expressions or fail to disentangle them from speech
+content. To address this issue, this paper proposes an end-to-end neural
+network to disentangle different emotions in speech so as to generate rich 3D
+facial expressions. Specifically, we introduce the emotion disentangling
+encoder (EDE) to disentangle the emotion and content in the speech by
+cross-reconstructed speech signals with different emotion labels. Then an
+emotion-guided feature fusion decoder is employed to generate a 3D talking face
+with enhanced emotion. The decoder is driven by the disentangled identity,
+emotional, and content embeddings so as to generate controllable personal and
+emotional styles. Finally, considering the scarcity of the 3D emotional talking
+face data, we resort to the supervision of facial blendshapes, which enables
+the reconstruction of plausible 3D faces from 2D emotional data, and contribute
+a large-scale 3D emotional talking face dataset (3D-ETF) to train the network.
+Our experiments and user studies demonstrate that our approach outperforms
+state-of-the-art methods and exhibits more diverse facial movements. We
+recommend watching the supplementary video:
+https://ziqiaopeng.github.io/emotalk"
+2303.05416,"FaceXHuBERT: Text-less Speech-driven E(X)pressive 3D Facial Animation
+  Synthesis Using Self-Supervised Speech Representation Learning",http://arxiv.org/abs/2303.05416,"This paper presents FaceXHuBERT, a text-less speech-driven 3D facial
+animation generation method that allows to capture personalized and subtle cues
+in speech (e.g. identity, emotion and hesitation). It is also very robust to
+background noise and can handle audio recorded in a variety of situations (e.g.
+multiple people speaking). Recent approaches employ end-to-end deep learning
+taking into account both audio and text as input to generate facial animation
+for the whole face. However, scarcity of publicly available expressive audio-3D
+facial animation datasets poses a major bottleneck. The resulting animations
+still have issues regarding accurate lip-synching, expressivity,
+person-specific information and generalizability. We effectively employ
+self-supervised pretrained HuBERT model in the training process that allows us
+to incorporate both lexical and non-lexical information in the audio without
+using a large lexicon. Additionally, guiding the training with a binary emotion
+condition and speaker identity distinguishes the tiniest subtle facial motion.
+We carried out extensive objective and subjective evaluation in comparison to
+ground-truth and state-of-the-art work. A perceptual user study demonstrates
+that our approach produces superior results with respect to the realism of the
+animation 78% of the time in comparison to the state-of-the-art. In addition,
+our method is 4 times faster eliminating the use of complex sequential models
+such as transformers. We strongly recommend watching the supplementary video
+before reading the paper. We also provide the implementation and evaluation
+codes with a GitHub repository link."
+2106.07447,"HuBERT: Self-Supervised Speech Representation Learning by Masked
+  Prediction of Hidden Units",http://arxiv.org/abs/2106.07447,"Self-supervised approaches for speech representation learning are challenged
+by three unique problems: (1) there are multiple sound units in each input
+utterance, (2) there is no lexicon of input sound units during the pre-training
+phase, and (3) sound units have variable lengths with no explicit segmentation.
+To deal with these three problems, we propose the Hidden-Unit BERT (HuBERT)
+approach for self-supervised speech representation learning, which utilizes an
+offline clustering step to provide aligned target labels for a BERT-like
+prediction loss. A key ingredient of our approach is applying the prediction
+loss over the masked regions only, which forces the model to learn a combined
+acoustic and language model over the continuous inputs. HuBERT relies primarily
+on the consistency of the unsupervised clustering step rather than the
+intrinsic quality of the assigned cluster labels. Starting with a simple
+k-means teacher of 100 clusters, and using two iterations of clustering, the
+HuBERT model either matches or improves upon the state-of-the-art wav2vec 2.0
+performance on the Librispeech (960h) and Libri-light (60,000h) benchmarks with
+10min, 1h, 10h, 100h, and 960h fine-tuning subsets. Using a 1B parameter model,
+HuBERT shows up to 19% and 13% relative WER reduction on the more challenging
+dev-other and test-other evaluation subsets."
+2309.11306,"FaceDiffuser: Speech-Driven 3D Facial Animation Synthesis Using
+  Diffusion",http://arxiv.org/abs/2309.11306,"Speech-driven 3D facial animation synthesis has been a challenging task both
+in industry and research. Recent methods mostly focus on deterministic deep
+learning methods meaning that given a speech input, the output is always the
+same. However, in reality, the non-verbal facial cues that reside throughout
+the face are non-deterministic in nature. In addition, majority of the
+approaches focus on 3D vertex based datasets and methods that are compatible
+with existing facial animation pipelines with rigged characters is scarce. To
+eliminate these issues, we present FaceDiffuser, a non-deterministic deep
+learning model to generate speech-driven facial animations that is trained with
+both 3D vertex and blendshape based datasets. Our method is based on the
+diffusion technique and uses the pre-trained large speech representation model
+HuBERT to encode the audio input. To the best of our knowledge, we are the
+first to employ the diffusion method for the task of speech-driven 3D facial
+animation synthesis. We have run extensive objective and subjective analyses
+and show that our approach achieves better or comparable results in comparison
+to the state-of-the-art methods. We also introduce a new in-house dataset that
+is based on a blendshape based rigged character. We recommend watching the
+accompanying supplementary video. The code and the dataset will be publicly
+available."
+2312.00870,3DiFACE: Diffusion-based Speech-driven 3D Facial Animation and Editing,http://arxiv.org/abs/2312.00870,"We present 3DiFACE, a novel method for personalized speech-driven 3D facial
+animation and editing. While existing methods deterministically predict facial
+animations from speech, they overlook the inherent one-to-many relationship
+between speech and facial expressions, i.e., there are multiple reasonable
+facial expression animations matching an audio input. It is especially
+important in content creation to be able to modify generated motion or to
+specify keyframes. To enable stochasticity as well as motion editing, we
+propose a lightweight audio-conditioned diffusion model for 3D facial motion.
+This diffusion model can be trained on a small 3D motion dataset, maintaining
+expressive lip motion output. In addition, it can be finetuned for specific
+subjects, requiring only a short video of the person. Through quantitative and
+qualitative evaluations, we show that our method outperforms existing
+state-of-the-art techniques and yields speech-driven animations with greater
+fidelity and diversity."
+1905.03079,"Capture, Learning, and Synthesis of 3D Speaking Styles",http://arxiv.org/abs/1905.03079,"Audio-driven 3D facial animation has been widely explored, but achieving
+realistic, human-like performance is still unsolved. This is due to the lack of
+available 3D datasets, models, and standard evaluation metrics. To address
+this, we introduce a unique 4D face dataset with about 29 minutes of 4D scans
+captured at 60 fps and synchronized audio from 12 speakers. We then train a
+neural network on our dataset that factors identity from facial motion. The
+learned model, VOCA (Voice Operated Character Animation) takes any speech
+signal as input - even speech in languages other than English - and
+realistically animates a wide range of adult faces. Conditioning on subject
+labels during training allows the model to learn a variety of realistic
+speaking styles. VOCA also provides animator controls to alter speaking style,
+identity-dependent facial shape, and pose (i.e. head, jaw, and eyeball
+rotations) during animation. To our knowledge, VOCA is the only realistic 3D
+facial animation model that is readily applicable to unseen subjects without
+retargeting. This makes VOCA suitable for tasks like in-game video, virtual
+reality avatars, or any scenario in which the speaker, speech, or language is
+not known in advance. We make the dataset and model available for research
+purposes at http://voca.is.tue.mpg.de."
+2312.10877,"Mimic: Speaking Style Disentanglement for Speech-Driven 3D Facial
+  Animation",http://arxiv.org/abs/2312.10877,"Speech-driven 3D facial animation aims to synthesize vivid facial animations
+that accurately synchronize with speech and match the unique speaking style.
+However, existing works primarily focus on achieving precise lip
+synchronization while neglecting to model the subject-specific speaking style,
+often resulting in unrealistic facial animations. To the best of our knowledge,
+this work makes the first attempt to explore the coupled information between
+the speaking style and the semantic content in facial motions. Specifically, we
+introduce an innovative speaking style disentanglement method, which enables
+arbitrary-subject speaking style encoding and leads to a more realistic
+synthesis of speech-driven facial animations. Subsequently, we propose a novel
+framework called \textbf(Mimic) to learn disentangled representations of the
+speaking style and content from facial motions by building two latent spaces
+for style and content, respectively. Moreover, to facilitate disentangled
+representation learning, we introduce four well-designed constraints: an
+auxiliary style classifier, an auxiliary inverse classifier, a content
+contrastive loss, and a pair of latent cycle losses, which can effectively
+contribute to the construction of the identity-related style space and
+semantic-related content space. Extensive qualitative and quantitative
+experiments conducted on three publicly available datasets demonstrate that our
+approach outperforms state-of-the-art methods and is capable of capturing
+diverse speaking styles for speech-driven 3D facial animation. The source code
+and supplementary video are publicly available at:
+https://zeqing-wang.github.io/Mimic/"
+2301.02008,Expressive Speech-driven Facial Animation with controllable emotions,http://arxiv.org/abs/2301.02008,"It is in high demand to generate facial animation with high realism, but it
+remains a challenging task. Existing approaches of speech-driven facial
+animation can produce satisfactory mouth movement and lip synchronization, but
+show weakness in dramatic emotional expressions and flexibility in emotion
+control. This paper presents a novel deep learning-based approach for
+expressive facial animation generation from speech that can exhibit
+wide-spectrum facial expressions with controllable emotion type and intensity.
+We propose an emotion controller module to learn the relationship between the
+emotion variations (e.g., types and intensity) and the corresponding facial
+expression parameters. It enables emotion-controllable facial animation, where
+the target expression can be continuously adjusted as desired. The qualitative
+and quantitative evaluations show that the animation generated by our method is
+rich in facial emotional expressiveness while retaining accurate lip movement,
+outperforming other state-of-the-art methods."
+2008.10010,"A Lip Sync Expert Is All You Need for Speech to Lip Generation In The
+  Wild",http://arxiv.org/abs/2008.10010,"In this work, we investigate the problem of lip-syncing a talking face video
+of an arbitrary identity to match a target speech segment. Current works excel
+at producing accurate lip movements on a static image or videos of specific
+people seen during the training phase. However, they fail to accurately morph
+the lip movements of arbitrary identities in dynamic, unconstrained talking
+face videos, resulting in significant parts of the video being out-of-sync with
+the new audio. We identify key reasons pertaining to this and hence resolve
+them by learning from a powerful lip-sync discriminator. Next, we propose new,
+rigorous evaluation benchmarks and metrics to accurately measure lip
+synchronization in unconstrained videos. Extensive quantitative evaluations on
+our challenging benchmarks show that the lip-sync accuracy of the videos
+generated by our Wav2Lip model is almost as good as real synced videos. We
+provide a demo video clearly showing the substantial impact of our Wav2Lip
+model and evaluation benchmarks on our website:
+\url(cvit.iiit.ac.in/research/projects/cvit-projects/a-lip-sync-expert-is-all-you-need-for-speech-to-lip-generation-in-the-wild).
+The code and models are released at this GitHub repository:
+\url(github.com/Rudrabha/Wav2Lip). You can also try out the interactive demo at
+this link: \url(bhaasha.iiit.ac.in/lipsync)."
+2401.15687,"Media2Face: Co-speech Facial Animation Generation With Multi-Modality
+  Guidance",http://arxiv.org/abs/2401.15687,"The synthesis of 3D facial animations from speech has garnered considerable
+attention. Due to the scarcity of high-quality 4D facial data and
+well-annotated abundant multi-modality labels, previous methods often suffer
+from limited realism and a lack of lexible conditioning. We address this
+challenge through a trilogy. We first introduce Generalized Neural Parametric
+Facial Asset (GNPFA), an efficient variational auto-encoder mapping facial
+geometry and images to a highly generalized expression latent space, decoupling
+expressions and identities. Then, we utilize GNPFA to extract high-quality
+expressions and accurate head poses from a large array of videos. This presents
+the M2F-D dataset, a large, diverse, and scan-level co-speech 3D facial
+animation dataset with well-annotated emotional and style labels. Finally, we
+propose Media2Face, a diffusion model in GNPFA latent space for co-speech
+facial animation generation, accepting rich multi-modality guidances from
+audio, text, and image. Extensive experiments demonstrate that our model not
+only achieves high fidelity in facial animation synthesis but also broadens the
+scope of expressiveness and style adaptability in 3D facial animation."
+2401.00374,"EMAGE: Towards Unified Holistic Co-Speech Gesture Generation via
+  Expressive Masked Audio Gesture Modeling",http://arxiv.org/abs/2401.00374,"We propose EMAGE, a framework to generate full-body human gestures from audio
+and masked gestures, encompassing facial, local body, hands, and global
+movements. To achieve this, we first introduce BEAT2 (BEAT-SMPLX-FLAME), a new
+mesh-level holistic co-speech dataset. BEAT2 combines a MoShed SMPL-X body with
+FLAME head parameters and further refines the modeling of head, neck, and
+finger movements, offering a community-standardized, high-quality 3D motion
+captured dataset. EMAGE leverages masked body gesture priors during training to
+boost inference performance. It involves a Masked Audio Gesture Transformer,
+facilitating joint training on audio-to-gesture generation and masked gesture
+reconstruction to effectively encode audio and body gesture hints. Encoded body
+hints from masked gestures are then separately employed to generate facial and
+body movements. Moreover, EMAGE adaptively merges speech features from the
+audio's rhythm and content and utilizes four compositional VQ-VAEs to enhance
+the results' fidelity and diversity. Experiments demonstrate that EMAGE
+generates holistic gestures with state-of-the-art performance and is flexible
+in accepting predefined spatial-temporal gesture inputs, generating complete,
+audio-synchronized results. Our code and dataset are available
+https://pantomatrix.github.io/EMAGE/"
+1412.5567,Deep Speech: Scaling up end-to-end speech recognition,http://arxiv.org/abs/1412.5567,"We present a state-of-the-art speech recognition system developed using
+end-to-end deep learning. Our architecture is significantly simpler than
+traditional speech systems, which rely on laboriously engineered processing
+pipelines; these traditional systems also tend to perform poorly when used in
+noisy environments. In contrast, our system does not need hand-designed
+components to model background noise, reverberation, or speaker variation, but
+instead directly learns a function that is robust to such effects. We do not
+need a phoneme dictionary, nor even the concept of a ""phoneme."" Key to our
+approach is a well-optimized RNN training system that uses multiple GPUs, as
+well as a set of novel data synthesis techniques that allow us to efficiently
+obtain a large amount of varied data for training. Our system, called Deep
+Speech, outperforms previously published results on the widely studied
+Switchboard Hub5'00, achieving 16.0% error on the full test set. Deep Speech
+also handles challenging noisy environments better than widely used,
+state-of-the-art commercial speech systems."
+2006.11477,"wav2vec 2.0: A Framework for Self-Supervised Learning of Speech
+  Representations",http://arxiv.org/abs/2006.11477,"We show for the first time that learning powerful representations from speech
+audio alone followed by fine-tuning on transcribed speech can outperform the
+best semi-supervised methods while being conceptually simpler. wav2vec 2.0
+masks the speech input in the latent space and solves a contrastive task
+defined over a quantization of the latent representations which are jointly
+learned. Experiments using all labeled data of Librispeech achieve 1.8/3.3 WER
+on the clean/other test sets. When lowering the amount of labeled data to one
+hour, wav2vec 2.0 outperforms the previous state of the art on the 100 hour
+subset while using 100 times less labeled data. Using just ten minutes of
+labeled data and pre-training on 53k hours of unlabeled data still achieves
+4.8/8.2 WER. This demonstrates the feasibility of speech recognition with
+limited amounts of labeled data."

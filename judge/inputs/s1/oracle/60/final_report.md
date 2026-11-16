@@ -1,0 +1,177 @@
+## Related Works
+
+Calibration of machine learning models has been extensively studied, particularly in the context of classification and ranking tasks. Traditional calibration methods, such as binning and scaling, have been widely used to post-process model outputs to obtain calibrated probabilities \[[1](http://arxiv.org/abs/2202.04348)\]. However, these methods often lack flexibility and expressiveness, especially in complex scenarios where the relationship between predicted values and true probabilities is non-linear \[[1](http://arxiv.org/abs/2202.04348)\]. For instance, binning methods are distribution-free but may not capture fine-grained relationships due to their non-individual nature \[[1](http://arxiv.org/abs/2202.04348)\]. Similarly, scaling methods, while simple, often fail to account for the variability in model outputs across different feature fields \[[6](http://arxiv.org/abs/1905.10713)\].
+
+Recent work has focused on improving the flexibility of calibration methods by introducing more expressive models. For example, MBCT (Multiple Boosting Calibration Trees) proposes a feature-aware binning framework that leverages tree structures to achieve individual calibration, offering better performance in terms of both calibration error and order accuracy \[[1](http://arxiv.org/abs/2202.04348)\]. This approach is particularly relevant in applications where order sensitivity is crucial, such as in advertising and recommendation systems \[[1](http://arxiv.org/abs/2202.04348)\].
+
+In the context of ranking models, several studies have explored the integration of calibration with ranking objectives. For example, JRC (Joint Optimization of Ranking and Calibration) introduces a method that jointly optimizes ranking and calibration abilities by constraining predicted probabilities to be functions of logit differences, thereby improving both ranking and calibration performance \[[10](http://arxiv.org/abs/2208.06164)\]. Similarly, the RCR (Regression Compatible Listwise Objectives) approach combines regression and ranking objectives to achieve a better trade-off, demonstrating improved performance in both aspects \[[11](http://arxiv.org/abs/2211.01494)\]. These methods highlight the importance of aligning calibration with ranking objectives to achieve more accurate and reliable predictions.
+
+Field-aware calibration has also emerged as a critical area of research, especially in advertising and recommendation systems. Neural Calibration, for instance, introduces a field-level calibration error metric and proposes a simple yet effective post-hoc calibration method that leverages field-aware information during training \[[6](http://arxiv.org/abs/1905.10713)\]. This approach has been shown to significantly improve calibration performance across various metrics, including the Brier score and AUC \[[6](http://arxiv.org/abs/1905.10713)\]. Similarly, the CLID (Calibration-compatible LIstwise Distillation) method addresses the challenge of distilling ranking ability while preserving calibration, demonstrating the importance of calibration-compatible objectives in model distillation \[[12](http://arxiv.org/abs/2312.08727)\].
+
+The proposed method, which uses an Unconstrained Monotonic Neural Network (UMNN), builds upon these advances by introducing a flexible and expressive calibrator that can learn arbitrary monotonic functions \[[1](http://arxiv.org/abs/2202.04348)\]. This approach not only improves flexibility but
+## Research papers
+### Outline
+- [Post-hoc Calibration Strategies [6 papers]](#category-post-hoc-calibration-strategies)
+- [Neural Network-based Calibration Approaches [1 papers]](#category-neural-network-based-calibration-approaches)
+- [Field-aware Calibration Techniques [3 papers]](#category-field-aware-calibration-techniques)
+- [Online Deployment and Business Impact [1 papers]](#category-online-deployment-and-business-impact)
+- [Ranking and Calibration Integration [5 papers]](#category-ranking-and-calibration-integration)
+- [Model Distillation and Calibration [1 papers]](#category-model-distillation-and-calibration)
+
+### <a id='category-post-hoc-calibration-strategies'></a>Post-hoc Calibration Strategies: 6 papers found.
+Context: 
+	Document 1: [Category]: «Post-hoc Calibration Strategies»
+[Snippet]: «Most machine learning classifiers only concern classification accuracy, while
+certain applications (such as medical diagnosis, meteorological forecasting,
+and computation advertising) require the model to predict the true probability,
+known as a calibrated estimate. In previous work, researchers have developed
+several calibration methods to post-process the outputs of a predictor to
+obtain calibrated values, such as binning and scaling methods. Compared with
+scaling, binning methods are shown to have distribution-free theoretical
+guarantees, which motivates us to prefer binning methods for calibration.
+However, we notice that existing binning methods have several drawbacks: (a)
+the binning scheme only considers the original prediction values, thus limiting
+the calibration performance; and (b) the binning approach is non-individual,
+mapping multiple samples in a bin to the same value, and thus is not suitable
+for order-sensitive applications. In this paper, we propose a feature-aware
+binning framework, called Multiple Boosting Calibration Trees (MBCT), along
+with a multi-view calibration loss to tackle the above issues. Our MBCT
+optimizes the binning scheme by the tree structures of features, and adopts a
+linear function in a tree node to achieve individual calibration. Our MBCT is
+non-monotonic, and has the potential to improve order accuracy, due to its
+learnable binning scheme and the individual calibration. We conduct
+comprehensive experiments on three datasets in different fields. Results show
+that our method outperforms all competing models in terms of both calibration
+error and order accuracy. We also conduct simulation experiments, justifying
+that the proposed multi-view calibration loss is a better metric in modeling
+calibration error.»
+[_citation_number]: «1»
+
+	Document 2: [Category]: «Post-hoc Calibration Strategies»
+[Snippet]: «For personalized ranking models, the well-calibrated probability of an item
+being preferred by a user has great practical value. While existing work shows
+promising results in image classification, probability calibration has not been
+much explored for personalized ranking. In this paper, we aim to estimate the
+calibrated probability of how likely a user will prefer an item. We investigate
+various parametric distributions and propose two parametric calibration
+methods, namely Gaussian calibration and Gamma calibration. Each proposed
+method can be seen as a post-processing function that maps the ranking scores
+of pre-trained
+|    | reference                                                                                                                                                                             |   date | key idea/summary                                                                                                                                                                                                                                            |
+|----|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [MBCT: Tree-Based Feature-Aware Binning for Individual Uncertainty
+  Calibration](http://arxiv.org/abs/2202.04348)                                                                    |    nan | The paper proposes a feature-aware binning framework called Multiple Boosting Calibration Trees (MBCT) to improve calibration accuracy and order-sensitive applications by addressing the limitations of existing binning methods.                          |
+|  1 | [Obtaining Calibrated Probabilities with Personalized Ranking Models](http://arxiv.org/abs/2112.07428)                                                                                |    nan | This paper proposes two parametric calibration methods to improve the calibration of personalized ranking models by mapping ranking scores to well-calibrated preference probabilities without affecting recommendation performance.                        |
+|  2 | [Deep Ensemble Shape Calibration: Multi-Field Post-hoc Calibration in
+  Online Advertising](http://arxiv.org/abs/2401.09507)                                                          |    nan | The paper proposes a new method called Deep Ensemble Shape Calibration (DESC) to address multi-field calibration in e-commerce advertising, achieving significant improvements in CTR and CVR with better data utilization and error distribution handling. |
+|  3 | [Transforming classifier scores into accurate multiclass probability estimates](https://doi.org/10.1145/775047.775151)                                                                |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                   |
+|  4 | [Probabilistic outputs for support vector machines and comparisons to regularized likelihood methods](https://home.cs.colorado.edu/~mozer/Teaching/syllabi/6622/papers/Platt1999.pdf) |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                   |
+|  5 | [Beta calibration: a well-founded and easily implemented improvement on logistic calibration for binary classifiers](http://proceedings.mlr.press/v54/kull17a.html)                   |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                   |
+### <a id='category-neural-network-based-calibration-approaches'></a>Neural Network-based Calibration Approaches: 1 papers found.
+Context: 
+	Document 1: [Category]: «Neural Network-based Calibration Approaches»
+[Snippet]: «Accurate estimation of predictive uncertainty (model calibration) is essential for the safe application of neural networks. Many instances of miscalibration in modern neural networks have been reported, suggesting a trend that newer, more accurate models produce poorly calibrated predictions. Here, we revisit this question for recent state-of-the-art image classification models. We systematically relate model calibration and accuracy, and find that the most recent models, notably those not using convolutions, are among the best calibrated. Trends observed in prior model generations, such as decay of calibration with distribution shift or model size, are less pronounced in recent architectures. We also show that model size and amount of pretraining do not fully explain these differences, suggesting that architecture is a major determinant of calibration properties.»
+[_citation_number]: «2»
+
+
+Instruction: You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-04-19T09:35:11+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/2112.07428)\]. Further details \[[6](http://arxiv.org/abs/1905.10713)\]\[[7](http://arxiv.org/abs/2205.07295)\]\[[8](http://arxiv.org/abs/2406.08010)\]\[[9](http://arxiv.org/abs/2401.09507)\]\[[10](http://arxiv.org/abs/2208.06164)\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Ranking models primarily focus on modeling the relative order of predictions while often neglecting the significance of the accuracy of their absolute values. However, accurate absolute values are essential for certain downstream tasks, necessitating the calibration of the original predictions. To address this, existing calibration approaches typically employ predefined transformation functions with order-preserving properties to adjust the original predictions. Unfortunately, these functions often adhere to fixed forms, such as piece-wise linear functions, which exhibit limited expressiveness and flexibility, thereby constraining their effectiveness in complex calibration scenarios. To mitigate this issue, we propose implementing a calibrator using an Unconstrained Monotonic Neural Network (UMNN), which can learn arbitrary monotonic functions with great modeling power
+|    | reference                                                                               |   date | key idea/summary                                                                                                                                                                                                                   |
+|----|-----------------------------------------------------------------------------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Revisiting the Calibration of Modern Neural Networks](http://arxiv.org/abs/2106.07998) |    nan | Recent state-of-the-art image classification models, particularly those not using convolutions, exhibit better calibration despite increased accuracy, suggesting that architecture plays a significant role in model calibration. |
+### <a id='category-field-aware-calibration-techniques'></a>Field-aware Calibration Techniques: 3 papers found.
+Field-aware calibration techniques aim to improve the accuracy of probabilistic predictions by addressing mismatches between predicted and true likelihoods, particularly in scenarios where data distributions shift rapidly or model biases exist \[[1](http://arxiv.org/abs/2202.04348)\]. These techniques are crucial in applications like online advertising, where accurate predictions of user feedback (e.g., clicks, conversions) directly impact ranking and bidding strategies \[[1](http://arxiv.org/abs/2202.04348)\]. Traditional calibration methods often fail to account for field-specific variations, leading to biased or unreliable predictions \[[2](http://arxiv.org/abs/2106.07998)\]. To overcome this, recent approaches such as confidence-aware multi-field calibration \[[1](http://arxiv.org/abs/2202.04348)\] and Neural Calibration \[[2](http://arxiv.org/abs/2106.07998)\] have been introduced. These methods adaptively adjust calibration based on confidence levels and leverage field-aware information to enhance performance. Additionally, AdaCalib \[[3](http://arxiv.org/abs/2112.07428)\] proposes a doubly-adaptive approach that learns isotonic functions and incorporates field-adaptive mechanisms to ensure accurate calibration for specific field values. These advancements highlight the growing importance of field-aware calibration in improving both the reliability and effectiveness of machine learning models in real-world applications.
+|    | reference                                                                                                                                    |   date | key idea/summary                                                                                                                                                                                                                                        |
+|----|----------------------------------------------------------------------------------------------------------------------------------------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Confidence-Aware Multi-Field Model Calibration](http://arxiv.org/abs/2402.17655)                                                            |    nan | The paper proposes a confidence-aware multi-field calibration method to improve the accuracy of advertising predictions by adaptively adjusting calibration based on confidence levels and leveraging multiple fields to mitigate data sparsity issues. |
+|  1 | [Field-aware Calibration: A Simple and Empirically Strong Method for
+  Reliable Probabilistic Predictions](http://arxiv.org/abs/1905.10713)  |    nan | The paper introduces a new calibration metric called field-level calibration error and proposes Neural Calibration, a post-hoc method that improves predictive reliability by leveraging field-aware information.                                       |
+|  2 | [Posterior Probability Matters: Doubly-Adaptive Calibration for Neural
+  Predictions in Online Advertising](http://arxiv.org/abs/2205.07295) |    nan | AdaCalib is a doubly-adaptive calibration approach that improves prediction accuracy by learning isotonic functions and incorporating field-adaptive mechanisms to ensure posterior probabilities align with field-specific values.                     |
+### <a id='category-online-deployment-and-business-impact'></a>Online Deployment and Business Impact: 1 papers found.
+Context: 
+	Document 1: [Category]: «Online Deployment and Business Impact»
+[Snippet]: «We present LiRank, a large-scale ranking framework at LinkedIn that brings to
+production state-of-the-art modeling architectures and optimization methods. We
+unveil several modeling improvements, including Residual DCN, which adds
+attention and residual connections to the famous DCNv2 architecture. We share
+insights into combining and tuning SOTA architectures to create a unified
+model, including Dense Gating, Transformers and Residual DCN. We also propose
+novel techniques for calibration and describe how we productionalized deep
+learning based explore/exploit methods. To enable effective, production-grade
+serving of large ranking models, we detail how to train and compress models
+using quantization and vocabulary compression. We provide details about the
+deployment setup for large-scale use cases of Feed ranking, Jobs
+Recommendations, and Ads click-through rate (CTR) prediction. We summarize our
+learnings from various A/B tests by elucidating the most effective technical
+approaches. These ideas have contributed to relative metrics improvements
+across the board at LinkedIn: +0.5% member sessions in the Feed, +1.76%
+qualified job applications for Jobs search and recommendations, and +4.3% for
+Ads CTR. We hope this work can provide practical insights and solutions for
+practitioners interested in leveraging large-scale deep ranking systems.»
+[_citation_number]: «5»
+
+
+Instruction: You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-04-19T09:35:11+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/2112.07428)\]. Further details \[[6](http://arxiv.org/abs/1905.10713)\]\[[7](http://arxiv.org/abs/2205.07295)\]\[[8](http://arxiv.org/abs/2406.08010)\]\[[9](http://arxiv.org/abs/2401.09507)\]\[[10](http://arxiv.org/abs/2208.06164)\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Ranking models primarily focus on modeling the relative order of predictions
+while
+|    | reference                                                                                    |   date | key idea/summary                                                                                                                                                                                                                                                |
+|----|----------------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [LiRank: Industrial Large Scale Ranking Models at LinkedIn](http://arxiv.org/abs/2402.06859) |    nan | LiRank is a large-scale ranking framework developed by LinkedIn that integrates advanced modeling architectures and optimization methods, leading to significant improvements in metrics such as member sessions, job applications, and ad click-through rates. |
+### <a id='category-ranking-and-calibration-integration'></a>Ranking and Calibration Integration: 5 papers found.
+Context: 
+	Document 1: [Category]: «Ranking and Calibration Integration»
+[Snippet]: «Scale-calibrated ranking systems are ubiquitous in real-world applications
+nowadays, which pursue accurate ranking quality and calibrated probabilistic
+predictions simultaneously. For instance, in the advertising ranking system,
+the predicted click-through rate (CTR) is utilized for ranking and required to
+be calibrated for the downstream cost-per-click ads bidding. Recently,
+multi-objective based methods have been wildly adopted as a standard approach
+for Calibrated Ranking, which incorporates the combination of two loss
+functions: a pointwise loss that focuses on calibrated absolute values and a
+ranking loss that emphasizes relative orderings. However, when applied to
+industrial online applications, existing multi-objective CR approaches still
+suffer from two crucial limitations. First, previous methods need to aggregate
+the full candidate list within a single mini-batch to compute the ranking loss.
+Such aggregation strategy violates extensive data shuffling which has long been
+proven beneficial for preventing overfitting, and thus degrades the training
+effectiveness. Second, existing multi-objective methods apply the two
+inherently conflicting loss functions on a single probabilistic prediction,
+which results in a sub-optimal trade-off between calibration and ranking. To
+tackle the two limitations, we propose a Self-Boosted framework for Calibrated
+Ranking (SBCR).»
+[_citation_number]: «8»
+
+	Document 2: [Category]: «Ranking and Calibration Integration»
+[Snippet]: «Despite the development of ranking optimization techniques, pointwise loss
+remains the dominating approach for click-through rate prediction. It can be
+attributed to the calibration ability of the pointwise loss since the
+prediction can be viewed as the click probability. In practice, a CTR
+prediction model is also commonly assessed with the ranking ability. To
+optimize the ranking ability, ranking loss (e.g., pairwise or listwise loss)
+can be adopted as they usually achieve better rankings than pointwise loss.
+Previous studies have experimented with a direct combination of the two losses
+to obtain the benefit from both losses and observed an improved performance.
+However, previous studies break the meaning of output logit as the
+click-through rate, which may lead to sub-optimal solutions. To address this
+issue, we propose an approach that can Jointly optimize the Ranking and
+Calibration abilities (JRC for short). JRC improves the ranking ability by
+contrasting the logit value for the sample
+|    | reference                                                                                                                                             |   date | key idea/summary                                                                                                                                                                                                                                                                                               |
+|----|-------------------------------------------------------------------------------------------------------------------------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [A Self-boosted Framework for Calibrated Ranking](http://arxiv.org/abs/2406.08010)                                                                    |    nan | The paper introduces a Self-Boosted framework for Calibrated Ranking (SBCR) to address limitations in existing multi-objective methods by improving training effectiveness and optimizing the trade-off between calibration and ranking.                                                                       |
+|  1 | [Joint Optimization of Ranking and Calibration with Contextualized Hybrid
+  Model](http://arxiv.org/abs/2208.06164)                                   |    nan | JRC is an approach that jointly optimizes ranking and calibration abilities by improving the ranking ability through contrasting logit values and constraining predicted probabilities to be a function of logit subtraction, leading to significant performance improvements in both ranking and calibration. |
+|  2 | [Regression Compatible Listwise Objectives for Calibrated Ranking with
+  Binary Relevance](http://arxiv.org/abs/2211.01494)                           |    nan | The paper proposes a practical approach for learning-to-rank that aligns ranking and regression objectives, achieving better trade-offs and improving both ranking quality and click prediction accuracy in real-world applications.                                                                           |
+|  3 | [Scale Calibration of Deep Ranking Models](https://doi.org/10.1145/3534678.3539072)                                                                   |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                                                                      |
+|  4 | [Beyond Binary Preference: Leveraging Bayesian Approaches for Joint Optimization of Ranking and Calibration](https://doi.org/10.1145/3637528.3671577) |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                                                                      |
+### <a id='category-model-distillation-and-calibration'></a>Model Distillation and Calibration: 1 papers found.
+Context: 
+	Document 1: [Category]: «Model Distillation and Calibration»
+[Snippet]: «In machine learning systems, privileged features refer to the features that are available during offline training but inaccessible for online serving. Previous studies have recognized the importance of privileged features and explored ways to tackle online-offline discrepancies. A typical practice is privileged features distillation (PFD): train a teacher model using all features (including privileged ones) and then distill the knowledge from the teacher model using a student model (excluding the privileged features), which is then employed for online serving. In practice, the pointwise cross-entropy loss is often adopted for PFD. However, this loss is insufficient to distill the ranking ability for CTR prediction. First, it does not consider the non-i.i.d. characteristic of the data distribution, i.e., other items on the same page significantly impact the click probability of the candidate item. Second, it fails to consider the relative item order ranked by the teacher model's predictions, which is essential to distill the ranking ability. To address these issues, we first extend the pointwise-based PFD to the listwise-based PFD. We then define the calibration-compatible property of distillation loss and show that commonly used listwise losses do not satisfy this property when employed as distillation loss, thus compromising the model's calibration ability, which is another important measure for CTR prediction. To tackle this dilemma, we propose Calibration-compatible LIstwise Distillation (CLID), which employs carefully-designed listwise distillation loss to achieve better ranking ability than the pointwise-based PFD while preserving the model's calibration ability. We theoretically prove it is calibration-compatible. Extensive experiments on public datasets and a production dataset collected from the display advertising system of Alibaba further demonstrate the effectiveness of CLID.»
+[_citation_number]: «12»
+
+Instruction: You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-04-19T09:35:11+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/2112.07428)\]. Further details \[[6](http://arxiv.org/abs/1905.10713)\][
+|    | reference                                                                                                                   |   date | key idea/summary                                                                                                                                                                                                              |
+|----|-----------------------------------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Calibration-compatible Listwise Distillation of Privileged Features for
+  CTR Prediction](http://arxiv.org/abs/2312.08727) |    nan | CLID is a novel listwise distillation method that improves ranking ability for CTR prediction while maintaining model calibration, addressing limitations of pointwise cross-entropy loss in privileged feature distillation. |

@@ -1,0 +1,15 @@
+{
+ "query": "020_2505.23180v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 98.86709189414978,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=340526, completion_tokens=57096, total_tokens=397622, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=502289, completion_tokens=54864, total_tokens=557153, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Deep Learning for Image Processing": 9,
+  "Regularization Techniques in Deep Learning": 3,
+  "Image Deblurring Techniques": 2,
+  "Sparse Imaging Techniques": 2,
+  "Neural Networks for Physics Modeling": 2,
+  "Image Restoration Techniques": 2
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "query": "053_2505.03484v1",
+ "n_papers": 16,
+ "n_linked": 16,
+ "seconds": 66.47534108161926,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=156832, completion_tokens=26426, total_tokens=183258, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=225532, completion_tokens=25886, total_tokens=251418, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Sequential Recommendation Models": 6,
+  "Sequential Recommendation Methods": 4,
+  "Sequential Recommendation Techniques": 2
+ }
+}

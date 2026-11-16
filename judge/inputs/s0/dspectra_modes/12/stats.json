@@ -1,0 +1,10 @@
+{
+ "query": "012_2506.02547v1",
+ "n_papers": 11,
+ "n_linked": 11,
+ "seconds": 14.883612871170044,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=576201, completion_tokens=97720, total_tokens=673921, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=842924, completion_tokens=91738, total_tokens=934662, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Event Camera Vision Research": 10
+ }
+}

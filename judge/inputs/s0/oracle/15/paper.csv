@@ -1,0 +1,188 @@
+id,title,url,snippet
+2011.00848,nnU-Net for Brain Tumor Segmentation,http://arxiv.org/abs/2011.00848,"We apply nnU-Net to the segmentation task of the BraTS 2020 challenge. The
+unmodified nnU-Net baseline configuration already achieves a respectable
+result. By incorporating BraTS-specific modifications regarding postprocessing,
+region-based training, a more aggressive data augmentation as well as several
+minor modifications to the nnUNet pipeline we are able to improve its
+segmentation performance substantially. We furthermore re-implement the BraTS
+ranking scheme to determine which of our nnU-Net variants best fits the
+requirements imposed by it. Our final ensemble took the first place in the
+BraTS 2020 competition with Dice scores of 88.95, 85.06 and 82.03 and HD95
+values of 8.498,17.337 and 17.805 for whole tumor, tumor core and enhancing
+tumor, respectively."
+1904.00625,Med3D: Transfer Learning for 3D Medical Image Analysis,http://arxiv.org/abs/1904.00625,"The performance on deep learning is significantly affected by volume of
+training data. Models pre-trained from massive dataset such as ImageNet become
+a powerful weapon for speeding up training convergence and improving accuracy.
+Similarly, models based on large dataset are important for the development of
+deep learning in 3D medical images. However, it is extremely challenging to
+build a sufficiently large dataset due to difficulty of data acquisition and
+annotation in 3D medical imaging. We aggregate the dataset from several medical
+challenges to build 3DSeg-8 dataset with diverse modalities, target organs, and
+pathologies. To extract general medical three-dimension (3D) features, we
+design a heterogeneous 3D network called Med3D to co-train multi-domain 3DSeg-8
+so as to make a series of pre-trained models. We transfer Med3D pre-trained
+models to lung segmentation in LIDC dataset, pulmonary nodule classification in
+LIDC dataset and liver segmentation on LiTS challenge. Experiments show that
+the Med3D can accelerate the training convergence speed of target 3D medical
+tasks 2 times compared with model pre-trained on Kinetics dataset, and 10 times
+compared with training from scratch as well as improve accuracy ranging from 3%
+to 20%. Transferring our Med3D model on state-the-of-art DenseASPP segmentation
+network, in case of single model, we achieve 94.6\% Dice coefficient which
+approaches the result of top-ranged algorithms on the LiTS challenge."
+2004.07882,Models Genesis,http://arxiv.org/abs/2004.07882,"Transfer learning from natural images to medical images has been established
+as one of the most practical paradigms in deep learning for medical image
+analysis. To fit this paradigm, however, 3D imaging tasks in the most prominent
+imaging modalities (e.g., CT and MRI) have to be reformulated and solved in 2D,
+losing rich 3D anatomical information, thereby inevitably compromising its
+performance. To overcome this limitation, we have built a set of models, called
+Generic Autodidactic Models, nicknamed Models Genesis, because they are created
+ex nihilo (with no manual labeling), self-taught (learnt by self-supervision),
+and generic (served as source models for generating application-specific target
+models). Our extensive experiments demonstrate that our Models Genesis
+significantly outperform learning from scratch and existing pre-trained 3D
+models in all five target 3D applications covering both segmentation and
+classification. More importantly, learning a model from scratch simply in 3D
+may not necessarily yield performance better than transfer learning from
+ImageNet in 2D, but our Models Genesis consistently top any 2D/2.5D approaches
+including fine-tuning the models pre-trained from ImageNet as well as
+fine-tuning the 2D versions of our Models Genesis, confirming the importance of
+3D anatomical information and significance of Models Genesis for 3D medical
+imaging. This performance is attributed to our unified self-supervised learning
+framework, built on a simple yet powerful observation: the sophisticated and
+recurrent anatomy in medical images can serve as strong yet free supervision
+signals for deep models to learn common anatomical representation automatically
+via self-supervision. As open science, all codes and pre-trained Models Genesis
+are available at https://github.com/MrGiovanni/ModelsGenesis."
+2201.01266,"Swin UNETR: Swin Transformers for Semantic Segmentation of Brain Tumors
+  in MRI Images",http://arxiv.org/abs/2201.01266,"Semantic segmentation of brain tumors is a fundamental medical image analysis
+task involving multiple MRI imaging modalities that can assist clinicians in
+diagnosing the patient and successively studying the progression of the
+malignant entity. In recent years, Fully Convolutional Neural Networks (FCNNs)
+approaches have become the de facto standard for 3D medical image segmentation.
+The popular ""U-shaped"" network architecture has achieved state-of-the-art
+performance benchmarks on different 2D and 3D semantic segmentation tasks and
+across various imaging modalities. However, due to the limited kernel size of
+convolution layers in FCNNs, their performance of modeling long-range
+information is sub-optimal, and this can lead to deficiencies in the
+segmentation of tumors with variable sizes. On the other hand, transformer
+models have demonstrated excellent capabilities in capturing such long-range
+information in multiple domains, including natural language processing and
+computer vision. Inspired by the success of vision transformers and their
+variants, we propose a novel segmentation model termed Swin UNEt TRansformers
+(Swin UNETR). Specifically, the task of 3D brain tumor semantic segmentation is
+reformulated as a sequence to sequence prediction problem wherein multi-modal
+input data is projected into a 1D sequence of embedding and used as an input to
+a hierarchical Swin transformer as the encoder. The swin transformer encoder
+extracts features at five different resolutions by utilizing shifted windows
+for computing self-attention and is connected to an FCNN-based decoder at each
+resolution via skip connections. We have participated in BraTS 2021
+segmentation challenge, and our proposed model ranks among the top-performing
+approaches in the validation phase. Code: https://monai.io/research/swin-unetr"
+2103.04430,TransBTS: Multimodal Brain Tumor Segmentation Using Transformer,http://arxiv.org/abs/2103.04430,"Transformer, which can benefit from global (long-range) information modeling
+using self-attention mechanisms, has been successful in natural language
+processing and 2D image classification recently. However, both local and global
+features are crucial for dense prediction tasks, especially for 3D medical
+image segmentation. In this paper, we for the first time exploit Transformer in
+3D CNN for MRI Brain Tumor Segmentation and propose a novel network named
+TransBTS based on the encoder-decoder structure. To capture the local 3D
+context information, the encoder first utilizes 3D CNN to extract the
+volumetric spatial feature maps. Meanwhile, the feature maps are reformed
+elaborately for tokens that are fed into Transformer for global feature
+modeling. The decoder leverages the features embedded by Transformer and
+performs progressive upsampling to predict the detailed segmentation map.
+Extensive experimental results on both BraTS 2019 and 2020 datasets show that
+TransBTS achieves comparable or higher results than previous state-of-the-art
+3D methods for brain tumor segmentation on 3D MRI scans. The source code is
+available at https://github.com/Wenxuan-1119/TransBTS"
+2107.02314,"The RSNA-ASNR-MICCAI BraTS 2021 Benchmark on Brain Tumor Segmentation
+  and Radiogenomic Classification",http://arxiv.org/abs/2107.02314,"The BraTS 2021 challenge celebrates its 10th anniversary and is jointly
+organized by the Radiological Society of North America (RSNA), the American
+Society of Neuroradiology (ASNR), and the Medical Image Computing and Computer
+Assisted Interventions (MICCAI) society. Since its inception, BraTS has been
+focusing on being a common benchmarking venue for brain glioma segmentation
+algorithms, with well-curated multi-institutional multi-parametric magnetic
+resonance imaging (mpMRI) data. Gliomas are the most common primary
+malignancies of the central nervous system, with varying degrees of
+aggressiveness and prognosis. The RSNA-ASNR-MICCAI BraTS 2021 challenge targets
+the evaluation of computational algorithms assessing the same tumor
+compartmentalization, as well as the underlying tumor's molecular
+characterization, in pre-operative baseline mpMRI data from 2,040 patients.
+Specifically, the two tasks that BraTS 2021 focuses on are: a) the segmentation
+of the histologically distinct brain tumor sub-regions, and b) the
+classification of the tumor's O[6]-methylguanine-DNA methyltransferase (MGMT)
+promoter methylation status. The performance evaluation of all participating
+algorithms in BraTS 2021 will be conducted through the Sage Bionetworks Synapse
+platform (Task 1) and Kaggle (Task 2), concluding in distributing to the top
+ranked participants monetary awards of $60,000 collectively."
+1810.11654,3D MRI brain tumor segmentation using autoencoder regularization,http://arxiv.org/abs/1810.11654,"Automated segmentation of brain tumors from 3D magnetic resonance images
+(MRIs) is necessary for the diagnosis, monitoring, and treatment planning of
+the disease. Manual delineation practices require anatomical knowledge, are
+expensive, time consuming and can be inaccurate due to human error. Here, we
+describe a semantic segmentation network for tumor subregion segmentation from
+3D MRIs based on encoder-decoder architecture. Due to a limited training
+dataset size, a variational auto-encoder branch is added to reconstruct the
+input image itself in order to regularize the shared decoder and impose
+additional constraints on its layers. The current approach won 1st place in the
+BraTS 2018 challenge."
+2212.09310,"Multimodal CNN Networks for Brain Tumor Segmentation in MRI: A BraTS
+  2022 Challenge Solution",http://arxiv.org/abs/2212.09310,"Automatic segmentation is essential for the brain tumor diagnosis, disease
+prognosis, and follow-up therapy of patients with gliomas. Still, accurate
+detection of gliomas and their sub-regions in multimodal MRI is very
+challenging due to the variety of scanners and imaging protocols. Over the last
+years, the BraTS Challenge has provided a large number of multi-institutional
+MRI scans as a benchmark for glioma segmentation algorithms. This paper
+describes our contribution to the BraTS 2022 Continuous Evaluation challenge.
+We propose a new ensemble of multiple deep learning frameworks namely, DeepSeg,
+nnU-Net, and DeepSCAN for automatic glioma boundaries detection in
+pre-operative MRI. It is worth noting that our ensemble models took first place
+in the final evaluation on the BraTS testing dataset with Dice scores of
+0.9294, 0.8788, and 0.8803, and Hausdorf distance of 5.23, 13.54, and 12.05,
+for the whole tumor, tumor core, and enhancing tumor, respectively.
+Furthermore, the proposed ensemble method ranked first in the final ranking on
+another unseen test dataset, namely Sub-Saharan Africa dataset, achieving mean
+Dice scores of 0.9737, 0.9593, and 0.9022, and HD95 of 2.66, 1.72, 3.32 for the
+whole tumor, tumor core, and enhancing tumor, respectively. The docker image
+for the winning submission is publicly available at
+(https://hub.docker.com/r/razeineldin/camed22)."
+1811.02629,"Identifying the Best Machine Learning Algorithms for Brain Tumor
+  Segmentation, Progression Assessment, and Overall Survival Prediction in the
+  BRATS Challenge",http://arxiv.org/abs/1811.02629,"Gliomas are the most common primary brain malignancies, with different
+degrees of aggressiveness, variable prognosis and various heterogeneous
+histologic sub-regions, i.e., peritumoral edematous/invaded tissue, necrotic
+core, active and non-enhancing core. This intrinsic heterogeneity is also
+portrayed in their radio-phenotype, as their sub-regions are depicted by
+varying intensity profiles disseminated across multi-parametric magnetic
+resonance imaging (mpMRI) scans, reflecting varying biological properties.
+Their heterogeneous shape, extent, and location are some of the factors that
+make these tumors difficult to resect, and in some cases inoperable. The amount
+of resected tumor is a factor also considered in longitudinal scans, when
+evaluating the apparent tumor for potential diagnosis of progression.
+Furthermore, there is mounting evidence that accurate segmentation of the
+various tumor sub-regions can offer the basis for quantitative image analysis
+towards prediction of patient overall survival. This study assesses the
+state-of-the-art machine learning (ML) methods used for brain tumor image
+analysis in mpMRI scans, during the last seven instances of the International
+Brain Tumor Segmentation (BraTS) challenge, i.e., 2012-2018. Specifically, we
+focus on i) evaluating segmentations of the various glioma sub-regions in
+pre-operative mpMRI scans, ii) assessing potential tumor progression by virtue
+of longitudinal growth of tumor sub-regions, beyond use of the RECIST/RANO
+criteria, and iii) predicting the overall survival from pre-operative mpMRI
+scans of patients that underwent gross total resection. Finally, we investigate
+the challenge of identifying the best ML algorithms for each of these tasks,
+considering that apart from being diverse on each instance of the challenge,
+the multi-institutional mpMRI BraTS dataset has also been a continuously
+evolving/growing dataset."
+2112.04653,Extending nn-UNet for brain tumor segmentation,http://arxiv.org/abs/2112.04653,"Brain tumor segmentation is essential for the diagnosis and prognosis of
+patients with gliomas. The brain tumor segmentation challenge has continued to
+provide a great source of data to develop automatic algorithms to perform the
+task. This paper describes our contribution to the 2021 competition. We
+developed our methods based on nn-UNet, the winning entry of last year
+competition. We experimented with several modifications, including using a
+larger network, replacing batch normalization with group normalization, and
+utilizing axial attention in the decoder. Internal 5-fold cross validation as
+well as online evaluation from the organizers showed the effectiveness of our
+approach, with minor improvement in quantitative metrics when compared to the
+baseline. The proposed models won first place in the final ranking on unseen
+test data. The codes, pretrained weights, and docker image for the winning
+submission are publicly available at
+https://github.com/rixez/Brats21_KAIST_MRI_Lab"

@@ -1,0 +1,13 @@
+{
+ "query": "033_2506.00205v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 20.16752338409424,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=433432, completion_tokens=66368, total_tokens=499800, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=672195, completion_tokens=73634, total_tokens=745829, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Continual Learning Techniques": 14,
+  "Continual Learning Methods": 3,
+  "Continual Learning Strategies": 3,
+  "Catastrophic Forgetting Analysis": 2
+ }
+}

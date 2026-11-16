@@ -1,0 +1,19 @@
+## Related Works
+
+Fine-grained emotion classification in app reviews has emerged as a critical area of research, driven by the need to better understand user sentiment and feedback in increasingly complex digital environments. While traditional sentiment analysis typically focuses on broad categories such as positive, negative, and neutral \[[Yoichi Takenaka' 2025-04-22](http://arxiv.org/abs/2505.00013v1)\], fine-grained emotion classification aims to capture more nuanced emotional states, such as joy, anger, fear, and surprise \[[Daniel Martens' 2017-03-07](http://arxiv.org/abs/1703.02256v1)\]. This distinction is crucial for applications in customer feedback analysis, where understanding the specific emotional tone can provide deeper insights into user experiences \[[Zhaochun Ren' 2024-06-04](http://arxiv.org/abs/2406.02642v4)\].
+
+Several studies have explored the use of large language models (LLMs) for emotion classification tasks. For instance, \[[Yoichi Takenaka' 2025-04-22](http://arxiv.org/abs/2505.00013v1)\] highlights the potential of LLMs in automatically detecting valence, emotions, and other affectual states from text, which aligns with the goals of this study. Similarly, \[[Daniel Martens' 2017-03-07](http://arxiv.org/abs/1703.02256v1)\] discusses the importance of emotional sentiment in user reviews and how it can be an informative feature for software engineers. However, these studies often focus on broader sentiment analysis rather than the fine-grained emotion classification that is central to this work.
+
+The development of structured annotation frameworks for app reviews has also been explored. \[[Zhaochun Ren' 2024-06-04](http://arxiv.org/abs/2406.02642v4)\] introduces a dataset of over 50,000 (medical term, lay definition) pairs, which, although not specific to app reviews, demonstrates the value of structured annotation in improving the accuracy of emotion classification. Additionally, \[[Daniel Martens' 2017-03-07](http://arxiv.org/abs/1703.02256v1)\] discusses the creation of a structured annotation framework for app reviews, which is a key contribution of this study.
+
+The use of LLMs for automating emotion annotation in app reviews has been investigated in several works. \[[Yoichi Takenaka' 2025-04-22](http://arxiv.org/abs/2505.00013v1)\] evaluates the performance of LLMs in classifying app reviews and finds that they can significantly reduce manual effort while maintaining substantial agreement with human annotators. This aligns with the findings of this study, which also assesses the feasibility of using LLMs for emotion annotation in app reviews. However, \[[Yoichi Takenaka' 2025-04-22](http://arxiv.org/abs/2505.00013v1)\] notes that full automation remains challenging due to the complexity of emotional interpretation, a challenge that this study also addresses.
+
+In addition to LLMs, other approaches have been proposed for fine-grained emotion classification. \[[Zhaochun Ren' 2024-06-04](http://arxiv.org/abs/2406.02642v4)\] introduces a dataset for fine-grained food classification, which, while not focused on app reviews, demonstrates the importance of high-quality annotated data in improving model performance. Similarly, \[[Daniel Martens' 2017-03-07](http://arxiv.org/abs/1703.02256v1)\] discusses the use of multimodal data for emotion classification, highlighting the potential of combining textual and visual information to enhance classification accuracy.
+
+The challenges of fine-grained emotion classification in app reviews are also addressed in \[[Zhaochun Ren' 2024-06-04](http://arxiv.org/abs/2406.02642v4)\], which discusses the difficulties of annotating emotional states in text. This study contributes to the field by developing a structured annotation framework and dataset that can be used to train and evaluate models for fine-grained emotion classification in app reviews.
+
+### References
+
+1. [Document 2]  
+2. [Document 3]  
+3. [Document 6]

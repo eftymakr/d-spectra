@@ -1,0 +1,12 @@
+{
+ "query": "028_2504.17448v1",
+ "n_papers": 19,
+ "n_linked": 19,
+ "seconds": 17.204713106155396,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=73133, completion_tokens=12581, total_tokens=85714, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=110692, completion_tokens=13864, total_tokens=124556, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Federated Learning Research Papers": 7,
+  "Federated Learning Research": 6,
+  "Federated Learning Personalization": 2
+ }
+}

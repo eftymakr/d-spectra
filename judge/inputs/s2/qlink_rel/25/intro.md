@@ -1,0 +1,15 @@
+## Related Works
+
+The integration of knowledge graphs (KGs) with large language models (LLMs) to enhance reasoning capabilities has gained significant attention in recent years. While LLMs have demonstrated strong reasoning abilities, they often struggle with multi-step reasoning and leveraging structured knowledge from KGs without adaptation \[[16](http://arxiv.org/abs/2201.11903)\]. KGs, on the other hand, provide structured, semantically rich representations that are well-suited for reasoning tasks \[[13](http://arxiv.org/abs/2003.02320)\]. However, most existing claim verification methods rely on unstructured text corpora, limiting their ability to effectively leverage KGs \[[1](http://arxiv.org/abs/2306.08302)\]. 
+
+Several approaches have explored the synergy between LLMs and KGs. For instance, KEPLER proposes a unified model that integrates knowledge embedding with pre-trained language representation, allowing for better integration of factual knowledge into LLMs and producing effective text-enhanced KG embeddings \[[2](http://arxiv.org/abs/1911.06136)\]. Similarly, StructGPT introduces a general framework for LLMs to reason over structured data, using an iterative reading-then-reasoning approach to improve zero-shot reasoning performance \[[4](http://arxiv.org/abs/2305.09645)\]. 
+
+Retrieval-augmented generation (RAG) has also been proposed as a method to enhance LLMs with external knowledge, combining pre-trained parametric and non-parametric memory for language generation \[[3](http://arxiv.org/abs/2005.11401)\]. This approach has been successfully applied to knowledge-intensive NLP tasks, such as open-domain question answering, where RAG models generate more specific, diverse, and factual language compared to parametric-only models \[[3](http://arxiv.org/abs/2005.11401)\]. 
+
+The use of KGs for reasoning has also been explored in the context of commonsense reasoning. KagNet, for example, introduces a knowledge-aware graph network module that enables explainable inferences by grounding questions in external knowledge graphs \[[14](http://arxiv.org/abs/1909.02151)\]. This approach has achieved state-of-the-art performance on the CommonsenseQA dataset. 
+
+In addition, QA-GNN proposes a novel model that addresses the challenges of reasoning over KGs and QA contexts by using relevance scoring and joint reasoning through graph-based message passing \[[5](http://arxiv.org/abs/2104.06378)\]. This model has been evaluated on the CommonsenseQA and OpenBookQA datasets, showing improvements over existing LM and LM+KG models. 
+
+Furthermore, the concept of chain of thought (CoT) prompting has been explored to improve the reasoning abilities of LLMs by eliciting multi-step reasoning through step-by-step answer examples \[[16](http://arxiv.org/abs/2201.11903)\]. This approach has been shown to significantly improve performance on arithmetic and symbolic reasoning tasks, achieving state-of-the-art results on benchmarks such as GSM8K. 
+
+In summary, while LLMs have demonstrated strong reasoning

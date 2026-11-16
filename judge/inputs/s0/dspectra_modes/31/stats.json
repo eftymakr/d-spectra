@@ -1,0 +1,15 @@
+{
+ "query": "031_2506.01833v1",
+ "n_papers": 25,
+ "n_linked": 25,
+ "seconds": 19.19357466697693,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=571220, completion_tokens=96851, total_tokens=668071, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=834433, completion_tokens=90689, total_tokens=925122, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Self Supervised Learning Techniques": 11,
+  "Pretrained Word Representation Models": 2,
+  "Deep Learning Techniques": 2,
+  "Unsupervised Representation Learning": 2,
+  "Regularization Techniques in Neural Networks": 2,
+  "Genome And Earth Imaging Research": 2
+ }
+}

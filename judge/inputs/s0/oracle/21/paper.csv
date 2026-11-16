@@ -1,0 +1,167 @@
+id,title,url,snippet
+2409.02048,"ViewCrafter: Taming Video Diffusion Models for High-fidelity Novel View
+  Synthesis",http://arxiv.org/abs/2409.02048,"Despite recent advancements in neural 3D reconstruction, the dependence on
+dense multi-view captures restricts their broader applicability. In this work,
+we propose \textbf(ViewCrafter), a novel method for synthesizing high-fidelity
+novel views of generic scenes from single or sparse images with the prior of
+video diffusion model. Our method takes advantage of the powerful generation
+capabilities of video diffusion model and the coarse 3D clues offered by
+point-based representation to generate high-quality video frames with precise
+camera pose control. To further enlarge the generation range of novel views, we
+tailored an iterative view synthesis strategy together with a camera trajectory
+planning algorithm to progressively extend the 3D clues and the areas covered
+by the novel views. With ViewCrafter, we can facilitate various applications,
+such as immersive experiences with real-time rendering by efficiently
+optimizing a 3D-GS representation using the reconstructed 3D points and the
+generated novel views, and scene-level text-to-3D generation for more
+imaginative content creation. Extensive experiments on diverse datasets
+demonstrate the strong generalization capability and superior performance of
+our method in synthesizing high-fidelity and consistent novel views."
+2302.12231,"DiffusioNeRF: Regularizing Neural Radiance Fields with Denoising
+  Diffusion Models",http://arxiv.org/abs/2302.12231,"Under good conditions, Neural Radiance Fields (NeRFs) have shown impressive
+results on novel view synthesis tasks. NeRFs learn a scene's color and density
+fields by minimizing the photometric discrepancy between training views and
+differentiable renderings of the scene. Once trained from a sufficient set of
+views, NeRFs can generate novel views from arbitrary camera positions. However,
+the scene geometry and color fields are severely under-constrained, which can
+lead to artifacts, especially when trained with few input views.
+  To alleviate this problem we learn a prior over scene geometry and color,
+using a denoising diffusion model (DDM). Our DDM is trained on RGBD patches of
+the synthetic Hypersim dataset and can be used to predict the gradient of the
+logarithm of a joint probability distribution of color and depth patches. We
+show that, these gradients of logarithms of RGBD patch priors serve to
+regularize geometry and color of a scene. During NeRF training, random RGBD
+patches are rendered and the estimated gradient of the log-likelihood is
+backpropagated to the color and density fields. Evaluations on LLFF, the most
+relevant dataset, show that our learned prior achieves improved quality in the
+reconstructed geometry and improved generalization to novel views. Evaluations
+on DTU show improved reconstruction quality among NeRF methods."
+2506.01061,AceVFI: A Comprehensive Survey of Advances in Video Frame Interpolation,http://arxiv.org/abs/2506.01061,"Video Frame Interpolation (VFI) is a fundamental Low-Level Vision (LLV) task
+that synthesizes intermediate frames between existing ones while maintaining
+spatial and temporal coherence. VFI techniques have evolved from classical
+motion compensation-based approach to deep learning-based approach, including
+kernel-, flow-, hybrid-, phase-, GAN-, Transformer-, Mamba-, and more recently
+diffusion model-based approach. We introduce AceVFI, the most comprehensive
+survey on VFI to date, covering over 250+ papers across these approaches. We
+systematically organize and describe VFI methodologies, detailing the core
+principles, design assumptions, and technical characteristics of each approach.
+We categorize the learning paradigm of VFI methods namely, Center-Time Frame
+Interpolation (CTFI) and Arbitrary-Time Frame Interpolation (ATFI). We analyze
+key challenges of VFI such as large motion, occlusion, lighting variation, and
+non-linear motion. In addition, we review standard datasets, loss functions,
+evaluation metrics. We examine applications of VFI including event-based,
+cartoon, medical image VFI and joint VFI with other LLV tasks. We conclude by
+outlining promising future research directions to support continued progress in
+the field. This survey aims to serve as a unified reference for both newcomers
+and experts seeking a deep understanding of modern VFI landscapes."
+1904.00830,Depth-Aware Video Frame Interpolation,http://arxiv.org/abs/1904.00830,"Video frame interpolation aims to synthesize nonexistent frames in-between
+the original frames. While significant advances have been made from the recent
+deep convolutional neural networks, the quality of interpolation is often
+reduced due to large object motion or occlusion. In this work, we propose a
+video frame interpolation method which explicitly detects the occlusion by
+exploring the depth information. Specifically, we develop a depth-aware flow
+projection layer to synthesize intermediate flows that preferably sample closer
+objects than farther ones. In addition, we learn hierarchical features to
+gather contextual information from neighboring pixels. The proposed model then
+warps the input frames, depth maps, and contextual features based on the
+optical flow and local interpolation kernels for synthesizing the output frame.
+Our model is compact, efficient, and fully differentiable. Quantitative and
+qualitative results demonstrate that the proposed model performs favorably
+against state-of-the-art frame interpolation methods on a wide variety of
+datasets."
+2204.03513,Many-to-many Splatting for Efficient Video Frame Interpolation,http://arxiv.org/abs/2204.03513,"Motion-based video frame interpolation commonly relies on optical flow to
+warp pixels from the inputs to the desired interpolation instant. Yet due to
+the inherent challenges of motion estimation (e.g. occlusions and
+discontinuities), most state-of-the-art interpolation approaches require
+subsequent refinement of the warped result to generate satisfying outputs,
+which drastically decreases the efficiency for multi-frame interpolation. In
+this work, we propose a fully differentiable Many-to-Many (M2M) splatting
+framework to interpolate frames efficiently. Specifically, given a frame pair,
+we estimate multiple bidirectional flows to directly forward warp the pixels to
+the desired time step, and then fuse any overlapping pixels. In doing so, each
+source pixel renders multiple target pixels and each target pixel can be
+synthesized from a larger area of visual context. This establishes a
+many-to-many splatting scheme with robustness to artifacts like holes.
+Moreover, for each input frame pair, M2M only performs motion estimation once
+and has a minuscule computational overhead when interpolating an arbitrary
+number of in-between frames, hence achieving fast multi-frame interpolation. We
+conducted extensive experiments to analyze M2M, and found that it significantly
+improves efficiency while maintaining high effectiveness."
+2011.06294,Real-Time Intermediate Flow Estimation for Video Frame Interpolation,http://arxiv.org/abs/2011.06294,"Real-time video frame interpolation (VFI) is very useful in video processing,
+media players, and display devices. We propose RIFE, a Real-time Intermediate
+Flow Estimation algorithm for VFI. To realize a high-quality flow-based VFI
+method, RIFE uses a neural network named IFNet that can estimate the
+intermediate flows end-to-end with much faster speed. A privileged distillation
+scheme is designed for stable IFNet training and improve the overall
+performance. RIFE does not rely on pre-trained optical flow models and can
+support arbitrary-timestep frame interpolation with the temporal encoding
+input. Experiments demonstrate that RIFE achieves state-of-the-art performance
+on several public benchmarks. Compared with the popular SuperSlomo and DAIN
+methods, RIFE is 4--27 times faster and produces better results. Furthermore,
+RIFE can be extended to wider applications thanks to temporal encoding. The
+code is available at https://github.com/megvii-research/ECCV2022-RIFE."
+2303.00440,"Extracting Motion and Appearance via Inter-Frame Attention for Efficient
+  Video Frame Interpolation",http://arxiv.org/abs/2303.00440,"Effectively extracting inter-frame motion and appearance information is
+important for video frame interpolation (VFI). Previous works either extract
+both types of information in a mixed way or elaborate separate modules for each
+type of information, which lead to representation ambiguity and low efficiency.
+In this paper, we propose a novel module to explicitly extract motion and
+appearance information via a unifying operation. Specifically, we rethink the
+information process in inter-frame attention and reuse its attention map for
+both appearance feature enhancement and motion information extraction.
+Furthermore, for efficient VFI, our proposed module could be seamlessly
+integrated into a hybrid CNN and Transformer architecture. This hybrid pipeline
+can alleviate the computational complexity of inter-frame attention as well as
+preserve detailed low-level structure information. Experimental results
+demonstrate that, for both fixed- and arbitrary-timestep interpolation, our
+method achieves state-of-the-art performance on various datasets. Meanwhile,
+our approach enjoys a lighter computation overhead over models with close
+performance. The source code and models are available at
+https://github.com/MCG-NJU/EMA-VFI."
+2311.15260,NeuRAD: Neural Rendering for Autonomous Driving,http://arxiv.org/abs/2311.15260,"Neural radiance fields (NeRFs) have gained popularity in the autonomous
+driving (AD) community. Recent methods show NeRFs' potential for closed-loop
+simulation, enabling testing of AD systems, and as an advanced training data
+augmentation technique. However, existing methods often require long training
+times, dense semantic supervision, or lack generalizability. This, in turn,
+hinders the application of NeRFs for AD at scale. In this paper, we propose
+NeuRAD, a robust novel view synthesis method tailored to dynamic AD data. Our
+method features simple network design, extensive sensor modeling for both
+camera and lidar -- including rolling shutter, beam divergence and ray dropping
+-- and is applicable to multiple datasets out of the box. We verify its
+performance on five popular AD datasets, achieving state-of-the-art performance
+across the board. To encourage further development, we will openly release the
+NeuRAD source code. See https://github.com/georghess/NeuRAD ."
+2403.05907,"Lightning NeRF: Efficient Hybrid Scene Representation for Autonomous
+  Driving",http://arxiv.org/abs/2403.05907,"Recent studies have highlighted the promising application of NeRF in
+autonomous driving contexts. However, the complexity of outdoor environments,
+combined with the restricted viewpoints in driving scenarios, complicates the
+task of precisely reconstructing scene geometry. Such challenges often lead to
+diminished quality in reconstructions and extended durations for both training
+and rendering. To tackle these challenges, we present Lightning NeRF. It uses
+an efficient hybrid scene representation that effectively utilizes the geometry
+prior from LiDAR in autonomous driving scenarios. Lightning NeRF significantly
+improves the novel view synthesis performance of NeRF and reduces computational
+overheads. Through evaluations on real-world datasets, such as KITTI-360,
+Argoverse2, and our private dataset, we demonstrate that our approach not only
+exceeds the current state-of-the-art in novel view synthesis quality but also
+achieves a five-fold increase in training speed and a ten-fold improvement in
+rendering speed. Codes are available at
+https://github.com/VISION-SJTU/Lightning-NeRF ."
+2211.09682,"AligNeRF: High-Fidelity Neural Radiance Fields via Alignment-Aware
+  Training",http://arxiv.org/abs/2211.09682,"Neural Radiance Fields (NeRFs) are a powerful representation for modeling a
+3D scene as a continuous function. Though NeRF is able to render complex 3D
+scenes with view-dependent effects, few efforts have been devoted to exploring
+its limits in a high-resolution setting. Specifically, existing NeRF-based
+methods face several limitations when reconstructing high-resolution real
+scenes, including a very large number of parameters, misaligned input data, and
+overly smooth details. In this work, we conduct the first pilot study on
+training NeRF with high-resolution data and propose the corresponding
+solutions: 1) marrying the multilayer perceptron (MLP) with convolutional
+layers which can encode more neighborhood information while reducing the total
+number of parameters; 2) a novel training strategy to address misalignment
+caused by moving objects or small camera calibration errors; and 3) a
+high-frequency aware loss. Our approach is nearly free without introducing
+obvious training/testing costs, while experiments on different datasets
+demonstrate that it can recover more high-frequency details compared with the
+current state-of-the-art NeRF models. Project page:
+\url(https://yifanjiang.net/alignerf.)"

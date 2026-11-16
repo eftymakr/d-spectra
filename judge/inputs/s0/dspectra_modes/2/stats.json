@@ -1,0 +1,12 @@
+{
+ "query": "002_2506.00958v1",
+ "n_papers": 12,
+ "n_linked": 12,
+ "seconds": 29.88208031654358,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=535677, completion_tokens=88803, total_tokens=624480, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=784004, completion_tokens=85074, total_tokens=869078, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Natural Language Understanding Benchmarks": 3,
+  "Video and Language Model Alignment": 2,
+  "Multimodal Language Models": 2
+ }
+}

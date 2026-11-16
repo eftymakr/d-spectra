@@ -1,0 +1,10 @@
+{
+ "query": "021_2505.22616v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 18.744359254837036,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=295795, completion_tokens=43229, total_tokens=339024, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=464007, completion_tokens=50944, total_tokens=514951, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Video Frame Interpolation Techniques": 22
+ }
+}

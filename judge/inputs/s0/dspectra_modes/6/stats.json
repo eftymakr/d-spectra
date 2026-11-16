@@ -1,0 +1,13 @@
+{
+ "query": "006_2505.24575v1",
+ "n_papers": 18,
+ "n_linked": 18,
+ "seconds": 67.54128551483154,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=429820, completion_tokens=69846, total_tokens=499666, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=634080, completion_tokens=68431, total_tokens=702511, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Multiagent Communication Reinforcement Learning": 5,
+  "Language Model Reasoning Enhancements": 4,
+  "LLM Based Multi Agent Systems": 2,
+  "Text to Text Transformers": 2
+ }
+}

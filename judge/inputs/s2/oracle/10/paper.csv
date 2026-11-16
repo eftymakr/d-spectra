@@ -1,0 +1,162 @@
+id,title,url,snippet
+2404.19737,Better & Faster Large Language Models via Multi-token Prediction,http://arxiv.org/abs/2404.19737,"Large language models such as GPT and Llama are trained with a next-token
+prediction loss. In this work, we suggest that training language models to
+predict multiple future tokens at once results in higher sample efficiency.
+More specifically, at each position in the training corpus, we ask the model to
+predict the following n tokens using n independent output heads, operating on
+top of a shared model trunk. Considering multi-token prediction as an auxiliary
+training task, we measure improved downstream capabilities with no overhead in
+training time for both code and natural language models. The method is
+increasingly useful for larger model sizes, and keeps its appeal when training
+for multiple epochs. Gains are especially pronounced on generative benchmarks
+like coding, where our models consistently outperform strong baselines by
+several percentage points. Our 13B parameter models solves 12 % more problems
+on HumanEval and 17 % more on MBPP than comparable next-token models.
+Experiments on small algorithmic tasks demonstrate that multi-token prediction
+is favorable for the development of induction heads and algorithmic reasoning
+capabilities. As an additional benefit, models trained with 4-token prediction
+are up to 3 times faster at inference, even with large batch sizes."
+2101.10382,Curriculum Learning: A Survey,http://arxiv.org/abs/2101.10382,"Training machine learning models in a meaningful order, from the easy samples
+to the hard ones, using curriculum learning can provide performance
+improvements over the standard training approach based on random data
+shuffling, without any additional computational costs. Curriculum learning
+strategies have been successfully employed in all areas of machine learning, in
+a wide range of tasks. However, the necessity of finding a way to rank the
+samples from easy to hard, as well as the right pacing function for introducing
+more difficult data can limit the usage of the curriculum approaches. In this
+survey, we show how these limits have been tackled in the literature, and we
+present different curriculum learning instantiations for various tasks in
+machine learning. We construct a multi-perspective taxonomy of curriculum
+learning approaches by hand, considering various classification criteria. We
+further build a hierarchical tree of curriculum learning methods using an
+agglomerative clustering algorithm, linking the discovered clusters with our
+taxonomy. At the end, we provide some interesting directions for future work."
+2309.08168,"Draft & Verify: Lossless Large Language Model Acceleration via
+  Self-Speculative Decoding",http://arxiv.org/abs/2309.08168,"We present a novel inference scheme, self-speculative decoding, for
+accelerating Large Language Models (LLMs) without the need for an auxiliary
+model. This approach is characterized by a two-stage process: drafting and
+verification. The drafting stage generates draft tokens at a slightly lower
+quality but more quickly, which is achieved by selectively skipping certain
+intermediate layers during drafting. Subsequently, the verification stage
+employs the original LLM to validate those draft output tokens in one forward
+pass. This process ensures the final output remains identical to that produced
+by the unaltered LLM. Moreover, the proposed method requires no additional
+neural network training and no extra memory footprint, making it a
+plug-and-play and cost-effective solution for inference acceleration.
+Benchmarks with LLaMA-2 and its variants demonstrated a speedup up to
+1.99$\times$."
+2401.10774,"Medusa: Simple LLM Inference Acceleration Framework with Multiple
+  Decoding Heads",http://arxiv.org/abs/2401.10774,"Large Language Models (LLMs) employ auto-regressive decoding that requires
+sequential computation, with each step reliant on the previous one's output.
+This creates a bottleneck as each step necessitates moving the full model
+parameters from High-Bandwidth Memory (HBM) to the accelerator's cache. While
+methods such as speculative decoding have been suggested to address this issue,
+their implementation is impeded by the challenges associated with acquiring and
+maintaining a separate draft model. In this paper, we present Medusa, an
+efficient method that augments LLM inference by adding extra decoding heads to
+predict multiple subsequent tokens in parallel. Using a tree-based attention
+mechanism, Medusa constructs multiple candidate continuations and verifies them
+simultaneously in each decoding step. By leveraging parallel processing, Medusa
+substantially reduces the number of decoding steps required. We present two
+levels of fine-tuning procedures for Medusa to meet the needs of different use
+cases: Medusa-1: Medusa is directly fine-tuned on top of a frozen backbone LLM,
+enabling lossless inference acceleration. Medusa-2: Medusa is fine-tuned
+together with the backbone LLM, enabling better prediction accuracy of Medusa
+heads and higher speedup but needing a special training recipe that preserves
+the backbone model's capabilities.
+  Moreover, we propose several extensions that improve or expand the utility of
+Medusa, including a self-distillation to handle situations where no training
+data is available and a typical acceptance scheme to boost the acceptance rate
+while maintaining generation quality. We evaluate Medusa on models of various
+sizes and training procedures. Our experiments demonstrate that Medusa-1 can
+achieve over 2.2x speedup without compromising generation quality, while
+Medusa-2 further improves the speedup to 2.3-3.6x."
+2404.18911,Kangaroo: Lossless Self-Speculative Decoding via Double Early Exiting,http://arxiv.org/abs/2404.18911,"Speculative decoding has demonstrated its effectiveness in accelerating the
+inference of large language models while maintaining a consistent sampling
+distribution. However, the conventional approach of training a separate draft
+model to achieve a satisfactory token acceptance rate can be costly. Drawing
+inspiration from early exiting, we propose a novel self-speculative decoding
+framework \emph(Kangaroo), which uses a fixed shallow sub-network as a
+self-draft model, with the remaining layers serving as the larger target model.
+We train a lightweight and efficient adapter module on top of the sub-network
+to bridge the gap between the sub-network and the full model's representation
+ability. It is noteworthy that the inference latency of the self-draft model
+may no longer be negligible compared to the large model, necessitating
+strategies to increase the token acceptance rate while minimizing the drafting
+steps of the small model. To address this challenge, we introduce an additional
+early exiting mechanism for generating draft tokens. Specifically, we halt the
+small model's subsequent prediction during the drafting phase once the
+confidence level for the current token falls below a certain threshold.
+Extensive experiments on the Spec-Bench demonstrate the effectiveness of
+Kangaroo. Under single-sequence verification, Kangaroo achieves speedups up to
+$1.68\times$ on Spec-Bench, outperforming Medusa-1 with 88.7\% fewer additional
+parameters (67M compared to 591M). The code for Kangaroo is available at
+https://github.com/Equationliu/Kangaroo."
+2410.06916,"SWIFT: On-the-Fly Self-Speculative Decoding for LLM Inference
+  Acceleration",http://arxiv.org/abs/2410.06916,"Speculative decoding (SD) has emerged as a widely used paradigm to accelerate
+LLM inference without compromising quality. It works by first employing a
+compact model to draft multiple tokens efficiently and then using the target
+LLM to verify them in parallel. While this technique has achieved notable
+speedups, most existing approaches necessitate either additional parameters or
+extensive training to construct effective draft models, thereby restricting
+their applicability across different LLMs and tasks. To address this
+limitation, we explore a novel plug-and-play SD solution with layer-skipping,
+which skips intermediate layers of the target LLM as the compact draft model.
+Our analysis reveals that LLMs exhibit great potential for self-acceleration
+through layer sparsity and the task-specific nature of this sparsity. Building
+on these insights, we introduce SWIFT, an on-the-fly self-speculative decoding
+algorithm that adaptively selects intermediate layers of LLMs to skip during
+inference. SWIFT does not require auxiliary models or additional training,
+making it a plug-and-play solution for accelerating LLM inference across
+diverse input data streams. Our extensive experiments across a wide range of
+models and downstream tasks demonstrate that SWIFT can achieve over a 1.3x-1.6x
+speedup while preserving the original distribution of the generated text. We
+release our code in https://github.com/hemingkx/SWIFT."
+2408.08146,"KOALA: Enhancing Speculative Decoding for LLM via Multi-Layer Draft
+  Heads with Adversarial Learning",http://arxiv.org/abs/2408.08146,"Large Language Models (LLMs) exhibit high inference latency due to their
+autoregressive decoding nature. While the draft head in speculative decoding
+mitigates this issue, its full potential remains unexplored. In this paper, we
+introduce KOALA (K-layer Optimized Adversarial Learning Architecture), an
+orthogonal approach to the draft head. By transforming the conventional
+single-layer draft head into a multi-layer architecture and incorporating
+adversarial learning into the traditional supervised training, KOALA
+significantly improves the accuracy of the draft head in predicting subsequent
+tokens, thus more closely mirroring the functionality of LLMs. Although this
+improvement comes at the cost of slightly increased drafting overhead, KOALA
+substantially unlocks the draft head's potential, greatly enhancing speculative
+decoding. We conducted comprehensive evaluations of KOALA, including both
+autoregressive and non-autoregressive draft heads across various tasks,
+demonstrating a latency speedup ratio improvement of 0.24x-0.41x, which is
+10.57%-14.09% faster than the original draft heads."
+https://doi.org/10.1145/1553374.1553380,Curriculum learning,https://doi.org/10.1145/1553374.1553380,
+2311.04897,Future Lens: Anticipating Subsequent Tokens from a Single Hidden State,http://arxiv.org/abs/2311.04897,"We conjecture that hidden state vectors corresponding to individual input
+tokens encode information sufficient to accurately predict several tokens
+ahead. More concretely, in this paper we ask: Given a hidden (internal)
+representation of a single token at position $t$ in an input, can we reliably
+anticipate the tokens that will appear at positions $\geq t + 2$? To test this,
+we measure linear approximation and causal intervention methods in GPT-J-6B to
+evaluate the degree to which individual hidden states in the network contain
+signal rich enough to predict future hidden states and, ultimately, token
+outputs. We find that, at some layers, we can approximate a model's output with
+more than 48% accuracy with respect to its prediction of subsequent tokens
+through a single hidden state. Finally we present a ""Future Lens"" visualization
+that uses these methods to create a new view of transformer states."
+1811.03115,Blockwise Parallel Decoding for Deep Autoregressive Models,http://arxiv.org/abs/1811.03115,"Deep autoregressive sequence-to-sequence models have demonstrated impressive
+performance across a wide variety of tasks in recent years. While common
+architecture classes such as recurrent, convolutional, and self-attention
+networks make different trade-offs between the amount of computation needed per
+layer and the length of the critical path at training time, generation still
+remains an inherently sequential process. To overcome this limitation, we
+propose a novel blockwise parallel decoding scheme in which we make predictions
+for multiple time steps in parallel then back off to the longest prefix
+validated by a scoring model. This allows for substantial theoretical
+improvements in generation speed when applied to architectures that can process
+output sequences in parallel. We verify our approach empirically through a
+series of experiments using state-of-the-art self-attention models for machine
+translation and image super-resolution, achieving iteration reductions of up to
+2x over a baseline greedy decoder with no loss in quality, or up to 7x in
+exchange for a slight decrease in performance. In terms of wall-clock time, our
+fastest models exhibit real-time speedups of up to 4x over standard greedy
+decoding."
+https://aclanthology.org/2024.acl-long.681,(L)ayer(S)kip: Enabling Early Exit Inference and Self-Speculative Decoding,https://aclanthology.org/2024.acl-long.681,
+https://aclanthology.org/2020.findings-emnlp.217,(P)rophet(N)et: Predicting Future N-gram for Sequence-to-(S)equence(P)re-training,https://aclanthology.org/2020.findings-emnlp.217,

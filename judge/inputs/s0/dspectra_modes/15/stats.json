@@ -1,0 +1,14 @@
+{
+ "query": "015_2506.00434v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 43.10534119606018,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=516525, completion_tokens=84533, total_tokens=601058, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=757863, completion_tokens=81929, total_tokens=839792, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Brain Tumor Segmentation Methods": 9,
+  "Brain Tumor Segmentation and Survival Prediction": 5,
+  "Brain Tumor Segmentation Techniques": 3,
+  "Medical Image Segmentation Techniques": 2,
+  "Medical Image Segmentation Networks": 2
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "query": "000_2506.02838v1",
+ "n_papers": 16,
+ "n_linked": 16,
+ "seconds": 16.259092807769775,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=596482, completion_tokens=100573, total_tokens=697055, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=875366, completion_tokens=95471, total_tokens=970837, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Language Model Research and Development": 3,
+  "Agent Based Models Economic Policy": 2,
+  "Language Models And Mathematical Reasoning": 2
+ }
+}

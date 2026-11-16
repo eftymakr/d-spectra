@@ -1,0 +1,13 @@
+{
+ "query": "042_2504.11007v1",
+ "n_papers": 19,
+ "n_linked": 19,
+ "seconds": 15.727208614349365,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=32051, completion_tokens=5456, total_tokens=37507, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=46192, completion_tokens=5985, total_tokens=52177, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Kubernetes Security and Management": 8,
+  "Cloud Infrastructure Management Practices": 3,
+  "Cloud Cost Optimization Strategies": 3,
+  "Containerization and Kubernetes Research": 2
+ }
+}

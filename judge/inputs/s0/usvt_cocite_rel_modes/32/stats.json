@@ -1,0 +1,13 @@
+{
+ "query": "032_2506.00382v1",
+ "n_papers": 22,
+ "n_linked": 22,
+ "seconds": 18.621618032455444,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=455736, completion_tokens=70669, total_tokens=526405, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=706439, completion_tokens=77360, total_tokens=783799, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Parameter Efficient Fine Tuning Techniques": 6,
+  "NLP Model Training Techniques": 5,
+  "Prompt Tuning Techniques": 3,
+  "LLM Fine-tuning Research Trends": 2
+ }
+}

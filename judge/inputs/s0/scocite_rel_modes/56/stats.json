@@ -1,0 +1,13 @@
+{
+ "query": "056_2504.18383v1",
+ "n_papers": 23,
+ "n_linked": 23,
+ "seconds": 20.16371464729309,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=92331, completion_tokens=15210, total_tokens=107541, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=141638, completion_tokens=16943, total_tokens=158581, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Cross Domain Sequential Recommendation": 9,
+  "Cross Domain Recommendation Research": 7,
+  "Recommendation Systems and LLMs": 3,
+  "Open World Cross Domain Recommendations": 2
+ }
+}

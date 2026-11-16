@@ -1,0 +1,12 @@
+{
+ "query": "007_2506.00085v1",
+ "n_papers": 15,
+ "n_linked": 15,
+ "seconds": 15.719602823257446,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=419093, completion_tokens=65370, total_tokens=484463, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=650028, completion_tokens=71690, total_tokens=721718, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Language Model Research Innovations": 5,
+  "Adversarial Attacks And Interpretability": 3,
+  "Language Model Ethics and Capabilities": 2
+ }
+}

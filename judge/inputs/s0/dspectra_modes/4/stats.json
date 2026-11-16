@@ -1,0 +1,12 @@
+{
+ "query": "004_2506.00418v1",
+ "n_papers": 17,
+ "n_linked": 17,
+ "seconds": 34.330246925354004,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=502556, completion_tokens=82303, total_tokens=584859, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=736861, completion_tokens=79866, total_tokens=816727, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Label Noise Robustness Techniques": 6,
+  "Gender Bias in Language Models": 3,
+  "Natural Language Processing Research": 2
+ }
+}

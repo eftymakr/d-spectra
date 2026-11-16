@@ -1,0 +1,11 @@
+{
+ "query": "034_2505.24835v1",
+ "n_papers": 21,
+ "n_linked": 21,
+ "seconds": 17.94085121154785,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=415069, completion_tokens=63133, total_tokens=478202, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=643374, completion_tokens=70468, total_tokens=713842, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Time Series Forecasting with Transformers": 9,
+  "Time Series Forecasting with LLMs": 8
+ }
+}

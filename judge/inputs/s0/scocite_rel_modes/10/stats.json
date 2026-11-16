@@ -1,0 +1,12 @@
+{
+ "query": "010_2505.22757v1",
+ "n_papers": 14,
+ "n_linked": 14,
+ "seconds": 16.095372915267944,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=302400, completion_tokens=47133, total_tokens=349533, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=469723, completion_tokens=52110, total_tokens=521833, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Large Language Model Research": 3,
+  "Math Reasoning And Verification": 3,
+  "Language Model Optimization Techniques": 3
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "query": "048_2505.19356v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 21.191415786743164,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=214866, completion_tokens=34141, total_tokens=249007, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=326725, completion_tokens=37001, total_tokens=363726, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Cross Lingual Retrieval Models": 8,
+  "Language Model Pretraining Techniques": 6,
+  "Text Retrieval Techniques": 4,
+  "Deep Learning Techniques": 3,
+  "Cross Language Retrieval Techniques": 3,
+  "Cross Lingual NLP Research": 2
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "query": "006_2505.24575v1",
+ "n_papers": 17,
+ "n_linked": 17,
+ "seconds": 20.48422360420227,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=996128, completion_tokens=127648, total_tokens=1123776, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=627973, completion_tokens=68885, total_tokens=696858, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": null
+}

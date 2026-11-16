@@ -1,0 +1,12 @@
+{
+ "query": "050_2505.17507v1",
+ "n_papers": 17,
+ "n_linked": 17,
+ "seconds": 15.491156578063965,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=192757, completion_tokens=30003, total_tokens=222760, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=296378, completion_tokens=33556, total_tokens=329934, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Hugging Face Ecosystem Research": 9,
+  "Hugging Face Model Research Trends": 4,
+  "AI Tools and Software Engineering": 2
+ }
+}

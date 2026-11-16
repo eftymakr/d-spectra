@@ -1,0 +1,69 @@
+family,metric,a,b,split,n,mean_a,mean_b,diff,wins,losses,p,p_holm
+1: vs DeepScholar-base rerun,nugget_coverage,fixed_k,dsbase_rerun,held-out,43,0.06451529926222128,0.0425140598875209,0.022001239374700388,8,5,0.23466838675492585,1.0
+1: vs DeepScholar-base rerun,nugget_coverage,relevance_only,dsbase_rerun,held-out,43,0.060803605878845264,0.0425140598875209,0.01828954599132437,9,3,0.09143087884793347,0.6400161519355343
+1: vs DeepScholar-base rerun,nugget_coverage,dspectra,dsbase_rerun,held-out,43,0.04789973987900404,0.0425140598875209,0.005385679991483148,7,5,0.6948866023724733,1.0
+1: vs DeepScholar-base rerun,nugget_coverage,cocite_rel,dsbase_rerun,held-out,43,0.051315589475284196,0.0425140598875209,0.008801529587763302,5,6,0.9291527647091152,1.0
+1: vs DeepScholar-base rerun,nugget_coverage,usvt_cocite_rel,dsbase_rerun,held-out,43,0.03551276205174973,0.0425140598875209,-0.007001297835771161,4,8,0.3266134340151581,1.0
+1: vs DeepScholar-base rerun,nugget_coverage,scocite_rel,dsbase_rerun,held-out,43,0.0424649525880716,0.0425140598875209,-4.9107299449298477e-05,6,6,0.906293509044724,1.0
+1: vs DeepScholar-base rerun,nugget_coverage,qlink_rel,dsbase_rerun,held-out,43,0.0696807348618134,0.0425140598875209,0.027166674974292506,8,6,0.3793539434940021,1.0
+1: vs DeepScholar-base rerun,nugget_coverage,oracle,dsbase_rerun,held-out,42,0.08917823089649714,0.043526299408652346,0.04565193148784479,12,3,0.012382574380773021,0.09906059504618417
+2: USVT co-citation vs,nugget_coverage,usvt_cocite_rel,dspectra,held-out,43,0.03551276205174973,0.04789973987900404,-0.012386977827254307,4,6,0.3586391704612435,0.3586391704612435
+2: USVT co-citation vs,nugget_coverage,usvt_cocite_rel,relevance_only,held-out,43,0.03551276205174973,0.060803605878845264,-0.02529084382709553,2,10,0.04986020375690694,0.09972040751381388
+secondary: vs rerun (no claim),nugget_coverage,fixed_k,dsbase_rerun,held-out,43,0.06451529926222128,0.0425140598875209,0.022001239374700388,8,5,0.23466838675492585,
+secondary: vs rerun (no claim),reference_coverage,fixed_k,dsbase_rerun,held-out,43,0.14909170723159426,0.11308832772616279,0.03600337950543149,8,4,0.09155570817720989,
+secondary: vs rerun (no claim),cite_p,fixed_k,dsbase_rerun,held-out,43,0.42935622888643266,0.4227590333123489,0.006597195574083773,21,22,0.9952328853357812,
+secondary: vs rerun (no claim),claim_coverage,fixed_k,dsbase_rerun,held-out,43,0.5806280055254064,0.6088020361771173,-0.028174030651710827,16,26,0.2275803166082493,
+secondary: vs rerun (no claim),coverage_relevance_rate,fixed_k,dsbase_rerun,held-out,43,1.7046540850450418,1.5748658318425761,0.12978825320246587,22,11,0.019681929202542445,
+secondary: vs rerun (no claim),nugget_coverage,relevance_only,dsbase_rerun,held-out,43,0.060803605878845264,0.0425140598875209,0.01828954599132437,9,3,0.09143087884793347,
+secondary: vs rerun (no claim),reference_coverage,relevance_only,dsbase_rerun,held-out,43,0.13075692017840476,0.11308832772616279,0.017668592452242,11,10,0.9722667103773792,
+secondary: vs rerun (no claim),cite_p,relevance_only,dsbase_rerun,held-out,43,0.4195283528640862,0.4227590333123489,-0.0032306804482626905,25,18,0.8373549841169682,
+secondary: vs rerun (no claim),claim_coverage,relevance_only,dsbase_rerun,held-out,43,0.5770730119873326,0.6088020361771173,-0.0317290241897845,22,21,0.5827135769890897,
+secondary: vs rerun (no claim),coverage_relevance_rate,relevance_only,dsbase_rerun,held-out,43,1.8551352394375646,1.5748658318425761,0.28026940759498903,25,4,0.00015360570603418757,
+secondary: vs rerun (no claim),nugget_coverage,dspectra,dsbase_rerun,held-out,43,0.04789973987900404,0.0425140598875209,0.005385679991483148,7,5,0.6948866023724733,
+secondary: vs rerun (no claim),reference_coverage,dspectra,dsbase_rerun,held-out,43,0.17162406130364816,0.11308832772616279,0.058535733577485406,18,9,0.05156743340997233,
+secondary: vs rerun (no claim),cite_p,dspectra,dsbase_rerun,held-out,43,0.41795867061634945,0.4227590333123489,-0.004800362695999522,21,21,0.9302530212755685,
+secondary: vs rerun (no claim),claim_coverage,dspectra,dsbase_rerun,held-out,43,0.5576219961668878,0.6088020361771173,-0.05118004001022936,17,26,0.16470500788568643,
+secondary: vs rerun (no claim),coverage_relevance_rate,dspectra,dsbase_rerun,held-out,43,1.7355318767839467,1.5748658318425761,0.1606660449413707,23,10,0.008171174457097342,
+secondary: vs rerun (no claim),nugget_coverage,cocite_rel,dsbase_rerun,held-out,43,0.051315589475284196,0.0425140598875209,0.008801529587763302,5,6,0.9291527647091152,
+secondary: vs rerun (no claim),reference_coverage,cocite_rel,dsbase_rerun,held-out,43,0.16055372298888435,0.11308832772616279,0.04746539526272158,22,6,0.016781305549082356,
+secondary: vs rerun (no claim),cite_p,cocite_rel,dsbase_rerun,held-out,43,0.45549682550591547,0.4227590333123489,0.03273779219356657,25,18,0.49891145183258456,
+secondary: vs rerun (no claim),claim_coverage,cocite_rel,dsbase_rerun,held-out,43,0.580438843502239,0.6088020361771173,-0.02836319267487817,22,21,0.5617661740670883,
+secondary: vs rerun (no claim),coverage_relevance_rate,cocite_rel,dsbase_rerun,held-out,43,1.7736990467712626,1.5748658318425761,0.19883321492868614,25,8,0.0047300554024128265,
+secondary: vs rerun (no claim),nugget_coverage,usvt_cocite_rel,dsbase_rerun,held-out,43,0.03551276205174973,0.0425140598875209,-0.007001297835771161,4,8,0.3266134340151581,
+secondary: vs rerun (no claim),reference_coverage,usvt_cocite_rel,dsbase_rerun,held-out,43,0.17745220092272185,0.11308832772616279,0.06436387319655905,19,4,0.0028681432909630775,
+secondary: vs rerun (no claim),cite_p,usvt_cocite_rel,dsbase_rerun,held-out,43,0.40739314251117464,0.4227590333123489,-0.015365890801174262,23,20,0.8752639109063782,
+secondary: vs rerun (no claim),claim_coverage,usvt_cocite_rel,dsbase_rerun,held-out,43,0.536566090079975,0.6088020361771173,-0.07223594609714215,18,25,0.09093066653469162,
+secondary: vs rerun (no claim),coverage_relevance_rate,usvt_cocite_rel,dsbase_rerun,held-out,43,1.752731635289775,1.5748658318425761,0.1778658034471988,23,8,0.005530763326267774,
+secondary: vs rerun (no claim),nugget_coverage,scocite_rel,dsbase_rerun,held-out,43,0.0424649525880716,0.0425140598875209,-4.9107299449298477e-05,6,6,0.906293509044724,
+secondary: vs rerun (no claim),reference_coverage,scocite_rel,dsbase_rerun,held-out,43,0.14108554024240347,0.11308832772616279,0.027997212516240717,21,8,0.06760341233283053,
+secondary: vs rerun (no claim),cite_p,scocite_rel,dsbase_rerun,held-out,43,0.44708396358803154,0.4227590333123489,0.02432493027568268,21,20,0.7215748244344334,
+secondary: vs rerun (no claim),claim_coverage,scocite_rel,dsbase_rerun,held-out,43,0.5834693439335602,0.6088020361771173,-0.025332692243556956,19,24,0.35876908193238355,
+secondary: vs rerun (no claim),coverage_relevance_rate,scocite_rel,dsbase_rerun,held-out,43,1.7608399352585398,1.5748658318425761,0.18597410341596385,24,7,0.010833000016749339,
+secondary: vs rerun (no claim),nugget_coverage,qlink_rel,dsbase_rerun,held-out,43,0.0696807348618134,0.0425140598875209,0.027166674974292506,8,6,0.3793539434940021,
+secondary: vs rerun (no claim),reference_coverage,qlink_rel,dsbase_rerun,held-out,43,0.20141755451979057,0.11308832772616279,0.08832922679362777,23,3,0.0001884967120945746,
+secondary: vs rerun (no claim),cite_p,qlink_rel,dsbase_rerun,held-out,43,0.45935465568223505,0.4227590333123489,0.03659562236988619,25,16,0.23318517193374155,
+secondary: vs rerun (no claim),claim_coverage,qlink_rel,dsbase_rerun,held-out,43,0.5755558617868719,0.6088020361771173,-0.033246174390245235,16,27,0.3075615133012525,
+secondary: vs rerun (no claim),coverage_relevance_rate,qlink_rel,dsbase_rerun,held-out,43,1.7567317695224671,1.5748658318425761,0.18186593767989118,24,8,0.015837549622817762,
+secondary: vs rerun (no claim),nugget_coverage,oracle,dsbase_rerun,held-out,42,0.08917823089649714,0.043526299408652346,0.04565193148784479,12,3,0.012382574380773021,
+secondary: vs rerun (no claim),reference_coverage,oracle,dsbase_rerun,held-out,42,0.7024657190269029,0.11578090695773807,0.5866848120691648,41,0,2.3660567287707966e-08,
+secondary: vs rerun (no claim),cite_p,oracle,dsbase_rerun,held-out,42,0.46639661114312814,0.4240527947571291,0.04234381638599906,27,14,0.24090350640277303,
+secondary: vs rerun (no claim),claim_coverage,oracle,dsbase_rerun,held-out,42,0.5892047874439515,0.612019127264041,-0.02281433982008949,21,20,0.7905094338809265,
+secondary: vs rerun (no claim),coverage_relevance_rate,oracle,dsbase_rerun,held-out,42,1.9512471655328798,1.591529304029304,0.35971786150357576,26,2,4.111617838334574e-05,
+E18: modes vs writer taxonomy,organization,dspectra_modes,dspectra,all,63,0.5,0.5,0.0,0,0,1.0,1.0
+E18: modes vs writer taxonomy,nugget_coverage,dspectra_modes,dspectra,all,63,0.061048125407553375,0.061048125407553375,0.0,0,0,1.0,1.0
+E18: modes vs writer taxonomy,organization,scocite_rel_modes,scocite_rel,all,63,0.5,0.5,0.0,0,0,1.0,1.0
+E18: modes vs writer taxonomy,nugget_coverage,scocite_rel_modes,scocite_rel,all,63,0.07531445844876479,0.07531445844876479,0.0,0,0,1.0,1.0
+E18: modes vs writer taxonomy,organization,usvt_cocite_rel_modes,usvt_cocite_rel,all,63,0.5,0.5,0.0,0,0,1.0,1.0
+E18: modes vs writer taxonomy,nugget_coverage,usvt_cocite_rel_modes,usvt_cocite_rel,all,63,0.05756435264027774,0.05756435264027774,0.0,0,0,1.0,1.0
+E18 secondary (no claim),reference_coverage,dspectra_modes,dspectra,all,63,0.13948365947986988,0.13948365947986988,0.0,0,0,1.0,
+E18 secondary (no claim),cite_p,dspectra_modes,dspectra,all,63,0.44160661340559615,0.4373115620517213,0.004295051353874884,1,0,0.31731050786291415,
+E18 secondary (no claim),claim_coverage,dspectra_modes,dspectra,all,63,0.5680364835992876,0.5664180584514508,0.0016184251478369139,1,0,0.31731050786291415,
+E18 secondary (no claim),coverage_relevance_rate,dspectra_modes,dspectra,all,63,1.7245685408666391,1.7237791341948796,0.000789406671759614,2,2,0.7150006546880893,
+E18 secondary (no claim),reference_coverage,scocite_rel_modes,scocite_rel,all,63,0.15122383690567257,0.15122383690567257,0.0,0,0,1.0,
+E18 secondary (no claim),cite_p,scocite_rel_modes,scocite_rel,all,63,0.4234505675387292,0.4234505675387292,0.0,0,0,1.0,
+E18 secondary (no claim),claim_coverage,scocite_rel_modes,scocite_rel,all,63,0.5582845888665583,0.5582845888665583,0.0,0,0,1.0,
+E18 secondary (no claim),coverage_relevance_rate,scocite_rel_modes,scocite_rel,all,63,1.7803015508197582,1.7698236559581098,0.010477894861648376,8,6,0.4511474692411971,
+E18 secondary (no claim),reference_coverage,usvt_cocite_rel_modes,usvt_cocite_rel,all,63,0.17283676380411178,0.17283676380411178,0.0,0,0,1.0,
+E18 secondary (no claim),cite_p,usvt_cocite_rel_modes,usvt_cocite_rel,all,63,0.435192921703529,0.435192921703529,0.0,0,0,1.0,
+E18 secondary (no claim),claim_coverage,usvt_cocite_rel_modes,usvt_cocite_rel,all,63,0.5473305967865576,0.5473305967865576,0.0,0,0,1.0,
+E18 secondary (no claim),coverage_relevance_rate,usvt_cocite_rel_modes,usvt_cocite_rel,all,63,1.7508324127371748,1.754800666705429,-0.003968253968253968,0,1,0.31731050786291415,

@@ -1,0 +1,11 @@
+{
+ "query": "047_2505.20227v1",
+ "n_papers": 19,
+ "n_linked": 19,
+ "seconds": 17.609044313430786,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=216624, completion_tokens=33303, total_tokens=249927, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=338378, completion_tokens=38458, total_tokens=376836, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Cross Domain Recommendation Methods": 11,
+  "Cross Domain Recommendation Systems": 5
+ }
+}

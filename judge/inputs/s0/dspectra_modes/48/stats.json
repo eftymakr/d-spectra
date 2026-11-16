@@ -1,0 +1,14 @@
+{
+ "query": "048_2505.19356v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 101.04173874855042,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=231319, completion_tokens=39021, total_tokens=270340, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=336075, completion_tokens=37468, total_tokens=373543, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Information Retrieval Models": 9,
+  "NLP Pretraining And Multimodal Applications": 5,
+  "Cross Lingual Retrieval Models": 5,
+  "Dense Retrieval and Transfer Learning": 4,
+  "Dense Retrieval Model Training": 2
+ }
+}

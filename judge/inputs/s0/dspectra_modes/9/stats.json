@@ -1,0 +1,14 @@
+{
+ "query": "009_2505.23353v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 108.78410148620605,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=368160, completion_tokens=60199, total_tokens=428359, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=547016, completion_tokens=58906, total_tokens=605922, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Medical Image Segmentation Techniques": 2,
+  "Multiple Sclerosis Image Analysis": 3,
+  "Multiple Sclerosis Lesion Analysis": 2,
+  "Neuroimaging in Multiple Sclerosis": 2,
+  "Neuroimaging Analysis Techniques": 2
+ }
+}

@@ -1,0 +1,224 @@
+id,title,url,snippet
+2104.09024,"TFROM: A Two-sided Fairness-Aware Recommendation Model for Both
+  Customers and Providers",http://arxiv.org/abs/2104.09024,"At present, most research on the fairness of recommender systems is conducted
+either from the perspective of customers or from the perspective of product (or
+service) providers. However, such a practice ignores the fact that when
+fairness is guaranteed to one side, the fairness and rights of the other side
+are likely to reduce. In this paper, we consider recommendation scenarios from
+the perspective of two sides (customers and providers). From the perspective of
+providers, we consider the fairness of the providers' exposure in recommender
+system. For customers, we consider the fairness of the reduced quality of
+recommendation results due to the introduction of fairness measures. We
+theoretically analyzed the relationship between recommendation quality,
+customers fairness, and provider fairness, and design a two-sided
+fairness-aware recommendation model (TFROM) for both customers and providers.
+Specifically, we design two versions of TFROM for offline and online
+recommendation. The effectiveness of the model is verified on three real-world
+data sets. The experimental results show that TFROM provides better two-sided
+fairness while still maintaining a higher level of personalization than the
+baseline algorithms."
+2205.13619,"Fairness in Recommendation: Foundations, Methods and Applications",http://arxiv.org/abs/2205.13619,"As one of the most pervasive applications of machine learning, recommender
+systems are playing an important role on assisting human decision making. The
+satisfaction of users and the interests of platforms are closely related to the
+quality of the generated recommendation results. However, as a highly
+data-driven system, recommender system could be affected by data or algorithmic
+bias and thus generate unfair results, which could weaken the reliance of the
+systems. As a result, it is crucial to address the potential unfairness
+problems in recommendation settings. Recently, there has been growing attention
+on fairness considerations in recommender systems with more and more literature
+on approaches to promote fairness in recommendation. However, the studies are
+rather fragmented and lack a systematic organization, thus making it difficult
+to penetrate for new researchers to the domain. This motivates us to provide a
+systematic survey of existing works on fairness in recommendation. This survey
+focuses on the foundations for fairness in recommendation literature. It first
+presents a brief introduction about fairness in basic machine learning tasks
+such as classification and ranking in order to provide a general overview of
+fairness research, as well as introduce the more complex situations and
+challenges that need to be considered when studying fairness in recommender
+systems. After that, the survey will introduce fairness in recommendation with
+a focus on the taxonomies of current fairness definitions, the typical
+techniques for improving fairness, as well as the datasets for fairness studies
+in recommendation. The survey also talks about the challenges and opportunities
+in fairness research with the hope of promoting the fair recommendation
+research area and beyond."
+2201.01180,Towards Fair Recommendation in Two-Sided Platforms,http://arxiv.org/abs/2201.01180,"Many online platforms today (such as Amazon, Netflix, Spotify, LinkedIn, and
+AirBnB) can be thought of as two-sided markets with producers and customers of
+goods and services. Traditionally, recommendation services in these platforms
+have focused on maximizing customer satisfaction by tailoring the results
+according to the personalized preferences of individual customers. However, our
+investigation reinforces the fact that such customer-centric design of these
+services may lead to unfair distribution of exposure to the producers, which
+may adversely impact their well-being. On the other hand, a pure
+producer-centric design might become unfair to the customers. As more and more
+people are depending on such platforms to earn a living, it is important to
+ensure fairness to both producers and customers. In this work, by mapping a
+fair personalized recommendation problem to a constrained version of the
+problem of fairly allocating indivisible goods, we propose to provide fairness
+guarantees for both sides. Formally, our proposed (\em FairRec) algorithm
+guarantees Maxi-Min Share ($\alpha$-MMS) of exposure for the producers, and
+Envy-Free up to One Item (EF1) fairness for the customers. Extensive
+evaluations over multiple real-world datasets show the effectiveness of (\em
+FairRec) in ensuring two-sided fairness while incurring a marginal loss in
+overall recommendation quality. Finally, we present a modification of FairRec
+(named as FairRecPlus) that at the cost of additional computation time,
+improves the recommendation performance for the customers, while maintaining
+the same fairness guarantees."
+2204.08085,"CPFair: Personalized Consumer and Producer Fairness Re-ranking for
+  Recommender Systems",http://arxiv.org/abs/2204.08085,"Recently, there has been a rising awareness that when machine learning (ML)
+algorithms are used to automate choices, they may treat/affect individuals
+unfairly, with legal, ethical, or economic consequences. Recommender systems
+are prominent examples of such ML systems that assist users in making
+high-stakes judgments. A common trend in the previous literature research on
+fairness in recommender systems is that the majority of works treat user and
+item fairness concerns separately, ignoring the fact that recommender systems
+operate in a two-sided marketplace. In this work, we present an
+optimization-based re-ranking approach that seamlessly integrates fairness
+constraints from both the consumer and producer-side in a joint objective
+framework. We demonstrate through large-scale experiments on 8 datasets that
+our proposed method is capable of improving both consumer and producer fairness
+without reducing overall recommendation quality, demonstrating the role
+algorithms may play in minimizing data biases."
+2502.11883,"FairDiverse: A Comprehensive Toolkit for Fair and Diverse Information
+  Retrieval Algorithms",http://arxiv.org/abs/2502.11883,"In modern information retrieval (IR). achieving more than just accuracy is
+essential to sustaining a healthy ecosystem, especially when addressing
+fairness and diversity considerations. To meet these needs, various datasets,
+algorithms, and evaluation frameworks have been introduced. However, these
+algorithms are often tested across diverse metrics, datasets, and experimental
+setups, leading to inconsistencies and difficulties in direct comparisons. This
+highlights the need for a comprehensive IR toolkit that enables standardized
+evaluation of fairness- and diversity-aware algorithms across different IR
+tasks. To address this challenge, we present FairDiverse, an open-source and
+standardized toolkit. FairDiverse offers a framework for integrating fair and
+diverse methods, including pre-processing, in-processing, and post-processing
+techniques, at different stages of the IR pipeline. The toolkit supports the
+evaluation of 28 fairness and diversity algorithms across 16 base models,
+covering two core IR tasks (search and recommendation) thereby establishing a
+comprehensive benchmark. Moreover, FairDiverse is highly extensible, providing
+multiple APIs that empower IR researchers to swiftly develop and evaluate their
+own fairness and diversity aware models, while ensuring fair comparisons with
+existing baselines. The project is open-sourced and available on
+https://github.com/XuChen0427/FairDiverse."
+1907.13158,"Multi-stakeholder Recommendation and its Connection to Multi-sided
+  Fairness",http://arxiv.org/abs/1907.13158,"There is growing research interest in recommendation as a multi-stakeholder
+problem, one where the interests of multiple parties should be taken into
+account. This category subsumes some existing well-established areas of
+recommendation research including reciprocal and group recommendation, but a
+detailed taxonomy of different classes of multi-stakeholder recommender systems
+is still lacking. Fairness-aware recommendation has also grown as a research
+area, but its close connection with multi-stakeholder recommendation is not
+always recognized. In this paper, we define the most commonly observed classes
+of multi-stakeholder recommender systems and discuss how different fairness
+concerns may come into play in such systems."
+2404.17826,A Taxation Perspective for Fair Re-ranking,http://arxiv.org/abs/2404.17826,"Fair re-ranking aims to redistribute ranking slots among items more equitably
+to ensure responsibility and ethics. The exploration of redistribution problems
+has a long history in economics, offering valuable insights for conceptualizing
+fair re-ranking as a taxation process. Such a formulation provides us with a
+fresh perspective to re-examine fair re-ranking and inspire the development of
+new methods. From a taxation perspective, we theoretically demonstrate that
+most previous fair re-ranking methods can be reformulated as an item-level tax
+policy. Ideally, a good tax policy should be effective and conveniently
+controllable to adjust ranking resources. However, both empirical and
+theoretical analyses indicate that the previous item-level tax policy cannot
+meet two ideal controllable requirements: (1) continuity, ensuring minor
+changes in tax rates result in small accuracy and fairness shifts; (2)
+controllability over accuracy loss, ensuring precise estimation of the accuracy
+loss under a specific tax rate. To overcome these challenges, we introduce a
+new fair re-ranking method named Tax-rank, which levies taxes based on the
+difference in utility between two items. Then, we efficiently optimize such an
+objective by utilizing the Sinkhorn algorithm in optimal transport. Upon a
+comprehensive analysis, Our model Tax-rank offers a superior tax policy for
+fair re-ranking, theoretically demonstrating both continuity and
+controllability over accuracy loss. Experimental results show that Tax-rank
+outperforms all state-of-the-art baselines in terms of effectiveness and
+efficiency on recommendation and advertising tasks."
+2204.03046,Vertical Allocation-based Fair Exposure Amortizing in Ranking,http://arxiv.org/abs/2204.03046,"Result ranking often affects consumer satisfaction as well as the amount of
+exposure each item receives in the ranking services. Myopically maximizing
+customer satisfaction by ranking items only according to relevance will lead to
+unfair distribution of exposure for items, followed by unfair opportunities and
+economic gains for item producers/providers. Such unfairness will force
+providers to leave the system and discourage new providers from coming in.
+Eventually, fewer purchase options would be left for consumers, and the
+utilities of both consumers and providers would be harmed. Thus, to maintain a
+balance between ranking relevance and fairness is crucial for both parties. In
+this paper, we focus on the exposure fairness in ranking services. We
+demonstrate that existing methods for amortized fairness optimization could be
+suboptimal in terms of fairness-relevance tradeoff because they fail to utilize
+the prior knowledge of consumers. We further propose a novel algorithm named
+Vertical Allocation-based Fair Exposure Amortizing in Ranking, or VerFair, to
+reach a better balance between exposure fairness and ranking performance.
+Extensive experiments on three real-world datasets show that VerFair
+significantly outperforms state-of-the-art fair ranking algorithms in
+fairness-performance trade-offs from both the individual level and the group
+level."
+1902.04056,Policy Learning for Fairness in Ranking,http://arxiv.org/abs/1902.04056,"Conventional Learning-to-Rank (LTR) methods optimize the utility of the
+rankings to the users, but they are oblivious to their impact on the ranked
+items. However, there has been a growing understanding that the latter is
+important to consider for a wide range of ranking applications (e.g. online
+marketplaces, job placement, admissions). To address this need, we propose a
+general LTR framework that can optimize a wide range of utility metrics (e.g.
+NDCG) while satisfying fairness of exposure constraints with respect to the
+items. This framework expands the class of learnable ranking functions to
+stochastic ranking policies, which provides a language for rigorously
+expressing fairness specifications. Furthermore, we provide a new LTR algorithm
+called Fair-PG-Rank for directly searching the space of fair ranking policies
+via a policy-gradient approach. Beyond the theoretical evidence in deriving the
+framework and the algorithm, we provide empirical results on simulated and
+real-world datasets verifying the effectiveness of the approach in individual
+and group-fairness settings."
+2204.06521,Optimizing generalized Gini indices for fairness in rankings,http://arxiv.org/abs/2204.06521,"There is growing interest in designing recommender systems that aim at being
+fair towards item producers or their least satisfied users. Inspired by the
+domain of inequality measurement in economics, this paper explores the use of
+generalized Gini welfare functions (GGFs) as a means to specify the normative
+criterion that recommender systems should optimize for. GGFs weight individuals
+depending on their ranks in the population, giving more weight to worse-off
+individuals to promote equality. Depending on these weights, GGFs minimize the
+Gini index of item exposure to promote equality between items, or focus on the
+performance on specific quantiles of least satisfied users. GGFs for ranking
+are challenging to optimize because they are non-differentiable. We resolve
+this challenge by leveraging tools from non-smooth optimization and projection
+operators used in differentiable sorting. We present experiments using real
+datasets with up to 15k users and items, which show that our approach obtains
+better trade-offs than the baselines on a variety of recommendation tasks and
+fairness criteria."
+2002.10764,"FairRec: Two-Sided Fairness for Personalized Recommendations in
+  Two-Sided Platforms",http://arxiv.org/abs/2002.10764,"We investigate the problem of fair recommendation in the context of two-sided
+online platforms, comprising customers on one side and producers on the other.
+Traditionally, recommendation services in these platforms have focused on
+maximizing customer satisfaction by tailoring the results according to the
+personalized preferences of individual customers. However, our investigation
+reveals that such customer-centric design may lead to unfair distribution of
+exposure among the producers, which may adversely impact their well-being. On
+the other hand, a producer-centric design might become unfair to the customers.
+Thus, we consider fairness issues that span both customers and producers. Our
+approach involves a novel mapping of the fair recommendation problem to a
+constrained version of the problem of fairly allocating indivisible goods. Our
+proposed FairRec algorithm guarantees at least Maximin Share (MMS) of exposure
+for most of the producers and Envy-Free up to One item (EF1) fairness for every
+customer. Extensive evaluations over multiple real-world datasets show the
+effectiveness of FairRec in ensuring two-sided fairness while incurring a
+marginal loss in the overall recommendation quality."
+2206.07247,"Fair Ranking as Fair Division: Impact-Based Individual Fairness in
+  Ranking",http://arxiv.org/abs/2206.07247,"Rankings have become the primary interface in two-sided online markets. Many
+have noted that the rankings not only affect the satisfaction of the users
+(e.g., customers, listeners, employers, travelers), but that the position in
+the ranking allocates exposure -- and thus economic opportunity -- to the
+ranked items (e.g., articles, products, songs, job seekers, restaurants,
+hotels). This has raised questions of fairness to the items, and most existing
+works have addressed fairness by explicitly linking item exposure to item
+relevance. However, we argue that any particular choice of such a link function
+may be difficult to defend, and we show that the resulting rankings can still
+be unfair. To avoid these shortcomings, we develop a new axiomatic approach
+that is rooted in principles of fair division. This not only avoids the need to
+choose a link function, but also more meaningfully quantifies the impact on the
+items beyond exposure. Our axioms of envy-freeness and dominance over uniform
+ranking postulate that for a fair ranking policy every item should prefer their
+own rank allocation over that of any other item, and that no item should be
+actively disadvantaged by the rankings. To compute ranking policies that are
+fair according to these axioms, we propose a new ranking objective related to
+the Nash Social Welfare. We show that the solution has guarantees regarding its
+envy-freeness, its dominance over uniform rankings for every item, and its
+Pareto optimality. In contrast, we show that conventional exposure-based
+fairness can produce large amounts of envy and have a highly disparate impact
+on the items. Beyond these theoretical results, we illustrate empirically how
+our framework controls the trade-off between impact-based individual item
+fairness and user utility."

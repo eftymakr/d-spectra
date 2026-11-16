@@ -1,0 +1,181 @@
+## Related Works
+
+Cross-domain sequential recommendation (CDSR) has gained significant attention in recent years due to its ability to leverage user behavior across multiple domains for improved recommendation performance. Early approaches to sequential recommendation primarily relied on recurrent neural networks (RNNs) and Markov Chains (MCs) to model user behavior \[[5](http://arxiv.org/abs/1808.09781)\]. However, these methods often struggle with long-term dependencies and sparse data \[[5](http://arxiv.org/abs/1808.09781)\]. To address these limitations, attention-based models such as the Transformer have been widely adopted due to their ability to capture long-range dependencies \[[4](http://arxiv.org/abs/1706.03762)\]. The Transformer's self-attention mechanism has become a cornerstone in sequential recommendation, enabling models to learn complex patterns from user behavior \[[4](http://arxiv.org/abs/1706.03762)\].
+
+Despite the success of attention-based models, many existing CDSR frameworks have focused on adding domain-specific components to the transformer architecture, such as domain-aware modules \[[1](http://arxiv.org/abs/1511.06939)\]. While these modifications can enhance performance, they often overlook the potential of the self-attention mechanism itself to learn cross-domain correlations \[[1](http://arxiv.org/abs/1511.06939)\]. This is a critical oversight, as the self-attention module is inherently capable of capturing correlations between items across domains \[[1](http://arxiv.org/abs/1511.06939)\].
+
+To address this gap, several works have explored the use of self-attention in cross-domain settings. For instance, the Sparse-Interest Network (SINE) introduces a sparse-interest module to capture diverse user interests from a large concept pool, improving recommendation accuracy by modeling multiple user intents \[[8](http://arxiv.org/abs/2102.09267)\]. Similarly, the Self-Attentive Sequential Recommendation (SASRec) model leverages self-attention to capture long-term user behavior while maintaining efficiency \[[5](http://arxiv.org/abs/1808.09781)\]. The BERT4Rec model extends this idea by using a bidirectional encoder to capture both left and right context in sequential recommendations, leading to improved performance \[[6](http://arxiv.org/abs/1904.06690)\].
+
+In the realm of cross-domain recommendation, the Mixed Information Flow Network \[[11](http://arxiv.org/abs/2012.00485)\] and the Mixed Attention Network \[[12](http://arxiv.org/abs/2311.08272)\] have been proposed to explicitly model the flow of information between domains. These models incorporate both behavioral and knowledge transfer mechanisms to enhance cross-domain learning. However, they often rely on overlapping user data across domains, which can be a limiting factor in practical deployment \[[12](http://arxiv.org/abs/2311.08272)\].
+
+To further improve cross-domain learning, the Contrastive Cross-Domain Sequential Recommendation (C^2DSR) model jointly learns intra- and inter-sequence item relationships to capture precise user preferences \[[9](http://arxiv.org/abs/2304.03891)\]. This approach not only improves recommendation accuracy but also enhances the robustness of the model by considering both domain-specific and cross-domain interactions \[[9](http://arxiv.org/abs/2304.03891)\].
+
+In summary, while existing CDSR frameworks have made significant progress, they
+## Research papers
+### Outline
+- [Sequential Recommendation Foundations [5 papers]](#category-sequential-recommendation-foundations)
+- [Performance Evaluation Metrics [1 papers]](#category-performance-evaluation-metrics)
+- [Self-Attention Mechanism in CDSR [4 papers]](#category-self-attention-mechanism-in-cdsr)
+- [Transformer-Based Models in Recommendation [2 papers]](#category-transformer-based-models-in-recommendation)
+- [Domain-Aware Components in CDSR [3 papers]](#category-domain-aware-components-in-cdsr)
+- [Knowledge Transfer in Cross-Domain Learning [7 papers]](#category-knowledge-transfer-in-cross-domain-learning)
+
+### <a id='category-sequential-recommendation-foundations'></a>Sequential Recommendation Foundations: 5 papers found.
+Context: 
+	Document 1: [_citation_number]: «1»
+[Snippet]: «We apply recurrent neural networks (RNN) on a new domain, namely recommender
+systems. Real-life recommender systems often face the problem of having to base
+recommendations only on short session-based data (e.g. a small sportsware
+website) instead of long user histories (as in the case of Netflix). In this
+situation the frequently praised matrix factorization approaches are not
+accurate. This problem is usually overcome in practice by resorting to
+item-to-item recommendations, i.e. recommending similar items. We argue that by
+modeling the whole session, more accurate recommendations can be provided. We
+therefore propose an RNN-based approach for session-based recommendations. Our
+approach also considers practical aspects of the task and introduces several
+modifications to classic RNNs such as a ranking loss function that make it more
+viable for this specific problem. Experimental results on two data-sets show
+marked improvements over widely used approaches.»
+[Category]: «Sequential Recommendation Foundations»
+
+	Document 2: [_citation_number]: «2»
+[Snippet]: «Given e-commerce scenarios that user profiles are invisible, session-based
+recommendation is proposed to generate recommendation results from short
+sessions. Previous work only considers the user's sequential behavior in the
+current session, whereas the user's main purpose in the current session is not
+emphasized. In this paper, we propose a novel neural networks framework, i.e.,
+Neural Attentive Recommendation Machine (NARM), to tackle this problem.
+Specifically, we explore a hybrid encoder with an attention mechanism to model
+the user's sequential behavior and capture the user's main purpose in
+the current session, which are combined as a unified session representation later.
+We then compute the recommendation scores for each candidate item with a
+bi-linear matching scheme based on this unified session representation. We
+train NARM by jointly learning the item and session representations as well as
+their matchings. We carried out extensive experiments on two benchmark
+datasets. Our experimental results show that NARM outperforms state-of-the-art
+baselines on both datasets. Furthermore, we also find that NARM achieves a
+significant improvement on long sessions, which demonstrates its advantages in
+modeling the user's sequential behavior and main purpose simultaneously.»
+[Category]: «Sequential Recommendation Foundations»
+
+	Document 3: [_citation_number]: «8»
+[Snippet]: «
+|    | reference                                                                                       |   date | key idea/summary                                                                                                                                                                                                                                                |
+|----|-------------------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Session-based Recommendations with Recurrent Neural Networks](http://arxiv.org/abs/1511.06939) |    nan | The paper proposes an RNN-based approach for session-based recommendations in recommender systems, addressing the limitations of matrix factorization by modeling entire sessions and introducing practical modifications for improved accuracy.                |
+|  1 | [Neural Attentive Session-based Recommendation](http://arxiv.org/abs/1711.04725)                |    nan | The paper proposes NARM, a neural network framework that combines user sequential behavior and main purpose in sessions to improve recommendation accuracy, showing significant improvements over existing methods.                                             |
+|  2 | [Sparse-Interest Network for Sequential Recommendation](http://arxiv.org/abs/2102.09267)        |    nan | The paper proposes SINE, a novel sparse-interest network for sequential recommendation that addresses the limitations of existing methods by modeling multiple diverse conceptual interests and effectively aggregating them for accurate next-item prediction. |
+|  3 | [Recurrent recommender networks]()                                                              |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                       |
+|  4 | [STAMP: short-term attention/memory priority model for session-based recommendation]()          |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                       |
+### <a id='category-performance-evaluation-metrics'></a>Performance Evaluation Metrics: 1 papers found.
+Context: 
+	Document 1: [_citation_number]: «3»
+[Snippet]: «Item recommendation is the task of predicting a personalized ranking on a set
+of items (e.g. websites, movies, products). In this paper, we investigate the
+most common scenario with implicit feedback (e.g. clicks, purchases). There are
+many methods for item recommendation from implicit feedback like matrix
+factorization (MF) or adaptive knearest-neighbor (kNN). Even though these
+methods are designed for the item prediction task of personalized ranking, none
+of them is directly optimized for ranking. In this paper we present a generic
+optimization criterion BPR-Opt for personalized ranking that is the maximum
+posterior estimator derived from a Bayesian analysis of the problem. We also
+provide a generic learning algorithm for optimizing models with respect to
+BPR-Opt. The learning method is based on stochastic gradient descent with
+bootstrap sampling. We show how to apply our method to two state-of-the-art
+recommender models: matrix factorization and adaptive kNN. Our experiments
+indicate that for the task of personalized ranking our optimization method
+outperforms the standard learning techniques for MF and kNN. The results show
+the importance of optimizing models for the right criterion.»
+[Category]: «Performance Evaluation Metrics»
+
+
+Instruction:  You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-05-27T22:38:32+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/1205.2618)\]. Further details \[[6](http://arxiv.org/abs/1904.06690)\]\[[7](http://arxiv.org/abs/2004.05150)\]\[[8](http://arxiv.org/abs/2102.09267)\]\[[9](http://arxiv.org/abs/2304.03891)\]\[[10](http://arxiv.org/abs/2407.11245)\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Sequential recommendation is a popular paradigm in modern recommender
+systems. In particular, one challenging problem in this space is cross-domain
+sequential recommendation (CDSR), which aims to predict future behaviors given
+user interactions across multiple domains. Existing C
+|    | reference                                                                                   |   date | key idea/summary                                                                                                                                                                                 |
+|----|---------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [BPR: Bayesian Personalized Ranking from Implicit Feedback](http://arxiv.org/abs/1205.2618) |    nan | The paper introduces BPR-Opt, a novel optimization criterion for personalized item recommendation from implicit feedback, which outperforms standard methods by directly optimizing for ranking. |
+### <a id='category-self-attention-mechanism-in-cdsr'></a>Self-Attention Mechanism in CDSR: 4 papers found.
+Context: 
+	Document 1: [_citation_number]: «4»
+[Snippet]: «The dominant sequence transduction models are based on complex recurrent or
+convolutional neural networks in an encoder-decoder configuration. The best
+performing models also connect the encoder and decoder through an attention
+mechanism. We propose a new simple network architecture, the Transformer, based
+solely on attention mechanisms, dispensing with recurrence and convolutions
+entirely. Experiments on two machine translation tasks show these models to be
+superior in quality while being more parallelizable and requiring significantly
+less time to train. Our model achieves 28.4 BLEU on the WMT 2014
+English-to-German translation task, improving over the existing best results,
+including ensembles by over 2 BLEU. On the WMT 2014 English-to-French
+translation task, our model establishes a new single-model state-of-the-art
+BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction
+of the training costs of the best models from the literature. We show that the
+Transformer generalizes well to other tasks by applying it successfully to
+English constituency parsing both with large and limited training data.»
+[Category]: «Self-Attention Mechanism in CDSR»
+
+	Document 2: [_citation_number]: «5»
+[Snippet]: «Sequential dynamics are a key feature of many modern recommender systems,
+which seek to capture the `context' of users' activities on the basis of
+actions they have performed recently. To capture such patterns, two approaches
+have proliferated: Markov Chains (MCs) and Recurrent Neural Networks (RNNs).
+Markov Chains assume that a user's next action can be predicted on the basis of
+just their last (or last few) actions, while RNNs in principle allow for
+longer-term semantics to be uncovered. Generally speaking, MC-based methods
+perform best in extremely sparse datasets, where model parsimony is critical,
+while RNNs perform better in denser datasets where higher model complexity is
+affordable. The goal of our work is to balance these two goals, by proposing a
+self-attention based sequential model (SASRec) that allows us to capture
+long-term semantics (like an RNN), but, using an attention mechanism, makes its
+predictions based on relatively few actions (like an MC). At each
+|    | reference                                                                                        |   date | key idea/summary                                                                                                                                                                                                                                                   |
+|----|--------------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Attention Is All You Need](http://arxiv.org/abs/1706.03762)                                     |    nan | The Transformer model, based entirely on attention mechanisms, outperforms traditional recurrent and convolutional neural networks in machine translation tasks, offering higher quality results, better parallelization, and significantly reduced training time. |
+|  1 | [Self-Attentive Sequential Recommendation](http://arxiv.org/abs/1808.09781)                      |    nan | SASRec is a self-attention based sequential model that combines the strengths of Markov Chains and Recurrent Neural Networks by capturing long-term semantics while focusing on relevant actions, outperforming existing models on both sparse and dense datasets. |
+|  2 | [Longformer: The Long-Document Transformer](http://arxiv.org/abs/2004.05150)                     |    nan | Longformer is a transformer variant with an attention mechanism that scales linearly with sequence length, enabling efficient processing of long documents and achieving state-of-the-art results on various downstream tasks.                                     |
+|  3 | [Lighter and better: low-rank decomposed self-attention networks for next-item recommendation]() |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                          |
+### <a id='category-transformer-based-models-in-recommendation'></a>Transformer-Based Models in Recommendation: 2 papers found.
+Context: 
+	Document 1: [_citation_number]: «6»
+[Snippet]: «Modeling users' dynamic and evolving preferences from their historical behaviors is challenging and crucial for recommendation systems. Previous methods employ sequential neural networks (e.g., Recurrent Neural Network) to encode users' historical interactions from left to right into hidden representations for making recommendations. Although these methods achieve satisfactory results, they often assume a rigidly ordered sequence which is not always practical. We argue that such left-to-right unidirectional architectures restrict the power of the historical sequence representations. For this purpose, we introduce a Bidirectional Encoder Representations from Transformers for sequential Recommendation (BERT4Rec). However, jointly conditioning on both left and right context in deep bidirectional model would make the training become trivial since each item can indirectly "see the target item". To address this problem, we train the bidirectional model using the Cloze task, predicting the masked items in the sequence by jointly conditioning on their left and right context. Comparing with predicting the next item at each position in a sequence, the Cloze task can produce more samples to train a more powerful bidirectional model. Extensive experiments on four benchmark datasets show that our model outperforms various state-of-the-art sequential models consistently.»
+[Category]: «Transformer-Based Models in Recommendation»
+
+Instruction:  You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-05-27T22:38:32+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/1205.2618)\]. Further details \[[6](http://arxiv.org/abs/1904.06690)\]\[[7](http://arxiv.org/abs/2004.05150)\]\[[8](http://arxiv.org/abs/2102.09267)\]\[[9](http://arxiv.org/abs/2304.03891)\]\[[10](http://arxiv.org/abs/2407.11245)\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Sequential recommendation is a popular paradigm in modern recommender systems. In particular, one challenging problem in this space is cross-domain sequential recommendation (CDSR), which aims to predict future behaviors given user interactions across multiple domains. Existing CDSR frameworks are mostly built on the self
+|    | reference                                                                                                                            |   date | key idea/summary                                                                                                                                                                                                                 |
+|----|--------------------------------------------------------------------------------------------------------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [BERT4Rec: Sequential Recommendation with Bidirectional Encoder
+  Representations from Transformer](http://arxiv.org/abs/1904.06690) |    nan | BERT4Rec introduces a bidirectional Transformer-based model for sequential recommendation, using the Cloze task to effectively capture both left and right context from user behavior sequences, outperforming existing methods. |
+|  1 | [M6-rec: Generative pretrained language models are open-ended recommender systems]()                                                 |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                        |
+### <a id='category-domain-aware-components-in-cdsr'></a>Domain-Aware Components in CDSR: 3 papers found.
+Context: 
+	Document 1: [_citation_number]: «9»
+[Snippet]: «Cross-Domain Sequential Recommendation (CDSR) aims to predict future interactions based on user's historical sequential interactions from multiple domains. Generally, a key challenge of CDSR is how to mine precise cross-domain user preference based on the intra-sequence and inter-sequence item interactions. Existing works first learn single-domain user preference only with intra-sequence item interactions, and then build a transferring module to obtain cross-domain user preference. However, such a pipeline and implicit solution can be severely limited by the bottleneck of the designed transferring module, and ignores to consider inter-sequence item relationships. In this paper, we propose C^2DSR to tackle the above problems to capture precise user preferences. The main idea is to simultaneously leverage the intra- and inter-sequence item relationships, and jointly learn the single- and cross- domain user preferences. Specifically, we first utilize a graph neural network to mine inter-sequence item collaborative relationship, and then exploit sequential attentive encoder to capture intra-sequence item sequential relationship. Based on them, we devise two different sequential training objectives to obtain user single-domain and cross-domain representations. Furthermore, we present a novel contrastive cross-domain infomax objective to enhance the correlation between single- and cross- domain user representations by maximizing their mutual information. To validate the effectiveness of C^2DSR, we first re-split four e-commerce datasets, and then conduct extensive experiments to demonstrate the effectiveness of our approach C^2DSR.»
+[Category]: «Domain-Aware Components in CDSR»
+
+	Document 2: [_citation_number]: «12»
+[Snippet]: «In modern recommender systems, sequential recommendation leverages chronological user behaviors to make effective next-item suggestions, which suffers from data sparsity issues, especially for new users. One promising line of work is the cross-domain recommendation, which trains models with data across multiple domains to improve the performance in data-scarce domains. Recent proposed cross-domain sequential recommendation models such as PiNet and DASL have a common drawback relying heavily on overlapped users in different domains, which limits their usage in practical recommender systems. In this paper, we propose a Mixed Attention Network (MAN) with local and global attention modules to extract the domain-specific and cross-domain information. First, we propose a local/global encoding layer to capture the domain-specific/cross-domain sequential pattern. Then we propose a mixed attention layer with item similarity attention, sequence-fusion attention
+|    | reference                                                                                             |   date | key idea/summary                                                                                                                                                                                                                                                                              |
+|----|-------------------------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Contrastive Cross-Domain Sequential Recommendation](http://arxiv.org/abs/2304.03891)                 |    nan | C^2DSR is a cross-domain sequential recommendation method that simultaneously leverages intra- and inter-sequence item relationships to jointly learn single- and cross-domain user preferences, enhancing the correlation between them through a contrastive cross-domain infomax objective. |
+|  1 | [Mixed Attention Network for Cross-domain Sequential Recommendation](http://arxiv.org/abs/2311.08272) |    nan | The paper proposes a Mixed Attention Network (MAN) to address data sparsity in cross-domain sequential recommendation by effectively capturing domain-specific and cross-domain information through local and global attention modules.                                                       |
+|  2 | [Multi-Domain Sequential Recommendation via Domain Space Learning]()                                  |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                                                     |
+### <a id='category-knowledge-transfer-in-cross-domain-learning'></a>Knowledge Transfer in Cross-Domain Learning: 7 papers found.
+Context: 
+	Document 1: [_citation_number]: «10»
+[Snippet]: «Cross-Domain Sequential Recommendation (CDSR) improves recommendation performance by utilizing information from multiple domains, which contrasts with Single-Domain Sequential Recommendation (SDSR) that relies on a historical interaction within a specific domain. However, CDSR may underperform compared to the SDSR approach in certain domains due to negative transfer, which occurs when there is a lack of relation between domains or different levels of data sparsity. To address the issue of negative transfer, our proposed CDSR model estimates the degree of negative transfer of each domain and adaptively assigns it as a weight factor to the prediction loss, to control gradient flows through domains with significant negative transfer. To this end, our model compares the performance of a model trained on multiple domains (CDSR) with a model trained solely on the specific domain (SDSR) to evaluate the negative transfer of each domain using our asymmetric cooperative network. In addition, to facilitate the transfer of valuable cues between the SDSR and CDSR tasks, we developed an auxiliary loss that maximizes the mutual information between the representation pairs from both tasks on a per-domain basis. This cooperative learning between SDSR and CDSR tasks is similar to the collaborative dynamics between pacers and runners in a marathon. Our model outperformed numerous previous works in extensive experiments on two real-world industrial datasets across ten service domains. We also have deployed our model in the recommendation system of our personal assistant app service, resulting in 21.4% increase in click-through rate compared to existing models, which is valuable to real-world business.»
+[Category]: «Knowledge Transfer in Cross-Domain Learning»
+
+	Document 2: [_citation_number]: «11»
+[Snippet]: «Cross-domain sequential recommendation is the task of predicting the next item that the user is most likely to interact with based on past sequential behavior from multiple domains. One of the key challenges in cross-domain sequential recommendation is to grasp and transfer the flow of information from multiple domains so as to promote recommendations in all domains. Previous studies have investigated the flow of behavioral information by exploring the connection between items from different domains. The flow of knowledge (i.e., the connection between knowledge from different domains) has so far been neglected. In this paper, we propose a mixed information flow network for cross-domain sequential recommendation to consider both the flow of behavioral information and the flow of knowledge by incorporating a behavior transfer unit and a knowledge transfer unit. The proposed mixed
+|    | reference                                                                                                                                        |   date | key idea/summary                                                                                                                                                                                                                                                   |
+|----|--------------------------------------------------------------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Pacer and Runner: Cooperative Learning Framework between Single- and
+  Cross-Domain Sequential Recommendation](http://arxiv.org/abs/2407.11245) |    nan | The proposed CDSR model improves cross-domain sequential recommendations by addressing negative transfer through adaptive weight factors and cooperative learning between SDSR and CDSR tasks, achieving significant performance gains in real-world applications. |
+|  1 | [Mixed Information Flow for Cross-domain Sequential Recommendations](http://arxiv.org/abs/2012.00485)                                            |    nan | The paper proposes a mixed information flow network for cross-domain sequential recommendation that integrates both behavioral and knowledge transfer to enhance recommendation performance across domains.                                                        |
+|  2 | [Relational learning via collective matrix factorization]()                                                                                      |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                          |
+|  3 | [Dtcdr: A framework for dual-target cross-domain recommendation]()                                                                               |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                          |
+|  4 | [One for all, all for one: Learning and transferring user embeddings for cross-domain recommendation]()                                          |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                          |
+|  5 | [MDMTRec: An Adaptive Multi-Task Multi-Domain Recommendation Framework]()                                                                        |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                          |
+|  6 | [$\pi$-net: A parallel information-sharing network for shared-account cross-domain sequential recommendations]()                                 |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                          |

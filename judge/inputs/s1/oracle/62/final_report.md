@@ -1,0 +1,292 @@
+## Related Works
+
+Generative retrieval has emerged as a promising paradigm in information retrieval, offering a shift from traditional index-based methods to end-to-end neural models that directly generate document identifiers \[[1](http://arxiv.org/abs/2404.14851)\]. This approach leverages large language models to perform both indexing and retrieval, enabling seamless integration with generative tasks \[[12](http://arxiv.org/abs/2204.10628)\]. Early work on differentiable search indexes (DSI) demonstrated that a single transformer model could encode all document information, allowing queries to be mapped directly to relevant document identifiers \[[13](http://arxiv.org/abs/2202.06991)\]. This paradigm has been further refined with methods like Neural Corpus Indexer (NCI), which introduces a prefix-aware weight-adaptive decoder to enhance recall performance \[[5](http://arxiv.org/abs/2206.02743)\]. Similarly, the Generative Retrieval (GenIR) framework explores how generative models can be used to directly generate document identifiers, improving retrieval efficiency \[[1](http://arxiv.org/abs/2404.14851)\].
+
+The use of autoregressive models for retrieval has also been explored in the context of entity retrieval, where systems like GENRE generate entity names token-by-token, capturing fine-grained interactions between context and entities \[[3](http://arxiv.org/abs/2010.00904)\]. This approach has been extended to document retrieval with methods like GenRet, which learns to tokenize documents into semantic identifiers using an auto-encoding framework \[[4](http://arxiv.org/abs/2304.04171)\]. These models address limitations of traditional methods by enabling end-to-end training and reducing memory footprints \[[4](http://arxiv.org/abs/2304.04171)\].
+
+A key challenge in generative retrieval is the generalization to out-of-distribution data, which has been examined in works like "On the Robustness of Generative Information Retrieval Models" \[[18](http://arxiv.org/abs/2412.18768)\]. This paper highlights the need for improved robustness in generative retrieval models, particularly in handling unseen queries and expanding corpora. Additionally, the paper "Generative Retrieval Meets Multi-Graded Relevance" \[[10](http://arxiv.org/abs/2409.18409)\] extends generative retrieval to accommodate multi-graded relevance, introducing a framework that ensures relevant and distinct identifiers while incorporating information about relevance grades during training.
+
+The interplay between generative retrieval and dense retrieval has also been analyzed, with studies showing that generative retrieval can be viewed as a special case of multi-vector dense retrieval \[[11](http://arxiv.org/abs/2404.00684)\]. This insight has led to the development of models like Tied-Atomic, which integrates techniques from dense retrieval to improve scalability and update efficiency \[[14](http://arxiv.org/abs/2306.11397)\]. Furthermore, the "Auto Search Indexer for End-to-End Document Retrieval" \[[8](http://arxiv.org/abs/2310.12455)\] proposes a fully end-to-end paradigm that automatically learns document identifiers and performs retrieval without relying on preprocessed identifiers.
+
+Recent advances in continual learning for generative retrieval have also been explored, with methods like CLEVER
+## Research papers
+### Outline
+- [Generative Retrieval Paradigm Overview [5 papers]](#category-generative-retrieval-paradigm-overview)
+- [End-to-End Training and Memory Efficiency [6 papers]](#category-end-to-end-training-and-memory-efficiency)
+- [Differentiable Search Index Models [4 papers]](#category-differentiable-search-index-models)
+- [Generalization to Out-of-Distribution Data [2 papers]](#category-generalization-to-out-of-distribution-data)
+- [Multi-Graded Relevance Frameworks [1 papers]](#category-multi-graded-relevance-frameworks)
+- [Integration with Dense Retrieval [4 papers]](#category-integration-with-dense-retrieval)
+- [Evaluation and Robustness Studies [3 papers]](#category-evaluation-and-robustness-studies)
+- [Continual Learning Approaches [2 papers]](#category-continual-learning-approaches)
+- [Constrained Decoding Techniques [2 papers]](#category-constrained-decoding-techniques)
+- [Beam Search in Retrieval Generation [1 papers]](#category-beam-search-in-retrieval-generation)
+
+### <a id='category-generative-retrieval-paradigm-overview'></a>Generative Retrieval Paradigm Overview: 5 papers found.
+Generative retrieval has emerged as a promising paradigm in information retrieval, shifting from traditional similarity-based methods to models that directly generate document identifiers or answers using large language models \[[1](http://arxiv.org/abs/2404.14851)\]. This approach leverages the power of pre-trained models to bypass the need for explicit indexing, enabling more flexible and efficient retrieval \[[1](http://arxiv.org/abs/2404.14851)\]. However, existing methods face challenges, such as high training overhead and limited generalization to out-of-distribution corpora \[[16](http://arxiv.org/abs/2408.02152)\]. To address these issues, researchers have proposed alternative indexing strategies, such as few-shot indexing, which relies on prompting large language models to generate document identifiers without requiring extensive training \[[16](http://arxiv.org/abs/2408.02152)\]. Additionally, some studies have focused on improving the alignment between autoregressive generation and the final retrieval goal, introducing learning-to-rank frameworks to bridge the gap between generation and ranking \[[6](http://arxiv.org/abs/2306.15222)\]. These efforts highlight the ongoing evolution of generative retrieval, aiming to enhance both performance and adaptability while maintaining the benefits of end-to-end generation \[[1](http://arxiv.org/abs/2404.14851)\].
+|    | reference                                                                                                                                   |   date | key idea/summary                                                                                                                                                                                                                        |
+|----|---------------------------------------------------------------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [From Matching to Generation: A Survey on Generative Information
+  Retrieval](http://arxiv.org/abs/2404.14851)                              |    nan | This paper provides a comprehensive review of the latest advancements in Generative Information Retrieval (GenIR), covering generative document retrieval, reliable response generation, and challenges in the field.                   |
+|  1 | [Rethinking Search: Making Domain Experts out of Dilettantes](http://arxiv.org/abs/2105.02274)                                              |    nan | This paper explores the integration of classical information retrieval systems and pre-trained language models to develop systems that can provide reliable, justifiable domain expert advice.                                          |
+|  2 | [Learning to Rank in Generative Retrieval](http://arxiv.org/abs/2306.15222)                                                                 |    nan | LTRGR is a learning-to-rank framework for generative retrieval that bridges the learning gap between autoregressive models and passage ranking by optimizing toward the final ranking target.                                           |
+|  3 | [Generative Retrieval with Few-shot Indexing](http://arxiv.org/abs/2408.02152)                                                              |    nan | Few-Shot GR is a novel generative retrieval framework that uses prompting to generate docids for documents without training, enabling efficient and dynamic retrieval with superior performance compared to training-based methods.     |
+|  4 | [UniGen: A Unified Generative Framework for Retrieval and Question
+  Answering with Large Language Models](http://arxiv.org/abs/2312.11036) |    nan | UniGen is a unified generative framework that integrates Generative Document Retrieval and Grounded Answer Generation into a single model, improving performance through shared encoders, distinct decoders, and iterative enhancement. |
+### <a id='category-end-to-end-training-and-memory-efficiency'></a>End-to-End Training and Memory Efficiency: 6 papers found.
+The category "End-to-End Training and Memory Efficiency" focuses on improving document retrieval and entity linking through generative models that replace traditional index-based methods. These approaches leverage autoregressive generation to directly produce document identifiers or entity names, enabling end-to-end optimization and reducing reliance on external indexes \[[3](http://arxiv.org/abs/2010.00904)\]. For instance, GENRE generates entity names token-by-token, allowing for more nuanced context-entities interactions compared to dense vector-based methods \[[3](http://arxiv.org/abs/2010.00904)\]. Similarly, GenRet introduces a discrete auto-encoding framework to learn semantic document identifiers (docids) through tokenization and reconstruction, enabling fully end-to-end training \[[4](http://arxiv.org/abs/2304.04171)\]. The Neural Corpus Indexer (NCI) further advances this by integrating a prefix-aware decoder to enhance recall performance, demonstrating the benefits of unified training and indexing \[[5](http://arxiv.org/abs/2206.02743)\]. SEAL expands on this by using all n-grams as potential identifiers, allowing for more flexible and effective retrieval with reduced memory usage \[[12](http://arxiv.org/abs/2204.10628)\]. PAG improves generative retrieval by combining set-based and sequential identifiers, leveraging both lexical tokens and relevance-based representations, which leads to significant improvements in metrics like MRR \[[28](http://arxiv.org/abs/2404.14600)\]. Additionally, CorpusLM integrates generative retrieval with closed-book generation and RAG, offering a unified framework for knowledge-intensive tasks through greedy decoding \[[29](http://arxiv.org/abs/2402.01176)\]. These methods collectively highlight the shift toward end-to-end generative retrieval systems that improve efficiency, generalization, and performance over traditional paradigms.
+|    | reference                                                                                                                                    |   date | key idea/summary                                                                                                                                                                                                                                             |
+|----|----------------------------------------------------------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Autoregressive Entity Retrieval](http://arxiv.org/abs/2010.00904)                                                                           |    nan | GENRE is a novel system that retrieves entities by generating their unique names token-by-token in an autoregressive fashion, addressing limitations of dense representation methods through reduced memory usage and improved context-entity interaction.   |
+|  1 | [Learning to Tokenize for Generative Retrieval](http://arxiv.org/abs/2304.04171)                                                             |    nan | GenRet is a document tokenization learning method that generates semantic document identifiers (docids) through a discrete auto-encoding framework, enabling end-to-end generative retrieval with improved performance on multiple datasets.                 |
+|  2 | [A Neural Corpus Indexer for Document Retrieval](http://arxiv.org/abs/2206.02743)                                                            |    nan | The paper introduces Neural Corpus Indexer (NCI), an end-to-end deep neural network that improves recall performance in document retrieval by unifying training and indexing stages with a prefix-aware weight-adaptive decoder architecture.                |
+|  3 | [Autoregressive Search Engines: Generating Substrings as Document
+  Identifiers](http://arxiv.org/abs/2204.10628)                            |    nan | This paper proposes an autoregressive approach for passage-level retrieval by using all ngrams in a passage as identifiers, achieving state-of-the-art performance with a lighter memory footprint.                                                          |
+|  4 | [Planning Ahead in Generative Retrieval: Guiding Autoregressive
+  Generation through Simultaneous Decoding](http://arxiv.org/abs/2404.14600) |    nan | PAG is a novel optimization and decoding approach that improves generative retrieval models by using set-based and sequential identifiers, achieving significant performance gains and speed improvements.                                                   |
+|  5 | [CorpusLM: Towards a Unified Language Model on Corpus for
+  Knowledge-Intensive Tasks](http://arxiv.org/abs/2402.01176)                      |    nan | CorpusLM is a unified language model that improves knowledge-intensive tasks by integrating generative retrieval, closed-book generation, and RAG through a unified decoding process, achieving superior performance in both retrieval and downstream tasks. |
+### <a id='category-differentiable-search-index-models'></a>Differentiable Search Index Models: 4 papers found.
+Differentiable Search Index (DSI) models represent a paradigm shift in information retrieval by integrating indexing and retrieval into a single transformer-based model, eliminating the need for separate index structures \[[3](http://arxiv.org/abs/2010.00904)\]. This approach enables direct mapping of queries to document identifiers, leveraging the model's parameters to encode all corpus information \[[3](http://arxiv.org/abs/2010.00904)\]. However, existing DSI models face challenges due to data distribution mismatches between indexing and retrieval, particularly when queries are shorter than indexed documents or when cross-lingual retrieval is required \[[1](http://arxiv.org/abs/2404.14851)\]. To address these issues, researchers have proposed enhancements such as DSI-QG, which generates and incorporates relevant queries during indexing to improve alignment between queries and documents \[[1](http://arxiv.org/abs/2404.14851)\]. Additionally, the Semantic-Enhanced DSI (SE-DSI) model introduces elaborative descriptions for document identifiers and semantic features for improved memorization, drawing inspiration from cognitive psychology \[[2](http://arxiv.org/abs/2105.02274)\]. These advancements highlight the ongoing efforts to refine DSI models for better performance and generalization across diverse retrieval tasks \[[1](http://arxiv.org/abs/2404.14851)\]\[[2](http://arxiv.org/abs/2105.02274)\]\[[3](http://arxiv.org/abs/2010.00904)\].
+|    | reference                                                                                                                                  |   date | key idea/summary                                                                                                                                                                                                                                                  |
+|----|--------------------------------------------------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Bridging the Gap Between Indexing and Retrieval for Differentiable
+  Search Index with Query Generation](http://arxiv.org/abs/2206.10128) |    nan | DSI-QG is an indexing framework for Differentiable Search Index (DSI) models that addresses data distribution mismatches by generating and using relevant queries during indexing to improve retrieval performance.                                               |
+|  1 | [Semantic-Enhanced Differentiable Search Index Inspired by Learning
+  Strategies](http://arxiv.org/abs/2305.15115)                         |    nan | The Semantic-Enhanced DSI model (SE-DSI) improves document retrieval by incorporating semantic features and elaborative descriptions inspired by cognitive psychology strategies, leading to better retrieval performance than existing methods.                  |
+|  2 | [Transformer Memory as a Differentiable Search Index](http://arxiv.org/abs/2202.06991)                                                     |    nan | The paper introduces the Differentiable Search Index (DSI), a novel paradigm that uses a single Transformer model to directly answer queries by encoding all corpus information into its parameters, significantly simplifying the information retrieval process. |
+|  3 | [Joint Optimization of Tree-based Index and Deep Model for Recommender
+  Systems](http://arxiv.org/abs/1902.07565)                         |    nan | The paper proposes a joint optimization framework that simultaneously learns the tree index structure and user preference prediction model to improve recommendation accuracy in large-scale industrial recommender systems.                                      |
+### <a id='category-generalization-to-out-of-distribution-data'></a>Generalization to Out-of-Distribution Data: 2 papers found.
+Context: 
+	Document 1: [Category]: «Generalization to Out-of-Distribution Data»
+[Snippet]: «Generative retrieval, which is a new advanced paradigm for document
+retrieval, has recently attracted research interests, since it encodes all
+documents into the model and directly generates the retrieved documents.
+However, its power is still underutilized since it heavily relies on the
+"preprocessed" document identifiers (docids), thus limiting its retrieval
+performance and ability to retrieve new documents. In this paper, we propose a
+novel fully end-to-end retrieval paradigm. It can not only end-to-end learn the
+best docids for existing and new documents automatically via a semantic
+indexing module, but also perform end-to-end document retrieval via an
+encoder-decoder-based generative model, namely Auto Search Indexer (ASI).
+Besides, we design a reparameterization mechanism to combine the above two
+modules into a joint optimization framework. Extensive experimental results
+demonstrate the superiority of our model over advanced baselines on both public
+and industrial datasets and also verify the ability to deal with new documents.»
+[_citation_number]: «8»
+
+	Document 2: [Category]: «Generalization to Out-of-Distribution Data»
+[Snippet]: «Machine learning technologies have been used in a wide range of practical
+systems. In practical situations, it is natural to expect the input-output
+pairs of a machine learning model to satisfy some requirements. However, it is
+difficult to obtain a model that satisfies requirements by just learning from
+examples. A simple solution is to add a module that checks whether the
+input-output pairs meet the requirements and then modifies the model's outputs.
+Such a module, which we call a (\em concurrent verifier) (CV), can give a
+certification, although how the generalizability of the machine learning model
+changes using a CV is unclear. This paper gives a generalization analysis of
+learning with a CV. We analyze how the learnability of a machine learning model
+changes with a CV and show a condition where we can obtain a guaranteed
+hypothesis using a verifier only in the inference time. We also show that
+typical error bounds based on Rademacher complexity will be no larger than that
+of the original model when using a CV in multi-class classification and
+structured prediction settings.»
+[_citation_number]: «22»
+
+
+Instruction:  You are writing a single subsection of a larger report answering the user
+|    | reference                                                                                         |   date | key idea/summary                                                                                                                                                                                                                                                |
+|----|---------------------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Auto Search Indexer for End-to-End Document Retrieval](http://arxiv.org/abs/2310.12455)          |    nan | The paper introduces Auto Search Indexer (ASI), a fully end-to-end retrieval paradigm that automatically learns optimal document identifiers and performs generative document retrieval, improving performance and handling new documents effectively.          |
+|  1 | [Generalization Analysis on Learning with a Concurrent Verifier](http://arxiv.org/abs/2210.05331) |    nan | This paper provides a generalization analysis of machine learning models using a concurrent verifier (CV), showing how the learnability changes and that error bounds based on Rademacher complexity are no larger than the original model in certain settings. |
+### <a id='category-multi-graded-relevance-frameworks'></a>Multi-Graded Relevance Frameworks: 1 papers found.
+Context: 
+	Document 1: [Category]: «Multi-Graded Relevance Frameworks»
+[Snippet]: «Generative retrieval represents a novel approach to information retrieval. It
+uses an encoder-decoder architecture to directly produce relevant document
+identifiers (docids) for queries. While this method offers benefits, current
+approaches are limited to scenarios with binary relevance data, overlooking the
+potential for documents to have multi-graded relevance. Extending generative
+retrieval to accommodate multi-graded relevance poses challenges, including the
+need to reconcile likelihood probabilities for docid pairs and the possibility
+of multiple relevant documents sharing the same identifier. To address these
+challenges, we introduce a framework called GRaded Generative Retrieval
+(GR$^2$). GR$^2$ focuses on two key components: ensuring relevant and distinct
+identifiers, and implementing multi-graded constrained contrastive training.
+First, we create identifiers that are both semantically relevant and
+sufficiently distinct to represent individual documents effectively. This is
+achieved by jointly optimizing the relevance and distinctness of docids through
+a combination of docid generation and autoencoder models. Second, we
+incorporate information about the relationship between relevance grades to
+guide the training process. We use a constrained contrastive training strategy
+to bring the representations of queries and the identifiers of their relevant
+documents closer together, based on their respective relevance grades.
+Extensive experiments on datasets with both multi-graded and binary relevance
+demonstrate the effectiveness of GR$^2$.»
+[_citation_number]: «10»
+
+Instruction: You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-04-14T06:54:49+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/2010.00904)\]. Further details \[[6](http://arxiv.org/abs/2306.15222)\]\[[7](http://arxiv.org/abs/2206.10128)\]\[[8](http://arxiv.org/abs/2310.12455)\]\[[9](http://arxiv.org/abs/2305.15115)\]\[[10](http://arxiv.org/abs/2409.18409)\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section
+|    | reference                                                                            |   date | key idea/summary                                                                                                                                                                                                                   |
+|----|--------------------------------------------------------------------------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Generative Retrieval Meets Multi-Graded Relevance](http://arxiv.org/abs/2409.18409) |    nan | GR$^2$ is a framework that extends generative retrieval to handle multi-graded relevance by ensuring semantically relevant and distinct document identifiers and using constrained contrastive training based on relevance grades. |
+### <a id='category-integration-with-dense-retrieval'></a>Integration with Dense Retrieval: 4 papers found.
+Context: 
+	Document 1: [Category]: «Integration with Dense Retrieval»
+[Snippet]: «Generative retrieval generates identifiers of relevant documents in an
+end-to-end manner using a sequence-to-sequence architecture for a given query.
+The relation between generative retrieval and other retrieval methods,
+especially those based on matching within dense retrieval models, is not yet
+fully comprehended. Prior work has demonstrated that generative retrieval with
+atomic identifiers is equivalent to single-vector dense retrieval. Accordingly,
+generative retrieval exhibits behavior analogous to hierarchical search within
+a tree index in dense retrieval when using hierarchical semantic identifiers.
+However, prior work focuses solely on the retrieval stage without considering
+the deep interactions within the decoder of generative retrieval.
+  In this paper, we fill this gap by demonstrating that generative retrieval
+and multi-vector dense retrieval share the same framework for measuring the
+relevance to a query of a document. Specifically, we examine the attention
+layer and prediction head of generative retrieval, revealing that generative
+retrieval can be understood as a special case of multi-vector dense retrieval.
+Both methods compute relevance as a sum of products of query and document
+vectors and an alignment matrix. We then explore how generative retrieval
+applies this framework, employing distinct strategies for computing document
+token vectors and the alignment matrix. We have conducted experiments to verify
+our conclusions and show that both paradigms exhibit commonalities of term
+matching in their alignment matrix.»
+[_citation_number]: «11»
+
+	Document 2: [Category]: «Integration with Dense Retrieval»
+[Snippet]: «Generative retrieval is a promising new neural retrieval paradigm that aims
+to optimize the retrieval pipeline by performing both indexing and retrieval
+with a single transformer model. However, this new paradigm faces challenges
+with updating the index and scaling to large collections. In this paper, we
+analyze two prominent variants of generative retrieval and show that they can
+be conceptually viewed as bi-encoders for dense retrieval. Specifically, we
+analytically demonstrate that the generative retrieval process can be
+decomposed into dot products between query and document vectors, similar to
+dense retrieval. This analysis leads us to propose a new variant of generative
+retrieval, called Tied-Atomic, which addresses the updating and scaling issues
+by incorporating techniques from dense retrieval. In experiments on two
+datasets, NQ320k and the full MSMARCO, we confirm that this approach does not
+reduce retrieval
+|    | reference                                                                                                      |   date | key idea/summary                                                                                                                                                                                                            |
+|----|----------------------------------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Generative Retrieval as Multi-Vector Dense Retrieval](http://arxiv.org/abs/2404.00684)                        |    nan | Generative retrieval can be understood as a special case of multi-vector dense retrieval, as both methods share a common framework for measuring relevance through query-document vector products and an alignment matrix.  |
+|  1 | [Generative Retrieval as Dense Retrieval](http://arxiv.org/abs/2306.11397)                                     |    nan | The paper introduces Tied-Atomic, a new variant of generative retrieval that addresses updating and scaling issues by incorporating techniques from dense retrieval, maintaining retrieval effectiveness on large datasets. |
+|  2 | [Generative Dense Retrieval: Memory Can Be a Burden](http://arxiv.org/abs/2401.10487)                          |    nan | Generative Dense Retrieval (GDR) improves upon Generative Retrieval by combining coarse-to-fine matching and memorizing-free mechanisms to enhance accuracy, scalability, and efficiency in document retrieval.             |
+|  3 | [Constructing Tree-based Index for Efficient and Effective Dense
+  Retrieval](http://arxiv.org/abs/2304.11943) |    nan | JTR proposes a joint optimization approach for tree-based indexing and query encoding in dense retrieval, achieving better retrieval performance and system efficiency compared to existing methods.                        |
+### <a id='category-evaluation-and-robustness-studies'></a>Evaluation and Robustness Studies: 3 papers found.
+Context: 
+	Document 1: [Category]: «Evaluation and Robustness Studies»
+[Snippet]: «Recent research has shown that transformer networks can be used as
+differentiable search indexes by representing each document as a sequences of
+document ID tokens. These generative retrieval models cast the retrieval
+problem to a document ID generation problem for each given query. Despite their
+elegant design, existing generative retrieval models only perform well on
+artificially-constructed and small-scale collections. This has led to serious
+skepticism in the research community on their real-world impact. This paper
+represents an important milestone in generative retrieval research by showing,
+for the first time, that generative retrieval models can be trained to perform
+effectively on large-scale standard retrieval benchmarks. For doing so, we
+propose RIPOR- an optimization framework for generative retrieval that can be
+adopted by any encoder-decoder architecture. RIPOR is designed based on two
+often-overlooked fundamental design considerations in generative retrieval.
+First, given the sequential decoding nature of document ID generation,
+assigning accurate relevance scores to documents based on the whole document ID
+sequence is not sufficient. To address this issue, RIPOR introduces a novel
+prefix-oriented ranking optimization algorithm. Second, initial document IDs
+should be constructed based on relevance associations between queries and
+documents, instead of the syntactic and semantic information in the documents.
+RIPOR addresses this issue using a relevance-based document ID construction
+approach that quantizes relevance-based representations learned for documents.
+Evaluation on MSMARCO and TREC Deep Learning Track reveals that RIPOR surpasses
+state-of-the-art generative retrieval models by a large margin (e.g., 30.5% MRR
+improvements on MS MARCO Dev Set), and perform better on par with popular dense
+retrieval models.»
+[_citation_number]: «15»
+
+	Document 2: [Category]: «Evaluation and Robustness Studies»
+[Snippet]: «Generative information retrieval methods retrieve documents by directly
+generating their identifiers. Much effort has been devoted to developing
+effective generative IR models. Less attention has been paid to the robustness
+of these models. It is critical to assess the out-of-distribution (OOD)
+generalization of generative IR models, i.e., how would such models generalize
+to new distributions? To answer this question, we focus on OOD scenarios from
+four perspectives in retrieval problems: (i
+|    | reference                                                                                       |   date | key idea/summary                                                                                                                                                                                                                     |
+|----|-------------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Scalable and Effective Generative Information Retrieval](http://arxiv.org/abs/2311.09134)      |    nan | This paper introduces RIPOR, an optimization framework for generative retrieval models that addresses key limitations in document ID generation and relevance scoring, achieving significant improvements on large-scale benchmarks. |
+|  1 | [On the Robustness of Generative Information Retrieval Models](http://arxiv.org/abs/2412.18768) |    nan | The paper investigates the out-of-distribution robustness of generative information retrieval models, highlighting the need for improvement and providing empirical insights across four OOD scenarios.                              |
+|  2 | [Nonparametric Decoding for Generative Retrieval](http://arxiv.org/abs/2210.02068)              |    nan | Nonparametric Decoding (Np Decoding) enhances generative retrieval models by using external nonparametric contextualized vocab embeddings, improving performance across multiple datasets and settings.                              |
+### <a id='category-continual-learning-approaches'></a>Continual Learning Approaches: 2 papers found.
+Context: 
+	Document 1: [Category]: «Continual Learning Approaches»
+[Snippet]: «Generative retrieval (GR) directly predicts the identifiers of relevant documents (i.e., docids) based on a parametric model. It has achieved solid performance on many ad-hoc retrieval tasks. So far, these tasks have assumed a static document collection. In many practical scenarios, however, document collections are dynamic, where new documents are continuously added to the corpus. The ability to incrementally index new documents while preserving the ability to answer queries with both previously and newly indexed relevant documents is vital to applying GR models. In this paper, we address this practical continual learning problem for GR. We put forward a novel Continual-LEarner for generatiVE Retrieval (CLEVER) model and make two major contributions to continual learning for GR: (i) To encode new documents into docids with low computational cost, we present Incremental Product Quantization, which updates a partial quantization codebook according to two adaptive thresholds; and (ii) To memorize new documents for querying without forgetting previous knowledge, we propose a memory-augmented learning mechanism, to form meaningful connections between old and new documents. Empirical results demonstrate the effectiveness and efficiency of the proposed model.»
+[_citation_number]: «17»
+
+	Document 2: [Category]: «Continual Learning Approaches»
+[Snippet]: «Differentiable Search Index is a recently proposed paradigm for document retrieval, that encodes information about a corpus of documents within the parameters of a neural network and directly maps queries to corresponding documents. These models have achieved state-of-the-art performances for document retrieval across many benchmarks. These kinds of models have a significant limitation: it is not easy to add new documents after a model is trained. We propose IncDSI, a method to add documents in real time (about 20-50ms per document), without retraining the model on the entire dataset (or even parts thereof). Instead we formulate the addition of documents as a constrained optimization problem that makes minimal changes to the network parameters. Although orders of magnitude faster, our approach is competitive with re-training the model on the whole dataset and enables the development of document retrieval systems that can be updated with new information in real-time. Our code for IncDSI is available at https://github.com/varshakishore/IncDSI.»
+[_citation_number]: «21»
+
+
+Instruction:  You are writing a single subsection of a larger report answering
+|    | reference                                                                                           |   date | key idea/summary                                                                                                                                                                                          |
+|----|-----------------------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Continual Learning for Generative Retrieval over Dynamic Corpora](http://arxiv.org/abs/2308.14968) |    nan | The paper introduces CLEVER, a novel model for continual learning in generative retrieval, addressing the challenge of dynamically updating document collections while maintaining retrieval performance. |
+|  1 | [IncDSI: Incrementally Updatable Document Retrieval](http://arxiv.org/abs/2307.10323)               |    nan | IncDSI is a method that allows real-time addition of new documents to differentiable search index models without retraining, enabling dynamic updates to document retrieval systems.                      |
+### <a id='category-constrained-decoding-techniques'></a>Constrained Decoding Techniques: 2 papers found.
+Context: 
+	Document 1: [Category]: «Constrained Decoding Techniques»
+[Snippet]: «As large language models (LLMs) are increasingly used across various
+applications, there is a growing need to control text generation to satisfy
+specific constraints or requirements. This raises a crucial question: Is it
+possible to guarantee strict constraint satisfaction in generated outputs while
+preserving the distribution of the original model as much as possible? We first
+define the ideal distribution - the one closest to the original model, which
+also always satisfies the expressed constraint - as the ultimate goal of
+guaranteed generation. We then state a fundamental limitation, namely that it
+is impossible to reach that goal through autoregressive training alone. This
+motivates the necessity of combining training-time and inference-time methods
+to enforce such guarantees. Based on this insight, we propose GUARD, a simple
+yet effective approach that combines an autoregressive proposal distribution
+with rejection sampling. Through GUARD's theoretical properties, we show how
+controlling the KL divergence between a specific proposal and the target ideal
+distribution simultaneously optimizes inference speed and distributional
+closeness. To validate these theoretical concepts, we conduct extensive
+experiments on two text generation settings with hard-to-satisfy constraints: a
+lexical constraint scenario and a sentiment reversal scenario. These
+experiments show that GUARD achieves perfect constraint satisfaction while
+almost preserving the ideal distribution with highly improved inference
+efficiency. GUARD provides a principled approach to enforcing strict guarantees
+for LLMs without compromising their generative capabilities.»
+[_citation_number]: «23»
+
+	Document 2: [Category]: «Constrained Decoding Techniques»
+[Snippet]: «Despite the success of autoregressive large language models in text
+generation, it remains a major challenge to generate text that satisfies
+complex constraints: sampling from the conditional distribution
+$(\Pr)(\text(text) | \alpha)$ is intractable for even the simplest lexical
+constraints $\alpha$. To overcome this challenge, we propose to use tractable
+probabilistic models (TPMs) to impose lexical constraints in autoregressive
+text generation models, which we refer to as GeLaTo (Generating Language with
+Tractable Constraints). To demonstrate the effectiveness of this framework, we
+use distilled hidden Markov models, where we can efficiently compute
+$(\Pr)(\text(text) | \alpha)$, to guide autoregressive generation from GPT2.
+GeLa
+|    | reference                                                                                   |   date | key idea/summary                                                                                                                                                                                                                                 |
+|----|---------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Guaranteed Generation from Large Language Models](http://arxiv.org/abs/2410.06716)         |    nan | GUARD is a method that combines autoregressive proposal distribution with rejection sampling to enforce strict constraint satisfaction in text generation while preserving the original model's distribution and improving inference efficiency. |
+|  1 | [Tractable Control for Autoregressive Language Generation](http://arxiv.org/abs/2304.07438) |    nan | GeLaTo is a framework that uses tractable probabilistic models to impose lexical constraints in autoregressive text generation, achieving state-of-the-art performance on constrained text generation tasks.                                     |
+### <a id='category-beam-search-in-retrieval-generation'></a>Beam Search in Retrieval Generation: 1 papers found.
+Context: 
+	Document 1: [Category]: «Beam Search in Retrieval Generation»
+[Snippet]: «Retrieving relevant targets from an extremely large target set under computational limits is a common challenge for information retrieval and recommendation systems. Tree models, which formulate targets as leaves of a tree with trainable node-wise scorers, have attracted a lot of interests in tackling this challenge due to their logarithmic computational complexity in both training and testing. Tree-based deep models (TDMs) and probabilistic label trees (PLTs) are two representative kinds of them. Though achieving many practical successes, existing tree models suffer from the training-testing discrepancy, where the retrieval performance deterioration caused by beam search in testing is not considered in training. This leads to an intrinsic gap between the most relevant targets and those retrieved by beam search with even the optimally trained node-wise scorers. We take a first step towards understanding and analyzing this problem theoretically, and develop the concept of Bayes optimality under beam search and calibration under beam search as general analyzing tools for this purpose. Moreover, to eliminate the discrepancy, we propose a novel algorithm for learning optimal tree models under beam search. Experiments on both synthetic and real data verify the rationality of our theoretical analysis and demonstrate the superiority of our algorithm compared to state-of-the-art methods.»
+[_citation_number]: «26»
+
+
+Instruction: You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-04-14T06:54:49+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/2010.00904)\]. Further details \[[6](http://arxiv.org/abs/2306.15222)\]\[[7](http://arxiv.org/abs/2206.10128)\]\[[8](http://arxiv.org/abs/2310.12455)\]\[[9](http://arxiv.org/abs/2305.15115)\]\[[10](http://arxiv.org/abs/2409.18409)\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Generative retrieval seeks to replace traditional search index data structures with a single large-scale neural network, offering the potential for improved efficiency and seamless integration with generative large language models. As an end-to-end paradigm, generative retrieval adopts a
+|    | reference                                                                         |   date | key idea/summary                                                                                                                                                                                                 |
+|----|-----------------------------------------------------------------------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Learning Optimal Tree Models Under Beam Search](http://arxiv.org/abs/2006.15408) |    nan | The paper addresses the training-testing discrepancy in tree-based models by introducing Bayes optimality under beam search and proposes a novel algorithm to eliminate this gap, validated through experiments. |

@@ -1,0 +1,14 @@
+{
+ "query": "032_2506.00382v1",
+ "n_papers": 22,
+ "n_linked": 22,
+ "seconds": 49.99345135688782,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=494909, completion_tokens=80825, total_tokens=575734, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=725712, completion_tokens=78559, total_tokens=804271, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Natural Language Processing Techniques": 7,
+  "Mathematical Reasoning in LLM Research": 3,
+  "Language Model Zero Shot Learning": 2,
+  "Large Language Model Research Trends": 2,
+  "Language Model Fine-Tuning Research": 2
+ }
+}

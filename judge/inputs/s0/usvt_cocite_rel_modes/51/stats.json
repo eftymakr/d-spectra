@@ -1,0 +1,12 @@
+{
+ "query": "051_2505.12791v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 21.93843173980713,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=184120, completion_tokens=28944, total_tokens=213064, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=283231, completion_tokens=32151, total_tokens=315382, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Federated Unlearning Research": 4,
+  "Federated Unlearning Techniques": 2,
+  "Federated Learning Mechanisms": 2
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "query": "045_2505.23452v1",
+ "n_papers": 23,
+ "n_linked": 23,
+ "seconds": 87.1485390663147,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=378595, completion_tokens=61910, total_tokens=440505, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=561004, completion_tokens=60498, total_tokens=621502, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "App Review Analysis Techniques": 7,
+  "Affect Recognition in Text and Models": 4,
+  "Sentiment Analysis in Text Data": 3,
+  "Sentiment Analysis and Language Models": 2,
+  "Sentiment Analysis in App Reviews": 2
+ }
+}

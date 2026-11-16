@@ -1,0 +1,11 @@
+{
+ "query": "021_2505.22616v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 75.3943464756012,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=319694, completion_tokens=52598, total_tokens=372292, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=474274, completion_tokens=51662, total_tokens=525936, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Video Frame Interpolation Techniques": 3,
+  "Video Processing Techniques": 3
+ }
+}

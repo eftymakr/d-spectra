@@ -1,0 +1,13 @@
+{
+ "query": "024_2505.22167v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 21.73837924003601,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=242735, completion_tokens=35993, total_tokens=278728, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=382342, completion_tokens=42538, total_tokens=424880, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Diffusion Model Quantization Techniques": 18,
+  "Video Generation and Diffusion Models": 7,
+  "Diffusion Models for Image Synthesis": 2,
+  "Diffusion Models for Image and Video Generation": 2
+ }
+}

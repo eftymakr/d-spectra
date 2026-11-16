@@ -1,0 +1,10 @@
+{
+ "query": "038_2505.11554v1",
+ "n_papers": 14,
+ "n_linked": 14,
+ "seconds": 14.108803510665894,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=171234, completion_tokens=27937, total_tokens=199171, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=259964, completion_tokens=30114, total_tokens=290078, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Memory Bandwidth Management in Multi-core Systems": 12
+ }
+}

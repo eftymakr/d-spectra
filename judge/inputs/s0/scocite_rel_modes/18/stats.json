@@ -1,0 +1,12 @@
+{
+ "query": "018_2505.24334v1",
+ "n_papers": 14,
+ "n_linked": 14,
+ "seconds": 15.89250111579895,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=374738, completion_tokens=58443, total_tokens=433181, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=582165, completion_tokens=63969, total_tokens=646134, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Anomaly Detection Methods": 8,
+  "Industrial Anomaly Detection Techniques": 3,
+  "Anomaly Detection in Industrial Systems": 2
+ }
+}

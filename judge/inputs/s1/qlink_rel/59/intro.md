@@ -1,0 +1,17 @@
+## Related Works
+
+Fairness in ranking and recommendation systems has been a growing area of research, with multiple studies addressing the trade-off between accuracy and fairness. Early work on fairness in ranking, such as Fairness of Exposure in Rankings \[[1](http://arxiv.org/abs/1802.07281)\], introduced the concept of fairness constraints in ranking systems, emphasizing the need to balance user utility with fairness to the items being ranked. This work laid the foundation for subsequent research on fairness-aware ranking algorithms.
+
+The idea of fairness through awareness \[[2](http://arxiv.org/abs/1104.3913)\] further expanded the discussion by proposing a framework for fair classification, where similar individuals are treated similarly. This concept has been adapted to ranking systems, where fairness is not only about group-level parity but also about individual-level treatment. The paper also discusses the relationship between fairness and privacy, highlighting the importance of differential privacy in fairness-aware systems.
+
+Ranking with fairness constraints \[[3](http://arxiv.org/abs/1704.06840)\] introduced the problem of incorporating fairness or diversity constraints into ranking algorithms. The work demonstrated that fairness constraints can significantly impact the ranking quality and that optimizing for fairness requires careful balancing with utility. This study also showed that the problem is computationally challenging, even with simple constraints.
+
+Equity of attention: amortizing individual fairness in rankings \[[4](http://arxiv.org/abs/1805.01788)\] introduced the concept of individual fairness in rankings, where the attention given to each ranked item is considered. This work emphasized that fairness should be measured at the individual level rather than just at the group level, and it proposed a mechanism for achieving amortized fairness across a series of rankings.
+
+FairRec: two-sided fairness for personalized recommendations in two-sided platforms \[[5](http://arxiv.org/abs/2204.08085)\] addressed the issue of fairness in two-sided platforms, where both customers and producers are affected by recommendation systems. This work proposed a novel approach to fairly allocate exposure among producers while maintaining customer satisfaction, demonstrating that fairness considerations must span both sides of the platform.
+
+Fairness in recommendation ranking through pairwise comparisons \[[6](http://arxiv.org/abs/2002.10764)\] introduced a new method for evaluating fairness in recommender systems based on pairwise comparisons. This approach allows for a more nuanced understanding of fairness in rankings and has been applied to large-scale production systems with significant improvements in pairwise fairness.
+
+The concept of fairness in recommendation systems has also been extended to include both user and item fairness, as seen in the work of \[[7](http://arxiv.org/abs/1903.00780)\] and \[[8](http://arxiv.org/abs/1609.05807)\]. These studies emphasized the need to consider fairness from multiple perspectives and proposed methods to ensure that both users and items are treated fairly in recommendation systems.
+
+In addition, the work of \[[9](http://arxiv.org/abs/1610.08559)\] introduced a framework for measuring fairness in ranked outputs, proposing fairness measures that can be integrated into optimization frameworks to improve fairness while maintaining accuracy. This

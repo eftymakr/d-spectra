@@ -1,0 +1,142 @@
+## Related Works
+
+Recent advances in deep learning have enabled significant progress in understanding DNA sequences and their functional implications. Early approaches to DNA pre-training primarily relied on unsupervised paradigms, such as autoencoders or self-supervised learning, to learn representations from raw DNA sequences \[[10]()\]. However, these methods often fail to capture the complex regulatory signals that govern gene expression and chromatin states, which are influenced by genomic profiles like chromatin accessibility and histone modifications \[[10]()\]. As a result, pure sequence-based pre-training has been shown to yield suboptimal results \[[10]()\].
+
+To address this limitation, researchers have explored supervised pre-training strategies that incorporate genomic profiles as additional signals during training. For instance, supervised sequence-to-activity models have been developed to predict genome-wide chromatin states or gene expression levels directly from DNA sequences \[[1](http://arxiv.org/abs/2411.11158)\]. These models leverage labeled data to improve the accuracy of variant effect predictions, particularly for non-coding variants that are prevalent in genome-wide association studies \[[1](http://arxiv.org/abs/2411.11158)\]. Similarly, the Nucleotide Transformer \[[10]()\] and DNABERT \[[11]()\] have been introduced as foundation models that incorporate bidirectional transformers to better capture the contextual relationships within DNA sequences. These models have demonstrated improved performance in predicting regulatory elements and functional variants.
+
+The use of mixture-of-experts (MoE) architectures has also gained traction in genomics. The Switch Transformer \[[5](http://arxiv.org/abs/2101.03961)\] and HyenaDNA \[[3](http://arxiv.org/abs/2306.15794)\] have demonstrated that MoE can effectively scale to large models while maintaining computational efficiency. HyenaDNA, in particular, leverages long-range modeling capabilities to achieve single-nucleotide resolution, which is crucial for identifying subtle genetic variations that impact protein function \[[3](http://arxiv.org/abs/2306.15794)\]. Additionally, the Adaptive Mixtures of Local Experts \[[13]()\] have been proposed to improve the adaptability of models across different genomic contexts, further enhancing the generalization of DNA representation learning.
+
+In parallel, several studies have focused on the application of deep learning models for predicting the effects of non-coding variants. These include supervised models that integrate long-range interactions to improve gene expression prediction \[[9]()\], as well as models that use convolutional neural networks to predict regulatory activity across chromosomes \[[7]()\]. These approaches highlight the importance of incorporating both sequence and genomic profile information to achieve more accurate variant effect predictions \[[1](http://arxiv.org/abs/2411.11158)\]\[[7]()\]\[[9]()\].
+
+Overall, the field has seen a shift from purely sequence-based pre-training to more comprehensive models that integrate genomic profiles and leverage advanced architectures like MoE to improve performance. These developments have laid the groundwork for the proposed SPACE model
+## Research papers
+### Outline
+- [Genome-Wide Variant Effect Prediction Approaches [3 papers]](#category-genome-wide-variant-effect-prediction-approaches)
+- [Bidirectional Transformer Models for DNA [2 papers]](#category-bidirectional-transformer-models-for-dna)
+- [Single-Nucleotide Resolution Modeling in Genomics [1 papers]](#category-single-nucleotide-resolution-modeling-in-genomics)
+- [Mixture of Experts (MoE) Architectures in Genomics [3 papers]](#category-mixture-of-experts-(moe)-architectures-in-genomics)
+- [Long-Range DNA Sequence Modeling Techniques [2 papers]](#category-long-range-dna-sequence-modeling-techniques)
+- [Foundation Models for DNA Representation Learning [2 papers]](#category-foundation-models-for-dna-representation-learning)
+
+### <a id='category-genome-wide-variant-effect-prediction-approaches'></a>Genome-Wide Variant Effect Prediction Approaches: 3 papers found.
+Context: 
+	Document 1: [_citation_number]: «1»
+[Snippet]: «The majority of genetic variants identified in genome-wide association studies of complex traits are non-coding, and characterizing their function remains an important challenge in human genetics. Genomic deep learning models have emerged as a promising approach to enable in silico prediction of variant effects. These include supervised sequence-to-activity models, which predict genome-wide chromatin states or gene expression levels directly from DNA sequence, and self-supervised genomic language models. Here, we review progress in leveraging these models for non-coding variant effect prediction. We describe practical considerations for making such predictions and categorize the types of ground truth data that have been used to evaluate deep learning-based variant effect predictions, providing insight into the settings in which current models are most useful. We also discuss downstream applications of such models to understanding disease-relevant non-coding variants. Our review highlights key considerations for practitioners and opportunities for future improvements in model development and evaluation.»
+[Category]: «Genome-Wide Variant Effect Prediction Approaches»
+
+Instruction:  You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-06-02T16:23:05+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/2306.15794)\]. Further details \[[6]()\]\[[7]()\]\[[8]()\]\[[9]()\]\[[10]()\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Inspired by the success of unsupervised pre-training paradigms, researchers have applied these approaches to DNA pre-training. However, we argue that these approaches alone yield suboptimal results because pure DNA sequences lack sufficient information, since their functions are regulated by genomic profiles like chromatin accessibility. Here, we demonstrate that supervised training for genomic profile prediction serves as a more effective alternative to pure sequence pre-training. Furthermore, considering the multi-species and multi-profile nature of genomic profile prediction, we introduce our $\textbf(S
+|    | reference                                                                                                             |   date | key idea/summary                                                                                                                                                                                                                 |
+|----|-----------------------------------------------------------------------------------------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Leveraging genomic deep learning models for non-coding variant effect
+  prediction](http://arxiv.org/abs/2411.11158) |    nan | This paper reviews the use of genomic deep learning models for predicting the effects of non-coding genetic variants, discussing practical considerations, evaluation methods, and future directions for improving these models. |
+|  1 | [Predicting effects of noncoding variants with deep learning--based sequence model]()                                 |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                        |
+|  2 | [Deep learning sequence-based ab initio prediction of variant effects on expression and disease risk]()               |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                        |
+### <a id='category-bidirectional-transformer-models-for-dna'></a>Bidirectional Transformer Models for DNA: 2 papers found.
+Context: 
+	Document 1: [_citation_number]: «2»
+[Snippet]: «We introduce a new language representation model called BERT, which stands
+for Bidirectional Encoder Representations from Transformers. Unlike recent
+language representation models, BERT is designed to pre-train deep
+bidirectional representations from unlabeled text by jointly conditioning on
+both left and right context in all layers. As a result, the pre-trained BERT
+model can be fine-tuned with just one additional output layer to create
+state-of-the-art models for a wide range of tasks, such as question answering
+and language inference, without substantial task-specific architecture
+modifications.
+  BERT is conceptually simple and empirically powerful. It obtains new
+state-of-the-state-of-the-art results on eleven natural language processing tasks, including
+pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI
+accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering
+Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1
+(5.1 point absolute improvement).»
+[Category]: «Bidirectional Transformer Models for DNA»
+
+Instruction:  You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-06-02T16:23:05+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/2306.15794)\]. Further details \[[6]()\]\[[7]()\]\[[8]()\]\[[9]()\]\[[10]()\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Inspired by the success of unsupervised pre-training paradigms, researchers
+have applied these approaches to DNA pre-training. However, we argue that these
+approaches alone yield suboptimal results because pure DNA sequences lack
+|    | reference                                                                                                             |   date | key idea/summary                                                                                                                                                                                      |
+|----|-----------------------------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [BERT: Pre-training of Deep Bidirectional Transformers for Language
+  Understanding](http://arxiv.org/abs/1810.04805) |    nan | BERT is a new language representation model that pre-trains deep bidirectional representations from unlabeled text, achieving state-of-the-art results on multiple natural language processing tasks. |
+|  1 | [DNABERT: pre-trained Bidirectional Encoder Representations from Transformers model for DNA-language in genome]()     |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                             |
+### <a id='category-single-nucleotide-resolution-modeling-in-genomics'></a>Single-Nucleotide Resolution Modeling in Genomics: 1 papers found.
+Context: 
+	Document 1: \[[3](http://arxiv.org/abs/2306.15794)\] «Genomic (DNA) sequences encode an enormous amount of information for gene regulation and protein synthesis. Similar to natural language models, researchers have proposed foundation models in genomics to learn generalizable features from unlabeled genome data that can then be fine-tuned for downstream tasks such as identifying regulatory elements. Due to the quadratic scaling of attention, previous Transformer-based genomic models have used 512 to 4k tokens as context (<0.001% of the human genome), significantly limiting the modeling of long-range interactions in DNA. In addition, these methods rely on tokenizers or fixed k-mers to aggregate meaningful DNA units, losing single nucleotide resolution where subtle genetic variations can completely alter protein function via single nucleotide polymorphisms (SNPs). Recently, Hyena, a large language model based on implicit convolutions was shown to match attention in quality while allowing longer context lengths and lower time complexity. Leveraging Hyena's new long-range capabilities, we present HyenaDNA, a genomic foundation model pretrained on the human reference genome with context lengths of up to 1 million tokens at the single nucleotide-level - an up to 500x increase over previous dense attention-based models. HyenaDNA scales sub-quadratically in sequence length (training up to 160x faster than Transformer), uses single nucleotide tokens, and has full global context at each layer. We explore what longer context enables - including the first use of in-context learning in genomics. On fine-tuned benchmarks from the Nucleotide Transformer, HyenaDNA reaches state-of-the-art (SotA) on 12 of 18 datasets using a model with orders of magnitude less parameters and pretraining data. On the GenomicBenchmarks, HyenaDNA surpasses SotA on 7 of 8 datasets on average by +10 accuracy points. Code at https://github.com/HazyResearch/hyena-dna.»
+[Category]: «Single-Nucleotide Resolution Modeling in Genomics»
+
+Instruction:  You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-06-02T16:23:05+00:00. Mention them
+|    | reference                                                                                                           |   date | key idea/summary                                                                                                                                                                                        |
+|----|---------------------------------------------------------------------------------------------------------------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide
+  Resolution](http://arxiv.org/abs/2306.15794) |    nan | HyenaDNA is a genomic foundation model that uses implicit convolutions to achieve long-range context modeling at the single nucleotide level, outperforming previous models in accuracy and efficiency. |
+### <a id='category-mixture-of-experts-(moe)-architectures-in-genomics'></a>Mixture of Experts (MoE) Architectures in Genomics: 3 papers found.
+The Mixture of Experts (MoE) architectures has been explored as a way to increase model capacity without a proportional increase in computation, particularly in the context of language modeling and machine translation \[[1](http://arxiv.org/abs/2411.11158)\]. Conditional computation, where parts of the network are active on a per-example basis, has been proposed as a promising approach to achieve greater model capacity with only minor losses in computational efficiency \[[1](http://arxiv.org/abs/2411.11158)\]. This is realized through the introduction of a Sparsely-Gated Mixture-of-Experts (MoE) layer, which consists of up to thousands of feed-forward sub-networks, with a trainable gating network determining a sparse combination of these experts for each example \[[1](http://arxiv.org/abs/2411.11158)\]. The MoE approach has been further refined with the Switch Transformer, which simplifies the MoE routing algorithm and reduces communication and computational costs, enabling the training of large sparse models with lower precision formats such as bfloat16 \[[2](http://arxiv.org/abs/1810.04805)\]. These improvements have led to significant gains in pre-training speed and model performance, with models based on T5-Base and T5-Large achieving up to 7x increases in pre-training speed with the same computational resources \[[2](http://arxiv.org/abs/1810.04805)\]. Additionally, the MoE framework has been extended to multilingual settings, where it has demonstrated improvements across all 101 languages \[[2](http://arxiv.org/abs/1810.04805)\]. The application of MoE in genomic profile prediction has also been explored, with models leveraging MoE to better capture the relationships between DNA sequences across different species and genomic profiles \[[3](http://arxiv.org/abs/2306.15794)\].
+|    | reference                                                                                                                         |   date | key idea/summary                                                                                                                                                                                                                                                                                         |
+|----|-----------------------------------------------------------------------------------------------------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | [Outrageously Large Neural Networks: The Sparsely-Gated
+  Mixture-of-Experts Layer](http://arxiv.org/abs/1701.06538)              |    nan | The paper introduces a Sparsely-Gated Mixture-of-Experts (MoE) layer that significantly increases model capacity with minimal computational cost, achieving better results in language modeling and machine translation tasks.                                                                           |
+|  1 | [Switch Transformers: Scaling to Trillion Parameter Models with Simple
+  and Efficient Sparsity](http://arxiv.org/abs/2101.03961) |    nan | The Switch Transformer improves the Mixture of Experts (MoE) approach by simplifying the routing algorithm, reducing communication and computational costs, and enabling the training of large sparse models with lower precision, leading to significant speedups and scalability in language modeling. |
+|  2 | [Adaptive Mixtures of Local Experts]()                                                                                            |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary.                                                                                                                                                                                                |
+### <a id='category-long-range-dna-sequence-modeling-techniques'></a>Long-Range DNA Sequence Modeling Techniques: 2 papers found.
+Context: 
+	Document 1: [_citation_number]: «7»
+[Snippet]: «»
+[Category]: «Long-Range DNA Sequence Modeling Techniques»
+
+	Document 2: [_citation_number]: «9»
+[Snippet]: «»
+[Category]: «Long-Range DNA Sequence Modeling Techniques»
+
+Instruction:  You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-06-02T16:23:05+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/2306.15794)\]. Further details \[[6]()\]\[[7]()\]\[[8]()\]\[[9]()\]\[[10]()\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Inspired by the success of unsupervised pre-training paradigms, researchers
+have applied these approaches to DNA pre-training. However, we argue that these
+approaches alone yield suboptimal results because pure DNA sequences lack
+sufficient information, since their functions are regulated by genomic profiles
+like chromatin accessibility. Here, we demonstrate that supervised training for
+genomic profile prediction serves as a more effective alternative to pure
+sequence pre-training. Furthermore, considering the multi-species and
+multi-profile nature of genomic profile prediction, we introduce our
+$\textbf(S)$pecies-$\textbf(P)$rofile $\textbf(A)$daptive
+$\textbf(C)$ollaborative $\textbf(E)$xperts (SPACE) that leverages Mixture of
+Experts (MoE) to better capture the relationships between DNA sequences across
+different species and genomic profiles, thereby learning more effective DNA
+representations. Through extensive experiments across various tasks, our model
+achieves state-of-the-art performance, establishing that DNA models trained
+with supervised genomic profiles serve as powerful DNA representation learners.
+The code is available at https://github.com/ZhuJiwei111/SPACE.
+Your job is to write a single body paragraph of the full report, focused
+|    | reference                                                                                           |   date | key idea/summary                                                                                          |
+|----|-----------------------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------|
+|  0 | [Sequential regulatory activity prediction across chromosomes with convolutional neural networks]() |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary. |
+|  1 | [Effective gene expression prediction from sequence by integrating long-range interactions]()       |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary. |
+### <a id='category-foundation-models-for-dna-representation-learning'></a>Foundation Models for DNA Representation Learning: 2 papers found.
+Context: 
+	Document 1: [_citation_number]: «10»
+[Snippet]: «»
+[Category]: «Foundation Models for DNA Representation Learning»
+
+	Document 2: [_citation_number]: «12»
+[Snippet]: «»
+[Category]: «Foundation Models for DNA Representation Learning»
+
+Instruction:  You are writing a single subsection of a larger report answering the user's query: Your task is to write a Related Works section for an academic paper given the paper's abstract. Your response should provide the Related Works section and references. Only include references from arXiv that are published before 2025-06-02T16:23:05+00:00. Mention them in a separate, numbered reference list at the end and use the reference numbers to provide in-line citations in the Related Works section for all claims referring to a source (e.g., description of source \[[3](http://arxiv.org/abs/2306.15794)\]. Further details \[[6]()\]\[[7]()\]\[[8]()\]\[[9]()\]\[[10]()\].) Each in-line citation must consist of a single reference number within a pair of brackets. Do not use any other citation format. Do not exceed 600 words for the related works section. Here is the paper abstract: Inspired by the success of unsupervised pre-training paradigms, researchers
+have applied these approaches to DNA pre-training. However, we argue that these
+approaches alone yield suboptimal results because pure DNA sequences lack
+sufficient information, since their functions are regulated by genomic profiles
+like chromatin accessibility. Here, we demonstrate that supervised training for
+genomic profile prediction serves as a more effective alternative to pure
+sequence pre-training. Furthermore, considering the multi-species and
+multi-profile nature of genomic profile prediction, we introduce our
+$\textbf(S)$pecies-$\textbf(P)$rofile $\textbf(A)$daptive
+$\textbf(C)$ollaborative $\textbf(E)$xperts (SPACE) that leverages Mixture of
+Experts (MoE) to better capture the relationships between DNA sequences across
+different species and genomic profiles, thereby learning more effective DNA
+representations. Through extensive experiments across various tasks, our model
+achieves state-of-the-art performance, establishing that DNA models trained
+with supervised genomic profiles serve as powerful DNA representation learners.
+The code is available at https://github.com/ZhuJiwei111/SPACE.
+Your job is to write a single body paragraph of the full report, focused
+|    | reference                                                                                       |   date | key idea/summary                                                                                          |
+|----|-------------------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------|
+|  0 | [Nucleotide Transformer: building and evaluating robust foundation models for human genomics]() |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary. |
+|  1 | [DNABERT-2: Efficient Foundation Model and Benchmark For Multi-Species Genomes]()               |    nan | The provided snippet does not contain any meaningful content or context to extract a key idea or summary. |

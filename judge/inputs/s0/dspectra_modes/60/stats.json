@@ -1,0 +1,11 @@
+{
+ "query": "060_2504.14243v1",
+ "n_papers": 14,
+ "n_linked": 14,
+ "seconds": 73.11587452888489,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=56426, completion_tokens=10340, total_tokens=66766, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=77693, completion_tokens=9155, total_tokens=86848, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Uncertainty Calibration in Deep Learning": 11,
+  "Deep Learning Model Optimization": 2
+ }
+}

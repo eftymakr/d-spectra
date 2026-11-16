@@ -1,0 +1,14 @@
+{
+ "query": "011_2506.02853v1",
+ "n_papers": 30,
+ "n_linked": 30,
+ "seconds": 21.518977403640747,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=621920, completion_tokens=105308, total_tokens=727228, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=911289, completion_tokens=99296, total_tokens=1010585, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Human Pose Estimation Methods": 13,
+  "3D Human Pose Estimation Methods": 7,
+  "Human Pose and Shape Estimation": 3,
+  "Human Pose Estimation from 2D Input": 2,
+  "Human Pose Estimation Techniques": 2
+ }
+}

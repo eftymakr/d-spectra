@@ -1,0 +1,11 @@
+{
+ "query": "007_2506.00085v1",
+ "n_papers": 15,
+ "n_linked": 15,
+ "seconds": 15.779913663864136,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=421726, completion_tokens=64233, total_tokens=485959, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=654247, completion_tokens=71736, total_tokens=725983, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Visual Language Model Research": 6,
+  "Language Model Research Trends": 4
+ }
+}

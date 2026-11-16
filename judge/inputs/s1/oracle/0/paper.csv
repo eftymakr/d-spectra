@@ -1,0 +1,36 @@
+id,title,url,snippet
+2004.13332,"The AI Economist: Improving Equality and Productivity with AI-Driven Tax
+  Policies",http://arxiv.org/abs/2004.13332,"Tackling real-world socio-economic challenges requires designing and testing
+economic policies. However, this is hard in practice, due to a lack of
+appropriate (micro-level) economic data and limited opportunity to experiment.
+In this work, we train social planners that discover tax policies in dynamic
+economies that can effectively trade-off economic equality and productivity. We
+propose a two-level deep reinforcement learning approach to learn dynamic tax
+policies, based on economic simulations in which both agents and a government
+learn and adapt. Our data-driven approach does not make use of economic
+modeling assumptions, and learns from observational data alone. We make four
+main contributions. First, we present an economic simulation environment that
+features competitive pressures and market dynamics. We validate the simulation
+by showing that baseline tax systems perform in a way that is consistent with
+economic theory, including in regard to learned agent behaviors and
+specializations. Second, we show that AI-driven tax policies improve the
+trade-off between equality and productivity by 16% over baseline policies,
+including the prominent Saez tax framework. Third, we showcase several emergent
+features: AI-driven tax policies are qualitatively different from baselines,
+setting a higher top tax rate and higher net subsidies for low incomes.
+Moreover, AI-driven tax policies perform strongly in the face of emergent
+tax-gaming strategies learned by AI agents. Lastly, AI-driven tax policies are
+also effective when used in experiments with human participants. In experiments
+conducted on MTurk, an AI tax policy provides an equality-productivity
+trade-off that is similar to that provided by the Saez framework along with
+higher inverse-income weighted social welfare."
+http://www.nber.org/papers/w21340,Effective Policy for Reducing Inequality? The Earned Income Tax Credit and the Distribution of Income,http://www.nber.org/papers/w21340,
+https://doi.org/10.1111/1467-937X.00166,Using Elasticities to Derive Optimal Income Tax Rates,https://doi.org/10.1111/1467-937X.00166,
+https://www.aeaweb.org/articles?id=10.1257/pol.6.1.230,Optimal Taxation of Top Labor Incomes: A Tale of Three Elasticities,https://www.aeaweb.org/articles?id=10.1257/pol.6.1.230,
+http://www.nber.org/chapters/c14009,The Impact of Machine Learning on Economics,http://www.nber.org/chapters/c14009,
+http://www.nber.org/papers/w21211,The Earned Income Tax Credit (EITC),http://www.nber.org/papers/w21211,
+https://EconPapers.repec.org/RePEc:aea:aecrev:v:61:y:1971:i:1:p:8-27,Optimal Taxation and Public Production: I--Production Efficiency,https://EconPapers.repec.org/RePEc:aea:aecrev:v:61:y:1971:i:1:p:8-27,
+https://www.aeaweb.org/articles?id=10.1257/pol.20180033,Optimal Income Taxation with Unemployment and Wage Responses: A Sufficient Statistics Approach,https://www.aeaweb.org/articles?id=10.1257/pol.20180033,
+https://www.aeaweb.org/articles?id=10.1257/jep.25.4.165,The Case for a Progressive Tax: From Basic Research to Policy Recommendations,https://www.aeaweb.org/articles?id=10.1257/jep.25.4.165,
+https://doi.org/10.2307/2296779,An Exploration in the Theory of Optimum Income Taxation12,https://doi.org/10.2307/2296779,
+2406.11903,"A Survey of Large Language Models for Financial Applications: Progress, Prospects and Challenges",https://arxiv.org/abs/2406.11903,

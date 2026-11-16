@@ -1,0 +1,63 @@
+id,title,url,snippet
+2004.04906,Dense Passage Retrieval for Open-Domain Question Answering,http://arxiv.org/abs/2004.04906,"Open-domain question answering relies on efficient passage retrieval to
+select candidate contexts, where traditional sparse vector space models, such
+as TF-IDF or BM25, are the de facto method. In this work, we show that
+retrieval can be practically implemented using dense representations alone,
+where embeddings are learned from a small number of questions and passages by a
+simple dual-encoder framework. When evaluated on a wide range of open-domain QA
+datasets, our dense retriever outperforms a strong Lucene-BM25 system largely
+by 9%-19% absolute in terms of top-20 passage retrieval accuracy, and helps our
+end-to-end QA system establish new state-of-the-art on multiple open-domain QA
+benchmarks."
+1908.10084,Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks,http://arxiv.org/abs/1908.10084,"BERT (Devlin et al., 2018) and RoBERTa (Liu et al., 2019) has set a new
+state-of-the-art performance on sentence-pair regression tasks like semantic
+textual similarity (STS). However, it requires that both sentences are fed into
+the network, which causes a massive computational overhead: Finding the most
+similar pair in a collection of 10,000 sentences requires about 50 million
+inference computations (~65 hours) with BERT. The construction of BERT makes it
+unsuitable for semantic similarity search as well as for unsupervised tasks
+like clustering.
+  In this publication, we present Sentence-BERT (SBERT), a modification of the
+pretrained BERT network that use siamese and triplet network structures to
+derive semantically meaningful sentence embeddings that can be compared using
+cosine-similarity. This reduces the effort for finding the most similar pair
+from 65 hours with BERT / RoBERTa to about 5 seconds with SBERT, while
+maintaining the accuracy from BERT.
+  We evaluate SBERT and SRoBERTa on common STS tasks and transfer learning
+tasks, where it outperforms other state-of-the-art sentence embeddings methods."
+2104.08821,SimCSE: Simple Contrastive Learning of Sentence Embeddings,http://arxiv.org/abs/2104.08821,"This paper presents SimCSE, a simple contrastive learning framework that
+greatly advances state-of-the-art sentence embeddings. We first describe an
+unsupervised approach, which takes an input sentence and predicts itself in a
+contrastive objective, with only standard dropout used as noise. This simple
+method works surprisingly well, performing on par with previous supervised
+counterparts. We find that dropout acts as minimal data augmentation, and
+removing it leads to a representation collapse. Then, we propose a supervised
+approach, which incorporates annotated pairs from natural language inference
+datasets into our contrastive learning framework by using ""entailment"" pairs as
+positives and ""contradiction"" pairs as hard negatives. We evaluate SimCSE on
+standard semantic textual similarity (STS) tasks, and our unsupervised and
+supervised models using BERT base achieve an average of 76.3% and 81.6%
+Spearman's correlation respectively, a 4.2% and 2.2% improvement compared to
+the previous best results. We also show -- both theoretically and empirically
+-- that the contrastive learning objective regularizes pre-trained embeddings'
+anisotropic space to be more uniform, and it better aligns positive pairs when
+supervised signals are available."
+1611.09268,MS MARCO: A Human Generated MAchine Reading COmprehension Dataset,http://arxiv.org/abs/1611.09268,"We introduce a large scale MAchine Reading COmprehension dataset, which we
+name MS MARCO. The dataset comprises of 1,010,916 anonymized
+questions---sampled from Bing's search query logs---each with a human generated
+answer and 182,669 completely human rewritten generated answers. In addition,
+the dataset contains 8,841,823 passages---extracted from 3,563,535 web
+documents retrieved by Bing---that provide the information necessary for
+curating the natural language answers. A question in the MS MARCO dataset may
+have multiple answers or no answers at all. Using this dataset, we propose
+three different tasks with varying levels of difficulty: (i) predict if a
+question is answerable given a set of context passages, and extract and
+synthesize the answer as a human would (ii) generate a well-formed answer (if
+possible) based on the context passages that can be understood with the
+question and passage context, and finally (iii) rank a set of retrieved
+passages given a question. The size of the dataset and the fact that the
+questions are derived from real user search queries distinguishes MS MARCO from
+other well-known publicly available datasets for machine reading comprehension
+and question-answering. We believe that the scale and the real-world nature of
+this dataset makes it attractive for benchmarking machine reading comprehension
+and question-answering models."

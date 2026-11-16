@@ -1,0 +1,10 @@
+{
+ "query": "004_2506.00418v1",
+ "n_papers": 17,
+ "n_linked": 17,
+ "seconds": 12.889980554580688,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=460713, completion_tokens=70952, total_tokens=531665, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=716832, completion_tokens=78670, total_tokens=795502, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Label Noise Robust Deep Learning": 17
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "query": "043_2504.09307v1",
+ "n_papers": 15,
+ "n_linked": 15,
+ "seconds": 91.69621849060059,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=21285, completion_tokens=4233, total_tokens=25518, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=29550, completion_tokens=3657, total_tokens=33207, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Large Language Models Research": 6,
+  "Large Language Model Research": 4,
+  "Large Language Models Evaluation": 2
+ }
+}

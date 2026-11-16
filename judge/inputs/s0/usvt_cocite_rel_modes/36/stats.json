@@ -1,0 +1,12 @@
+{
+ "query": "036_2506.02847v1",
+ "n_papers": 23,
+ "n_linked": 23,
+ "seconds": 19.48615527153015,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=554897, completion_tokens=85884, total_tokens=640781, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=867466, completion_tokens=95754, total_tokens=963220, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Transformer Acceleration Techniques": 9,
+  "LLM Compression And Acceleration": 8,
+  "Large Language Models Research": 2
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "query": "062_2504.09935v1",
+ "n_papers": 14,
+ "n_linked": 14,
+ "seconds": 92.06760621070862,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=28780, completion_tokens=5766, total_tokens=34546, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=39614, completion_tokens=4824, total_tokens=44438, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Neural Sequence Generation Techniques": 4,
+  "Generative Retrieval Research": 4,
+  "Generative Retrieval Techniques": 2
+ }
+}

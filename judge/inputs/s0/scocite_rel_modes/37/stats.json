@@ -1,0 +1,11 @@
+{
+ "query": "037_2505.22194v1",
+ "n_papers": 18,
+ "n_linked": 18,
+ "seconds": 15.807083129882812,
+ "usage": "{'taxonomize_lm': LMStats.TotalUsage(prompt_tokens=251398, completion_tokens=36792, total_tokens=288190, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0), 'generation_lm': LMStats.TotalUsage(prompt_tokens=396826, completion_tokens=43988, total_tokens=440814, total_cost=0.0, cached_prompt_tokens=0, cache_creation_tokens=0)}",
+ "mode_groups": {
+  "Vision Transformer Acceleration Techniques": 8,
+  "Vision Transformer Architectures": 5
+ }
+}

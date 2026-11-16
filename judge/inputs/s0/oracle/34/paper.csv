@@ -1,0 +1,400 @@
+id,title,url,snippet
+2503.03165,"A Predict-Then-Optimize Customer Allocation Framework for Online Fund
+  Recommendation",http://arxiv.org/abs/2503.03165,"With the rapid growth of online investment platforms, funds can be
+distributed to individual customers online. The central issue is to match funds
+with potential customers under constraints. Most mainstream platforms adopt the
+recommendation formulation to tackle the problem. However, the traditional
+recommendation regime has its inherent drawbacks when applying the
+fund-matching problem with multiple constraints. In this paper, we model the
+fund matching under the allocation formulation. We design PTOFA, a
+Predict-Then-Optimize Fund Allocation framework. This data-driven framework
+consists of two stages, i.e., prediction and optimization, which aim to predict
+expected revenue based on customer behavior and optimize the impression
+allocation to achieve the maximum revenue under the necessary constraints,
+respectively. Extensive experiments on real-world datasets from an industrial
+online investment platform validate the effectiveness and efficiency of our
+solution. Additionally, the online A/B tests demonstrate PTOFA's effectiveness
+in the real-world fund recommendation scenario."
+2311.07633,"Benchmarking PtO and PnO Methods in the Predictive Combinatorial
+  Optimization Regime",http://arxiv.org/abs/2311.07633,"Predictive combinatorial optimization, where the parameters of combinatorial
+optimization (CO) are unknown at the decision-making time, is the precise
+modeling of many real-world applications, including energy cost-aware
+scheduling and budget allocation on advertising. Tackling such a problem
+usually involves a prediction model and a CO solver. These two modules are
+integrated into the predictive CO pipeline following two design principles:
+""Predict-then-Optimize (PtO)"", which learns predictions by supervised training
+and subsequently solves CO using predicted coefficients, while the other, named
+""Predict-and-Optimize (PnO)"", directly optimizes towards the ultimate decision
+quality and claims to yield better decisions than traditional PtO approaches.
+However, there lacks a systematic benchmark of both approaches, including the
+specific design choices at the module level, as well as an evaluation dataset
+that covers representative real-world scenarios. To this end, we develop a
+modular framework to benchmark 11 existing PtO/PnO methods on 8 problems,
+including a new industrial dataset for combinatorial advertising that will be
+released. Our study shows that PnO approaches are better than PtO on 7 out of 8
+benchmarks, but there is no silver bullet found for the specific design choices
+of PnO. A comprehensive categorization of current approaches and integration of
+typical scenarios are provided under a unified benchmark. Therefore, this paper
+could serve as a comprehensive benchmark for future PnO approach development
+and also offer fast prototyping for application-focused development. The code
+is available at https://github.com/Thinklab-SJTU/PredictiveCO-Benchmark."
+2012.07436,"Informer: Beyond Efficient Transformer for Long Sequence Time-Series
+  Forecasting",http://arxiv.org/abs/2012.07436,"Many real-world applications require the prediction of long sequence
+time-series, such as electricity consumption planning. Long sequence
+time-series forecasting (LSTF) demands a high prediction capacity of the model,
+which is the ability to capture precise long-range dependency coupling between
+output and input efficiently. Recent studies have shown the potential of
+Transformer to increase the prediction capacity. However, there are several
+severe issues with Transformer that prevent it from being directly applicable
+to LSTF, including quadratic time complexity, high memory usage, and inherent
+limitation of the encoder-decoder architecture. To address these issues, we
+design an efficient transformer-based model for LSTF, named Informer, with
+three distinctive characteristics: (i) a $ProbSparse$ self-attention mechanism,
+which achieves $O(L \log L)$ in time complexity and memory usage, and has
+comparable performance on sequences' dependency alignment. (ii) the
+self-attention distilling highlights dominating attention by halving cascading
+layer input, and efficiently handles extreme long input sequences. (iii) the
+generative style decoder, while conceptually simple, predicts the long
+time-series sequences at one forward operation rather than a step-by-step way,
+which drastically improves the inference speed of long-sequence predictions.
+Extensive experiments on four large-scale datasets demonstrate that Informer
+significantly outperforms existing methods and provides a new solution to the
+LSTF problem."
+1907.00235,"Enhancing the Locality and Breaking the Memory Bottleneck of Transformer
+  on Time Series Forecasting",http://arxiv.org/abs/1907.00235,"Time series forecasting is an important problem across many domains,
+including predictions of solar plant energy output, electricity consumption,
+and traffic jam situation. In this paper, we propose to tackle such forecasting
+problem with Transformer [1]. Although impressed by its performance in our
+preliminary study, we found its two major weaknesses: (1) locality-agnostics:
+the point-wise dot-product self-attention in canonical Transformer architecture
+is insensitive to local context, which can make the model prone to anomalies in
+time series; (2) memory bottleneck: space complexity of canonical Transformer
+grows quadratically with sequence length $L$, making directly modeling long
+time series infeasible. In order to solve these two issues, we first propose
+convolutional self-attention by producing queries and keys with causal
+convolution so that local context can be better incorporated into attention
+mechanism. Then, we propose LogSparse Transformer with only $O(L(\log L)^(2))$
+memory cost, improving forecasting accuracy for time series with fine
+granularity and strong long-term dependencies under constrained memory budget.
+Our experiments on both synthetic data and real-world datasets show that it
+compares favorably to the state-of-the-art."
+2211.14730,A Time Series is Worth 64 Words: Long-term Forecasting with Transformers,http://arxiv.org/abs/2211.14730,"We propose an efficient design of Transformer-based models for multivariate
+time series forecasting and self-supervised representation learning. It is
+based on two key components: (i) segmentation of time series into
+subseries-level patches which are served as input tokens to Transformer; (ii)
+channel-independence where each channel contains a single univariate time
+series that shares the same embedding and Transformer weights across all the
+series. Patching design naturally has three-fold benefit: local semantic
+information is retained in the embedding; computation and memory usage of the
+attention maps are quadratically reduced given the same look-back window; and
+the model can attend longer history. Our channel-independent patch time series
+Transformer (PatchTST) can improve the long-term forecasting accuracy
+significantly when compared with that of SOTA Transformer-based models. We also
+apply our model to self-supervised pre-training tasks and attain excellent
+fine-tuning performance, which outperforms supervised training on large
+datasets. Transferring of masked pre-trained representation on one dataset to
+others also produces SOTA forecasting accuracy. Code is available at:
+https://github.com/yuqinie98/PatchTST."
+2201.12740,"FEDformer: Frequency Enhanced Decomposed Transformer for Long-term
+  Series Forecasting",http://arxiv.org/abs/2201.12740,"Although Transformer-based methods have significantly improved
+state-of-the-art results for long-term series forecasting, they are not only
+computationally expensive but more importantly, are unable to capture the
+global view of time series (e.g. overall trend). To address these problems, we
+propose to combine Transformer with the seasonal-trend decomposition method, in
+which the decomposition method captures the global profile of time series while
+Transformers capture more detailed structures. To further enhance the
+performance of Transformer for long-term prediction, we exploit the fact that
+most time series tend to have a sparse representation in well-known basis such
+as Fourier transform, and develop a frequency enhanced Transformer. Besides
+being more effective, the proposed method, termed as Frequency Enhanced
+Decomposed Transformer ((\bf FEDformer)), is more efficient than standard
+Transformer with a linear complexity to the sequence length. Our empirical
+studies with six benchmark datasets show that compared with state-of-the-art
+methods, FEDformer can reduce prediction error by $14.8\%$ and $22.6\%$ for
+multivariate and univariate time series, respectively. Code is publicly
+available at https://github.com/MAZiqing/FEDformer."
+https://openreview.net/forum?id=0EXmFzUn5I,"Pyraformer: Low-Complexity Pyramidal Attention for Long-Range Time
+                  Series Modeling and Forecasting",https://openreview.net/forum?id=0EXmFzUn5I,
+2106.13008,"Autoformer: Decomposition Transformers with Auto-Correlation for
+  Long-Term Series Forecasting",http://arxiv.org/abs/2106.13008,"Extending the forecasting time is a critical demand for real applications,
+such as extreme weather early warning and long-term energy consumption
+planning. This paper studies the long-term forecasting problem of time series.
+Prior Transformer-based models adopt various self-attention mechanisms to
+discover the long-range dependencies. However, intricate temporal patterns of
+the long-term future prohibit the model from finding reliable dependencies.
+Also, Transformers have to adopt the sparse versions of point-wise
+self-attentions for long series efficiency, resulting in the information
+utilization bottleneck. Going beyond Transformers, we design Autoformer as a
+novel decomposition architecture with an Auto-Correlation mechanism. We break
+with the pre-processing convention of series decomposition and renovate it as a
+basic inner block of deep models. This design empowers Autoformer with
+progressive decomposition capacities for complex time series. Further, inspired
+by the stochastic process theory, we design the Auto-Correlation mechanism
+based on the series periodicity, which conducts the dependencies discovery and
+representation aggregation at the sub-series level. Auto-Correlation
+outperforms self-attention in both efficiency and accuracy. In long-term
+forecasting, Autoformer yields state-of-the-art accuracy, with a 38% relative
+improvement on six benchmarks, covering five practical applications: energy,
+traffic, economics, weather and disease. Code is available at this repository:
+\url(https://github.com/thuml/Autoformer)."
+2210.02186,"TimesNet: Temporal 2D-Variation Modeling for General Time Series
+  Analysis",http://arxiv.org/abs/2210.02186,"Time series analysis is of immense importance in extensive applications, such
+as weather forecasting, anomaly detection, and action recognition. This paper
+focuses on temporal variation modeling, which is the common key problem of
+extensive analysis tasks. Previous methods attempt to accomplish this directly
+from the 1D time series, which is extremely challenging due to the intricate
+temporal patterns. Based on the observation of multi-periodicity in time
+series, we ravel out the complex temporal variations into the multiple
+intraperiod- and interperiod-variations. To tackle the limitations of 1D time
+series in representation capability, we extend the analysis of temporal
+variations into the 2D space by transforming the 1D time series into a set of
+2D tensors based on multiple periods. This transformation can embed the
+intraperiod- and interperiod-variations into the columns and rows of the 2D
+tensors respectively, making the 2D-variations to be easily modeled by 2D
+kernels. Technically, we propose the TimesNet with TimesBlock as a task-general
+backbone for time series analysis. TimesBlock can discover the
+multi-periodicity adaptively and extract the complex temporal variations from
+transformed 2D tensors by a parameter-efficient inception block. Our proposed
+TimesNet achieves consistent state-of-the-art in five mainstream time series
+analysis tasks, including short- and long-term forecasting, imputation,
+classification, and anomaly detection. Code is available at this repository:
+https://github.com/thuml/TimesNet."
+2205.13504,Are Transformers Effective for Time Series Forecasting?,http://arxiv.org/abs/2205.13504,"Recently, there has been a surge of Transformer-based solutions for the
+long-term time series forecasting (LTSF) task. Despite the growing performance
+over the past few years, we question the validity of this line of research in
+this work. Specifically, Transformers is arguably the most successful solution
+to extract the semantic correlations among the elements in a long sequence.
+However, in time series modeling, we are to extract the temporal relations in
+an ordered set of continuous points. While employing positional encoding and
+using tokens to embed sub-series in Transformers facilitate preserving some
+ordering information, the nature of the \emph(permutation-invariant)
+self-attention mechanism inevitably results in temporal information loss. To
+validate our claim, we introduce a set of embarrassingly simple one-layer
+linear models named LTSF-Linear for comparison. Experimental results on nine
+real-life datasets show that LTSF-Linear surprisingly outperforms existing
+sophisticated Transformer-based LTSF models in all cases, and often by a large
+margin. Moreover, we conduct comprehensive empirical studies to explore the
+impacts of various design elements of LTSF models on their temporal relation
+extraction capability. We hope this surprising finding opens up new research
+directions for the LTSF task. We also advocate revisiting the validity of
+Transformer-based solutions for other time series analysis tasks (e.g., anomaly
+detection) in the future. Code is available at:
+\url(https://github.com/cure-lab/LTSF-Linear)."
+2306.09364,"TSMixer: Lightweight MLP-Mixer Model for Multivariate Time Series
+  Forecasting",http://arxiv.org/abs/2306.09364,"Transformers have gained popularity in time series forecasting for their
+ability to capture long-sequence interactions. However, their high memory and
+computing requirements pose a critical bottleneck for long-term forecasting. To
+address this, we propose TSMixer, a lightweight neural architecture exclusively
+composed of multi-layer perceptron (MLP) modules for multivariate forecasting
+and representation learning on patched time series. Inspired by MLP-Mixer's
+success in computer vision, we adapt it for time series, addressing challenges
+and introducing validated components for enhanced accuracy. This includes a
+novel design paradigm of attaching online reconciliation heads to the MLP-Mixer
+backbone, for explicitly modeling the time-series properties such as hierarchy
+and channel-correlations. We also propose a novel Hybrid channel modeling and
+infusion of a simple gating approach to effectively handle noisy channel
+interactions and generalization across diverse datasets. By incorporating these
+lightweight components, we significantly enhance the learning capability of
+simple MLP structures, outperforming complex Transformer models with minimal
+computing usage. Moreover, TSMixer's modular design enables compatibility with
+both supervised and masked self-supervised learning methods, making it a
+promising building block for time-series Foundation Models. TSMixer outperforms
+state-of-the-art MLP and Transformer models in forecasting by a considerable
+margin of 8-60%. It also outperforms the latest strong benchmarks of
+Patch-Transformer models (by 1-2%) with a significant reduction in memory and
+runtime (2-3X). The source code of our model is officially released as
+PatchTSMixer in the HuggingFace. Model:
+https://huggingface.co/docs/transformers/main/en/model_doc/patchtsmixer
+Examples: https://github.com/ibm/tsfm/#notebooks-links"
+1704.04110,DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks,http://arxiv.org/abs/1704.04110,"Probabilistic forecasting, i.e. estimating the probability distribution of a
+time series' future given its past, is a key enabler for optimizing business
+processes. In retail businesses, for example, forecasting demand is crucial for
+having the right inventory available at the right time at the right place. In
+this paper we propose DeepAR, a methodology for producing accurate
+probabilistic forecasts, based on training an auto regressive recurrent network
+model on a large number of related time series. We demonstrate how by applying
+deep learning techniques to forecasting, one can overcome many of the
+challenges faced by widely-used classical approaches to the problem. We show
+through extensive empirical evaluation on several real-world forecasting data
+sets accuracy improvements of around 15% compared to state-of-the-art methods."
+https://openreview.net/forum?id=vSVLM2j9eie,"Crossformer: Transformer Utilizing Cross-Dimension Dependency for
+                  Multivariate Time Series Forecasting",https://openreview.net/forum?id=vSVLM2j9eie,
+https://openreview.net/forum?id=zt53IDUR1U,"(MICN:) Multi-scale Local and Global Context Modeling for Long-term
+                  Series Forecasting",https://openreview.net/forum?id=zt53IDUR1U,
+https://proceedings.neurips.cc/paper/2021/hash/312f1ba2a72318edaaa995a67835fad5-Abstract.html,Conformal Time-series Forecasting,https://proceedings.neurips.cc/paper/2021/hash/312f1ba2a72318edaaa995a67835fad5-Abstract.html,
+2010.09107,Conformal prediction for time series,http://arxiv.org/abs/2010.09107,"We develop a general framework for constructing distribution-free prediction
+intervals for time series. Theoretically, we establish explicit bounds on
+conditional and marginal coverage gaps of estimated prediction intervals, which
+asymptotically converge to zero under additional assumptions. We obtain similar
+bounds on the size of set differences between oracle and estimated prediction
+intervals. Methodologically, we introduce a computationally efficient algorithm
+called \texttt(EnbPI) that wraps around ensemble predictors, which is closely
+related to conformal prediction (CP) but does not require data exchangeability.
+\texttt(EnbPI) avoids data-splitting and is computationally efficient by
+avoiding retraining and thus scalable to sequentially producing prediction
+intervals. We perform extensive simulation and real-data analyses to
+demonstrate its effectiveness compared with existing methods. We also discuss
+the extension of \texttt(EnbPI) on various other applications."
+1905.11488,Generalization Bounds in the Predict-then-Optimize Framework,http://arxiv.org/abs/1905.11488,"The predict-then-optimize framework is fundamental in many practical
+settings: predict the unknown parameters of an optimization problem, and then
+solve the problem using the predicted values of the parameters. A natural loss
+function in this environment is to consider the cost of the decisions induced
+by the predicted parameters, in contrast to the prediction error of the
+parameters. This loss function was recently introduced in Elmachtoub and Grigas
+(2022) and referred to as the Smart Predict-then-Optimize (SPO) loss. In this
+work, we seek to provide bounds on how well the performance of a prediction
+model fit on training data generalizes out-of-sample, in the context of the SPO
+loss. Since the SPO loss is non-convex and non-Lipschitz, standard results for
+deriving generalization bounds do not apply.
+  We first derive bounds based on the Natarajan dimension that, in the case of
+a polyhedral feasible region, scale at most logarithmically in the number of
+extreme points, but, in the case of a general convex feasible region, have
+linear dependence on the decision dimension. By exploiting the structure of the
+SPO loss function and a key property of the feasible region, which we denote as
+the strength property, we can dramatically improve the dependence on the
+decision and feature dimensions. Our approach and analysis rely on placing a
+margin around problematic predictions that do not yield unique optimal
+solutions, and then providing generalization bounds in the context of a
+modified margin SPO loss function that is Lipschitz continuous. Finally, we
+characterize the strength property and show that the modified SPO loss can be
+computed efficiently for both strongly convex bodies and polytopes with an
+explicit extreme point representation."
+2108.08887,Risk Bounds and Calibration for a Smart Predict-then-Optimize Method,http://arxiv.org/abs/2108.08887,"The predict-then-optimize framework is fundamental in practical stochastic
+decision-making problems: first predict unknown parameters of an optimization
+model, then solve the problem using the predicted values. A natural loss
+function in this setting is defined by measuring the decision error induced by
+the predicted parameters, which was named the Smart Predict-then-Optimize (SPO)
+loss by Elmachtoub and Grigas [arXiv:1710.08005]. Since the SPO loss is
+typically nonconvex and possibly discontinuous, Elmachtoub and Grigas
+[arXiv:1710.08005] introduced a convex surrogate, called the SPO+ loss, that
+importantly accounts for the underlying structure of the optimization model. In
+this paper, we greatly expand upon the consistency results for the SPO+ loss
+provided by Elmachtoub and Grigas [arXiv:1710.08005]. We develop risk bounds
+and uniform calibration results for the SPO+ loss relative to the SPO loss,
+which provide a quantitative way to transfer the excess surrogate risk to
+excess true risk. By combining our risk bounds with generalization bounds, we
+show that the empirical minimizer of the SPO+ loss achieves low excess true
+risk with high probability. We first demonstrate these results in the case when
+the feasible region of the underlying optimization problem is a polyhedron, and
+then we show that the results can be strengthened substantially when the
+feasible region is a level set of a strongly convex function. We perform
+experiments to empirically demonstrate the strength of the SPO+ surrogate, as
+compared to standard $\ell_1$ and squared $\ell_2$ prediction error losses, on
+portfolio allocation and cost-sensitive multi-class classification problems."
+1402.5481,From Predictive to Prescriptive Analytics,http://arxiv.org/abs/1402.5481,"In this paper, we combine ideas from machine learning (ML) and operations
+research and management science (OR/MS) in developing a framework, along with
+specific methods, for using data to prescribe optimal decisions in OR/MS
+problems. In a departure from other work on data-driven optimization and
+reflecting our practical experience with the data available in applications of
+OR/MS, we consider data consisting, not only of observations of quantities with
+direct effect on costs/revenues, such as demand or returns, but predominantly
+of observations of associated auxiliary quantities. The main problem of
+interest is a conditional stochastic optimization problem, given imperfect
+observations, where the joint probability distributions that specify the
+problem are unknown. We demonstrate that our proposed solution methods, which
+are inspired by ML methods such as local regression, CART, and random forests,
+are generally applicable to a wide range of decision problems. We prove that
+they are tractable and asymptotically optimal even when data is not iid and may
+be censored. We extend this to the case where decision variables may directly
+affect uncertainty in unknown ways, such as pricing's effect on demand. As an
+analogue to R^2, we develop a metric P termed the coefficient of
+prescriptiveness to measure the prescriptive content of data and the efficacy
+of a policy from an operations perspective. To demonstrate the power of our
+approach in a real-world setting we study an inventory management problem faced
+by the distribution arm of an international media conglomerate, which ships an
+average of 1bil units per year. We leverage internal data and public online
+data harvested from IMDb, Rotten Tomatoes, and Google to prescribe operational
+decisions that outperform baseline measures. Specifically, the data we collect,
+leveraged by our methods, accounts for an 88\% improvement as measured by our
+P."
+1710.08005,"Smart ""Predict, then Optimize""",http://arxiv.org/abs/1710.08005,"Many real-world analytics problems involve two significant challenges:
+prediction and optimization. Due to the typically complex nature of each
+challenge, the standard paradigm is predict-then-optimize. By and large,
+machine learning tools are intended to minimize prediction error and do not
+account for how the predictions will be used in the downstream optimization
+problem. In contrast, we propose a new and very general framework, called Smart
+""Predict, then Optimize"" (SPO), which directly leverages the optimization
+problem structure, i.e., its objective and constraints, for designing better
+prediction models. A key component of our framework is the SPO loss function
+which measures the decision error induced by a prediction.
+  Training a prediction model with respect to the SPO loss is computationally
+challenging, and thus we derive, using duality theory, a convex surrogate loss
+function which we call the SPO+ loss. Most importantly, we prove that the SPO+
+loss is statistically consistent with respect to the SPO loss under mild
+conditions. Our SPO+ loss function can tractably handle any polyhedral, convex,
+or even mixed-integer optimization problem with a linear objective. Numerical
+experiments on shortest path and portfolio optimization problems show that the
+SPO framework can lead to significant improvement under the
+predict-then-optimize paradigm, in particular when the prediction model being
+trained is misspecified. We find that linear models trained using SPO+ loss
+tend to dominate random forest algorithms, even when the ground truth is highly
+nonlinear."
+2307.13565,"Decision-Focused Learning: Foundations, State of the Art, Benchmark and
+  Future Opportunities",http://arxiv.org/abs/2307.13565,"Decision-focused learning (DFL) is an emerging paradigm that integrates
+machine learning (ML) and constrained optimization to enhance decision quality
+by training ML models in an end-to-end system. This approach shows significant
+potential to revolutionize combinatorial decision-making in real-world
+applications that operate under uncertainty, where estimating unknown
+parameters within decision models is a major challenge. This paper presents a
+comprehensive review of DFL, providing an in-depth analysis of both
+gradient-based and gradient-free techniques used to combine ML and constrained
+optimization. It evaluates the strengths and limitations of these techniques
+and includes an extensive empirical evaluation of eleven methods across seven
+problems. The survey also offers insights into recent advancements and future
+research directions in DFL.
+  Code and benchmark: https://github.com/PredOpt/predopt-benchmarks"
+1703.00443,OptNet: Differentiable Optimization as a Layer in Neural Networks,http://arxiv.org/abs/1703.00443,"This paper presents OptNet, a network architecture that integrates
+optimization problems (here, specifically in the form of quadratic programs) as
+individual layers in larger end-to-end trainable deep networks. These layers
+encode constraints and complex dependencies between the hidden states that
+traditional convolutional and fully-connected layers often cannot capture. We
+explore the foundations for such an architecture: we show how techniques from
+sensitivity analysis, bilevel optimization, and implicit differentiation can be
+used to exactly differentiate through these layers and with respect to layer
+parameters; we develop a highly efficient solver for these layers that exploits
+fast GPU-based batch solves within a primal-dual interior point method, and
+which provides backpropagation gradients with virtually no additional cost on
+top of the solve; and we highlight the application of these approaches in
+several problems. In one notable example, the method is learns to play
+mini-Sudoku (4x4) given just input and output games, with no a-priori
+information about the rules of the game; this highlights the ability of OptNet
+to learn hard constraints better than other neural architectures."
+1910.12430,Differentiable Convex Optimization Layers,http://arxiv.org/abs/1910.12430,"Recent work has shown how to embed differentiable optimization problems (that
+is, problems whose solutions can be backpropagated through) as layers within
+deep learning architectures. This method provides a useful inductive bias for
+certain problems, but existing software for differentiable optimization layers
+is rigid and difficult to apply to new settings. In this paper, we propose an
+approach to differentiating through disciplined convex programs, a subclass of
+convex optimization problems used by domain-specific languages (DSLs) for
+convex optimization. We introduce disciplined parametrized programming, a
+subset of disciplined convex programming, and we show that every disciplined
+parametrized program can be represented as the composition of an affine map
+from parameters to problem data, a solver, and an affine map from the solver's
+solution to a solution of the original problem (a new form we refer to as
+affine-solver-affine form). We then demonstrate how to efficiently
+differentiate through each of these components, allowing for end-to-end
+analytical differentiation through the entire convex program. We implement our
+methodology in version 1.1 of CVXPY, a popular Python-embedded DSL for convex
+optimization, and additionally implement differentiable layers for disciplined
+convex programs in PyTorch and TensorFlow 2.0. Our implementation significantly
+lowers the barrier to using convex optimization problems in differentiable
+programs. We present applications in linear machine learning models and in
+stochastic control, and we show that our layer is competitive (in execution
+time) compared to specialized differentiable solvers from past work."
+2011.05354,Contrastive Losses and Solution Caching for Predict-and-Optimize,http://arxiv.org/abs/2011.05354,"Many decision-making processes involve solving a combinatorial optimization
+problem with uncertain input that can be estimated from historic data.
+Recently, problems in this class have been successfully addressed via
+end-to-end learning approaches, which rely on solving one optimization problem
+for each training instance at every epoch. In this context, we provide two
+distinct contributions. First, we use a Noise Contrastive approach to motivate
+a family of surrogate loss functions, based on viewing non-optimal solutions as
+negative examples. Second, we address a major bottleneck of all
+predict-and-optimize approaches, i.e. the need to frequently recompute optimal
+solutions at training time. This is done via a solver-agnostic solution caching
+scheme, and by replacing optimization calls with a lookup in the solution
+cache. The method is formally based on an inner approximation of the feasible
+space and, combined with a cache lookup strategy, provides a controllable
+trade-off between training time and accuracy of the loss approximation. We
+empirically show that even a very slow growth rate is enough to match the
+quality of state-of-the-art methods, at a fraction of the computational cost."
+http://proceedings.mlr.press/v139/xu21h.html,Conformal prediction interval for dynamic time-series,http://proceedings.mlr.press/v139/xu21h.html,
