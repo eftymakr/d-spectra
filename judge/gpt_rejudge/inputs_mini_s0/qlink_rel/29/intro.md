@@ -1,0 +1,50 @@
+## Related Works
+
+Maximum Inner Product Search (MIPS) is a critical problem in machine learning and information retrieval, especially for high-dimensional datasets. Traditional MIPS methods fall into two broad categories: those that operate directly on inner product (IP) similarity, and those that reduce MIPS to a Nearest Neighbor Search (NNS) problem under the Euclidean metric through space transformations. Direct IP-based methods face challenges such as local optima and redundant computations, while Euclidean reduction approaches often suffer from topology distortion and information loss \[[1405.5869](http://arxiv.org/abs/1405.5869)\]\[[1610.03317](http://arxiv.org/abs/1610.03317)\]\[[1410.5410](http://arxiv.org/abs/1410.5410)\].
+
+### Hashing-Based Approaches
+
+The introduction of Asymmetric Locality Sensitive Hashing (ALSH) marked a breakthrough in MIPS by enabling sublinear time approximate search through asymmetric transformations that convert MIPS into approximate near neighbor search problems \[[1405.5869](http://arxiv.org/abs/1405.5869)\]. Subsequent improvements proposed alternative transformations to approximate cosine similarity, which can be efficiently handled by signed random projections, achieving better theoretical guarantees and empirical performance \[[1410.5410](http://arxiv.org/abs/1410.5410)\]\[[https://www.semanticscholar.org/paper/865488b467250ceb85bb59d35b8d4fb4f10ae421](https://www.semanticscholar.org/paper/865488b467250ceb85bb59d35b8d4fb4f10ae421)\]. However, these hashing methods often require augmentation of data into higher-dimensional spaces, potentially impacting efficiency and accuracy \[[1509.01469](http://arxiv.org/abs/1509.01469)\].
+
+Further refinements to hashing include norm-ranging techniques that partition datasets to address norm distribution tail effects, reducing excessive normalization and query complexity \[[1809.08782](http://arxiv.org/abs/1809.08782)\]. Quantization-based methods have also gained traction, where database vectors are quantized in subspaces to approximate inner products efficiently, avoiding high-dimensional space augmentation and offering improved accuracy when example queries guide codebook learning \[[1509.01469](http://arxiv.org/abs/1509.01469)\]\[[https://www.semanticscholar.org/paper/4748d22348e72e6e06c2476486afddbc76e5eca7](https://www.semanticscholar.org/paper/4748d22348e72e6e06c2476486afddbc76e5eca7)\].
+
+### Graph-Based Methods
+
+Graph-based MIPS algorithms have recently demonstrated superior empirical performance and scalability compared to hashing and quantization methods. The inner-product navigable small world graph (ip-NSW) leverages the strong norm bias inherent in MIPS—where items with large norms dominate search results—to achieve significant speedups by focusing traversal on high-norm nodes, thus pruning unnecessary computations \[[1909.13459](http://arxiv.org/abs/1909.13459)\]. The enhanced ip-NSW+ extends this by integrating an angular proximity graph, enabling a two-stage search that first identifies angular neighbors before refining candidates with inner product proximity, yielding more robust and faster search performance across diverse data distributions \[[1909.13459](http://arxiv.org/abs/1909.13459)\].
+
+Other graph-based approaches focus on improved graph construction strategies. The norm adjusted proximity graph (NAPG) introduces adjustment factors learned from sampled data to create more meaningful connections in the graph index, enhancing search efficiency \[[https://www.semanticscholar.org/paper/25454f456c514219c9d6eeb42200ebbf378db9ca](https://www.semanticscholar.org/paper/25454f456c514219c9d6eeb42200ebbf378db9ca)\]. These approaches underscore the importance of adapting graph topology to the underlying data characteristics, which is central to effective MIPS.
+
+### Alternative Algorithmic Paradigms
+
+Beyond hashing and graph-based methods, several innovative approaches have been proposed. Greedy algorithms designed for budgeted MIPS offer flexible trade-offs between computational cost and search quality, achieving significant speedups with high top-k precision \[[1610.03317](http://arxiv.org/abs/1610.03317)\]. Sampling-based techniques like diamond sampling exploit the squared inner product distribution to efficiently approximate maximum dot products without exhaustive computation, outperforming hashing methods in speed and accuracy \[[1506.03872](http://arxiv.org/abs/1506.03872)\].
+
+Dimensionality reduction methods leveraging extreme order statistics (e.g., CEOs and its variants) provide sublinear MIPS with recall guarantees by projecting queries onto dimensions associated with extreme values, achieving massive speedups with practical indexing structures \[[https://www.semanticscholar.org/paper/d204d3848bb76ecca93a0674230303785b82c3b2](https://www.semanticscholar.org/paper/d204d3848bb76ecca93a0674230303785b82c3b2)\]. Tree-based data structures such as cone trees enable branch-and-bound and dual-tree algorithms that exploit novel inner product bounds to accelerate search, achieving orders of magnitude improvement over naive methods \[[1202.6101](http://arxiv.org/abs/1202.6101)\].
+
+### Exact Search and Hardware-Efficient Methods
+
+Though approximate methods dominate large-scale MIPS, exact search remains important for certain applications. Hardware-optimized brute-force methods using blocked matrix multiplication have been shown to surpass some indexing approaches on particular inputs \[[https://www.semanticscholar.org/paper/0b2790c2c1e23e5535421696e1ec763bbc651bbd](https://www.semanticscholar.org/paper/0b2790c2c1e23e5535421696e1ec763bbc651bbd)\]. Hybrid algorithms like MAX-IMUS combine hardware efficiency with pruning techniques, and data-dependent optimizers dynamically select the best solver per query, illustrating that no single method is universally optimal \[[https://www.semanticscholar.org/paper/0b2790c2c1e23e5535421696e1ec763bbc651bbd](https://www.semanticscholar.org/paper/0b2790c2c1e23e5535421696e1ec763bbc651bbd)\].
+
+### Integration of Inner Product and Euclidean Metrics
+
+The contrast between inner product and Euclidean metrics has often been viewed as a dichotomy. However, recent works argue for a unified perspective where both metrics complement each other in indexing and search. This insight motivates algorithms that dynamically switch between metrics or incorporate both in their indexing structures, improving adaptability and performance depending on data topology \[[1909.13459](http://arxiv.org/abs/1909.13459)\]\[[https://www.semanticscholar.org/paper/25454f456c514219c9d6eeb42200ebbf378db9ca](https://www.semanticscholar.org/paper/25454f456c514219c9d6eeb42200ebbf378db9ca)\]. For example, graph-based methods utilize angular similarity (related to Euclidean geometry on the unit sphere) alongside inner product measures to better capture neighborhood structure \[[1909.13459](http://arxiv.org/abs/1909.13459)\].
+
+### Parameter Tuning and Data Topology
+
+Effective MIPS performance critically depends on parameter tuning tailored to data topology. Recent studies have identified statistical indicators that correlate strongly with optimal parameter settings, facilitating automated tuning and enhancing algorithm adaptability across datasets \[[https://www.semanticscholar.org/paper/865488b467250ceb85bb59d35b8d4fb4f10ae421](https://www.semanticscholar.org/paper/865488b467250ceb85bb59d35b8d4fb4f10ae421)\]. This line of research emphasizes the importance of understanding data distribution and norm characteristics for designing efficient MIPS algorithms.
+
+---
+
+References
+
+\[[1405.5869](http://arxiv.org/abs/1405.5869)\] Asymmetric LSH for Sublinear Time Maximum Inner Product Search (MIPS), http://arxiv.org/abs/1405.5869  
+\[[1610.03317](http://arxiv.org/abs/1610.03317)\] A Greedy Approach for Budgeted Maximum Inner Product Search, http://arxiv.org/abs/1610.03317  
+\[[1410.5410](http://arxiv.org/abs/1410.5410)\] Improved Asymmetric Locality Sensitive Hashing (ALSH) for Maximum Inner Product Search, http://arxiv.org/abs/1410.5410  
+\[[1809.08782](http://arxiv.org/abs/1809.08782)\] Norm-Ranging LSH for Maximum Inner Product Search, http://arxiv.org/abs/1809.08782  
+\[[1909.13459](http://arxiv.org/abs/1909.13459)\] Understanding and Improving Proximity Graph based Maximum Inner Product Search, http://arxiv.org/abs/1909.13459  
+\[[1509.01469](http://arxiv.org/abs/1509.01469)\] Quantization based Fast Inner Product Search, http://arxiv.org/abs/1509.01469  
+\[[https://www.semanticscholar.org/paper/25454f456c514219c9d6eeb42200ebbf378db9ca](https://www.semanticscholar.org/paper/25454f456c514219c9d6eeb42200ebbf378db9ca)\] Norm Adjusted Proximity Graph for Fast Inner Product Retrieval, https://www.semanticscholar.org/paper/25454f456c514219c9d6eeb42200ebbf378db9ca  
+\[[1506.03872](http://arxiv.org/abs/1506.03872)\] Diamond Sampling for Approximate Maximum All-Pairs Dot-Product (MAD) Search, http://arxiv.org/abs/1506.03872  
+\[[https://www.semanticscholar.org/paper/0b2790c2c1e23e5535421696e1ec763bbc651bbd](https://www.semanticscholar.org/paper/0b2790c2c1e23e5535421696e1ec763bbc651bbd)\] To Index or Not to Index: Optimizing Exact Maximum Inner Product Search, https://www.semanticscholar.org/paper/0b2790c2c1e23e5535421696e1ec763bbc651bbd  
+\[[1202.6101](http://arxiv.org/abs/1202.6101)\] Maximum inner-product search using cone trees, http://arxiv.org/abs/1202.6101  
+\[[https://www.semanticscholar.org/paper/865488b467250ceb85bb59d35b8d4fb4f10ae421](https://www.semanticscholar.org/paper/865488b467250ceb85bb59d35b8d4fb4f10ae421)\] Accurate and Fast Asymmetric Locality-Sensitive Hashing Scheme for Maximum Inner Product Search, https://www.semanticscholar.org/paper/865488b467250ceb85bb59d35b8d4fb4f10ae421  
+\[[https://www.semanticscholar.org/paper/d204d3848bb76ecca93a0674230303785b82c3b2](https://www.semanticscholar.org/paper/d204d3848bb76ecca93a0674230303785b82c3b2)\] Simple Yet Efficient Algorithms for Maximum Inner Product Search via Extreme Order Statistics, https://www.semanticscholar.org/paper/d204d3848bb76ecca93a0674230303785b82c3b2

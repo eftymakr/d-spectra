@@ -1,0 +1,14 @@
+{
+  "query": "031_2506.01833v1",
+  "selection": "d-spectra/judge/inputs/s0/dsbase_rerun/31",
+  "n_papers": 27,
+  "writer": "gpt-4.1-mini",
+  "temperature": 0.7,
+  "top_p": null,
+  "top_k": null,
+  "seed": null,
+  "prompt_tokens": 8071,
+  "completion_tokens": 1077,
+  "n_inline_citations": 27,
+  "seconds": 9.0
+}

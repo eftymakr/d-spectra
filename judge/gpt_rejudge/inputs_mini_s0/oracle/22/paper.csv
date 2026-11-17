@@ -1,0 +1,752 @@
+id,title,url,snippet,context
+1411.4038,Fully Convolutional Networks for Semantic Segmentation,http://arxiv.org/abs/1411.4038,"Convolutional networks are powerful visual models that yield hierarchies of
+features. We show that convolutional networks by themselves, trained
+end-to-end, pixels-to-pixels, exceed the state-of-the-art in semantic
+segmentation. Our key insight is to build ""fully convolutional"" networks that
+take input of arbitrary size and produce correspondingly-sized output with
+efficient inference and learning. We define and detail the space of fully
+convolutional networks, explain their application to spatially dense prediction
+tasks, and draw connections to prior models. We adapt contemporary
+classification networks (AlexNet, the VGG net, and GoogLeNet) into fully
+convolutional networks and transfer their learned representations by
+fine-tuning to the segmentation task. We then define a novel architecture that
+combines semantic information from a deep, coarse layer with appearance
+information from a shallow, fine layer to produce accurate and detailed
+segmentations. Our fully convolutional network achieves state-of-the-art
+segmentation of PASCAL VOC (20% relative improvement to 62.2% mean IU on 2012),
+NYUDv2, and SIFT Flow, while inference takes one third of a second for a
+typical image.","Fully Convolutional Networks for Semantic Segmentation[http://arxiv.org/abs/1411.4038]: Convolutional networks are powerful visual models that yield hierarchies of
+features. We show that convolutional networks by themselves, trained
+end-to-end, pixels-to-pixels, exceed the state-of-the-art in semantic
+segmentation. Our key insight is to build ""fully convolutional"" networks that
+take input of arbitrary size and produce correspondingly-sized output with
+efficient inference and learning. We define and detail the space of fully
+convolutional networks, explain their application to spatially dense prediction
+tasks, and draw connections to prior models. We adapt contemporary
+classification networks (AlexNet, the VGG net, and GoogLeNet) into fully
+convolutional networks and transfer their learned representations by
+fine-tuning to the segmentation task. We then define a novel architecture that
+combines semantic information from a deep, coarse layer with appearance
+information from a shallow, fine layer to produce accurate and detailed
+segmentations. Our fully convolutional network achieves state-of-the-art
+segmentation of PASCAL VOC (20% relative improvement to 62.2% mean IU on 2012),
+NYUDv2, and SIFT Flow, while inference takes one third of a second for a
+typical image."
+1606.00915,"DeepLab: Semantic Image Segmentation with Deep Convolutional Nets,
+  Atrous Convolution, and Fully Connected CRFs",http://arxiv.org/abs/1606.00915,"In this work we address the task of semantic image segmentation with Deep
+Learning and make three main contributions that are experimentally shown to
+have substantial practical merit. First, we highlight convolution with
+upsampled filters, or 'atrous convolution', as a powerful tool in dense
+prediction tasks. Atrous convolution allows us to explicitly control the
+resolution at which feature responses are computed within Deep Convolutional
+Neural Networks. It also allows us to effectively enlarge the field of view of
+filters to incorporate larger context without increasing the number of
+parameters or the amount of computation. Second, we propose atrous spatial
+pyramid pooling (ASPP) to robustly segment objects at multiple scales. ASPP
+probes an incoming convolutional feature layer with filters at multiple
+sampling rates and effective fields-of-views, thus capturing objects as well as
+image context at multiple scales. Third, we improve the localization of object
+boundaries by combining methods from DCNNs and probabilistic graphical models.
+The commonly deployed combination of max-pooling and downsampling in DCNNs
+achieves invariance but has a toll on localization accuracy. We overcome this
+by combining the responses at the final DCNN layer with a fully connected
+Conditional Random Field (CRF), which is shown both qualitatively and
+quantitatively to improve localization performance. Our proposed ""DeepLab""
+system sets the new state-of-art at the PASCAL VOC-2012 semantic image
+segmentation task, reaching 79.7% mIOU in the test set, and advances the
+results on three other datasets: PASCAL-Context, PASCAL-Person-Part, and
+Cityscapes. All of our code is made publicly available online.","DeepLab: Semantic Image Segmentation with Deep Convolutional Nets,
+  Atrous Convolution, and Fully Connected CRFs[http://arxiv.org/abs/1606.00915]: In this work we address the task of semantic image segmentation with Deep
+Learning and make three main contributions that are experimentally shown to
+have substantial practical merit. First, we highlight convolution with
+upsampled filters, or 'atrous convolution', as a powerful tool in dense
+prediction tasks. Atrous convolution allows us to explicitly control the
+resolution at which feature responses are computed within Deep Convolutional
+Neural Networks. It also allows us to effectively enlarge the field of view of
+filters to incorporate larger context without increasing the number of
+parameters or the amount of computation. Second, we propose atrous spatial
+pyramid pooling (ASPP) to robustly segment objects at multiple scales. ASPP
+probes an incoming convolutional feature layer with filters at multiple
+sampling rates and effective fields-of-views, thus capturing objects as well as
+image context at multiple scales. Third, we improve the localization of object
+boundaries by combining methods from DCNNs and probabilistic graphical models.
+The commonly deployed combination of max-pooling and downsampling in DCNNs
+achieves invariance but has a toll on localization accuracy. We overcome this
+by combining the responses at the final DCNN layer with a fully connected
+Conditional Random Field (CRF), which is shown both qualitatively and
+quantitatively to improve localization performance. Our proposed ""DeepLab""
+system sets the new state-of-art at the PASCAL VOC-2012 semantic image
+segmentation task, reaching 79.7% mIOU in the test set, and advances the
+results on three other datasets: PASCAL-Context, PASCAL-Person-Part, and
+Cityscapes. All of our code is made publicly available online."
+1506.04579,ParseNet: Looking Wider to See Better,http://arxiv.org/abs/1506.04579,"We present a technique for adding global context to deep convolutional
+networks for semantic segmentation. The approach is simple, using the average
+feature for a layer to augment the features at each location. In addition, we
+study several idiosyncrasies of training, significantly increasing the
+performance of baseline networks (e.g. from FCN). When we add our proposed
+global feature, and a technique for learning normalization parameters, accuracy
+increases consistently even over our improved versions of the baselines. Our
+proposed approach, ParseNet, achieves state-of-the-art performance on SiftFlow
+and PASCAL-Context with small additional computational cost over baselines, and
+near current state-of-the-art performance on PASCAL VOC 2012 semantic
+segmentation with a simple approach. Code is available at
+https://github.com/weiliu89/caffe/tree/fcn .","ParseNet: Looking Wider to See Better[http://arxiv.org/abs/1506.04579]: We present a technique for adding global context to deep convolutional
+networks for semantic segmentation. The approach is simple, using the average
+feature for a layer to augment the features at each location. In addition, we
+study several idiosyncrasies of training, significantly increasing the
+performance of baseline networks (e.g. from FCN). When we add our proposed
+global feature, and a technique for learning normalization parameters, accuracy
+increases consistently even over our improved versions of the baselines. Our
+proposed approach, ParseNet, achieves state-of-the-art performance on SiftFlow
+and PASCAL-Context with small additional computational cost over baselines, and
+near current state-of-the-art performance on PASCAL VOC 2012 semantic
+segmentation with a simple approach. Code is available at
+https://github.com/weiliu89/caffe/tree/fcn ."
+1612.01105,Pyramid Scene Parsing Network,http://arxiv.org/abs/1612.01105,"Scene parsing is challenging for unrestricted open vocabulary and diverse
+scenes. In this paper, we exploit the capability of global context information
+by different-region-based context aggregation through our pyramid pooling
+module together with the proposed pyramid scene parsing network (PSPNet). Our
+global prior representation is effective to produce good quality results on the
+scene parsing task, while PSPNet provides a superior framework for pixel-level
+prediction tasks. The proposed approach achieves state-of-the-art performance
+on various datasets. It came first in ImageNet scene parsing challenge 2016,
+PASCAL VOC 2012 benchmark and Cityscapes benchmark. A single PSPNet yields new
+record of mIoU accuracy 85.4% on PASCAL VOC 2012 and accuracy 80.2% on
+Cityscapes.","Pyramid Scene Parsing Network[http://arxiv.org/abs/1612.01105]: Scene parsing is challenging for unrestricted open vocabulary and diverse
+scenes. In this paper, we exploit the capability of global context information
+by different-region-based context aggregation through our pyramid pooling
+module together with the proposed pyramid scene parsing network (PSPNet). Our
+global prior representation is effective to produce good quality results on the
+scene parsing task, while PSPNet provides a superior framework for pixel-level
+prediction tasks. The proposed approach achieves state-of-the-art performance
+on various datasets. It came first in ImageNet scene parsing challenge 2016,
+PASCAL VOC 2012 benchmark and Cityscapes benchmark. A single PSPNet yields new
+record of mIoU accuracy 85.4% on PASCAL VOC 2012 and accuracy 80.2% on
+Cityscapes."
+2105.15203,"SegFormer: Simple and Efficient Design for Semantic Segmentation with
+  Transformers",http://arxiv.org/abs/2105.15203,"We present SegFormer, a simple, efficient yet powerful semantic segmentation
+framework which unifies Transformers with lightweight multilayer perception
+(MLP) decoders. SegFormer has two appealing features: 1) SegFormer comprises a
+novel hierarchically structured Transformer encoder which outputs multiscale
+features. It does not need positional encoding, thereby avoiding the
+interpolation of positional codes which leads to decreased performance when the
+testing resolution differs from training. 2) SegFormer avoids complex decoders.
+The proposed MLP decoder aggregates information from different layers, and thus
+combining both local attention and global attention to render powerful
+representations. We show that this simple and lightweight design is the key to
+efficient segmentation on Transformers. We scale our approach up to obtain a
+series of models from SegFormer-B0 to SegFormer-B5, reaching significantly
+better performance and efficiency than previous counterparts. For example,
+SegFormer-B4 achieves 50.3% mIoU on ADE20K with 64M parameters, being 5x
+smaller and 2.2% better than the previous best method. Our best model,
+SegFormer-B5, achieves 84.0% mIoU on Cityscapes validation set and shows
+excellent zero-shot robustness on Cityscapes-C. Code will be released at:
+github.com/NVlabs/SegFormer.","SegFormer: Simple and Efficient Design for Semantic Segmentation with
+  Transformers[http://arxiv.org/abs/2105.15203]: We present SegFormer, a simple, efficient yet powerful semantic segmentation
+framework which unifies Transformers with lightweight multilayer perception
+(MLP) decoders. SegFormer has two appealing features: 1) SegFormer comprises a
+novel hierarchically structured Transformer encoder which outputs multiscale
+features. It does not need positional encoding, thereby avoiding the
+interpolation of positional codes which leads to decreased performance when the
+testing resolution differs from training. 2) SegFormer avoids complex decoders.
+The proposed MLP decoder aggregates information from different layers, and thus
+combining both local attention and global attention to render powerful
+representations. We show that this simple and lightweight design is the key to
+efficient segmentation on Transformers. We scale our approach up to obtain a
+series of models from SegFormer-B0 to SegFormer-B5, reaching significantly
+better performance and efficiency than previous counterparts. For example,
+SegFormer-B4 achieves 50.3% mIoU on ADE20K with 64M parameters, being 5x
+smaller and 2.2% better than the previous best method. Our best model,
+SegFormer-B5, achieves 84.0% mIoU on Cityscapes validation set and shows
+excellent zero-shot robustness on Cityscapes-C. Code will be released at:
+github.com/NVlabs/SegFormer."
+2012.15840,"Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective
+  with Transformers",http://arxiv.org/abs/2012.15840,"Most recent semantic segmentation methods adopt a fully-convolutional network
+(FCN) with an encoder-decoder architecture. The encoder progressively reduces
+the spatial resolution and learns more abstract/semantic visual concepts with
+larger receptive fields. Since context modeling is critical for segmentation,
+the latest efforts have been focused on increasing the receptive field, through
+either dilated/atrous convolutions or inserting attention modules. However, the
+encoder-decoder based FCN architecture remains unchanged. In this paper, we aim
+to provide an alternative perspective by treating semantic segmentation as a
+sequence-to-sequence prediction task. Specifically, we deploy a pure
+transformer (ie, without convolution and resolution reduction) to encode an
+image as a sequence of patches. With the global context modeled in every layer
+of the transformer, this encoder can be combined with a simple decoder to
+provide a powerful segmentation model, termed SEgmentation TRansformer (SETR).
+Extensive experiments show that SETR achieves new state of the art on ADE20K
+(50.28% mIoU), Pascal Context (55.83% mIoU) and competitive results on
+Cityscapes. Particularly, we achieve the first position in the highly
+competitive ADE20K test server leaderboard on the day of submission.","Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective
+  with Transformers[http://arxiv.org/abs/2012.15840]: Most recent semantic segmentation methods adopt a fully-convolutional network
+(FCN) with an encoder-decoder architecture. The encoder progressively reduces
+the spatial resolution and learns more abstract/semantic visual concepts with
+larger receptive fields. Since context modeling is critical for segmentation,
+the latest efforts have been focused on increasing the receptive field, through
+either dilated/atrous convolutions or inserting attention modules. However, the
+encoder-decoder based FCN architecture remains unchanged. In this paper, we aim
+to provide an alternative perspective by treating semantic segmentation as a
+sequence-to-sequence prediction task. Specifically, we deploy a pure
+transformer (ie, without convolution and resolution reduction) to encode an
+image as a sequence of patches. With the global context modeled in every layer
+of the transformer, this encoder can be combined with a simple decoder to
+provide a powerful segmentation model, termed SEgmentation TRansformer (SETR).
+Extensive experiments show that SETR achieves new state of the art on ADE20K
+(50.28% mIoU), Pascal Context (55.83% mIoU) and competitive results on
+Cityscapes. Particularly, we achieve the first position in the highly
+competitive ADE20K test server leaderboard on the day of submission."
+1802.10349,Learning to Adapt Structured Output Space for Semantic Segmentation,http://arxiv.org/abs/1802.10349,"Convolutional neural network-based approaches for semantic segmentation rely
+on supervision with pixel-level ground truth, but may not generalize well to
+unseen image domains. As the labeling process is tedious and labor intensive,
+developing algorithms that can adapt source ground truth labels to the target
+domain is of great interest. In this paper, we propose an adversarial learning
+method for domain adaptation in the context of semantic segmentation.
+Considering semantic segmentations as structured outputs that contain spatial
+similarities between the source and target domains, we adopt adversarial
+learning in the output space. To further enhance the adapted model, we
+construct a multi-level adversarial network to effectively perform output space
+domain adaptation at different feature levels. Extensive experiments and
+ablation study are conducted under various domain adaptation settings,
+including synthetic-to-real and cross-city scenarios. We show that the proposed
+method performs favorably against the state-of-the-art methods in terms of
+accuracy and visual quality.","Learning to Adapt Structured Output Space for Semantic Segmentation[http://arxiv.org/abs/1802.10349]: Convolutional neural network-based approaches for semantic segmentation rely
+on supervision with pixel-level ground truth, but may not generalize well to
+unseen image domains. As the labeling process is tedious and labor intensive,
+developing algorithms that can adapt source ground truth labels to the target
+domain is of great interest. In this paper, we propose an adversarial learning
+method for domain adaptation in the context of semantic segmentation.
+Considering semantic segmentations as structured outputs that contain spatial
+similarities between the source and target domains, we adopt adversarial
+learning in the output space. To further enhance the adapted model, we
+construct a multi-level adversarial network to effectively perform output space
+domain adaptation at different feature levels. Extensive experiments and
+ablation study are conducted under various domain adaptation settings,
+including synthetic-to-real and cross-city scenarios. We show that the proposed
+method performs favorably against the state-of-the-art methods in terms of
+accuracy and visual quality."
+2003.00867,"Learning Texture Invariant Representation for Domain Adaptation of
+  Semantic Segmentation",http://arxiv.org/abs/2003.00867,"Since annotating pixel-level labels for semantic segmentation is laborious,
+leveraging synthetic data is an attractive solution. However, due to the domain
+gap between synthetic domain and real domain, it is challenging for a model
+trained with synthetic data to generalize to real data. In this paper,
+considering the fundamental difference between the two domains as the texture,
+we propose a method to adapt to the texture of the target domain. First, we
+diversity the texture of synthetic images using a style transfer algorithm. The
+various textures of generated images prevent a segmentation model from
+overfitting to one specific (synthetic) texture. Then, we fine-tune the model
+with self-training to get direct supervision of the target texture. Our results
+achieve state-of-the-art performance and we analyze the properties of the model
+trained on the stylized dataset with extensive experiments.","Learning Texture Invariant Representation for Domain Adaptation of
+  Semantic Segmentation[http://arxiv.org/abs/2003.00867]: Since annotating pixel-level labels for semantic segmentation is laborious,
+leveraging synthetic data is an attractive solution. However, due to the domain
+gap between synthetic domain and real domain, it is challenging for a model
+trained with synthetic data to generalize to real data. In this paper,
+considering the fundamental difference between the two domains as the texture,
+we propose a method to adapt to the texture of the target domain. First, we
+diversity the texture of synthetic images using a style transfer algorithm. The
+various textures of generated images prevent a segmentation model from
+overfitting to one specific (synthetic) texture. Then, we fine-tune the model
+with self-training to get direct supervision of the target texture. Our results
+achieve state-of-the-art performance and we analyze the properties of the model
+trained on the stylized dataset with extensive experiments."
+2004.07703,"Unsupervised Intra-domain Adaptation for Semantic Segmentation through
+  Self-Supervision",http://arxiv.org/abs/2004.07703,"Convolutional neural network-based approaches have achieved remarkable
+progress in semantic segmentation. However, these approaches heavily rely on
+annotated data which are labor intensive. To cope with this limitation,
+automatically annotated data generated from graphic engines are used to train
+segmentation models. However, the models trained from synthetic data are
+difficult to transfer to real images. To tackle this issue, previous works have
+considered directly adapting models from the source data to the unlabeled
+target data (to reduce the inter-domain gap). Nonetheless, these techniques do
+not consider the large distribution gap among the target data itself
+(intra-domain gap). In this work, we propose a two-step self-supervised domain
+adaptation approach to minimize the inter-domain and intra-domain gap together.
+First, we conduct the inter-domain adaptation of the model; from this
+adaptation, we separate the target domain into an easy and hard split using an
+entropy-based ranking function. Finally, to decrease the intra-domain gap, we
+propose to employ a self-supervised adaptation technique from the easy to the
+hard split. Experimental results on numerous benchmark datasets highlight the
+effectiveness of our method against existing state-of-the-art approaches. The
+source code is available at https://github.com/feipan664/IntraDA.git.","Unsupervised Intra-domain Adaptation for Semantic Segmentation through
+  Self-Supervision[http://arxiv.org/abs/2004.07703]: Convolutional neural network-based approaches have achieved remarkable
+progress in semantic segmentation. However, these approaches heavily rely on
+annotated data which are labor intensive. To cope with this limitation,
+automatically annotated data generated from graphic engines are used to train
+segmentation models. However, the models trained from synthetic data are
+difficult to transfer to real images. To tackle this issue, previous works have
+considered directly adapting models from the source data to the unlabeled
+target data (to reduce the inter-domain gap). Nonetheless, these techniques do
+not consider the large distribution gap among the target data itself
+(intra-domain gap). In this work, we propose a two-step self-supervised domain
+adaptation approach to minimize the inter-domain and intra-domain gap together.
+First, we conduct the inter-domain adaptation of the model; from this
+adaptation, we separate the target domain into an easy and hard split using an
+entropy-based ranking function. Finally, to decrease the intra-domain gap, we
+propose to employ a self-supervised adaptation technique from the easy to the
+hard split. Experimental results on numerous benchmark datasets highlight the
+effectiveness of our method against existing state-of-the-art approaches. The
+source code is available at https://github.com/feipan664/IntraDA.git."
+2204.13132,"HRDA: Context-Aware High-Resolution Domain-Adaptive Semantic
+  Segmentation",http://arxiv.org/abs/2204.13132,"Unsupervised domain adaptation (UDA) aims to adapt a model trained on the
+source domain (e.g. synthetic data) to the target domain (e.g. real-world data)
+without requiring further annotations on the target domain. This work focuses
+on UDA for semantic segmentation as real-world pixel-wise annotations are
+particularly expensive to acquire. As UDA methods for semantic segmentation are
+usually GPU memory intensive, most previous methods operate only on downscaled
+images. We question this design as low-resolution predictions often fail to
+preserve fine details. The alternative of training with random crops of
+high-resolution images alleviates this problem but falls short in capturing
+long-range, domain-robust context information. Therefore, we propose HRDA, a
+multi-resolution training approach for UDA, that combines the strengths of
+small high-resolution crops to preserve fine segmentation details and large
+low-resolution crops to capture long-range context dependencies with a learned
+scale attention, while maintaining a manageable GPU memory footprint. HRDA
+enables adapting small objects and preserving fine segmentation details. It
+significantly improves the state-of-the-art performance by 5.5 mIoU for
+GTA-to-Cityscapes and 4.9 mIoU for Synthia-to-Cityscapes, resulting in
+unprecedented 73.8 and 65.8 mIoU, respectively. The implementation is available
+at https://github.com/lhoyer/HRDA.","HRDA: Context-Aware High-Resolution Domain-Adaptive Semantic
+  Segmentation[http://arxiv.org/abs/2204.13132]: Unsupervised domain adaptation (UDA) aims to adapt a model trained on the
+source domain (e.g. synthetic data) to the target domain (e.g. real-world data)
+without requiring further annotations on the target domain. This work focuses
+on UDA for semantic segmentation as real-world pixel-wise annotations are
+particularly expensive to acquire. As UDA methods for semantic segmentation are
+usually GPU memory intensive, most previous methods operate only on downscaled
+images. We question this design as low-resolution predictions often fail to
+preserve fine details. The alternative of training with random crops of
+high-resolution images alleviates this problem but falls short in capturing
+long-range, domain-robust context information. Therefore, we propose HRDA, a
+multi-resolution training approach for UDA, that combines the strengths of
+small high-resolution crops to preserve fine segmentation details and large
+low-resolution crops to capture long-range context dependencies with a learned
+scale attention, while maintaining a manageable GPU memory footprint. HRDA
+enables adapting small objects and preserving fine segmentation details. It
+significantly improves the state-of-the-art performance by 5.5 mIoU for
+GTA-to-Cityscapes and 4.9 mIoU for Synthia-to-Cityscapes, resulting in
+unprecedented 73.8 and 65.8 mIoU, respectively. The implementation is available
+at https://github.com/lhoyer/HRDA."
+1901.05427,"Domain Adaptation for Structured Output via Discriminative Patch
+  Representations",http://arxiv.org/abs/1901.05427,"Predicting structured outputs such as semantic segmentation relies on
+expensive per-pixel annotations to learn supervised models like convolutional
+neural networks. However, models trained on one data domain may not generalize
+well to other domains without annotations for model finetuning. To avoid the
+labor-intensive process of annotation, we develop a domain adaptation method to
+adapt the source data to the unlabeled target domain. We propose to learn
+discriminative feature representations of patches in the source domain by
+discovering multiple modes of patch-wise output distribution through the
+construction of a clustered space. With such representations as guidance, we
+use an adversarial learning scheme to push the feature representations of
+target patches in the clustered space closer to the distributions of source
+patches. In addition, we show that our framework is complementary to existing
+domain adaptation techniques and achieves consistent improvements on semantic
+segmentation. Extensive ablations and results are demonstrated on numerous
+benchmark datasets with various settings, such as synthetic-to-real and
+cross-city scenarios.","Domain Adaptation for Structured Output via Discriminative Patch
+  Representations[http://arxiv.org/abs/1901.05427]: Predicting structured outputs such as semantic segmentation relies on
+expensive per-pixel annotations to learn supervised models like convolutional
+neural networks. However, models trained on one data domain may not generalize
+well to other domains without annotations for model finetuning. To avoid the
+labor-intensive process of annotation, we develop a domain adaptation method to
+adapt the source data to the unlabeled target domain. We propose to learn
+discriminative feature representations of patches in the source domain by
+discovering multiple modes of patch-wise output distribution through the
+construction of a clustered space. With such representations as guidance, we
+use an adversarial learning scheme to push the feature representations of
+target patches in the clustered space closer to the distributions of source
+patches. In addition, we show that our framework is complementary to existing
+domain adaptation techniques and achieves consistent improvements on semantic
+segmentation. Extensive ablations and results are demonstrated on numerous
+benchmark datasets with various settings, such as synthetic-to-real and
+cross-city scenarios."
+1901.08211,"Synergistic Image and Feature Adaptation: Towards Cross-Modality Domain
+  Adaptation for Medical Image Segmentation",http://arxiv.org/abs/1901.08211,"This paper presents a novel unsupervised domain adaptation framework, called
+Synergistic Image and Feature Adaptation (SIFA), to effectively tackle the
+problem of domain shift. Domain adaptation has become an important and hot
+topic in recent studies on deep learning, aiming to recover performance
+degradation when applying the neural networks to new testing domains. Our
+proposed SIFA is an elegant learning diagram which presents synergistic fusion
+of adaptations from both image and feature perspectives. In particular, we
+simultaneously transform the appearance of images across domains and enhance
+domain-invariance of the extracted features towards the segmentation task. The
+feature encoder layers are shared by both perspectives to grasp their mutual
+benefits during the end-to-end learning procedure. Without using any annotation
+from the target domain, the learning of our unified model is guided by
+adversarial losses, with multiple discriminators employed from various aspects.
+We have extensively validated our method with a challenging application of
+cross-modality medical image segmentation of cardiac structures. Experimental
+results demonstrate that our SIFA model recovers the degraded performance from
+17.2% to 73.0%, and outperforms the state-of-the-art methods by a significant
+margin.","Synergistic Image and Feature Adaptation: Towards Cross-Modality Domain
+  Adaptation for Medical Image Segmentation[http://arxiv.org/abs/1901.08211]: This paper presents a novel unsupervised domain adaptation framework, called
+Synergistic Image and Feature Adaptation (SIFA), to effectively tackle the
+problem of domain shift. Domain adaptation has become an important and hot
+topic in recent studies on deep learning, aiming to recover performance
+degradation when applying the neural networks to new testing domains. Our
+proposed SIFA is an elegant learning diagram which presents synergistic fusion
+of adaptations from both image and feature perspectives. In particular, we
+simultaneously transform the appearance of images across domains and enhance
+domain-invariance of the extracted features towards the segmentation task. The
+feature encoder layers are shared by both perspectives to grasp their mutual
+benefits during the end-to-end learning procedure. Without using any annotation
+from the target domain, the learning of our unified model is guided by
+adversarial losses, with multiple discriminators employed from various aspects.
+We have extensively validated our method with a challenging application of
+cross-modality medical image segmentation of cardiac structures. Experimental
+results demonstrate that our SIFA model recovers the degraded performance from
+17.2% to 73.0%, and outperforms the state-of-the-art methods by a significant
+margin."
+2105.08128,"PixMatch: Unsupervised Domain Adaptation via Pixelwise Consistency
+  Training",http://arxiv.org/abs/2105.08128,"Unsupervised domain adaptation is a promising technique for semantic
+segmentation and other computer vision tasks for which large-scale data
+annotation is costly and time-consuming. In semantic segmentation, it is
+attractive to train models on annotated images from a simulated (source) domain
+and deploy them on real (target) domains. In this work, we present a novel
+framework for unsupervised domain adaptation based on the notion of
+target-domain consistency training. Intuitively, our work is based on the idea
+that in order to perform well on the target domain, a model's output should be
+consistent with respect to small perturbations of inputs in the target domain.
+Specifically, we introduce a new loss term to enforce pixelwise consistency
+between the model's predictions on a target image and a perturbed version of
+the same image. In comparison to popular adversarial adaptation methods, our
+approach is simpler, easier to implement, and more memory-efficient during
+training. Experiments and extensive ablation studies demonstrate that our
+simple approach achieves remarkably strong results on two challenging
+synthetic-to-real benchmarks, GTA5-to-Cityscapes and SYNTHIA-to-Cityscapes.
+  Code is available at: https://github.com/lukemelas/pixmatch","PixMatch: Unsupervised Domain Adaptation via Pixelwise Consistency
+  Training[http://arxiv.org/abs/2105.08128]: Unsupervised domain adaptation is a promising technique for semantic
+segmentation and other computer vision tasks for which large-scale data
+annotation is costly and time-consuming. In semantic segmentation, it is
+attractive to train models on annotated images from a simulated (source) domain
+and deploy them on real (target) domains. In this work, we present a novel
+framework for unsupervised domain adaptation based on the notion of
+target-domain consistency training. Intuitively, our work is based on the idea
+that in order to perform well on the target domain, a model's output should be
+consistent with respect to small perturbations of inputs in the target domain.
+Specifically, we introduce a new loss term to enforce pixelwise consistency
+between the model's predictions on a target image and a perturbed version of
+the same image. In comparison to popular adversarial adaptation methods, our
+approach is simpler, easier to implement, and more memory-efficient during
+training. Experiments and extensive ablation studies demonstrate that our
+simple approach achieves remarkably strong results on two challenging
+synthetic-to-real benchmarks, GTA5-to-Cityscapes and SYNTHIA-to-Cityscapes.
+  Code is available at: https://github.com/lukemelas/pixmatch"
+1904.10620,Bidirectional Learning for Domain Adaptation of Semantic Segmentation,http://arxiv.org/abs/1904.10620,"Domain adaptation for semantic image segmentation is very necessary since
+manually labeling large datasets with pixel-level labels is expensive and time
+consuming. Existing domain adaptation techniques either work on limited
+datasets, or yield not so good performance compared with supervised learning.
+In this paper, we propose a novel bidirectional learning framework for domain
+adaptation of segmentation. Using the bidirectional learning, the image
+translation model and the segmentation adaptation model can be learned
+alternatively and promote to each other. Furthermore, we propose a
+self-supervised learning algorithm to learn a better segmentation adaptation
+model and in return improve the image translation model. Experiments show that
+our method is superior to the state-of-the-art methods in domain adaptation of
+segmentation with a big margin. The source code is available at
+https://github.com/liyunsheng13/BDL.","Bidirectional Learning for Domain Adaptation of Semantic Segmentation[http://arxiv.org/abs/1904.10620]: Domain adaptation for semantic image segmentation is very necessary since
+manually labeling large datasets with pixel-level labels is expensive and time
+consuming. Existing domain adaptation techniques either work on limited
+datasets, or yield not so good performance compared with supervised learning.
+In this paper, we propose a novel bidirectional learning framework for domain
+adaptation of segmentation. Using the bidirectional learning, the image
+translation model and the segmentation adaptation model can be learned
+alternatively and promote to each other. Furthermore, we propose a
+self-supervised learning algorithm to learn a better segmentation adaptation
+model and in return improve the image translation model. Experiments show that
+our method is superior to the state-of-the-art methods in domain adaptation of
+segmentation with a big margin. The source code is available at
+https://github.com/liyunsheng13/BDL."
+2111.14887,"DAFormer: Improving Network Architectures and Training Strategies for
+  Domain-Adaptive Semantic Segmentation",http://arxiv.org/abs/2111.14887,"As acquiring pixel-wise annotations of real-world images for semantic
+segmentation is a costly process, a model can instead be trained with more
+accessible synthetic data and adapted to real images without requiring their
+annotations. This process is studied in unsupervised domain adaptation (UDA).
+Even though a large number of methods propose new adaptation strategies, they
+are mostly based on outdated network architectures. As the influence of recent
+network architectures has not been systematically studied, we first benchmark
+different network architectures for UDA and newly reveal the potential of
+Transformers for UDA semantic segmentation. Based on the findings, we propose a
+novel UDA method, DAFormer. The network architecture of DAFormer consists of a
+Transformer encoder and a multi-level context-aware feature fusion decoder. It
+is enabled by three simple but crucial training strategies to stabilize the
+training and to avoid overfitting to the source domain: While (1) Rare Class
+Sampling on the source domain improves the quality of the pseudo-labels by
+mitigating the confirmation bias of self-training toward common classes, (2) a
+Thing-Class ImageNet Feature Distance and (3) a learning rate warmup promote
+feature transfer from ImageNet pretraining. DAFormer represents a major advance
+in UDA. It improves the state of the art by 10.8 mIoU for GTA-to-Cityscapes and
+5.4 mIoU for Synthia-to-Cityscapes and enables learning even difficult classes
+such as train, bus, and truck well. The implementation is available at
+https://github.com/lhoyer/DAFormer.","DAFormer: Improving Network Architectures and Training Strategies for
+  Domain-Adaptive Semantic Segmentation[http://arxiv.org/abs/2111.14887]: As acquiring pixel-wise annotations of real-world images for semantic
+segmentation is a costly process, a model can instead be trained with more
+accessible synthetic data and adapted to real images without requiring their
+annotations. This process is studied in unsupervised domain adaptation (UDA).
+Even though a large number of methods propose new adaptation strategies, they
+are mostly based on outdated network architectures. As the influence of recent
+network architectures has not been systematically studied, we first benchmark
+different network architectures for UDA and newly reveal the potential of
+Transformers for UDA semantic segmentation. Based on the findings, we propose a
+novel UDA method, DAFormer. The network architecture of DAFormer consists of a
+Transformer encoder and a multi-level context-aware feature fusion decoder. It
+is enabled by three simple but crucial training strategies to stabilize the
+training and to avoid overfitting to the source domain: While (1) Rare Class
+Sampling on the source domain improves the quality of the pseudo-labels by
+mitigating the confirmation bias of self-training toward common classes, (2) a
+Thing-Class ImageNet Feature Distance and (3) a learning rate warmup promote
+feature transfer from ImageNet pretraining. DAFormer represents a major advance
+in UDA. It improves the state of the art by 10.8 mIoU for GTA-to-Cityscapes and
+5.4 mIoU for Synthia-to-Cityscapes and enables learning even difficult classes
+such as train, bus, and truck well. The implementation is available at
+https://github.com/lhoyer/DAFormer."
+1908.09822,Confidence Regularized Self-Training,http://arxiv.org/abs/1908.09822,"Recent advances in domain adaptation show that deep self-training presents a
+powerful means for unsupervised domain adaptation. These methods often involve
+an iterative process of predicting on target domain and then taking the
+confident predictions as pseudo-labels for retraining. However, since
+pseudo-labels can be noisy, self-training can put overconfident label belief on
+wrong classes, leading to deviated solutions with propagated errors. To address
+the problem, we propose a confidence regularized self-training (CRST)
+framework, formulated as regularized self-training. Our method treats
+pseudo-labels as continuous latent variables jointly optimized via alternating
+optimization. We propose two types of confidence regularization: label
+regularization (LR) and model regularization (MR). CRST-LR generates soft
+pseudo-labels while CRST-MR encourages the smoothness on network output.
+Extensive experiments on image classification and semantic segmentation show
+that CRSTs outperform their non-regularized counterpart with state-of-the-art
+performance. The code and models of this work are available at
+https://github.com/yzou2/CRST.","Confidence Regularized Self-Training[http://arxiv.org/abs/1908.09822]: Recent advances in domain adaptation show that deep self-training presents a
+powerful means for unsupervised domain adaptation. These methods often involve
+an iterative process of predicting on target domain and then taking the
+confident predictions as pseudo-labels for retraining. However, since
+pseudo-labels can be noisy, self-training can put overconfident label belief on
+wrong classes, leading to deviated solutions with propagated errors. To address
+the problem, we propose a confidence regularized self-training (CRST)
+framework, formulated as regularized self-training. Our method treats
+pseudo-labels as continuous latent variables jointly optimized via alternating
+optimization. We propose two types of confidence regularization: label
+regularization (LR) and model regularization (MR). CRST-LR generates soft
+pseudo-labels while CRST-MR encourages the smoothness on network output.
+Extensive experiments on image classification and semantic segmentation show
+that CRSTs outperform their non-regularized counterpart with state-of-the-art
+performance. The code and models of this work are available at
+https://github.com/yzou2/CRST."
+1908.09547,"Constructing Self-motivated Pyramid Curriculums for Cross-Domain
+  Semantic Segmentation: A Non-Adversarial Approach",http://arxiv.org/abs/1908.09547,"We propose a new approach, called self-motivated pyramid curriculum domain
+adaptation (PyCDA), to facilitate the adaptation of semantic segmentation
+neural networks from synthetic source domains to real target domains. Our
+approach draws on an insight connecting two existing works: curriculum domain
+adaptation and self-training. Inspired by the former, PyCDA constructs a
+pyramid curriculum which contains various properties about the target domain.
+Those properties are mainly about the desired label distributions over the
+target domain images, image regions, and pixels. By enforcing the segmentation
+neural network to observe those properties, we can improve the network's
+generalization capability to the target domain. Motivated by the self-training,
+we infer this pyramid of properties by resorting to the semantic segmentation
+network itself. Unlike prior work, we do not need to maintain any additional
+models (e.g., logistic regression or discriminator networks) or to solve minmax
+problems which are often difficult to optimize. We report state-of-the-art
+results for the adaptation from both GTAV and SYNTHIA to Cityscapes, two
+popular settings in unsupervised domain adaptation for semantic segmentation.","Constructing Self-motivated Pyramid Curriculums for Cross-Domain
+  Semantic Segmentation: A Non-Adversarial Approach[http://arxiv.org/abs/1908.09547]: We propose a new approach, called self-motivated pyramid curriculum domain
+adaptation (PyCDA), to facilitate the adaptation of semantic segmentation
+neural networks from synthetic source domains to real target domains. Our
+approach draws on an insight connecting two existing works: curriculum domain
+adaptation and self-training. Inspired by the former, PyCDA constructs a
+pyramid curriculum which contains various properties about the target domain.
+Those properties are mainly about the desired label distributions over the
+target domain images, image regions, and pixels. By enforcing the segmentation
+neural network to observe those properties, we can improve the network's
+generalization capability to the target domain. Motivated by the self-training,
+we infer this pyramid of properties by resorting to the semantic segmentation
+network itself. Unlike prior work, we do not need to maintain any additional
+models (e.g., logistic regression or discriminator networks) or to solve minmax
+problems which are often difficult to optimize. We report state-of-the-art
+results for the adaptation from both GTAV and SYNTHIA to Cityscapes, two
+popular settings in unsupervised domain adaptation for semantic segmentation."
+2101.10979,"Prototypical Pseudo Label Denoising and Target Structure Learning for
+  Domain Adaptive Semantic Segmentation",http://arxiv.org/abs/2101.10979,"Self-training is a competitive approach in domain adaptive segmentation,
+which trains the network with the pseudo labels on the target domain. However
+inevitably, the pseudo labels are noisy and the target features are dispersed
+due to the discrepancy between source and target domains. In this paper, we
+rely on representative prototypes, the feature centroids of classes, to address
+the two issues for unsupervised domain adaptation. In particular, we take one
+step further and exploit the feature distances from prototypes that provide
+richer information than mere prototypes. Specifically, we use it to estimate
+the likelihood of pseudo labels to facilitate online correction in the course
+of training. Meanwhile, we align the prototypical assignments based on relative
+feature distances for two different views of the same target, producing a more
+compact target feature space. Moreover, we find that distilling the already
+learned knowledge to a self-supervised pretrained model further boosts the
+performance. Our method shows tremendous performance advantage over
+state-of-the-art methods. We will make the code publicly available.","Prototypical Pseudo Label Denoising and Target Structure Learning for
+  Domain Adaptive Semantic Segmentation[http://arxiv.org/abs/2101.10979]: Self-training is a competitive approach in domain adaptive segmentation,
+which trains the network with the pseudo labels on the target domain. However
+inevitably, the pseudo labels are noisy and the target features are dispersed
+due to the discrepancy between source and target domains. In this paper, we
+rely on representative prototypes, the feature centroids of classes, to address
+the two issues for unsupervised domain adaptation. In particular, we take one
+step further and exploit the feature distances from prototypes that provide
+richer information than mere prototypes. Specifically, we use it to estimate
+the likelihood of pseudo labels to facilitate online correction in the course
+of training. Meanwhile, we align the prototypical assignments based on relative
+feature distances for two different views of the same target, producing a more
+compact target feature space. Moreover, we find that distilling the already
+learned knowledge to a self-supervised pretrained model further boosts the
+performance. Our method shows tremendous performance advantage over
+state-of-the-art methods. We will make the code publicly available."
+2007.08702,DACS: Domain Adaptation via Cross-domain Mixed Sampling,http://arxiv.org/abs/2007.08702,"Semantic segmentation models based on convolutional neural networks have
+recently displayed remarkable performance for a multitude of applications.
+However, these models typically do not generalize well when applied on new
+domains, especially when going from synthetic to real data. In this paper we
+address the problem of unsupervised domain adaptation (UDA), which attempts to
+train on labelled data from one domain (source domain), and simultaneously
+learn from unlabelled data in the domain of interest (target domain). Existing
+methods have seen success by training on pseudo-labels for these unlabelled
+images. Multiple techniques have been proposed to mitigate low-quality
+pseudo-labels arising from the domain shift, with varying degrees of success.
+We propose DACS: Domain Adaptation via Cross-domain mixed Sampling, which mixes
+images from the two domains along with the corresponding labels and
+pseudo-labels. These mixed samples are then trained on, in addition to the
+labelled data itself. We demonstrate the effectiveness of our solution by
+achieving state-of-the-art results for GTA5 to Cityscapes, a common
+synthetic-to-real semantic segmentation benchmark for UDA.","DACS: Domain Adaptation via Cross-domain Mixed Sampling[http://arxiv.org/abs/2007.08702]: Semantic segmentation models based on convolutional neural networks have
+recently displayed remarkable performance for a multitude of applications.
+However, these models typically do not generalize well when applied on new
+domains, especially when going from synthetic to real data. In this paper we
+address the problem of unsupervised domain adaptation (UDA), which attempts to
+train on labelled data from one domain (source domain), and simultaneously
+learn from unlabelled data in the domain of interest (target domain). Existing
+methods have seen success by training on pseudo-labels for these unlabelled
+images. Multiple techniques have been proposed to mitigate low-quality
+pseudo-labels arising from the domain shift, with varying degrees of success.
+We propose DACS: Domain Adaptation via Cross-domain mixed Sampling, which mixes
+images from the two domains along with the corresponding labels and
+pseudo-labels. These mixed samples are then trained on, in addition to the
+labelled data itself. We demonstrate the effectiveness of our solution by
+achieving state-of-the-art results for GTA5 to Cityscapes, a common
+synthetic-to-real semantic segmentation benchmark for UDA."
+2011.02594,Universal Multi-Source Domain Adaptation,http://arxiv.org/abs/2011.02594,"Unsupervised domain adaptation enables intelligent models to transfer
+knowledge from a labeled source domain to a similar but unlabeled target
+domain. Recent study reveals that knowledge can be transferred from one source
+domain to another unknown target domain, called Universal Domain Adaptation
+(UDA). However, in the real-world application, there are often more than one
+source domain to be exploited for domain adaptation. In this paper, we formally
+propose a more general domain adaptation setting, universal multi-source domain
+adaptation (UMDA), where the label sets of multiple source domains can be
+different and the label set of target domain is completely unknown. The main
+challenges in UMDA are to identify the common label set between each source
+domain and target domain, and to keep the model scalable as the number of
+source domains increases. To address these challenges, we propose a universal
+multi-source adaptation network (UMAN) to solve the domain adaptation problem
+without increasing the complexity of the model in various UMDA settings. In
+UMAN, we estimate the reliability of each known class in the common label set
+via the prediction margin, which helps adversarial training to better align the
+distributions of multiple source domains and target domain in the common label
+set. Moreover, the theoretical guarantee for UMAN is also provided. Massive
+experimental results show that existing UDA and multi-source DA (MDA) methods
+cannot be directly applied to UMDA and the proposed UMAN achieves the
+state-of-the-art performance in various UMDA settings.","Universal Multi-Source Domain Adaptation[http://arxiv.org/abs/2011.02594]: Unsupervised domain adaptation enables intelligent models to transfer
+knowledge from a labeled source domain to a similar but unlabeled target
+domain. Recent study reveals that knowledge can be transferred from one source
+domain to another unknown target domain, called Universal Domain Adaptation
+(UDA). However, in the real-world application, there are often more than one
+source domain to be exploited for domain adaptation. In this paper, we formally
+propose a more general domain adaptation setting, universal multi-source domain
+adaptation (UMDA), where the label sets of multiple source domains can be
+different and the label set of target domain is completely unknown. The main
+challenges in UMDA are to identify the common label set between each source
+domain and target domain, and to keep the model scalable as the number of
+source domains increases. To address these challenges, we propose a universal
+multi-source adaptation network (UMAN) to solve the domain adaptation problem
+without increasing the complexity of the model in various UMDA settings. In
+UMAN, we estimate the reliability of each known class in the common label set
+via the prediction margin, which helps adversarial training to better align the
+distributions of multiple source domains and target domain in the common label
+set. Moreover, the theoretical guarantee for UMAN is also provided. Massive
+experimental results show that existing UDA and multi-source DA (MDA) methods
+cannot be directly applied to UMDA and the proposed UMAN achieves the
+state-of-the-art performance in various UMDA settings."
+2002.07953,Universal Domain Adaptation through Self Supervision,http://arxiv.org/abs/2002.07953,"Unsupervised domain adaptation methods traditionally assume that all source
+categories are present in the target domain. In practice, little may be known
+about the category overlap between the two domains. While some methods address
+target settings with either partial or open-set categories, they assume that
+the particular setting is known a priori. We propose a more universally
+applicable domain adaptation framework that can handle arbitrary category
+shift, called Domain Adaptative Neighborhood Clustering via Entropy
+optimization (DANCE). DANCE combines two novel ideas: First, as we cannot fully
+rely on source categories to learn features discriminative for the target, we
+propose a novel neighborhood clustering technique to learn the structure of the
+target domain in a self-supervised way. Second, we use entropy-based feature
+alignment and rejection to align target features with the source, or reject
+them as unknown categories based on their entropy. We show through extensive
+experiments that DANCE outperforms baselines across open-set, open-partial and
+partial domain adaptation settings. Implementation is available at
+https://github.com/VisionLearningGroup/DANCE.","Universal Domain Adaptation through Self Supervision[http://arxiv.org/abs/2002.07953]: Unsupervised domain adaptation methods traditionally assume that all source
+categories are present in the target domain. In practice, little may be known
+about the category overlap between the two domains. While some methods address
+target settings with either partial or open-set categories, they assume that
+the particular setting is known a priori. We propose a more universally
+applicable domain adaptation framework that can handle arbitrary category
+shift, called Domain Adaptative Neighborhood Clustering via Entropy
+optimization (DANCE). DANCE combines two novel ideas: First, as we cannot fully
+rely on source categories to learn features discriminative for the target, we
+propose a novel neighborhood clustering technique to learn the structure of the
+target domain in a self-supervised way. Second, we use entropy-based feature
+alignment and rejection to align target features with the source, or reject
+them as unknown categories based on their entropy. We show through extensive
+experiments that DANCE outperforms baselines across open-set, open-partial and
+partial domain adaptation settings. Implementation is available at
+https://github.com/VisionLearningGroup/DANCE."
+2007.12360,On the Effectiveness of Image Rotation for Open Set Domain Adaptation,http://arxiv.org/abs/2007.12360,"Open Set Domain Adaptation (OSDA) bridges the domain gap between a labeled
+source domain and an unlabeled target domain, while also rejecting target
+classes that are not present in the source. To avoid negative transfer, OSDA
+can be tackled by first separating the known/unknown target samples and then
+aligning known target samples with the source data. We propose a novel method
+to addresses both these problems using the self-supervised task of rotation
+recognition. Moreover, we assess the performance with a new open set metric
+that properly balances the contribution of recognizing the known classes and
+rejecting the unknown samples. Comparative experiments with existing OSDA
+methods on the standard Office-31 and Office-Home benchmarks show that: (i) our
+method outperforms its competitors, (ii) reproducibility for this field is a
+crucial issue to tackle, (iii) our metric provides a reliable tool to allow
+fair open set evaluation.","On the Effectiveness of Image Rotation for Open Set Domain Adaptation[http://arxiv.org/abs/2007.12360]: Open Set Domain Adaptation (OSDA) bridges the domain gap between a labeled
+source domain and an unlabeled target domain, while also rejecting target
+classes that are not present in the source. To avoid negative transfer, OSDA
+can be tackled by first separating the known/unknown target samples and then
+aligning known target samples with the source data. We propose a novel method
+to addresses both these problems using the self-supervised task of rotation
+recognition. Moreover, we assess the performance with a new open set metric
+that properly balances the contribution of recognizing the known classes and
+rejecting the unknown samples. Comparative experiments with existing OSDA
+methods on the standard Office-31 and Office-Home benchmarks show that: (i) our
+method outperforms its competitors, (ii) reproducibility for this field is a
+crucial issue to tackle, (iii) our metric provides a reliable tool to allow
+fair open set evaluation."
+2104.03344,OVANet: One-vs-All Network for Universal Domain Adaptation,http://arxiv.org/abs/2104.03344,"Universal Domain Adaptation (UNDA) aims to handle both domain-shift and
+category-shift between two datasets, where the main challenge is to transfer
+knowledge while rejecting unknown classes which are absent in the labeled
+source data but present in the unlabeled target data. Existing methods manually
+set a threshold to reject unknown samples based on validation or a pre-defined
+ratio of unknown samples, but this strategy is not practical. In this paper, we
+propose a method to learn the threshold using source samples and to adapt it to
+the target domain. Our idea is that a minimum inter-class distance in the
+source domain should be a good threshold to decide between known or unknown in
+the target. To learn the inter-and intra-class distance, we propose to train a
+one-vs-all classifier for each class using labeled source data. Then, we adapt
+the open-set classifier to the target domain by minimizing class entropy. The
+resulting framework is the simplest of all baselines of UNDA and is insensitive
+to the value of a hyper-parameter yet outperforms baselines with a large
+margin.","OVANet: One-vs-All Network for Universal Domain Adaptation[http://arxiv.org/abs/2104.03344]: Universal Domain Adaptation (UNDA) aims to handle both domain-shift and
+category-shift between two datasets, where the main challenge is to transfer
+knowledge while rejecting unknown classes which are absent in the labeled
+source data but present in the unlabeled target data. Existing methods manually
+set a threshold to reject unknown samples based on validation or a pre-defined
+ratio of unknown samples, but this strategy is not practical. In this paper, we
+propose a method to learn the threshold using source samples and to adapt it to
+the target domain. Our idea is that a minimum inter-class distance in the
+source domain should be a good threshold to decide between known or unknown in
+the target. To learn the inter-and intra-class distance, we propose to train a
+one-vs-all classifier for each class using labeled source data. Then, we adapt
+the open-set classifier to the target domain by minimizing class entropy. The
+resulting framework is the simplest of all baselines of UNDA and is insensitive
+to the value of a hyper-parameter yet outperforms baselines with a large
+margin."

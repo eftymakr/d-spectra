@@ -1,0 +1,32 @@
+## Related Works
+
+The performance modeling and optimization of large language models (LLMs) in distributed training and inference environments have garnered substantial research attention due to the increasing scale and complexity of these models. Early efforts in distributed training primarily targeted communication efficiency and scalability, often grappling with the challenges posed by asynchronous updates and node failures, which impacted stability and performance \[[2410.02425](http://arxiv.org/abs/2410.02425)\]. Techniques such as redundancy in cost functions have been employed to enhance fault tolerance and improve convergence despite unreliable nodes, reflecting the need for robust distributed optimization frameworks \[[2410.02425](http://arxiv.org/abs/2410.02425)\].
+
+Recent work highlights the critical importance of communication optimization to reduce latency and bandwidth bottlenecks during large-scale LLM training. Asynchronous distributed optimization methods that avoid waiting for all nodes to synchronize have demonstrated improved throughput, which is vital for training on clusters with heterogeneous and limited resources \[[2410.02425](http://arxiv.org/abs/2410.02425)\]. Moreover, advanced gradient-based optimizers leveraging the Gumbel-Softmax method have introduced flexibility in handling mixed categorical and continuous design variables, paving the way for more efficient hyperparameter tuning in distributed settings \[[2407.00029](http://arxiv.org/abs/2407.00029)\].
+
+Performance modeling specifically tailored for LLMs has become an essential area of study to guide system design and deployment decisions. For instance, the LLM-Pilot system offers a methodology for characterizing inference latency and cost-effectiveness across diverse GPU hardware by benchmarking under realistic workloads and using predictive models to recommend optimal configurations \[[2312.11514](http://arxiv.org/abs/2312.11514)\]. Complementarily, distributed inference optimization on CPUs has been explored, showing that carefully designed distributed strategies can drastically reduce per-token inference latency even for very large models (e.g., 72B parameters) on commodity hardware \[[2004.03072](http://arxiv.org/abs/2004.03072)\]. These approaches underscore the interplay between hardware characteristics and algorithmic design in achieving practical efficiency.
+
+Memory constraints are another significant bottleneck in LLM deployment. Techniques like offloading model parameters to flash memory with intelligent data access strategies—such as windowing and row-column bundling—have been proposed to enable inference of models exceeding DRAM capacity, achieving substantial speedups compared to naive loading methods on both CPUs and GPUs \[[2210.11416](http://arxiv.org/abs/2210.11416)\]. These hardware-aware approaches emphasize the importance of optimizing data movement and memory usage, which are critical for both inference and training scalability.
+
+From a broader systems perspective, comprehensive surveys have synthesized algorithmic and system-level advancements for efficient LLM serving, highlighting the multifaceted challenges of latency, throughput, and resource utilization \[[2204.02311](http://arxiv.org/abs/2204.02311)\]. These surveys integrate findings on model compression (e.g., quantization, pruning), algorithmic enhancements (e.g., early exit, mixture-of-experts), and hardware considerations, providing a holistic view that informs the design of performance modeling tools.
+
+Beyond inference, recent frameworks have focused on modeling distributed training on transient cloud GPU clusters, analyzing the trade-offs between cost, speed, and reliability across varied configurations \[[2312.10793](http://arxiv.org/abs/2312.10793)\]. Such empirical studies facilitate predictive models that can estimate training performance, guiding resource allocation and cluster design under dynamic conditions.
+
+In the context of improving LLM training and fine-tuning efficiency, instruction tuning and mixture strategies have shown significant gains in downstream task generalization, indicating that performance modeling must also consider the impact of training workload diversity and data mixtures \[[2404.06209](http://arxiv.org/abs/2404.06209)\]\[[2402.148](http://arxiv.org/abs/2402.14800)\]. Meanwhile, pruning and expert skipping techniques in Mixture-of-Experts LLMs provide avenues to reduce model size and inference latency without sacrificing accuracy, further complicating the performance landscape but offering richer modeling opportunities \[[2312.15234](http://arxiv.org/abs/2312.15234)\].
+
+The proposed Lumos toolkit advances this body of work by focusing on trace-driven performance modeling for large-scale LLM training, capturing detailed execution behaviors across extensive GPU clusters with high accuracy. Unlike prior systems primarily centered on inference or smaller-scale training environments, Lumos facilitates precise replay and prediction of training execution time and runtime characteristics, enabling efficient exploration of model and deployment configurations informed by real execution traces. This approach addresses the critical gap in accurately modeling the complex interaction of hardware, software, and model factors in large-scale LLM training, building on foundational insights from previous characterization and optimization studies \[[2312.11514](http://arxiv.org/abs/2312.11514)\]\[[2004.03072](http://arxiv.org/abs/2004.03072)\]\[[2210.11416](http://arxiv.org/abs/2210.11416)\]\[[2204.02311](http://arxiv.org/abs/2204.02311)\]\[[2312.10793](http://arxiv.org/abs/2312.10793)\].
+
+---
+
+### References
+
+\[[2410.02425](http://arxiv.org/abs/2410.02425)\] http://arxiv.org/abs/2106.03998v1  
+\[[2407.00029](http://arxiv.org/abs/2407.00029)\] http://arxiv.org/abs/2501.00258v1  
+\[[2312.11514](http://arxiv.org/abs/2312.11514)\] http://arxiv.org/abs/2410.02425  
+\[[2004.03072](http://arxiv.org/abs/2004.03072)\] http://arxiv.org/abs/2407.00029  
+\[[2210.11416](http://arxiv.org/abs/2210.11416)\] http://arxiv.org/abs/2312.11514  
+\[[2204.02311](http://arxiv.org/abs/2204.02311)\] http://arxiv.org/abs/2312.15234  
+\[[2312.10793](http://arxiv.org/abs/2312.10793)\] http://arxiv.org/abs/2004.03072  
+\[[2404.06209](http://arxiv.org/abs/2404.06209)\] http://arxiv.org/abs/2210.11416  
+\[[2402.148](http://arxiv.org/abs/2402.14800)\] http://arxiv.org/abs/2312.10793  
+\[[2312.15234](http://arxiv.org/abs/2312.15234)\] http://arxiv.org/abs/2402.14800

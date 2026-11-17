@@ -1,0 +1,36 @@
+## Related Works
+
+Understanding the evolution of feature representations across layers in large language models (LLMs) is fundamental for improving their interpretability, robustness, and efficient adaptation. Early research has primarily focused on data-dependent analyses of fine-tuned transformer models, such as BERT, revealing that lower layers tend to retain general representations while higher layers specialize for specific downstream tasks \[[2502.16722](http://arxiv.org/abs/2502.16722)\]. This layer-wise specialization reflects a steady progression from general to task-specific features, a phenomenon critical for interpreting fine-tuning dynamics.
+
+Recent advances have sought data-oblivious methods to uncover intrinsic properties of pre-fine-tuned LLMs. Centered Kernel Alignment (CKA) has emerged as a powerful tool for measuring similarity between representations across layers, enabling the identification of critical layers without reliance on labeled data or task-specific fine-tuning \[[2210.05643](http://arxiv.org/abs/2210.05643)\]\[[2504.02268](http://arxiv.org/abs/2504.02268)\]. Such approaches offer a generalizable framework to analyze representation dynamics and to predict which layers undergo the most significant shifts during fine-tuning \[[2402.16363](http://arxiv.org/abs/2402.16363)\]\[[2312.10793](http://arxiv.org/abs/2312.10793)\]. This aligns with findings that certain layers are more sensitive to parameter updates and contribute disproportionately to downstream task performance \[[2402.11651](http://arxiv.org/abs/2402.11651)\]\[[2408.156](http://arxiv.org/abs/2408.15600)\].
+
+Spectral analysis of layer representations further reveals that top principal components capture semantic transitions within LLMs, such as moving from intermediate reasoning steps (rationales) to final conclusions. This observation is consistent with prior work demonstrating the importance of principal components in encoding semantic information and guiding model behavior \[[2503.04346](http://arxiv.org/abs/2503.04346)\]\[[2402.17193](http://arxiv.org/abs/2402.17193)\]. Understanding these spectral shifts informs strategies for both domain adaptation and robustness, as fine-tuning critical layers aligned with these principal components leads to more effective loss reduction and model specialization \[[2412.19512](http://arxiv.org/abs/2412.19512)\]\[[2402.11176](http://arxiv.org/abs/2402.11176)\].
+
+In terms of practical applications, selective fine-tuning of critical layers has been shown to improve domain adaptation efficiency, reducing computational costs while maintaining or improving performance in data-scarce settings \[[2411.09539](http://arxiv.org/abs/2411.09539)\]\[[2408.156](http://arxiv.org/abs/2408.15600)\]. This is particularly relevant given the challenges of catastrophic forgetting and safety degradation during fine-tuning, which can be mitigated by strategies such as freezing or merging weights of critical layers to preserve original model alignment and safety features \[[2412.19512](http://arxiv.org/abs/2412.19512)\]\[[2408.07888](http://arxiv.org/abs/2408.07888)\]. Similarly, freezing critical layers has demonstrated efficacy in reducing attack success rates in backdoor defense scenarios, highlighting the security implications of layer-wise representation dynamics \[[2505.02413](http://arxiv.org/abs/2505.02413)\].
+
+The broader context of fine-tuning LLMs encompasses parameter-efficient tuning methods, instruction tuning, and preference alignment, all of which interact with layer sensitivity and representation changes \[[2411.09539](http://arxiv.org/abs/2411.09539)\]\[[2312.10793](http://arxiv.org/abs/2312.10793)\]\[[2409.02795](http://arxiv.org/abs/2409.02795)\]. Notably, preference learning techniques that require limited data exploit similar dynamics by focusing on specific model components to align outputs with human preferences efficiently \[[2409.02795](http://arxiv.org/abs/2409.02795)\]. Furthermore, federated learning research underscores the importance of selective layer fine-tuning to accommodate heterogeneous client data and resource constraints, reinforcing the practical significance of identifying critical layers \[[2408.156](http://arxiv.org/abs/2408.15600)\].
+
+From a theoretical standpoint, kernel-based views, including the Neural Tangent Kernel (NTK), have been applied to understand why fine-tuning large models with limited data avoids overfitting and how subspace-based fine-tuning methods operate effectively \[[2210.05643](http://arxiv.org/abs/2210.05643)\]. These insights complement empirical studies on representation shifts and provide a foundational understanding of the underlying gradient dynamics during fine-tuning.
+
+Finally, the intersection of representation analysis and model compression or efficient inference techniques highlights the need to understand which parts of a model are most crucial to preserve or adapt. Methods such as pruning, quantization, and knowledge distillation benefit from knowledge about layer importance and representation shifts, enabling more targeted compression without severely impacting performance \[[2308.07633](http://arxiv.org/abs/2308.07633)\]\[[2404.14294](http://arxiv.org/abs/2404.14294)\].
+
+In summary, the identification and analysis of critical layers through data-oblivious methods like CKA, combined with spectral and kernel-based analyses, provide a cohesive understanding of how LLM representations evolve. These insights drive advances in efficient fine-tuning, domain adaptation, robustness, and security, situating the current work within a rich and multidisciplinary research landscape \[[2411.09539](http://arxiv.org/abs/2411.09539)\]\[[2502.16722](http://arxiv.org/abs/2502.16722)\]\[[2402.16363](http://arxiv.org/abs/2402.16363)\]\[[2210.05643](http://arxiv.org/abs/2210.05643)\]\[[2402.11651](http://arxiv.org/abs/2402.11651)\]\[[2408.156](http://arxiv.org/abs/2408.15600)\]\[[2503.04346](http://arxiv.org/abs/2503.04346)\]\[[2412.19512](http://arxiv.org/abs/2412.19512)\]\[[2505.02413](http://arxiv.org/abs/2505.02413)\]\[[2312.10793](http://arxiv.org/abs/2312.10793)\]\[[2409.02795](http://arxiv.org/abs/2409.02795)\].
+
+References:
+
+\[[2411.09539](http://arxiv.org/abs/2411.09539)\]  
+\[[2502.16722](http://arxiv.org/abs/2502.16722)\]  
+\[[2402.16363](http://arxiv.org/abs/2402.16363)\]  
+\[[2210.05643](http://arxiv.org/abs/2210.05643)\]  
+\[[2402.11651](http://arxiv.org/abs/2402.11651)\]  
+\[[2408.156](http://arxiv.org/abs/2408.15600)\]  
+\[[2308.07633](http://arxiv.org/abs/2308.07633)\]  
+\[[2503.04346](http://arxiv.org/abs/2503.04346)\]  
+\[[2402.17193](http://arxiv.org/abs/2402.17193)\]  
+\[[2412.19512](http://arxiv.org/abs/2412.19512)\]  
+\[[2408.07888](http://arxiv.org/abs/2408.07888)\]  
+\[[2505.02413](http://arxiv.org/abs/2505.02413)\]  
+\[[2504.02268](http://arxiv.org/abs/2504.02268)\]  
+\[[2312.10793](http://arxiv.org/abs/2312.10793)\]  
+\[[2404.14294](http://arxiv.org/abs/2404.14294)\]  
+\[[2409.02795](http://arxiv.org/abs/2409.02795)\]

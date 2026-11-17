@@ -1,0 +1,40 @@
+## Related Works
+
+Rehearsal-based methods are among the most effective strategies to mitigate catastrophic forgetting in continual learning (CL). These approaches maintain a memory buffer of past data and train the model jointly on new and stored examples, enabling retention of previous knowledge while learning new tasks \[[1811.11682](http://arxiv.org/abs/1811.11682)\]\[[2104.07446](http://arxiv.org/abs/2104.07446)\]. Experience replay, a form of rehearsal, has been shown to substantially reduce forgetting and can even approach the performance of methods that require explicit task identity \[[1811.11682](http://arxiv.org/abs/1811.11682)\]. However, full rehearsal can be memory-intensive and computationally costly, prompting research into efficient memory management and sample selection strategies, including reservoir sampling and gradient-based methods for selecting diverse or maximally interfering samples \[[1902.10486](http://arxiv.org/abs/1902.10486)\]\[[1903.08671](http://arxiv.org/abs/1903.08671)\]\[[2104.07446](http://arxiv.org/abs/2104.07446)\].
+
+Beyond concurrent rehearsal, the idea of sequential rehearsal—training on new tasks followed by revisiting previous tasks in sequence—has roots in biological learning processes like synaptic consolidation and hippocampal replay \[[1612.00796](http://arxiv.org/abs/1612.00796)\]\[[1705.08690](http://arxiv.org/abs/1705.08690)\]\[[1710.10368](http://arxiv.org/abs/1710.10368)\]. Generative replay methods emulate this by synthesizing past data to interleave with new data, reducing the need to store raw samples \[[1705.08690](http://arxiv.org/abs/1705.08690)\]\[[1809.10635](http://arxiv.org/abs/1809.10635)\]\[[1710.10368](http://arxiv.org/abs/1710.10368)\]. While concurrent rehearsal trains on all data simultaneously, sequential rehearsal revisits tasks or their representations one after another, potentially offering advantages when tasks are less similar or when task boundaries are unclear \[[1705.08690](http://arxiv.org/abs/1705.08690)\]\[[1809.10635](http://arxiv.org/abs/1809.10635)\].
+
+Recent theoretical analyses have begun to rigorously characterize the dynamics of rehearsal-based CL, particularly in overparameterized linear models. These studies demonstrate that sequential rehearsal can outperform concurrent rehearsal in terms of reducing forgetting and improving generalization when task similarity is low \[[2302.05836](http://arxiv.org/abs/2302.05836)\]\[[2010.04003](http://arxiv.org/abs/2010.04003)\]\[[2107.04384](http://arxiv.org/abs/2107.04384)\]. This insight aligns with empirical findings that task similarity and ordering critically influence forgetting and transfer in CL \[[2302.05836](http://arxiv.org/abs/2302.05836)\]\[[2107.04384](http://arxiv.org/abs/2107.04384)\]. Hybrid approaches that combine concurrent rehearsal for similar tasks with sequential revisiting for dissimilar ones have been proposed to leverage the strengths of both strategies \[[2302.05836](http://arxiv.org/abs/2302.05836)\].
+
+Complementary to rehearsal, various regularization-based methods aim to preserve previously learned knowledge by constraining important parameters. Elastic Weight Consolidation (EWC) and Synaptic Intelligence accumulate task-relevant parameter importance to slow down learning on critical weights, thereby alleviating forgetting without needing past data storage \[[1612.00796](http://arxiv.org/abs/1612.00796)\]\[[1908.04742](http://arxiv.org/abs/1908.04742)\]\[[https://www.semanticscholar.org/paper/a99d857ecc78316a0d9a774972b775058d5644ca](https://www.semanticscholar.org/paper/a99d857ecc78316a0d9a774972b775058d5644ca)\]. However, regularization approaches often struggle in class-incremental scenarios where task identities are unknown, making rehearsal or replay indispensable \[[1904.07734](http://arxiv.org/abs/1904.07734)\]\[[1809.10635](http://arxiv.org/abs/1809.10635)\].
+
+Other architectural solutions, such as Progressive Neural Networks and task-conditioned hypernetworks, tackle forgetting by dynamically expanding or generating task-specific parameters, enabling effective transfer and long-term retention without interference \[[1906.00695](http://arxiv.org/abs/1906.00695)\]\[[1606.04671](http://arxiv.org/abs/1606.04671)\]. These methods generally require task identity and can increase model complexity, limiting scalability.
+
+Meta-learning techniques like Meta-Experience Replay further improve continual learning by optimizing representations that facilitate transfer and minimize interference, often complementing rehearsal methods \[[1905.12588](http://arxiv.org/abs/1905.12588)\]\[[1810.11910](http://arxiv.org/abs/1810.11910)\]. These approaches learn to align gradients across tasks to improve future learning and reduce forgetting.
+
+Empirical studies have explored the trade-offs among rehearsal, regularization, and architectural methods, highlighting that rehearsal-based approaches typically achieve superior performance, especially when combined with efficient memory usage and intelligent sample selection \[[1902.10486](http://arxiv.org/abs/1902.10486)\]\[[1706.08840](http://arxiv.org/abs/1706.08840)\]\[[1909.08383](http://arxiv.org/abs/1909.08383)\]\[[2104.07446](http://arxiv.org/abs/2104.07446)\]. However, rehearsal is not without challenges; repeated training on small episodic memories risks overfitting and can impair generalization, underscoring the need for balanced rehearsal strategies \[[1902.10486](http://arxiv.org/abs/1902.10486)\]\[[2104.07446](http://arxiv.org/abs/2104.07446)\].
+
+In summary, rehearsal-based continual learning remains a dominant paradigm due to its effectiveness in mitigating catastrophic forgetting. Theoretical and empirical evidence supports the benefit of sequential rehearsal strategies, particularly for dissimilar tasks, and motivates hybrid methods that adapt rehearsal style based on task similarity. These insights, coupled with advances in memory management, sample selection, and complementary regularization or meta-learning techniques, continue to shape the evolving landscape of continual learning research.
+
+### References
+
+\[[1612.00796](http://arxiv.org/abs/1612.00796)\] http://arxiv.org/abs/1612.00796  
+\[[1811.11682](http://arxiv.org/abs/1811.11682)\] http://arxiv.org/abs/1811.11682  
+\[[1705.08690](http://arxiv.org/abs/1705.08690)\] http://arxiv.org/abs/1705.08690  
+\[[1902.10486](http://arxiv.org/abs/1902.10486)\] http://arxiv.org/abs/1902.10486  
+\[[2302.05836](http://arxiv.org/abs/2302.05836)\] http://arxiv.org/abs/2302.05836  
+\[[1904.07734](http://arxiv.org/abs/1904.07734)\] http://arxiv.org/abs/1904.07734  
+\[[1908.04742](http://arxiv.org/abs/1908.04742)\] http://arxiv.org/abs/1802.07569  
+\[[1706.08840](http://arxiv.org/abs/1706.08840)\] http://arxiv.org/abs/1706.08840  
+\[[1906.00695](http://arxiv.org/abs/1906.00695)\] http://arxiv.org/abs/1906.00695  
+\[[1606.04671](http://arxiv.org/abs/1606.04671)\] http://arxiv.org/abs/1606.04671  
+\[[https://www.semanticscholar.org/paper/a99d857ecc78316a0d9a774972b775058d5644ca](https://www.semanticscholar.org/paper/a99d857ecc78316a0d9a774972b775058d5644ca)\] https://www.semanticscholar.org/paper/a99d857ecc78316a0d9a774972b775058d5644ca  
+\[[1905.12588](http://arxiv.org/abs/1905.12588)\] http://arxiv.org/abs/1905.12588  
+\[[1809.10635](http://arxiv.org/abs/1809.10635)\] http://arxiv.org/abs/1809.10635  
+\[[1810.11910](http://arxiv.org/abs/1810.11910)\] http://arxiv.org/abs/1810.11910  
+\[[1710.10368](http://arxiv.org/abs/1710.10368)\] http://arxiv.org/abs/1710.10368  
+\[[1903.08671](http://arxiv.org/abs/1903.08671)\] http://arxiv.org/abs/1903.08671  
+\[[1909.08383](http://arxiv.org/abs/1909.08383)\] http://arxiv.org/abs/1909.08383  
+\[[2010.04003](http://arxiv.org/abs/2010.04003)\] http://arxiv.org/abs/2010.04003  
+\[[2104.07446](http://arxiv.org/abs/2104.07446)\] http://arxiv.org/abs/2104.07446  
+\[[2107.04384](http://arxiv.org/abs/2107.04384)\] http://arxiv.org/abs/2107.04384

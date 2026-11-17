@@ -1,0 +1,373 @@
+id,title,url,snippet,context
+2505.06825,Active Learning for Multi-class Image Classification,http://arxiv.org/abs/2505.06825,"A principle bottleneck in image classification is the large number of
+training examples needed to train a classifier. Using active learning, we can
+reduce the number of training examples to teach a CNN classifier by
+strategically selecting examples. Assigning values to image examples using
+different uncertainty metrics allows the model to identify and select
+high-value examples in a smaller training set size. We demonstrate results for
+digit recognition and fruit classification on the MNIST and Fruits360 data
+sets. We formally compare results for four different uncertainty metrics.
+Finally, we observe active learning is also effective on simpler (binary)
+classification tasks, but marked improvement from random sampling is more
+evident on more difficult tasks. We show active learning is a viable algorithm
+for image classification problems.","Active Learning for Multi-class Image Classification[http://arxiv.org/abs/2505.06825]: A principle bottleneck in image classification is the large number of
+training examples needed to train a classifier. Using active learning, we can
+reduce the number of training examples to teach a CNN classifier by
+strategically selecting examples. Assigning values to image examples using
+different uncertainty metrics allows the model to identify and select
+high-value examples in a smaller training set size. We demonstrate results for
+digit recognition and fruit classification on the MNIST and Fruits360 data
+sets. We formally compare results for four different uncertainty metrics.
+Finally, we observe active learning is also effective on simpler (binary)
+classification tasks, but marked improvement from random sampling is more
+evident on more difficult tasks. We show active learning is a viable algorithm
+for image classification problems."
+1511.03575,Federated Optimization:Distributed Optimization Beyond the Datacenter,http://arxiv.org/abs/1511.03575,"We introduce a new and increasingly relevant setting for distributed
+optimization in machine learning, where the data defining the optimization are
+distributed (unevenly) over an extremely large number of \nodes, but the goal
+remains to train a high-quality centralized model. We refer to this setting as
+Federated Optimization. In this setting, communication efficiency is of utmost
+importance.
+  A motivating example for federated optimization arises when we keep the
+training data locally on users' mobile devices rather than logging it to a data
+center for training. Instead, the mobile devices are used as nodes performing
+computation on their local data in order to update a global model. We suppose
+that we have an extremely large number of devices in our network, each of which
+has only a tiny fraction of data available totally; in particular, we expect
+the number of data points available locally to be much smaller than the number
+of devices. Additionally, since different users generate data with different
+patterns, we assume that no device has a representative sample of the overall
+distribution.
+  We show that existing algorithms are not suitable for this setting, and
+propose a new algorithm which shows encouraging experimental results. This work
+also sets a path for future research needed in the context of federated
+optimization.","Federated Optimization:Distributed Optimization Beyond the Datacenter[http://arxiv.org/abs/1511.03575]: We introduce a new and increasingly relevant setting for distributed
+optimization in machine learning, where the data defining the optimization are
+distributed (unevenly) over an extremely large number of \nodes, but the goal
+remains to train a high-quality centralized model. We refer to this setting as
+Federated Optimization. In this setting, communication efficiency is of utmost
+importance.
+  A motivating example for federated optimization arises when we keep the
+training data locally on users' mobile devices rather than logging it to a data
+center for training. Instead, the mobile devices are used as nodes performing
+computation on their local data in order to update a global model. We suppose
+that we have an extremely large number of devices in our network, each of which
+has only a tiny fraction of data available totally; in particular, we expect
+the number of data points available locally to be much smaller than the number
+of devices. Additionally, since different users generate data with different
+patterns, we assume that no device has a representative sample of the overall
+distribution.
+  We show that existing algorithms are not suitable for this setting, and
+propose a new algorithm which shows encouraging experimental results. This work
+also sets a path for future research needed in the context of federated
+optimization."
+1602.05629,"Communication-Efficient Learning of Deep Networks from Decentralized
+  Data",http://arxiv.org/abs/1602.05629,"Modern mobile devices have access to a wealth of data suitable for learning
+models, which in turn can greatly improve the user experience on the device.
+For example, language models can improve speech recognition and text entry, and
+image models can automatically select good photos. However, this rich data is
+often privacy sensitive, large in quantity, or both, which may preclude logging
+to the data center and training there using conventional approaches. We
+advocate an alternative that leaves the training data distributed on the mobile
+devices, and learns a shared model by aggregating locally-computed updates. We
+term this decentralized approach Federated Learning.
+  We present a practical method for the federated learning of deep networks
+based on iterative model averaging, and conduct an extensive empirical
+evaluation, considering five different model architectures and four datasets.
+These experiments demonstrate the approach is robust to the unbalanced and
+non-IID data distributions that are a defining characteristic of this setting.
+Communication costs are the principal constraint, and we show a reduction in
+required communication rounds by 10-100x as compared to synchronized stochastic
+gradient descent.","Communication-Efficient Learning of Deep Networks from Decentralized
+  Data[http://arxiv.org/abs/1602.05629]: Modern mobile devices have access to a wealth of data suitable for learning
+models, which in turn can greatly improve the user experience on the device.
+For example, language models can improve speech recognition and text entry, and
+image models can automatically select good photos. However, this rich data is
+often privacy sensitive, large in quantity, or both, which may preclude logging
+to the data center and training there using conventional approaches. We
+advocate an alternative that leaves the training data distributed on the mobile
+devices, and learns a shared model by aggregating locally-computed updates. We
+term this decentralized approach Federated Learning.
+  We present a practical method for the federated learning of deep networks
+based on iterative model averaging, and conduct an extensive empirical
+evaluation, considering five different model architectures and four datasets.
+These experiments demonstrate the approach is robust to the unbalanced and
+non-IID data distributions that are a defining characteristic of this setting.
+Communication costs are the principal constraint, and we show a reduction in
+required communication rounds by 10-100x as compared to synchronized stochastic
+gradient descent."
+2002.05038,Robustness analytics to data heterogeneity in edge computing,http://arxiv.org/abs/2002.05038,"Federated Learning is a framework that jointly trains a model \textit(with)
+complete knowledge on a remotely placed centralized server, but
+\textit(without) the requirement of accessing the data stored in distributed
+machines. Some work assumes that the data generated from edge devices are
+identically and independently sampled from a common population distribution.
+However, such ideal sampling may not be realistic in many contexts. Also,
+models based on intrinsic agency, such as active sampling schemes, may lead to
+highly biased sampling. So an imminent question is how robust Federated
+Learning is to biased sampling? In this
+work\footnote(\url(https://github.com/jiaqian/robustness_of_FL)), we
+experimentally investigate two such scenarios. First, we study a centralized
+classifier aggregated from a collection of local classifiers trained with data
+having categorical heterogeneity. Second, we study a classifier aggregated from
+a collection of local classifiers trained by data through active sampling at
+the edge. We present evidence in both scenarios that Federated Learning is
+robust to data heterogeneity when local training iterations and communication
+frequency are appropriately chosen.","Robustness analytics to data heterogeneity in edge computing[http://arxiv.org/abs/2002.05038]: Federated Learning is a framework that jointly trains a model \textit(with)
+complete knowledge on a remotely placed centralized server, but
+\textit(without) the requirement of accessing the data stored in distributed
+machines. Some work assumes that the data generated from edge devices are
+identically and independently sampled from a common population distribution.
+However, such ideal sampling may not be realistic in many contexts. Also,
+models based on intrinsic agency, such as active sampling schemes, may lead to
+highly biased sampling. So an imminent question is how robust Federated
+Learning is to biased sampling? In this
+work\footnote(\url(https://github.com/jiaqian/robustness_of_FL)), we
+experimentally investigate two such scenarios. First, we study a centralized
+classifier aggregated from a collection of local classifiers trained with data
+having categorical heterogeneity. Second, we study a classifier aggregated from
+a collection of local classifiers trained by data through active sampling at
+the edge. We present evidence in both scenarios that Federated Learning is
+robust to data heterogeneity when local training iterations and communication
+frequency are appropriately chosen."
+2202.00195,"Federated Active Learning (F-AL): an Efficient Annotation Strategy for
+  Federated Learning",http://arxiv.org/abs/2202.00195,"Federated learning (FL) has been intensively investigated in terms of
+communication efficiency, privacy, and fairness. However, efficient annotation,
+which is a pain point in real-world FL applications, is less studied. In this
+project, we propose to apply active learning (AL) and sampling strategy into
+the FL framework to reduce the annotation workload. We expect that the AL and
+FL can improve the performance of each other complementarily. In our proposed
+federated active learning (F-AL) method, the clients collaboratively implement
+the AL to obtain the instances which are considered as informative to FL in a
+distributed optimization manner. We compare the test accuracies of the global
+FL models using the conventional random sampling strategy, client-level
+separate AL (S-AL), and the proposed F-AL. We empirically demonstrate that the
+F-AL outperforms baseline methods in image classification tasks.","Federated Active Learning (F-AL): an Efficient Annotation Strategy for
+  Federated Learning[http://arxiv.org/abs/2202.00195]: Federated learning (FL) has been intensively investigated in terms of
+communication efficiency, privacy, and fairness. However, efficient annotation,
+which is a pain point in real-world FL applications, is less studied. In this
+project, we propose to apply active learning (AL) and sampling strategy into
+the FL framework to reduce the annotation workload. We expect that the AL and
+FL can improve the performance of each other complementarily. In our proposed
+federated active learning (F-AL) method, the clients collaboratively implement
+the AL to obtain the instances which are considered as informative to FL in a
+distributed optimization manner. We compare the test accuracies of the global
+FL models using the conventional random sampling strategy, client-level
+separate AL (S-AL), and the proposed F-AL. We empirically demonstrate that the
+F-AL outperforms baseline methods in image classification tasks."
+2211.13579,Knowledge-Aware Federated Active Learning with Non-IID Data,http://arxiv.org/abs/2211.13579,"Federated learning enables multiple decentralized clients to learn
+collaboratively without sharing the local training data. However, the expensive
+annotation cost to acquire data labels on local clients remains an obstacle in
+utilizing local data. In this paper, we propose a federated active learning
+paradigm to efficiently learn a global model with limited annotation budget
+while protecting data privacy in a decentralized learning way. The main
+challenge faced by federated active learning is the mismatch between the active
+sampling goal of the global model on the server and that of the asynchronous
+local clients. This becomes even more significant when data is distributed
+non-IID across local clients. To address the aforementioned challenge, we
+propose Knowledge-Aware Federated Active Learning (KAFAL), which consists of
+Knowledge-Specialized Active Sampling (KSAS) and Knowledge-Compensatory
+Federated Update (KCFU). KSAS is a novel active sampling method tailored for
+the federated active learning problem. It deals with the mismatch challenge by
+sampling actively based on the discrepancies between local and global models.
+KSAS intensifies specialized knowledge in local clients, ensuring the sampled
+data to be informative for both the local clients and the global model. KCFU,
+in the meantime, deals with the client heterogeneity caused by limited data and
+non-IID data distributions. It compensates for each client's ability in weak
+classes by the assistance of the global model. Extensive experiments and
+analyses are conducted to show the superiority of KSAS over the
+state-of-the-art active learning methods and the efficiency of KCFU under the
+federated active learning framework.","Knowledge-Aware Federated Active Learning with Non-IID Data[http://arxiv.org/abs/2211.13579]: Federated learning enables multiple decentralized clients to learn
+collaboratively without sharing the local training data. However, the expensive
+annotation cost to acquire data labels on local clients remains an obstacle in
+utilizing local data. In this paper, we propose a federated active learning
+paradigm to efficiently learn a global model with limited annotation budget
+while protecting data privacy in a decentralized learning way. The main
+challenge faced by federated active learning is the mismatch between the active
+sampling goal of the global model on the server and that of the asynchronous
+local clients. This becomes even more significant when data is distributed
+non-IID across local clients. To address the aforementioned challenge, we
+propose Knowledge-Aware Federated Active Learning (KAFAL), which consists of
+Knowledge-Specialized Active Sampling (KSAS) and Knowledge-Compensatory
+Federated Update (KCFU). KSAS is a novel active sampling method tailored for
+the federated active learning problem. It deals with the mismatch challenge by
+sampling actively based on the discrepancies between local and global models.
+KSAS intensifies specialized knowledge in local clients, ensuring the sampled
+data to be informative for both the local clients and the global model. KCFU,
+in the meantime, deals with the client heterogeneity caused by limited data and
+non-IID data distributions. It compensates for each client's ability in weak
+classes by the assistance of the global model. Extensive experiments and
+analyses are conducted to show the superiority of KSAS over the
+state-of-the-art active learning methods and the efficiency of KCFU under the
+federated active learning framework."
+2303.12317,Re-thinking Federated Active Learning based on Inter-class Diversity,http://arxiv.org/abs/2303.12317,"Although federated learning has made awe-inspiring advances, most studies
+have assumed that the client's data are fully labeled. However, in a real-world
+scenario, every client may have a significant amount of unlabeled instances.
+Among the various approaches to utilizing unlabeled data, a federated active
+learning framework has emerged as a promising solution. In the decentralized
+setting, there are two types of available query selector models, namely
+'global' and 'local-only' models, but little literature discusses their
+performance dominance and its causes. In this work, we first demonstrate that
+the superiority of two selector models depends on the global and local
+inter-class diversity. Furthermore, we observe that the global and local-only
+models are the keys to resolving the imbalance of each side. Based on our
+findings, we propose LoGo, a FAL sampling strategy robust to varying local
+heterogeneity levels and global imbalance ratio, that integrates both models by
+two steps of active selection scheme. LoGo consistently outperforms six active
+learning strategies in the total number of 38 experimental settings.","Re-thinking Federated Active Learning based on Inter-class Diversity[http://arxiv.org/abs/2303.12317]: Although federated learning has made awe-inspiring advances, most studies
+have assumed that the client's data are fully labeled. However, in a real-world
+scenario, every client may have a significant amount of unlabeled instances.
+Among the various approaches to utilizing unlabeled data, a federated active
+learning framework has emerged as a promising solution. In the decentralized
+setting, there are two types of available query selector models, namely
+'global' and 'local-only' models, but little literature discusses their
+performance dominance and its causes. In this work, we first demonstrate that
+the superiority of two selector models depends on the global and local
+inter-class diversity. Furthermore, we observe that the global and local-only
+models are the keys to resolving the imbalance of each side. Based on our
+findings, we propose LoGo, a FAL sampling strategy robust to varying local
+heterogeneity levels and global imbalance ratio, that integrates both models by
+two steps of active selection scheme. LoGo consistently outperforms six active
+learning strategies in the total number of 38 experimental settings."
+1909.12641,Active Federated Learning,http://arxiv.org/abs/1909.12641,"Federated Learning allows for population level models to be trained without
+centralizing client data by transmitting the global model to clients,
+calculating gradients locally, then averaging the gradients. Downloading models
+and uploading gradients uses the client's bandwidth, so minimizing these
+transmission costs is important. The data on each client is highly variable, so
+the benefit of training on different clients may differ dramatically. To
+exploit this we propose Active Federated Learning, where in each round clients
+are selected not uniformly at random, but with a probability conditioned on the
+current model and the data on the client to maximize efficiency. We propose a
+cheap, simple and intuitive sampling scheme which reduces the number of
+required training iterations by 20-70% while maintaining the same model
+accuracy, and which mimics well known resampling techniques under certain
+conditions.","Active Federated Learning[http://arxiv.org/abs/1909.12641]: Federated Learning allows for population level models to be trained without
+centralizing client data by transmitting the global model to clients,
+calculating gradients locally, then averaging the gradients. Downloading models
+and uploading gradients uses the client's bandwidth, so minimizing these
+transmission costs is important. The data on each client is highly variable, so
+the benefit of training on different clients may differ dramatically. To
+exploit this we propose Active Federated Learning, where in each round clients
+are selected not uniformly at random, but with a probability conditioned on the
+current model and the data on the client to maximize efficiency. We propose a
+cheap, simple and intuitive sampling scheme which reduces the number of
+required training iterations by 20-70% while maintaining the same model
+accuracy, and which mimics well known resampling techniques under certain
+conditions."
+1505.05424,Weight Uncertainty in Neural Networks,http://arxiv.org/abs/1505.05424,"We introduce a new, efficient, principled and backpropagation-compatible
+algorithm for learning a probability distribution on the weights of a neural
+network, called Bayes by Backprop. It regularises the weights by minimising a
+compression cost, known as the variational free energy or the expected lower
+bound on the marginal likelihood. We show that this principled kind of
+regularisation yields comparable performance to dropout on MNIST
+classification. We then demonstrate how the learnt uncertainty in the weights
+can be used to improve generalisation in non-linear regression problems, and
+how this weight uncertainty can be used to drive the exploration-exploitation
+trade-off in reinforcement learning.","Weight Uncertainty in Neural Networks[http://arxiv.org/abs/1505.05424]: We introduce a new, efficient, principled and backpropagation-compatible
+algorithm for learning a probability distribution on the weights of a neural
+network, called Bayes by Backprop. It regularises the weights by minimising a
+compression cost, known as the variational free energy or the expected lower
+bound on the marginal likelihood. We show that this principled kind of
+regularisation yields comparable performance to dropout on MNIST
+classification. We then demonstrate how the learnt uncertainty in the weights
+can be used to improve generalisation in non-linear regression problems, and
+how this weight uncertainty can be used to drive the exploration-exploitation
+trade-off in reinforcement learning."
+1905.03677,Learning Loss for Active Learning,http://arxiv.org/abs/1905.03677,"The performance of deep neural networks improves with more annotated data.
+The problem is that the budget for annotation is limited. One solution to this
+is active learning, where a model asks human to annotate data that it perceived
+as uncertain. A variety of recent methods have been proposed to apply active
+learning to deep networks but most of them are either designed specific for
+their target tasks or computationally inefficient for large networks. In this
+paper, we propose a novel active learning method that is simple but
+task-agnostic, and works efficiently with the deep networks. We attach a small
+parametric module, named ""loss prediction module,"" to a target network, and
+learn it to predict target losses of unlabeled inputs. Then, this module can
+suggest data that the target model is likely to produce a wrong prediction.
+This method is task-agnostic as networks are learned from a single loss
+regardless of target tasks. We rigorously validate our method through image
+classification, object detection, and human pose estimation, with the recent
+network architectures. The results demonstrate that our method consistently
+outperforms the previous methods over the tasks.","Learning Loss for Active Learning[http://arxiv.org/abs/1905.03677]: The performance of deep neural networks improves with more annotated data.
+The problem is that the budget for annotation is limited. One solution to this
+is active learning, where a model asks human to annotate data that it perceived
+as uncertain. A variety of recent methods have been proposed to apply active
+learning to deep networks but most of them are either designed specific for
+their target tasks or computationally inefficient for large networks. In this
+paper, we propose a novel active learning method that is simple but
+task-agnostic, and works efficiently with the deep networks. We attach a small
+parametric module, named ""loss prediction module,"" to a target network, and
+learn it to predict target losses of unlabeled inputs. Then, this module can
+suggest data that the target model is likely to produce a wrong prediction.
+This method is task-agnostic as networks are learned from a single loss
+regardless of target tasks. We rigorously validate our method through image
+classification, object detection, and human pose estimation, with the recent
+network architectures. The results demonstrate that our method consistently
+outperforms the previous methods over the tasks."
+1708.00489,Active Learning for Convolutional Neural Networks: A Core-Set Approach,http://arxiv.org/abs/1708.00489,"Convolutional neural networks (CNNs) have been successfully applied to many
+recognition and learning tasks using a universal recipe; training a deep model
+on a very large dataset of supervised examples. However, this approach is
+rather restrictive in practice since collecting a large set of labeled images
+is very expensive. One way to ease this problem is coming up with smart ways
+for choosing images to be labelled from a very large collection (ie. active
+learning).
+  Our empirical study suggests that many of the active learning heuristics in
+the literature are not effective when applied to CNNs in batch setting.
+Inspired by these limitations, we define the problem of active learning as
+core-set selection, ie. choosing set of points such that a model learned over
+the selected subset is competitive for the remaining data points. We further
+present a theoretical result characterizing the performance of any selected
+subset using the geometry of the datapoints. As an active learning algorithm,
+we choose the subset which is expected to yield best result according to our
+characterization. Our experiments show that the proposed method significantly
+outperforms existing approaches in image classification experiments by a large
+margin.","Active Learning for Convolutional Neural Networks: A Core-Set Approach[http://arxiv.org/abs/1708.00489]: Convolutional neural networks (CNNs) have been successfully applied to many
+recognition and learning tasks using a universal recipe; training a deep model
+on a very large dataset of supervised examples. However, this approach is
+rather restrictive in practice since collecting a large set of labeled images
+is very expensive. One way to ease this problem is coming up with smart ways
+for choosing images to be labelled from a very large collection (ie. active
+learning).
+  Our empirical study suggests that many of the active learning heuristics in
+the literature are not effective when applied to CNNs in batch setting.
+Inspired by these limitations, we define the problem of active learning as
+core-set selection, ie. choosing set of points such that a model learned over
+the selected subset is competitive for the remaining data points. We further
+present a theoretical result characterizing the performance of any selected
+subset using the geometry of the datapoints. As an active learning algorithm,
+we choose the subset which is expected to yield best result according to our
+characterization. Our experiments show that the proposed method significantly
+outperforms existing approaches in image classification experiments by a large
+margin."
+1506.02142,"Dropout as a Bayesian Approximation: Representing Model Uncertainty in
+  Deep Learning",http://arxiv.org/abs/1506.02142,"Deep learning tools have gained tremendous attention in applied machine
+learning. However such tools for regression and classification do not capture
+model uncertainty. In comparison, Bayesian models offer a mathematically
+grounded framework to reason about model uncertainty, but usually come with a
+prohibitive computational cost. In this paper we develop a new theoretical
+framework casting dropout training in deep neural networks (NNs) as approximate
+Bayesian inference in deep Gaussian processes. A direct result of this theory
+gives us tools to model uncertainty with dropout NNs -- extracting information
+from existing models that has been thrown away so far. This mitigates the
+problem of representing uncertainty in deep learning without sacrificing either
+computational complexity or test accuracy. We perform an extensive study of the
+properties of dropout's uncertainty. Various network architectures and
+non-linearities are assessed on tasks of regression and classification, using
+MNIST as an example. We show a considerable improvement in predictive
+log-likelihood and RMSE compared to existing state-of-the-art methods, and
+finish by using dropout's uncertainty in deep reinforcement learning.","Dropout as a Bayesian Approximation: Representing Model Uncertainty in
+  Deep Learning[http://arxiv.org/abs/1506.02142]: Deep learning tools have gained tremendous attention in applied machine
+learning. However such tools for regression and classification do not capture
+model uncertainty. In comparison, Bayesian models offer a mathematically
+grounded framework to reason about model uncertainty, but usually come with a
+prohibitive computational cost. In this paper we develop a new theoretical
+framework casting dropout training in deep neural networks (NNs) as approximate
+Bayesian inference in deep Gaussian processes. A direct result of this theory
+gives us tools to model uncertainty with dropout NNs -- extracting information
+from existing models that has been thrown away so far. This mitigates the
+problem of representing uncertainty in deep learning without sacrificing either
+computational complexity or test accuracy. We perform an extensive study of the
+properties of dropout's uncertainty. Various network architectures and
+non-linearities are assessed on tasks of regression and classification, using
+MNIST as an example. We show a considerable improvement in predictive
+log-likelihood and RMSE compared to existing state-of-the-art methods, and
+finish by using dropout's uncertainty in deep reinforcement learning."

@@ -1,0 +1,33 @@
+## Related Works
+
+Cross-domain Sequential Recommendation (CDSR) aims to model user preferences by leveraging interaction sequences from multiple domains, which is crucial for improving recommendation accuracy in scenarios with sparse data or domain shifts. Early CDSR methods typically learn single-domain user preferences based on intra-sequence item interactions and then transfer knowledge across domains using dedicated modules. However, these approaches often suffer from reliance on overlapping users across domains, limiting practical applicability, and struggle to capture complex transition dynamics in mixed domain behavior sequences \[[2304.03891](http://arxiv.org/abs/2304.03891)\]\[[2401.04971](http://arxiv.org/abs/2401.04971)\]\[[2304.05027](http://arxiv.org/abs/2304.05027)\]\[[2309.06217](http://arxiv.org/abs/2309.06217)\].
+
+To address the overlap dilemma, some works explore non-overlapping cross-domain recommendation scenarios where no shared users or items exist. For example, prompt learning-based methods have been developed to learn domain-invariant and domain-specific representations without explicit domain alignment, thus alleviating the dependency on overlapping users \[[2406.09215](http://arxiv.org/abs/2406.09215)\]\[[2310.04633](http://arxiv.org/abs/2310.04633)\]. Federated learning frameworks have also been proposed to preserve user privacy while enabling cross-domain knowledge transfer in non-overlapping setups \[[2306.05817](http://arxiv.org/abs/2306.05817)\]\[[2410.19744](http://arxiv.org/abs/2410.19744)\]\[[2409.19925](http://arxiv.org/abs/2409.19925)\].
+
+Modeling complex transitions in mixed behavior sequences is another key challenge. Recent advances employ graph neural networks to capture inter-sequence item relationships alongside sequential attentive encoders for intra-sequence patterns, jointly learning single- and cross-domain user representations with contrastive objectives to enhance alignment \[[2309.06217](http://arxiv.org/abs/2309.06217)\]. Similarly, triple sequence learning frameworks model source, target, and mixed behavior sequences simultaneously, using cross-domain attention and contrastive learning to capture fine-grained user preferences and global correlations \[[2304.05027](http://arxiv.org/abs/2304.05027)\]. Mixed Attention Networks with local and global attention modules have also been proposed to effectively integrate domain-specific and cross-domain signals \[[2309.06217](http://arxiv.org/abs/2309.06217)\].
+
+The integration of Large Language Models (LLMs) into recommendation systems is an emerging and promising direction to tackle both the overlap dilemma and transition complexity by leveraging LLMs’ powerful semantic understanding and reasoning capabilities. LLMs can generate unified semantic item representations that transcend domain boundaries, potentially bridging gaps caused by sparse or non-overlapping data \[[2306.05817](http://arxiv.org/abs/2306.05817)\]\[[2410.19744](http://arxiv.org/abs/2410.19744)\]. Recent studies demonstrate that LLM-based embeddings, refined through supervised contrastive fine-tuning and adaptation training, significantly improve sequential recommendation performance, especially for long-tail or low-popularity items \[[2409.19925](http://arxiv.org/abs/2409.19925)\]. Furthermore, augmenting sequential data with LLM-generated pseudo-prior items, combined with reliability validation mechanisms, helps overcome data scarcity and noise issues, boosting recommendation robustness \[[2503.12547](http://arxiv.org/abs/2503.12547)\].
+
+LLM tuning frameworks designed for recommendation tasks have shown that even with limited domain-specific data, fine-tuning LLMs can yield strong cross-domain generalization and enhanced recommendation quality \[[2305.00447](http://arxiv.org/abs/2305.00447)\]. Additionally, advanced training objectives such as Softmax Direct Preference Optimization (S-DPO) have been introduced to better align LLMs with personalized ranking tasks by incorporating multiple negatives and mining hard negatives, surpassing traditional language modeling losses \[[2406.09215](http://arxiv.org/abs/2406.09215)\].
+
+Graph-based reasoning strategies combined with LLMs have also been explored for sequential recommendation, where the “graph of thoughts” approach enables deeper user preference reasoning by integrating short-term interests, long-term interests, and collaborative signals from other users, leading to substantial performance gains \[[2411.14922](http://arxiv.org/abs/2411.14922)\]. External attention mechanisms further enhance sequence encoders by mitigating inter-domain density biases and capturing global correlations beyond local self-attention views \[[2310.04633](http://arxiv.org/abs/2310.04633)\].
+
+Comprehensive surveys highlight that CDSR research is evolving towards more stereoscopic user preference modeling by fusing multi-level information across domains and sequences, with LLMs playing an increasingly central role in the recommendation pipeline—from feature encoding to ranking and interaction—while raising new challenges in efficiency, effectiveness, and ethics \[[2401.04971](http://arxiv.org/abs/2401.04971)\]\[[2306.05817](http://arxiv.org/abs/2306.05817)\]\[[2410.19744](http://arxiv.org/abs/2410.19744)\].
+
+In summary, existing CDSR methods have made significant advances in handling user preference extraction across domains but often rely heavily on overlapping user data and face difficulties modeling complex cross-domain transitions. The incorporation of LLMs offers a promising solution by providing unified semantic representations and enhanced reasoning capabilities, enabling more flexible and effective cross-domain sequential recommendations. Our proposed LLM4CDSR model builds upon these insights by integrating LLM-based item representation, trainable adapters with contrastive regularization, and hierarchical profiling to comprehensively address both the overlap dilemma and transition complexity.
+
+### References
+
+1. http://arxiv.org/abs/2304.03891  
+2. http://arxiv.org/abs/2401.04971  
+3. http://arxiv.org/abs/2304.05027  
+4. http://arxiv.org/abs/2411.14922  
+5. http://arxiv.org/abs/2305.00447  
+6. http://arxiv.org/abs/2406.09215  
+7. http://arxiv.org/abs/2310.04633  
+8. http://arxiv.org/abs/2306.05817  
+9. http://arxiv.org/abs/2410.19744  
+10. http://arxiv.org/abs/2409.19925  
+11. http://arxiv.org/abs/2503.12547  
+13. http://arxiv.org/abs/2304.03891  
+15. http://arxiv.org/abs/2409.07367

@@ -1,0 +1,35 @@
+## Related Works
+
+Generative retrieval (GR) has emerged as a promising paradigm in information retrieval (IR) by consolidating the indexing and retrieval processes into a single end-to-end model, typically a sequence-to-sequence Transformer that directly generates document identifiers (docids) given a query \[[https://www.semanticscholar.org/paper/5beaeee1e27007bd12967480bb9c379cebd15e6e](https://www.semanticscholar.org/paper/5beaeee1e27007bd12967480bb9c379cebd15e6e)\]\[[2202.06991](http://arxiv.org/abs/2202.06991)\]. This contrasts with the traditional index-retrieve-rank pipeline, allowing for simplified architectures and potentially better integration of document-query relevance. Early efforts such as Differentiable Search Index (DSI) demonstrated that a single model can memorize and retrieve documents by mapping queries directly to docids encoded in the model parameters, outperforming classical baselines like BM25 on small-scale corpora \[[2202.06991](http://arxiv.org/abs/2202.06991)\]. Later works extended DSI by improving docid representations, training strategies, and introducing query generation to bridge indexing and retrieval distribution gaps \[[2206.10128](http://arxiv.org/abs/2206.10128)\]\[[2305.15115](http://arxiv.org/abs/2305.15115)\].
+
+A critical design choice in GR is the representation of docids. Numeric-based docids—often fixed integer sequences or cluster-based codes—offer efficiency but tend to lack semantic richness, which limits generalization, especially on dynamic corpora where new documents appear continually \[[2202.06991](http://arxiv.org/abs/2202.06991)\]\[[2308.14968](http://arxiv.org/abs/2308.14968)\]. Text-based docids, such as document titles, n-grams, or learned discrete tokens, encode richer semantic and lexical information, aligning better with pretrained language models and thus demonstrating superior generalization to unseen documents \[[https://www.semanticscholar.org/paper/6682a3679a17d090830635f1c420126d20eae54a](https://www.semanticscholar.org/paper/6682a3679a17d090830635f1c420126d20eae54a)\]\[[2304.04171](http://arxiv.org/abs/2304.04171)\]\[[2204.10628](http://arxiv.org/abs/2204.10628)\]. For example, NOVO and GenRet propose learnable, semantic-enhanced docid vocabularies and tokenizations optimized jointly with retrieval objectives, achieving robust performance and interpretability \[[https://www.semanticscholar.org/paper/6682a3679a17d090830635f1c420126d20eae54a](https://www.semanticscholar.org/paper/6682a3679a17d090830635f1c420126d20eae54a)\]\[[2304.04171](http://arxiv.org/abs/2304.04171)\]. Autoregressive methods that generate substrings or n-grams as docids further improve retrieval quality by leveraging lexical diversity and finer granularity \[[2204.10628](http://arxiv.org/abs/2204.10628)\].
+
+Dynamic corpora pose a significant challenge for GR models, which traditionally assume static document collections. Incrementally indexing new documents without retraining from scratch is difficult due to catastrophic forgetting and the inherent parameterization of the corpus within the model \[[2212.09744](http://arxiv.org/abs/2212.09744)\]\[[2308.14968](http://arxiv.org/abs/2308.14968)\]. CLEVER addresses this by introducing incremental product quantization and memory-augmented learning to update docid representations efficiently while mitigating forgetting, enabling continual learning in GR systems \[[2308.14968](http://arxiv.org/abs/2308.14968)\]. Similarly, DSI++ proposes optimization of training dynamics and generative memory to stabilize knowledge retention when updating the model with new documents \[[2212.09744](http://arxiv.org/abs/2212.09744)\]. These approaches highlight the importance of balancing efficiency and adaptability in evolving retrieval scenarios.
+
+Recent studies also emphasize the importance of fine-grained docid design for better performance over dynamic corpora. Empirical evidence shows that finer granularity and semantically meaningful docids enhance retrieval accuracy and robustness compared to coarse numeric identifiers, which tend to overfit the initial corpus distribution and degrade when the corpus changes \[[2202.06991](http://arxiv.org/abs/2202.06991)\]\[[2304.04171](http://arxiv.org/abs/2304.04171)\]\[[2311.09134](http://arxiv.org/abs/2311.09134)\]. Techniques like prefix-oriented ranking optimization and relevance-based docid construction have been introduced to improve scoring accuracy during autoregressive generation, further boosting large-scale retrieval effectiveness \[[2311.09134](http://arxiv.org/abs/2311.09134)\]\[[2404.14600](http://arxiv.org/abs/2404.14600)\].
+
+Beyond docid design, training strategies play a vital role in generative retrieval. Multi-stage training workflows that incorporate query generation, semantic document representations, and consistency-based regularization have been shown to improve recall and generalization \[[2206.02743](http://arxiv.org/abs/2206.02743)\]\[[2208.09257](http://arxiv.org/abs/2208.09257)\]\[[2206.10128](http://arxiv.org/abs/2206.10128)\]. Pre-training generative retrieval models on knowledge-intensive language tasks, as in CorpusBrain, enables stronger zero-shot and few-shot retrieval capabilities, demonstrating the synergy between large-scale language model pretraining and retrieval tasks \[[2208.07652](http://arxiv.org/abs/2208.07652)\].
+
+Finally, model-based retrieval has been explored beyond raw document retrieval, notably in evidence retrieval for fact verification tasks, where generating relevant document titles and sentence identifiers in a generative fashion reduces memory and computational overhead while capturing dependencies between evidences \[[2204.05511](http://arxiv.org/abs/2204.05511)\]. This illustrates the broader applicability and flexibility of generative retrieval frameworks.
+
+In summary, related works reveal that text-based, semantically enriched, and fine-grained docid designs significantly improve GR models' performance and generalization, especially in dynamic corpora. Continual learning methods address the practical challenges of evolving corpora, while advanced training and decoding strategies enhance retrieval effectiveness and efficiency. These insights motivate the exploration of hybrid multi-docid designs that balance efficiency and semantic richness for robust generative retrieval in real-world dynamic environments.
+
+### References
+
+1. http://arxiv.org/abs/2305.18952v5  
+2. http://arxiv.org/abs/2308.14968v2  
+3. http://arxiv.org/abs/2206.02743v1  
+4. http://arxiv.org/abs/2212.09744v1  
+5. https://www.semanticscholar.org/paper/6682a3679a17d090830635f1c420126d20eae54a  
+6. http://arxiv.org/abs/2304.04171v1  
+7. http://arxiv.org/abs/2305.11161v1  
+8. http://arxiv.org/abs/2308.14968v2  
+9. http://arxiv.org/abs/2311.09134v1  
+10. http://arxiv.org/abs/2404.14600v1  
+11. http://arxiv.org/abs/2208.09257v1  
+12. http://arxiv.org/abs/2305.15115v1  
+13. http://arxiv.org/abs/2404.14600v1  
+14. http://arxiv.org/abs/2206.10128v1  
+15. http://arxiv.org/abs/2204.10628v1  
+16. http://arxiv.org/abs/2208.07652v1  
+17. http://arxiv.org/abs/2204.05511v1

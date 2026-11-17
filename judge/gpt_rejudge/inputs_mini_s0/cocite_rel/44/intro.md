@@ -1,0 +1,33 @@
+## Related Works
+
+Collaborative filtering has witnessed significant advancements through the integration of graph-based representation learning and neural network models. Traditional approaches such as matrix factorization and its variants laid the foundation for latent factor models by mapping users and items into low-dimensional continuous spaces. However, these methods often fail to fully capture complex and high-order user-item interactions and suffer from sparsity issues \[[1205.2618](http://arxiv.org/abs/1205.2618)\]\[[1409.2944](http://arxiv.org/abs/1409.2944)\]. To overcome these limitations, graph neural networks (GNNs) have emerged as a powerful framework by explicitly modeling the user-item interaction graph, enabling the propagation of information through multiple hops to capture collaborative signals.
+
+Neural Graph Collaborative Filtering (NGCF) represents a notable advancement by leveraging the bipartite user-item graph structure to propagate embeddings and model high-order connectivity, thereby incorporating collaborative signals explicitly into the embeddings \[[1905.08108](http://arxiv.org/abs/1905.08108)\]. Similarly, GraphSAGE introduced an inductive framework that generates node embeddings by aggregating neighborhood features, enabling generalization to unseen nodes and graphs, which is beneficial for dynamic recommendation scenarios \[[1706.02216](http://arxiv.org/abs/1706.02216)\]. Graph Convolutional Networks (GCNs) have also been adapted for large-scale recommender systems, as demonstrated by a Pinterest deployment that combined random walks with graph convolutions to handle billions of nodes and edges efficiently, achieving state-of-the-art recommendation quality \[[1806.01973](http://arxiv.org/abs/1806.01973)\]. Foundational GCNs for semi-supervised classification further motivate these architectures by combining node features with graph structure for improved representation learning \[[1609.02907](http://arxiv.org/abs/1609.02907)\].
+
+Despite these advances, the computational and memory costs of continuous-valued embeddings limit their applicability for real-time and resource-constrained recommendation tasks. To address efficiency, representation binarization has been explored, which transforms embeddings into compact binary codes, significantly reducing memory footprint and enabling fast bitwise operations. However, naive binarization often incurs substantial information loss, leading to degraded recommendation accuracy \[[1511.00363](http://arxiv.org/abs/1511.00363)\]. Loss-aware binarization methods have been proposed to mitigate this issue by optimizing directly for the loss function with respect to binarized weights, improving robustness and preserving performance in deep networks \[[1511.00363](http://arxiv.org/abs/1511.00363)\]. Related work on binarizing word embeddings also emphasizes minimizing semantic information loss to achieve near-lossless compression \[[1301.3781](http://arxiv.org/abs/1301.3781)\].
+
+In recommender systems, knowledge distillation techniques have been applied to ranking models to learn compact yet effective student models supervised by larger teacher models. Ranking distillation has demonstrated that smaller binarized or compressed models can maintain high ranking accuracy while significantly improving inference efficiency \[[1809.07428](http://arxiv.org/abs/1809.07428)\]. This approach complements binarization by addressing both model compactness and performance preservation.
+
+Beyond embedding binarization, neural architectures for collaborative filtering have evolved to model complex user-item interactions more expressively. Neural Collaborative Filtering (NCF) replaces inner product operations with multi-layer perceptrons to learn non-linear interaction functions, yielding improved recommendation accuracy \[[1708.05031](http://arxiv.org/abs/1708.05031)\]. Variational Autoencoders (VAE) have been extended to collaborative filtering with implicit feedback, using probabilistic generative models that surpass linear factorization approaches \[[1802.05814](http://arxiv.org/abs/1802.05814)\]. Factorization machines combined with neural networks, such as Neural Factorization Machines (NFM), model higher-order and non-linear feature interactions, enhancing prediction quality on sparse data \[[1708.05027](http://arxiv.org/abs/1708.05027)\].
+
+Graph-based ranking algorithms like BiRank iteratively assign scores on bipartite graphs by optimizing regularization objectives and incorporating prior vertex information. They have been successfully applied to personalized recommendation and popularity prediction, demonstrating fast convergence and effectiveness on large datasets \[[1708.04396](http://arxiv.org/abs/1708.04396)\]. These methods provide complementary graph-based ranking perspectives that can be integrated with embedding learning.
+
+The theoretical expressiveness of GNNs has been studied, revealing their limitations in distinguishing certain graph structures. Enhanced architectures matching the Weisfeiler-Lehman graph isomorphism test improve representation power and, consequently, recommendation quality \[[1810.00826](http://arxiv.org/abs/1810.00826)\]. Such expressiveness is critical for capturing nuanced user-item relationships in collaborative filtering.
+
+In summary, existing literature provides a rich foundation in graph-based collaborative filtering, neural embedding learning, and embedding binarization techniques. Nevertheless, most binarization approaches overlook explicit mitigation of information loss during embedding quantization, which is crucial for maintaining recommendation accuracy. Our work extends these efforts by introducing BiGeaR++, which explicitly addresses information loss at multiple binarization stages and leverages pseudo-positive supervisory signals through fine-grained inference distillation and embedding sample synthesis, resulting in superior performance and efficiency in collaborative filtering.
+
+References  
+\[[1706.02216](http://arxiv.org/abs/1706.02216)\]  
+\[[1806.01973](http://arxiv.org/abs/1806.01973)\]  
+\[[1905.08108](http://arxiv.org/abs/1905.08108)\]  
+\[[1609.02907](http://arxiv.org/abs/1609.02907)\]  
+\[[1511.00363](http://arxiv.org/abs/1511.00363)\]  
+\[[1802.05814](http://arxiv.org/abs/1802.05814)\]  
+\[[1205.2618](http://arxiv.org/abs/1205.2618)\]  
+\[[1810.00826](http://arxiv.org/abs/1810.00826)\]  
+\[[1708.04396](http://arxiv.org/abs/1708.04396)\]  
+\[[1708.05031](http://arxiv.org/abs/1708.05031)\]  
+\[[1409.2944](http://arxiv.org/abs/1409.2944)\]  
+\[[1708.05027](http://arxiv.org/abs/1708.05027)\]  
+\[[1301.3781](http://arxiv.org/abs/1301.3781)\]  
+\[[1809.07428](http://arxiv.org/abs/1809.07428)\]

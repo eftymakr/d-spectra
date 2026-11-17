@@ -1,0 +1,56 @@
+## Related Works
+
+Transformer-based pre-trained language models (PLMs) have significantly advanced neural retrieval, particularly in multilingual and cross-lingual contexts. Models such as BERT and RoBERTa enable learning dense semantic representations that surpass traditional lexical methods like BM25, especially when trained on large-scale datasets such as MS MARCO \[[2201.08471](http://arxiv.org/abs/2201.08471)\]\[[2004.12832](http://arxiv.org/abs/2004.12832)\]\[[1901.04085](http://arxiv.org/abs/1901.04085)\]. However, these advancements predominantly benefit high-resource languages, while low-resource languages, especially morphologically rich ones like Amharic, remain underexplored due to data scarcity, limited annotated corpora, and suboptimal tokenization strategies \[[2207.00785](http://arxiv.org/abs/2207.00785)\]\[[2001.03324](http://arxiv.org/abs/2001.03324)\]\[[2503.18570](http://arxiv.org/abs/2503.18570)\]\[[2408.11942](http://arxiv.org/abs/2408.11942)\].
+
+### Dense Retrieval for Low-Resource and Morphologically Rich Languages
+
+Dense retrieval approaches leverage continuous vector representations to capture semantic similarity beyond exact lexical matching. For low-resource languages, dense retrieval models face challenges arising from insufficient training data and linguistic complexity. Recent work on Amharic has begun addressing these issues by constructing tailored datasets and developing language-specific dense retrieval models based on pre-trained BERT and RoBERTa backbones \[[2201.08471](http://arxiv.org/abs/2201.08471)\]\[[2503.18570](http://arxiv.org/abs/2503.18570)\]. These specialized models have demonstrated substantial improvements over multilingual baselines by adapting to Amharic's morphological richness and tokenization peculiarities \[[2207.00785](http://arxiv.org/abs/2207.00785)\]\[[2001.03324](http://arxiv.org/abs/2001.03324)\]. Furthermore, smaller, more parameter-efficient variants of such models maintain competitive retrieval effectiveness while reducing computational overhead, which is critical in resource-constrained environments \[[2201.08471](http://arxiv.org/abs/2201.08471)\].
+
+Late interaction models, such as ColBERT, which encode queries and documents into multi-vector token-level embeddings, have shown superior retrieval performance by allowing fine-grained matching while maintaining efficiency through offline document indexing \[[2004.12832](http://arxiv.org/abs/2004.12832)\]\[[2112.01488](http://arxiv.org/abs/2112.01488)\]\[[https://www.semanticscholar.org/paper/8282c6b141c335fc144818f20d86e68800691a01](https://www.semanticscholar.org/paper/8282c6b141c335fc144818f20d86e68800691a01)\]\[[2108.06279](http://arxiv.org/abs/2108.06279)\]. Extensions like ColBERT-X and ColBERT-XM incorporate multilingual encoders (e.g., XLM-R) to support zero-shot cross-language retrieval, but their performance on low-resource languages like Amharic remains limited without language-specific fine-tuning \[[2201.08471](http://arxiv.org/abs/2201.08471)\]\[[2212.10448](http://arxiv.org/abs/2212.10448)\]\[[2402.15059](http://arxiv.org/abs/2402.15059)\]. Integrating adapters and modular components into dense retrievers has also been explored to improve parameter efficiency and adaptation to low-resource languages \[[2212.10448](http://arxiv.org/abs/2212.10448)\].
+
+### Cross-Lingual and Multilingual Retrieval Challenges
+
+Multilingual pre-trained models such as mBERT and XLM-R provide language-agnostic embeddings that facilitate transfer learning from high-resource to low-resource languages \[[2201.08471](http://arxiv.org/abs/2201.08471)\]\[[2204.05814](http://arxiv.org/abs/2204.05814)\]\[[2007.01852](http://arxiv.org/abs/2007.01852)\]\[[2112.09118](http://arxiv.org/abs/2112.09118)\]. However, direct fine-tuning on low-resource languages often yields suboptimal results due to domain and language mismatch, scarcity of labeled data, and morphological complexity \[[2408.11942](http://arxiv.org/abs/2408.11942)\]. Techniques such as data augmentation via translation and transliteration, contrastive training to align embeddings across languages, and synthetic data generation have been proposed to mitigate these challenges \[[2204.05814](http://arxiv.org/abs/2204.05814)\]\[[2408.11942](http://arxiv.org/abs/2408.11942)\].
+
+Cross-lingual dense passage retrieval models like mDPR have shown promising results on multilingual QA benchmarks but still struggle with extremely low-resource languages such as Amharic, requiring curated datasets and specialized training techniques like translation language modeling (TLM) to improve alignment and retrieval quality \[[2408.11942](http://arxiv.org/abs/2408.11942)\]. These efforts underscore the need for both language-specific and cross-lingual strategies to improve IR in morphologically rich, low-resource languages.
+
+### Language-Specific Adaptations and NLP Tools
+
+Beyond retrieval models, foundational NLP components such as tokenization, part-of-speech tagging, and named entity recognition (NER) tailored to Amharic have been developed, demonstrating significant performance gains when leveraging transformer-based models and transfer learning approaches \[[2207.00785](http://arxiv.org/abs/2207.00785)\]\[[2001.03324](http://arxiv.org/abs/2001.03324)\]. For instance, Amharic NER systems based on RoBERTa achieve state-of-the-art F1 scores by addressing class imbalance and morphological complexity \[[2207.00785](http://arxiv.org/abs/2207.00785)\]. Similarly, advances in speech recognition and emotion recognition for Amharic further highlight the importance of specialized datasets and models to handle the linguistic nuances of low-resource languages \[[2503.18485](http://arxiv.org/abs/2503.18485)\]\[[2307.10814](http://arxiv.org/abs/2307.10814)\].
+
+### Benchmarks and Evaluation Frameworks
+
+The lack of standardized datasets and benchmarks for Amharic has hindered progress in low-resource IR research. Recently, datasets such as AmQA for question answering and public Amharic IR benchmarks have been introduced to facilitate systematic evaluation and comparison of retrieval methods \[[2503.18570](http://arxiv.org/abs/2503.18570)\]\[[2303.03290](http://arxiv.org/abs/2303.03290)\]. Additionally, heterogeneous benchmarks like BEIR provide a comprehensive framework for zero-shot and out-of-distribution evaluation across multiple languages, revealing that while lexical methods remain robust baselines, dense and late interaction models can outperform them with appropriate fine-tuning \[[2104.08663](http://arxiv.org/abs/2104.08663)\]\[[2112.09118](http://arxiv.org/abs/2112.09118)\].
+
+### Efficiency and Practical Considerations
+
+Efficiency remains a critical factor for deploying retrieval models in low-resource settings. Techniques such as Learning To Retrieve (LTRe) optimize dense retrieval training by avoiding biased negative sampling and significantly speeding up convergence \[[2010.10469](http://arxiv.org/abs/2010.10469)\]. Meanwhile, methods like Lexically-Accelerated Dense Retrieval (LADR) combine lexical and dense retrieval to improve query latency without sacrificing effectiveness \[[2307.16779](http://arxiv.org/abs/2307.16779)\]. Parameter-efficient transfer learning with adapters further reduces the computational cost of adapting large multilingual models to low-resource languages \[[2212.10448](http://arxiv.org/abs/2212.10448)\].
+
+### Summary
+
+While multilingual dense retrieval models have advanced cross-lingual IR, their performance on low-resource, morphologically complex languages like Amharic is limited by data scarcity, tokenization challenges, and inadequate language-specific adaptation. Recent work demonstrates that specialized dense retrieval models built on Amharic-pretrained BERT and RoBERTa backbones, combined with late interaction architectures like ColBERT, can significantly outperform multilingual baselines \[[2201.08471](http://arxiv.org/abs/2201.08471)\]\[[2503.18570](http://arxiv.org/abs/2503.18570)\]. Complementary advances in Amharic NLP tools and evaluation datasets further support this progress, highlighting the importance of tailored approaches to effectively address low-resource language retrieval.
+
+---
+
+### References
+
+\[[2201.08471](http://arxiv.org/abs/2201.08471)\] Transfer Learning Approaches for Building Cross-Language Dense Retrieval Models (arXiv:2201.08471)  
+\[[2207.00785](http://arxiv.org/abs/2207.00785)\] ANEC: An Amharic Named Entity Corpus and Transformer Based Recognizer (arXiv:2207.00785)  
+\[[2001.03324](http://arxiv.org/abs/2001.03324)\] Machine Learning Approaches for Amharic Parts-of-speech Tagging (arXiv:2001.03324)  
+\[[2004.12832](http://arxiv.org/abs/2004.12832)\] ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT (arXiv:2004.12832)  
+\[[2503.18485](http://arxiv.org/abs/2503.18485)\] Whispering in Amharic: Fine-tuning Whisper for Low-resource Language (arXiv:2503.18485)  
+\[[2112.01488](http://arxiv.org/abs/2112.01488)\] ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction (arXiv:2112.01488)  
+\[[2503.18570](http://arxiv.org/abs/2503.18570)\] Dense Retrieval for Low Resource languages - the Case of Amharic Language (arXiv:2503.18570)  
+\[[2307.10814](http://arxiv.org/abs/2307.10814)\] Cross-Corpus Multilingual Speech Emotion Recognition: Amharic vs. Other Languages (arXiv:2307.10814)  
+\[[2010.10469](http://arxiv.org/abs/2010.10469)\] Learning To Retrieve: How to Train a Dense Retrieval Model Effectively and Efficiently (arXiv:2010.10469)  
+\[[2204.05814](http://arxiv.org/abs/2204.05814)\] MuCoT: Multilingual Contrastive Training for Question-Answering in Low-resource Languages (arXiv:2204.05814)  
+\[[2104.08663](http://arxiv.org/abs/2104.08663)\] BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models (arXiv:2104.08663)  
+\[[2303.03290](http://arxiv.org/abs/2303.03290)\] AmQA: Amharic Question Answering Dataset (arXiv:2303.03290)  
+\[[2007.01852](http://arxiv.org/abs/2007.01852)\] Language-agnostic BERT Sentence Embedding (arXiv:2007.01852)  
+\[[2212.10448](http://arxiv.org/abs/2212.10448)\] Parameter-efficient Zero-shot Transfer for Cross-Language Dense Retrieval with Adapters (arXiv:2212.10448)  
+\[[https://www.semanticscholar.org/paper/8282c6b141c335fc144818f20d86e68800691a01](https://www.semanticscholar.org/paper/8282c6b141c335fc144818f20d86e68800691a01)\] Reproducibility, Replicability, and Insights into Dense Multi-Representation Retrieval Models: from ColBERT to Col* (Semantic Scholar)  
+\[[2402.15059](http://arxiv.org/abs/2402.15059)\] ColBERT-XM: A Modular Multi-Vector Representation Model for Zero-Shot Multilingual Information Retrieval (arXiv:2402.15059)  
+\[[2408.11942](http://arxiv.org/abs/2408.11942)\] What are the limits of cross-lingual dense passage retrieval for low-resource languages? (arXiv:2408.11942)  
+\[[2112.09118](http://arxiv.org/abs/2112.09118)\] Unsupervised Dense Information Retrieval with Contrastive Learning (arXiv:2112.09118)  
+\[[2108.06279](http://arxiv.org/abs/2108.06279)\] On Single and Multiple Representations in Dense Passage Retrieval (arXiv:2108.06279)  
+\[[2307.16779](http://arxiv.org/abs/2307.16779)\] Lexically-Accelerated Dense Retrieval (arXiv:2307.16779)

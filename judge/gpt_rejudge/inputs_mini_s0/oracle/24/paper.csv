@@ -1,0 +1,405 @@
+id,title,url,snippet,context
+2006.11239,Denoising Diffusion Probabilistic Models,http://arxiv.org/abs/2006.11239,"We present high quality image synthesis results using diffusion probabilistic
+models, a class of latent variable models inspired by considerations from
+nonequilibrium thermodynamics. Our best results are obtained by training on a
+weighted variational bound designed according to a novel connection between
+diffusion probabilistic models and denoising score matching with Langevin
+dynamics, and our models naturally admit a progressive lossy decompression
+scheme that can be interpreted as a generalization of autoregressive decoding.
+On the unconditional CIFAR10 dataset, we obtain an Inception score of 9.46 and
+a state-of-the-art FID score of 3.17. On 256x256 LSUN, we obtain sample quality
+similar to ProgressiveGAN. Our implementation is available at
+https://github.com/hojonathanho/diffusion","Denoising Diffusion Probabilistic Models[http://arxiv.org/abs/2006.11239]: We present high quality image synthesis results using diffusion probabilistic
+models, a class of latent variable models inspired by considerations from
+nonequilibrium thermodynamics. Our best results are obtained by training on a
+weighted variational bound designed according to a novel connection between
+diffusion probabilistic models and denoising score matching with Langevin
+dynamics, and our models naturally admit a progressive lossy decompression
+scheme that can be interpreted as a generalization of autoregressive decoding.
+On the unconditional CIFAR10 dataset, we obtain an Inception score of 9.46 and
+a state-of-the-art FID score of 3.17. On 256x256 LSUN, we obtain sample quality
+similar to ProgressiveGAN. Our implementation is available at
+https://github.com/hojonathanho/diffusion"
+2211.15736,Post-training Quantization on Diffusion Models,http://arxiv.org/abs/2211.15736,"Denoising diffusion (score-based) generative models have recently achieved
+significant accomplishments in generating realistic and diverse data. These
+approaches define a forward diffusion process for transforming data into noise
+and a backward denoising process for sampling data from noise. Unfortunately,
+the generation process of current denoising diffusion models is notoriously
+slow due to the lengthy iterative noise estimations, which rely on cumbersome
+neural networks. It prevents the diffusion models from being widely deployed,
+especially on edge devices. Previous works accelerate the generation process of
+diffusion model (DM) via finding shorter yet effective sampling trajectories.
+However, they overlook the cost of noise estimation with a heavy network in
+every iteration. In this work, we accelerate generation from the perspective of
+compressing the noise estimation network. Due to the difficulty of retraining
+DMs, we exclude mainstream training-aware compression paradigms and introduce
+post-training quantization (PTQ) into DM acceleration. However, the output
+distributions of noise estimation networks change with time-step, making
+previous PTQ methods fail in DMs since they are designed for single-time step
+scenarios. To devise a DM-specific PTQ method, we explore PTQ on DM in three
+aspects: quantized operations, calibration dataset, and calibration metric. We
+summarize and use several observations derived from all-inclusive
+investigations to formulate our method, which especially targets the unique
+multi-time-step structure of DMs. Experimentally, our method can directly
+quantize full-precision DMs into 8-bit models while maintaining or even
+improving their performance in a training-free manner. Importantly, our method
+can serve as a plug-and-play module on other fast-sampling methods, e.g., DDIM.
+The code is available at https://github.com/42Shawn/PTQ4DM .","Post-training Quantization on Diffusion Models[http://arxiv.org/abs/2211.15736]: Denoising diffusion (score-based) generative models have recently achieved
+significant accomplishments in generating realistic and diverse data. These
+approaches define a forward diffusion process for transforming data into noise
+and a backward denoising process for sampling data from noise. Unfortunately,
+the generation process of current denoising diffusion models is notoriously
+slow due to the lengthy iterative noise estimations, which rely on cumbersome
+neural networks. It prevents the diffusion models from being widely deployed,
+especially on edge devices. Previous works accelerate the generation process of
+diffusion model (DM) via finding shorter yet effective sampling trajectories.
+However, they overlook the cost of noise estimation with a heavy network in
+every iteration. In this work, we accelerate generation from the perspective of
+compressing the noise estimation network. Due to the difficulty of retraining
+DMs, we exclude mainstream training-aware compression paradigms and introduce
+post-training quantization (PTQ) into DM acceleration. However, the output
+distributions of noise estimation networks change with time-step, making
+previous PTQ methods fail in DMs since they are designed for single-time step
+scenarios. To devise a DM-specific PTQ method, we explore PTQ on DM in three
+aspects: quantized operations, calibration dataset, and calibration metric. We
+summarize and use several observations derived from all-inclusive
+investigations to formulate our method, which especially targets the unique
+multi-time-step structure of DMs. Experimentally, our method can directly
+quantize full-precision DMs into 8-bit models while maintaining or even
+improving their performance in a training-free manner. Importantly, our method
+can serve as a plug-and-play module on other fast-sampling methods, e.g., DDIM.
+The code is available at https://github.com/42Shawn/PTQ4DM ."
+2302.04304,Q-Diffusion: Quantizing Diffusion Models,http://arxiv.org/abs/2302.04304,"Diffusion models have achieved great success in image synthesis through
+iterative noise estimation using deep neural networks. However, the slow
+inference, high memory consumption, and computation intensity of the noise
+estimation model hinder the efficient adoption of diffusion models. Although
+post-training quantization (PTQ) is considered a go-to compression method for
+other tasks, it does not work out-of-the-box on diffusion models. We propose a
+novel PTQ method specifically tailored towards the unique multi-timestep
+pipeline and model architecture of the diffusion models, which compresses the
+noise estimation network to accelerate the generation process. We identify the
+key difficulty of diffusion model quantization as the changing output
+distributions of noise estimation networks over multiple time steps and the
+bimodal activation distribution of the shortcut layers within the noise
+estimation network. We tackle these challenges with timestep-aware calibration
+and split shortcut quantization in this work. Experimental results show that
+our proposed method is able to quantize full-precision unconditional diffusion
+models into 4-bit while maintaining comparable performance (small FID change of
+at most 2.34 compared to >100 for traditional PTQ) in a training-free manner.
+Our approach can also be applied to text-guided image generation, where we can
+run stable diffusion in 4-bit weights with high generation quality for the
+first time.","Q-Diffusion: Quantizing Diffusion Models[http://arxiv.org/abs/2302.04304]: Diffusion models have achieved great success in image synthesis through
+iterative noise estimation using deep neural networks. However, the slow
+inference, high memory consumption, and computation intensity of the noise
+estimation model hinder the efficient adoption of diffusion models. Although
+post-training quantization (PTQ) is considered a go-to compression method for
+other tasks, it does not work out-of-the-box on diffusion models. We propose a
+novel PTQ method specifically tailored towards the unique multi-timestep
+pipeline and model architecture of the diffusion models, which compresses the
+noise estimation network to accelerate the generation process. We identify the
+key difficulty of diffusion model quantization as the changing output
+distributions of noise estimation networks over multiple time steps and the
+bimodal activation distribution of the shortcut layers within the noise
+estimation network. We tackle these challenges with timestep-aware calibration
+and split shortcut quantization in this work. Experimental results show that
+our proposed method is able to quantize full-precision unconditional diffusion
+models into 4-bit while maintaining comparable performance (small FID change of
+at most 2.34 compared to >100 for traditional PTQ) in a training-free manner.
+Our approach can also be applied to text-guided image generation, where we can
+run stable diffusion in 4-bit weights with high generation quality for the
+first time."
+2305.10657,PTQD: Accurate Post-Training Quantization for Diffusion Models,http://arxiv.org/abs/2305.10657,"Diffusion models have recently dominated image synthesis tasks. However, the
+iterative denoising process is expensive in computations at inference time,
+making diffusion models less practical for low-latency and scalable real-world
+applications. Post-training quantization (PTQ) of diffusion models can
+significantly reduce the model size and accelerate the sampling process without
+re-training. Nonetheless, applying existing PTQ methods directly to low-bit
+diffusion models can significantly impair the quality of generated samples.
+Specifically, for each denoising step, quantization noise leads to deviations
+in the estimated mean and mismatches with the predetermined variance schedule.
+As the sampling process proceeds, the quantization noise may accumulate,
+resulting in a low signal-to-noise ratio (SNR) during the later denoising
+steps. To address these challenges, we propose a unified formulation for the
+quantization noise and diffusion perturbed noise in the quantized denoising
+process. Specifically, we first disentangle the quantization noise into its
+correlated and residual uncorrelated parts regarding its full-precision
+counterpart. The correlated part can be easily corrected by estimating the
+correlation coefficient. For the uncorrelated part, we subtract the bias from
+the quantized results to correct the mean deviation and calibrate the denoising
+variance schedule to absorb the excess variance resulting from quantization.
+Moreover, we introduce a mixed-precision scheme for selecting the optimal
+bitwidth for each denoising step. Extensive experiments demonstrate that our
+method outperforms previous post-training quantized diffusion models, with only
+a 0.06 increase in FID score compared to full-precision LDM-4 on ImageNet
+256x256, while saving 19.9x bit operations. Code is available at
+https://github.com/ziplab/PTQD.","PTQD: Accurate Post-Training Quantization for Diffusion Models[http://arxiv.org/abs/2305.10657]: Diffusion models have recently dominated image synthesis tasks. However, the
+iterative denoising process is expensive in computations at inference time,
+making diffusion models less practical for low-latency and scalable real-world
+applications. Post-training quantization (PTQ) of diffusion models can
+significantly reduce the model size and accelerate the sampling process without
+re-training. Nonetheless, applying existing PTQ methods directly to low-bit
+diffusion models can significantly impair the quality of generated samples.
+Specifically, for each denoising step, quantization noise leads to deviations
+in the estimated mean and mismatches with the predetermined variance schedule.
+As the sampling process proceeds, the quantization noise may accumulate,
+resulting in a low signal-to-noise ratio (SNR) during the later denoising
+steps. To address these challenges, we propose a unified formulation for the
+quantization noise and diffusion perturbed noise in the quantized denoising
+process. Specifically, we first disentangle the quantization noise into its
+correlated and residual uncorrelated parts regarding its full-precision
+counterpart. The correlated part can be easily corrected by estimating the
+correlation coefficient. For the uncorrelated part, we subtract the bias from
+the quantized results to correct the mean deviation and calibrate the denoising
+variance schedule to absorb the excess variance resulting from quantization.
+Moreover, we introduce a mixed-precision scheme for selecting the optimal
+bitwidth for each denoising step. Extensive experiments demonstrate that our
+method outperforms previous post-training quantized diffusion models, with only
+a 0.06 increase in FID score compared to full-precision LDM-4 on ImageNet
+256x256, while saving 19.9x bit operations. Code is available at
+https://github.com/ziplab/PTQD."
+2405.14854,TerDiT: Ternary Diffusion Models with Transformers,http://arxiv.org/abs/2405.14854,"Recent developments in large-scale pre-trained text-to-image diffusion models
+have significantly improved the generation of high-fidelity images,
+particularly with the emergence of diffusion transformer models (DiTs). Among
+diffusion models, diffusion transformers have demonstrated superior
+image-generation capabilities, boosting lower FID scores and higher
+scalability. However, deploying large-scale DiT models can be expensive due to
+their excessive parameter numbers. Although existing research has explored
+efficient deployment techniques for diffusion models, such as model
+quantization, there is still little work concerning DiT-based models. To tackle
+this research gap, we propose TerDiT, the first quantization-aware training
+(QAT) and efficient deployment scheme for extremely low-bit diffusion
+transformer models. We focus on the ternarization of DiT networks, with model
+sizes ranging from 600M to 4.2B, and image resolution from 256$\times$256 to
+512$\times$512. Our work contributes to the exploration of efficient deployment
+of large-scale DiT models, demonstrating the feasibility of training extremely
+low-bit DiT models from scratch while maintaining competitive image generation
+capacities compared to full-precision models. Our code and pre-trained TerDiT
+checkpoints have been released at https://github.com/Lucky-Lance/TerDiT.","TerDiT: Ternary Diffusion Models with Transformers[http://arxiv.org/abs/2405.14854]: Recent developments in large-scale pre-trained text-to-image diffusion models
+have significantly improved the generation of high-fidelity images,
+particularly with the emergence of diffusion transformer models (DiTs). Among
+diffusion models, diffusion transformers have demonstrated superior
+image-generation capabilities, boosting lower FID scores and higher
+scalability. However, deploying large-scale DiT models can be expensive due to
+their excessive parameter numbers. Although existing research has explored
+efficient deployment techniques for diffusion models, such as model
+quantization, there is still little work concerning DiT-based models. To tackle
+this research gap, we propose TerDiT, the first quantization-aware training
+(QAT) and efficient deployment scheme for extremely low-bit diffusion
+transformer models. We focus on the ternarization of DiT networks, with model
+sizes ranging from 600M to 4.2B, and image resolution from 256$\times$256 to
+512$\times$512. Our work contributes to the exploration of efficient deployment
+of large-scale DiT models, demonstrating the feasibility of training extremely
+low-bit DiT models from scratch while maintaining competitive image generation
+capacities compared to full-precision models. Our code and pre-trained TerDiT
+checkpoints have been released at https://github.com/Lucky-Lance/TerDiT."
+2405.16005,PTQ4DiT: Post-training Quantization for Diffusion Transformers,http://arxiv.org/abs/2405.16005,"The recent introduction of Diffusion Transformers (DiTs) has demonstrated
+exceptional capabilities in image generation by using a different backbone
+architecture, departing from traditional U-Nets and embracing the scalable
+nature of transformers. Despite their advanced capabilities, the wide
+deployment of DiTs, particularly for real-time applications, is currently
+hampered by considerable computational demands at the inference stage.
+Post-training Quantization (PTQ) has emerged as a fast and data-efficient
+solution that can significantly reduce computation and memory footprint by
+using low-bit weights and activations. However, its applicability to DiTs has
+not yet been explored and faces non-trivial difficulties due to the unique
+design of DiTs. In this paper, we propose PTQ4DiT, a specifically designed PTQ
+method for DiTs. We discover two primary quantization challenges inherent in
+DiTs, notably the presence of salient channels with extreme magnitudes and the
+temporal variability in distributions of salient activation over multiple
+timesteps. To tackle these challenges, we propose Channel-wise Salience
+Balancing (CSB) and Spearmen's $\rho$-guided Salience Calibration (SSC). CSB
+leverages the complementarity property of channel magnitudes to redistribute
+the extremes, alleviating quantization errors for both activations and weights.
+SSC extends this approach by dynamically adjusting the balanced salience to
+capture the temporal variations in activation. Additionally, to eliminate extra
+computational costs caused by PTQ4DiT during inference, we design an offline
+re-parameterization strategy for DiTs. Experiments demonstrate that our PTQ4DiT
+successfully quantizes DiTs to 8-bit precision (W8A8) while preserving
+comparable generation ability and further enables effective quantization to
+4-bit weight precision (W4A8) for the first time.","PTQ4DiT: Post-training Quantization for Diffusion Transformers[http://arxiv.org/abs/2405.16005]: The recent introduction of Diffusion Transformers (DiTs) has demonstrated
+exceptional capabilities in image generation by using a different backbone
+architecture, departing from traditional U-Nets and embracing the scalable
+nature of transformers. Despite their advanced capabilities, the wide
+deployment of DiTs, particularly for real-time applications, is currently
+hampered by considerable computational demands at the inference stage.
+Post-training Quantization (PTQ) has emerged as a fast and data-efficient
+solution that can significantly reduce computation and memory footprint by
+using low-bit weights and activations. However, its applicability to DiTs has
+not yet been explored and faces non-trivial difficulties due to the unique
+design of DiTs. In this paper, we propose PTQ4DiT, a specifically designed PTQ
+method for DiTs. We discover two primary quantization challenges inherent in
+DiTs, notably the presence of salient channels with extreme magnitudes and the
+temporal variability in distributions of salient activation over multiple
+timesteps. To tackle these challenges, we propose Channel-wise Salience
+Balancing (CSB) and Spearmen's $\rho$-guided Salience Calibration (SSC). CSB
+leverages the complementarity property of channel magnitudes to redistribute
+the extremes, alleviating quantization errors for both activations and weights.
+SSC extends this approach by dynamically adjusting the balanced salience to
+capture the temporal variations in activation. Additionally, to eliminate extra
+computational costs caused by PTQ4DiT during inference, we design an offline
+re-parameterization strategy for DiTs. Experiments demonstrate that our PTQ4DiT
+successfully quantizes DiTs to 8-bit precision (W8A8) while preserving
+comparable generation ability and further enables effective quantization to
+4-bit weight precision (W4A8) for the first time."
+2310.03270,"EfficientDM: Efficient Quantization-Aware Fine-Tuning of Low-Bit
+  Diffusion Models",http://arxiv.org/abs/2310.03270,"Diffusion models have demonstrated remarkable capabilities in image synthesis
+and related generative tasks. Nevertheless, their practicality for real-world
+applications is constrained by substantial computational costs and latency
+issues. Quantization is a dominant way to compress and accelerate diffusion
+models, where post-training quantization (PTQ) and quantization-aware training
+(QAT) are two main approaches, each bearing its own properties. While PTQ
+exhibits efficiency in terms of both time and data usage, it may lead to
+diminished performance in low bit-width. On the other hand, QAT can alleviate
+performance degradation but comes with substantial demands on computational and
+data resources. In this paper, we introduce a data-free and parameter-efficient
+fine-tuning framework for low-bit diffusion models, dubbed EfficientDM, to
+achieve QAT-level performance with PTQ-like efficiency. Specifically, we
+propose a quantization-aware variant of the low-rank adapter (QALoRA) that can
+be merged with model weights and jointly quantized to low bit-width. The
+fine-tuning process distills the denoising capabilities of the full-precision
+model into its quantized counterpart, eliminating the requirement for training
+data. We also introduce scale-aware optimization and temporal learned step-size
+quantization to further enhance performance. Extensive experimental results
+demonstrate that our method significantly outperforms previous PTQ-based
+diffusion models while maintaining similar time and data efficiency.
+Specifically, there is only a 0.05 sFID increase when quantizing both weights
+and activations of LDM-4 to 4-bit on ImageNet 256x256. Compared to QAT-based
+methods, our EfficientDM also boasts a 16.2x faster quantization speed with
+comparable generation quality. Code is available at
+\href(https://github.com/ThisisBillhe/EfficientDM)(this hrl).","EfficientDM: Efficient Quantization-Aware Fine-Tuning of Low-Bit
+  Diffusion Models[http://arxiv.org/abs/2310.03270]: Diffusion models have demonstrated remarkable capabilities in image synthesis
+and related generative tasks. Nevertheless, their practicality for real-world
+applications is constrained by substantial computational costs and latency
+issues. Quantization is a dominant way to compress and accelerate diffusion
+models, where post-training quantization (PTQ) and quantization-aware training
+(QAT) are two main approaches, each bearing its own properties. While PTQ
+exhibits efficiency in terms of both time and data usage, it may lead to
+diminished performance in low bit-width. On the other hand, QAT can alleviate
+performance degradation but comes with substantial demands on computational and
+data resources. In this paper, we introduce a data-free and parameter-efficient
+fine-tuning framework for low-bit diffusion models, dubbed EfficientDM, to
+achieve QAT-level performance with PTQ-like efficiency. Specifically, we
+propose a quantization-aware variant of the low-rank adapter (QALoRA) that can
+be merged with model weights and jointly quantized to low bit-width. The
+fine-tuning process distills the denoising capabilities of the full-precision
+model into its quantized counterpart, eliminating the requirement for training
+data. We also introduce scale-aware optimization and temporal learned step-size
+quantization to further enhance performance. Extensive experimental results
+demonstrate that our method significantly outperforms previous PTQ-based
+diffusion models while maintaining similar time and data efficiency.
+Specifically, there is only a 0.05 sFID increase when quantizing both weights
+and activations of LDM-4 to 4-bit on ImageNet 256x256. Compared to QAT-based
+methods, our EfficientDM also boasts a 16.2x faster quantization speed with
+comparable generation quality. Code is available at
+\href(https://github.com/ThisisBillhe/EfficientDM)(this hrl)."
+2402.03666,"QuEST: Low-bit Diffusion Model Quantization via Efficient Selective
+  Finetuning",http://arxiv.org/abs/2402.03666,"The practical deployment of diffusion models is still hindered by the high
+memory and computational overhead. Although quantization paves a way for model
+compression and acceleration, existing methods face challenges in achieving
+low-bit quantization efficiently. In this paper, we identify imbalanced
+activation distributions as a primary source of quantization difficulty, and
+propose to adjust these distributions through weight finetuning to be more
+quantization-friendly. We provide both theoretical and empirical evidence
+supporting finetuning as a practical and reliable solution. Building on this
+approach, we further distinguish two critical types of quantized layers: those
+responsible for retaining essential temporal information and those particularly
+sensitive to bit-width reduction. By selectively finetuning these layers under
+both local and global supervision, we mitigate performance degradation while
+enhancing quantization efficiency. Our method demonstrates its efficacy across
+three high-resolution image generation tasks, obtaining state-of-the-art
+performance across multiple bit-width settings.","QuEST: Low-bit Diffusion Model Quantization via Efficient Selective
+  Finetuning[http://arxiv.org/abs/2402.03666]: The practical deployment of diffusion models is still hindered by the high
+memory and computational overhead. Although quantization paves a way for model
+compression and acceleration, existing methods face challenges in achieving
+low-bit quantization efficiently. In this paper, we identify imbalanced
+activation distributions as a primary source of quantization difficulty, and
+propose to adjust these distributions through weight finetuning to be more
+quantization-friendly. We provide both theoretical and empirical evidence
+supporting finetuning as a practical and reliable solution. Building on this
+approach, we further distinguish two critical types of quantized layers: those
+responsible for retaining essential temporal information and those particularly
+sensitive to bit-width reduction. By selectively finetuning these layers under
+both local and global supervision, we mitigate performance degradation while
+enhancing quantization efficiency. Our method demonstrates its efficacy across
+three high-resolution image generation tasks, obtaining state-of-the-art
+performance across multiple bit-width settings."
+2412.05926,BiDM: Pushing the Limit of Quantization for Diffusion Models,http://arxiv.org/abs/2412.05926,"Diffusion models (DMs) have been significantly developed and widely used in
+various applications due to their excellent generative qualities. However, the
+expensive computation and massive parameters of DMs hinder their practical use
+in resource-constrained scenarios. As one of the effective compression
+approaches, quantization allows DMs to achieve storage saving and inference
+acceleration by reducing bit-width while maintaining generation performance.
+However, as the most extreme quantization form, 1-bit binarization causes the
+generation performance of DMs to face severe degradation or even collapse. This
+paper proposes a novel method, namely BiDM, for fully binarizing weights and
+activations of DMs, pushing quantization to the 1-bit limit. From a temporal
+perspective, we introduce the Timestep-friendly Binary Structure (TBS), which
+uses learnable activation binarizers and cross-timestep feature connections to
+address the highly timestep-correlated activation features of DMs. From a
+spatial perspective, we propose Space Patched Distillation (SPD) to address the
+difficulty of matching binary features during distillation, focusing on the
+spatial locality of image generation tasks and noise estimation networks. As
+the first work to fully binarize DMs, the W1A1 BiDM on the LDM-4 model for
+LSUN-Bedrooms 256$\times$256 achieves a remarkable FID of 22.74, significantly
+outperforming the current state-of-the-art general binarization methods with an
+FID of 59.44 and invalid generative samples, and achieves up to excellent 28.0
+times storage and 52.7 times OPs savings. The code is available at
+https://github.com/Xingyu-Zheng/BiDM .","BiDM: Pushing the Limit of Quantization for Diffusion Models[http://arxiv.org/abs/2412.05926]: Diffusion models (DMs) have been significantly developed and widely used in
+various applications due to their excellent generative qualities. However, the
+expensive computation and massive parameters of DMs hinder their practical use
+in resource-constrained scenarios. As one of the effective compression
+approaches, quantization allows DMs to achieve storage saving and inference
+acceleration by reducing bit-width while maintaining generation performance.
+However, as the most extreme quantization form, 1-bit binarization causes the
+generation performance of DMs to face severe degradation or even collapse. This
+paper proposes a novel method, namely BiDM, for fully binarizing weights and
+activations of DMs, pushing quantization to the 1-bit limit. From a temporal
+perspective, we introduce the Timestep-friendly Binary Structure (TBS), which
+uses learnable activation binarizers and cross-timestep feature connections to
+address the highly timestep-correlated activation features of DMs. From a
+spatial perspective, we propose Space Patched Distillation (SPD) to address the
+difficulty of matching binary features during distillation, focusing on the
+spatial locality of image generation tasks and noise estimation networks. As
+the first work to fully binarize DMs, the W1A1 BiDM on the LDM-4 model for
+LSUN-Bedrooms 256$\times$256 achieves a remarkable FID of 22.74, significantly
+outperforming the current state-of-the-art general binarization methods with an
+FID of 59.44 and invalid generative samples, and achieves up to excellent 28.0
+times storage and 52.7 times OPs savings. The code is available at
+https://github.com/Xingyu-Zheng/BiDM ."
+2405.17873,"MixDQ: Memory-Efficient Few-Step Text-to-Image Diffusion Models with
+  Metric-Decoupled Mixed Precision Quantization",http://arxiv.org/abs/2405.17873,"Diffusion models have achieved significant visual generation quality.
+However, their significant computational and memory costs pose challenge for
+their application on resource-constrained mobile devices or even desktop GPUs.
+Recent few-step diffusion models reduces the inference time by reducing the
+denoising steps. However, their memory consumptions are still excessive. The
+Post Training Quantization (PTQ) replaces high bit-width FP representation with
+low-bit integer values (INT4/8) , which is an effective and efficient technique
+to reduce the memory cost. However, when applying to few-step diffusion models,
+existing quantization methods face challenges in preserving both the image
+quality and text alignment. To address this issue, we propose an
+mixed-precision quantization framework - MixDQ. Firstly, We design specialized
+BOS-aware quantization method for highly sensitive text embedding quantization.
+Then, we conduct metric-decoupled sensitivity analysis to measure the
+sensitivity of each layer. Finally, we develop an integer-programming-based
+method to conduct bit-width allocation. While existing quantization methods
+fall short at W8A8, MixDQ could achieve W8A8 without performance loss, and W4A8
+with negligible visual degradation. Compared with FP16, we achieve 3-4x
+reduction in model size and memory cost, and 1.45x latency speedup.","MixDQ: Memory-Efficient Few-Step Text-to-Image Diffusion Models with
+  Metric-Decoupled Mixed Precision Quantization[http://arxiv.org/abs/2405.17873]: Diffusion models have achieved significant visual generation quality.
+However, their significant computational and memory costs pose challenge for
+their application on resource-constrained mobile devices or even desktop GPUs.
+Recent few-step diffusion models reduces the inference time by reducing the
+denoising steps. However, their memory consumptions are still excessive. The
+Post Training Quantization (PTQ) replaces high bit-width FP representation with
+low-bit integer values (INT4/8) , which is an effective and efficient technique
+to reduce the memory cost. However, when applying to few-step diffusion models,
+existing quantization methods face challenges in preserving both the image
+quality and text alignment. To address this issue, we propose an
+mixed-precision quantization framework - MixDQ. Firstly, We design specialized
+BOS-aware quantization method for highly sensitive text embedding quantization.
+Then, we conduct metric-decoupled sensitivity analysis to measure the
+sensitivity of each layer. Finally, we develop an integer-programming-based
+method to conduct bit-width allocation. While existing quantization methods
+fall short at W8A8, MixDQ could achieve W8A8 without performance loss, and W4A8
+with negligible visual degradation. Compared with FP16, we achieve 3-4x
+reduction in model size and memory cost, and 1.45x latency speedup."

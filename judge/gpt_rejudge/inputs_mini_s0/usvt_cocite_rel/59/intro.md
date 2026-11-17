@@ -1,0 +1,35 @@
+## Related Works
+
+Fairness in re-ranking and recommendation systems has garnered substantial attention, focusing on balancing accuracy and fairness across multiple stakeholders, such as users and item providers. Early investigations into user-oriented fairness highlight disparities where active users receive better recommendations than inactive users, negatively impacting overall system performance. Approaches such as re-ranking with fairness constraints have been proposed to mitigate such biases by improving group fairness without sacrificing accuracy \[[2104.10671](http://arxiv.org/abs/2104.10671)\]\[[1705.08804](http://arxiv.org/abs/1705.08804)\]. 
+
+Provider-side fairness has also been extensively studied, with several works emphasizing the importance of fair exposure distribution among item providers. Notably, max-min fairness (MMF) has been advocated over proportion fairness due to its sociological benefits in stabilizing markets by prioritizing the worst-off providers \[[2303.0666](http://arxiv.org/abs/2303.06660)\]. Online re-ranking algorithms like P-MMF formalize provider fairness as a resource allocation problem, treating exposure slots as limited resources and applying MMF principles to enhance provider utility while maintaining reasonable computational costs \[[2303.0666](http://arxiv.org/abs/2303.06660)\]. Complementing this, two-sided fairness models address fairness simultaneously for both customers and providers, balancing provider exposure fairness with customer-side recommendation quality \[[2104.09024](http://arxiv.org/abs/2104.09024)\]\[[2002.10764](http://arxiv.org/abs/2002.10764)\]. Approaches such as CPFair integrate consumer and producer fairness constraints into a joint optimization framework, demonstrating improved fairness on both sides without degrading overall recommendation quality \[[2204.08085](http://arxiv.org/abs/2204.08085)\].
+
+The interplay between fairness and accuracy often manifests as a trade-off, analogous to economic taxation mechanisms where fairness constraints on suppliers (items) impose a cost on consumers (users). This analogy has been formalized through the concept of elasticity of utility between item groups, which governs the extent to which fairness constraints reduce user-side accuracy \[[1809.02921](http://arxiv.org/abs/1809.02921)\]. Building on this insight, frameworks like the Elastic Fairness Curve (EF-Curve) enable evaluation of fair re-ranking algorithms across different elasticity levels, facilitating a nuanced understanding of the fairness-accuracy trade-off \[[1809.02921](http://arxiv.org/abs/1809.02921)\]. ElasticRank, a re-ranking algorithm leveraging elasticity calculations to adjust inter-item distances in a latent space, exemplifies this approach by effectively balancing fairness and accuracy \[[1809.02921](http://arxiv.org/abs/1809.02921)\].
+
+Fairness in ranking has also been approached via pairwise comparison metrics and policy learning frameworks, which optimize ranking policies to satisfy fairness constraints while preserving user utility. Pairwise regularization methods have been applied to large-scale recommender systems to improve fairness in rankings by directly optimizing fairness-aware objectives \[[1903.0078](http://arxiv.org/abs/1903.00780)\]. Similarly, policy-gradient methods, such as Fair-PG-Rank, search the space of stochastic ranking policies that satisfy exposure fairness constraints, balancing fairness and relevance \[[1902.04056](http://arxiv.org/abs/1902.04056)\]. These methods provide a flexible foundation for incorporating various fairness definitions, including individual and group fairness.
+
+Multi-sided and individual fairness approaches further extend fairness considerations beyond binary protected groups. Notions such as Lorenz dominance and amortized individual fairness address fairness by redistributing utility to worse-off individuals or ensuring fair attention over multiple ranking iterations, thereby capturing subtler fairness dimensions \[[2110.15781](http://arxiv.org/abs/2110.15781)\]\[[1805.01788](http://arxiv.org/abs/1805.01788)\]. These approaches ensure Pareto efficiency and accommodate dynamic fairness needs, which are critical for long-term fairness in evolving recommendation environments \[[2101.03584](http://arxiv.org/abs/2101.03584)\].
+
+Diversity and fairness have been identified as distinct yet interrelated goals in ranking. Algorithms that optimize solely for one aspect may inadvertently harm the others. Recent convex optimization formulations explicitly incorporate user fairness, item fairness, and diversity into a unified ranking framework, showing that harmonizing these objectives leads to more equitable outcomes across all dimensions \[[2010.0147](http://arxiv.org/abs/2010.01470)\]. Such formulations enable practical, optimal solutions respecting fairness constraints across multiple stakeholder groups.
+
+Fairness constraints in ranking are often implemented as exposure allocation problems, aiming to limit disparate treatment and impact through controlled exposure distributions. Efficient algorithms have been developed to generate rankings that maximize utility subject to fairness or diversity constraints, with guarantees on statistical parity and bounded constraint violations \[[1704.0684](http://arxiv.org/abs/1704.06840)\]\[[1802.07281](http://arxiv.org/abs/1802.07281)\]. These algorithms are applicable across various domains, including search, recommendation, and matchmaking.
+
+Finally, subgroup fairness and fairness gerrymandering have been explored to address fairness violations that might be masked when considering only predefined groups. Auditing and learning algorithms based on game-theoretic formulations enable fairness guarantees across exponentially many subgroups, albeit with computational challenges \[[1711.05144](http://arxiv.org/abs/1711.05144)\]. Addressing these challenges is essential for robust fairness in high-stakes recommendation and ranking systems.
+
+Overall, these diverse strands of research establish a comprehensive foundation for understanding and advancing fairness in re-ranking, highlighting the critical trade-offs between accuracy, user satisfaction, and provider equity, as well as the methodological innovations required to navigate them effectively.
+
+\[[2104.10671](http://arxiv.org/abs/2104.10671)\]  
+\[[1903.0078](http://arxiv.org/abs/1903.00780)\]  
+\[[1809.02921](http://arxiv.org/abs/1809.02921)\]  
+\[[2104.09024](http://arxiv.org/abs/2104.09024)\]  
+\[[2110.15781](http://arxiv.org/abs/2110.15781)\]  
+\[[2002.10764](http://arxiv.org/abs/2002.10764)\]  
+\[[1704.0684](http://arxiv.org/abs/1704.06840)\]  
+\[[2303.0666](http://arxiv.org/abs/2303.06660)\]  
+\[[1805.01788](http://arxiv.org/abs/1805.01788)\]  
+\[[2204.08085](http://arxiv.org/abs/2204.08085)\]  
+\[[2101.03584](http://arxiv.org/abs/2101.03584)\]  
+\[[2010.0147](http://arxiv.org/abs/2010.01470)\]  
+\[[1802.07281](http://arxiv.org/abs/1802.07281)\]  
+\[[1902.04056](http://arxiv.org/abs/1902.04056)\]  
+\[[1711.05144](http://arxiv.org/abs/1711.05144)\]

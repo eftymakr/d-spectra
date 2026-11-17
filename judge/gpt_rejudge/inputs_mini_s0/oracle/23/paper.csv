@@ -1,0 +1,205 @@
+id,title,url,snippet,context
+1707.03167,RegNet: Multimodal Sensor Registration Using Deep Neural Networks,http://arxiv.org/abs/1707.03167,"In this paper, we present RegNet, the first deep convolutional neural network
+(CNN) to infer a 6 degrees of freedom (DOF) extrinsic calibration between
+multimodal sensors, exemplified using a scanning LiDAR and a monocular camera.
+Compared to existing approaches, RegNet casts all three conventional
+calibration steps (feature extraction, feature matching and global regression)
+into a single real-time capable CNN. Our method does not require any human
+interaction and bridges the gap between classical offline and target-less
+online calibration approaches as it provides both a stable initial estimation
+as well as a continuous online correction of the extrinsic parameters. During
+training we randomly decalibrate our system in order to train RegNet to infer
+the correspondence between projected depth measurements and RGB image and
+finally regress the extrinsic calibration. Additionally, with an iterative
+execution of multiple CNNs, that are trained on different magnitudes of
+decalibration, our approach compares favorably to state-of-the-art methods in
+terms of a mean calibration error of 0.28 degrees for the rotational and 6 cm
+for the translation components even for large decalibrations up to 1.5 m and 20
+degrees.","RegNet: Multimodal Sensor Registration Using Deep Neural Networks[http://arxiv.org/abs/1707.03167]: In this paper, we present RegNet, the first deep convolutional neural network
+(CNN) to infer a 6 degrees of freedom (DOF) extrinsic calibration between
+multimodal sensors, exemplified using a scanning LiDAR and a monocular camera.
+Compared to existing approaches, RegNet casts all three conventional
+calibration steps (feature extraction, feature matching and global regression)
+into a single real-time capable CNN. Our method does not require any human
+interaction and bridges the gap between classical offline and target-less
+online calibration approaches as it provides both a stable initial estimation
+as well as a continuous online correction of the extrinsic parameters. During
+training we randomly decalibrate our system in order to train RegNet to infer
+the correspondence between projected depth measurements and RGB image and
+finally regress the extrinsic calibration. Additionally, with an iterative
+execution of multiple CNNs, that are trained on different magnitudes of
+decalibration, our approach compares favorably to state-of-the-art methods in
+terms of a mean calibration error of 0.28 degrees for the rotational and 6 cm
+for the translation components even for large decalibrations up to 1.5 m and 20
+degrees."
+1803.08181,"CalibNet: Geometrically Supervised Extrinsic Calibration using 3D
+  Spatial Transformer Networks",http://arxiv.org/abs/1803.08181,"3D LiDARs and 2D cameras are increasingly being used alongside each other in
+sensor rigs for perception tasks. Before these sensors can be used to gather
+meaningful data, however, their extrinsics (and intrinsics) need to be
+accurately calibrated, as the performance of the sensor rig is extremely
+sensitive to these calibration parameters. A vast majority of existing
+calibration techniques require significant amounts of data and/or calibration
+targets and human effort, severely impacting their applicability in large-scale
+production systems. We address this gap with CalibNet: a self-supervised deep
+network capable of automatically estimating the 6-DoF rigid body transformation
+between a 3D LiDAR and a 2D camera in real-time. CalibNet alleviates the need
+for calibration targets, thereby resulting in significant savings in
+calibration efforts. During training, the network only takes as input a LiDAR
+point cloud, the corresponding monocular image, and the camera calibration
+matrix K. At train time, we do not impose direct supervision (i.e., we do not
+directly regress to the calibration parameters, for example). Instead, we train
+the network to predict calibration parameters that maximize the geometric and
+photometric consistency of the input images and point clouds. CalibNet learns
+to iteratively solve the underlying geometric problem and accurately predicts
+extrinsic calibration parameters for a wide range of mis-calibrations, without
+requiring retraining or domain adaptation. The project page is hosted at
+https://epiception.github.io/CalibNet","CalibNet: Geometrically Supervised Extrinsic Calibration using 3D
+  Spatial Transformer Networks[http://arxiv.org/abs/1803.08181]: 3D LiDARs and 2D cameras are increasingly being used alongside each other in
+sensor rigs for perception tasks. Before these sensors can be used to gather
+meaningful data, however, their extrinsics (and intrinsics) need to be
+accurately calibrated, as the performance of the sensor rig is extremely
+sensitive to these calibration parameters. A vast majority of existing
+calibration techniques require significant amounts of data and/or calibration
+targets and human effort, severely impacting their applicability in large-scale
+production systems. We address this gap with CalibNet: a self-supervised deep
+network capable of automatically estimating the 6-DoF rigid body transformation
+between a 3D LiDAR and a 2D camera in real-time. CalibNet alleviates the need
+for calibration targets, thereby resulting in significant savings in
+calibration efforts. During training, the network only takes as input a LiDAR
+point cloud, the corresponding monocular image, and the camera calibration
+matrix K. At train time, we do not impose direct supervision (i.e., we do not
+directly regress to the calibration parameters, for example). Instead, we train
+the network to predict calibration parameters that maximize the geometric and
+photometric consistency of the input images and point clouds. CalibNet learns
+to iteratively solve the underlying geometric problem and accurately predicts
+extrinsic calibration parameters for a wide range of mis-calibrations, without
+requiring retraining or domain adaptation. The project page is hosted at
+https://epiception.github.io/CalibNet"
+1904.08743,"Targetless Rotational Auto-Calibration of Radar and Camera for
+  Intelligent Transportation Systems",http://arxiv.org/abs/1904.08743,"Most intelligent transportation systems use a combination of radar sensors
+and cameras for robust vehicle perception. The calibration of these
+heterogeneous sensor types in an automatic fashion during system operation is
+challenging due to differing physical measurement principles and the high
+sparsity of traffic radars. We propose - to the best of our knowledge - the
+first data-driven method for automatic rotational radar-camera calibration
+without dedicated calibration targets. Our approach is based on a coarse and a
+fine convolutional neural network. We employ a boosting-inspired training
+algorithm, where we train the fine network on the residual error of the coarse
+network. Due to the unavailability of public datasets combining radar and
+camera measurements, we recorded our own real-world data. We demonstrate that
+our method is able to reach precise and robust sensor registration and show its
+generalization capabilities to different sensor alignments and perspectives.","Targetless Rotational Auto-Calibration of Radar and Camera for
+  Intelligent Transportation Systems[http://arxiv.org/abs/1904.08743]: Most intelligent transportation systems use a combination of radar sensors
+and cameras for robust vehicle perception. The calibration of these
+heterogeneous sensor types in an automatic fashion during system operation is
+challenging due to differing physical measurement principles and the high
+sparsity of traffic radars. We propose - to the best of our knowledge - the
+first data-driven method for automatic rotational radar-camera calibration
+without dedicated calibration targets. Our approach is based on a coarse and a
+fine convolutional neural network. We employ a boosting-inspired training
+algorithm, where we train the fine network on the residual error of the coarse
+network. Due to the unavailability of public datasets combining radar and
+camera measurements, we recorded our own real-world data. We demonstrate that
+our method is able to reach precise and robust sensor registration and show its
+generalization capabilities to different sensor alignments and perspectives."
+2103.07505,A Continuous-Time Approach for 3D Radar-to-Camera Extrinsic Calibration,http://arxiv.org/abs/2103.07505,"Reliable operation in inclement weather is essential to the deployment of
+safe autonomous vehicles (AVs). Robustness and reliability can be achieved by
+fusing data from the standard AV sensor suite (i.e., lidars, cameras) with
+weather robust sensors, such as millimetre-wavelength radar. Critically,
+accurate sensor data fusion requires knowledge of the rigid-body transform
+between sensor pairs, which can be determined through the process of extrinsic
+calibration. A number of extrinsic calibration algorithms have been designed
+for 2D (planar) radar sensors - however, recently-developed, low-cost 3D
+millimetre-wavelength radars are set to displace their 2D counterparts in many
+applications. In this paper, we present a continuous-time 3D radar-to-camera
+extrinsic calibration algorithm that utilizes radar velocity measurements and,
+unlike the majority of existing techniques, does not require specialized radar
+retroreflectors to be present in the environment. We derive the observability
+properties of our formulation and demonstrate the efficacy of our algorithm
+through synthetic and real-world experiments.","A Continuous-Time Approach for 3D Radar-to-Camera Extrinsic Calibration[http://arxiv.org/abs/2103.07505]: Reliable operation in inclement weather is essential to the deployment of
+safe autonomous vehicles (AVs). Robustness and reliability can be achieved by
+fusing data from the standard AV sensor suite (i.e., lidars, cameras) with
+weather robust sensors, such as millimetre-wavelength radar. Critically,
+accurate sensor data fusion requires knowledge of the rigid-body transform
+between sensor pairs, which can be determined through the process of extrinsic
+calibration. A number of extrinsic calibration algorithms have been designed
+for 2D (planar) radar sensors - however, recently-developed, low-cost 3D
+millimetre-wavelength radars are set to displace their 2D counterparts in many
+applications. In this paper, we present a continuous-time 3D radar-to-camera
+extrinsic calibration algorithm that utilizes radar velocity measurements and,
+unlike the majority of existing techniques, does not require specialized radar
+retroreflectors to be present in the environment. We derive the observability
+properties of our formulation and demonstrate the efficacy of our algorithm
+through synthetic and real-world experiments."
+2211.01871,"Spatiotemporal Calibration of 3D Millimetre-Wavelength Radar-Camera
+  Pairs",http://arxiv.org/abs/2211.01871,"Autonomous vehicles (AVs) fuse data from multiple sensors and sensing
+modalities to impart a measure of robustness when operating in adverse
+conditions. Radars and cameras are popular choices for use in sensor fusion;
+although radar measurements are sparse in comparison to camera images, radar
+scans penetrate fog, rain, and snow. However, accurate sensor fusion depends
+upon knowledge of the spatial transform between the sensors and any temporal
+misalignment that exists in their measurement times. During the life cycle of
+an AV, these calibration parameters may change, so the ability to perform
+in-situ spatiotemporal calibration is essential to ensure reliable long-term
+operation. State-of-the-art 3D radar-camera spatiotemporal calibration
+algorithms require bespoke calibration targets that are not readily available
+in the field. In this paper, we describe an algorithm for targetless
+spatiotemporal calibration that does not require specialized infrastructure.
+Our approach leverages the ability of the radar unit to measure its own
+ego-velocity relative to a fixed, external reference frame. We analyze the
+identifiability of the spatiotemporal calibration problem and determine the
+motions necessary for calibration. Through a series of simulation studies, we
+characterize the sensitivity of our algorithm to measurement noise. Finally, we
+demonstrate accurate calibration for three real-world systems, including a
+handheld sensor rig and a vehicle-mounted sensor array. Our results show that
+we are able to match the performance of an existing, target-based method, while
+calibrating in arbitrary, infrastructure-free environments.","Spatiotemporal Calibration of 3D Millimetre-Wavelength Radar-Camera
+  Pairs[http://arxiv.org/abs/2211.01871]: Autonomous vehicles (AVs) fuse data from multiple sensors and sensing
+modalities to impart a measure of robustness when operating in adverse
+conditions. Radars and cameras are popular choices for use in sensor fusion;
+although radar measurements are sparse in comparison to camera images, radar
+scans penetrate fog, rain, and snow. However, accurate sensor fusion depends
+upon knowledge of the spatial transform between the sensors and any temporal
+misalignment that exists in their measurement times. During the life cycle of
+an AV, these calibration parameters may change, so the ability to perform
+in-situ spatiotemporal calibration is essential to ensure reliable long-term
+operation. State-of-the-art 3D radar-camera spatiotemporal calibration
+algorithms require bespoke calibration targets that are not readily available
+in the field. In this paper, we describe an algorithm for targetless
+spatiotemporal calibration that does not require specialized infrastructure.
+Our approach leverages the ability of the radar unit to measure its own
+ego-velocity relative to a fixed, external reference frame. We analyze the
+identifiability of the spatiotemporal calibration problem and determine the
+motions necessary for calibration. Through a series of simulation studies, we
+characterize the sensitivity of our algorithm to measurement noise. Finally, we
+demonstrate accurate calibration for three real-world systems, including a
+handheld sensor rig and a vehicle-mounted sensor array. Our results show that
+we are able to match the performance of an existing, target-based method, while
+calibrating in arbitrary, infrastructure-free environments."
+2012.13901,LCCNet: LiDAR and Camera Self-Calibration using Cost Volume Network,http://arxiv.org/abs/2012.13901,"In this paper, we propose a novel online self-calibration approach for Light
+Detection and Ranging (LiDAR) and camera sensors. Compared to the previous
+CNN-based methods that concatenate the feature maps of the RGB image and
+decalibrated depth image, we exploit the cost volume inspired by the PWC-Net
+for feature matching. Besides the smooth L1-Loss of the predicted extrinsic
+calibration parameters, an additional point cloud loss is applied. Instead of
+regress the extrinsic parameters between LiDAR and camera directly, we predict
+the decalibrated deviation from initial calibration to the ground truth. During
+inference, the calibration error decreases further with the usage of iterative
+refinement and the temporal filtering approach. The evaluation results on the
+KITTI dataset illustrate that our approach outperforms CNN-based
+state-of-the-art methods in terms of a mean absolute calibration error of
+0.297cm in translation and 0.017(\deg) in rotation with miscalibration
+magnitudes of up to 1.5m and 20(\deg).","LCCNet: LiDAR and Camera Self-Calibration using Cost Volume Network[http://arxiv.org/abs/2012.13901]: In this paper, we propose a novel online self-calibration approach for Light
+Detection and Ranging (LiDAR) and camera sensors. Compared to the previous
+CNN-based methods that concatenate the feature maps of the RGB image and
+decalibrated depth image, we exploit the cost volume inspired by the PWC-Net
+for feature matching. Besides the smooth L1-Loss of the predicted extrinsic
+calibration parameters, an additional point cloud loss is applied. Instead of
+regress the extrinsic parameters between LiDAR and camera directly, we predict
+the decalibrated deviation from initial calibration to the ground truth. During
+inference, the calibration error decreases further with the usage of iterative
+refinement and the temporal filtering approach. The evaluation results on the
+KITTI dataset illustrate that our approach outperforms CNN-based
+state-of-the-art methods in terms of a mean absolute calibration error of
+0.297cm in translation and 0.017(\deg) in rotation with miscalibration
+magnitudes of up to 1.5m and 20(\deg)."

@@ -1,0 +1,662 @@
+id,title,url,snippet,context
+1205.2618,BPR: Bayesian Personalized Ranking from Implicit Feedback,http://arxiv.org/abs/1205.2618,"Item recommendation is the task of predicting a personalized ranking on a set
+of items (e.g. websites, movies, products). In this paper, we investigate the
+most common scenario with implicit feedback (e.g. clicks, purchases). There are
+many methods for item recommendation from implicit feedback like matrix
+factorization (MF) or adaptive knearest-neighbor (kNN). Even though these
+methods are designed for the item prediction task of personalized ranking, none
+of them is directly optimized for ranking. In this paper we present a generic
+optimization criterion BPR-Opt for personalized ranking that is the maximum
+posterior estimator derived from a Bayesian analysis of the problem. We also
+provide a generic learning algorithm for optimizing models with respect to
+BPR-Opt. The learning method is based on stochastic gradient descent with
+bootstrap sampling. We show how to apply our method to two state-of-the-art
+recommender models: matrix factorization and adaptive kNN. Our experiments
+indicate that for the task of personalized ranking our optimization method
+outperforms the standard learning techniques for MF and kNN. The results show
+the importance of optimizing models for the right criterion.","BPR: Bayesian Personalized Ranking from Implicit Feedback[http://arxiv.org/abs/1205.2618]: Item recommendation is the task of predicting a personalized ranking on a set
+of items (e.g. websites, movies, products). In this paper, we investigate the
+most common scenario with implicit feedback (e.g. clicks, purchases). There are
+many methods for item recommendation from implicit feedback like matrix
+factorization (MF) or adaptive knearest-neighbor (kNN). Even though these
+methods are designed for the item prediction task of personalized ranking, none
+of them is directly optimized for ranking. In this paper we present a generic
+optimization criterion BPR-Opt for personalized ranking that is the maximum
+posterior estimator derived from a Bayesian analysis of the problem. We also
+provide a generic learning algorithm for optimizing models with respect to
+BPR-Opt. The learning method is based on stochastic gradient descent with
+bootstrap sampling. We show how to apply our method to two state-of-the-art
+recommender models: matrix factorization and adaptive kNN. Our experiments
+indicate that for the task of personalized ranking our optimization method
+outperforms the standard learning techniques for MF and kNN. The results show
+the importance of optimizing models for the right criterion."
+1708.05031,Neural Collaborative Filtering,http://arxiv.org/abs/1708.05031,"In recent years, deep neural networks have yielded immense success on speech
+recognition, computer vision and natural language processing. However, the
+exploration of deep neural networks on recommender systems has received
+relatively less scrutiny. In this work, we strive to develop techniques based
+on neural networks to tackle the key problem in recommendation -- collaborative
+filtering -- on the basis of implicit feedback. Although some recent work has
+employed deep learning for recommendation, they primarily used it to model
+auxiliary information, such as textual descriptions of items and acoustic
+features of musics. When it comes to model the key factor in collaborative
+filtering -- the interaction between user and item features, they still
+resorted to matrix factorization and applied an inner product on the latent
+features of users and items. By replacing the inner product with a neural
+architecture that can learn an arbitrary function from data, we present a
+general framework named NCF, short for Neural network-based Collaborative
+Filtering. NCF is generic and can express and generalize matrix factorization
+under its framework. To supercharge NCF modelling with non-linearities, we
+propose to leverage a multi-layer perceptron to learn the user-item interaction
+function. Extensive experiments on two real-world datasets show significant
+improvements of our proposed NCF framework over the state-of-the-art methods.
+Empirical evidence shows that using deeper layers of neural networks offers
+better recommendation performance.","Neural Collaborative Filtering[http://arxiv.org/abs/1708.05031]: In recent years, deep neural networks have yielded immense success on speech
+recognition, computer vision and natural language processing. However, the
+exploration of deep neural networks on recommender systems has received
+relatively less scrutiny. In this work, we strive to develop techniques based
+on neural networks to tackle the key problem in recommendation -- collaborative
+filtering -- on the basis of implicit feedback. Although some recent work has
+employed deep learning for recommendation, they primarily used it to model
+auxiliary information, such as textual descriptions of items and acoustic
+features of musics. When it comes to model the key factor in collaborative
+filtering -- the interaction between user and item features, they still
+resorted to matrix factorization and applied an inner product on the latent
+features of users and items. By replacing the inner product with a neural
+architecture that can learn an arbitrary function from data, we present a
+general framework named NCF, short for Neural network-based Collaborative
+Filtering. NCF is generic and can express and generalize matrix factorization
+under its framework. To supercharge NCF modelling with non-linearities, we
+propose to leverage a multi-layer perceptron to learn the user-item interaction
+function. Extensive experiments on two real-world datasets show significant
+improvements of our proposed NCF framework over the state-of-the-art methods.
+Empirical evidence shows that using deeper layers of neural networks offers
+better recommendation performance."
+2002.02126,"LightGCN: Simplifying and Powering Graph Convolution Network for
+  Recommendation",http://arxiv.org/abs/2002.02126,"Graph Convolution Network (GCN) has become new state-of-the-art for
+collaborative filtering. Nevertheless, the reasons of its effectiveness for
+recommendation are not well understood. Existing work that adapts GCN to
+recommendation lacks thorough ablation analyses on GCN, which is originally
+designed for graph classification tasks and equipped with many neural network
+operations. However, we empirically find that the two most common designs in
+GCNs -- feature transformation and nonlinear activation -- contribute little to
+the performance of collaborative filtering. Even worse, including them adds to
+the difficulty of training and degrades recommendation performance.
+  In this work, we aim to simplify the design of GCN to make it more concise
+and appropriate for recommendation. We propose a new model named LightGCN,
+including only the most essential component in GCN -- neighborhood aggregation
+-- for collaborative filtering. Specifically, LightGCN learns user and item
+embeddings by linearly propagating them on the user-item interaction graph, and
+uses the weighted sum of the embeddings learned at all layers as the final
+embedding. Such simple, linear, and neat model is much easier to implement and
+train, exhibiting substantial improvements (about 16.0\% relative improvement
+on average) over Neural Graph Collaborative Filtering (NGCF) -- a
+state-of-the-art GCN-based recommender model -- under exactly the same
+experimental setting. Further analyses are provided towards the rationality of
+the simple LightGCN from both analytical and empirical perspectives.","LightGCN: Simplifying and Powering Graph Convolution Network for
+  Recommendation[http://arxiv.org/abs/2002.02126]: Graph Convolution Network (GCN) has become new state-of-the-art for
+collaborative filtering. Nevertheless, the reasons of its effectiveness for
+recommendation are not well understood. Existing work that adapts GCN to
+recommendation lacks thorough ablation analyses on GCN, which is originally
+designed for graph classification tasks and equipped with many neural network
+operations. However, we empirically find that the two most common designs in
+GCNs -- feature transformation and nonlinear activation -- contribute little to
+the performance of collaborative filtering. Even worse, including them adds to
+the difficulty of training and degrades recommendation performance.
+  In this work, we aim to simplify the design of GCN to make it more concise
+and appropriate for recommendation. We propose a new model named LightGCN,
+including only the most essential component in GCN -- neighborhood aggregation
+-- for collaborative filtering. Specifically, LightGCN learns user and item
+embeddings by linearly propagating them on the user-item interaction graph, and
+uses the weighted sum of the embeddings learned at all layers as the final
+embedding. Such simple, linear, and neat model is much easier to implement and
+train, exhibiting substantial improvements (about 16.0\% relative improvement
+on average) over Neural Graph Collaborative Filtering (NGCF) -- a
+state-of-the-art GCN-based recommender model -- under exactly the same
+experimental setting. Further analyses are provided towards the rationality of
+the simple LightGCN from both analytical and empirical perspectives."
+1706.02263,Graph Convolutional Matrix Completion,http://arxiv.org/abs/1706.02263,"We consider matrix completion for recommender systems from the point of view
+of link prediction on graphs. Interaction data such as movie ratings can be
+represented by a bipartite user-item graph with labeled edges denoting observed
+ratings. Building on recent progress in deep learning on graph-structured data,
+we propose a graph auto-encoder framework based on differentiable message
+passing on the bipartite interaction graph. Our model shows competitive
+performance on standard collaborative filtering benchmarks. In settings where
+complimentary feature information or structured data such as a social network
+is available, our framework outperforms recent state-of-the-art methods.","Graph Convolutional Matrix Completion[http://arxiv.org/abs/1706.02263]: We consider matrix completion for recommender systems from the point of view
+of link prediction on graphs. Interaction data such as movie ratings can be
+represented by a bipartite user-item graph with labeled edges denoting observed
+ratings. Building on recent progress in deep learning on graph-structured data,
+we propose a graph auto-encoder framework based on differentiable message
+passing on the bipartite interaction graph. Our model shows competitive
+performance on standard collaborative filtering benchmarks. In settings where
+complimentary feature information or structured data such as a social network
+is available, our framework outperforms recent state-of-the-art methods."
+1702.00758,HashNet: Deep Learning to Hash by Continuation,http://arxiv.org/abs/1702.00758,"Learning to hash has been widely applied to approximate nearest neighbor
+search for large-scale multimedia retrieval, due to its computation efficiency
+and retrieval quality. Deep learning to hash, which improves retrieval quality
+by end-to-end representation learning and hash encoding, has received
+increasing attention recently. Subject to the ill-posed gradient difficulty in
+the optimization with sign activations, existing deep learning to hash methods
+need to first learn continuous representations and then generate binary hash
+codes in a separated binarization step, which suffer from substantial loss of
+retrieval quality. This work presents HashNet, a novel deep architecture for
+deep learning to hash by continuation method with convergence guarantees, which
+learns exactly binary hash codes from imbalanced similarity data. The key idea
+is to attack the ill-posed gradient problem in optimizing deep networks with
+non-smooth binary activations by continuation method, in which we begin from
+learning an easier network with smoothed activation function and let it evolve
+during the training, until it eventually goes back to being the original,
+difficult to optimize, deep network with the sign activation function.
+Comprehensive empirical evidence shows that HashNet can generate exactly binary
+hash codes and yield state-of-the-art multimedia retrieval performance on
+standard benchmarks.","HashNet: Deep Learning to Hash by Continuation[http://arxiv.org/abs/1702.00758]: Learning to hash has been widely applied to approximate nearest neighbor
+search for large-scale multimedia retrieval, due to its computation efficiency
+and retrieval quality. Deep learning to hash, which improves retrieval quality
+by end-to-end representation learning and hash encoding, has received
+increasing attention recently. Subject to the ill-posed gradient difficulty in
+the optimization with sign activations, existing deep learning to hash methods
+need to first learn continuous representations and then generate binary hash
+codes in a separated binarization step, which suffer from substantial loss of
+retrieval quality. This work presents HashNet, a novel deep architecture for
+deep learning to hash by continuation method with convergence guarantees, which
+learns exactly binary hash codes from imbalanced similarity data. The key idea
+is to attack the ill-posed gradient problem in optimizing deep networks with
+non-smooth binary activations by continuation method, in which we begin from
+learning an easier network with smoothed activation function and let it evolve
+during the training, until it eventually goes back to being the original,
+difficult to optimize, deep network with the sign activation function.
+Comprehensive empirical evidence shows that HashNet can generate exactly binary
+hash codes and yield state-of-the-art multimedia retrieval performance on
+standard benchmarks."
+1909.05475,"Candidate Generation with Binary Codes for Large-Scale Top-N
+  Recommendation",http://arxiv.org/abs/1909.05475,"Generating the Top-N recommendations from a large corpus is computationally
+expensive to perform at scale. Candidate generation and re-ranking based
+approaches are often adopted in industrial settings to alleviate efficiency
+problems. However it remains to be fully studied how well such schemes
+approximate complete rankings (or how many candidates are required to achieve a
+good approximation), or to develop systematic approaches to generate
+high-quality candidates efficiently. In this paper, we seek to investigate
+these questions via proposing a candidate generation and re-ranking based
+framework (CIGAR), which first learns a preference-preserving binary embedding
+for building a hash table to retrieve candidates, and then learns to re-rank
+the candidates using real-valued ranking models with a candidate-oriented
+objective. We perform a comprehensive study on several large-scale real-world
+datasets consisting of millions of users/items and hundreds of millions of
+interactions. Our results show that CIGAR significantly boosts the Top-N
+accuracy against state-of-the-art recommendation models, while reducing the
+query time by orders of magnitude. We hope that this work could draw more
+attention to the candidate generation problem in recommender systems.","Candidate Generation with Binary Codes for Large-Scale Top-N
+  Recommendation[http://arxiv.org/abs/1909.05475]: Generating the Top-N recommendations from a large corpus is computationally
+expensive to perform at scale. Candidate generation and re-ranking based
+approaches are often adopted in industrial settings to alleviate efficiency
+problems. However it remains to be fully studied how well such schemes
+approximate complete rankings (or how many candidates are required to achieve a
+good approximation), or to develop systematic approaches to generate
+high-quality candidates efficiently. In this paper, we seek to investigate
+these questions via proposing a candidate generation and re-ranking based
+framework (CIGAR), which first learns a preference-preserving binary embedding
+for building a hash table to retrieve candidates, and then learns to re-rank
+the candidates using real-valued ranking models with a candidate-oriented
+objective. We perform a comprehensive study on several large-scale real-world
+datasets consisting of millions of users/items and hundreds of millions of
+interactions. Our results show that CIGAR significantly boosts the Top-N
+accuracy against state-of-the-art recommendation models, while reducing the
+query time by orders of magnitude. We hope that this work could draw more
+attention to the candidate generation problem in recommender systems."
+2012.15823,Binary Graph Neural Networks,http://arxiv.org/abs/2012.15823,"Graph Neural Networks (GNNs) have emerged as a powerful and flexible
+framework for representation learning on irregular data. As they generalize the
+operations of classical CNNs on grids to arbitrary topologies, GNNs also bring
+much of the implementation challenges of their Euclidean counterparts. Model
+size, memory footprint, and energy consumption are common concerns for many
+real-world applications. Network binarization allocates a single bit to
+parameters and activations, thus dramatically reducing the memory requirements
+(up to 32x compared to single-precision floating-point numbers) and maximizing
+the benefits of fast SIMD instructions on modern hardware for measurable
+speedups. However, in spite of the large body of work on binarization for
+classical CNNs, this area remains largely unexplored in geometric deep
+learning. In this paper, we present and evaluate different strategies for the
+binarization of graph neural networks. We show that through careful design of
+the models, and control of the training process, binary graph neural networks
+can be trained at only a moderate cost in accuracy on challenging benchmarks.
+In particular, we present the first dynamic graph neural network in Hamming
+space, able to leverage efficient k-NN search on binary vectors to speed-up the
+construction of the dynamic graph. We further verify that the binary models
+offer significant savings on embedded devices. Our code is publicly available
+on Github.","Binary Graph Neural Networks[http://arxiv.org/abs/2012.15823]: Graph Neural Networks (GNNs) have emerged as a powerful and flexible
+framework for representation learning on irregular data. As they generalize the
+operations of classical CNNs on grids to arbitrary topologies, GNNs also bring
+much of the implementation challenges of their Euclidean counterparts. Model
+size, memory footprint, and energy consumption are common concerns for many
+real-world applications. Network binarization allocates a single bit to
+parameters and activations, thus dramatically reducing the memory requirements
+(up to 32x compared to single-precision floating-point numbers) and maximizing
+the benefits of fast SIMD instructions on modern hardware for measurable
+speedups. However, in spite of the large body of work on binarization for
+classical CNNs, this area remains largely unexplored in geometric deep
+learning. In this paper, we present and evaluate different strategies for the
+binarization of graph neural networks. We show that through careful design of
+the models, and control of the training process, binary graph neural networks
+can be trained at only a moderate cost in accuracy on challenging benchmarks.
+In particular, we present the first dynamic graph neural network in Hamming
+space, able to leverage efficient k-NN search on binary vectors to speed-up the
+construction of the dynamic graph. We further verify that the binary models
+offer significant savings on embedded devices. Our code is publicly available
+on Github."
+2206.02115,"Learning Binarized Graph Representations with Multi-faceted Quantization
+  Reinforcement for Top-K Recommendation",http://arxiv.org/abs/2206.02115,"Learning vectorized embeddings is at the core of various recommender systems
+for user-item matching. To perform efficient online inference, representation
+quantization, aiming to embed the latent features by a compact sequence of
+discrete numbers, recently shows the promising potentiality in optimizing both
+memory and computation overheads. However, existing work merely focuses on
+numerical quantization whilst ignoring the concomitant information loss issue,
+which, consequently, leads to conspicuous performance degradation. In this
+paper, we propose a novel quantization framework to learn Binarized Graph
+Representations for Top-K Recommendation (BiGeaR). BiGeaR introduces
+multi-faceted quantization reinforcement at the pre-, mid-, and post-stage of
+binarized representation learning, which substantially retains the
+representation informativeness against embedding binarization. In addition to
+saving the memory footprint, BiGeaR further develops solid online inference
+acceleration with bitwise operations, providing alternative flexibility for the
+realistic deployment. The empirical results over five large real-world
+benchmarks show that BiGeaR achieves about 22%~40% performance improvement over
+the state-of-the-art quantization-based recommender system, and recovers about
+95%~102% of the performance capability of the best full-precision counterpart
+with over 8x time and space reduction.","Learning Binarized Graph Representations with Multi-faceted Quantization
+  Reinforcement for Top-K Recommendation[http://arxiv.org/abs/2206.02115]: Learning vectorized embeddings is at the core of various recommender systems
+for user-item matching. To perform efficient online inference, representation
+quantization, aiming to embed the latent features by a compact sequence of
+discrete numbers, recently shows the promising potentiality in optimizing both
+memory and computation overheads. However, existing work merely focuses on
+numerical quantization whilst ignoring the concomitant information loss issue,
+which, consequently, leads to conspicuous performance degradation. In this
+paper, we propose a novel quantization framework to learn Binarized Graph
+Representations for Top-K Recommendation (BiGeaR). BiGeaR introduces
+multi-faceted quantization reinforcement at the pre-, mid-, and post-stage of
+binarized representation learning, which substantially retains the
+representation informativeness against embedding binarization. In addition to
+saving the memory footprint, BiGeaR further develops solid online inference
+acceleration with bitwise operations, providing alternative flexibility for the
+realistic deployment. The empirical results over five large real-world
+benchmarks show that BiGeaR achieves about 22%~40% performance improvement over
+the state-of-the-art quantization-based recommender system, and recovers about
+95%~102% of the performance capability of the best full-precision counterpart
+with over 8x time and space reduction."
+1609.02907,Semi-Supervised Classification with Graph Convolutional Networks,http://arxiv.org/abs/1609.02907,"We present a scalable approach for semi-supervised learning on
+graph-structured data that is based on an efficient variant of convolutional
+neural networks which operate directly on graphs. We motivate the choice of our
+convolutional architecture via a localized first-order approximation of
+spectral graph convolutions. Our model scales linearly in the number of graph
+edges and learns hidden layer representations that encode both local graph
+structure and features of nodes. In a number of experiments on citation
+networks and on a knowledge graph dataset we demonstrate that our approach
+outperforms related methods by a significant margin.","Semi-Supervised Classification with Graph Convolutional Networks[http://arxiv.org/abs/1609.02907]: We present a scalable approach for semi-supervised learning on
+graph-structured data that is based on an efficient variant of convolutional
+neural networks which operate directly on graphs. We motivate the choice of our
+convolutional architecture via a localized first-order approximation of
+spectral graph convolutions. Our model scales linearly in the number of graph
+edges and learns hidden layer representations that encode both local graph
+structure and features of nodes. In a number of experiments on citation
+networks and on a knowledge graph dataset we demonstrate that our approach
+outperforms related methods by a significant margin."
+2007.01764,Disentangled Graph Collaborative Filtering,http://arxiv.org/abs/2007.01764,"Learning informative representations of users and items from the interaction
+data is of crucial importance to collaborative filtering (CF). Present
+embedding functions exploit user-item relationships to enrich the
+representations, evolving from a single user-item instance to the holistic
+interaction graph. Nevertheless, they largely model the relationships in a
+uniform manner, while neglecting the diversity of user intents on adopting the
+items, which could be to pass time, for interest, or shopping for others like
+families. Such uniform approach to model user interests easily results in
+suboptimal representations, failing to model diverse relationships and
+disentangle user intents in representations.
+  In this work, we pay special attention to user-item relationships at the
+finer granularity of user intents. We hence devise a new model, Disentangled
+Graph Collaborative Filtering (DGCF), to disentangle these factors and yield
+disentangled representations. Specifically, by modeling a distribution over
+intents for each user-item interaction, we iteratively refine the intent-aware
+interaction graphs and representations. Meanwhile, we encourage independence of
+different intents. This leads to disentangled representations, effectively
+distilling information pertinent to each intent. We conduct extensive
+experiments on three benchmark datasets, and DGCF achieves significant
+improvements over several state-of-the-art models like NGCF, DisenGCN, and
+MacridVAE. Further analyses offer insights into the advantages of DGCF on the
+disentanglement of user intents and interpretability of representations. Our
+codes are available in
+https://github.com/xiangwang1223/disentangled_graph_collaborative_filtering.","Disentangled Graph Collaborative Filtering[http://arxiv.org/abs/2007.01764]: Learning informative representations of users and items from the interaction
+data is of crucial importance to collaborative filtering (CF). Present
+embedding functions exploit user-item relationships to enrich the
+representations, evolving from a single user-item instance to the holistic
+interaction graph. Nevertheless, they largely model the relationships in a
+uniform manner, while neglecting the diversity of user intents on adopting the
+items, which could be to pass time, for interest, or shopping for others like
+families. Such uniform approach to model user interests easily results in
+suboptimal representations, failing to model diverse relationships and
+disentangle user intents in representations.
+  In this work, we pay special attention to user-item relationships at the
+finer granularity of user intents. We hence devise a new model, Disentangled
+Graph Collaborative Filtering (DGCF), to disentangle these factors and yield
+disentangled representations. Specifically, by modeling a distribution over
+intents for each user-item interaction, we iteratively refine the intent-aware
+interaction graphs and representations. Meanwhile, we encourage independence of
+different intents. This leads to disentangled representations, effectively
+distilling information pertinent to each intent. We conduct extensive
+experiments on three benchmark datasets, and DGCF achieves significant
+improvements over several state-of-the-art models like NGCF, DisenGCN, and
+MacridVAE. Further analyses offer insights into the advantages of DGCF on the
+disentanglement of user intents and interpretability of representations. Our
+codes are available in
+https://github.com/xiangwang1223/disentangled_graph_collaborative_filtering."
+1901.00596,A Comprehensive Survey on Graph Neural Networks,http://arxiv.org/abs/1901.00596,"Deep learning has revolutionized many machine learning tasks in recent years,
+ranging from image classification and video processing to speech recognition
+and natural language understanding. The data in these tasks are typically
+represented in the Euclidean space. However, there is an increasing number of
+applications where data are generated from non-Euclidean domains and are
+represented as graphs with complex relationships and interdependency between
+objects. The complexity of graph data has imposed significant challenges on
+existing machine learning algorithms. Recently, many studies on extending deep
+learning approaches for graph data have emerged. In this survey, we provide a
+comprehensive overview of graph neural networks (GNNs) in data mining and
+machine learning fields. We propose a new taxonomy to divide the
+state-of-the-art graph neural networks into four categories, namely recurrent
+graph neural networks, convolutional graph neural networks, graph autoencoders,
+and spatial-temporal graph neural networks. We further discuss the applications
+of graph neural networks across various domains and summarize the open source
+codes, benchmark data sets, and model evaluation of graph neural networks.
+Finally, we propose potential research directions in this rapidly growing
+field.","A Comprehensive Survey on Graph Neural Networks[http://arxiv.org/abs/1901.00596]: Deep learning has revolutionized many machine learning tasks in recent years,
+ranging from image classification and video processing to speech recognition
+and natural language understanding. The data in these tasks are typically
+represented in the Euclidean space. However, there is an increasing number of
+applications where data are generated from non-Euclidean domains and are
+represented as graphs with complex relationships and interdependency between
+objects. The complexity of graph data has imposed significant challenges on
+existing machine learning algorithms. Recently, many studies on extending deep
+learning approaches for graph data have emerged. In this survey, we provide a
+comprehensive overview of graph neural networks (GNNs) in data mining and
+machine learning fields. We propose a new taxonomy to divide the
+state-of-the-art graph neural networks into four categories, namely recurrent
+graph neural networks, convolutional graph neural networks, graph autoencoders,
+and spatial-temporal graph neural networks. We further discuss the applications
+of graph neural networks across various domains and summarize the open source
+codes, benchmark data sets, and model evaluation of graph neural networks.
+Finally, we propose potential research directions in this rapidly growing
+field."
+1905.08108,Neural Graph Collaborative Filtering,http://arxiv.org/abs/1905.08108,"Learning vector representations (aka. embeddings) of users and items lies at
+the core of modern recommender systems. Ranging from early matrix factorization
+to recently emerged deep learning based methods, existing efforts typically
+obtain a user's (or an item's) embedding by mapping from pre-existing features
+that describe the user (or the item), such as ID and attributes. We argue that
+an inherent drawback of such methods is that, the collaborative signal, which
+is latent in user-item interactions, is not encoded in the embedding process.
+As such, the resultant embeddings may not be sufficient to capture the
+collaborative filtering effect.
+  In this work, we propose to integrate the user-item interactions -- more
+specifically the bipartite graph structure -- into the embedding process. We
+develop a new recommendation framework Neural Graph Collaborative Filtering
+(NGCF), which exploits the user-item graph structure by propagating embeddings
+on it. This leads to the expressive modeling of high-order connectivity in
+user-item graph, effectively injecting the collaborative signal into the
+embedding process in an explicit manner. We conduct extensive experiments on
+three public benchmarks, demonstrating significant improvements over several
+state-of-the-art models like HOP-Rec and Collaborative Memory Network. Further
+analysis verifies the importance of embedding propagation for learning better
+user and item representations, justifying the rationality and effectiveness of
+NGCF. Codes are available at
+https://github.com/xiangwang1223/neural_graph_collaborative_filtering.","Neural Graph Collaborative Filtering[http://arxiv.org/abs/1905.08108]: Learning vector representations (aka. embeddings) of users and items lies at
+the core of modern recommender systems. Ranging from early matrix factorization
+to recently emerged deep learning based methods, existing efforts typically
+obtain a user's (or an item's) embedding by mapping from pre-existing features
+that describe the user (or the item), such as ID and attributes. We argue that
+an inherent drawback of such methods is that, the collaborative signal, which
+is latent in user-item interactions, is not encoded in the embedding process.
+As such, the resultant embeddings may not be sufficient to capture the
+collaborative filtering effect.
+  In this work, we propose to integrate the user-item interactions -- more
+specifically the bipartite graph structure -- into the embedding process. We
+develop a new recommendation framework Neural Graph Collaborative Filtering
+(NGCF), which exploits the user-item graph structure by propagating embeddings
+on it. This leads to the expressive modeling of high-order connectivity in
+user-item graph, effectively injecting the collaborative signal into the
+embedding process in an explicit manner. We conduct extensive experiments on
+three public benchmarks, demonstrating significant improvements over several
+state-of-the-art models like HOP-Rec and Collaborative Memory Network. Further
+analysis verifies the importance of embedding propagation for learning better
+user and item representations, justifying the rationality and effectiveness of
+NGCF. Codes are available at
+https://github.com/xiangwang1223/neural_graph_collaborative_filtering."
+1503.02531,Distilling the Knowledge in a Neural Network,http://arxiv.org/abs/1503.02531,"A very simple way to improve the performance of almost any machine learning
+algorithm is to train many different models on the same data and then to
+average their predictions. Unfortunately, making predictions using a whole
+ensemble of models is cumbersome and may be too computationally expensive to
+allow deployment to a large number of users, especially if the individual
+models are large neural nets. Caruana and his collaborators have shown that it
+is possible to compress the knowledge in an ensemble into a single model which
+is much easier to deploy and we develop this approach further using a different
+compression technique. We achieve some surprising results on MNIST and we show
+that we can significantly improve the acoustic model of a heavily used
+commercial system by distilling the knowledge in an ensemble of models into a
+single model. We also introduce a new type of ensemble composed of one or more
+full models and many specialist models which learn to distinguish fine-grained
+classes that the full models confuse. Unlike a mixture of experts, these
+specialist models can be trained rapidly and in parallel.","Distilling the Knowledge in a Neural Network[http://arxiv.org/abs/1503.02531]: A very simple way to improve the performance of almost any machine learning
+algorithm is to train many different models on the same data and then to
+average their predictions. Unfortunately, making predictions using a whole
+ensemble of models is cumbersome and may be too computationally expensive to
+allow deployment to a large number of users, especially if the individual
+models are large neural nets. Caruana and his collaborators have shown that it
+is possible to compress the knowledge in an ensemble into a single model which
+is much easier to deploy and we develop this approach further using a different
+compression technique. We achieve some surprising results on MNIST and we show
+that we can significantly improve the acoustic model of a heavily used
+commercial system by distilling the knowledge in an ensemble of models into a
+single model. We also introduce a new type of ensemble composed of one or more
+full models and many specialist models which learn to distinguish fine-grained
+classes that the full models confuse. Unlike a mixture of experts, these
+specialist models can be trained rapidly and in parallel."
+2003.10477,Distilling Knowledge from Graph Convolutional Networks,http://arxiv.org/abs/2003.10477,"Existing knowledge distillation methods focus on convolutional neural
+networks (CNNs), where the input samples like images lie in a grid domain, and
+have largely overlooked graph convolutional networks (GCN) that handle non-grid
+data. In this paper, we propose to our best knowledge the first dedicated
+approach to distilling knowledge from a pre-trained GCN model. To enable the
+knowledge transfer from the teacher GCN to the student, we propose a local
+structure preserving module that explicitly accounts for the topological
+semantics of the teacher. In this module, the local structure information from
+both the teacher and the student are extracted as distributions, and hence
+minimizing the distance between these distributions enables topology-aware
+knowledge transfer from the teacher, yielding a compact yet high-performance
+student model. Moreover, the proposed approach is readily extendable to dynamic
+graph models, where the input graphs for the teacher and the student may
+differ. We evaluate the proposed method on two different datasets using GCN
+models of different architectures, and demonstrate that our method achieves the
+state-of-the-art knowledge distillation performance for GCN models. Code is
+publicly available at https://github.com/ihollywhy/DistillGCN.PyTorch.","Distilling Knowledge from Graph Convolutional Networks[http://arxiv.org/abs/2003.10477]: Existing knowledge distillation methods focus on convolutional neural
+networks (CNNs), where the input samples like images lie in a grid domain, and
+have largely overlooked graph convolutional networks (GCN) that handle non-grid
+data. In this paper, we propose to our best knowledge the first dedicated
+approach to distilling knowledge from a pre-trained GCN model. To enable the
+knowledge transfer from the teacher GCN to the student, we propose a local
+structure preserving module that explicitly accounts for the topological
+semantics of the teacher. In this module, the local structure information from
+both the teacher and the student are extracted as distributions, and hence
+minimizing the distance between these distributions enables topology-aware
+knowledge transfer from the teacher, yielding a compact yet high-performance
+student model. Moreover, the proposed approach is readily extendable to dynamic
+graph models, where the input graphs for the teacher and the student may
+differ. We evaluate the proposed method on two different datasets using GCN
+models of different architectures, and demonstrate that our method achieves the
+state-of-the-art knowledge distillation performance for GCN models. Code is
+publicly available at https://github.com/ihollywhy/DistillGCN.PyTorch."
+2111.04964,On Representation Knowledge Distillation for Graph Neural Networks,http://arxiv.org/abs/2111.04964,"Knowledge distillation is a learning paradigm for boosting resource-efficient
+graph neural networks (GNNs) using more expressive yet cumbersome teacher
+models. Past work on distillation for GNNs proposed the Local Structure
+Preserving loss (LSP), which matches local structural relationships defined
+over edges across the student and teacher's node embeddings. This paper studies
+whether preserving the global topology of how the teacher embeds graph data can
+be a more effective distillation objective for GNNs, as real-world graphs often
+contain latent interactions and noisy edges. We propose Graph Contrastive
+Representation Distillation (G-CRD), which uses contrastive learning to
+implicitly preserve global topology by aligning the student node embeddings to
+those of the teacher in a shared representation space. Additionally, we
+introduce an expanded set of benchmarks on large-scale real-world datasets
+where the performance gap between teacher and student GNNs is non-negligible.
+Experiments across 4 datasets and 14 heterogeneous GNN architectures show that
+G-CRD consistently boosts the performance and robustness of lightweight GNNs,
+outperforming LSP (and a global structure preserving variant of LSP) as well as
+baselines from 2D computer vision. An analysis of the representational
+similarity among teacher and student embedding spaces reveals that G-CRD
+balances preserving local and global relationships, while structure preserving
+approaches are best at preserving one or the other. Our code is available at
+https://github.com/chaitjo/efficient-gnns","On Representation Knowledge Distillation for Graph Neural Networks[http://arxiv.org/abs/2111.04964]: Knowledge distillation is a learning paradigm for boosting resource-efficient
+graph neural networks (GNNs) using more expressive yet cumbersome teacher
+models. Past work on distillation for GNNs proposed the Local Structure
+Preserving loss (LSP), which matches local structural relationships defined
+over edges across the student and teacher's node embeddings. This paper studies
+whether preserving the global topology of how the teacher embeds graph data can
+be a more effective distillation objective for GNNs, as real-world graphs often
+contain latent interactions and noisy edges. We propose Graph Contrastive
+Representation Distillation (G-CRD), which uses contrastive learning to
+implicitly preserve global topology by aligning the student node embeddings to
+those of the teacher in a shared representation space. Additionally, we
+introduce an expanded set of benchmarks on large-scale real-world datasets
+where the performance gap between teacher and student GNNs is non-negligible.
+Experiments across 4 datasets and 14 heterogeneous GNN architectures show that
+G-CRD consistently boosts the performance and robustness of lightweight GNNs,
+outperforming LSP (and a global structure preserving variant of LSP) as well as
+baselines from 2D computer vision. An analysis of the representational
+similarity among teacher and student embedding spaces reveals that G-CRD
+balances preserving local and global relationships, while structure preserving
+approaches are best at preserving one or the other. Our code is available at
+https://github.com/chaitjo/efficient-gnns"
+2302.00219,Knowledge Distillation on Graphs: A Survey,http://arxiv.org/abs/2302.00219,"Graph Neural Networks (GNNs) have attracted tremendous attention by
+demonstrating their capability to handle graph data. However, they are
+difficult to be deployed in resource-limited devices due to model sizes and
+scalability constraints imposed by the multi-hop data dependency. In addition,
+real-world graphs usually possess complex structural information and features.
+Therefore, to improve the applicability of GNNs and fully encode the
+complicated topological information, knowledge distillation on graphs (KDG) has
+been introduced to build a smaller yet effective model and exploit more
+knowledge from data, leading to model compression and performance improvement.
+Recently, KDG has achieved considerable progress with many studies proposed. In
+this survey, we systematically review these works. Specifically, we first
+introduce KDG challenges and bases, then categorize and summarize existing
+works of KDG by answering the following three questions: 1) what to distillate,
+2) who to whom, and 3) how to distillate. Finally, we share our thoughts on
+future research directions.","Knowledge Distillation on Graphs: A Survey[http://arxiv.org/abs/2302.00219]: Graph Neural Networks (GNNs) have attracted tremendous attention by
+demonstrating their capability to handle graph data. However, they are
+difficult to be deployed in resource-limited devices due to model sizes and
+scalability constraints imposed by the multi-hop data dependency. In addition,
+real-world graphs usually possess complex structural information and features.
+Therefore, to improve the applicability of GNNs and fully encode the
+complicated topological information, knowledge distillation on graphs (KDG) has
+been introduced to build a smaller yet effective model and exploit more
+knowledge from data, leading to model compression and performance improvement.
+Recently, KDG has achieved considerable progress with many studies proposed. In
+this survey, we systematically review these works. Specifically, we first
+introduce KDG challenges and bases, then categorize and summarize existing
+works of KDG by answering the following three questions: 1) what to distillate,
+2) who to whom, and 3) how to distillate. Finally, we share our thoughts on
+future research directions."
+2108.05507,Distilling Holistic Knowledge with Graph Neural Networks,http://arxiv.org/abs/2108.05507,"Knowledge Distillation (KD) aims at transferring knowledge from a larger
+well-optimized teacher network to a smaller learnable student network.Existing
+KD methods have mainly considered two types of knowledge, namely the individual
+knowledge and the relational knowledge. However, these two types of knowledge
+are usually modeled independently while the inherent correlations between them
+are largely ignored. It is critical for sufficient student network learning to
+integrate both individual knowledge and relational knowledge while reserving
+their inherent correlation. In this paper, we propose to distill the novel
+holistic knowledge based on an attributed graph constructed among instances.
+The holistic knowledge is represented as a unified graph-based embedding by
+aggregating individual knowledge from relational neighborhood samples with
+graph neural networks, the student network is learned by distilling the
+holistic knowledge in a contrastive manner. Extensive experiments and ablation
+studies are conducted on benchmark datasets, the results demonstrate the
+effectiveness of the proposed method. The code has been published in
+https://github.com/wyc-ruiker/HKD","Distilling Holistic Knowledge with Graph Neural Networks[http://arxiv.org/abs/2108.05507]: Knowledge Distillation (KD) aims at transferring knowledge from a larger
+well-optimized teacher network to a smaller learnable student network.Existing
+KD methods have mainly considered two types of knowledge, namely the individual
+knowledge and the relational knowledge. However, these two types of knowledge
+are usually modeled independently while the inherent correlations between them
+are largely ignored. It is critical for sufficient student network learning to
+integrate both individual knowledge and relational knowledge while reserving
+their inherent correlation. In this paper, we propose to distill the novel
+holistic knowledge based on an attributed graph constructed among instances.
+The holistic knowledge is represented as a unified graph-based embedding by
+aggregating individual knowledge from relational neighborhood samples with
+graph neural networks, the student network is learned by distilling the
+holistic knowledge in a contrastive manner. Extensive experiments and ablation
+studies are conducted on benchmark datasets, the results demonstrate the
+effectiveness of the proposed method. The code has been published in
+https://github.com/wyc-ruiker/HKD"
+2206.06561,FreeKD: Free-direction Knowledge Distillation for Graph Neural Networks,http://arxiv.org/abs/2206.06561,"Knowledge distillation (KD) has demonstrated its effectiveness to boost the
+performance of graph neural networks (GNNs), where its goal is to distill
+knowledge from a deeper teacher GNN into a shallower student GNN. However, it
+is actually difficult to train a satisfactory teacher GNN due to the well-known
+over-parametrized and over-smoothing issues, leading to invalid knowledge
+transfer in practical applications. In this paper, we propose the first
+Free-direction Knowledge Distillation framework via Reinforcement learning for
+GNNs, called FreeKD, which is no longer required to provide a deeper
+well-optimized teacher GNN. The core idea of our work is to collaboratively
+build two shallower GNNs in an effort to exchange knowledge between them via
+reinforcement learning in a hierarchical way. As we observe that one typical
+GNN model often has better and worse performances at different nodes during
+training, we devise a dynamic and free-direction knowledge transfer strategy
+that consists of two levels of actions: 1) node-level action determines the
+directions of knowledge transfer between the corresponding nodes of two
+networks; and then 2) structure-level action determines which of the local
+structures generated by the node-level actions to be propagated. In essence,
+our FreeKD is a general and principled framework which can be naturally
+compatible with GNNs of different architectures. Extensive experiments on five
+benchmark datasets demonstrate our FreeKD outperforms two base GNNs in a large
+margin, and shows its efficacy to various GNNs. More surprisingly, our FreeKD
+has comparable or even better performance than traditional KD algorithms that
+distill knowledge from a deeper and stronger teacher GNN.","FreeKD: Free-direction Knowledge Distillation for Graph Neural Networks[http://arxiv.org/abs/2206.06561]: Knowledge distillation (KD) has demonstrated its effectiveness to boost the
+performance of graph neural networks (GNNs), where its goal is to distill
+knowledge from a deeper teacher GNN into a shallower student GNN. However, it
+is actually difficult to train a satisfactory teacher GNN due to the well-known
+over-parametrized and over-smoothing issues, leading to invalid knowledge
+transfer in practical applications. In this paper, we propose the first
+Free-direction Knowledge Distillation framework via Reinforcement learning for
+GNNs, called FreeKD, which is no longer required to provide a deeper
+well-optimized teacher GNN. The core idea of our work is to collaboratively
+build two shallower GNNs in an effort to exchange knowledge between them via
+reinforcement learning in a hierarchical way. As we observe that one typical
+GNN model often has better and worse performances at different nodes during
+training, we devise a dynamic and free-direction knowledge transfer strategy
+that consists of two levels of actions: 1) node-level action determines the
+directions of knowledge transfer between the corresponding nodes of two
+networks; and then 2) structure-level action determines which of the local
+structures generated by the node-level actions to be propagated. In essence,
+our FreeKD is a general and principled framework which can be naturally
+compatible with GNNs of different architectures. Extensive experiments on five
+benchmark datasets demonstrate our FreeKD outperforms two base GNNs in a large
+margin, and shows its efficacy to various GNNs. More surprisingly, our FreeKD
+has comparable or even better performance than traditional KD algorithms that
+distill knowledge from a deeper and stronger teacher GNN."
+2112.08816,Deep Hash Distillation for Image Retrieval,http://arxiv.org/abs/2112.08816,"In hash-based image retrieval systems, degraded or transformed inputs usually
+generate different codes from the original, deteriorating the retrieval
+accuracy. To mitigate this issue, data augmentation can be applied during
+training. However, even if augmented samples of an image are similar in real
+feature space, the quantization can scatter them far away in Hamming space.
+This results in representation discrepancies that can impede training and
+degrade performance. In this work, we propose a novel self-distilled hashing
+scheme to minimize the discrepancy while exploiting the potential of augmented
+data. By transferring the hash knowledge of the weakly-transformed samples to
+the strong ones, we make the hash code insensitive to various transformations.
+We also introduce hash proxy-based similarity learning and binary cross
+entropy-based quantization loss to provide fine quality hash codes. Ultimately,
+we construct a deep hashing framework that not only improves the existing deep
+hashing approaches, but also achieves the state-of-the-art retrieval results.
+Extensive experiments are conducted and confirm the effectiveness of our work.","Deep Hash Distillation for Image Retrieval[http://arxiv.org/abs/2112.08816]: In hash-based image retrieval systems, degraded or transformed inputs usually
+generate different codes from the original, deteriorating the retrieval
+accuracy. To mitigate this issue, data augmentation can be applied during
+training. However, even if augmented samples of an image are similar in real
+feature space, the quantization can scatter them far away in Hamming space.
+This results in representation discrepancies that can impede training and
+degrade performance. In this work, we propose a novel self-distilled hashing
+scheme to minimize the discrepancy while exploiting the potential of augmented
+data. By transferring the hash knowledge of the weakly-transformed samples to
+the strong ones, we make the hash code insensitive to various transformations.
+We also introduce hash proxy-based similarity learning and binary cross
+entropy-based quantization loss to provide fine quality hash codes. Ultimately,
+we construct a deep hashing framework that not only improves the existing deep
+hashing approaches, but also achieves the state-of-the-art retrieval results.
+Extensive experiments are conducted and confirm the effectiveness of our work."

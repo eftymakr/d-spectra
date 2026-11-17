@@ -1,0 +1,45 @@
+## Related Works
+
+Maximum Inner Product Search (MIPS) is a core problem in machine learning and information retrieval, particularly for high-dimensional data scenarios. Traditional approaches to MIPS either rely directly on inner product (IP) similarity or reduce MIPS to Nearest Neighbor Search (NNS) under the Euclidean metric through space transformation. However, these paradigms each suffer from significant drawbacks: IP-based methods encounter local optima and redundant computations, whereas Euclidean reduction methods distort data topology, leading to information loss and degraded search quality \[[2503.06882v2](http://arxiv.org/abs/2503.06882v2)\]\[[1909.13459v2](http://arxiv.org/abs/1909.13459v2)\]\[[1405.5869v1](http://arxiv.org/abs/1405.5869v1)\].
+
+Graph-based methods have become prominent for MIPS due to their ability to balance accuracy and efficiency. The inner-product navigable small world graph (ip-NSW) is a key representative, leveraging the norm bias in MIPS—where large-norm vectors dominate results—to guide efficient search by focusing on high in-degree nodes in the graph, thus avoiding unnecessary exploration \[[1909.13459v2](http://arxiv.org/abs/1909.13459v2)\]\[[2104.04406v1](http://arxiv.org/abs/2104.04406v1)\]. An extension, ip-NSW+, further improves robustness by incorporating an angular proximity graph to better capture vector orientations before refining search on the inner-product graph \[[1909.13459v2](http://arxiv.org/abs/1909.13459v2)\]. These graph-based approaches highlight that different indexing and search strategies can align with specific data topologies to enhance performance.
+
+In parallel, hashing techniques have provided provably sublinear time solutions for approximate MIPS. Asymmetric Locality Sensitive Hashing (ALSH) introduced a transformative framework where inner products are converted via asymmetric mappings into approximate near neighbor search problems in Euclidean space, enabling efficient hashing schemes for MIPS \[[1405.5869v1](http://arxiv.org/abs/1405.5869v1)\]. Subsequent improvements have explored transformations that convert MIPS into cosine similarity search solvable by signed random projections, further refining accuracy and runtime \[[1509.01469v1](http://arxiv.org/abs/1509.01469v1)\].
+
+Dimensionality reduction methods also contribute to MIPS acceleration. The CEOs algorithm exploits extreme order statistics to reduce dimensions while preserving inner product estimation accuracy, achieving sublinear search time with theoretical guarantees. Practical variants such as sCEOs-TA and coCEOs balance space complexity and recall by combining threshold algorithms and co-reduction techniques \[[2012.11098v2](http://arxiv.org/abs/2012.11098v2)\].
+
+Adaptive sampling and bandit-based strategies have been proposed to tackle the computational cost in high dimensions. BanditMIPS estimates inner products by subsampling coordinates adaptively, with complexity independent of dimension size. This approach, backed by theoretical guarantees, outperforms prior methods, demonstrating significant speedups without preprocessing overhead \[[2212.07551v3](http://arxiv.org/abs/2212.07551v3)\]\[[1812.06360v1](http://arxiv.org/abs/1812.06360v1)\].
+
+Clustering-based approaches provide a simple yet effective alternative. By reducing MIPS to Maximum Cosine Similarity Search and applying spherical k-means clustering, these methods achieve higher speedups at comparable precision than hashing or tree-based methods. They also show robustness under noisy queries, suggesting clustering as a viable strategy for approximate MIPS \[[1507.05910v3](http://arxiv.org/abs/1507.05910v3)\]\[[2405.12207v4](http://arxiv.org/abs/2405.12207v4)\].
+
+Recent advances recognize the potential of combining IP and Euclidean metrics rather than treating them as opposing paradigms. The proposed Metric-Amphibious Graph (MAG) and its search algorithm Adaptive Navigation with Metric Switch (ANMS) embody this integration, dynamically switching between metrics based on data topology, thereby harnessing their complementary strengths for scalable and adaptable MIPS \[[2503.06882v2](http://arxiv.org/abs/2503.06882v2)\]\[[2010.07027v5](http://arxiv.org/abs/2010.07027v5)\]. This aligns with observations that the effectiveness of indexing and search strategies is topology-dependent, motivating the design of hybrid methods.
+
+Parameter tuning remains critical for optimizing MIPS algorithms. Statistical indicators capturing essential data topology properties have been identified to correlate strongly with performance, enabling more informed and automatic tuning processes that improve search efficiency and recall \[[2503.06882v2](http://arxiv.org/abs/2503.06882v2)\]\[[2301.10622v1](http://arxiv.org/abs/2301.10622v1)\].
+
+Other notable contributions address related challenges such as reverse MIPS, where the goal is to find users likely interested in a given item. Methods like Simpfer and Shifting-aware Asymmetric Hashing (SAH) introduce efficient indexing and pruning strategies to solve reverse MIPS with theoretical guarantees and substantial empirical speedups \[[2110.07131v1](http://arxiv.org/abs/2110.07131v1)\]\[[2211.12751v1](http://arxiv.org/abs/2211.12751v1)\].
+
+Index construction efficiency for graph-based methods is another active research area. Relative NN-Descent accelerates graph construction by combining NN-Descent with edge selection strategies, achieving faster build times while maintaining competitive search performance \[[2310.20419v1](http://arxiv.org/abs/2310.20419v1)\].
+
+Quantization-based approaches offer another angle, minimizing inner product quantization error in subspaces to approximate MIPS efficiently without higher-dimensional augmentation, with theoretical concentration guarantees and improved accuracy when leveraging example queries \[[1509.01469v1](http://arxiv.org/abs/1509.01469v1)\].
+
+Finally, streaming and sparse vector scenarios have motivated specialized approximate algorithms like Sinnamon, which balances memory, latency, and accuracy for top-k retrieval over nonstationary, real-valued sparse data, expanding the applicability of MIPS methods beyond static datasets \[[2301.10622v1](http://arxiv.org/abs/2301.10622v1)\].
+
+In summary, the landscape of MIPS research illustrates a rich interplay between IP and Euclidean metrics, graph-based and hashing methods, dimensionality reduction, adaptive sampling, and clustering. The integration of these diverse strategies, guided by data topology insights and efficient parameter tuning, underpins recent advances that significantly improve the scalability, speed, and accuracy of MIPS algorithms \[[2503.06882v2](http://arxiv.org/abs/2503.06882v2)\]\[[1909.13459v2](http://arxiv.org/abs/1909.13459v2)\]\[[2012.11098v2](http://arxiv.org/abs/2012.11098v2)\]\[[1405.5869v1](http://arxiv.org/abs/1405.5869v1)\]\[[2212.07551v3](http://arxiv.org/abs/2212.07551v3)\]\[[1507.05910v3](http://arxiv.org/abs/1507.05910v3)\]\[[2104.04406v1](http://arxiv.org/abs/2104.04406v1)\]\[[2110.07131v1](http://arxiv.org/abs/2110.07131v1)\]\[[2310.20419v1](http://arxiv.org/abs/2310.20419v1)\]\[[1509.01469v1](http://arxiv.org/abs/1509.01469v1)\]\[[2010.07027v5](http://arxiv.org/abs/2010.07027v5)\]\[[2211.12751v1](http://arxiv.org/abs/2211.12751v1)\]\[[2301.10622v1](http://arxiv.org/abs/2301.10622v1)\]\[[1812.06360v1](http://arxiv.org/abs/1812.06360v1)\]\[[2405.12207v4](http://arxiv.org/abs/2405.12207v4)\].
+
+### References
+
+1. Maximum Inner Product is Query-Scaled Nearest Neighbor, arXiv:2503.06882v2  
+2. Understanding and Improving Proximity Graph based Maximum Inner Product Search, arXiv:1909.13459v2  
+3. Sublinear Maximum Inner Product Search using Concomitants of Extreme Order Statistics, arXiv:2012.11098v2  
+4. Asymmetric LSH (ALSH) for Sublinear Time Maximum Inner Product Search (MIPS), arXiv:1405.5869v1  
+5. Faster Maximum Inner Product Search in High Dimensions, arXiv:2212.07551v3  
+6. Clustering is Efficient for Approximate Maximum Inner Product Search, arXiv:1507.05910v3  
+7. ProMIPS: Efficient High-Dimensional c-Approximate Maximum Inner Product Search with a Lightweight Index, arXiv:2104.04406v1  
+8. Reverse Maximum Inner Product Search: How to efficiently find users who would like to buy my item?, arXiv:2110.07131v1  
+9. Relative NN-Descent: A Fast Index Construction for Graph-Based Approximate Nearest Neighbor Search, arXiv:2310.20419v1  
+10. Quantization based Fast Inner Product Search, arXiv:1509.01469v1  
+11. A Light Heterogeneous Graph Collaborative Filtering Model using Textual Information, arXiv:2010.07027v5  
+12. SAH: Shifting-aware Asymmetric Hashing for Reverse $k$-Maximum Inner Product Search, arXiv:2211.12751v1  
+13. An Approximate Algorithm for Maximum Inner Product Search over Streaming Sparse Vectors, arXiv:2301.10622v1  
+14. A Bandit Approach to Maximum Inner Product Search, arXiv:1812.06360v1  
+15. Optimistic Query Routing in Clustering-based Approximate Maximum Inner Product Search, arXiv:2405.12207v4

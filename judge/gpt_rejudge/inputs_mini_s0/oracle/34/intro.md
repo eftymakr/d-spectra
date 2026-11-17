@@ -1,0 +1,35 @@
+## Related Works
+
+Fund allocation in financial domains has attracted significant research interest, particularly in integrating predictive modeling with decision-making optimization. Traditional predict-then-optimize (PnO) frameworks rely on forecasting unknown parameters first, then solving the optimization problem using these predictions. However, this decoupled approach often leads to suboptimal decisions due to the misalignment between prediction objectives and optimization goals, a phenomenon known as goal mismatch \[[2503.03165](http://arxiv.org/abs/2503.03165)\]\[[1710.08005](http://arxiv.org/abs/1710.08005)\]. To mitigate this, Smart Predict-then-Optimize (SPO) frameworks have been proposed, which incorporate the structure of the optimization problem directly into the learning process by using decision-aware loss functions, such as the SPO and SPO+ losses. These losses measure the decision error induced by predictions rather than mere prediction accuracy, enabling end-to-end learning that aligns forecasting with optimization \[[1905.11488](http://arxiv.org/abs/1905.11488)\]\[[2108.08887](http://arxiv.org/abs/2108.08887)\]\[[1710.08005](http://arxiv.org/abs/1710.08005)\].
+
+Recent advances in Predict-and-Optimize (PnO) and Predict-then-Optimize (PtO) methods systematically benchmark the benefits of integrating prediction and optimization. Predict-and-Optimize methods directly optimize the ultimate decision quality but face challenges in training complexity and solver integration. Empirical studies show that Predict-and-Optimize often outperforms traditional Predict-then-Optimize methods in combinatorial optimization scenarios, though no universal best method exists, highlighting the trade-offs between model design and practical applicability \[[2311.07633](http://arxiv.org/abs/2311.07633)\]\[[2307.13565](http://arxiv.org/abs/2307.13565)\].
+
+On the forecasting side, time series prediction plays a critical role in financial decision-making. While state-of-the-art Transformer-based models have shown promise in capturing long-range dependencies, they face limitations due to quadratic complexity, memory bottlenecks, and the inherent permutation-invariance of self-attention, which can cause temporal information loss in ordered time series data \[[2012.07436](http://arxiv.org/abs/2012.07436)\]\[[1907.00235](http://arxiv.org/abs/1907.00235)\]\[[2205.13504](http://arxiv.org/abs/2205.13504)\]. Various efforts have been made to address these issues: Informer introduces a ProbSparse self-attention mechanism to improve efficiency on long sequences \[[2012.07436](http://arxiv.org/abs/2012.07436)\]; FEDformer combines frequency domain decomposition with Transformers to capture global trends more effectively with linear complexity \[[2201.12740](http://arxiv.org/abs/2201.12740)\]; Autoformer integrates decomposition with auto-correlation mechanisms to enhance long-term forecasting accuracy \[[2106.13008](http://arxiv.org/abs/2106.13008)\]; TimesNet models temporal variations in 2D space by leveraging multi-periodicity \[[2210.02186](http://arxiv.org/abs/2210.02186)\]. Alternatively, MLP-based architectures such as TSMixer propose lightweight models that outperform Transformers in forecasting accuracy and efficiency, demonstrating the potential for simpler architectures in time series tasks \[[2306.09364](http://arxiv.org/abs/2306.09364)\].
+
+Uncertainty quantification and calibration in forecasting are crucial for risk-aware financial allocation. Classical methods like Monte Carlo dropout and Bayesian neural networks provide probabilistic forecasts but can be computationally expensive and model-specific. Conformal prediction offers a distribution-free, model-agnostic approach to generate valid prediction intervals without strong assumptions on data distribution or exchangeability, making it suitable for adaptive uncertainty calibration in time series \[[2010.09107](http://arxiv.org/abs/2010.09107)\]\[[http://proceedings.mlr.press/v139/xu21h.html](http://proceedings.mlr.press/v139/xu21h.html)\]. These approaches enhance decision-making under uncertainty by providing reliable uncertainty estimates that can be integrated into allocation frameworks.
+
+The integration of forecasting and optimization has also been explored through differentiable optimization layers embedded within neural networks, such as OptNet and differentiable convex optimization layers, enabling end-to-end training with gradient backpropagation through constrained optimization problems \[[1703.00443](http://arxiv.org/abs/1703.00443)\]\[[1910.12430](http://arxiv.org/abs/1910.12430)\]. These methods facilitate learning predictive models that are aware of downstream decision structures but can be computationally demanding depending on problem size and complexity.
+
+In financial allocation specifically, frameworks like PTOFA employ a Predict-Then-Optimize fund allocation approach that predicts customer behavior and optimizes impression allocation to maximize revenue under constraints, demonstrating effectiveness in real-world online investment platforms \[[2503.03165](http://arxiv.org/abs/2503.03165)\]. However, these methods often assume fixed forecasting models and may not explicitly address uncertainty calibration or objective alignment in training.
+
+Overall, existing works have advanced both the predictive and prescriptive aspects of financial decision-making but often lack frameworks that simultaneously achieve end-to-end objective alignment, adaptive uncertainty calibration, and forecasting model agnosticism. The RTS-PnO framework addresses this gap by combining risk-aware allocation with flexible forecasting models, enabling improved decision quality and robustness in diverse financial applications \[[2503.03165](http://arxiv.org/abs/2503.03165)\]\[[2311.07633](http://arxiv.org/abs/2311.07633)\]\[[2010.09107](http://arxiv.org/abs/2010.09107)\]\[[1710.08005](http://arxiv.org/abs/1710.08005)\]\[[2307.13565](http://arxiv.org/abs/2307.13565)\].
+
+### References
+
+1. \[[2503.03165](http://arxiv.org/abs/2503.03165)\]  
+2. \[[2311.07633](http://arxiv.org/abs/2311.07633)\]  
+3. \[[2012.07436](http://arxiv.org/abs/2012.07436)\]  
+4. \[[1907.00235](http://arxiv.org/abs/1907.00235)\]  
+5. \[[2201.12740](http://arxiv.org/abs/2201.12740)\]  
+6. \[[2106.13008](http://arxiv.org/abs/2106.13008)\]  
+7. \[[2210.02186](http://arxiv.org/abs/2210.02186)\]  
+8. \[[2205.13504](http://arxiv.org/abs/2205.13504)\]  
+9. \[[2306.09364](http://arxiv.org/abs/2306.09364)\]  
+10. \[[2010.09107](http://arxiv.org/abs/2010.09107)\]  
+11. \[[1905.11488](http://arxiv.org/abs/1905.11488)\]  
+12. \[[2108.08887](http://arxiv.org/abs/2108.08887)\]  
+13. \[[1710.08005](http://arxiv.org/abs/1710.08005)\]  
+14. \[[2307.13565](http://arxiv.org/abs/2307.13565)\]  
+15. \[[1703.00443](http://arxiv.org/abs/1703.00443)\]  
+16. \[[1910.12430](http://arxiv.org/abs/1910.12430)\]  
+17. \[[http://proceedings.mlr.press/v139/xu21h.html](http://proceedings.mlr.press/v139/xu21h.html)\]

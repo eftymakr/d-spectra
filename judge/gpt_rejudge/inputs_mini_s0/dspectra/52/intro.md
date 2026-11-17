@@ -1,0 +1,40 @@
+## Related Works
+
+Dense retrieval has emerged as a pivotal approach in information retrieval by leveraging pre-trained language models (PLMs) such as BERT and LLaMA to encode queries and documents into dense vector representations for efficient similarity comparison \[[2108.05540](http://arxiv.org/abs/2108.05540)\]. These models typically undergo fine-tuning via contrastive learning, aligning query and passage embeddings to enhance retrieval effectiveness. Early work, such as Dense Passage Retrieval (DPR), primarily focused on BERT-based encoders using the [CLS] token for representation, demonstrating significant gains but also raising questions about the distinct contributions of pre-training and fine-tuning phases \[[2112.09118](http://arxiv.org/abs/2112.09118)\].
+
+Recent analyses have suggested that much of the retrieval knowledge is embedded during pre-training, with fine-tuning mainly refining neuron activation patterns rather than reorganizing underlying knowledge structures \[[2104.08253](http://arxiv.org/abs/2104.08253)\]\[[2112.09118](http://arxiv.org/abs/2112.09118)\]. However, these findings were largely confined to specific architectures (encoder-only BERT) and datasets (Natural Questions). To address this, newer studies have expanded the scope by examining alternative representation strategies, such as mean pooling (e.g., Contriever) versus [CLS] token usage, and introducing decoder-only models like LLaMA as dense retrievers. These investigations reveal that the dominance of pre-trained knowledge over fine-tuning is not universal; decoder-based and mean-pooled models exhibit more substantial fine-tuning effects on their retrieval capabilities \[[2002.08909](http://arxiv.org/abs/2002.08909)\]\[[https://www.semanticscholar.org/paper/5be217c678916543884c354654263f27c0a6bd9f](https://www.semanticscholar.org/paper/5be217c678916543884c354654263f27c0a6bd9f)\].
+
+Pre-training strategies tailored for dense retrieval have been extensively studied to improve the quality of semantic embeddings. Architectures like Condenser and coCondenser introduce pre-training objectives that condense passage information and utilize unsupervised corpus-level contrastive losses to warm up embedding spaces, reducing reliance on large batch sizes and complex data engineering during fine-tuning \[[2108.05540](http://arxiv.org/abs/2108.05540)\]\[[2104.08253](http://arxiv.org/abs/2104.08253)\]. Similarly, RetroMAE employs a masked auto-encoder approach with asymmetric masking and model structures to enhance retrieval-oriented language model pre-training, achieving strong benchmark performances and demonstrating the benefit of targeted pre-training workflows \[[2205.12035](http://arxiv.org/abs/2205.12035)\]\[[2305.02564](http://arxiv.org/abs/2305.02564)\].
+
+Contrastive learning has proven effective both in supervised and unsupervised settings for dense retrieval. Unsupervised contrastive methods have shown strong zero-shot and cross-lingual retrieval capabilities, outperforming traditional sparse methods such as BM25 on several benchmarks \[[2112.09118](http://arxiv.org/abs/2112.09118)\]. Further, contrastive pre-training approaches targeting discriminative autoencoders address limitations of equal token importance in decoding and bypass effects by weak decoders, enabling more discriminative text representations that boost dense retrieval performance \[[2204.10641](http://arxiv.org/abs/2204.10641)\]\[[2208.09846](http://arxiv.org/abs/2208.09846)\].
+
+Fine-tuning dynamics have also been explored in terms of training efficiency and robustness. Techniques such as TAS-Balanced focus on efficient negative sampling via topic-aware clustering to reduce resource demands while maintaining or improving retrieval effectiveness \[[2104.06967](http://arxiv.org/abs/2104.06967)\]. Other work, like DANCE, introduces dual contrastive learning objectives to better structure the embedding space for queries and documents, thereby improving ranking performance \[[2107.07773](http://arxiv.org/abs/2107.07773)\]. Recent investigations into dropout and augmentation techniques suggest that fine-tuning can improve out-of-distribution robustness and generalization, particularly when combined with diverse data augmentation from large language models (LLMs) \[[2302.07452](http://arxiv.org/abs/2302.07452)\]\[[2502.18460](http://arxiv.org/abs/2502.18460)\].
+
+Regarding model architecture, the debate between encoder-only and decoder-only backbones continues. While encoder-only models like BERT have a long-established track record and benefit from extensive pre-training regimes (e.g., RoBERTa, XLNet), decoder-only models such as LLaMA require specialized adaptation techniques to realize their potential for dense retrieval. For instance, Llama2Vec performs unsupervised adaptation of LLaMA via embedding-based auto-encoding and auto-regression tasks, yielding state-of-the-art results on both supervised and zero-shot retrieval benchmarks \[[2312.15503](http://arxiv.org/abs/2312.15503)\]. This points to the importance of pre-training task design and architecture-specific adaptation in dense retrieval success.
+
+Complementary to dense retrieval methods, hybrid approaches seek to combine lexical matching and semantic embedding retrieval, as in SPAR and CLEAR, which incorporate phrase-level or residual semantic signals to overcome vocabulary mismatch and improve generalization across domains \[[2110.06918](http://arxiv.org/abs/2110.06918)\]\[[2004.13969](http://arxiv.org/abs/2004.13969)\]. Such methods highlight the ongoing challenge of balancing token-level precision with semantic understanding.
+
+Finally, surveys and comprehensive studies have synthesized these advances, outlining the architectures, training techniques, indexing methods, and integration strategies that define the current state of dense retrieval research, emphasizing the critical role of PLM pre-training and the nuanced contributions of fine-tuning \[[2211.14876](http://arxiv.org/abs/2211.14876)\].
+
+In summary, the literature converges on the view that pre-training imparts foundational retrieval knowledge, particularly in encoder-based dense retrievers, while the role of fine-tuning varies with model architecture, representation strategy, and data regime. Decoder-based models and mean-pooled encoders may benefit more substantially from fine-tuning, and advanced pre-training objectives and contrastive learning frameworks continue to push the boundaries of dense retrieval performance and generalization.
+
+---
+
+References:  
+\[[2108.05540](http://arxiv.org/abs/2108.05540)\] http://arxiv.org/abs/2108.05540  
+\[[2104.08253](http://arxiv.org/abs/2104.08253)\] http://arxiv.org/abs/2206.04509v2  
+\[[2112.09118](http://arxiv.org/abs/2112.09118)\] http://arxiv.org/abs/2206.04509v2  
+\[[2002.08909](http://arxiv.org/abs/2002.08909)\] http://arxiv.org/abs/2206.04509v2  
+\[[2204.10641](http://arxiv.org/abs/2204.10641)\] http://arxiv.org/abs/2204.10641  
+\[[2205.12035](http://arxiv.org/abs/2205.12035)\] http://arxiv.org/abs/2205.12035  
+\[[https://www.semanticscholar.org/paper/5be217c678916543884c354654263f27c0a6bd9f](https://www.semanticscholar.org/paper/5be217c678916543884c354654263f27c0a6bd9f)\] http://arxiv.org/abs/2206.04509v2  
+\[[2107.07773](http://arxiv.org/abs/2107.07773)\] http://arxiv.org/abs/2107.07773  
+\[[2104.06967](http://arxiv.org/abs/2104.06967)\] http://arxiv.org/abs/2104.06967  
+\[[2302.07452](http://arxiv.org/abs/2302.07452)\] http://arxiv.org/abs/2302.07452  
+\[[2208.09846](http://arxiv.org/abs/2208.09846)\] http://arxiv.org/abs/2208.09846  
+\[[2502.18460](http://arxiv.org/abs/2502.18460)\] http://arxiv.org/abs/2502.18460  
+\[[2305.02564](http://arxiv.org/abs/2305.02564)\] http://arxiv.org/abs/2305.02564  
+\[[2312.15503](http://arxiv.org/abs/2312.15503)\] http://arxiv.org/abs/2312.15503  
+\[[2110.06918](http://arxiv.org/abs/2110.06918)\] http://arxiv.org/abs/2110.06918  
+\[[2211.14876](http://arxiv.org/abs/2211.14876)\] http://arxiv.org/abs/2211.14876  
+\[[2004.13969](http://arxiv.org/abs/2004.13969)\] http://arxiv.org/abs/2004.13969

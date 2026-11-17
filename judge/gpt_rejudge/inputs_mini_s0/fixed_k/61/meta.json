@@ -1,0 +1,14 @@
+{
+  "query": "061_2504.12900v1",
+  "selection": "d-spectra/judge/inputs/s0/fixed_k/61",
+  "n_papers": 27,
+  "writer": "gpt-4.1-mini",
+  "temperature": 0.7,
+  "top_p": null,
+  "top_k": null,
+  "seed": null,
+  "prompt_tokens": 8655,
+  "completion_tokens": 1284,
+  "n_inline_citations": 48,
+  "seconds": 11.6
+}

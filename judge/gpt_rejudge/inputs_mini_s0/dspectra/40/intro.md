@@ -1,0 +1,50 @@
+## Related Works
+
+Zero-Knowledge Proofs (ZKPs) are a foundational cryptographic tool enabling a prover to convince a verifier of a statement’s validity without revealing any additional information beyond the truth of the claim \[[https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0](https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0)\]. This property has made ZKPs central to privacy-preserving applications such as blockchain, verifiable machine learning, and electronic voting. However, despite their theoretical appeal, the high computational cost of proof generation has limited their practical adoption \[[https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0](https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0)\]. Consequently, recent research has focused extensively on accelerating ZKP primitives and protocols through hardware solutions, protocol optimizations, and novel proof systems.
+
+### Zero-Knowledge Proof Protocols and Properties
+
+Early foundational work formalized the notion of zero-knowledge as proofs that reveal no knowledge beyond the validity of the statement itself \[[https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0](https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0)\]. Protocols such as zkSNARKs have become popular due to their succinct proof sizes and efficient verification, but they typically require trusted setup procedures and still suffer from expensive proof generation \[[https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0](https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0)\]\[[https://www.semanticscholar.org/paper/e149d93531d8c07cf43f6cae327a4795144d1304](https://www.semanticscholar.org/paper/e149d93531d8c07cf43f6cae327a4795144d1304)\]. More recent protocols, such as HyperPlonk, support one-time, universal setup combined with small proof sizes, making them particularly suitable for public, consensus-based systems \[[https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0](https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0)\]. These protocols address critical limitations of earlier designs by balancing setup assumptions, proof succinctness, and verification efficiency.
+
+Besides zkSNARKs, interactive proof systems leveraging homomorphic commitment schemes have been proposed, enabling polynomial-time zero-knowledge proofs for NP-complete problems while ensuring quantum resistance \[[2304.09784](http://arxiv.org/abs/2304.09784)\]. These protocols highlight the evolving landscape of ZKPs aiming to enhance security and efficiency.
+
+### Hardware Acceleration of ZKP Primitives
+
+The computational bottleneck in ZKP proof generation largely stems from complex algebraic operations, including polynomial computations, Number Theoretic Transforms (NTTs), and Multi-Scalar Multiplications (MSMs) on elliptic curves. Several works have proposed hardware accelerators targeting these primitives:
+
+- **SZKP** presents an ASIC-based scalable accelerator that exploits structured dataflows for NTT and MSM operations. It achieves speedups exceeding 400× over CPU baselines, demonstrating the impact of algorithm-hardware co-design on accelerating ZKP proof generation \[[https://www.semanticscholar.org/paper/65f1e83a53c5ce9dee04042e0dd4191a451df2b8](https://www.semanticscholar.org/paper/65f1e83a53c5ce9dee04042e0dd4191a451df2b8)\].
+
+- **GZKP** and **cuZK** focus on GPU acceleration. GZKP optimizes memory access patterns and parallelizes MSM computations using fine-grained task parallelism, achieving up to 48.1× speedup in cryptographic benchmarks \[[https://www.semanticscholar.org/paper/e149d93531d8c07cf43f6cae327a4795144d1304](https://www.semanticscholar.org/paper/e149d93531d8c07cf43f6cae327a4795144d1304)\]. cuZK proposes a novel parallel MSM algorithm that nearly linearly scales with GPU cores and reduces CPU-GPU data transfer overhead, yielding up to 4.86× speedup on standard benchmarks and 2.18× on real-world cryptocurrency workloads \[[https://www.semanticscholar.org/paper/e4a4608e8e35379e63b9df5bda1b7599ee8ab9ac](https://www.semanticscholar.org/paper/e4a4608e8e35379e63b9df5bda1b7599ee8ab9ac)\].
+
+- On the FPGA front, **if-ZKP** leverages Intel OneAPI and optimized IP blocks to accelerate MSM operations, achieving 110×-150× speedup compared to software implementations on standard elliptic curves \[[2412.12481](http://arxiv.org/abs/2412.12481)\].
+
+- **PipeZK** introduces a pipelined ASIC architecture that decomposes large polynomial kernels and dynamically dispatches workloads to optimize resource utilization, resulting in 10× speedup on benchmarks and 5× on Zcash \[[https://www.semanticscholar.org/paper/6ee84674b7c426849c3da56cb278c08eb7a903cf](https://www.semanticscholar.org/paper/6ee84674b7c426849c3da56cb278c08eb7a903cf)\].
+
+These accelerators focus primarily on critical ZKP primitives but often target specific protocols or individual steps rather than fully integrated protocol acceleration.
+
+### Application-Specific ZKPs and Protocol Composability
+
+Beyond generic ZKP acceleration, specialized zero-knowledge schemes have been developed for complex domains. For example, zkCNN enables zero-knowledge proofs for convolutional neural network (CNN) predictions and accuracy verification. It uses a sumcheck protocol optimized for fast Fourier transforms and convolutions, achieving proof generation times orders of magnitude faster than existing approaches \[[https://www.semanticscholar.org/paper/6336149196f02d0eb6c1a89bc6b662e4422bd794](https://www.semanticscholar.org/paper/6336149196f02d0eb6c1a89bc6b662e4422bd794)\]. This demonstrates the applicability of ZKPs to verifiable machine learning, aligning with the broader goal of privacy-preserving AI.
+
+On the software side, **zksk** offers a composable Python library for defining sigma protocols, facilitating the construction of complex zero-knowledge proofs through building blocks \[[1911.02459](http://arxiv.org/abs/1911.02459)\]. This aids developers in implementing ZKPs without deep cryptographic expertise, complementing hardware acceleration efforts.
+
+### Limitations and Open Challenges
+
+While these advances significantly improve proof generation throughput, existing solutions often face trade-offs. Protocols like zkSNARKs require trusted setups, which may not be practical in all environments \[[https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0](https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0)\]. Others generate larger proofs with higher verification costs, limiting scalability in scenarios with many verifiers or strict latency requirements \[[https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0](https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0)\]. Moreover, many acceleration efforts optimize only parts of the protocol, lacking holistic end-to-end acceleration.
+
+The presented work on zkSpeed addresses these challenges by accelerating the full HyperPlonk protocol, including both SumCheck and MSM primitives, on a large-scale full-chip architecture with 2 TB/s bandwidth. It achieves geometric mean speedups of 801× over CPU baselines, representing a substantial step toward practical, scalable ZKP deployment in publicly verifiable systems \[[https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0](https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0)\].
+
+---
+
+### References
+
+\[[https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0](https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0)\] The Knowledge Complexity of Interactive Proof Systems, arXiv: [https://www.semanticscholar.org/paper/9ccf7b6cb32cf89752a35bd910555adac54773e0]  
+\[[https://www.semanticscholar.org/paper/65f1e83a53c5ce9dee04042e0dd4191a451df2b8](https://www.semanticscholar.org/paper/65f1e83a53c5ce9dee04042e0dd4191a451df2b8)\] SZKP: A Scalable Accelerator Architecture for Zero-Knowledge Proofs, arXiv:2408.05890  
+\[[2408.05890](http://arxiv.org/abs/2408.05890)\] cuZK: Accelerating Zero-Knowledge Proof with A Faster Parallel Multi-Scalar Multiplication Algorithm on GPUs, arXiv:e4a4608e8e35379e63b9df5bda1b7599ee8ab9ac  
+\[[https://www.semanticscholar.org/paper/e149d93531d8c07cf43f6cae327a4795144d1304](https://www.semanticscholar.org/paper/e149d93531d8c07cf43f6cae327a4795144d1304)\] GZKP: A GPU Accelerated Zero-Knowledge Proof System, arXiv:e149d93531d8c07cf43f6cae327a4795144d1304  
+\[[https://www.semanticscholar.org/paper/e4a4608e8e35379e63b9df5bda1b7599ee8ab9ac](https://www.semanticscholar.org/paper/e4a4608e8e35379e63b9df5bda1b7599ee8ab9ac)\] if-ZKP: Intel FPGA-Based Acceleration of Zero Knowledge Proofs, arXiv:2412.12481  
+\[[https://www.semanticscholar.org/paper/6ee84674b7c426849c3da56cb278c08eb7a903cf](https://www.semanticscholar.org/paper/6ee84674b7c426849c3da56cb278c08eb7a903cf)\] PipeZK: Accelerating Zero-Knowledge Proof with a Pipelined Architecture, arXiv:6ee84674b7c426849c3da56cb278c08eb7a903cf  
+\[[https://www.semanticscholar.org/paper/6336149196f02d0eb6c1a89bc6b662e4422bd794](https://www.semanticscholar.org/paper/6336149196f02d0eb6c1a89bc6b662e4422bd794)\] zkCNN: Zero Knowledge Proofs for Convolutional Neural Network Predictions and Accuracy, arXiv:6336149196f02d0eb6c1a89bc6b662e4422bd794  
+\[[1911.02459](http://arxiv.org/abs/1911.02459)\] zksk: A Library for Composable Zero-Knowledge Proofs, arXiv:1911.02459  
+\[[2412.12481](http://arxiv.org/abs/2412.12481)\] if-ZKP: Intel FPGA-Based Acceleration of Zero Knowledge Proofs, arXiv:2412.12481  
+\[[2304.09784](http://arxiv.org/abs/2304.09784)\] Zero-Knowledge MIPs using Homomorphic Commitment Schemes, arXiv:2304.09784

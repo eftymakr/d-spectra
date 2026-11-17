@@ -1,0 +1,238 @@
+id,title,url,snippet,context
+1606.00185,A Survey on Learning to Hash,http://arxiv.org/abs/1606.00185,"Nearest neighbor search is a problem of finding the data points from the
+database such that the distances from them to the query point are the smallest.
+Learning to hash is one of the major solutions to this problem and has been
+widely studied recently. In this paper, we present a comprehensive survey of
+the learning to hash algorithms, categorize them according to the manners of
+preserving the similarities into: pairwise similarity preserving, multiwise
+similarity preserving, implicit similarity preserving, as well as quantization,
+and discuss their relations. We separate quantization from pairwise similarity
+preserving as the objective function is very different though quantization, as
+we show, can be derived from preserving the pairwise similarities. In addition,
+we present the evaluation protocols, and the general performance analysis, and
+point out that the quantization algorithms perform superiorly in terms of
+search accuracy, search time cost, and space cost. Finally, we introduce a few
+emerging topics.","A Survey on Learning to Hash[http://arxiv.org/abs/1606.00185]: Nearest neighbor search is a problem of finding the data points from the
+database such that the distances from them to the query point are the smallest.
+Learning to hash is one of the major solutions to this problem and has been
+widely studied recently. In this paper, we present a comprehensive survey of
+the learning to hash algorithms, categorize them according to the manners of
+preserving the similarities into: pairwise similarity preserving, multiwise
+similarity preserving, implicit similarity preserving, as well as quantization,
+and discuss their relations. We separate quantization from pairwise similarity
+preserving as the objective function is very different though quantization, as
+we show, can be derived from preserving the pairwise similarities. In addition,
+we present the evaluation protocols, and the general performance analysis, and
+point out that the quantization algorithms perform superiorly in terms of
+search accuracy, search time cost, and space cost. Finally, we introduce a few
+emerging topics."
+1405.5869,"Asymmetric LSH (ALSH) for Sublinear Time Maximum Inner Product Search
+  (MIPS)",http://arxiv.org/abs/1405.5869,"We present the first provably sublinear time algorithm for approximate
+\emph(Maximum Inner Product Search) (MIPS). Our proposal is also the first
+hashing algorithm for searching with (un-normalized) inner product as the
+underlying similarity measure. Finding hashing schemes for MIPS was considered
+hard. We formally show that the existing Locality Sensitive Hashing (LSH)
+framework is insufficient for solving MIPS, and then we extend the existing LSH
+framework to allow asymmetric hashing schemes. Our proposal is based on an
+interesting mathematical phenomenon in which inner products, after independent
+asymmetric transformations, can be converted into the problem of approximate
+near neighbor search. This key observation makes efficient sublinear hashing
+scheme for MIPS possible. In the extended asymmetric LSH (ALSH) framework, we
+provide an explicit construction of provably fast hashing scheme for MIPS. The
+proposed construction and the extended LSH framework could be of independent
+theoretical interest. Our proposed algorithm is simple and easy to implement.
+We evaluate the method, for retrieving inner products, in the collaborative
+filtering task of item recommendations on Netflix and Movielens datasets.","Asymmetric LSH (ALSH) for Sublinear Time Maximum Inner Product Search
+  (MIPS)[http://arxiv.org/abs/1405.5869]: We present the first provably sublinear time algorithm for approximate
+\emph(Maximum Inner Product Search) (MIPS). Our proposal is also the first
+hashing algorithm for searching with (un-normalized) inner product as the
+underlying similarity measure. Finding hashing schemes for MIPS was considered
+hard. We formally show that the existing Locality Sensitive Hashing (LSH)
+framework is insufficient for solving MIPS, and then we extend the existing LSH
+framework to allow asymmetric hashing schemes. Our proposal is based on an
+interesting mathematical phenomenon in which inner products, after independent
+asymmetric transformations, can be converted into the problem of approximate
+near neighbor search. This key observation makes efficient sublinear hashing
+scheme for MIPS possible. In the extended asymmetric LSH (ALSH) framework, we
+provide an explicit construction of provably fast hashing scheme for MIPS. The
+proposed construction and the extended LSH framework could be of independent
+theoretical interest. Our proposed algorithm is simple and easy to implement.
+We evaluate the method, for retrieving inner products, in the collaborative
+filtering task of item recommendations on Netflix and Movielens datasets."
+1410.5410,"Improved Asymmetric Locality Sensitive Hashing (ALSH) for Maximum Inner
+  Product Search (MIPS)",http://arxiv.org/abs/1410.5410,"Recently it was shown that the problem of Maximum Inner Product Search (MIPS)
+is efficient and it admits provably sub-linear hashing algorithms. Asymmetric
+transformations before hashing were the key in solving MIPS which was otherwise
+hard. In the prior work, the authors use asymmetric transformations which
+convert the problem of approximate MIPS into the problem of approximate near
+neighbor search which can be efficiently solved using hashing. In this work, we
+provide a different transformation which converts the problem of approximate
+MIPS into the problem of approximate cosine similarity search which can be
+efficiently solved using signed random projections. Theoretical analysis show
+that the new scheme is significantly better than the original scheme for MIPS.
+Experimental evaluations strongly support the theoretical findings.","Improved Asymmetric Locality Sensitive Hashing (ALSH) for Maximum Inner
+  Product Search (MIPS)[http://arxiv.org/abs/1410.5410]: Recently it was shown that the problem of Maximum Inner Product Search (MIPS)
+is efficient and it admits provably sub-linear hashing algorithms. Asymmetric
+transformations before hashing were the key in solving MIPS which was otherwise
+hard. In the prior work, the authors use asymmetric transformations which
+convert the problem of approximate MIPS into the problem of approximate near
+neighbor search which can be efficiently solved using hashing. In this work, we
+provide a different transformation which converts the problem of approximate
+MIPS into the problem of approximate cosine similarity search which can be
+efficiently solved using signed random projections. Theoretical analysis show
+that the new scheme is significantly better than the original scheme for MIPS.
+Experimental evaluations strongly support the theoretical findings."
+1809.08782,Norm-Ranging LSH for Maximum Inner Product Search,http://arxiv.org/abs/1809.08782,"Neyshabur and Srebro proposed Simple-LSH, which is the state-of-the-art
+hashing method for maximum inner product search (MIPS) with performance
+guarantee. We found that the performance of Simple-LSH, in both theory and
+practice, suffers from long tails in the 2-norm distribution of real datasets.
+We propose Norm-ranging LSH, which addresses the excessive normalization
+problem caused by long tails in Simple-LSH by partitioning a dataset into
+multiple sub-datasets and building a hash index for each sub-dataset
+independently. We prove that Norm-ranging LSH has lower query time complexity
+than Simple-LSH. We also show that the idea of partitioning the dataset can
+improve other hashing based methods for MIPS. To support efficient query
+processing on the hash indexes of the sub-datasets, a novel similarity metric
+is formulated. Experiments show that Norm-ranging LSH achieves an order of
+magnitude speedup over Simple-LSH for the same recall, thus significantly
+benefiting applications that involve MIPS.","Norm-Ranging LSH for Maximum Inner Product Search[http://arxiv.org/abs/1809.08782]: Neyshabur and Srebro proposed Simple-LSH, which is the state-of-the-art
+hashing method for maximum inner product search (MIPS) with performance
+guarantee. We found that the performance of Simple-LSH, in both theory and
+practice, suffers from long tails in the 2-norm distribution of real datasets.
+We propose Norm-ranging LSH, which addresses the excessive normalization
+problem caused by long tails in Simple-LSH by partitioning a dataset into
+multiple sub-datasets and building a hash index for each sub-dataset
+independently. We prove that Norm-ranging LSH has lower query time complexity
+than Simple-LSH. We also show that the idea of partitioning the dataset can
+improve other hashing based methods for MIPS. To support efficient query
+processing on the hash indexes of the sub-datasets, a novel similarity metric
+is formulated. Experiments show that Norm-ranging LSH achieves an order of
+magnitude speedup over Simple-LSH for the same recall, thus significantly
+benefiting applications that involve MIPS."
+1911.04654,"Norm-Explicit Quantization: Improving Vector Quantization for Maximum
+  Inner Product Search",http://arxiv.org/abs/1911.04654,"Vector quantization (VQ) techniques are widely used in similarity search for
+data compression, fast metric computation and etc. Originally designed for
+Euclidean distance, existing VQ techniques (e.g., PQ, AQ) explicitly or
+implicitly minimize the quantization error. In this paper, we present a new
+angle to analyze the quantization error, which decomposes the quantization
+error into norm error and direction error. We show that quantization errors in
+norm have much higher influence on inner products than quantization errors in
+direction, and small quantization error does not necessarily lead to good
+performance in maximum inner product search (MIPS). Based on this observation,
+we propose norm-explicit quantization (NEQ) --- a general paradigm that
+improves existing VQ techniques for MIPS. NEQ quantizes the norms of items in a
+dataset explicitly to reduce errors in norm, which is crucial for MIPS. For the
+direction vectors, NEQ can simply reuse an existing VQ technique to quantize
+them without modification. We conducted extensive experiments on a variety of
+datasets and parameter configurations. The experimental results show that NEQ
+improves the performance of various VQ techniques for MIPS, including PQ, OPQ,
+RQ and AQ.","Norm-Explicit Quantization: Improving Vector Quantization for Maximum
+  Inner Product Search[http://arxiv.org/abs/1911.04654]: Vector quantization (VQ) techniques are widely used in similarity search for
+data compression, fast metric computation and etc. Originally designed for
+Euclidean distance, existing VQ techniques (e.g., PQ, AQ) explicitly or
+implicitly minimize the quantization error. In this paper, we present a new
+angle to analyze the quantization error, which decomposes the quantization
+error into norm error and direction error. We show that quantization errors in
+norm have much higher influence on inner products than quantization errors in
+direction, and small quantization error does not necessarily lead to good
+performance in maximum inner product search (MIPS). Based on this observation,
+we propose norm-explicit quantization (NEQ) --- a general paradigm that
+improves existing VQ techniques for MIPS. NEQ quantizes the norms of items in a
+dataset explicitly to reduce errors in norm, which is crucial for MIPS. For the
+direction vectors, NEQ can simply reuse an existing VQ technique to quantize
+them without modification. We conducted extensive experiments on a variety of
+datasets and parameter configurations. The experimental results show that NEQ
+improves the performance of various VQ techniques for MIPS, including PQ, OPQ,
+RQ and AQ."
+1909.13459,"Understanding and Improving Proximity Graph based Maximum Inner Product
+  Search",http://arxiv.org/abs/1909.13459,"The inner-product navigable small world graph (ip-NSW) represents the
+state-of-the-art method for approximate maximum inner product search (MIPS) and
+it can achieve an order of magnitude speedup over the fastest baseline.
+However, to date it is still unclear where its exceptional performance comes
+from. In this paper, we show that there is a strong norm bias in the MIPS
+problem, which means that the large norm items are very likely to become the
+result of MIPS. Then we explain the good performance of ip-NSW as matching the
+norm bias of the MIPS problem - large norm items have big in-degrees in the
+ip-NSW proximity graph and a walk on the graph spends the majority of
+computation on these items, thus effectively avoids unnecessary computation on
+small norm items. Furthermore, we propose the ip-NSW+ algorithm, which improves
+ip-NSW by introducing an additional angular proximity graph. Search is first
+conducted on the angular graph to find the angular neighbors of a query and
+then the MIPS neighbors of these angular neighbors are used to initialize the
+candidate pool for search on the inner-product proximity graph. Experiment
+results show that ip-NSW+ consistently and significantly outperforms ip-NSW and
+provides more robust performance under different data distributions.","Understanding and Improving Proximity Graph based Maximum Inner Product
+  Search[http://arxiv.org/abs/1909.13459]: The inner-product navigable small world graph (ip-NSW) represents the
+state-of-the-art method for approximate maximum inner product search (MIPS) and
+it can achieve an order of magnitude speedup over the fastest baseline.
+However, to date it is still unclear where its exceptional performance comes
+from. In this paper, we show that there is a strong norm bias in the MIPS
+problem, which means that the large norm items are very likely to become the
+result of MIPS. Then we explain the good performance of ip-NSW as matching the
+norm bias of the MIPS problem - large norm items have big in-degrees in the
+ip-NSW proximity graph and a walk on the graph spends the majority of
+computation on these items, thus effectively avoids unnecessary computation on
+small norm items. Furthermore, we propose the ip-NSW+ algorithm, which improves
+ip-NSW by introducing an additional angular proximity graph. Search is first
+conducted on the angular graph to find the angular neighbors of a query and
+then the MIPS neighbors of these angular neighbors are used to initialize the
+candidate pool for search on the inner-product proximity graph. Experiment
+results show that ip-NSW+ consistently and significantly outperforms ip-NSW and
+provides more robust performance under different data distributions."
+1908.10396,Accelerating Large-Scale Inference with Anisotropic Vector Quantization,http://arxiv.org/abs/1908.10396,"Quantization based techniques are the current state-of-the-art for scaling
+maximum inner product search to massive databases. Traditional approaches to
+quantization aim to minimize the reconstruction error of the database points.
+Based on the observation that for a given query, the database points that have
+the largest inner products are more relevant, we develop a family of
+anisotropic quantization loss functions. Under natural statistical assumptions,
+we show that quantization with these loss functions leads to a new variant of
+vector quantization that more greatly penalizes the parallel component of a
+datapoint's residual relative to its orthogonal component. The proposed
+approach achieves state-of-the-art results on the public benchmarks available
+at \url(ann-benchmarks.com).","Accelerating Large-Scale Inference with Anisotropic Vector Quantization[http://arxiv.org/abs/1908.10396]: Quantization based techniques are the current state-of-the-art for scaling
+maximum inner product search to massive databases. Traditional approaches to
+quantization aim to minimize the reconstruction error of the database points.
+Based on the observation that for a given query, the database points that have
+the largest inner products are more relevant, we develop a family of
+anisotropic quantization loss functions. Under natural statistical assumptions,
+we show that quantization with these loss functions leads to a new variant of
+vector quantization that more greatly penalizes the parallel component of a
+datapoint's residual relative to its orthogonal component. The proposed
+approach achieves state-of-the-art results on the public benchmarks available
+at \url(ann-benchmarks.com)."
+2404.00774,SOAR: Improved Indexing for Approximate Nearest Neighbor Search,http://arxiv.org/abs/2404.00774,"This paper introduces SOAR: Spilling with Orthogonality-Amplified Residuals,
+a novel data indexing technique for approximate nearest neighbor (ANN) search.
+SOAR extends upon previous approaches to ANN search, such as spill trees, that
+utilize multiple redundant representations while partitioning the data to
+reduce the probability of missing a nearest neighbor during search. Rather than
+training and computing these redundant representations independently, however,
+SOAR uses an orthogonality-amplified residual loss, which optimizes each
+representation to compensate for cases where other representations perform
+poorly. This drastically improves the overall index quality, resulting in
+state-of-the-art ANN benchmark performance while maintaining fast indexing
+times and low memory consumption.","SOAR: Improved Indexing for Approximate Nearest Neighbor Search[http://arxiv.org/abs/2404.00774]: This paper introduces SOAR: Spilling with Orthogonality-Amplified Residuals,
+a novel data indexing technique for approximate nearest neighbor (ANN) search.
+SOAR extends upon previous approaches to ANN search, such as spill trees, that
+utilize multiple redundant representations while partitioning the data to
+reduce the probability of missing a nearest neighbor during search. Rather than
+training and computing these redundant representations independently, however,
+SOAR uses an orthogonality-amplified residual loss, which optimizes each
+representation to compensate for cases where other representations perform
+poorly. This drastically improves the overall index quality, resulting in
+state-of-the-art ANN benchmark performance while maintaining fast indexing
+times and low memory consumption."
+1410.5518,On Symmetric and Asymmetric LSHs for Inner Product Search,http://arxiv.org/abs/1410.5518,"We consider the problem of designing locality sensitive hashes (LSH) for
+inner product similarity, and of the power of asymmetric hashes in this
+context. Shrivastava and Li argue that there is no symmetric LSH for the
+problem and propose an asymmetric LSH based on different mappings for query and
+database points. However, we show there does exist a simple symmetric LSH that
+enjoys stronger guarantees and better empirical performance than the asymmetric
+LSH they suggest. We also show a variant of the settings where asymmetry is
+in-fact needed, but there a different asymmetric LSH is required.","On Symmetric and Asymmetric LSHs for Inner Product Search[http://arxiv.org/abs/1410.5518]: We consider the problem of designing locality sensitive hashes (LSH) for
+inner product similarity, and of the power of asymmetric hashes in this
+context. Shrivastava and Li argue that there is no symmetric LSH for the
+problem and propose an asymmetric LSH based on different mappings for query and
+database points. However, we show there does exist a simple symmetric LSH that
+enjoys stronger guarantees and better empirical performance than the asymmetric
+LSH they suggest. We also show a variant of the settings where asymmetry is
+in-fact needed, but there a different asymmetric LSH is required."

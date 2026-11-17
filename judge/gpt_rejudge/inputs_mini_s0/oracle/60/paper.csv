@@ -1,0 +1,462 @@
+id,title,url,snippet,context
+2202.04348,"MBCT: Tree-Based Feature-Aware Binning for Individual Uncertainty
+  Calibration",http://arxiv.org/abs/2202.04348,"Most machine learning classifiers only concern classification accuracy, while
+certain applications (such as medical diagnosis, meteorological forecasting,
+and computation advertising) require the model to predict the true probability,
+known as a calibrated estimate. In previous work, researchers have developed
+several calibration methods to post-process the outputs of a predictor to
+obtain calibrated values, such as binning and scaling methods. Compared with
+scaling, binning methods are shown to have distribution-free theoretical
+guarantees, which motivates us to prefer binning methods for calibration.
+However, we notice that existing binning methods have several drawbacks: (a)
+the binning scheme only considers the original prediction values, thus limiting
+the calibration performance; and (b) the binning approach is non-individual,
+mapping multiple samples in a bin to the same value, and thus is not suitable
+for order-sensitive applications. In this paper, we propose a feature-aware
+binning framework, called Multiple Boosting Calibration Trees (MBCT), along
+with a multi-view calibration loss to tackle the above issues. Our MBCT
+optimizes the binning scheme by the tree structures of features, and adopts a
+linear function in a tree node to achieve individual calibration. Our MBCT is
+non-monotonic, and has the potential to improve order accuracy, due to its
+learnable binning scheme and the individual calibration. We conduct
+comprehensive experiments on three datasets in different fields. Results show
+that our method outperforms all competing models in terms of both calibration
+error and order accuracy. We also conduct simulation experiments, justifying
+that the proposed multi-view calibration loss is a better metric in modeling
+calibration error.","MBCT: Tree-Based Feature-Aware Binning for Individual Uncertainty
+  Calibration[http://arxiv.org/abs/2202.04348]: Most machine learning classifiers only concern classification accuracy, while
+certain applications (such as medical diagnosis, meteorological forecasting,
+and computation advertising) require the model to predict the true probability,
+known as a calibrated estimate. In previous work, researchers have developed
+several calibration methods to post-process the outputs of a predictor to
+obtain calibrated values, such as binning and scaling methods. Compared with
+scaling, binning methods are shown to have distribution-free theoretical
+guarantees, which motivates us to prefer binning methods for calibration.
+However, we notice that existing binning methods have several drawbacks: (a)
+the binning scheme only considers the original prediction values, thus limiting
+the calibration performance; and (b) the binning approach is non-individual,
+mapping multiple samples in a bin to the same value, and thus is not suitable
+for order-sensitive applications. In this paper, we propose a feature-aware
+binning framework, called Multiple Boosting Calibration Trees (MBCT), along
+with a multi-view calibration loss to tackle the above issues. Our MBCT
+optimizes the binning scheme by the tree structures of features, and adopts a
+linear function in a tree node to achieve individual calibration. Our MBCT is
+non-monotonic, and has the potential to improve order accuracy, due to its
+learnable binning scheme and the individual calibration. We conduct
+comprehensive experiments on three datasets in different fields. Results show
+that our method outperforms all competing models in terms of both calibration
+error and order accuracy. We also conduct simulation experiments, justifying
+that the proposed multi-view calibration loss is a better metric in modeling
+calibration error."
+1905.10713,"Field-aware Calibration: A Simple and Empirically Strong Method for
+  Reliable Probabilistic Predictions",http://arxiv.org/abs/1905.10713,"It is often observed that the probabilistic predictions given by a machine
+learning model can disagree with averaged actual outcomes on specific subsets
+of data, which is also known as the issue of miscalibration. It is responsible
+for the unreliability of practical machine learning systems. For example, in
+online advertising, an ad can receive a click-through rate prediction of 0.1
+over some population of users where its actual click rate is 0.15. In such
+cases, the probabilistic predictions have to be fixed before the system can be
+deployed.
+  In this paper, we first introduce a new evaluation metric named field-level
+calibration error that measures the bias in predictions over the sensitive
+input field that the decision-maker concerns. We show that existing post-hoc
+calibration methods have limited improvements in the new field-level metric and
+other non-calibration metrics such as the AUC score. To this end, we propose
+Neural Calibration, a simple yet powerful post-hoc calibration method that
+learns to calibrate by making full use of the field-aware information over the
+validation set. We present extensive experiments on five large-scale datasets.
+The results showed that Neural Calibration significantly improves against
+uncalibrated predictions in common metrics such as the negative log-likelihood,
+Brier score and AUC, as well as the proposed field-level calibration error.","Field-aware Calibration: A Simple and Empirically Strong Method for
+  Reliable Probabilistic Predictions[http://arxiv.org/abs/1905.10713]: It is often observed that the probabilistic predictions given by a machine
+learning model can disagree with averaged actual outcomes on specific subsets
+of data, which is also known as the issue of miscalibration. It is responsible
+for the unreliability of practical machine learning systems. For example, in
+online advertising, an ad can receive a click-through rate prediction of 0.1
+over some population of users where its actual click rate is 0.15. In such
+cases, the probabilistic predictions have to be fixed before the system can be
+deployed.
+  In this paper, we first introduce a new evaluation metric named field-level
+calibration error that measures the bias in predictions over the sensitive
+input field that the decision-maker concerns. We show that existing post-hoc
+calibration methods have limited improvements in the new field-level metric and
+other non-calibration metrics such as the AUC score. To this end, we propose
+Neural Calibration, a simple yet powerful post-hoc calibration method that
+learns to calibrate by making full use of the field-aware information over the
+validation set. We present extensive experiments on five large-scale datasets.
+The results showed that Neural Calibration significantly improves against
+uncalibrated predictions in common metrics such as the negative log-likelihood,
+Brier score and AUC, as well as the proposed field-level calibration error."
+2208.06164,"Joint Optimization of Ranking and Calibration with Contextualized Hybrid
+  Model",http://arxiv.org/abs/2208.06164,"Despite the development of ranking optimization techniques, pointwise loss
+remains the dominating approach for click-through rate prediction. It can be
+attributed to the calibration ability of the pointwise loss since the
+prediction can be viewed as the click probability. In practice, a CTR
+prediction model is also commonly assessed with the ranking ability. To
+optimize the ranking ability, ranking loss (e.g., pairwise or listwise loss)
+can be adopted as they usually achieve better rankings than pointwise loss.
+Previous studies have experimented with a direct combination of the two losses
+to obtain the benefit from both losses and observed an improved performance.
+However, previous studies break the meaning of output logit as the
+click-through rate, which may lead to sub-optimal solutions. To address this
+issue, we propose an approach that can Jointly optimize the Ranking and
+Calibration abilities (JRC for short). JRC improves the ranking ability by
+contrasting the logit value for the sample with different labels and constrains
+the predicted probability to be a function of the logit subtraction. We further
+show that JRC consolidates the interpretation of logits, where the logits model
+the joint distribution. With such an interpretation, we prove that JRC
+approximately optimizes the contextualized hybrid discriminative-generative
+objective. Experiments on public and industrial datasets and online A/B testing
+show that our approach improves both ranking and calibration abilities. Since
+May 2022, JRC has been deployed on the display advertising platform of Alibaba
+and has obtained significant performance improvements.","Joint Optimization of Ranking and Calibration with Contextualized Hybrid
+  Model[http://arxiv.org/abs/2208.06164]: Despite the development of ranking optimization techniques, pointwise loss
+remains the dominating approach for click-through rate prediction. It can be
+attributed to the calibration ability of the pointwise loss since the
+prediction can be viewed as the click probability. In practice, a CTR
+prediction model is also commonly assessed with the ranking ability. To
+optimize the ranking ability, ranking loss (e.g., pairwise or listwise loss)
+can be adopted as they usually achieve better rankings than pointwise loss.
+Previous studies have experimented with a direct combination of the two losses
+to obtain the benefit from both losses and observed an improved performance.
+However, previous studies break the meaning of output logit as the
+click-through rate, which may lead to sub-optimal solutions. To address this
+issue, we propose an approach that can Jointly optimize the Ranking and
+Calibration abilities (JRC for short). JRC improves the ranking ability by
+contrasting the logit value for the sample with different labels and constrains
+the predicted probability to be a function of the logit subtraction. We further
+show that JRC consolidates the interpretation of logits, where the logits model
+the joint distribution. With such an interpretation, we prove that JRC
+approximately optimizes the contextualized hybrid discriminative-generative
+objective. Experiments on public and industrial datasets and online A/B testing
+show that our approach improves both ranking and calibration abilities. Since
+May 2022, JRC has been deployed on the display advertising platform of Alibaba
+and has obtained significant performance improvements."
+2211.01494,"Regression Compatible Listwise Objectives for Calibrated Ranking with
+  Binary Relevance",http://arxiv.org/abs/2211.01494,"As Learning-to-Rank (LTR) approaches primarily seek to improve ranking
+quality, their output scores are not scale-calibrated by design. This
+fundamentally limits LTR usage in score-sensitive applications. Though a simple
+multi-objective approach that combines a regression and a ranking objective can
+effectively learn scale-calibrated scores, we argue that the two objectives are
+not necessarily compatible, which makes the trade-off less ideal for either of
+them. In this paper, we propose a practical regression compatible ranking (RCR)
+approach that achieves a better trade-off, where the two ranking and regression
+components are proved to be mutually aligned. Although the same idea applies to
+ranking with both binary and graded relevance, we mainly focus on binary labels
+in this paper. We evaluate the proposed approach on several public LTR
+benchmarks and show that it consistently achieves either best or competitive
+result in terms of both regression and ranking metrics, and significantly
+improves the Pareto frontiers in the context of multi-objective optimization.
+Furthermore, we evaluated the proposed approach on YouTube Search and found
+that it not only improved the ranking quality of the production pCTR model, but
+also brought gains to the click prediction accuracy. The proposed approach has
+been successfully deployed in the YouTube production system.","Regression Compatible Listwise Objectives for Calibrated Ranking with
+  Binary Relevance[http://arxiv.org/abs/2211.01494]: As Learning-to-Rank (LTR) approaches primarily seek to improve ranking
+quality, their output scores are not scale-calibrated by design. This
+fundamentally limits LTR usage in score-sensitive applications. Though a simple
+multi-objective approach that combines a regression and a ranking objective can
+effectively learn scale-calibrated scores, we argue that the two objectives are
+not necessarily compatible, which makes the trade-off less ideal for either of
+them. In this paper, we propose a practical regression compatible ranking (RCR)
+approach that achieves a better trade-off, where the two ranking and regression
+components are proved to be mutually aligned. Although the same idea applies to
+ranking with both binary and graded relevance, we mainly focus on binary labels
+in this paper. We evaluate the proposed approach on several public LTR
+benchmarks and show that it consistently achieves either best or competitive
+result in terms of both regression and ranking metrics, and significantly
+improves the Pareto frontiers in the context of multi-objective optimization.
+Furthermore, we evaluated the proposed approach on YouTube Search and found
+that it not only improved the ranking quality of the production pCTR model, but
+also brought gains to the click prediction accuracy. The proposed approach has
+been successfully deployed in the YouTube production system."
+2312.08727,"Calibration-compatible Listwise Distillation of Privileged Features for
+  CTR Prediction",http://arxiv.org/abs/2312.08727,"In machine learning systems, privileged features refer to the features that
+are available during offline training but inaccessible for online serving.
+Previous studies have recognized the importance of privileged features and
+explored ways to tackle online-offline discrepancies. A typical practice is
+privileged features distillation (PFD): train a teacher model using all
+features (including privileged ones) and then distill the knowledge from the
+teacher model using a student model (excluding the privileged features), which
+is then employed for online serving. In practice, the pointwise cross-entropy
+loss is often adopted for PFD. However, this loss is insufficient to distill
+the ranking ability for CTR prediction. First, it does not consider the
+non-i.i.d. characteristic of the data distribution, i.e., other items on the
+same page significantly impact the click probability of the candidate item.
+Second, it fails to consider the relative item order ranked by the teacher
+model's predictions, which is essential to distill the ranking ability. To
+address these issues, we first extend the pointwise-based PFD to the
+listwise-based PFD. We then define the calibration-compatible property of
+distillation loss and show that commonly used listwise losses do not satisfy
+this property when employed as distillation loss, thus compromising the model's
+calibration ability, which is another important measure for CTR prediction. To
+tackle this dilemma, we propose Calibration-compatible LIstwise Distillation
+(CLID), which employs carefully-designed listwise distillation loss to achieve
+better ranking ability than the pointwise-based PFD while preserving the
+model's calibration ability. We theoretically prove it is
+calibration-compatible. Extensive experiments on public datasets and a
+production dataset collected from the display advertising system of Alibaba
+further demonstrate the effectiveness of CLID.","Calibration-compatible Listwise Distillation of Privileged Features for
+  CTR Prediction[http://arxiv.org/abs/2312.08727]: In machine learning systems, privileged features refer to the features that
+are available during offline training but inaccessible for online serving.
+Previous studies have recognized the importance of privileged features and
+explored ways to tackle online-offline discrepancies. A typical practice is
+privileged features distillation (PFD): train a teacher model using all
+features (including privileged ones) and then distill the knowledge from the
+teacher model using a student model (excluding the privileged features), which
+is then employed for online serving. In practice, the pointwise cross-entropy
+loss is often adopted for PFD. However, this loss is insufficient to distill
+the ranking ability for CTR prediction. First, it does not consider the
+non-i.i.d. characteristic of the data distribution, i.e., other items on the
+same page significantly impact the click probability of the candidate item.
+Second, it fails to consider the relative item order ranked by the teacher
+model's predictions, which is essential to distill the ranking ability. To
+address these issues, we first extend the pointwise-based PFD to the
+listwise-based PFD. We then define the calibration-compatible property of
+distillation loss and show that commonly used listwise losses do not satisfy
+this property when employed as distillation loss, thus compromising the model's
+calibration ability, which is another important measure for CTR prediction. To
+tackle this dilemma, we propose Calibration-compatible LIstwise Distillation
+(CLID), which employs carefully-designed listwise distillation loss to achieve
+better ranking ability than the pointwise-based PFD while preserving the
+model's calibration ability. We theoretically prove it is
+calibration-compatible. Extensive experiments on public datasets and a
+production dataset collected from the display advertising system of Alibaba
+further demonstrate the effectiveness of CLID."
+2112.07428,Obtaining Calibrated Probabilities with Personalized Ranking Models,http://arxiv.org/abs/2112.07428,"For personalized ranking models, the well-calibrated probability of an item
+being preferred by a user has great practical value. While existing work shows
+promising results in image classification, probability calibration has not been
+much explored for personalized ranking. In this paper, we aim to estimate the
+calibrated probability of how likely a user will prefer an item. We investigate
+various parametric distributions and propose two parametric calibration
+methods, namely Gaussian calibration and Gamma calibration. Each proposed
+method can be seen as a post-processing function that maps the ranking scores
+of pre-trained models to well-calibrated preference probabilities, without
+affecting the recommendation performance. We also design the unbiased empirical
+risk minimization framework that guides the calibration methods to learning of
+true preference probability from the biased user-item interaction dataset.
+Extensive evaluations with various personalized ranking models on real-world
+datasets show that both the proposed calibration methods and the unbiased
+empirical risk minimization significantly improve the calibration performance.","Obtaining Calibrated Probabilities with Personalized Ranking Models[http://arxiv.org/abs/2112.07428]: For personalized ranking models, the well-calibrated probability of an item
+being preferred by a user has great practical value. While existing work shows
+promising results in image classification, probability calibration has not been
+much explored for personalized ranking. In this paper, we aim to estimate the
+calibrated probability of how likely a user will prefer an item. We investigate
+various parametric distributions and propose two parametric calibration
+methods, namely Gaussian calibration and Gamma calibration. Each proposed
+method can be seen as a post-processing function that maps the ranking scores
+of pre-trained models to well-calibrated preference probabilities, without
+affecting the recommendation performance. We also design the unbiased empirical
+risk minimization framework that guides the calibration methods to learning of
+true preference probability from the biased user-item interaction dataset.
+Extensive evaluations with various personalized ranking models on real-world
+datasets show that both the proposed calibration methods and the unbiased
+empirical risk minimization significantly improve the calibration performance."
+2401.09507,"Deep Ensemble Shape Calibration: Multi-Field Post-hoc Calibration in
+  Online Advertising",http://arxiv.org/abs/2401.09507,"In the e-commerce advertising scenario, estimating the true probabilities
+(known as a calibrated estimate) on Click-Through Rate (CTR) and Conversion
+Rate (CVR) is critical. Previous research has introduced numerous solutions for
+addressing the calibration problem. These methods typically involve the
+training of calibrators using a validation set and subsequently applying these
+calibrators to correct the original estimated values during online inference.
+  However, what sets e-commerce advertising scenarios apart is the challenge of
+multi-field calibration. Multi-field calibration requires achieving calibration
+in each field. In order to achieve multi-field calibration, it is necessary to
+have a strong data utilization ability. Because the quantity of pCTR specified
+range for a single field-value (such as user ID and item ID) sample is
+relatively small, this makes the calibrator more difficult to train. However,
+existing methods have difficulty effectively addressing these issues.
+  To solve these problems, we propose a new method named Deep Ensemble Shape
+Calibration (DESC). In terms of business understanding and interpretability, we
+decompose multi-field calibration into value calibration and shape calibration.
+We introduce innovative basis calibration functions, which enhance both
+function expression capabilities and data utilization by combining these basis
+calibration functions. A significant advancement lies in the development of an
+allocator capable of allocating the most suitable calibrators to different
+estimation error distributions within diverse fields and values. We achieve
+significant improvements in both public and industrial datasets. In online
+experiments, we observe a +2.5% increase in CVR and +4.0% in GMV (Gross
+Merchandise Volume). Our code is now available at:
+https://github.com/HaoYang0123/DESC.","Deep Ensemble Shape Calibration: Multi-Field Post-hoc Calibration in
+  Online Advertising[http://arxiv.org/abs/2401.09507]: In the e-commerce advertising scenario, estimating the true probabilities
+(known as a calibrated estimate) on Click-Through Rate (CTR) and Conversion
+Rate (CVR) is critical. Previous research has introduced numerous solutions for
+addressing the calibration problem. These methods typically involve the
+training of calibrators using a validation set and subsequently applying these
+calibrators to correct the original estimated values during online inference.
+  However, what sets e-commerce advertising scenarios apart is the challenge of
+multi-field calibration. Multi-field calibration requires achieving calibration
+in each field. In order to achieve multi-field calibration, it is necessary to
+have a strong data utilization ability. Because the quantity of pCTR specified
+range for a single field-value (such as user ID and item ID) sample is
+relatively small, this makes the calibrator more difficult to train. However,
+existing methods have difficulty effectively addressing these issues.
+  To solve these problems, we propose a new method named Deep Ensemble Shape
+Calibration (DESC). In terms of business understanding and interpretability, we
+decompose multi-field calibration into value calibration and shape calibration.
+We introduce innovative basis calibration functions, which enhance both
+function expression capabilities and data utilization by combining these basis
+calibration functions. A significant advancement lies in the development of an
+allocator capable of allocating the most suitable calibrators to different
+estimation error distributions within diverse fields and values. We achieve
+significant improvements in both public and industrial datasets. In online
+experiments, we observe a +2.5% increase in CVR and +4.0% in GMV (Gross
+Merchandise Volume). Our code is now available at:
+https://github.com/HaoYang0123/DESC."
+,Transforming classifier scores into accurate multiclass probability estimates,https://doi.org/10.1145/775047.775151,,Transforming classifier scores into accurate multiclass probability estimates[https://doi.org/10.1145/775047.775151]: 
+,Probabilistic outputs for support vector machines and comparisons to regularized likelihood methods,https://home.cs.colorado.edu/~mozer/Teaching/syllabi/6622/papers/Platt1999.pdf,,Probabilistic outputs for support vector machines and comparisons to regularized likelihood methods[https://home.cs.colorado.edu/~mozer/Teaching/syllabi/6622/papers/Platt1999.pdf]: 
+,Beta calibration: a well-founded and easily implemented improvement on logistic calibration for binary classifiers,http://proceedings.mlr.press/v54/kull17a.html,,Beta calibration: a well-founded and easily implemented improvement on logistic calibration for binary classifiers[http://proceedings.mlr.press/v54/kull17a.html]: 
+2205.07295,"Posterior Probability Matters: Doubly-Adaptive Calibration for Neural
+  Predictions in Online Advertising",http://arxiv.org/abs/2205.07295,"Predicting user response probabilities is vital for ad ranking and bidding.
+We hope that predictive models can produce accurate probabilistic predictions
+that reflect true likelihoods. Calibration techniques aim to post-process model
+predictions to posterior probabilities. Field-level calibration -- which
+performs calibration w.r.t. to a specific field value -- is fine-grained and
+more practical. In this paper we propose a doubly-adaptive approach AdaCalib.
+It learns an isotonic function family to calibrate model predictions with the
+guidance of posterior statistics, and field-adaptive mechanisms are designed to
+ensure that the posterior is appropriate for the field value to be calibrated.
+Experiments verify that AdaCalib achieves significant improvement on
+calibration performance. It has been deployed online and beats previous
+approach.","Posterior Probability Matters: Doubly-Adaptive Calibration for Neural
+  Predictions in Online Advertising[http://arxiv.org/abs/2205.07295]: Predicting user response probabilities is vital for ad ranking and bidding.
+We hope that predictive models can produce accurate probabilistic predictions
+that reflect true likelihoods. Calibration techniques aim to post-process model
+predictions to posterior probabilities. Field-level calibration -- which
+performs calibration w.r.t. to a specific field value -- is fine-grained and
+more practical. In this paper we propose a doubly-adaptive approach AdaCalib.
+It learns an isotonic function family to calibrate model predictions with the
+guidance of posterior statistics, and field-adaptive mechanisms are designed to
+ensure that the posterior is appropriate for the field value to be calibrated.
+Experiments verify that AdaCalib achieves significant improvement on
+calibration performance. It has been deployed online and beats previous
+approach."
+2406.08010,A Self-boosted Framework for Calibrated Ranking,http://arxiv.org/abs/2406.08010,"Scale-calibrated ranking systems are ubiquitous in real-world applications
+nowadays, which pursue accurate ranking quality and calibrated probabilistic
+predictions simultaneously. For instance, in the advertising ranking system,
+the predicted click-through rate (CTR) is utilized for ranking and required to
+be calibrated for the downstream cost-per-click ads bidding. Recently,
+multi-objective based methods have been wildly adopted as a standard approach
+for Calibrated Ranking, which incorporates the combination of two loss
+functions: a pointwise loss that focuses on calibrated absolute values and a
+ranking loss that emphasizes relative orderings. However, when applied to
+industrial online applications, existing multi-objective CR approaches still
+suffer from two crucial limitations. First, previous methods need to aggregate
+the full candidate list within a single mini-batch to compute the ranking loss.
+Such aggregation strategy violates extensive data shuffling which has long been
+proven beneficial for preventing overfitting, and thus degrades the training
+effectiveness. Second, existing multi-objective methods apply the two
+inherently conflicting loss functions on a single probabilistic prediction,
+which results in a sub-optimal trade-off between calibration and ranking. To
+tackle the two limitations, we propose a Self-Boosted framework for Calibrated
+Ranking (SBCR).","A Self-boosted Framework for Calibrated Ranking[http://arxiv.org/abs/2406.08010]: Scale-calibrated ranking systems are ubiquitous in real-world applications
+nowadays, which pursue accurate ranking quality and calibrated probabilistic
+predictions simultaneously. For instance, in the advertising ranking system,
+the predicted click-through rate (CTR) is utilized for ranking and required to
+be calibrated for the downstream cost-per-click ads bidding. Recently,
+multi-objective based methods have been wildly adopted as a standard approach
+for Calibrated Ranking, which incorporates the combination of two loss
+functions: a pointwise loss that focuses on calibrated absolute values and a
+ranking loss that emphasizes relative orderings. However, when applied to
+industrial online applications, existing multi-objective CR approaches still
+suffer from two crucial limitations. First, previous methods need to aggregate
+the full candidate list within a single mini-batch to compute the ranking loss.
+Such aggregation strategy violates extensive data shuffling which has long been
+proven beneficial for preventing overfitting, and thus degrades the training
+effectiveness. Second, existing multi-objective methods apply the two
+inherently conflicting loss functions on a single probabilistic prediction,
+which results in a sub-optimal trade-off between calibration and ranking. To
+tackle the two limitations, we propose a Self-Boosted framework for Calibrated
+Ranking (SBCR)."
+2106.07998,Revisiting the Calibration of Modern Neural Networks,http://arxiv.org/abs/2106.07998,"Accurate estimation of predictive uncertainty (model calibration) is
+essential for the safe application of neural networks. Many instances of
+miscalibration in modern neural networks have been reported, suggesting a trend
+that newer, more accurate models produce poorly calibrated predictions. Here,
+we revisit this question for recent state-of-the-art image classification
+models. We systematically relate model calibration and accuracy, and find that
+the most recent models, notably those not using convolutions, are among the
+best calibrated. Trends observed in prior model generations, such as decay of
+calibration with distribution shift or model size, are less pronounced in
+recent architectures. We also show that model size and amount of pretraining do
+not fully explain these differences, suggesting that architecture is a major
+determinant of calibration properties.","Revisiting the Calibration of Modern Neural Networks[http://arxiv.org/abs/2106.07998]: Accurate estimation of predictive uncertainty (model calibration) is
+essential for the safe application of neural networks. Many instances of
+miscalibration in modern neural networks have been reported, suggesting a trend
+that newer, more accurate models produce poorly calibrated predictions. Here,
+we revisit this question for recent state-of-the-art image classification
+models. We systematically relate model calibration and accuracy, and find that
+the most recent models, notably those not using convolutions, are among the
+best calibrated. Trends observed in prior model generations, such as decay of
+calibration with distribution shift or model size, are less pronounced in
+recent architectures. We also show that model size and amount of pretraining do
+not fully explain these differences, suggesting that architecture is a major
+determinant of calibration properties."
+2402.17655,Confidence-Aware Multi-Field Model Calibration,http://arxiv.org/abs/2402.17655,"Accurately predicting the probabilities of user feedback, such as clicks and
+conversions, is critical for advertisement ranking and bidding. However, there
+often exist unwanted mismatches between predicted probabilities and true
+likelihoods due to the rapid shift of data distributions and intrinsic model
+biases. Calibration aims to address this issue by post-processing model
+predictions, and field-aware calibration can adjust model output on different
+feature field values to satisfy fine-grained advertising demands.
+Unfortunately, the observed samples corresponding to certain field values can
+be seriously limited to make confident calibrations, which may yield bias
+amplification and online disturbance. In this paper, we propose a
+confidence-aware multi-field calibration method, which adaptively adjusts the
+calibration intensity based on confidence levels derived from sample
+statistics. It also utilizes multiple fields for joint model calibration
+according to their importance to mitigate the impact of data sparsity on a
+single field. Extensive offline and online experiments show the superiority of
+our method in boosting advertising performance and reducing prediction
+deviations.","Confidence-Aware Multi-Field Model Calibration[http://arxiv.org/abs/2402.17655]: Accurately predicting the probabilities of user feedback, such as clicks and
+conversions, is critical for advertisement ranking and bidding. However, there
+often exist unwanted mismatches between predicted probabilities and true
+likelihoods due to the rapid shift of data distributions and intrinsic model
+biases. Calibration aims to address this issue by post-processing model
+predictions, and field-aware calibration can adjust model output on different
+feature field values to satisfy fine-grained advertising demands.
+Unfortunately, the observed samples corresponding to certain field values can
+be seriously limited to make confident calibrations, which may yield bias
+amplification and online disturbance. In this paper, we propose a
+confidence-aware multi-field calibration method, which adaptively adjusts the
+calibration intensity based on confidence levels derived from sample
+statistics. It also utilizes multiple fields for joint model calibration
+according to their importance to mitigate the impact of data sparsity on a
+single field. Extensive offline and online experiments show the superiority of
+our method in boosting advertising performance and reducing prediction
+deviations."
+2402.06859,LiRank: Industrial Large Scale Ranking Models at LinkedIn,http://arxiv.org/abs/2402.06859,"We present LiRank, a large-scale ranking framework at LinkedIn that brings to
+production state-of-the-art modeling architectures and optimization methods. We
+unveil several modeling improvements, including Residual DCN, which adds
+attention and residual connections to the famous DCNv2 architecture. We share
+insights into combining and tuning SOTA architectures to create a unified
+model, including Dense Gating, Transformers and Residual DCN. We also propose
+novel techniques for calibration and describe how we productionalized deep
+learning based explore/exploit methods. To enable effective, production-grade
+serving of large ranking models, we detail how to train and compress models
+using quantization and vocabulary compression. We provide details about the
+deployment setup for large-scale use cases of Feed ranking, Jobs
+Recommendations, and Ads click-through rate (CTR) prediction. We summarize our
+learnings from various A/B tests by elucidating the most effective technical
+approaches. These ideas have contributed to relative metrics improvements
+across the board at LinkedIn: +0.5% member sessions in the Feed, +1.76%
+qualified job applications for Jobs search and recommendations, and +4.3% for
+Ads CTR. We hope this work can provide practical insights and solutions for
+practitioners interested in leveraging large-scale deep ranking systems.","LiRank: Industrial Large Scale Ranking Models at LinkedIn[http://arxiv.org/abs/2402.06859]: We present LiRank, a large-scale ranking framework at LinkedIn that brings to
+production state-of-the-art modeling architectures and optimization methods. We
+unveil several modeling improvements, including Residual DCN, which adds
+attention and residual connections to the famous DCNv2 architecture. We share
+insights into combining and tuning SOTA architectures to create a unified
+model, including Dense Gating, Transformers and Residual DCN. We also propose
+novel techniques for calibration and describe how we productionalized deep
+learning based explore/exploit methods. To enable effective, production-grade
+serving of large ranking models, we detail how to train and compress models
+using quantization and vocabulary compression. We provide details about the
+deployment setup for large-scale use cases of Feed ranking, Jobs
+Recommendations, and Ads click-through rate (CTR) prediction. We summarize our
+learnings from various A/B tests by elucidating the most effective technical
+approaches. These ideas have contributed to relative metrics improvements
+across the board at LinkedIn: +0.5% member sessions in the Feed, +1.76%
+qualified job applications for Jobs search and recommendations, and +4.3% for
+Ads CTR. We hope this work can provide practical insights and solutions for
+practitioners interested in leveraging large-scale deep ranking systems."
+,Scale Calibration of Deep Ranking Models,https://doi.org/10.1145/3534678.3539072,,Scale Calibration of Deep Ranking Models[https://doi.org/10.1145/3534678.3539072]: 
+,Beyond Binary Preference: Leveraging Bayesian Approaches for Joint Optimization of Ranking and Calibration,https://doi.org/10.1145/3637528.3671577,,Beyond Binary Preference: Leveraging Bayesian Approaches for Joint Optimization of Ranking and Calibration[https://doi.org/10.1145/3637528.3671577]: 

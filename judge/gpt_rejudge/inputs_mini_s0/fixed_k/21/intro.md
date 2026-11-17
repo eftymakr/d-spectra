@@ -1,0 +1,30 @@
+## Related Works
+
+Neural rendering has become a prominent approach for reconstructing 3D scenes from 2D images by learning continuous implicit representations that capture scene geometry and appearance. Early neural implicit methods rely on multi-view inputs to optimize scene representations but tend to require a dense set of calibrated views to achieve high-fidelity reconstruction, limiting scalability and performance in complex or dynamic environments where some viewpoints are unavailable \[[2503.18897](http://arxiv.org/abs/2503.18897)\]\[[2309.15164](http://arxiv.org/abs/2309.15164)\]\[[2210.1117](http://arxiv.org/abs/2210.11170)\]. To alleviate this, recent work has incorporated scene priors and shape libraries to better initialize and complete object geometries, improving reconstruction quality with fewer views \[[2503.18897](http://arxiv.org/abs/2503.18897)\]\[[2210.1117](http://arxiv.org/abs/2210.11170)\]\[[2101.0686](http://arxiv.org/abs/2101.06860)\].
+
+The challenge of limited input views has motivated research into data augmentation techniques that enrich training datasets or input sequences. Video frame interpolation (VFI), which synthesizes intermediate frames between given video frames, is a natural candidate for augmenting multi-view or sequential data in neural rendering. Traditional VFI methods primarily rely on explicit motion estimation such as optical flow, but these can struggle with occlusions, large motions, or lighting changes \[[1708.01692](http://arxiv.org/abs/1708.01692)\]\[[1703.07514](http://arxiv.org/abs/1703.07514)\]. Deep learning approaches address these challenges by learning adaptive convolutional kernels or neural fields that implicitly model motion and appearance changes, enabling higher quality and more robust interpolation \[[1708.01692](http://arxiv.org/abs/1708.01692)\]\[[2203.00137](http://arxiv.org/abs/2203.00137)\]\[[1703.07514](http://arxiv.org/abs/1703.07514)\]\[[2307.16144](http://arxiv.org/abs/2307.16144)\].
+
+Several recent VFI methods have advanced the state of the art by integrating attention mechanisms, multi-scale architectures, and novel loss functions. Transformer-based models capture long-range spatial and temporal dependencies, enhancing detail preservation especially in large motion scenarios \[[2111.13817](http://arxiv.org/abs/2111.13817)\]\[[2307.16144](http://arxiv.org/abs/2307.16144)\]. Methods like FILM use multi-scale weight sharing and Gram matrix losses to produce temporally coherent and visually crisp frames \[[2202.04901](http://arxiv.org/abs/2202.04901)\]. Other approaches incorporate depth information and event-based sensors to handle occlusions and dynamic scene content more effectively \[[2303.02025](http://arxiv.org/abs/2303.02025)\]\[[1904.0083](http://arxiv.org/abs/1904.00830)\]. Furthermore, lightweight models and splatting-based synthesis have improved computational efficiency for high-resolution interpolation, facilitating practical deployment \[[2201.10075](http://arxiv.org/abs/2201.10075)\]\[[2211.10791](http://arxiv.org/abs/2211.10791)\].
+
+In the context of neural rendering, leveraging VFI for data augmentation has begun to show promise. By synthesizing intermediate views or frames, VFI can implicitly model camera motion and fill in missing viewpoints, effectively acting as a learned prior that enriches photo supervision during 3D reconstruction optimization \[[2203.00137](http://arxiv.org/abs/2203.00137)\]\[[2210.1117](http://arxiv.org/abs/2210.11170)\]. This augmentation can improve reconstruction completeness and fidelity, particularly in dynamic scenes where certain object angles are never directly observed. Additionally, unsupervised and self-supervised VFI frameworks reduce dependence on large labeled datasets, making them suitable for diverse real-world scenarios \[[1906.05928](http://arxiv.org/abs/1906.05928)\]\[[2112.01161](http://arxiv.org/abs/2112.01161)\].
+
+Complementary to VFI, neural implicit representations have been enhanced with uncertainty estimation and view planning techniques to autonomously guide data acquisition and reconstruction, further improving reconstruction quality with fewer views \[[2207.10985](http://arxiv.org/abs/2207.10985)\]. Generalizable neural fields trained on large-scale datasets also support fast adaptation to new scenes with limited inputs, enabling efficient reconstruction and novel view synthesis from sparse RGB-D images \[[2309.15164](http://arxiv.org/abs/2309.15164)\].
+
+In summary, the integration of advanced video frame interpolation models with neural rendering leverages the strengths of both fields: VFI enriches data with synthesized intermediate views capturing implicit camera and scene dynamics, while neural rendering optimizes continuous 3D scene representations. The proposed PS4PRO model aligns with this trend by offering a lightweight yet high-quality VFI approach trained on diverse datasets to implicitly model real-world 3D structure and camera motion, thereby augmenting neural rendering inputs and enhancing reconstruction performance on both static and dynamic scenes.
+
+References:  
+\[[2503.18897](http://arxiv.org/abs/2503.18897)\]  
+\[[1708.01692](http://arxiv.org/abs/1708.01692)\]  
+\[[2203.00137](http://arxiv.org/abs/2203.00137)\]  
+\[[2207.10985](http://arxiv.org/abs/2207.10985)\]  
+\[[2201.10075](http://arxiv.org/abs/2201.10075)\]  
+\[[1703.07514](http://arxiv.org/abs/1703.07514)\]  
+\[[1906.05928](http://arxiv.org/abs/1906.05928)\]  
+\[[2309.15164](http://arxiv.org/abs/2309.15164)\]  
+\[[2210.1117](http://arxiv.org/abs/2210.11170)\]  
+\[[2111.13817](http://arxiv.org/abs/2111.13817)\]  
+\[[2303.02025](http://arxiv.org/abs/2303.02025)\]  
+\[[2112.01161](http://arxiv.org/abs/2112.01161)\]  
+\[[2211.10791](http://arxiv.org/abs/2211.10791)\]  
+\[[2307.16144](http://arxiv.org/abs/2307.16144)\]  
+\[[2202.04901](http://arxiv.org/abs/2202.04901)\]

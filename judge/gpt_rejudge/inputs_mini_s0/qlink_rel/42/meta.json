@@ -1,0 +1,14 @@
+{
+  "query": "042_2504.11007v1",
+  "selection": "d-spectra/judge/inputs/s0/qlink_rel/42",
+  "n_papers": 19,
+  "writer": "gpt-4.1-mini",
+  "temperature": 0.7,
+  "top_p": null,
+  "top_k": null,
+  "seed": null,
+  "prompt_tokens": 5379,
+  "completion_tokens": 839,
+  "n_inline_citations": 11,
+  "seconds": 6.6
+}

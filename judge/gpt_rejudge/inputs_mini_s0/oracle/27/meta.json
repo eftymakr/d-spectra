@@ -1,0 +1,14 @@
+{
+  "query": "027_2504.21282v1",
+  "selection": "d-spectra/judge/inputs/s0/oracle/27",
+  "n_papers": 14,
+  "writer": "gpt-4.1-mini",
+  "temperature": 0.7,
+  "top_p": null,
+  "top_k": null,
+  "seed": null,
+  "prompt_tokens": 5938,
+  "completion_tokens": 1135,
+  "n_inline_citations": 29,
+  "seconds": 9.3
+}

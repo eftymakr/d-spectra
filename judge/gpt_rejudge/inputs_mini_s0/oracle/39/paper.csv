@@ -1,0 +1,55 @@
+id,title,url,snippet,context
+1409.7208,"MEGAHIT: An ultra-fast single-node solution for large and complex
+  metagenomics assembly via succinct de Bruijn graph",http://arxiv.org/abs/1409.7208,"MEGAHIT is a NGS de novo assembler for assembling large and complex
+metagenomics data in a time- and cost-efficient manner. It finished assembling
+a soil metagenomics dataset with 252Gbps in 44.1 hours and 99.6 hours on a
+single computing node with and without a GPU, respectively. MEGAHIT assembles
+the data as a whole, i.e., it avoids pre-processing like partitioning and
+normalization, which might compromise on result integrity. MEGAHIT generates 3
+times larger assembly, with longer contig N50 and average contig length than
+the previous assembly. 55.8% of the reads were aligned to the assembly, which
+is 4 times higher than the previous. The source code of MEGAHIT is freely
+available at https://github.com/voutcn/megahit under GPLv3 license.","MEGAHIT: An ultra-fast single-node solution for large and complex
+  metagenomics assembly via succinct de Bruijn graph[http://arxiv.org/abs/1409.7208]: MEGAHIT is a NGS de novo assembler for assembling large and complex
+metagenomics data in a time- and cost-efficient manner. It finished assembling
+a soil metagenomics dataset with 252Gbps in 44.1 hours and 99.6 hours on a
+single computing node with and without a GPU, respectively. MEGAHIT assembles
+the data as a whole, i.e., it avoids pre-processing like partitioning and
+normalization, which might compromise on result integrity. MEGAHIT generates 3
+times larger assembly, with longer contig N50 and average contig length than
+the previous assembly. 55.8% of the reads were aligned to the assembly, which
+is 4 times higher than the previous. The source code of MEGAHIT is freely
+available at https://github.com/voutcn/megahit under GPLv3 license."
+1708.01492,Minimap2: pairwise alignment for nucleotide sequences,http://arxiv.org/abs/1708.01492,"Motivation: Recent advances in sequencing technologies promise ultra-long
+reads of $\sim$100 kilo bases (kb) in average, full-length mRNA or cDNA reads
+in high throughput and genomic contigs over 100 mega bases (Mb) in length.
+Existing alignment programs are unable or inefficient to process such data at
+scale, which presses for the development of new alignment algorithms.
+  Results: Minimap2 is a general-purpose alignment program to map DNA or long
+mRNA sequences against a large reference database. It works with accurate short
+reads of $\ge$100bp in length, $\ge$1kb genomic reads at error rate $\sim$15%,
+full-length noisy Direct RNA or cDNA reads, and assembly contigs or closely
+related full chromosomes of hundreds of megabases in length. Minimap2 does
+split-read alignment, employs concave gap cost for long insertions and
+deletions (INDELs) and introduces new heuristics to reduce spurious alignments.
+It is 3-4 times faster than mainstream short-read mappers at comparable
+accuracy and $\ge$30 times faster at higher accuracy for both genomic and mRNA
+reads, surpassing most aligners specialized in one type of alignment.
+  Availability and implementation: https://github.com/lh3/minimap2
+  Contact: hengli@broadinstitute.org","Minimap2: pairwise alignment for nucleotide sequences[http://arxiv.org/abs/1708.01492]: Motivation: Recent advances in sequencing technologies promise ultra-long
+reads of $\sim$100 kilo bases (kb) in average, full-length mRNA or cDNA reads
+in high throughput and genomic contigs over 100 mega bases (Mb) in length.
+Existing alignment programs are unable or inefficient to process such data at
+scale, which presses for the development of new alignment algorithms.
+  Results: Minimap2 is a general-purpose alignment program to map DNA or long
+mRNA sequences against a large reference database. It works with accurate short
+reads of $\ge$100bp in length, $\ge$1kb genomic reads at error rate $\sim$15%,
+full-length noisy Direct RNA or cDNA reads, and assembly contigs or closely
+related full chromosomes of hundreds of megabases in length. Minimap2 does
+split-read alignment, employs concave gap cost for long insertions and
+deletions (INDELs) and introduces new heuristics to reduce spurious alignments.
+It is 3-4 times faster than mainstream short-read mappers at comparable
+accuracy and $\ge$30 times faster at higher accuracy for both genomic and mRNA
+reads, surpassing most aligners specialized in one type of alignment.
+  Availability and implementation: https://github.com/lh3/minimap2
+  Contact: hengli@broadinstitute.org"

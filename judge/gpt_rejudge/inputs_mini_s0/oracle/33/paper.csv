@@ -1,0 +1,435 @@
+id,title,url,snippet,context
+1606.04671,Progressive Neural Networks,http://arxiv.org/abs/1606.04671,"Learning to solve complex sequences of tasks--while both leveraging transfer
+and avoiding catastrophic forgetting--remains a key obstacle to achieving
+human-level intelligence. The progressive networks approach represents a step
+forward in this direction: they are immune to forgetting and can leverage prior
+knowledge via lateral connections to previously learned features. We evaluate
+this architecture extensively on a wide variety of reinforcement learning tasks
+(Atari and 3D maze games), and show that it outperforms common baselines based
+on pretraining and finetuning. Using a novel sensitivity measure, we
+demonstrate that transfer occurs at both low-level sensory and high-level
+control layers of the learned policy.","Progressive Neural Networks[http://arxiv.org/abs/1606.04671]: Learning to solve complex sequences of tasks--while both leveraging transfer
+and avoiding catastrophic forgetting--remains a key obstacle to achieving
+human-level intelligence. The progressive networks approach represents a step
+forward in this direction: they are immune to forgetting and can leverage prior
+knowledge via lateral connections to previously learned features. We evaluate
+this architecture extensively on a wide variety of reinforcement learning tasks
+(Atari and 3D maze games), and show that it outperforms common baselines based
+on pretraining and finetuning. Using a novel sensitivity measure, we
+demonstrate that transfer occurs at both low-level sensory and high-level
+control layers of the learned policy."
+1612.00796,Overcoming catastrophic forgetting in neural networks,http://arxiv.org/abs/1612.00796,"The ability to learn tasks in a sequential fashion is crucial to the
+development of artificial intelligence. Neural networks are not, in general,
+capable of this and it has been widely thought that catastrophic forgetting is
+an inevitable feature of connectionist models. We show that it is possible to
+overcome this limitation and train networks that can maintain expertise on
+tasks which they have not experienced for a long time. Our approach remembers
+old tasks by selectively slowing down learning on the weights important for
+those tasks. We demonstrate our approach is scalable and effective by solving a
+set of classification tasks based on the MNIST hand written digit dataset and
+by learning several Atari 2600 games sequentially.","Overcoming catastrophic forgetting in neural networks[http://arxiv.org/abs/1612.00796]: The ability to learn tasks in a sequential fashion is crucial to the
+development of artificial intelligence. Neural networks are not, in general,
+capable of this and it has been widely thought that catastrophic forgetting is
+an inevitable feature of connectionist models. We show that it is possible to
+overcome this limitation and train networks that can maintain expertise on
+tasks which they have not experienced for a long time. Our approach remembers
+old tasks by selectively slowing down learning on the weights important for
+those tasks. We demonstrate our approach is scalable and effective by solving a
+set of classification tasks based on the MNIST hand written digit dataset and
+by learning several Atari 2600 games sequentially."
+2103.09762,Gradient Projection Memory for Continual Learning,http://arxiv.org/abs/2103.09762,"The ability to learn continually without forgetting the past tasks is a
+desired attribute for artificial learning systems. Existing approaches to
+enable such learning in artificial neural networks usually rely on network
+growth, importance based weight update or replay of old data from the memory.
+In contrast, we propose a novel approach where a neural network learns new
+tasks by taking gradient steps in the orthogonal direction to the gradient
+subspaces deemed important for the past tasks. We find the bases of these
+subspaces by analyzing network representations (activations) after learning
+each task with Singular Value Decomposition (SVD) in a single shot manner and
+store them in the memory as Gradient Projection Memory (GPM). With qualitative
+and quantitative analyses, we show that such orthogonal gradient descent
+induces minimum to no interference with the past tasks, thereby mitigates
+forgetting. We evaluate our algorithm on diverse image classification datasets
+with short and long sequences of tasks and report better or on-par performance
+compared to the state-of-the-art approaches.","Gradient Projection Memory for Continual Learning[http://arxiv.org/abs/2103.09762]: The ability to learn continually without forgetting the past tasks is a
+desired attribute for artificial learning systems. Existing approaches to
+enable such learning in artificial neural networks usually rely on network
+growth, importance based weight update or replay of old data from the memory.
+In contrast, we propose a novel approach where a neural network learns new
+tasks by taking gradient steps in the orthogonal direction to the gradient
+subspaces deemed important for the past tasks. We find the bases of these
+subspaces by analyzing network representations (activations) after learning
+each task with Singular Value Decomposition (SVD) in a single shot manner and
+store them in the memory as Gradient Projection Memory (GPM). With qualitative
+and quantitative analyses, we show that such orthogonal gradient descent
+induces minimum to no interference with the past tasks, thereby mitigates
+forgetting. We evaluate our algorithm on diverse image classification datasets
+with short and long sequences of tasks and report better or on-par performance
+compared to the state-of-the-art approaches."
+2202.02931,TRGP: Trust Region Gradient Projection for Continual Learning,http://arxiv.org/abs/2202.02931,"Catastrophic forgetting is one of the major challenges in continual learning.
+To address this issue, some existing methods put restrictive constraints on the
+optimization space of the new task for minimizing the interference to old
+tasks. However, this may lead to unsatisfactory performance for the new task,
+especially when the new task is strongly correlated with old tasks. To tackle
+this challenge, we propose Trust Region Gradient Projection (TRGP) for
+continual learning to facilitate the forward knowledge transfer based on an
+efficient characterization of task correlation. Particularly, we introduce a
+notion of `trust region' to select the most related old tasks for the new task
+in a layer-wise and single-shot manner, using the norm of gradient projection
+onto the subspace spanned by task inputs. Then, a scaled weight projection is
+proposed to cleverly reuse the frozen weights of the selected old tasks in the
+trust region through a layer-wise scaling matrix. By jointly optimizing the
+scaling matrices and the model, where the model is updated along the directions
+orthogonal to the subspaces of old tasks, TRGP can effectively prompt knowledge
+transfer without forgetting. Extensive experiments show that our approach
+achieves significant improvement over related state-of-the-art methods.","TRGP: Trust Region Gradient Projection for Continual Learning[http://arxiv.org/abs/2202.02931]: Catastrophic forgetting is one of the major challenges in continual learning.
+To address this issue, some existing methods put restrictive constraints on the
+optimization space of the new task for minimizing the interference to old
+tasks. However, this may lead to unsatisfactory performance for the new task,
+especially when the new task is strongly correlated with old tasks. To tackle
+this challenge, we propose Trust Region Gradient Projection (TRGP) for
+continual learning to facilitate the forward knowledge transfer based on an
+efficient characterization of task correlation. Particularly, we introduce a
+notion of `trust region' to select the most related old tasks for the new task
+in a layer-wise and single-shot manner, using the norm of gradient projection
+onto the subspace spanned by task inputs. Then, a scaled weight projection is
+proposed to cleverly reuse the frozen weights of the selected old tasks in the
+trust region through a layer-wise scaling matrix. By jointly optimizing the
+scaling matrices and the model, where the model is updated along the directions
+orthogonal to the subspaces of old tasks, TRGP can effectively prompt knowledge
+transfer without forgetting. Extensive experiments show that our approach
+achieves significant improvement over related state-of-the-art methods."
+1705.08690,Continual Learning with Deep Generative Replay,http://arxiv.org/abs/1705.08690,"Attempts to train a comprehensive artificial intelligence capable of solving
+multiple tasks have been impeded by a chronic problem called catastrophic
+forgetting. Although simply replaying all previous data alleviates the problem,
+it requires large memory and even worse, often infeasible in real world
+applications where the access to past data is limited. Inspired by the
+generative nature of hippocampus as a short-term memory system in primate
+brain, we propose the Deep Generative Replay, a novel framework with a
+cooperative dual model architecture consisting of a deep generative model
+(""generator"") and a task solving model (""solver""). With only these two models,
+training data for previous tasks can easily be sampled and interleaved with
+those for a new task. We test our methods in several sequential learning
+settings involving image classification tasks.","Continual Learning with Deep Generative Replay[http://arxiv.org/abs/1705.08690]: Attempts to train a comprehensive artificial intelligence capable of solving
+multiple tasks have been impeded by a chronic problem called catastrophic
+forgetting. Although simply replaying all previous data alleviates the problem,
+it requires large memory and even worse, often infeasible in real world
+applications where the access to past data is limited. Inspired by the
+generative nature of hippocampus as a short-term memory system in primate
+brain, we propose the Deep Generative Replay, a novel framework with a
+cooperative dual model architecture consisting of a deep generative model
+(""generator"") and a task solving model (""solver""). With only these two models,
+training data for previous tasks can easily be sampled and interleaved with
+those for a new task. We test our methods in several sequential learning
+settings involving image classification tasks."
+1611.07725,iCaRL: Incremental Classifier and Representation Learning,http://arxiv.org/abs/1611.07725,"A major open problem on the road to artificial intelligence is the
+development of incrementally learning systems that learn about more and more
+concepts over time from a stream of data. In this work, we introduce a new
+training strategy, iCaRL, that allows learning in such a class-incremental way:
+only the training data for a small number of classes has to be present at the
+same time and new classes can be added progressively. iCaRL learns strong
+classifiers and a data representation simultaneously. This distinguishes it
+from earlier works that were fundamentally limited to fixed data
+representations and therefore incompatible with deep learning architectures. We
+show by experiments on CIFAR-100 and ImageNet ILSVRC 2012 data that iCaRL can
+learn many classes incrementally over a long period of time where other
+strategies quickly fail.","iCaRL: Incremental Classifier and Representation Learning[http://arxiv.org/abs/1611.07725]: A major open problem on the road to artificial intelligence is the
+development of incrementally learning systems that learn about more and more
+concepts over time from a stream of data. In this work, we introduce a new
+training strategy, iCaRL, that allows learning in such a class-incremental way:
+only the training data for a small number of classes has to be present at the
+same time and new classes can be added progressively. iCaRL learns strong
+classifiers and a data representation simultaneously. This distinguishes it
+from earlier works that were fundamentally limited to fixed data
+representations and therefore incompatible with deep learning architectures. We
+show by experiments on CIFAR-100 and ImageNet ILSVRC 2012 data that iCaRL can
+learn many classes incrementally over a long period of time where other
+strategies quickly fail."
+1706.08840,Gradient Episodic Memory for Continual Learning,http://arxiv.org/abs/1706.08840,"One major obstacle towards AI is the poor ability of models to solve new
+problems quicker, and without forgetting previously acquired knowledge. To
+better understand this issue, we study the problem of continual learning, where
+the model observes, once and one by one, examples concerning a sequence of
+tasks. First, we propose a set of metrics to evaluate models learning over a
+continuum of data. These metrics characterize models not only by their test
+accuracy, but also in terms of their ability to transfer knowledge across
+tasks. Second, we propose a model for continual learning, called Gradient
+Episodic Memory (GEM) that alleviates forgetting, while allowing beneficial
+transfer of knowledge to previous tasks. Our experiments on variants of the
+MNIST and CIFAR-100 datasets demonstrate the strong performance of GEM when
+compared to the state-of-the-art.","Gradient Episodic Memory for Continual Learning[http://arxiv.org/abs/1706.08840]: One major obstacle towards AI is the poor ability of models to solve new
+problems quicker, and without forgetting previously acquired knowledge. To
+better understand this issue, we study the problem of continual learning, where
+the model observes, once and one by one, examples concerning a sequence of
+tasks. First, we propose a set of metrics to evaluate models learning over a
+continuum of data. These metrics characterize models not only by their test
+accuracy, but also in terms of their ability to transfer knowledge across
+tasks. Second, we propose a model for continual learning, called Gradient
+Episodic Memory (GEM) that alleviates forgetting, while allowing beneficial
+transfer of knowledge to previous tasks. Our experiments on variants of the
+MNIST and CIFAR-100 datasets demonstrate the strong performance of GEM when
+compared to the state-of-the-art."
+2006.11942,"Generalisation Guarantees for Continual Learning with Orthogonal
+  Gradient Descent",http://arxiv.org/abs/2006.11942,"In Continual Learning settings, deep neural networks are prone to
+Catastrophic Forgetting. Orthogonal Gradient Descent was proposed to tackle the
+challenge. However, no theoretical guarantees have been proven yet. We present
+a theoretical framework to study Continual Learning algorithms in the Neural
+Tangent Kernel regime. This framework comprises closed form expression of the
+model through tasks and proxies for Transfer Learning, generalisation and tasks
+similarity. In this framework, we prove that OGD is robust to Catastrophic
+Forgetting then derive the first generalisation bound for SGD and OGD for
+Continual Learning. Finally, we study the limits of this framework in practice
+for OGD and highlight the importance of the Neural Tangent Kernel variation for
+Continual Learning with OGD.","Generalisation Guarantees for Continual Learning with Orthogonal
+  Gradient Descent[http://arxiv.org/abs/2006.11942]: In Continual Learning settings, deep neural networks are prone to
+Catastrophic Forgetting. Orthogonal Gradient Descent was proposed to tackle the
+challenge. However, no theoretical guarantees have been proven yet. We present
+a theoretical framework to study Continual Learning algorithms in the Neural
+Tangent Kernel regime. This framework comprises closed form expression of the
+model through tasks and proxies for Transfer Learning, generalisation and tasks
+similarity. In this framework, we prove that OGD is robust to Catastrophic
+Forgetting then derive the first generalisation bound for SGD and OGD for
+Continual Learning. Finally, we study the limits of this framework in practice
+for OGD and highlight the importance of the Neural Tangent Kernel variation for
+Continual Learning with OGD."
+2010.04003,"A Theoretical Analysis of Catastrophic Forgetting through the NTK
+  Overlap Matrix",http://arxiv.org/abs/2010.04003,"Continual learning (CL) is a setting in which an agent has to learn from an
+incoming stream of data during its entire lifetime. Although major advances
+have been made in the field, one recurring problem which remains unsolved is
+that of Catastrophic Forgetting (CF). While the issue has been extensively
+studied empirically, little attention has been paid from a theoretical angle.
+In this paper, we show that the impact of CF increases as two tasks
+increasingly align. We introduce a measure of task similarity called the NTK
+overlap matrix which is at the core of CF. We analyze common projected gradient
+algorithms and demonstrate how they mitigate forgetting. Then, we propose a
+variant of Orthogonal Gradient Descent (OGD) which leverages structure of the
+data through Principal Component Analysis (PCA). Experiments support our
+theoretical findings and show how our method can help reduce CF on classical CL
+datasets.","A Theoretical Analysis of Catastrophic Forgetting through the NTK
+  Overlap Matrix[http://arxiv.org/abs/2010.04003]: Continual learning (CL) is a setting in which an agent has to learn from an
+incoming stream of data during its entire lifetime. Although major advances
+have been made in the field, one recurring problem which remains unsolved is
+that of Catastrophic Forgetting (CF). While the issue has been extensively
+studied empirically, little attention has been paid from a theoretical angle.
+In this paper, we show that the impact of CF increases as two tasks
+increasingly align. We introduce a measure of task similarity called the NTK
+overlap matrix which is at the core of CF. We analyze common projected gradient
+algorithms and demonstrate how they mitigate forgetting. Then, we propose a
+variant of Orthogonal Gradient Descent (OGD) which leverages structure of the
+data through Principal Component Analysis (PCA). Experiments support our
+theoretical findings and show how our method can help reduce CF on classical CL
+datasets."
+2006.10974,"Optimization and Generalization of Regularization-Based Continual
+  Learning: a Loss Approximation Viewpoint",http://arxiv.org/abs/2006.10974,"Neural networks have achieved remarkable success in many cognitive tasks.
+However, when they are trained sequentially on multiple tasks without access to
+old data, their performance on early tasks tend to drop significantly. This
+problem is often referred to as catastrophic forgetting, a key challenge in
+continual learning of neural networks. The regularization-based approach is one
+of the primary classes of methods to alleviate catastrophic forgetting. In this
+paper, we provide a novel viewpoint of regularization-based continual learning
+by formulating it as a second-order Taylor approximation of the loss function
+of each task. This viewpoint leads to a unified framework that can be
+instantiated to derive many existing algorithms such as Elastic Weight
+Consolidation and Kronecker factored Laplace approximation. Based on this
+viewpoint, we study the optimization aspects (i.e., convergence) as well as
+generalization properties (i.e., finite-sample guarantees) of
+regularization-based continual learning. Our theoretical results indicate the
+importance of accurate approximation of the Hessian matrix. The experimental
+results on several benchmarks provide empirical validation of our theoretical
+findings.","Optimization and Generalization of Regularization-Based Continual
+  Learning: a Loss Approximation Viewpoint[http://arxiv.org/abs/2006.10974]: Neural networks have achieved remarkable success in many cognitive tasks.
+However, when they are trained sequentially on multiple tasks without access to
+old data, their performance on early tasks tend to drop significantly. This
+problem is often referred to as catastrophic forgetting, a key challenge in
+continual learning of neural networks. The regularization-based approach is one
+of the primary classes of methods to alleviate catastrophic forgetting. In this
+paper, we provide a novel viewpoint of regularization-based continual learning
+by formulating it as a second-order Taylor approximation of the loss function
+of each task. This viewpoint leads to a unified framework that can be
+instantiated to derive many existing algorithms such as Elastic Weight
+Consolidation and Kronecker factored Laplace approximation. Based on this
+viewpoint, we study the optimization aspects (i.e., convergence) as well as
+generalization properties (i.e., finite-sample guarantees) of
+regularization-based continual learning. Our theoretical results indicate the
+importance of accurate approximation of the Hessian matrix. The experimental
+results on several benchmarks provide empirical validation of our theoretical
+findings."
+2306.03534,Continual Learning in Linear Classification on Separable Data,http://arxiv.org/abs/2306.03534,"We analyze continual learning on a sequence of separable linear
+classification tasks with binary labels. We show theoretically that learning
+with weak regularization reduces to solving a sequential max-margin problem,
+corresponding to a special case of the Projection Onto Convex Sets (POCS)
+framework. We then develop upper bounds on the forgetting and other quantities
+of interest under various settings with recurring tasks, including cyclic and
+random orderings of tasks. We discuss several practical implications to popular
+training practices like regularization scheduling and weighting. We point out
+several theoretical differences between our continual classification setting
+and a recently studied continual regression setting.","Continual Learning in Linear Classification on Separable Data[http://arxiv.org/abs/2306.03534]: We analyze continual learning on a sequence of separable linear
+classification tasks with binary labels. We show theoretically that learning
+with weak regularization reduces to solving a sequential max-margin problem,
+corresponding to a special case of the Projection Onto Convex Sets (POCS)
+framework. We then develop upper bounds on the forgetting and other quantities
+of interest under various settings with recurring tasks, including cyclic and
+random orderings of tasks. We discuss several practical implications to popular
+training practices like regularization scheduling and weighting. We point out
+several theoretical differences between our continual classification setting
+and a recently studied continual regression setting."
+2205.09588,How catastrophic can catastrophic forgetting be in linear regression?,http://arxiv.org/abs/2205.09588,"To better understand catastrophic forgetting, we study fitting an
+overparameterized linear model to a sequence of tasks with different input
+distributions. We analyze how much the model forgets the true labels of earlier
+tasks after training on subsequent tasks, obtaining exact expressions and
+bounds. We establish connections between continual learning in the linear
+setting and two other research areas: alternating projections and the Kaczmarz
+method. In specific settings, we highlight differences between forgetting and
+convergence to the offline solution as studied in those areas. In particular,
+when T tasks in d dimensions are presented cyclically for k iterations, we
+prove an upper bound of T^2 * min(1/sqrt(k), d/k) on the forgetting. This
+stands in contrast to the convergence to the offline solution, which can be
+arbitrarily slow according to existing alternating projection results. We
+further show that the T^2 factor can be lifted when tasks are presented in a
+random ordering.","How catastrophic can catastrophic forgetting be in linear regression?[http://arxiv.org/abs/2205.09588]: To better understand catastrophic forgetting, we study fitting an
+overparameterized linear model to a sequence of tasks with different input
+distributions. We analyze how much the model forgets the true labels of earlier
+tasks after training on subsequent tasks, obtaining exact expressions and
+bounds. We establish connections between continual learning in the linear
+setting and two other research areas: alternating projections and the Kaczmarz
+method. In specific settings, we highlight differences between forgetting and
+convergence to the offline solution as studied in those areas. In particular,
+when T tasks in d dimensions are presented cyclically for k iterations, we
+prove an upper bound of T^2 * min(1/sqrt(k), d/k) on the forgetting. This
+stands in contrast to the convergence to the offline solution, which can be
+arbitrarily slow according to existing alternating projection results. We
+further show that the T^2 factor can be lifted when tasks are presented in a
+random ordering."
+2302.05836,Theory on Forgetting and Generalization of Continual Learning,http://arxiv.org/abs/2302.05836,"Continual learning (CL), which aims to learn a sequence of tasks, has
+attracted significant recent attention. However, most work has focused on the
+experimental performance of CL, and theoretical studies of CL are still
+limited. In particular, there is a lack of understanding on what factors are
+important and how they affect ""catastrophic forgetting"" and generalization
+performance. To fill this gap, our theoretical analysis, under
+overparameterized linear models, provides the first-known explicit form of the
+expected forgetting and generalization error. Further analysis of such a key
+result yields a number of theoretical explanations about how
+overparameterization, task similarity, and task ordering affect both forgetting
+and generalization error of CL. More interestingly, by conducting experiments
+on real datasets using deep neural networks (DNNs), we show that some of these
+insights even go beyond the linear models and can be carried over to practical
+setups. In particular, we use concrete examples to show that our results not
+only explain some interesting empirical observations in recent studies, but
+also motivate better practical algorithm designs of CL.","Theory on Forgetting and Generalization of Continual Learning[http://arxiv.org/abs/2302.05836]: Continual learning (CL), which aims to learn a sequence of tasks, has
+attracted significant recent attention. However, most work has focused on the
+experimental performance of CL, and theoretical studies of CL are still
+limited. In particular, there is a lack of understanding on what factors are
+important and how they affect ""catastrophic forgetting"" and generalization
+performance. To fill this gap, our theoretical analysis, under
+overparameterized linear models, provides the first-known explicit form of the
+expected forgetting and generalization error. Further analysis of such a key
+result yields a number of theoretical explanations about how
+overparameterization, task similarity, and task ordering affect both forgetting
+and generalization error of CL. More interestingly, by conducting experiments
+on real datasets using deep neural networks (DNNs), we show that some of these
+insights even go beyond the linear models and can be carried over to practical
+setups. In particular, we use concrete examples to show that our results not
+only explain some interesting empirical observations in recent studies, but
+also motivate better practical algorithm designs of CL."
+2405.17583,Understanding Forgetting in Continual Learning with Linear Regression,http://arxiv.org/abs/2405.17583,"Continual learning, focused on sequentially learning multiple tasks, has
+gained significant attention recently. Despite the tremendous progress made in
+the past, the theoretical understanding, especially factors contributing to
+catastrophic forgetting, remains relatively unexplored. In this paper, we
+provide a general theoretical analysis of forgetting in the linear regression
+model via Stochastic Gradient Descent (SGD) applicable to both
+underparameterized and overparameterized regimes. Our theoretical framework
+reveals some interesting insights into the intricate relationship between task
+sequence and algorithmic parameters, an aspect not fully captured in previous
+studies due to their restrictive assumptions. Specifically, we demonstrate
+that, given a sufficiently large data size, the arrangement of tasks in a
+sequence, where tasks with larger eigenvalues in their population data
+covariance matrices are trained later, tends to result in increased forgetting.
+Additionally, our findings highlight that an appropriate choice of step size
+will help mitigate forgetting in both underparameterized and overparameterized
+settings. To validate our theoretical analysis, we conducted simulation
+experiments on both linear regression models and Deep Neural Networks (DNNs).
+Results from these simulations substantiate our theoretical findings.","Understanding Forgetting in Continual Learning with Linear Regression[http://arxiv.org/abs/2405.17583]: Continual learning, focused on sequentially learning multiple tasks, has
+gained significant attention recently. Despite the tremendous progress made in
+the past, the theoretical understanding, especially factors contributing to
+catastrophic forgetting, remains relatively unexplored. In this paper, we
+provide a general theoretical analysis of forgetting in the linear regression
+model via Stochastic Gradient Descent (SGD) applicable to both
+underparameterized and overparameterized regimes. Our theoretical framework
+reveals some interesting insights into the intricate relationship between task
+sequence and algorithmic parameters, an aspect not fully captured in previous
+studies due to their restrictive assumptions. Specifically, we demonstrate
+that, given a sufficiently large data size, the arrangement of tasks in a
+sequence, where tasks with larger eigenvalues in their population data
+covariance matrices are trained later, tends to result in increased forgetting.
+Additionally, our findings highlight that an appropriate choice of step size
+will help mitigate forgetting in both underparameterized and overparameterized
+settings. To validate our theoretical analysis, we conducted simulation
+experiments on both linear regression models and Deep Neural Networks (DNNs).
+Results from these simulations substantiate our theoretical findings."
+2207.06475,"Analysis of Catastrophic Forgetting for Random Orthogonal Transformation
+  Tasks in the Overparameterized Regime",http://arxiv.org/abs/2207.06475,"Overparameterization is known to permit strong generalization performance in
+neural networks. In this work, we provide an initial theoretical analysis of
+its effect on catastrophic forgetting in a continual learning setup. We show
+experimentally that in permuted MNIST image classification tasks, the
+generalization performance of multilayer perceptrons trained by vanilla
+stochastic gradient descent can be improved by overparameterization, and the
+extent of the performance increase achieved by overparameterization is
+comparable to that of state-of-the-art continual learning algorithms. We
+provide a theoretical explanation of this effect by studying a qualitatively
+similar two-task linear regression problem, where each task is related by a
+random orthogonal transformation. We show that when a model is trained on the
+two tasks in sequence without any additional regularization, the risk gain on
+the first task is small if the model is sufficiently overparameterized.","Analysis of Catastrophic Forgetting for Random Orthogonal Transformation
+  Tasks in the Overparameterized Regime[http://arxiv.org/abs/2207.06475]: Overparameterization is known to permit strong generalization performance in
+neural networks. In this work, we provide an initial theoretical analysis of
+its effect on catastrophic forgetting in a continual learning setup. We show
+experimentally that in permuted MNIST image classification tasks, the
+generalization performance of multilayer perceptrons trained by vanilla
+stochastic gradient descent can be improved by overparameterization, and the
+extent of the performance increase achieved by overparameterization is
+comparable to that of state-of-the-art continual learning algorithms. We
+provide a theoretical explanation of this effect by studying a qualitatively
+similar two-task linear regression problem, where each task is related by a
+random orthogonal transformation. We show that when a model is trained on the
+two tasks in sequence without any additional regularization, the risk gain on
+the first task is small if the model is sufficiently overparameterized."
+2408.16939,"Theoretical Insights into Overparameterized Models in Multi-Task and
+  Replay-Based Continual Learning",http://arxiv.org/abs/2408.16939,"Multi-task learning (MTL) is a machine learning paradigm that aims to improve
+the generalization performance of a model on multiple related tasks by training
+it simultaneously on those tasks. Unlike MTL, where the model has instant
+access to the training data of all tasks, continual learning (CL) involves
+adapting to new sequentially arriving tasks over time without forgetting the
+previously acquired knowledge. Despite the wide practical adoption of CL and
+MTL and extensive literature on both areas, there remains a gap in the
+theoretical understanding of these methods when used with overparameterized
+models such as deep neural networks. This paper studies the overparameterized
+linear models as a proxy for more complex models. We develop theoretical
+results describing the effect of various system parameters on the model's
+performance in an MTL setup. Specifically, we study the impact of model size,
+dataset size, and task similarity on the generalization error and knowledge
+transfer. Additionally, we present theoretical results to characterize the
+performance of replay-based CL models. Our results reveal the impact of buffer
+size and model capacity on the forgetting rate in a CL setup and help shed
+light on some of the state-of-the-art CL methods. Finally, through extensive
+empirical evaluations, we demonstrate that our theoretical findings are also
+applicable to deep neural networks, offering valuable guidance for designing
+MTL and CL models in practice.","Theoretical Insights into Overparameterized Models in Multi-Task and
+  Replay-Based Continual Learning[http://arxiv.org/abs/2408.16939]: Multi-task learning (MTL) is a machine learning paradigm that aims to improve
+the generalization performance of a model on multiple related tasks by training
+it simultaneously on those tasks. Unlike MTL, where the model has instant
+access to the training data of all tasks, continual learning (CL) involves
+adapting to new sequentially arriving tasks over time without forgetting the
+previously acquired knowledge. Despite the wide practical adoption of CL and
+MTL and extensive literature on both areas, there remains a gap in the
+theoretical understanding of these methods when used with overparameterized
+models such as deep neural networks. This paper studies the overparameterized
+linear models as a proxy for more complex models. We develop theoretical
+results describing the effect of various system parameters on the model's
+performance in an MTL setup. Specifically, we study the impact of model size,
+dataset size, and task similarity on the generalization error and knowledge
+transfer. Additionally, we present theoretical results to characterize the
+performance of replay-based CL models. Our results reveal the impact of buffer
+size and model capacity on the forgetting rate in a CL setup and help shed
+light on some of the state-of-the-art CL methods. Finally, through extensive
+empirical evaluations, we demonstrate that our theoretical findings are also
+applicable to deep neural networks, offering valuable guidance for designing
+MTL and CL models in practice."

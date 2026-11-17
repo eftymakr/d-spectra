@@ -1,0 +1,61 @@
+## Related Works
+
+Unsupervised domain adaptation (UDA) for semantic segmentation aims to transfer knowledge from a labeled source domain to an unlabeled target domain, addressing the challenge of domain shift without requiring costly target annotations \[[2405.19899](http://arxiv.org/abs/2405.19899)\]\[[2005.10876](http://arxiv.org/abs/2005.10876)\]. Traditional UDA methods predominantly assume a shared and known category set between source and target domains, which limits their robustness in real-world applications where private or unknown classes may exist exclusively in the target domain \[[2405.19899](http://arxiv.org/abs/2405.19899)\]\[[https://www.semanticscholar.org/paper/5f9ce93f82dcd9b0f9ffe4274b81682f40d86253](https://www.semanticscholar.org/paper/5f9ce93f82dcd9b0f9ffe4274b81682f40d86253)\]. This assumption often results in degraded performance due to confusion between common and private classes.
+
+### Closed-Set and Partial Domain Adaptation
+
+Early UDA approaches focus on aligning global feature distributions or pixel-level representations between source and target domains under the closed-set assumption, where categories are identical across domains. Methods such as adversarial learning for domain alignment \[[2103.15467](http://arxiv.org/abs/2103.15467)\]\[[1910.13049](http://arxiv.org/abs/1910.13049)\], image- and feature-level mixing \[[2007.08702](http://arxiv.org/abs/2007.08702)\]\[[2103.04705](http://arxiv.org/abs/2103.04705)\], and self-training with pseudo-label refinement \[[2103.15467](http://arxiv.org/abs/2103.15467)\]\[[1904.01886](http://arxiv.org/abs/1904.01886)\]\[[2004.08878](http://arxiv.org/abs/2004.08878)\] have shown significant improvements in synthetic-to-real adaptation scenarios. Class-balancing schemes and category-adaptive thresholds have been proposed to alleviate issues arising from class imbalance and pseudo-label noise \[[2208.10716](http://arxiv.org/abs/2208.10716)\]\[[2103.15467](http://arxiv.org/abs/2103.15467)\]. Techniques exploiting privileged information like depth \[[1904.01886](http://arxiv.org/abs/1904.01886)\] or disentangling content and style \[[2012.12545](http://arxiv.org/abs/2012.12545)\] further enhance domain transfer.
+
+Partial domain adaptation relaxes the closed-set assumption by considering that only a subset of source classes appear in the target domain. Here, category-aware alignment and prototype-based feature learning techniques are employed to align common classes while ignoring private ones \[[1910.13049](http://arxiv.org/abs/1910.13049)\]\[[https://www.semanticscholar.org/paper/92443e8b7ae6c295b271ec36b34da2983b194b21](https://www.semanticscholar.org/paper/92443e8b7ae6c295b271ec36b34da2983b194b21)\]. These approaches, however, still require some prior knowledge about category overlap and class sets.
+
+### Open-Set and Universal Domain Adaptation
+
+To handle unknown or private classes in the target domain, open-set domain adaptation (OSDA) methods have emerged. OSDA aims to detect and separate unknown classes from known ones during adaptation \[[2405.19899](http://arxiv.org/abs/2405.19899)\]\[[https://www.semanticscholar.org/paper/d291f7ce81164a2c5a0b9f71ef9227617fbe100c](https://www.semanticscholar.org/paper/d291f7ce81164a2c5a0b9f71ef9227617fbe100c)\]\[[https://www.semanticscholar.org/paper/a2e433da83c6e1eb4f4486c900fdfbf1951c4d30](https://www.semanticscholar.org/paper/a2e433da83c6e1eb4f4486c900fdfbf1951c4d30)\]. For example, boundary- and shape-aware contrastive learning methods have been proposed to delineate unknown class boundaries effectively \[[2405.19899](http://arxiv.org/abs/2405.19899)\]. Universal Domain Adaptation (UniDA) extends this by requiring no prior knowledge of the relationship between source and target label sets, enabling the model to classify common classes correctly while marking unknown target samples as “unknown” \[[https://www.semanticscholar.org/paper/d291f7ce81164a2c5a0b9f71ef9227617fbe100c](https://www.semanticscholar.org/paper/d291f7ce81164a2c5a0b9f71ef9227617fbe100c)\]\[[https://www.semanticscholar.org/paper/a2e433da83c6e1eb4f4486c900fdfbf1951c4d30](https://www.semanticscholar.org/paper/a2e433da83c6e1eb4f4486c900fdfbf1951c4d30)\]. Techniques such as domain consensus clustering \[[https://www.semanticscholar.org/paper/d291f7ce81164a2c5a0b9f71ef9227617fbe100c](https://www.semanticscholar.org/paper/d291f7ce81164a2c5a0b9f71ef9227617fbe100c)\] and transferability quantification \[[https://www.semanticscholar.org/paper/a2e433da83c6e1eb4f4486c900fdfbf1951c4d30](https://www.semanticscholar.org/paper/a2e433da83c6e1eb4f4486c900fdfbf1951c4d30)\] facilitate the discovery of common and private classes without explicit supervision.
+
+### Source-Free Domain Adaptation and Model Adaptation
+
+Addressing practical constraints such as privacy and storage, source-free domain adaptation (SFDA) frameworks adapt models without access to source data during adaptation. These methods rely on pretrained source models and unlabeled target data, approximating source feature distributions via virtual samples or surrogate models like Gaussian mixture models \[[https://www.semanticscholar.org/paper/5f9ce93f82dcd9b0f9ffe4274b81682f40d86253](https://www.semanticscholar.org/paper/5f9ce93f82dcd9b0f9ffe4274b81682f40d86253)\]\[[2103.16372](http://arxiv.org/abs/2103.16372)\]\[[https://www.semanticscholar.org/paper/6e0f0e64cda4c5ac04352ff7940685881f923610](https://www.semanticscholar.org/paper/6e0f0e64cda4c5ac04352ff7940685881f923610)\]\[[2401.01035](http://arxiv.org/abs/2401.01035)\]\[[2211.00807](http://arxiv.org/abs/2211.00807)\]\[[2011.08502](http://arxiv.org/abs/2011.08502)\]. Strategies to reduce prediction uncertainty and enhance feature noise robustness have been effective in maintaining performance comparable to full source-data access methods \[[https://www.semanticscholar.org/paper/6518b0e6334c6ffb9b94c551c57ad79c7008cbb5](https://www.semanticscholar.org/paper/6518b0e6334c6ffb9b94c551c57ad79c7008cbb5)\]\[[2211.00807](http://arxiv.org/abs/2211.00807)\]\[[2011.08502](http://arxiv.org/abs/2011.08502)\].
+
+### Prototype and Contrastive Learning Approaches
+
+Prototype-based learning techniques have gained traction for enhancing domain adaptation by representing each class with learned centroids or anchors to better align source and target features \[[1910.13049](http://arxiv.org/abs/1910.13049)\]\[[2205.11419](http://arxiv.org/abs/2205.11419)\]. Category-level prototypes assist in pseudo-label assignment and intra-class compactness, improving discrimination between common and private classes. Contrastive learning frameworks at pixel and patch levels have also been proposed to leverage intra-domain contextual correlations, promoting robust feature representations invariant to domain shifts \[[2407.17101](http://arxiv.org/abs/2407.17101)\]\[[2211.07609](http://arxiv.org/abs/2211.07609)\].
+
+### Semi-Supervised and Multi-Target Adaptation
+
+Semi-supervised domain adaptation (SSDA) incorporates a small amount of labeled target data alongside labeled source data to bridge domain and intra-domain gaps through dual-level mixing and student-teacher frameworks \[[2110.10639](http://arxiv.org/abs/2110.10639)\]\[[2103.04705](http://arxiv.org/abs/2103.04705)\]. Multi-target UDA extends adaptation to multiple target domains without requiring simultaneous access to source data, using self-distillation and adversarial learning to preserve learned knowledge \[[2405.06502](http://arxiv.org/abs/2405.06502)\].
+
+### Challenges and Advances in UniDA-SS
+
+Despite these advances, most UDA methods still assume some knowledge of category relationships or require careful balancing of pseudo labels, which limits their effectiveness under universal settings where category sets are unknown and may contain private classes. The UniDA-SS scenario is characterized by low confidence on common classes due to confusion with private ones, necessitating novel strategies that can both distinguish domain-specific features and leverage target domain knowledge effectively.
+
+The proposed UniMAP framework addresses these challenges by introducing Domain-Specific Prototype-based Distinction (DSPD), which models each class with domain-specific prototypes to better separate features of common classes across domains, and Target-based Image Matching (TIM), which pairs target pseudo-labels with source images rich in common classes for effective learning. This approach builds upon and extends prior prototype- and contrastive-based methods \[[2405.19899](http://arxiv.org/abs/2405.19899)\]\[[2407.17101](http://arxiv.org/abs/2407.17101)\]\[[2211.07609](http://arxiv.org/abs/2211.07609)\]\[[https://www.semanticscholar.org/paper/d291f7ce81164a2c5a0b9f71ef9227617fbe100c](https://www.semanticscholar.org/paper/d291f7ce81164a2c5a0b9f71ef9227617fbe100c)\]\[[1910.13049](http://arxiv.org/abs/1910.13049)\], while advancing universal adaptation capabilities without prior knowledge of category overlaps.
+
+---
+
+**References**
+
+\[[2405.19899](http://arxiv.org/abs/2405.19899)\] http://arxiv.org/abs/2405.19899  
+\[[2110.10639](http://arxiv.org/abs/2110.10639)\] http://arxiv.org/abs/2110.10639  
+\[[https://www.semanticscholar.org/paper/5f9ce93f82dcd9b0f9ffe4274b81682f40d86253](https://www.semanticscholar.org/paper/5f9ce93f82dcd9b0f9ffe4274b81682f40d86253)\] https://www.semanticscholar.org/paper/5f9ce93f82dcd9b0f9ffe4274b81682f40d86253  
+\[[https://www.semanticscholar.org/paper/6518b0e6334c6ffb9b94c551c57ad79c7008cbb5](https://www.semanticscholar.org/paper/6518b0e6334c6ffb9b94c551c57ad79c7008cbb5)\] https://www.semanticscholar.org/paper/6518b0e6334c6ffb9b94c551c57ad79c7008cbb5  
+\[[2012.12545](http://arxiv.org/abs/2012.12545)\] http://arxiv.org/abs/2012.12545  
+\[[2103.15467](http://arxiv.org/abs/2103.15467)\] http://arxiv.org/abs/2103.15467  
+\[[1904.01886](http://arxiv.org/abs/1904.01886)\] http://arxiv.org/abs/1904.01886  
+\[[2407.17101](http://arxiv.org/abs/2407.17101)\] http://arxiv.org/abs/2407.17101  
+\[[2211.07609](http://arxiv.org/abs/2211.07609)\] http://arxiv.org/abs/2211.07609  
+\[[2007.08702](http://arxiv.org/abs/2007.08702)\] http://arxiv.org/abs/2007.08702  
+\[[2103.04705](http://arxiv.org/abs/2103.04705)\] http://arxiv.org/abs/2103.04705  
+\[[2103.16372](http://arxiv.org/abs/2103.16372)\] http://arxiv.org/abs/2103.16372  
+\[[https://www.semanticscholar.org/paper/6e0f0e64cda4c5ac04352ff7940685881f923610](https://www.semanticscholar.org/paper/6e0f0e64cda4c5ac04352ff7940685881f923610)\] https://www.semanticscholar.org/paper/6e0f0e64cda4c5ac04352ff7940685881f923610  
+\[[2401.01035](http://arxiv.org/abs/2401.01035)\] http://arxiv.org/abs/2401.01035  
+\[[2211.00807](http://arxiv.org/abs/2211.00807)\] http://arxiv.org/abs/2211.00807  
+\[[2011.08502](http://arxiv.org/abs/2011.08502)\] http://arxiv.org/abs/2011.08502  
+\[[2005.10876](http://arxiv.org/abs/2005.10876)\] http://arxiv.org/abs/2005.10876  
+\[[2004.08878](http://arxiv.org/abs/2004.08878)\] http://arxiv.org/abs/2004.08878  
+\[[2208.10716](http://arxiv.org/abs/2208.10716)\] http://arxiv.org/abs/2208.10716  
+\[[https://www.semanticscholar.org/paper/d291f7ce81164a2c5a0b9f71ef9227617fbe100c](https://www.semanticscholar.org/paper/d291f7ce81164a2c5a0b9f71ef9227617fbe100c)\] https://www.semanticscholar.org/paper/d291f7ce81164a2c5a0b9f71ef9227617fbe100c  
+\[[https://www.semanticscholar.org/paper/a2e433da83c6e1eb4f4486c900fdfbf1951c4d30](https://www.semanticscholar.org/paper/a2e433da83c6e1eb4f4486c900fdfbf1951c4d30)\] https://www.semanticscholar.org/paper/a2e433da83c6e1eb4f4486c900fdfbf1951c4d30  
+\[[1910.13049](http://arxiv.org/abs/1910.13049)\] http://arxiv.org/abs/1910.13049  
+\[[2405.06502](http://arxiv.org/abs/2405.06502)\] http://arxiv.org/abs/2405.06502  
+\[[https://www.semanticscholar.org/paper/92443e8b7ae6c295b271ec36b34da2983b194b21](https://www.semanticscholar.org/paper/92443e8b7ae6c295b271ec36b34da2983b194b21)\] https://www.semanticscholar.org/paper/92443e8b7ae6c295b271ec36b34da2983b194b21  
+\[[2205.11419](http://arxiv.org/abs/2205.11419)\] http://arxiv.org/abs/2205.11419

@@ -1,0 +1,41 @@
+## Related Works
+
+The rapid expansion of open-source machine learning (ML) resources, especially through platforms like Hugging Face (HF), has significantly influenced research in information retrieval (IR) and ML resource management. Despite their prominence, existing platforms often lack explicit structured representations of ML models and datasets, limiting capabilities such as tracing model evolution, understanding reuse, and recommending relevant resources \[[2311.13380](http://arxiv.org/abs/2311.13380)\]\[[2303.02552](http://arxiv.org/abs/2303.02552)\]\[[2401.13177](http://arxiv.org/abs/2401.13177)\]. This has motivated research efforts toward creating structured knowledge representations and benchmarks to better organize and leverage ML resources.
+
+### Machine Learning Resource Repositories and Their Challenges
+
+Hugging Face stands out as a central hub for sharing pretrained models and datasets, supporting a wide range of ML domains, predominantly natural language processing (NLP) \[[2305.11164](http://arxiv.org/abs/2305.11164)\]\[[2311.13380](http://arxiv.org/abs/2311.13380)\]\[[2405.13058](http://arxiv.org/abs/2405.13058)\]. Studies on the HF ecosystem have examined various facets such as model reuse practices, maintenance, community engagement, and the carbon footprint of training models \[[2305.11164](http://arxiv.org/abs/2305.11164)\]\[[2311.13380](http://arxiv.org/abs/2311.13380)\]\[[2303.02552](http://arxiv.org/abs/2303.02552)\]\[[2401.13177](http://arxiv.org/abs/2401.13177)\]. These analyses reveal significant challenges including inconsistent documentation, difficulties in model comprehension, and gaps in versioning and provenance tracking \[[2401.13177](http://arxiv.org/abs/2401.13177)\]\[[2409.10472](http://arxiv.org/abs/2409.10472)\]. For example, the lack of standardized documentation and ambiguous naming conventions complicate model evolution tracing and dependable reuse \[[2409.10472](http://arxiv.org/abs/2409.10472)\]. Moreover, model reuse is often hindered by missing metadata and discrepancies between claimed and actual performance, underscoring the need for richer, structured representations \[[2303.02552](http://arxiv.org/abs/2303.02552)\]\[[2401.13177](http://arxiv.org/abs/2401.13177)\].
+
+### Documentation and Metadata Practices
+
+The importance of comprehensive documentation for ML models and datasets has been emphasized through frameworks such as model cards and dataset cards, which aim to increase transparency and reproducibility \[[2401.13822](http://arxiv.org/abs/2401.13822)\]\[[1810.03993](http://arxiv.org/abs/1810.03993)\]. Empirical studies on dataset documentation within Hugging Face highlight uneven completion rates and underreporting of critical usage considerations, which negatively impact dataset selection and reliability in downstream tasks \[[2401.13822](http://arxiv.org/abs/2401.13822)\]. Similarly, model cards have been proposed to provide detailed information on model evaluation across different conditions and intended use cases, facilitating better understanding and trust in deployed models \[[1810.03993](http://arxiv.org/abs/1810.03993)\]. Nonetheless, despite available tools, documentation quantity and quality have not significantly improved over time, contributing to difficulties in resource selection and reuse \[[2401.13177](http://arxiv.org/abs/2401.13177)\].
+
+### Model Reuse and Evolution
+
+Reuse of pretrained models (PTMs) is a key practice in ML development, analogous to software package reuse in traditional software engineering. Empirical investigations of PTM reuse on HF reveal practices related to fine-tuning, quantization, and architecture sharing, but also identify challenges such as lack of provenance, reproducibility, and portability information \[[2303.02552](http://arxiv.org/abs/2303.02552)\]\[[2401.13177](http://arxiv.org/abs/2401.13177)\]\[[2405.16746](http://arxiv.org/abs/2405.16746)\]. The rapid evolution of PTMs, with higher turnover rates compared to traditional software, further complicates tracking and dependency management \[[2406.08205](http://arxiv.org/abs/2406.08205)\]\[[2409.10472](http://arxiv.org/abs/2409.10472)\]. These factors highlight the necessity of structured metadata and versioning practices to support reliable reuse and maintenance \[[2406.08205](http://arxiv.org/abs/2406.08205)\]\[[2409.10472](http://arxiv.org/abs/2409.10472)\].
+
+### Benchmarking and Evaluation Frameworks
+
+Benchmarking is critical for assessing the quality and suitability of ML models and datasets. Existing works have developed evaluation frameworks for specific tasks, such as fake news detection and healthcare applications, emphasizing the need for rigorous, domain-aware benchmarking to ensure reliability and privacy \[[2405.13058](http://arxiv.org/abs/2405.13058)\]\[[2401.13177](http://arxiv.org/abs/2401.13177)\]\[[2105.01984](http://arxiv.org/abs/2105.01984)\]. However, these efforts are often task-specific and do not leverage structured knowledge representations that could generalize across diverse resources.
+
+### Knowledge Graphs and Structured Representations
+
+While knowledge graphs have been widely used in other domains for organizing complex information, their application to ML resource management is relatively nascent. Prior works in related fields illustrate the benefits of structured metadata and semantic integration for enhancing resource discovery, interoperability, and explainability \[[2401.13822](http://arxiv.org/abs/2401.13822)\]\[[2303.02552](http://arxiv.org/abs/2303.02552)\]. The Hugging Face ecosystem, with its vast collection of models and datasets, presents a unique opportunity to construct a large-scale knowledge graph that encodes domain-specific relations and rich textual attributes, enabling advanced IR tasks like model tracing, recommendation, and classification.
+
+### Summary
+
+The reviewed literature underscores several critical gaps in the current management of open ML resources: insufficient structured metadata, inconsistent documentation, challenges in tracking model evolution, and the lack of comprehensive benchmarking frameworks integrated with semantic representations \[[2305.11164](http://arxiv.org/abs/2305.11164)\]\[[2311.13380](http://arxiv.org/abs/2311.13380)\]\[[2401.13822](http://arxiv.org/abs/2401.13822)\]\[[2303.02552](http://arxiv.org/abs/2303.02552)\]\[[2406.08205](http://arxiv.org/abs/2406.08205)\]\[[2401.13177](http://arxiv.org/abs/2401.13177)\]\[[2409.10472](http://arxiv.org/abs/2409.10472)\]. These insights justify the development of resources like HuggingKG, a large-scale knowledge graph capturing ML resource relations, and HuggingBench, a multi-task benchmark designed to leverage such structured knowledge for advancing IR research in ML resource sharing and management.
+
+### References
+
+\[[2305.11164](http://arxiv.org/abs/2305.11164)\] Exploring the Carbon Footprint of Hugging Face's ML Models: A Repository Mining Study, 2023.  
+\[[2311.13380](http://arxiv.org/abs/2311.13380)\] Analyzing the Evolution and Maintenance of ML Models on Hugging Face, 2023.  
+\[[2401.13822](http://arxiv.org/abs/2401.13822)\] Navigating Dataset Documentations in AI: A Large-Scale Analysis of Dataset Cards on Hugging Face, 2024.  
+\[[2303.02552](http://arxiv.org/abs/2303.02552)\] An Empirical Study of Pre-Trained Model Reuse in the Hugging Face Deep Learning Model Registry, 2023.  
+\[[2406.08205](http://arxiv.org/abs/2406.08205)\] What do we know about Hugging Face? A systematic literature review and quantitative validation of qualitative claims, 2024.  
+\[[2405.13058](http://arxiv.org/abs/2405.13058)\] The AI community building the future? A quantitative analysis of development activity on Hugging Face Hub, 2024.  
+\[[2401.13177](http://arxiv.org/abs/2401.13177)\] Deep Learning Model Reuse in the HuggingFace Community: Challenges, Benefit and Trends, 2024.  
+\[[2105.01984](http://arxiv.org/abs/2105.01984)\] Software Engineering for AI-Based Systems: A Survey, 2021.  
+\[[2405.16746](http://arxiv.org/abs/2405.16746)\] Ecosystem of Large Language Models for Code, 2024.  
+\[[2409.10472](http://arxiv.org/abs/2409.10472)\] Towards semantic versioning of open pre-trained language model releases on hugging face, 2024.  
+\[[1810.03993](http://arxiv.org/abs/1810.03993)\] Model Cards for Model Reporting, 2018.

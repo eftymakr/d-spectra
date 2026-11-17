@@ -1,0 +1,38 @@
+## Related Works
+
+Diffusion transformers (DiTs) have become a leading architecture for video generation due to their strong capability in modeling complex spatial and temporal dependencies, outperforming traditional convolutional methods in video synthesis tasks \[[2406.02540v3](http://arxiv.org/abs/2406.02540v3)\]. However, their large parameter count and high computational costs present significant barriers for deployment on resource-constrained edge devices, motivating research into model compression techniques, particularly quantization \[[2302.04304v3](http://arxiv.org/abs/2302.04304v3)\].
+
+### Quantization of Diffusion Models
+
+Quantization, especially Post-Training Quantization (PTQ), is a common approach to reduce model size and accelerate inference by lowering bit-widths of weights and activations. While PTQ has demonstrated effectiveness in image generation diffusion models, its direct application to video diffusion transformers is challenging. This difficulty arises from the temporal dimension of video data, which requires preserving spatiotemporal correlations and maintaining temporal consistency across frames during quantization \[[2505.18663v4](http://arxiv.org/abs/2505.18663v4)\]\[[2502.15077v3](http://arxiv.org/abs/2502.15077v3)\].
+
+Q-Diffusion introduced a PTQ method tailored for diffusion models by addressing the multi-timestep nature of the noise estimation network and the bimodal activation distributions in shortcut layers. Through timestep-aware calibration and split shortcut quantization, Q-Diffusion enabled 4-bit quantization of unconditional diffusion models with minimal performance loss, also extending to text-guided image generation \[[2502.15077v3](http://arxiv.org/abs/2502.15077v3)\]. However, this approach primarily targets image diffusion and does not fully address video-specific temporal dynamics.
+
+For video DiTs, ViDiT-Q proposed an improved quantization scheme that systematically analyzes quantization errors specific to diffusion transformers in text-to-image and video generation contexts. ViDiT-Q implements W8A8 and W4A8 quantization with negligible degradation in visual metrics and achieves significant memory savings and latency speedups. This method emphasizes error compensation in both token and feature dimensions but still relies on dynamic quantization techniques less suitable for edge deployment \[[2505.18663v4](http://arxiv.org/abs/2505.18663v4)\].
+
+### Static and Data-Free Quantization Approaches
+
+Static quantization methods have been explored to enable efficient deployment on hardware lacking dynamic quantization support. One such approach applies per-step calibration and channel-wise weight quantization combined with smooth quantization techniques to video diffusion transformers, achieving quality comparable to FP16 and dynamic quantization methods \[[2302.04304v3](http://arxiv.org/abs/2302.04304v3)\]. This confirms static quantization as a viable alternative for hardware-constrained scenarios.
+
+DVD-Quant advances data-free quantization by eliminating the need for calibration data, utilizing Bounded-init Grid Refinement (BGR), Auto-scaling Rotated Quantization (ARQ), and δ-Guided Bit Switching (δ-GBS) to reduce quantization error adaptively. DVD-Quant achieves W4A4 quantization on video DiTs without compromising video quality and provides up to 2× speedup over full-precision baselines \[[2411.14172v2](http://arxiv.org/abs/2411.14172v2)\]. This framework addresses the computational overhead and inflexibility of existing calibration procedures, marking a significant step toward practical quantized video DiTs.
+
+### Addressing Temporal Consistency and Optimization Challenges
+
+Beyond quantization precision, maintaining temporal consistency and preserving spatiotemporal correlations during quantization is critical. TaQ-DiT specifically targets these challenges by introducing time-aware quantization that jointly reconstructs weights and activations to avoid non-convergence issues and applies time-variance-aware transformations to handle the large variability and asymmetry of Post-GELU activations across denoising steps. TaQ-DiT demonstrates superior performance in W4A8 quantization settings, highlighting the importance of temporal sensitivity in quantization design \[[2505.02831v5](http://arxiv.org/abs/2505.02831v5)\].
+
+Other works have emphasized temporal modeling improvements in video generation, such as the use of window attention architectures for joint spatial and temporal modeling (W.A.L.T), which enhance both memory efficiency and generation quality \[[2312.06662v1](http://arxiv.org/abs/2312.06662v1)\]. Ensuring temporal coherence is also pursued through training-free motion-guided approaches that leverage motion consistency loss to maintain inter-frame feature correlation patterns, enabling precise motion control without architectural changes \[[2501.07563v1](http://arxiv.org/abs/2501.07563v1)\].
+
+### Summary
+
+Existing quantization methods for image diffusion models provide a foundation but often overlook video-specific temporal dependencies and the unique multi-frame processing challenges of video DiTs. Advanced techniques such as ViDiT-Q, DVD-Quant, and TaQ-DiT introduce tailored quantization schemes that compensate for token- and feature-level errors, enable data-free calibration, and incorporate temporal awareness to preserve video fidelity and consistency \[[2505.18663v4](http://arxiv.org/abs/2505.18663v4)\]\[[2411.14172v2](http://arxiv.org/abs/2411.14172v2)\]\[[2505.02831v5](http://arxiv.org/abs/2505.02831v5)\]. Additionally, static quantization and motion-aware optimization strategies expand practical deployment options for video DiTs on constrained hardware \[[2302.04304v3](http://arxiv.org/abs/2302.04304v3)\]\[[2501.07563v1](http://arxiv.org/abs/2501.07563v1)\]. Our proposed Q-VDiT framework builds upon these advances by integrating a Token-aware Quantization Estimator and Temporal Maintenance Distillation to further improve quantization accuracy and temporal coherence, setting a new benchmark in scene consistency for quantized video diffusion transformers.
+
+### References
+
+1. \[[2406.02540v3](http://arxiv.org/abs/2406.02540v3)\] Video Diffusion Models: A Survey [http://arxiv.org/abs/2405.03150v2]  
+2. \[[2302.04304v3](http://arxiv.org/abs/2302.04304v3)\] Hardware-Friendly Static Quantization Method for Video Diffusion Transformers [http://arxiv.org/abs/2502.15077v3]  
+3. \[[2505.18663v4](http://arxiv.org/abs/2505.18663v4)\] ViDiT-Q: Efficient and Accurate Quantization of Diffusion Transformers for Image and Video Generation [http://arxiv.org/abs/2406.02540v3]  
+4. \[[2502.15077v3](http://arxiv.org/abs/2502.15077v3)\] Q-Diffusion: Quantizing Diffusion Models [http://arxiv.org/abs/2302.04304v3]  
+5. \[[2411.14172v2](http://arxiv.org/abs/2411.14172v2)\] DVD-Quant: Data-free Video Diffusion Transformers Quantization [http://arxiv.org/abs/2505.18663v4]  
+6. \[[2505.02831v5](http://arxiv.org/abs/2505.02831v5)\] TaQ-DiT: Time-aware Quantization for Diffusion Transformers [http://arxiv.org/abs/2411.14172v2]  
+12. \[[2312.06662v1](http://arxiv.org/abs/2312.06662v1)\] W.A.L.T: Photorealistic Video Generation with Diffusion Models [http://arxiv.org/abs/2312.06662v1]  
+17. \[[2501.07563v1](http://arxiv.org/abs/2501.07563v1)\] Training-Free Motion-Guided Video Generation with Enhanced Temporal Consistency Using Motion Consistency Loss [http://arxiv.org/abs/2501.07563v1]

@@ -1,0 +1,14 @@
+{
+  "query": "036_2506.02847v1",
+  "selection": "d-spectra/judge/inputs/s0/cocite_rel/36",
+  "n_papers": 23,
+  "writer": "gpt-4.1-mini",
+  "temperature": 0.7,
+  "top_p": null,
+  "top_k": null,
+  "seed": null,
+  "prompt_tokens": 9057,
+  "completion_tokens": 1710,
+  "n_inline_citations": 28,
+  "seconds": 13.8
+}

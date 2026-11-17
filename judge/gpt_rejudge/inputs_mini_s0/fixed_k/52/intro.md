@@ -1,0 +1,38 @@
+## Related Works
+
+Dense retrieval has emerged as a dominant paradigm in information retrieval, relying on pre-trained language models (PLMs) such as BERT and LLaMA to generate dense vector representations of text for efficient similarity-based search \[[2208.09846](http://arxiv.org/abs/2208.09846)\]\[[2104.08253](http://arxiv.org/abs/2104.08253)\]. These models are typically fine-tuned using contrastive learning objectives to align query and document embeddings in a shared semantic space, facilitating effective retrieval \[[2208.09846](http://arxiv.org/abs/2208.09846)\]\[[2112.09118](http://arxiv.org/abs/2112.09118)\]\[[2107.07773](http://arxiv.org/abs/2107.07773)\]. However, the relative contributions of pre-training and fine-tuning to the performance and knowledge acquisition of dense retrievers remain a topic of active research.
+
+Several studies have highlighted that pre-training fundamentally shapes the ability of models to represent text semantically. For instance, Condenser and coCondenser extend pre-training by tailoring Transformer architectures and adding corpus-level contrastive objectives to better condense semantic information into dense vectors, leading to improved retrieval performance even before fine-tuning \[[2108.0554](http://arxiv.org/abs/2108.05540)\]\[[2104.08253](http://arxiv.org/abs/2104.08253)\]. This underscores the importance of pre-training in equipping models with robust semantic encoding capabilities.
+
+The question of whether fine-tuning introduces new retrieval knowledge or mainly adjusts pre-trained representations has been explored primarily in the context of BERT-based dense retrievers such as DPR. Research indicates that fine-tuning in these models predominantly modulates neuron activation patterns without substantially reorganizing the underlying knowledge embedded during pre-training \[[2306.03166](http://arxiv.org/abs/2306.03166)\]\[[2004.14218](http://arxiv.org/abs/2004.14218)\]. This suggests that retrieval knowledge is largely acquired during pre-training and that fine-tuning acts as a calibration step rather than a knowledge acquisition process. Nevertheless, these findings may not generalize across different model architectures or pooling strategies. For example, models using mean pooling of token embeddings (e.g., Contriever) and decoder-only models like LLaMA exhibit a stronger role of fine-tuning in shaping retrieval capabilities, implying architectural and design choices influence knowledge dynamics \[[2306.03166](http://arxiv.org/abs/2306.03166)\]\[[2208.00635](http://arxiv.org/abs/2208.00635)\].
+
+Pre-training strategies focusing on autoencoder-based architectures and bottlenecked representations have also been proposed to enhance discriminative and robust text encoding. Contrastive pre-training approaches, such as those employing discriminative autoencoders with lightweight decoders or contrastive span prediction tasks, improve the quality of dense representations by emphasizing salient semantic features and suppressing common or irrelevant tokens \[[2208.09846](http://arxiv.org/abs/2208.09846)\]\[[2204.10641](http://arxiv.org/abs/2204.10641)\]\[[2212.07841](http://arxiv.org/abs/2212.07841)\]. These methods demonstrate that pre-training objectives strongly influence the representational capacity of dense retrievers.
+
+Fine-tuning techniques have been investigated to improve the robustness and generalization of dense retrievers. Approaches such as high dropout fine-tuning and multi-positive contrastive learning address distribution shifts and noise sensitivity during adaptation to downstream tasks \[[2312.05934](http://arxiv.org/abs/2312.05934)\]\[[2403.10939](http://arxiv.org/abs/2403.10939)\]. Moreover, continual pre-training or coarse-tuning stages that bridge the gap between large-scale pre-training and downstream fine-tuning have shown to facilitate better query representation and query-document interaction learning, thus improving retrieval effectiveness \[[2410.10739](http://arxiv.org/abs/2410.10739)\]\[[2403.16915](http://arxiv.org/abs/2403.16915)\]. However, fine-tuning can sometimes lead to catastrophic forgetting of pre-trained knowledge, and efforts such as Robust Informative Fine-Tuning seek to preserve generic linguistic features during adaptation \[[2112.11668](http://arxiv.org/abs/2112.11668)\].
+
+The interplay between pre-training and fine-tuning is further complicated by differences in model backbones. Encoder-only models (e.g., BERT) and decoder-only models (e.g., LLaMA) differ in how knowledge is encoded and updated during fine-tuning, affecting the retrieval performance and robustness across datasets like MSMARCO and Natural Questions \[[2306.03166](http://arxiv.org/abs/2306.03166)\]\[[2004.14218](http://arxiv.org/abs/2004.14218)\]. Studies also reveal that pre-training with novel tasks, including LLM-based document expansion or multi-task masked autoencoder frameworks, can substantially enhance dense retrieval quality, serving as a rich substrate for subsequent fine-tuning \[[2212.07841](http://arxiv.org/abs/2212.07841)\]\[[2308.08285](http://arxiv.org/abs/2308.08285)\].
+
+Lastly, retrieval-augmented generation (RAG) approaches challenge the sufficiency of fine-tuning alone in knowledge injection for large language models, especially on less frequent or domain-specific knowledge. RAG consistently outperforms fine-tuning in these scenarios, emphasizing the limitations of fine-tuning to fully integrate new factual knowledge post pre-training \[[2312.05934](http://arxiv.org/abs/2312.05934)\]\[[2403.01432](http://arxiv.org/abs/2403.01432)\].
+
+In summary, the literature converges on the view that while pre-training establishes the core semantic and retrieval knowledge in dense retrievers, fine-tuning primarily adjusts and calibrates this knowledge depending on architectural choices, representation strategies, and downstream data. Our work extends these insights by systematically evaluating diverse architectures and pooling methods across multiple datasets to comprehensively characterize how pre-training and fine-tuning contribute to dense retrieval performance.
+
+---
+
+References:  
+\[[2208.09846](http://arxiv.org/abs/2208.09846)\] http://arxiv.org/abs/2208.09846  
+\[[2108.0554](http://arxiv.org/abs/2108.05540)\] http://arxiv.org/abs/2108.05540  
+\[[2306.03166](http://arxiv.org/abs/2306.03166)\] http://arxiv.org/abs/2306.03166  
+\[[2104.08253](http://arxiv.org/abs/2104.08253)\] http://arxiv.org/abs/2104.08253  
+\[[2004.14218](http://arxiv.org/abs/2004.14218)\] http://arxiv.org/abs/2206.04509v2 (inferred from context)  
+\[[2208.00635](http://arxiv.org/abs/2208.00635)\] http://arxiv.org/abs/2306.03166  
+\[[2312.05934](http://arxiv.org/abs/2312.05934)\] http://arxiv.org/abs/2403.00946v3  
+\[[2204.10641](http://arxiv.org/abs/2204.10641)\] http://arxiv.org/abs/2204.10641  
+\[[2112.09118](http://arxiv.org/abs/2112.09118)\] http://arxiv.org/abs/2112.09118  
+\[[2212.07841](http://arxiv.org/abs/2212.07841)\] http://arxiv.org/abs/2212.07841  
+\[[2107.07773](http://arxiv.org/abs/2107.07773)\] http://arxiv.org/abs/2107.07773  
+\[[2403.10939](http://arxiv.org/abs/2403.10939)\] http://arxiv.org/abs/2403.10939  
+\[[2308.08285](http://arxiv.org/abs/2308.08285)\] http://arxiv.org/abs/2308.08285  
+\[[2112.11668](http://arxiv.org/abs/2112.11668)\] http://arxiv.org/abs/2112.11668  
+\[[2410.10739](http://arxiv.org/abs/2410.10739)\] http://arxiv.org/abs/2410.10739  
+\[[2403.01432](http://arxiv.org/abs/2403.01432)\] http://arxiv.org/abs/2403.01432  
+\[[2403.16915](http://arxiv.org/abs/2403.16915)\] http://arxiv.org/abs/2403.16915

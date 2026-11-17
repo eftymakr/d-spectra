@@ -1,0 +1,29 @@
+## Related Works
+
+Distributed training of large language models (LLMs) has become a critical area of research due to the rapid growth of model sizes and complexity. Early efforts primarily focused on optimizing communication and scalability in distributed environments, often trading off accuracy or flexibility \[[1909.08053](http://arxiv.org/abs/1909.08053)\]. Techniques such as model parallelism and pipeline parallelism have been developed to enable training of models with billions of parameters across hundreds of GPUs \[[1909.08053](http://arxiv.org/abs/1909.08053)\]. However, these approaches introduce challenges related to memory constraints and efficient resource utilization, necessitating precise performance modeling to guide system design and deployment.
+
+Performance modeling for LLMs is essential to understand and predict execution characteristics across various hardware and configurations. Prior work has addressed inference optimization for LLMs, focusing on reducing latency and memory usage, particularly on limited-memory devices through hardware-aware strategies such as flash-based parameter storage and adaptive data loading \[[2312.11514](http://arxiv.org/abs/2312.11514)\]. Systems like LLM-Pilot provide frameworks for benchmarking and predicting inference service performance, optimizing deployment configurations to balance cost and throughput \[[2410.02425](http://arxiv.org/abs/2410.02425)\]. These works underscore the importance of accurate performance estimation to maximize resource efficiency and meet service-level objectives.
+
+Instruction tuning and task scaling have been extensively studied to improve the generalization and zero-shot capabilities of LLMs \[[2109.01652](http://arxiv.org/abs/2109.01652)\]\[[2210.11416](http://arxiv.org/abs/2210.11416)\]. While these efforts primarily target model accuracy and usability, they also highlight the growing complexity of model execution with larger models (e.g., PaLM 540B) and extensive multitask finetuning, which in turn amplifies the need for robust performance characterization during training and inference \[[2210.11416](http://arxiv.org/abs/2210.11416)\]\[[2204.02311](http://arxiv.org/abs/2204.02311)\]. Additionally, domain-specific instruction tuning (e.g., for mathematical reasoning \[[2309.05653](http://arxiv.org/abs/2309.05653)\]) and multimodal instruction tuning \[[2304.08485](http://arxiv.org/abs/2304.08485)\] further diversify the training workloads and system requirements, complicating performance modeling tasks.
+
+Large-scale training infrastructures, such as those used for PaLM and BLOOM, demonstrate the intricate interplay between hardware capabilities, parallelism strategies, and model scale \[[2204.02311](http://arxiv.org/abs/2204.02311)\]\[[2211.051](http://arxiv.org/abs/2211.05100)\]. These infrastructures require comprehensive profiling and modeling to guide efficient resource allocation and minimize training time while sustaining model quality. The GPT-4 technical report also emphasizes the importance of infrastructure and optimization methods that scale predictably across training sizes, reinforcing the value of detailed performance modeling in production systems \[[2303.08774](http://arxiv.org/abs/2303.08774)\].
+
+Iterative solver learning and self-supervised optimization methods have been proposed to improve training efficiency by reducing computational overheads in optimization algorithms \[[1804.07461](http://arxiv.org/abs/1804.07461)\]. Although these techniques focus more on algorithmic efficiency, they complement performance modeling by potentially altering runtime behavior patterns that must be captured by accurate models.
+
+Overall, existing works have laid the foundation for distributed training optimization and inference efficiency for LLMs but often lack trace-driven, fine-grained execution modeling that can generalize across diverse hardware setups and model configurations. Lumos advances this area by providing a trace-driven toolkit capable of replaying and predicting execution behavior with high accuracy across large GPU clusters and multiple GPT-3 variants. This approach enables efficient exploration of deployment and training configurations, addressing a critical gap in performance modeling for large-scale LLM training \[[2410.02425](http://arxiv.org/abs/2410.02425)\].
+
+---
+
+### References
+
+\[[2109.01652](http://arxiv.org/abs/2109.01652)\] Finetuned Language Models Are Zero-Shot Learners, http://arxiv.org/abs/2109.01652  
+\[[2210.11416](http://arxiv.org/abs/2210.11416)\] Scaling Instruction-Finetuned Language Models, http://arxiv.org/abs/2210.11416  
+\[[2304.08485](http://arxiv.org/abs/2304.08485)\] Visual Instruction Tuning, http://arxiv.org/abs/2304.08485  
+\[[2309.05653](http://arxiv.org/abs/2309.05653)\] MAmmoTH: Building Math Generalist Models through Hybrid Instruction Tuning, http://arxiv.org/abs/2309.05653  
+\[[2204.02311](http://arxiv.org/abs/2204.02311)\] PaLM: Scaling Language Modeling with Pathways, http://arxiv.org/abs/2204.02311  
+\[[1909.08053](http://arxiv.org/abs/1909.08053)\] Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism, http://arxiv.org/abs/1909.08053  
+\[[2312.11514](http://arxiv.org/abs/2312.11514)\] LLM in a flash: Efficient Large Language Model Inference with Limited Memory, http://arxiv.org/abs/2312.11514  
+\[[1804.07461](http://arxiv.org/abs/1804.07461)\] Self-Supervised Learning of Iterative Solvers for Constrained Optimization, http://arxiv.org/abs/2409.08066  
+\[[2211.051](http://arxiv.org/abs/2211.05100)\] BLOOM: A 176B-Parameter Open-Access Multilingual Language Model, http://arxiv.org/abs/2211.05100  
+\[[2303.08774](http://arxiv.org/abs/2303.08774)\] GPT-4 Technical Report, http://arxiv.org/abs/2303.08774  
+\[[2410.02425](http://arxiv.org/abs/2410.02425)\] LLM-Pilot: Characterize and Optimize Performance of your LLM Inference Services, http://arxiv.org/abs/2410.02425

@@ -1,0 +1,47 @@
+id,title,url,snippet,context
+2004.06059,paper2repo: GitHub Repository Recommendation for Academic Papers,http://arxiv.org/abs/2004.06059,"GitHub has become a popular social application platform, where a large number
+of users post their open source projects. In particular, an increasing number
+of researchers release repositories of source code related to their research
+papers in order to attract more people to follow their work. Motivated by this
+trend, we describe a novel item-item cross-platform recommender system,
+$\textit(paper2repo)$, that recommends relevant repositories on GitHub that
+match a given paper in an academic search system such as Microsoft Academic.
+The key challenge is to identify the similarity between an input paper and its
+related repositories across the two platforms, $\textit(without the benefit of
+human labeling)$. Towards that end, paper2repo integrates text encoding and
+constrained graph convolutional networks (GCN) to automatically learn and map
+the embeddings of papers and repositories into the same space, where proximity
+offers the basis for recommendation. To make our method more practical in real
+life systems, labels used for model training are computed automatically from
+features of user actions on GitHub. In machine learning, such automatic
+labeling is often called (\em distant supervision\/). To the authors'
+knowledge, this is the first distant-supervised cross-platform (paper to
+repository) matching system. We evaluate the performance of paper2repo on
+real-world data sets collected from GitHub and Microsoft Academic. Results
+demonstrate that it outperforms other state of the art recommendation methods.","paper2repo: GitHub Repository Recommendation for Academic Papers[http://arxiv.org/abs/2004.06059]: GitHub has become a popular social application platform, where a large number
+of users post their open source projects. In particular, an increasing number
+of researchers release repositories of source code related to their research
+papers in order to attract more people to follow their work. Motivated by this
+trend, we describe a novel item-item cross-platform recommender system,
+$\textit(paper2repo)$, that recommends relevant repositories on GitHub that
+match a given paper in an academic search system such as Microsoft Academic.
+The key challenge is to identify the similarity between an input paper and its
+related repositories across the two platforms, $\textit(without the benefit of
+human labeling)$. Towards that end, paper2repo integrates text encoding and
+constrained graph convolutional networks (GCN) to automatically learn and map
+the embeddings of papers and repositories into the same space, where proximity
+offers the basis for recommendation. To make our method more practical in real
+life systems, labels used for model training are computed automatically from
+features of user actions on GitHub. In machine learning, such automatic
+labeling is often called (\em distant supervision\/). To the authors'
+knowledge, this is the first distant-supervised cross-platform (paper to
+repository) matching system. We evaluate the performance of paper2repo on
+real-world data sets collected from GitHub and Microsoft Academic. Results
+demonstrate that it outperforms other state of the art recommendation methods."
+,"(DEKR:) Description Enhanced Knowledge Graph for Machine Learning
+                  Method Recommendation",https://doi.org/10.1145/3404835.3462900,,"(DEKR:) Description Enhanced Knowledge Graph for Machine Learning
+                  Method Recommendation[https://doi.org/10.1145/3404835.3462900]: "
+,"Task-Oriented (ML/DL) Library Recommendation Based on a Knowledge
+                  Graph",https://doi.org/10.1109/TSE.2023.3285280,,"Task-Oriented (ML/DL) Library Recommendation Based on a Knowledge
+                  Graph[https://doi.org/10.1109/TSE.2023.3285280]: "
+,(GRETA:) Graph-Based Tag Assignment for GitHub Repositories,https://doi.org/10.1109/COMPSAC.2016.124,,(GRETA:) Graph-Based Tag Assignment for GitHub Repositories[https://doi.org/10.1109/COMPSAC.2016.124]: 
