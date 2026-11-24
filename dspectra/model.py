@@ -45,8 +45,11 @@ def init_beta_raw_for_bounded_beta(init_beta, beta_max):
 
 def _orthonormal(raw: torch.Tensor) -> torch.Tensor:
     centered = raw - raw.mean(0, keepdim=True)
-    Q, _ = torch.linalg.qr(centered, mode="reduced")
-    return Q
+    Q, R = torch.linalg.qr(centered, mode="reduced")
+    # Householder QR flips a column of Q whenever its pivot crosses zero.
+    # SPECTRA's Q S^2 Q^T is blind to that; U S V^T is not (a flip in U but
+    # not V negates a mode mid-training), so make diag(R) positive.
+    return Q * torch.where(torch.diagonal(R) >= 0, 1.0, -1.0).detach()
 
 
 class _SpectraBase(nn.Module):
@@ -185,6 +188,8 @@ class FitConfig:
     lambda_bias: float = 1e-4
     offsets: bool = True
     device: str = "cpu"
+    lr_schedule: str = "constant"  # or "cosine": decay to lr * lr_min_ratio by the last epoch
+    lr_min_ratio: float = 0.01
 
 
 def make_model(kind: str, n: int, cfg: FitConfig):
@@ -206,17 +211,28 @@ def prepare_adjacency(A: np.ndarray, kind: str, device: str) -> torch.Tensor:
 
 def fit(A: np.ndarray, kind: str = "directed", eta: float = 0.0,
         cfg: Optional[FitConfig] = None, seed: int = 0,
-        trace: Optional[List[Dict]] = None, trace_every: int = 100):
+        trace: Optional[List[Dict]] = None, trace_every: int = 100,
+        exclude: Optional[np.ndarray] = None, early_stop: bool = False):
     """Cold-start fixed-epoch fit of  NLL - eta * log d_ev + R  (as in SPECTRA).
-    If `trace` is a list, (epoch, nll, d_ev) is appended every `trace_every` epochs."""
+    If `trace` is a list, (epoch, nll, d_ev) is appended every `trace_every` epochs.
+    Pairs in `exclude` (k x 2) are left out of the loss (held-out links).
+    With `early_stop`, training stops once d_ev is stable, with SPECTRA's probe
+    defaults: d_ev checked every 100 epochs from epoch 500, the last 5 checks
+    within 2% of their mean, 3 checks in a row."""
     cfg = cfg or FitConfig()
     set_seed(seed)
     At = prepare_adjacency(A, kind, cfg.device)
     m = make_model(kind, At.shape[0], cfg)
     mask = m.pair_mask()
+    if exclude is not None and len(exclude):
+        mask[torch.as_tensor(exclude[:, 0]), torch.as_tensor(exclude[:, 1])] = False
     opt = torch.optim.Adam(m.parameters(), lr=cfg.lr)
+    sched = (torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=cfg.epochs,
+                                                        eta_min=cfg.lr * cfg.lr_min_ratio)
+             if cfg.lr_schedule == "cosine" else None)
     if cfg.bias_warmup_epochs > 0:
         m.freeze_factor()
+    window, stable = [], 0
     for epoch in range(1, cfg.epochs + 1):
         if cfg.bias_warmup_epochs > 0 and epoch == cfg.bias_warmup_epochs + 1:
             m.unfreeze_factor()
@@ -224,8 +240,17 @@ def fit(A: np.ndarray, kind: str = "directed", eta: float = 0.0,
         nll, log_v, reg = loss_components(m, At, mask, cfg.lambda_theta, cfg.lambda_bias)
         (nll - eta * log_v + reg).backward()
         opt.step()
+        if sched is not None:
+            sched.step()
         if trace is not None and epoch % trace_every == 0:
             trace.append({"epoch": epoch, "nll": float(nll), "d_ev": float(torch.exp(log_v))})
+        if early_stop and epoch % 100 == 0:
+            window = (window + [float(torch.exp(log_v))])[-5:]
+            if epoch >= 500 and len(window) == 5:
+                stable = stable + 1 if (max(window) - min(window)) <= 0.02 * np.mean(window) else 0
+                if stable >= 3:
+                    break
+    m.epochs_run, m.final_nll = epoch, float(nll)
     return m
 
 
@@ -256,6 +281,57 @@ def modes(m) -> Dict[str, np.ndarray]:
     return {"U": U, "V": V, "p": p[order]}
 
 
+@torch.no_grad()
+def parameters(m) -> Dict[str, np.ndarray]:
+    """Every fitted quantity of a directed model with offsets, modes sorted by
+    occupancy, so a new citing node (the query) can be scored against it."""
+    s = m.sigma().cpu().numpy()
+    order = np.argsort(-s)
+    return {"U": m.U().cpu().numpy()[:, order], "V": m.V().cpu().numpy()[:, order],
+            "sigma": s[order], "p": (s / s.sum())[order], "a": m.a.cpu().numpy(),
+            "b": m.b.cpu().numpy(), "beta": np.array(float(m.beta()))}
+
+
+def heldout_split(A: np.ndarray, frac: float = 0.1, seed: int = 0):
+    """Hold out `frac` of the citations and as many non-citations, drawn
+    uniformly (SPECTRA's own protocol removes 50% of edges and keeps the
+    training graph connected)."""
+    rng = np.random.default_rng(seed)
+    A = np.asarray(A) > 0
+    n = A.shape[0]
+    pos = np.argwhere(A)
+    pos = pos[pos[:, 0] != pos[:, 1]]
+    k = max(1, int(round(frac * len(pos))))
+    pos = pos[rng.choice(len(pos), k, replace=False)]
+    neg = set()
+    while len(neg) < k:
+        i, j = (int(x) for x in rng.integers(0, n, 2))
+        if i != j and not A[i, j]:
+            neg.add((i, j))
+    return pos, np.array(sorted(neg))
+
+
+CRITERIA = {"auc": max, "ap": max, "nll": min}
+
+
+def select_eta_heldout(A: np.ndarray, etas, cfg: Optional[FitConfig] = None,
+                       seed: int = 0, frac: float = 0.1, criterion: str = "auc"):
+    """Choose eta by held-out link prediction (our addition; SPECTRA reports
+    eta = 0 or bisects to fixed d_ev targets): fit at every eta in the grid without the
+    held-out pairs and keep the eta at the peak of held-out AUC (or, with
+    `criterion`, of average precision, or the lowest balanced held-out NLL).
+    Every point records all three, so other criteria can be read off later."""
+    pos, neg = heldout_split(A, frac, seed)
+    exclude = np.concatenate([pos, neg])
+    points = []
+    for eta in etas:
+        m = fit(A, "directed", float(eta), cfg, seed, exclude=exclude)
+        points.append(dict(heldout_metrics(m, pos, neg), eta=float(eta),
+                           d_ev=diagnostics(m)["d_ev"]))
+    best = CRITERIA[criterion](points, key=lambda p: p[criterion])
+    return best["eta"], points
+
+
 @dataclass
 class TargetResult:
     eta: float
@@ -267,21 +343,33 @@ class TargetResult:
 def fit_to_target(A: np.ndarray, d_target: float, kind: str = "directed",
                   cfg: Optional[FitConfig] = None, seed: int = 0, tau: float = 0.02,
                   eta_step: float = 0.1, expand: float = 2.0, eta_lim: float = 10.0,
-                  max_expansions: int = 10, max_bisect: int = 20) -> TargetResult:
+                  max_expansions: int = 10, max_bisect: int = 20,
+                  probe_early_stop: bool = False) -> TargetResult:
     """Bracket-then-bisect on eta so the fitted d_ev hits d_target within
     relative tolerance tau. d_ev is increasing in eta (eta > 0 rewards
     spreading occupancy), so the search moves eta up from 0 when the eta=0
     fit is below target and down otherwise, as in SPECTRA's
-    from-zero directional search. Every probe is a cold-start fit."""
-    cfg = cfg or FitConfig()
+    from-zero directional search. Every probe is a cold-start fit.
+    With `probe_early_stop`, probes stop once d_ev is stable and the chosen
+    eta is refitted for the full epochs (SPECTRA's cheap-probe + retrain)."""
+    res = _target_search(A, d_target, kind, cfg or FitConfig(), seed, tau, eta_step, expand,
+                         eta_lim, max_expansions, max_bisect, probe_early_stop)
+    if probe_early_stop:
+        m = fit(A, kind, res.eta, cfg or FitConfig(), seed)
+        res = TargetResult(res.eta, diagnostics(m)["d_ev"], m, res.probes)
+    return res
+
+
+def _target_search(A, d_target, kind, cfg, seed, tau, eta_step, expand, eta_lim,
+                   max_expansions, max_bisect, probe_early_stop) -> TargetResult:
     if d_target > cfg.rank:
         raise ValueError(f"d_target={d_target} exceeds rank cap {cfg.rank}")
     probes: List[Dict] = []
 
     def probe(eta):
-        m = fit(A, kind, eta, cfg, seed)
+        m = fit(A, kind, eta, cfg, seed, early_stop=probe_early_stop)
         d = diagnostics(m)["d_ev"]
-        probes.append({"eta": eta, "d_ev": d})
+        probes.append({"eta": eta, "d_ev": d, "epochs": m.epochs_run})
         return m, d
 
     def close(d):
@@ -325,6 +413,20 @@ def fit_to_target(A: np.ndarray, d_target: float, kind: str = "directed",
         else:
             a_eta, a_d = mid, d
     return TargetResult(best[0], best[1], best[2], probes)
+
+
+@torch.no_grad()
+def heldout_metrics(m, pos_pairs: np.ndarray, neg_pairs: np.ndarray) -> Dict[str, float]:
+    """Held-out AUC, average precision and balanced NLL (mean over held-out
+    citations + mean over held-out non-citations, as in the training loss)."""
+    from sklearn.metrics import average_precision_score, roc_auc_score
+    L = m.logits().cpu().numpy()
+    lp, ln = L[pos_pairs[:, 0], pos_pairs[:, 1]], L[neg_pairs[:, 0], neg_pairs[:, 1]]
+    s = np.concatenate([lp, ln])
+    y = np.concatenate([np.ones(len(lp)), np.zeros(len(ln))])
+    nll = np.logaddexp(0, -lp).mean() + np.logaddexp(0, ln).mean()
+    return {"auc": float(roc_auc_score(y, s)), "ap": float(average_precision_score(y, s)),
+            "nll": float(nll)}
 
 
 @torch.no_grad()

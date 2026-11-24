@@ -27,6 +27,7 @@ from build_graphs import arxiv_core, is_query_version, norm_title, title_matcher
 from pool_edges_s2 import s2_batch  # noqa: E402
 
 META = "paperId,title,abstract,year,publicationDate,citationCount,externalIds,references.paperId"
+META_LITE = META.replace(",references.paperId", "")
 
 
 def batch(ids, fields, chunk):
@@ -72,8 +73,21 @@ def build(q, pool, cit_rows, imp_keys, args):
     meta = {d["paperId"]: d for d in seeds}
     meta.update({d["paperId"]: d for d in batch(extra, META, 100) if d})
 
+    # second hop (--n_refs2 > 0): the references of the first-hop papers, ranked
+    # by how many first-hop papers cite them; their reference lists are already
+    # in the first-hop records, so only the new papers' metadata is fetched
+    extra2 = []
+    if args.n_refs2 > 0:
+        known = set(seed_ids) | set(extra)
+        ref2_count = Counter(r["paperId"] for p in extra for r in ((meta.get(p) or {}).get("references") or [])
+                             if r.get("paperId") and r["paperId"] not in known)
+        extra2 = [p for p, _ in ref2_count.most_common(args.n_refs2)]
+        # fetched without their own reference lists (500 per call instead of
+        # 100): second-hop papers get the edges pointing at them, none pointing out
+        meta.update({d["paperId"]: d for d in batch(extra2, META_LITE, 500) if d})
+
     nodes, index = [], {}
-    for pid in seed_ids + extra:
+    for pid in seed_ids + extra + extra2:
         d = meta.get(pid)
         if d is None or pid in index or not d.get("title") or is_query_version(d["title"], q_norm):
             continue
@@ -86,7 +100,8 @@ def build(q, pool, cit_rows, imp_keys, args):
                       "abstract": d.get("abstract") or (snippet.get(a, "") if a else ""),
                       "publication_date": d.get("publicationDate"),
                       "cited_by_count": d.get("citationCount") or 0,
-                      "source": "seed" if is_seed else ("ref" if pid in ref_count else "citer"),
+                      "source": ("seed" if is_seed else "ref2" if pid in extra2
+                                 else "ref" if pid in ref_count else "citer"),
                       "_refs": [r["paperId"] for r in (d.get("references") or []) if r.get("paperId")]})
 
     # pool papers Semantic Scholar does not know stay in as candidates without
@@ -143,6 +158,7 @@ def build(q, pool, cit_rows, imp_keys, args):
                   "n_pool_without_s2": n_unresolved,
                   "n_refs": sum(nd["source"] == "ref" for nd in nodes),
                   "n_citers": sum(nd["source"] == "citer" for nd in nodes),
+                  "n_refs2": sum(nd["source"] == "ref2" for nd in nodes),
                   "frac_with_abstract": sum(bool(nd["abstract"]) for nd in nodes) / max(len(nodes), 1)},
     }
 
@@ -154,6 +170,8 @@ def main():
     ap.add_argument("--out", default="data/graphs_ds")
     ap.add_argument("--n_refs", type=int, default=250)
     ap.add_argument("--n_citers", type=int, default=130)
+    ap.add_argument("--n_refs2", type=int, default=0,
+                    help="second hop: this many references of the first-hop papers (0 = one hop)")
     ap.add_argument("--passes", type=int, default=3)
     args = ap.parse_args()
     os.makedirs(args.out, exist_ok=True)

@@ -2,6 +2,8 @@
 Add extra d_ev targets (default 4 and 16) to already-fitted operators,
 for a chosen subset of queries (e.g. the design queries), without
 refitting the main operators. Workers split the subset like fit_worker.py.
+With --kind symmetric, the undirected model is fitted instead and saved as
+"symmetrized" (target 8) or "symmetrized_d<t>".
 """
 from __future__ import annotations
 
@@ -27,6 +29,7 @@ def main():
     ap.add_argument("--operators", required=True)
     ap.add_argument("--worker", default="0/1", help="k/N")
     ap.add_argument("--targets", type=float, nargs="+", default=[4.0, 16.0])
+    ap.add_argument("--kind", choices=["directed", "symmetric"], default="directed")
     ap.add_argument("--rank", type=int, default=32)
     ap.add_argument("--epochs", type=int, default=6000)
     ap.add_argument("--seed", type=int, default=0)
@@ -44,16 +47,18 @@ def main():
             continue
         with open(base + ".json") as f:
             info = json.load(f)
-        todo = [t for t in args.targets if f"dspectra_d{t:g}" not in info]
+        name = lambda t: (f"dspectra_d{t:g}" if args.kind == "directed"  # noqa: E731
+                          else "symmetrized" if t == 8 else f"symmetrized_d{t:g}")
+        todo = [t for t in args.targets if name(t) not in info]
         if not todo:
             continue
         arrays = dict(np.load(base + ".npz"))
         _, A = load_graph(f"{args.graphs}/{aid}.json")
         for t in todo:
-            res = fit_to_target(A, t, "directed", cfg, seed=args.seed)
+            res = fit_to_target(A, t, args.kind, cfg, seed=args.seed)
             md = modes(res.model)
-            arrays[f"dspectra_d{t:g}_V"], arrays[f"dspectra_d{t:g}_p"] = md["V"], md["p"]
-            info[f"dspectra_d{t:g}"] = {"eta": res.eta, "probes": len(res.probes), "d_ev": res.d_ev}
+            arrays[f"{name(t)}_V"], arrays[f"{name(t)}_p"] = md["V"], md["p"]
+            info[name(t)] = {"eta": res.eta, "probes": len(res.probes), "d_ev": res.d_ev}
         np.savez(base + ".npz", **arrays)
         with open(base + ".json", "w") as f:
             json.dump(info, f)

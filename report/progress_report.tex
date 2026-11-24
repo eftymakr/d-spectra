@@ -1,0 +1,76 @@
+\documentclass[10pt]{article}
+\usepackage[letterpaper,margin=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{wrapfig}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\newcommand{\todo}[1]{\textcolor{red}{[#1]}}
+\titleformat{\section}{\normalsize\bfseries}{\thesection}{0.5em}{}
+\titlespacing*{\section}{0pt}{2pt}{0pt}
+\setlist{nosep,leftmargin=1.1em}
+\setlength{\parskip}{0.5pt}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+{\large\bfseries D-SPECTRA: Direction-Aware Spectral Evidence Acquisition for Deep Research Agents\\[1pt]
+Progress Report 1}\\[1pt]
+Eftychia Makri (em2388) \quad Mateo Bastidas (mib37)
+\end{center}
+\vspace{-5pt}
+
+\section{Completed work}
+\begin{itemize}
+\item \textbf{Directed SPECTRA}, ported from the SPECTRA engine: $P(A_{ij}{=}1)=\phi(a_i+b_j+\beta K_{ij})$, $K=n\,U\Sigma V^\top/\|U\Sigma V^\top\|_*$, $p_k=\sigma_k/\sum_\ell\sigma_\ell$, objective $\ell-\eta\log d_{\mathrm{ev}}+\mathcal{R}$, bisection on $\eta$ to a target $d_{\mathrm{ev}}$; greedy $F(S)$; the methods in the table.
+\item \textbf{Citation graphs} (only works published before the query paper; the query and any other version of it, matched by title, are excluded): for all 63 queries, OpenAlex keyword seeds plus their references and citing papers (489 nodes, 3.9k edges); for 20 queries, as proposed, DeepScholar-base's frozen pools plus their references and citing papers via Semantic Scholar (488 nodes, 5.5k edges).
+\item \textbf{DeepScholar-base reproduced end to end} (step 1) on a local Qwen3-8B-AWQ (vLLM, thinking off) with the paper's recursive arXiv search: 20 queries $\times$ 3 runs, $\approx$125 candidates and 22 selected papers per query, 3--4 min per query. We fixed four bugs in a wrapper, notably a silent 512-token cap on every LLM call that made the filter reject almost everything.
+\end{itemize}
+
+\section{Changes since the proposal}
+\begin{itemize}
+\item \textbf{Backbone and search.} Shared backbone Qwen3-8B-AWQ (Qwen3-4B passed only 2--3 papers per query through DeepScholar's filter). arXiv-only search, as in the DeepScholar paper (Tavily .070 vs.\ arXiv .152 reference coverage); web search added no coverage, leaked $\approx$5 post-cutoff papers per query and searched for the target paper by name. Qwen's non-thinking sampling, 3 seeds. Published scores use GPT-4.1 or Llama-4, so ``reproduced'' means end to end and stable across seeds.
+\item \textbf{Frozen pools.} Two identical runs share only 46\% of their candidates (14--86\%), so every system selects from the same frozen pool per query and seed. Pool papers rarely cite each other (0.43 citations per paper), so D-SPECTRA is fitted on the pool plus its references and citing papers and selects from the pool only or from this expanded graph. Edges come from Semantic Scholar (OpenAlex lacks most of these preprints' reference lists).
+\item \textbf{Fitting and selection.} Exact likelihood over all non-edges; 6,000 epochs (1,500 had not converged); $F$'s terms rescaled (still submodular). Main ablation $\alpha{=}1$ (no coverage term; on the same pool also ``citation expansion only''); $\eta{=}0$ separate. Until judged coverage exists, the gate uses recall of human-cited references.
+\end{itemize}
+
+\section{Early evidence}
+\textbf{Planted directed graphs} (50--500 nodes, 3 seeds; checks the directed small-graph extension): $\eta$ controls $d_{\mathrm{ev}}$ (within 5\% of target in 32/36 runs), offsets keep popular papers out of the top mode (1--4\% of its mass vs.\ 33--76\% for raw SVD), and direction lifts held-out AUC (0.69--0.76 vs.\ 0.60--0.66).
+\begin{wraptable}{r}{0.43\textwidth}
+\vspace{-12pt}
+\centering\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+& \multicolumn{2}{c}{Pilot (53 q)} & \multicolumn{2}{c}{DS pools (19 q)}\\
+Recall of human-cited refs & $B{=}20$ & $60$ & $20$ & $60$\\
+\midrule
+Fixed-$k$ (search only) & .076 & .093 & .046 & .075\\
+Relevance only (main abl.) & .105 & .191 & .073 & .151\\
+Most-cited in graph & .059 & .128 & .161 & .247\\
+Vendi (text diversity) & .096 & .173 & .064 & .156\\
+Symmetrized SPECTRA & .100 & .187 & .084 & .191\\
+USVT of $A$ (no fitting) & \textbf{.118} & \textbf{.219} & \textbf{.166} & \textbf{.288}\\
+D-SPECTRA, $\eta{=}0$ & .112 & .181 & .098 & .226\\
+D-SPECTRA ($d_{\mathrm{ev}}{=}8$) & .110 & .181 & .104 & .212\\
+\bottomrule
+\end{tabular}
+\vspace{-8pt}
+\end{wraptable}
+\textbf{Selection pilots} (no LLM; recall of human-cited references; the writer gets $\approx$22 papers, so $B{=}20$ matters most). \emph{Pilot}: OpenAlex seeds plus citations; \emph{DS pools}: the proposal's version on DeepScholar-base's 20 frozen pools. Following citations is the big win: the DS pools hold 8\% of the human-cited references and their expanded graphs 45\%, and selecting from the expanded graph doubles recall; the DeepScholar paper agrees (true references lift its score from .286 to .808). On the DS pools D-SPECTRA beats relevance-only (+.030 at $B{=}20$, $p{=}.07$; +.060 at $B{=}60$, 13/1 wins, $p{=}.004$, Wilcoxon), not on the pilot ($p>.2$). But popularity wins: USVT beats D-SPECTRA ($-$.062 at $B{=}20$, $p{=}.005$) and most-cited is ahead too, so gains must be shown over most-cited. $\eta$ shows no effect on the pilot (targets 4, 8, 16 alike) and is untested on the DS pools, where $\eta{=}0$ already lands at $d_{\mathrm{ev}}\approx$8.5. The premise cuts the other way: human-cited sets occupy \emph{fewer} fitted modes than same-size relevance-ranked sets ($d_{\mathrm{ev}}(S)$ 5.7 vs.\ 6.7 and 5.9 vs.\ 7.2; $p{=}.002$, $<$.001), and at a fixed budget, methods spreading over more modes recall less (Spearman $-$.4 pilot, $-$.9 DS pools). Humans concentrate on the query's modes and cite well-known work; $F(S)$ spreads out and the offsets remove popularity, a risk the proposal flagged. Recall is only a proxy; the judged gate decides.
+
+\section{Remaining work and timeline \textmd{\todo{confirm dates}}}
+\begin{itemize}
+\item \textbf{Oct 22--Nov 2:} frozen pools, DeepScholar-base and fixed-$k$ scores for 63 queries $\times$ 3 seeds (Mateo); D-SPECTRA on the final pools in both settings, and the judge on a subset early, since the proxy may favour concentrated picks (Eftychia). All systems pass the writer as many papers as DeepScholar's filter kept; we log LLM calls, lookups and fit time, and vary search and fit seeds separately.
+\item \textbf{Nov 3--16:} act on the pilot (mode weights concentrated on the query's modes, the popularity offset $b_j$ in the score, a lower learning rate with a schedule and warm-started probes, since the loss rose in 2 of 6 long runs) and test $d_{\mathrm{ev}}$ 4 and 16 on the DS pools. Design on the 20 pilot queries, tune $\alpha,\gamma,d_{\mathrm{ev}}^\star$ there, and report final claims on the other 43 (seen once in the recall-only pilot); then all systems through the writer and judge (both).
+\item \textbf{Nov 17--30:} closed loop and $\epsilon$-stopping vs.\ relevance-driven expansion at equal lookup budget (Eftychia); ResearchQA, DeepResearch Bench II (Mateo). \textbf{Dec:} seeds, $B$ sweep, tests, judge spot-checks, write-up.
+\end{itemize}
+
+\section{Code repository}
+\url{https://github.com/eftymakr/d-spectra} (model, graphs, selection, experiments, README). \todo{staff access}
+\end{document}

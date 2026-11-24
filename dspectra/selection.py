@@ -27,12 +27,36 @@ def mode_weights(V: np.ndarray, p: np.ndarray, r: np.ndarray) -> np.ndarray:
     return w / max(w.sum(), 1e-12)
 
 
+def anchored_mode_weights(F: np.ndarray, p: np.ndarray, r: np.ndarray,
+                          anchors: np.ndarray) -> np.ndarray:
+    """w_k ∝ p_k * sum_{i in anchors} r_i F_ik^2: modes weighted by how strongly
+    the anchor papers (the search pool) load on them, in the role F (U or V)."""
+    w = p * (r[anchors, None] * F[anchors] ** 2).sum(0)
+    return w / max(w.sum(), 1e-12)
+
+
+def query_link_scores(P: dict, r: np.ndarray, anchors: np.ndarray,
+                      norm: Optional[float] = None) -> np.ndarray:
+    """Log-odds that the query cites each paper, with the query as a new citing
+    node: its offset and citing factor are the relevance-weighted means of the
+    anchors', scored against every paper's popularity b_j and cited factor V_j,
+    logit_j = a_q + b_j + beta * n * (u_q * sigma) . V_j / sum(sigma).
+    `norm` overrides sum(sigma), to truncate a kernel without rescaling it."""
+    wt = r[anchors] / max(r[anchors].sum(), 1e-12)
+    u_q = wt @ P["U"][anchors]
+    a_q = wt @ P["a"][anchors]
+    n = P["V"].shape[0]
+    kernel = n * (P["V"] @ (u_q * P["sigma"])) / (P["sigma"].sum() if norm is None else norm)
+    return a_q + P["b"] + float(P["beta"]) * kernel
+
+
 def greedy_select(V: np.ndarray, p: np.ndarray, r: np.ndarray, B: int,
                   alpha: float = 0.5, gamma: float = 5.0,
-                  candidates: Optional[np.ndarray] = None) -> List[int]:
+                  candidates: Optional[np.ndarray] = None,
+                  weights: Optional[np.ndarray] = None) -> List[int]:
     n = V.shape[0]
     mass = np.maximum((r[:, None] * V ** 2).sum(0), 1e-12)
-    w = mode_weights(V, p, r)
+    w = mode_weights(V, p, r) if weights is None else weights
     contrib = r[:, None] * V ** 2 / mass[None, :]
     allowed = np.zeros(n, dtype=bool)
     allowed[candidates if candidates is not None else np.arange(n)] = True

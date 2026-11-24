@@ -25,6 +25,15 @@ Methods (all selecting from the same candidate pool):
   vendi            greedy relevance + Vendi score on text embeddings
                    (Vendi-RAG-style diversity, no citation structure)
 
+With --variants (operators from fit_variants.py), for each fit F in d8
+(d_ev target), cv (eta by held-out link prediction) and eta0:
+  poolU_F, poolV_F   greedy F(S) with mode weights anchored on the search pool
+                     (its citing role U or cited role V)
+  qlink<m>_F         top-B by the model's log-odds that the query cites the
+                     paper, the query's citing factor taken from the m most
+                     relevant pool papers
+  qlinkrel<m>_F      the same averaged with relevance (rank scale)
+
 Hyperparameters are fixed before looking at results: rank cap 32,
 target d_ev 8 (sensitivity 4, 16), alpha 0.5, gamma 5.
 
@@ -48,6 +57,7 @@ import numpy as np
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
 BUDGETS = [10, 20, 30, 45, 60]
+ANCHORS = [5, 10, 20]  # pool papers that stand in for the query's citing role
 COMPARE = ["relevance_only", "dspectra_eta0", "symmetrized", "raw_svd", "usvt",
            "semantic_modes", "vendi", "search_only", "most_cited", "deepscholar_kept"]
 
@@ -92,6 +102,11 @@ def relevance(Eq, En):
     cos = En @ Eq
     lo, hi = cos.min(), cos.max()
     return (cos - lo) / max(hi - lo, 1e-12)
+
+
+def rank_pct(x):
+    """Ranks scaled to [0, 1] (0 = lowest), to average scores on different scales."""
+    return np.argsort(np.argsort(x, kind="stable"), kind="stable") / max(len(x) - 1, 1)
 
 
 def svd_modes(M, k, paper_axis, threshold=None):
@@ -163,7 +178,7 @@ def evaluate_query(path, args):
     operators["raw_svd"] = svd_modes(A, args.rank, paper_axis=1)  # columns = cited papers
     operators["usvt"] = svd_modes(A, args.rank, paper_axis=1, threshold=usvt_threshold(A))
     operators["semantic_modes"] = svd_modes(En - En.mean(0), args.rank, paper_axis=0)
-    yardstick = operators["dspectra"]
+    yardstick = operators.get("dspectra") or next(iter(operators.values()))
 
     node_key = {int(k): v for k, v in g["gt"]["node_keys"].items()}
     imp_keys = set(g["gt"]["important_keys"])
@@ -201,6 +216,41 @@ def evaluate_query(path, args):
         for name, (V, p) in operators.items():
             selections[(name, B_label)] = greedy_select(V, p, r, B, args.alpha, args.gamma,
                                                         candidates=cand)
+
+    # E8 variants, from every fitted quantity (fit_variants.py): mode weights
+    # anchored on the search pool, and the query scored as a new citing node
+    full_path = f"{ops_dir}/{aid}_full.npz"
+    if args.variants and os.path.isfile(full_path):
+        from dspectra.selection import anchored_mode_weights, query_link_scores
+        zf = np.load(full_path)
+        linked = seeds[A[seeds].sum(1) > 0]  # pool papers with a known reference list
+        anchor_pool = linked if len(linked) else seeds
+        anchors = {m: anchor_pool[np.argsort(-r[anchor_pool], kind="stable")[:m]] for m in ANCHORS}
+        for fit_name in sorted({k.rsplit("_", 1)[0] for k in zf.files}):
+            P = {k: zf[f"{fit_name}_{k}"] for k in ("U", "V", "sigma", "p", "a", "b", "beta")}
+            w_pool = {role: anchored_mode_weights(P[role], P["p"], r, seeds) for role in ("U", "V")}
+            scores, greedy = {}, {}
+            # spectral prefixes: the fitted kernel truncated to its top k modes
+            # (SPECTRA's nested family), with the full normalisation kept
+            for k in [None] + list(args.prefixes):
+                tag = "" if k is None else f"_k{k}"
+                Pk = P if k is None else dict(P, U=P["U"][:, :k], V=P["V"][:, :k],
+                                              sigma=P["sigma"][:k])
+                for m_anchor, anc in anchors.items():
+                    link = query_link_scores(Pk, r, anc, norm=P["sigma"].sum())
+                    scores[f"qlink{m_anchor}_{fit_name}{tag}"] = link
+                    scores[f"qlinkrel{m_anchor}_{fit_name}{tag}"] = 0.5 * rank_pct(r) + 0.5 * rank_pct(link)
+                if k is not None:
+                    greedy[f"dspectra_{fit_name}{tag}"] = (Pk["V"], P["p"][:k], None)
+            for role, w in w_pool.items():
+                greedy[f"pool{role}_{fit_name}"] = (P["V"], P["p"], w)
+            for B_label in budgets:
+                B = len(kept_idx) if B_label == 0 else B_label
+                for name, (V, p, w) in greedy.items():
+                    selections[(name, B_label)] = greedy_select(
+                        V, p, r, B, args.alpha, args.gamma, candidates=cand, weights=w)
+                for name, s in scores.items():
+                    selections[(name, B_label)] = top_k(s, B, candidates=cand)
 
     n_gt_all = g["gt"]["n_cited_in_related_work"]
     n_imp_all = g["gt"]["n_important"]
@@ -337,6 +387,10 @@ def main():
     ap.add_argument("--kept_dir", default=None,
                     help="DeepScholar-base outputs for one seed (folders with kept.csv); adds its "
                          "picks as a method and a per-query matched budget, stored as B = 0")
+    ap.add_argument("--variants", action="store_true",
+                    help="also evaluate the E8 variants from <operators>/<aid>_full.npz")
+    ap.add_argument("--prefixes", type=int, nargs="*", default=[],
+                    help="with --variants, also the kernel truncated to these numbers of modes")
     ap.add_argument("--aggregate", action="store_true")
     ap.add_argument("--rank", type=int, default=32)
     ap.add_argument("--epochs", type=int, default=1500)

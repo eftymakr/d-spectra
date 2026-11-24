@@ -3,8 +3,8 @@ Diagnostic: how many citations exist *between* the papers of each
 DeepScholar-base pool, according to Semantic Scholar (which has reference
 lists for arXiv preprints, unlike OpenAlex's arXiv records)?
 
-One batch request per pool (all papers by arXiv id); unauthenticated
-requests are paced, retried on 429, and cached under data/s2_cache.
+One batch request per pool (all papers by arXiv id); requests (with S2_API_KEY from
+.env if set) are paced, retried on 429, and cached under data/s2_cache.
 """
 from __future__ import annotations
 
@@ -26,27 +26,113 @@ from build_graphs import arxiv_core  # noqa: E402
 BATCH = "https://api.semanticscholar.org/graph/v1/paper/batch"
 
 
+_PAPERS = {}  # fields -> {paper id or "ARXIV:<id>": record}, from every cached response
+
+
+def _usable(rec, fields):
+    """A cached record can answer a request if it has every requested field
+    and, for list fields such as citations.year, the requested subfields."""
+    for f in fields.split(","):
+        top, _, sub = f.partition(".")
+        if top not in rec:
+            return False
+        if sub and isinstance(rec[top], list) and rec[top] and sub not in rec[top][0]:
+            return False
+    return True
+
+
+def _paper_index(cache_dir, fields):
+    if fields not in _PAPERS:
+        idx = {}
+        for path in glob.glob(os.path.join(cache_dir, "*.json")):
+            try:
+                with open(path) as f:
+                    recs = json.load(f)
+            except ValueError:
+                continue
+            for rec in recs if isinstance(recs, list) else []:
+                if rec and rec.get("paperId") and _usable(rec, fields):
+                    idx[rec["paperId"]] = rec
+                    ax = (rec.get("externalIds") or {}).get("ArXiv")
+                    if ax:
+                        idx[f"ARXIV:{ax}"] = rec
+        _PAPERS[fields] = idx
+    return _PAPERS[fields]
+
+
+def _api_key():
+    """S2_API_KEY from the environment or the git-ignored .env (never logged)."""
+    if os.environ.get("S2_API_KEY"):
+        return os.environ["S2_API_KEY"]
+    if os.path.isfile(".env"):
+        with open(".env") as f:
+            for line in f:
+                k, _, v = line.strip().partition("=")
+                if k == "S2_API_KEY" and v:
+                    return v
+    return None
+
+
+def _fetch(ids, fields, max_tries):
+    key = _api_key()
+    headers = {"x-api-key": key} if key else {}
+    delay, status = 5.0, None
+    for _ in range(max_tries):
+        try:
+            r = requests.post(BATCH, params={"fields": fields}, json={"ids": ids},
+                              headers=headers, timeout=120)
+            status = r.status_code
+        except requests.RequestException as e:
+            r, status = None, type(e).__name__
+        if r is not None and r.status_code == 200:
+            return r.json()
+        if status == 400:  # a malformed or unknown id: retrying won't help
+            break
+        print(f"S2 batch of {len(ids)}: {status}; retrying in {delay:.0f}s", file=sys.stderr, flush=True)
+        time.sleep(delay)
+        delay = min(delay * 2, 120)
+    raise RuntimeError(f"S2 batch failed after {max_tries} tries: {status}")
+
+
+def _fetch_split(ids, fields, max_tries):
+    """Fetch, halving a batch that keeps failing: some batches (e.g. the citation
+    lists of many papers) are refused as a whole but served in smaller parts.
+    A single paper refused with 400 counts as unknown (None), like a paper
+    Semantic Scholar does not have."""
+    if len(ids) == 1:
+        try:
+            return _fetch(ids, fields, max_tries)
+        except RuntimeError as e:
+            if str(e).endswith(": 400"):
+                return [None]
+            raise
+    try:
+        return _fetch(ids, fields, min(max_tries, 6))
+    except RuntimeError:
+        h = len(ids) // 2
+        return _fetch_split(ids[:h], fields, max_tries) + _fetch_split(ids[h:], fields, max_tries)
+
+
 def s2_batch(ids, fields, cache_dir="data/s2_cache", max_tries=20):
+    """Batch lookup, cached per request; papers already in any cached response
+    are reused, so only papers never seen before are requested (overlapping
+    pools, e.g. different search seeds, share most of their papers)."""
     key = hashlib.sha1(json.dumps([sorted(ids), fields]).encode()).hexdigest()
     path = os.path.join(cache_dir, key + ".json")
     if os.path.isfile(path):
         with open(path) as f:
             return json.load(f)
-    delay, status = 5.0, None
-    for _ in range(max_tries):
-        try:
-            r = requests.post(BATCH, params={"fields": fields}, json={"ids": ids}, timeout=120)
-            status = r.status_code
-        except requests.RequestException as e:
-            r, status = None, type(e).__name__
-        if r is not None and r.status_code == 200:
-            os.makedirs(cache_dir, exist_ok=True)
-            with open(path, "w") as f:
-                json.dump(r.json(), f)
-            return r.json()
-        time.sleep(delay)
-        delay = min(delay * 2, 120)
-    raise RuntimeError(f"S2 batch failed after {max_tries} tries: {status}")
+    idx = _paper_index(cache_dir, fields)
+    missing = [i for i in ids if i not in idx]
+    found = dict(zip(missing, _fetch_split(missing, fields, max_tries))) if missing else {}
+    out = [idx.get(i, found.get(i)) for i in ids]
+    for i, rec in found.items():
+        if rec:
+            idx[i] = idx[rec["paperId"]] = rec
+    os.makedirs(cache_dir, exist_ok=True)
+    with open(path, "w") as f:
+        json.dump(out, f)
+    return out
 
 
 def main():

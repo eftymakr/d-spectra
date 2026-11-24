@@ -2,49 +2,49 @@
   "eta_sweep_monotone_fraction": 1.0,
   "d_ev_range_by_n": {
     "min": {
-      "200": 1.0013173605680392
+      "200": 1.0012435025770274
     },
     "max": {
-      "200": 13.880560684021813
+      "200": 15.921784635981139
     }
   },
   "target_rel_err_by_n": {
     "mean": {
-      "200": 0.009619100436002928
+      "200": 0.020291925207578054
     },
     "max": {
-      "200": 0.02158232751462419
+      "200": 0.04026320574719211
     }
   },
   "target_hit_rate_tau_0.05": 1.0,
   "recovery_mean": {
     "nmi_cited_role": {
-      "directed": 0.5917329882296326,
-      "directed_citing_role(U)": 0.5084387539312281,
-      "directed_no_offsets": 0.46073145287204637,
+      "directed": 0.678918138762743,
+      "directed_citing_role(U)": 0.5808323259099137,
+      "directed_no_offsets": 0.4457583089287858,
       "raw_svd": 0.5494686546895388,
       "symmetrized": 0.6036777736378522
     },
     "top_mode_generic_share": {
-      "directed": 0.010623749345541,
+      "directed": 0.010699471458792686,
       "directed_citing_role(U)": NaN,
-      "directed_no_offsets": 0.2154318243265152,
+      "directed_no_offsets": 0.17061087489128113,
       "raw_svd": 0.6279128193855286,
       "symmetrized": 0.011371053755283356
     },
     "heldout_auc": {
-      "directed": 0.6755241070420415,
+      "directed": 0.6901652301554443,
       "directed_citing_role(U)": NaN,
-      "directed_no_offsets": 0.702171703865407,
+      "directed_no_offsets": 0.6751853664044563,
       "raw_svd": NaN,
       "symmetrized": 0.6745078851292861
     }
   },
   "recovery_by_n": {
     "200": {
-      "directed": 0.5917329882296326,
-      "directed_citing_role(U)": 0.5084387539312281,
-      "directed_no_offsets": 0.46073145287204637,
+      "directed": 0.678918138762743,
+      "directed_citing_role(U)": 0.5808323259099137,
+      "directed_no_offsets": 0.4457583089287858,
       "raw_svd": 0.5494686546895388,
       "symmetrized": 0.6036777736378522
     }

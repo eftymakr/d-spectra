@@ -1,0 +1,37 @@
+{
+  "n_queries": 20,
+  "n_queries_with_gt_in_pool": 19,
+  "pool": {
+    "mean_nodes": 488.15,
+    "mean_edges": 5494.75,
+    "pooled_gt_reachable_frac": 0.44901960784313727
+  },
+  "fit": {
+    "dspectra": {
+      "mean_d_ev": 8.017173278165151,
+      "mean_eta": -0.006979980468750001
+    },
+    "dspectra_eta0": {
+      "mean_d_ev": 8.549778410593696,
+      "mean_eta": 0.0
+    },
+    "symmetrized": {
+      "mean_d_ev": 8.048266397644674,
+      "mean_eta": -0.05987792968750001
+    }
+  },
+  "mean_fit_seconds": 543.9931109547615,
+  "premise": {
+    "n_queries": 17,
+    "mean_d_ev_human": 5.9041867536657,
+    "mean_d_ev_relevance": 7.201607956605799,
+    "mean_d_ev_random": 7.244858945117278,
+    "human_gt_relevance": 1,
+    "p_human_vs_relevance": 7.62939453125e-05
+  },
+  "recall_tracks": {
+    "mean_rho_d_ev": 0.231761856445076,
+    "mean_rho_size": 0.5551100850546933,
+    "n": 12
+  }
+}
