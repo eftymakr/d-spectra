@@ -1,0 +1,24 @@
+## Related Works
+
+Conversational recommendation systems (CRSs) have gained significant attention for their ability to engage users in multi-turn dialogues to infer preferences and provide personalized recommendations \[[16](http://arxiv.org/abs/1806.03277)\]. However, capturing user preferences from conversations remains a fundamental challenge due to the complexity and multifaceted nature of user intent \[[1](http://arxiv.org/abs/2304.13874)\]. Existing approaches often rely on handcrafted reward functions or fail to effectively model the dynamic and evolving nature of user preferences \[[2](http://arxiv.org/abs/2310.20109)\]. Additionally, frequent user involvement can degrade the user experience, making automated interaction a critical area of research \[[1](http://arxiv.org/abs/2304.13874)\].
+
+To address these limitations, several studies have explored the use of simulated users to enable automatic interaction with CRSs. For instance, \[[1](http://arxiv.org/abs/2304.13874)\] proposes a user simulator-based framework for multi-turn interactions with mixed-initiative CS systems, demonstrating that user feedback can significantly improve retrieval performance. Similarly, \[[13](http://arxiv.org/abs/2412.06949)\] introduces a dataset that links Reddit conversations with MovieLens interactions to enrich item representations and improve recommendation accuracy. These works highlight the importance of incorporating both conversational and collaborative signals for better performance.
+
+In the context of reward learning, \[[15](http://arxiv.org/abs/1708.04378)\] proposes a method to learn user reward functions directly from interaction traces, which can be used to improve the personalization and effectiveness of recommendation systems. This aligns with the idea of using generative reward models to simulate user feedback, as proposed in our work. Furthermore, \[[12](http://arxiv.org/abs/2112.05197)\] introduces a framework that allows users to critique recommendations with natural language justifications, enhancing the interactivity and trustworthiness of conversational systems.
+
+To improve the efficiency and effectiveness of conversational recommendation, \[[14](http://arxiv.org/abs/2112.08140)\] proposes a model that leverages item metadata and semantic alignment with dialog context to generate high-quality recommendations. This approach reduces the reliance on knowledge graphs and simplifies the engineering process. Additionally, \[[10](http://arxiv.org/abs/2412.02415)\] introduces a Transformer-based sequential conversational recommendation method that models sequential dependencies in dialogues, improving the accuracy of recommendations.
+
+The use of reinforcement learning (RL) in conversational recommendation has also been explored. \[[4](http://arxiv.org/abs/2105.09710)\] proposes a unified policy learning task that integrates conversation and recommendation components, enhancing scalability and stability. Similarly, \[[7](http://arxiv.org/abs/2310.14609)\] introduces a long short-term feedback architecture that connects recommendation and conversation modules, enabling more natural and effective interactions.
+
+In summary, the field of conversational recommendation has seen significant advancements, including the use of simulated users, reward learning, and reinforcement learning frameworks. These approaches aim to improve the accuracy, efficiency, and user experience of CRSs. Our work builds on these contributions by introducing a generative reward model based simulated user (GRSU) that enables automatic and efficient interaction with CRSs.
+
+1. \[[1](http://arxiv.org/abs/2304.13874)\] Exploiting Simulated User Feedback for Conversational Search: Ranking, Rewriting, and Beyond  
+2. \[[2](http://arxiv.org/abs/2310.20109)\] Multi-Objective Intrinsic Reward Learning for Conversational Recommender Systems  
+3. \[[4](http://arxiv.org/abs/2105.09710)\] Unified Conversational Recommendation Policy Learning via Graph-based Reinforcement Learning  
+4. \[[7](http://arxiv.org/abs/2310.14609)\] Long Short-Term Planning for Conversational Recommendation Systems  
+5. \[[10](http://arxiv.org/abs/2412.02415)\] Knowledge-Enhanced Conversational Recommendation via Transformer-Based Sequential Modeling  
+6. \[[12](http://arxiv.org/abs/2112.05197)\] Self-Supervised Bot Play for Conversational Recommendation with Justifications  
+7. \[[13](http://arxiv.org/abs/2412.06949)\] Bridging Conversational and Collaborative Signals for Conversational Recommendation  
+8. \[[14](http://arxiv.org/abs/2112.08140)\] Improving Conversational Recommendation Systems' Quality with Context-Aware Item Meta Information  
+9. \[[15](http://arxiv.org/abs/1708.04378)\] Towards Learning Reward Functions from User Interactions  
+10. \[[16](http://arxiv.org/abs/1806.03277)\] Conversational Recommender System

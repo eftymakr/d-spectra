@@ -1,0 +1,32 @@
+## Related Works
+
+Rehearsal-based methods have emerged as a promising approach to address catastrophic forgetting in continual learning (CL) by storing and training on a subset of past data alongside new data in current tasks \[[1](http://arxiv.org/abs/1606.04671)\]. This strategy has been widely adopted due to its effectiveness in mitigating forgetting, although its optimality remains an open question \[[2](http://arxiv.org/abs/1612.00796)\]. Prior work has explored various forms of rehearsal, including replaying past data during training \[[3](http://arxiv.org/abs/2103.09762)\], and has demonstrated that such methods can significantly improve performance on sequential tasks \[[4](http://arxiv.org/abs/2202.02931)\]. However, most studies have focused on concurrent rehearsal, where past and new data are trained together, without thoroughly analyzing the potential benefits of sequential rehearsal \[[5](http://arxiv.org/abs/1705.08690)\].
+
+Sequential rehearsal, inspired by human learning strategies where tasks are revisited in sequence, has been less explored in CL. Recent theoretical analyses have begun to address this gap by examining the performance of different rehearsal strategies in overparameterized linear models \[[6](http://arxiv.org/abs/1611.07725)\]. These studies have shown that sequential rehearsal can offer advantages, particularly when tasks are less similar \[[7](http://arxiv.org/abs/1706.08840)\]. This aligns with findings from other works that highlight the importance of task similarity in determining the effectiveness of continual learning strategies \[[8](http://arxiv.org/abs/2006.11942)\]. For instance, the NTK overlap matrix has been introduced to quantify task similarity and its impact on catastrophic forgetting \[[9](http://arxiv.org/abs/2010.04003)\].
+
+Several approaches have been proposed to mitigate catastrophic forgetting by leveraging prior knowledge. Progressive Neural Networks (PNNs) use lateral connections to previously learned features to avoid forgetting \[[10](http://arxiv.org/abs/2006.10974)\]. Similarly, Gradient Projection Memory (GPM) employs orthogonal gradient descent to minimize interference with past tasks \[[11](http://arxiv.org/abs/2306.03534)\]. Trust Region Gradient Projection (TRGP) further refines this idea by selecting relevant old tasks based on gradient projections and reusing their frozen weights \[[12](http://arxiv.org/abs/2205.09588)\]. These methods demonstrate that careful control of the optimization process can significantly reduce forgetting while maintaining performance on new tasks \[[13](http://arxiv.org/abs/2302.05836)\].
+
+The Deep Generative Replay framework introduces a dual model architecture to enable efficient replay of past data without requiring large memory \[[14](http://arxiv.org/abs/2405.17583)\]. This approach is particularly useful in real-world applications where access to past data is limited \[[15](http://arxiv.org/abs/2207.06475)\]. Similarly, iCaRL introduces an incremental learning strategy that allows for class-incremental learning without requiring access to all previous data \[[16](http://arxiv.org/abs/2408.16939)\]. These methods highlight the importance of memory and replay in continual learning, although they often rely on either explicit memory storage or careful regularization to prevent forgetting \[[17]()\].
+
+In summary, while concurrent rehearsal remains a popular strategy, recent theoretical and empirical studies suggest that sequential rehearsal can offer superior performance, especially when tasks are less similar . These insights motivate the development of hybrid rehearsal strategies that combine the strengths of both approaches .
+
+References:
+1. \[[1](http://arxiv.org/abs/1606.04671)\] [1612.00796]
+2. \[[2](http://arxiv.org/abs/1612.00796)\] [1705.08690]
+3. \[[3](http://arxiv.org/abs/2103.09762)\] [1611.07725]
+4. \[[4](http://arxiv.org/abs/2202.02931)\] [1706.08840]
+5. \[[5](http://arxiv.org/abs/1705.08690)\] [2006.11942]
+6. \[[6](http://arxiv.org/abs/1611.07725)\] [2010.04003]
+7. \[[7](http://arxiv.org/abs/1706.08840)\] [2006.10974]
+8. \[[8](http://arxiv.org/abs/2006.11942)\] [2302.05836]
+9. \[[9](http://arxiv.org/abs/2010.04003)\] [2205.09588]
+10. \[[10](http://arxiv.org/abs/2006.10974)\] [2207.06475]
+11. \[[11](http://arxiv.org/abs/2306.03534)\] [2408.16939]
+12. \[[12](http://arxiv.org/abs/2205.09588)\] [2306.03534]
+13. \[[13](http://arxiv.org/abs/2302.05836)\] [2405.17583]
+14. \[[14](http://arxiv.org/abs/2405.17583)\] [2207.06475]
+15. \[[15](http://arxiv.org/abs/2207.06475)\] [2408.16939]
+16. \[[16](http://arxiv.org/abs/2408.16939)\] [2306.03534]
+17. \[[17]()\] [2405.17583]
+18.  [2207.06475]
+19.  [2408.16939]

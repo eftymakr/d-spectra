@@ -1,0 +1,96 @@
+id,title,url,snippet
+2411.11158,"Leveraging genomic deep learning models for non-coding variant effect
+  prediction",http://arxiv.org/abs/2411.11158,"The majority of genetic variants identified in genome-wide association
+studies of complex traits are non-coding, and characterizing their function
+remains an important challenge in human genetics. Genomic deep learning models
+have emerged as a promising approach to enable in silico prediction of variant
+effects. These include supervised sequence-to-activity models, which predict
+genome-wide chromatin states or gene expression levels directly from DNA
+sequence, and self-supervised genomic language models. Here, we review progress
+in leveraging these models for non-coding variant effect prediction. We
+describe practical considerations for making such predictions and categorize
+the types of ground truth data that have been used to evaluate deep
+learning-based variant effect predictions, providing insight into the settings
+in which current models are most useful. We also discuss downstream
+applications of such models to understanding disease-relevant non-coding
+variants. Our review highlights key considerations for practitioners and
+opportunities for future improvements in model development and evaluation."
+1701.06538,"Outrageously Large Neural Networks: The Sparsely-Gated
+  Mixture-of-Experts Layer",http://arxiv.org/abs/1701.06538,"The capacity of a neural network to absorb information is limited by its
+number of parameters. Conditional computation, where parts of the network are
+active on a per-example basis, has been proposed in theory as a way of
+dramatically increasing model capacity without a proportional increase in
+computation. In practice, however, there are significant algorithmic and
+performance challenges. In this work, we address these challenges and finally
+realize the promise of conditional computation, achieving greater than 1000x
+improvements in model capacity with only minor losses in computational
+efficiency on modern GPU clusters. We introduce a Sparsely-Gated
+Mixture-of-Experts layer (MoE), consisting of up to thousands of feed-forward
+sub-networks. A trainable gating network determines a sparse combination of
+these experts to use for each example. We apply the MoE to the tasks of
+language modeling and machine translation, where model capacity is critical for
+absorbing the vast quantities of knowledge available in the training corpora.
+We present model architectures in which a MoE with up to 137 billion parameters
+is applied convolutionally between stacked LSTM layers. On large language
+modeling and machine translation benchmarks, these models achieve significantly
+better results than state-of-the-art at lower computational cost."
+2101.03961,"Switch Transformers: Scaling to Trillion Parameter Models with Simple
+  and Efficient Sparsity",http://arxiv.org/abs/2101.03961,"In deep learning, models typically reuse the same parameters for all inputs.
+Mixture of Experts (MoE) defies this and instead selects different parameters
+for each incoming example. The result is a sparsely-activated model -- with
+outrageous numbers of parameters -- but a constant computational cost. However,
+despite several notable successes of MoE, widespread adoption has been hindered
+by complexity, communication costs and training instability -- we address these
+with the Switch Transformer. We simplify the MoE routing algorithm and design
+intuitive improved models with reduced communication and computational costs.
+Our proposed training techniques help wrangle the instabilities and we show
+large sparse models may be trained, for the first time, with lower precision
+(bfloat16) formats. We design models based off T5-Base and T5-Large to obtain
+up to 7x increases in pre-training speed with the same computational resources.
+These improvements extend into multilingual settings where we measure gains
+over the mT5-Base version across all 101 languages. Finally, we advance the
+current scale of language models by pre-training up to trillion parameter
+models on the ""Colossal Clean Crawled Corpus"" and achieve a 4x speedup over the
+T5-XXL model."
+1810.04805,"BERT: Pre-training of Deep Bidirectional Transformers for Language
+  Understanding",http://arxiv.org/abs/1810.04805,"We introduce a new language representation model called BERT, which stands
+for Bidirectional Encoder Representations from Transformers. Unlike recent
+language representation models, BERT is designed to pre-train deep
+bidirectional representations from unlabeled text by jointly conditioning on
+both left and right context in all layers. As a result, the pre-trained BERT
+model can be fine-tuned with just one additional output layer to create
+state-of-the-art models for a wide range of tasks, such as question answering
+and language inference, without substantial task-specific architecture
+modifications.
+  BERT is conceptually simple and empirically powerful. It obtains new
+state-of-the-art results on eleven natural language processing tasks, including
+pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI
+accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering
+Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1
+(5.1 point absolute improvement)."
+2306.15794,"HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide
+  Resolution",http://arxiv.org/abs/2306.15794,"Genomic (DNA) sequences encode an enormous amount of information for gene
+regulation and protein synthesis. Similar to natural language models,
+researchers have proposed foundation models in genomics to learn generalizable
+features from unlabeled genome data that can then be fine-tuned for downstream
+tasks such as identifying regulatory elements. Due to the quadratic scaling of
+attention, previous Transformer-based genomic models have used 512 to 4k tokens
+as context (<0.001% of the human genome), significantly limiting the modeling
+of long-range interactions in DNA. In addition, these methods rely on
+tokenizers or fixed k-mers to aggregate meaningful DNA units, losing single
+nucleotide resolution where subtle genetic variations can completely alter
+protein function via single nucleotide polymorphisms (SNPs). Recently, Hyena, a
+large language model based on implicit convolutions was shown to match
+attention in quality while allowing longer context lengths and lower time
+complexity. Leveraging Hyena's new long-range capabilities, we present
+HyenaDNA, a genomic foundation model pretrained on the human reference genome
+with context lengths of up to 1 million tokens at the single nucleotide-level -
+an up to 500x increase over previous dense attention-based models. HyenaDNA
+scales sub-quadratically in sequence length (training up to 160x faster than
+Transformer), uses single nucleotide tokens, and has full global context at
+each layer. We explore what longer context enables - including the first use of
+in-context learning in genomics. On fine-tuned benchmarks from the Nucleotide
+Transformer, HyenaDNA reaches state-of-the-art (SotA) on 12 of 18 datasets
+using a model with orders of magnitude less parameters and pretraining data. On
+the GenomicBenchmarks, HyenaDNA surpasses SotA on 7 of 8 datasets on average by
++10 accuracy points. Code at https://github.com/HazyResearch/hyena-dna."

@@ -1,0 +1,24 @@
+## Related Works
+
+Recent advancements in Text-to-Speech (TTS) systems have significantly enhanced speech naturalness, leading to increased demand for precise prosody control and mispronunciation correction \[[1](http://arxiv.org/abs/1909.10302)\]. Traditional approaches for prosody manipulation often rely on specialized modules or additional training, which limits their capacity for post-hoc adjustments \[[1](http://arxiv.org/abs/1909.10302)\]. Similarly, conventional mispronunciation correction methods depend on grapheme-to-phoneme dictionaries, making them less practical in low-resource settings \[[1](http://arxiv.org/abs/1909.10302)\]. This section reviews related works that address these challenges.
+
+Several studies have focused on improving prosody control in TTS systems. For example, \[[2](http://arxiv.org/abs/2006.04558)\] introduces FastSpeech 2, which addresses the one-to-many mapping problem in TTS by incorporating more variation information such as pitch, energy, and accurate duration as conditional inputs. This allows for better control over the prosody of synthesized speech. Similarly, \[[3](http://arxiv.org/abs/2110.02952)\] proposes a hierarchical prosody modeling approach for non-autoregressive TTS, enabling fine-grained control over speaking styles and word-wise emphasis. These models demonstrate the potential for more flexible and controllable TTS systems.
+
+Another line of research explores the use of prosody embeddings for emotional and expressive speech synthesis. \[[4](http://arxiv.org/abs/2009.06775)\] introduces prosody embeddings that enable fine-grained control of the speaking style of the synthesized speech by introducing temporal structures in the embedding networks. This allows for adjustments at both the frame and phoneme levels, improving the expressiveness of the generated speech. Additionally, \[[5](http://arxiv.org/abs/2011.06465)\] presents a method for generating diverse and natural TTS samples using a quantized fine-grained VAE and an autoregressive prosody prior, which helps in producing more natural and varied speech outputs.
+
+In the realm of multi-speaker TTS, \[[6](http://arxiv.org/abs/2006.06873)\] introduces CopyCat2, a model capable of synthesizing speech with different speaker identities and transferring prosody at a fine-grained level between any pair of seen speakers. This model uses a two-stage training approach to achieve both multi-speaker TTS and fine-grained prosody transfer. Furthermore, \[[7](http://arxiv.org/abs/1811.02122)\] discusses the use of style tokens for unsupervised style modeling, control, and transfer in end-to-end speech synthesis. These tokens are trained without explicit labels and can be used to control synthesis in novel ways, such as varying speed and speaking style.
+
+The importance of prosody in TTS has also been highlighted in studies like \[[8](http://arxiv.org/abs/2002.03788)\], which explores the use of prosody embeddings for emotional and expressive speech synthesis. These embeddings are trained without any other supervision except for the target speech for synthesizing, demonstrating the feasibility of learning prosodic features directly from speech data. Additionally, \[[9](http://arxiv.org/abs/2206.13443)\] presents a method for generating diverse and natural TTS samples using a quantized fine-grained VAE and an autoregressive prosody prior, which helps in producing more natural and varied speech outputs.
+
+In summary, these related works highlight the ongoing efforts to improve prosody control and mispronunciation correction in TTS systems. They demonstrate the potential of various techniques, including prosody embeddings, hierarchical modeling, and style tokens, to achieve more flexible and controllable TTS systems.
+
+References:
+1. \[[1](http://arxiv.org/abs/1909.10302)\]
+2. \[[2](http://arxiv.org/abs/2006.04558)\]
+3. \[[3](http://arxiv.org/abs/2110.02952)\]
+4. \[[4](http://arxiv.org/abs/2009.06775)\]
+5. \[[5](http://arxiv.org/abs/2011.06465)\]
+6. \[[6](http://arxiv.org/abs/2006.06873)\]
+7. \[[7](http://arxiv.org/abs/1811.02122)\]
+8. \[[8](http://arxiv.org/abs/2002.03788)\]
+9. \[[9](http://arxiv.org/abs/2206.13443)\]

@@ -1,0 +1,23 @@
+## Related Works
+
+Recent advancements in large language models (LLMs) have emphasized the importance of understanding how feature representations evolve across layers, as this knowledge is critical for improving interpretability and robustness \[[1](http://arxiv.org/abs/2307.09288)\]. Several studies have explored the dynamics of representation learning in LLMs, focusing on how fine-tuning affects model behavior. For example, Llama 2 introduces a collection of fine-tuned chat models optimized for dialogue use cases, demonstrating that fine-tuning can significantly enhance performance on specific tasks \[[1](http://arxiv.org/abs/2307.09288)\]. Similarly, the work on instruction tuning shows that fine-tuning language models on a collection of tasks described via instructions can substantially improve zero-shot performance on unseen tasks \[[4](http://arxiv.org/abs/2109.01652)\]. This aligns with the broader trend of using fine-tuning to adapt pre-trained models to downstream applications.
+
+The effectiveness of fine-tuning methods has also been extensively studied. Techniques such as Child-Tuning, which updates a subset of parameters during fine-tuning, have shown promising results, outperforming vanilla fine-tuning by a significant margin \[[2](http://arxiv.org/abs/2109.05687)\]. Additionally, methods like BitFit, which only modify the bias-terms of the model, have demonstrated that small-to-medium training data can be sufficient for achieving competitive performance \[[6](http://arxiv.org/abs/2106.10199)\]. These findings highlight the importance of parameter-efficient fine-tuning strategies, especially when dealing with large-scale models where full fine-tuning is computationally prohibitive.
+
+Moreover, the role of fine-tuning in aligning models with human preferences has gained attention. Direct Preference Optimization (DPO) introduces a new parameterization of the reward model in reinforcement learning from human feedback (RLHF), enabling the extraction of the corresponding optimal policy in closed form \[[3](http://arxiv.org/abs/2305.18290)\]. This approach simplifies the fine-tuning process and improves the alignment of models with human preferences, as evidenced by its performance on sentiment control and dialogue tasks. Similarly, the work on preference learning for LLMs emphasizes the importance of human feedback in shaping model behavior and improving alignment with user intent \[[17](http://arxiv.org/abs/2406.11191)\].
+
+In addition to fine-tuning strategies, the impact of data and model size on fine-tuning performance has been explored. Studies have shown that LLM fine-tuning follows a power-based multiplicative joint scaling law between finetuning data size and other scaling factors, with model scaling generally yielding greater benefits than pretraining data scaling \[[8](http://arxiv.org/abs/2402.17193)\]. This suggests that the choice of fine-tuning method and data size is critical for achieving optimal performance.
+
+Finally, the importance of regularization in fine-tuning has been highlighted. Techniques such as mixout, which stochastically mixes the parameters of two models, have been proposed to improve the stability and accuracy of fine-tuning, particularly in data-limited scenarios \[[11](http://arxiv.org/abs/1909.11299)\]. These methods help prevent overfitting and ensure that the model generalizes well to new tasks.
+
+In summary, the related works section highlights the diverse approaches to fine-tuning in LLMs, ranging from parameter-efficient methods to preference alignment and regularization techniques. These studies collectively provide a foundation for understanding the dynamics of fine-tuning and its impact on model performance and alignment with human preferences.
+
+References:
+1. Llama 2: Open Foundation and Fine-Tuned Chat Models [http://arxiv.org/abs/2307.09288]
+2. Raise a Child in Large Language Model: Towards Effective and Generalizable Fine-tuning [http://arxiv.org/abs/2109.05687]
+3. Direct Preference Optimization: Your Language Model is Secretly a Reward Model [http://arxiv.org/abs/2305.18290]
+4. Finetuned Language Models Are Zero-Shot Learners [http://arxiv.org/abs/2109.01652]
+6. BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models [http://arxiv.org/abs/2106.10199]
+8. When Scaling Meets LLM Finetuning: The Effect of Data, Model and Finetuning Method [http://arxiv.org/abs/2402.17193]
+11. Mixout: Effective Regularization to Finetune Large-scale Pretrained Language Models [http://arxiv.org/abs/1909.11299]
+17. A Survey on Human Preference Learning for Large Language Models [http://arxiv.org/abs/2406.11191]

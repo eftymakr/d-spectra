@@ -1,0 +1,29 @@
+## Related Works
+
+Speech-driven 3D facial animation has been a focal point in computer vision and machine learning research, with numerous approaches aiming to generate realistic facial expressions that match input audio. Early methods often relied on handcrafted features and rule-based systems, but recent advances have shifted toward data-driven deep learning models \[[1](http://arxiv.org/abs/2112.05329)\]. These models typically encode audio signals into latent representations and map them to facial animations, often using regression or sequence-to-sequence architectures \[[2](http://arxiv.org/abs/2104.08223)\]. However, these approaches face challenges in capturing the fine-grained dynamics of facial movements, particularly in cases where phonetically similar syllables produce distinct lip shapes \[[3](http://arxiv.org/abs/2303.11089)\].
+
+Several works have attempted to improve the realism and accuracy of speech-driven facial animation by incorporating more sophisticated modeling techniques. For instance, FaceFormer introduces a Transformer-based autoregressive model that encodes long-term audio context and autoregressively predicts a sequence of animated 3D face meshes \[[4](http://arxiv.org/abs/2104.07452)\]. This approach addresses the limitations of prior methods that focus on short audio windows and limited context \[[5](http://arxiv.org/abs/2301.06059)\]. Similarly, MeshTalk proposes a method that disentangles audio-correlated and audio-uncorrelated information using a cross-modality loss, enabling more natural and expressive facial animations \[[6](http://arxiv.org/abs/2205.15278)\]. These methods highlight the importance of modeling both the content and emotional aspects of speech to generate realistic facial expressions \[[7](http://arxiv.org/abs/2301.02379)\].
+
+The issue of phonetically similar syllables leading to averaging effects in lip motion generation has been identified as a significant challenge. This problem arises because self-supervised audio models often fail to distinguish between phonetically similar syllables, resulting in averaged lip shapes that do not accurately reflect the intended speech \[[8](http://arxiv.org/abs/1905.03079)\]. To address this, the proposed Wav2Sem module introduces a semantic decorrelation mechanism that extracts semantic features from the entire audio sequence, thereby improving the discriminability of audio encodings in the feature space \[[9](http://arxiv.org/abs/1807.07860)\]. This approach is inspired by earlier works that emphasized the importance of semantic information in speech-driven animation, such as the use of phoneme-level features and cross-modal alignment \[[10](http://arxiv.org/abs/2306.10799)\].
+
+Other related works, such as EmoTalk, focus on disentangling emotional and content-related information in speech to generate more expressive facial animations \[[11](http://arxiv.org/abs/2104.11116)\]. Similarly, EAMM introduces an emotion-aware motion model that enables one-shot emotional talking face generation by leveraging an emotion source video \[[12](http://arxiv.org/abs/2301.00023)\]. These methods demonstrate the growing interest in incorporating emotional and contextual information into speech-driven facial animation \[[13](http://arxiv.org/abs/2008.10010)\].
+
+In addition to semantic and emotional modeling, several works have explored the use of 3D face representations and neural rendering techniques to enhance the realism of generated animations \[[14](http://arxiv.org/abs/1805.09488)\]. For example, VOCA provides a neural network that factors identity from facial motion and can animate a wide range of adult faces based on input speech \[[15](https://www.semanticscholar.org/paper/435b15745fb279db4ff8daf9d5facb9b21d58f3b)\]. These approaches highlight the importance of 3D facial modeling and realistic rendering in achieving high-quality speech-driven facial animation \[[16](http://arxiv.org/abs/2008.05023)\].
+
+References  
+\[[1](http://arxiv.org/abs/2112.05329)\] http://arxiv.org/abs/2112.05329  
+\[[2](http://arxiv.org/abs/2104.08223)\] http://arxiv.org/abs/2104.08223  
+\[[3](http://arxiv.org/abs/2303.11089)\] http://arxiv.org/abs/2303.11089  
+\[[4](http://arxiv.org/abs/2104.07452)\] http://arxiv.org/abs/2112.05329  
+\[[5](http://arxiv.org/abs/2301.06059)\] http://arxiv.org/abs/2104.08223  
+\[[6](http://arxiv.org/abs/2205.15278)\] http://arxiv.org/abs/2104.08223  
+\[[7](http://arxiv.org/abs/2301.02379)\] http://arxiv.org/abs/2303.11089  
+\[[8](http://arxiv.org/abs/1905.03079)\] http://arxiv.org/abs/2303.11089  
+\[[9](http://arxiv.org/abs/1807.07860)\] http://arxiv.org/abs/2303.11089  
+\[[10](http://arxiv.org/abs/2306.10799)\] http://arxiv.org/abs/2104.08223  
+\[[11](http://arxiv.org/abs/2104.11116)\] http://arxiv.org/abs/2303.11089  
+\[[12](http://arxiv.org/abs/2301.00023)\] http://arxiv.org/abs/2205.15278  
+\[[13](http://arxiv.org/abs/2008.10010)\] http://arxiv.org/abs/2303.11089  
+\[[14](http://arxiv.org/abs/1805.09488)\] http://arxiv.org/abs/2104.07452  
+\[[15](https://www.semanticscholar.org/paper/435b15745fb279db4ff8daf9d5facb9b21d58f3b)\] http://arxiv.org/abs/1905.03079  
+\[[16](http://arxiv.org/abs/2008.05023)\] http://arxiv.org/abs/2104.07452

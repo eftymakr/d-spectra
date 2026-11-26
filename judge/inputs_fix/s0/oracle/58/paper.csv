@@ -1,0 +1,212 @@
+id,title,url,snippet
+1802.06159,Ad Hoc Table Retrieval using Semantic Similarity,http://arxiv.org/abs/1802.06159,"We introduce and address the problem of ad hoc table retrieval: answering a
+keyword query with a ranked list of tables. This task is not only interesting
+on its own account, but is also being used as a core component in many other
+table-based information access scenarios, such as table completion or table
+mining. The main novel contribution of this work is a method for performing
+semantic matching between queries and tables. Specifically, we (i) represent
+queries and tables in multiple semantic spaces (both discrete sparse and
+continuous dense vector representations) and (ii) introduce various similarity
+measures for matching those semantic representations. We consider all possible
+combinations of semantic representations and similarity measures and use these
+as features in a supervised learning model. Using a purpose-built test
+collection based on Wikipedia tables, we demonstrate significant and
+substantial improvements over a state-of-the-art baseline."
+2105.01736,"Retrieving Complex Tables with Multi-Granular Graph Representation
+  Learning",http://arxiv.org/abs/2105.01736,"The task of natural language table retrieval (NLTR) seeks to retrieve
+semantically relevant tables based on natural language queries. Existing
+learning systems for this task often treat tables as plain text based on the
+assumption that tables are structured as dataframes. However, tables can have
+complex layouts which indicate diverse dependencies between subtable
+structures, such as nested headers. As a result, queries may refer to different
+spans of relevant content that is distributed across these structures.
+Moreover, such systems fail to generalize to novel scenarios beyond those seen
+in the training set. Prior methods are still distant from a generalizable
+solution to the NLTR problem, as they fall short in handling complex table
+layouts or queries over multiple granularities. To address these issues, we
+propose Graph-based Table Retrieval (GTR), a generalizable NLTR framework with
+multi-granular graph representation learning. In our framework, a table is
+first converted into a tabular graph, with cell nodes, row nodes and column
+nodes to capture content at different granularities. Then the tabular graph is
+input to a Graph Transformer model that can capture both table cell content and
+the layout structures. To enhance the robustness and generalizability of the
+model, we further incorporate a self-supervised pre-training task based on
+graph-context matching. Experimental results on two benchmarks show that our
+method leads to significant improvements over the current state-of-the-art
+systems. Further experiments demonstrate promising performance of our method on
+cross-dataset generalization, and enhanced capability of handling complex
+tables and fulfilling diverse query intents. Code and data are available at
+https://github.com/FeiWang96/GTR."
+2203.14278,StruBERT: Structure-aware BERT for Table Search and Matching,http://arxiv.org/abs/2203.14278,"A large amount of information is stored in data tables. Users can search for
+data tables using a keyword-based query. A table is composed primarily of data
+values that are organized in rows and columns providing implicit structural
+information. A table is usually accompanied by secondary information such as
+the caption, page title, etc., that form the textual information. Understanding
+the connection between the textual and structural information is an important
+yet neglected aspect in table retrieval as previous methods treat each source
+of information independently. In addition, users can search for data tables
+that are similar to an existing table, and this setting can be seen as a
+content-based table retrieval. In this paper, we propose StruBERT, a
+structure-aware BERT model that fuses the textual and structural information of
+a data table to produce context-aware representations for both textual and
+tabular content of a data table. StruBERT features are integrated in a new
+end-to-end neural ranking model to solve three table-related downstream tasks:
+keyword- and content-based table retrieval, and table similarity. We evaluate
+our approach using three datasets, and we demonstrate substantial improvements
+in terms of retrieval and classification metrics over state-of-the-art methods."
+2209.13589,SANTOS: Relationship-based Semantic Table Union Search,http://arxiv.org/abs/2209.13589,"Existing techniques for unionable table search define unionability using
+metadata (tables must have the same or similar schemas) or column-based metrics
+(for example, the values in a table should be drawn from the same domain). In
+this work, we introduce the use of semantic relationships between pairs of
+columns in a table to improve the accuracy of union search. Consequently, we
+introduce a new notion of unionability that considers relationships between
+columns, together with the semantics of columns, in a principled way. To do so,
+we present two new methods to discover semantic relationship between pairs of
+columns. The first uses an existing knowledge base (KB), the second (which we
+call a ""synthesized KB"") uses knowledge from the data lake itself. We adopt an
+existing Table Union Search benchmark and present new (open) benchmarks that
+represent small and large real data lakes. We show that our new unionability
+search algorithm, called SANTOS, outperforms a state-of-the-art union search
+that uses a wide variety of column-based semantics, including word embeddings
+and regular expressions. We show empirically that our synthesized KB improves
+the accuracy of union search by representing relationship semantics that may
+not be contained in an available KB. This result hints at a promising future of
+creating a synthesized KBs from data lakes with limited KB coverage and using
+them for union search."
+2011.10427,Dataset Discovery in Data Lakes,http://arxiv.org/abs/2011.10427,"Data analytics stands to benefit from the increasing availability of datasets
+that are held without their conceptual relationships being explicitly known.
+When collected, these datasets form a data lake from which, by processes like
+data wrangling, specific target datasets can be constructed that enable
+value-adding analytics. Given the potential vastness of such data lakes, the
+issue arises of how to pull out of the lake those datasets that might
+contribute to wrangling out a given target. We refer to this as the problem of
+dataset discovery in data lakes and this paper contributes an effective and
+efficient solution to it. Our approach uses features of the values in a dataset
+to construct hash-based indexes that map those features into a uniform distance
+space. This makes it possible to define similarity distances between features
+and to take those distances as measurements of relatedness w.r.t. a target
+table. Given the latter (and exemplar tuples), our approach returns the most
+related tables in the lake. We provide a detailed description of the approach
+and report on empirical results for two forms of relatedness (unionability and
+joinability) comparing them with prior work, where pertinent, and showing
+significant improvements in all of precision, recall, target coverage, indexing
+and discovery times."
+2210.01922,"Semantics-aware Dataset Discovery from Data Lakes with Contextualized
+  Column-based Representation Learning",http://arxiv.org/abs/2210.01922,"Dataset discovery from data lakes is essential in many real application
+scenarios. In this paper, we propose Starmie, an end-to-end framework for
+dataset discovery from data lakes (with table union search as the main use
+case). Our proposed framework features a contrastive learning method to train
+column encoders from pre-trained language models in a fully unsupervised
+manner. The column encoder of Starmie captures the rich contextual semantic
+information within tables by leveraging a contrastive multi-column pre-training
+strategy. We utilize the cosine similarity between column embedding vectors as
+the column unionability score and propose a filter-and-verification framework
+that allows exploring a variety of design choices to compute the unionability
+score between two tables accordingly. Empirical evaluation results on real
+table benchmark datasets show that Starmie outperforms the best-known solutions
+in the effectiveness of table union search by 6.8 in MAP and recall. Moreover,
+Starmie is the first to employ the HNSW (Hierarchical Navigable Small World)
+index for accelerate query processing of table union search which provides a
+3,000X performance gain over the linear scan baseline and a 400X performance
+gain over an LSH index (the state-of-the-art solution for data lake indexing)."
+2010.13273,"Efficient Joinable Table Discovery in Data Lakes: A High-Dimensional
+  Similarity-Based Approach",http://arxiv.org/abs/2010.13273,"Finding joinable tables in data lakes is key procedure in many applications
+such as data integration, data augmentation, data analysis, and data market.
+Traditional approaches that find equi-joinable tables are unable to deal with
+misspellings and different formats, nor do they capture any semantic joins. In
+this paper, we propose PEXESO, a framework for joinable table discovery in data
+lakes. We embed textual values as high-dimensional vectors and join columns
+under similarity predicates on high-dimensional vectors, hence to address the
+limitations of equi-join approaches and identify more meaningful results. To
+efficiently find joinable tables with similarity, we propose a block-and-verify
+method that utilizes pivot-based filtering. A partitioning technique is
+developed to cope with the case when the data lake is large and the index
+cannot fit in main memory. An experimental evaluation on real datasets shows
+that our solution identifies substantially more tables than equi-joins and
+outperforms other similarity-based options, and the join results are useful in
+data enrichment for machine learning tasks. The experiments also demonstrate
+the efficiency of the proposed method."
+2212.07588,DeepJoin: Joinable Table Discovery with Pre-trained Language Models,http://arxiv.org/abs/2212.07588,"Due to the usefulness in data enrichment for data analysis tasks, joinable
+table discovery has become an important operation in data lake management.
+Existing approaches target equi-joins, the most common way of combining tables
+for creating a unified view, or semantic joins, which tolerate misspellings and
+different formats to deliver more join results. They are either exact solutions
+whose running time is linear in the sizes of query column and target table
+repository or approximate solutions lacking precision. In this paper, we
+propose Deepjoin, a deep learning model for accurate and efficient joinable
+table discovery. Our solution is an embedding-based retrieval, which employs a
+pre-trained language model (PLM) and is designed as one framework serving both
+equi- and semantic joins. We propose a set of contextualization options to
+transform column contents to a text sequence. The PLM reads the sequence and is
+fine-tuned to embed columns to vectors such that columns are expected to be
+joinable if they are close to each other in the vector space. Since the output
+of the PLM is fixed in length, the subsequent search procedure becomes
+independent of the column size. With a state-of-the-art approximate nearest
+neighbor search algorithm, the search time is logarithmic in the repository
+size. To train the model, we devise the techniques for preparing training data
+as well as data augmentation. The experiments on real datasets demonstrate that
+by training on a small subset of a corpus, Deepjoin generalizes to large
+datasets and its precision consistently outperforms other approximate
+solutions'. Deepjoin is even more accurate than an exact solution to semantic
+joins when evaluated with labels from experts. Moreover, when equipped with a
+GPU, Deepjoin is up to two orders of magnitude faster than existing solutions."
+2006.14806,TURL: Table Understanding through Representation Learning,http://arxiv.org/abs/2006.14806,"Relational tables on the Web store a vast amount of knowledge. Owing to the
+wealth of such tables, there has been tremendous progress on a variety of tasks
+in the area of table understanding. However, existing work generally relies on
+heavily-engineered task-specific features and model architectures. In this
+paper, we present TURL, a novel framework that introduces the
+pre-training/fine-tuning paradigm to relational Web tables. During
+pre-training, our framework learns deep contextualized representations on
+relational tables in an unsupervised manner. Its universal model design with
+pre-trained representations can be applied to a wide range of tasks with
+minimal task-specific fine-tuning. Specifically, we propose a structure-aware
+Transformer encoder to model the row-column structure of relational tables, and
+present a new Masked Entity Recovery (MER) objective for pre-training to
+capture the semantics and knowledge in large-scale unlabeled data. We
+systematically evaluate TURL with a benchmark consisting of 6 different tasks
+for table understanding (e.g., relation extraction, cell filling). We show that
+TURL generalizes well to all tasks and substantially outperforms existing
+methods in almost all instances."
+2003.09758,ARDA: Automatic Relational Data Augmentation for Machine Learning,http://arxiv.org/abs/2003.09758,"Automatic machine learning (\AML) is a family of techniques to automate the
+process of training predictive models, aiming to both improve performance and
+make machine learning more accessible. While many recent works have focused on
+aspects of the machine learning pipeline like model selection, hyperparameter
+tuning, and feature selection, relatively few works have focused on automatic
+data augmentation. Automatic data augmentation involves finding new features
+relevant to the user's predictive task with minimal ``human-in-the-loop''
+involvement.
+  We present \system, an end-to-end system that takes as input a dataset and a
+data repository, and outputs an augmented data set such that training a
+predictive model on this augmented dataset results in improved performance. Our
+system has two distinct components: (1) a framework to search and join data
+with the input data, based on various attributes of the input, and (2) an
+efficient feature selection algorithm that prunes out noisy or irrelevant
+features from the resulting join. We perform an extensive empirical evaluation
+of different system components and benchmark our feature selection algorithm on
+real-world datasets."
+2301.03560,"Solo: Data Discovery Using Natural Language Questions Via A
+  Self-Supervised Approach",http://arxiv.org/abs/2301.03560,"Most deployed data discovery systems, such as Google Datasets, and open data
+portals only support keyword search. Keyword search is geared towards general
+audiences but limits the types of queries the systems can answer. We propose a
+new system that lets users write natural language questions directly. A major
+barrier to using this learned data discovery system is it needs
+expensive-to-collect training data, thus limiting its utility. In this paper,
+we introduce a self-supervised approach to assemble training datasets and train
+learned discovery systems without human intervention. It requires addressing
+several challenges, including the design of self-supervised strategies for data
+discovery, table representation strategies to feed to the models, and relevance
+models that work well with the synthetically generated questions. We combine
+all the above contributions into a system, Solo, that solves the problem end to
+end. The evaluation results demonstrate the new techniques outperform
+state-of-the-art approaches on well-known benchmarks. All in all, the technique
+is a stepping stone towards building learned discovery systems. The code is
+open-sourced at https://github.com/TheDataStation/solo"
+2204.08235,Table Enrichment System for Machine Learning,http://arxiv.org/abs/2204.08235,"Data scientists are constantly facing the problem of how to improve
+prediction accuracy with insufficient tabular data. We propose a table
+enrichment system that enriches a query table by adding external attributes
+(columns) from data lakes and improves the accuracy of machine learning
+predictive models. Our system has four stages, join row search, task-related
+table selection, row and column alignment, and feature selection and
+evaluation, to efficiently create an enriched table for a given query table and
+a specified machine learning task. We demonstrate our system with a web UI to
+show the use cases of table enrichment."

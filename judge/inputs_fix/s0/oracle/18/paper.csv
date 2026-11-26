@@ -1,0 +1,373 @@
+id,title,url,snippet
+2301.11514,Deep Industrial Image Anomaly Detection: A Survey,http://arxiv.org/abs/2301.11514,"The recent rapid development of deep learning has laid a milestone in
+industrial Image Anomaly Detection (IAD). In this paper, we provide a
+comprehensive review of deep learning-based image anomaly detection techniques,
+from the perspectives of neural network architectures, levels of supervision,
+loss functions, metrics and datasets. In addition, we extract the new setting
+from industrial manufacturing and review the current IAD approaches under our
+proposed our new setting. Moreover, we highlight several opening challenges for
+image anomaly detection. The merits and downsides of representative network
+architectures under varying supervision are discussed. Finally, we summarize
+the research findings and point out future research directions. More resources
+are available at
+https://github.com/M-3LAB/awesome-industrial-anomaly-detection."
+1807.02011,"Improving Unsupervised Defect Segmentation by Applying Structural
+  Similarity to Autoencoders",http://arxiv.org/abs/1807.02011,"Convolutional autoencoders have emerged as popular methods for unsupervised
+defect segmentation on image data. Most commonly, this task is performed by
+thresholding a pixel-wise reconstruction error based on an $\ell^p$ distance.
+This procedure, however, leads to large residuals whenever the reconstruction
+encompasses slight localization inaccuracies around edges. It also fails to
+reveal defective regions that have been visually altered when intensity values
+stay roughly consistent. We show that these problems prevent these approaches
+from being applied to complex real-world scenarios and that it cannot be easily
+avoided by employing more elaborate architectures such as variational or
+feature matching autoencoders. We propose to use a perceptual loss function
+based on structural similarity which examines inter-dependencies between local
+image regions, taking into account luminance, contrast and structural
+information, instead of simply comparing single pixel values. It achieves
+significant performance gains on a challenging real-world dataset of
+nanofibrous materials and a novel dataset of two woven fabrics over the state
+of the art approaches for unsupervised defect segmentation that use pixel-wise
+reconstruction error metrics."
+1805.06725,GANomaly: Semi-Supervised Anomaly Detection via Adversarial Training,http://arxiv.org/abs/1805.06725,"Anomaly detection is a classical problem in computer vision, namely the
+determination of the normal from the abnormal when datasets are highly biased
+towards one class (normal) due to the insufficient sample size of the other
+class (abnormal). While this can be addressed as a supervised learning problem,
+a significantly more challenging problem is that of detecting the
+unknown/unseen anomaly case that takes us instead into the space of a
+one-class, semi-supervised learning paradigm. We introduce such a novel anomaly
+detection model, by using a conditional generative adversarial network that
+jointly learns the generation of high-dimensional image space and the inference
+of latent space. Employing encoder-decoder-encoder sub-networks in the
+generator network enables the model to map the input image to a lower dimension
+vector, which is then used to reconstruct the generated output image. The use
+of the additional encoder network maps this generated image to its latent
+representation. Minimizing the distance between these images and the latent
+vectors during training aids in learning the data distribution for the normal
+samples. As a result, a larger distance metric from this learned data
+distribution at inference time is indicative of an outlier from that
+distribution - an anomaly. Experimentation over several benchmark datasets,
+from varying domains, shows the model efficacy and superiority over previous
+state-of-the-art approaches."
+2405.14529,AnomalyDINO: Boosting Patch-based Few-shot Anomaly Detection with DINOv2,http://arxiv.org/abs/2405.14529,"Recent advances in multimodal foundation models have set new standards in
+few-shot anomaly detection. This paper explores whether high-quality visual
+features alone are sufficient to rival existing state-of-the-art
+vision-language models. We affirm this by adapting DINOv2 for one-shot and
+few-shot anomaly detection, with a focus on industrial applications. We show
+that this approach does not only rival existing techniques but can even
+outmatch them in many settings. Our proposed vision-only approach, AnomalyDINO,
+follows the well-established patch-level deep nearest neighbor paradigm, and
+enables both image-level anomaly prediction and pixel-level anomaly
+segmentation. The approach is methodologically simple and training-free and,
+thus, does not require any additional data for fine-tuning or meta-learning.
+The approach is methodologically simple and training-free and, thus, does not
+require any additional data for fine-tuning or meta-learning. Despite its
+simplicity, AnomalyDINO achieves state-of-the-art results in one- and few-shot
+anomaly detection (e.g., pushing the one-shot performance on MVTec-AD from an
+AUROC of 93.1% to 96.6%). The reduced overhead, coupled with its outstanding
+few-shot performance, makes AnomalyDINO a strong candidate for fast deployment,
+e.g., in industrial contexts."
+2106.08265,Towards Total Recall in Industrial Anomaly Detection,http://arxiv.org/abs/2106.08265,"Being able to spot defective parts is a critical component in large-scale
+industrial manufacturing. A particular challenge that we address in this work
+is the cold-start problem: fit a model using nominal (non-defective) example
+images only. While handcrafted solutions per class are possible, the goal is to
+build systems that work well simultaneously on many different tasks
+automatically. The best performing approaches combine embeddings from ImageNet
+models with an outlier detection model. In this paper, we extend on this line
+of work and propose \textbf(PatchCore), which uses a maximally representative
+memory bank of nominal patch-features. PatchCore offers competitive inference
+times while achieving state-of-the-art performance for both detection and
+localization. On the challenging, widely used MVTec AD benchmark PatchCore
+achieves an image-level anomaly detection AUROC score of up to $99.6\%$, more
+than halving the error compared to the next best competitor. We further report
+competitive results on two additional datasets and also find competitive
+results in the few samples regime.\freefootnote($^*$ Work done during a
+research internship at Amazon AWS.) Code:
+github.com/amazon-research/patchcore-inspection."
+2306.14289,Faster Segment Anything: Towards Lightweight SAM for Mobile Applications,http://arxiv.org/abs/2306.14289,"Segment Anything Model (SAM) has attracted significant attention due to its
+impressive zero-shot transfer performance and high versatility for numerous
+vision applications (like image editing with fine-grained control). Many of
+such applications need to be run on resource-constraint edge devices, like
+mobile phones. In this work, we aim to make SAM mobile-friendly by replacing
+the heavyweight image encoder with a lightweight one. A naive way to train such
+a new SAM as in the original SAM paper leads to unsatisfactory performance,
+especially when limited training sources are available. We find that this is
+mainly caused by the coupled optimization of the image encoder and mask
+decoder, motivated by which we propose decoupled distillation. Concretely, we
+distill the knowledge from the heavy image encoder (ViT-H in the original SAM)
+to a lightweight image encoder, which can be automatically compatible with the
+mask decoder in the original SAM. The training can be completed on a single GPU
+within less than one day, and the resulting lightweight SAM is termed MobileSAM
+which is more than 60 times smaller yet performs on par with the original SAM.
+For inference speed, With a single GPU, MobileSAM runs around 10ms per image:
+8ms on the image encoder and 4ms on the mask decoder. With superior
+performance, our MobileSAM is around 5 times faster than the concurrent FastSAM
+and 7 times smaller, making it more suitable for mobile applications. Moreover,
+we show that MobileSAM can run relatively smoothly on CPU. The code for our
+project is provided at
+\href(https://github.com/ChaoningZhang/MobileSAM)(\textcolor(red)(MobileSAM))),
+with a demo showing that MobileSAM can run relatively smoothly on CPU."
+2403.14233,SoftPatch: Unsupervised Anomaly Detection with Noisy Data,http://arxiv.org/abs/2403.14233,"Although mainstream unsupervised anomaly detection (AD) algorithms perform
+well in academic datasets, their performance is limited in practical
+application due to the ideal experimental setting of clean training data.
+Training with noisy data is an inevitable problem in real-world anomaly
+detection but is seldom discussed. This paper considers label-level noise in
+image sensory anomaly detection for the first time. To solve this problem, we
+proposed a memory-based unsupervised AD method, SoftPatch, which efficiently
+denoises the data at the patch level. Noise discriminators are utilized to
+generate outlier scores for patch-level noise elimination before coreset
+construction. The scores are then stored in the memory bank to soften the
+anomaly detection boundary. Compared with existing methods, SoftPatch maintains
+a strong modeling ability of normal data and alleviates the overconfidence
+problem in coreset. Comprehensive experiments in various noise scenes
+demonstrate that SoftPatch outperforms the state-of-the-art AD methods on the
+MVTecAD and BTAD benchmarks and is comparable to those methods under the
+setting without noise."
+1706.03762,Attention Is All You Need,http://arxiv.org/abs/1706.03762,"The dominant sequence transduction models are based on complex recurrent or
+convolutional neural networks in an encoder-decoder configuration. The best
+performing models also connect the encoder and decoder through an attention
+mechanism. We propose a new simple network architecture, the Transformer, based
+solely on attention mechanisms, dispensing with recurrence and convolutions
+entirely. Experiments on two machine translation tasks show these models to be
+superior in quality while being more parallelizable and requiring significantly
+less time to train. Our model achieves 28.4 BLEU on the WMT 2014
+English-to-German translation task, improving over the existing best results,
+including ensembles by over 2 BLEU. On the WMT 2014 English-to-French
+translation task, our model establishes a new single-model state-of-the-art
+BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction
+of the training costs of the best models from the literature. We show that the
+Transformer generalizes well to other tasks by applying it successfully to
+English constituency parsing both with large and limited training data."
+2101.01169,Transformers in Vision: A Survey,http://arxiv.org/abs/2101.01169,"Astounding results from Transformer models on natural language tasks have
+intrigued the vision community to study their application to computer vision
+problems. Among their salient benefits, Transformers enable modeling long
+dependencies between input sequence elements and support parallel processing of
+sequence as compared to recurrent networks e.g., Long short-term memory (LSTM).
+Different from convolutional networks, Transformers require minimal inductive
+biases for their design and are naturally suited as set-functions. Furthermore,
+the straightforward design of Transformers allows processing multiple
+modalities (e.g., images, videos, text and speech) using similar processing
+blocks and demonstrates excellent scalability to very large capacity networks
+and huge datasets. These strengths have led to exciting progress on a number of
+vision tasks using Transformer networks. This survey aims to provide a
+comprehensive overview of the Transformer models in the computer vision
+discipline. We start with an introduction to fundamental concepts behind the
+success of Transformers i.e., self-attention, large-scale pre-training, and
+bidirectional encoding. We then cover extensive applications of transformers in
+vision including popular recognition tasks (e.g., image classification, object
+detection, action recognition, and segmentation), generative modeling,
+multi-modal tasks (e.g., visual-question answering, visual reasoning, and
+visual grounding), video processing (e.g., activity recognition, video
+forecasting), low-level vision (e.g., image super-resolution, image
+enhancement, and colorization) and 3D analysis (e.g., point cloud
+classification and segmentation). We compare the respective advantages and
+limitations of popular techniques both in terms of architectural design and
+their experimental value. Finally, we provide an analysis on open research
+directions and possible future works."
+2402.19145,A SAM-guided Two-stream Lightweight Model for Anomaly Detection,http://arxiv.org/abs/2402.19145,"In industrial anomaly detection, model efficiency and mobile-friendliness
+become the primary concerns in real-world applications. Simultaneously, the
+impressive generalization capabilities of Segment Anything (SAM) have garnered
+broad academic attention, making it an ideal choice for localizing unseen
+anomalies and diverse real-world patterns. In this paper, considering these two
+critical factors, we propose a SAM-guided Two-stream Lightweight Model for
+unsupervised anomaly detection (STLM) that not only aligns with the two
+practical application requirements but also harnesses the robust generalization
+capabilities of SAM. We employ two lightweight image encoders, i.e., our
+two-stream lightweight module, guided by SAM's knowledge. To be specific, one
+stream is trained to generate discriminative and general feature
+representations in both normal and anomalous regions, while the other stream
+reconstructs the same images without anomalies, which effectively enhances the
+differentiation of two-stream representations when facing anomalous regions.
+Furthermore, we employ a shared mask decoder and a feature aggregation module
+to generate anomaly maps. Our experiments conducted on MVTec AD benchmark show
+that STLM, with about 16M parameters and achieving an inference time in 20ms,
+competes effectively with state-of-the-art methods in terms of performance,
+98.26% on pixel-level AUC and 94.92% on PRO. We further experiment on more
+difficult datasets, e.g., VisA and DAGM, to demonstrate the effectiveness and
+generalizability of STLM."
+2309.10020,"Multimodal Foundation Models: From Specialists to General-Purpose
+  Assistants",http://arxiv.org/abs/2309.10020,"This paper presents a comprehensive survey of the taxonomy and evolution of
+multimodal foundation models that demonstrate vision and vision-language
+capabilities, focusing on the transition from specialist models to
+general-purpose assistants. The research landscape encompasses five core
+topics, categorized into two classes. (i) We start with a survey of
+well-established research areas: multimodal foundation models pre-trained for
+specific purposes, including two topics -- methods of learning vision backbones
+for visual understanding and text-to-image generation. (ii) Then, we present
+recent advances in exploratory, open research areas: multimodal foundation
+models that aim to play the role of general-purpose assistants, including three
+topics -- unified vision models inspired by large language models (LLMs),
+end-to-end training of multimodal LLMs, and chaining multimodal tools with
+LLMs. The target audiences of the paper are researchers, graduate students, and
+professionals in computer vision and vision-language multimodal communities who
+are eager to learn the basics and recent advances in multimodal foundation
+models."
+2103.00020,Learning Transferable Visual Models From Natural Language Supervision,http://arxiv.org/abs/2103.00020,"State-of-the-art computer vision systems are trained to predict a fixed set
+of predetermined object categories. This restricted form of supervision limits
+their generality and usability since additional labeled data is needed to
+specify any other visual concept. Learning directly from raw text about images
+is a promising alternative which leverages a much broader source of
+supervision. We demonstrate that the simple pre-training task of predicting
+which caption goes with which image is an efficient and scalable way to learn
+SOTA image representations from scratch on a dataset of 400 million (image,
+text) pairs collected from the internet. After pre-training, natural language
+is used to reference learned visual concepts (or describe new ones) enabling
+zero-shot transfer of the model to downstream tasks. We study the performance
+of this approach by benchmarking on over 30 different existing computer vision
+datasets, spanning tasks such as OCR, action recognition in videos,
+geo-localization, and many types of fine-grained object classification. The
+model transfers non-trivially to most tasks and is often competitive with a
+fully supervised baseline without the need for any dataset specific training.
+For instance, we match the accuracy of the original ResNet-50 on ImageNet
+zero-shot without needing to use any of the 1.28 million training examples it
+was trained on. We release our code and pre-trained model weights at
+https://github.com/OpenAI/CLIP."
+2304.02643,Segment Anything,http://arxiv.org/abs/2304.02643,"We introduce the Segment Anything (SA) project: a new task, model, and
+dataset for image segmentation. Using our efficient model in a data collection
+loop, we built the largest segmentation dataset to date (by far), with over 1
+billion masks on 11M licensed and privacy respecting images. The model is
+designed and trained to be promptable, so it can transfer zero-shot to new
+image distributions and tasks. We evaluate its capabilities on numerous tasks
+and find that its zero-shot performance is impressive -- often competitive with
+or even superior to prior fully supervised results. We are releasing the
+Segment Anything Model (SAM) and corresponding dataset (SA-1B) of 1B masks and
+11M images at https://segment-anything.com to foster research into foundation
+models for computer vision."
+2011.00241,Methods for Pruning Deep Neural Networks,http://arxiv.org/abs/2011.00241,"This paper presents a survey of methods for pruning deep neural networks. It
+begins by categorising over 150 studies based on the underlying approach used
+and then focuses on three categories: methods that use magnitude based pruning,
+methods that utilise clustering to identify redundancy, and methods that use
+sensitivity analysis to assess the effect of pruning. Some of the key
+influencing studies within these categories are presented to highlight the
+underlying approaches and results achieved. Most studies present results which
+are distributed in the literature as new architectures, algorithms and data
+sets have developed with time, making comparison across different studied
+difficult. The paper therefore provides a resource for the community that can
+be used to quickly compare the results from many different methods on a variety
+of data sets, and a range of architectures, including AlexNet, ResNet, DenseNet
+and VGG. The resource is illustrated by comparing the results published for
+pruning AlexNet and ResNet50 on ImageNet and ResNet56 and VGG16 on the CIFAR10
+data to reveal which pruning methods work well in terms of retaining accuracy
+whilst achieving good compression rates. The paper concludes by identifying
+some promising directions for future research."
+2304.07193,DINOv2: Learning Robust Visual Features without Supervision,http://arxiv.org/abs/2304.07193,"The recent breakthroughs in natural language processing for model pretraining
+on large quantities of data have opened the way for similar foundation models
+in computer vision. These models could greatly simplify the use of images in
+any system by producing all-purpose visual features, i.e., features that work
+across image distributions and tasks without finetuning. This work shows that
+existing pretraining methods, especially self-supervised methods, can produce
+such features if trained on enough curated data from diverse sources. We
+revisit existing approaches and combine different techniques to scale our
+pretraining in terms of data and model size. Most of the technical
+contributions aim at accelerating and stabilizing the training at scale. In
+terms of data, we propose an automatic pipeline to build a dedicated, diverse,
+and curated image dataset instead of uncurated data, as typically done in the
+self-supervised literature. In terms of models, we train a ViT model
+(Dosovitskiy et al., 2020) with 1B parameters and distill it into a series of
+smaller models that surpass the best available all-purpose features, OpenCLIP
+(Ilharco et al., 2021) on most of the benchmarks at image and pixel levels."
+2006.02903,"A Comprehensive Survey of Neural Architecture Search: Challenges and
+  Solutions",http://arxiv.org/abs/2006.02903,"Deep learning has made breakthroughs and substantial in many fields due to
+its powerful automatic representation capabilities. It has been proven that
+neural architecture design is crucial to the feature representation of data and
+the final performance. However, the design of the neural architecture heavily
+relies on the researchers' prior knowledge and experience. And due to the
+limitations of human' inherent knowledge, it is difficult for people to jump
+out of their original thinking paradigm and design an optimal model. Therefore,
+an intuitive idea would be to reduce human intervention as much as possible and
+let the algorithm automatically design the neural architecture. Neural
+Architecture Search (NAS) is just such a revolutionary algorithm, and the
+related research work is complicated and rich. Therefore, a comprehensive and
+systematic survey on the NAS is essential. Previously related surveys have
+begun to classify existing work mainly based on the key components of NAS:
+search space, search strategy, and evaluation strategy. While this
+classification method is more intuitive, it is difficult for readers to grasp
+the challenges and the landmark work involved. Therefore, in this survey, we
+provide a new perspective: beginning with an overview of the characteristics of
+the earliest NAS algorithms, summarizing the problems in these early NAS
+algorithms, and then providing solutions for subsequent related research work.
+Besides, we conduct a detailed and comprehensive analysis, comparison, and
+summary of these works. Finally, we provide some possible future research
+directions."
+2104.14294,Emerging Properties in Self-Supervised Vision Transformers,http://arxiv.org/abs/2104.14294,"In this paper, we question if self-supervised learning provides new
+properties to Vision Transformer (ViT) that stand out compared to convolutional
+networks (convnets). Beyond the fact that adapting self-supervised methods to
+this architecture works particularly well, we make the following observations:
+first, self-supervised ViT features contain explicit information about the
+semantic segmentation of an image, which does not emerge as clearly with
+supervised ViTs, nor with convnets. Second, these features are also excellent
+k-NN classifiers, reaching 78.3% top-1 on ImageNet with a small ViT. Our study
+also underlines the importance of momentum encoder, multi-crop training, and
+the use of small patches with ViTs. We implement our findings into a simple
+self-supervised method, called DINO, which we interpret as a form of
+self-distillation with no labels. We show the synergy between DINO and ViTs by
+achieving 80.1% top-1 on ImageNet in linear evaluation with ViT-Base."
+2309.11932,A Machine Learning-oriented Survey on Tiny Machine Learning,http://arxiv.org/abs/2309.11932,"The emergence of Tiny Machine Learning (TinyML) has positively revolutionized
+the field of Artificial Intelligence by promoting the joint design of
+resource-constrained IoT hardware devices and their learning-based software
+architectures. TinyML carries an essential role within the fourth and fifth
+industrial revolutions in helping societies, economies, and individuals employ
+effective AI-infused computing technologies (e.g., smart cities, automotive,
+and medical robotics). Given its multidisciplinary nature, the field of TinyML
+has been approached from many different angles: this comprehensive survey
+wishes to provide an up-to-date overview focused on all the learning algorithms
+within TinyML-based solutions. The survey is based on the Preferred Reporting
+Items for Systematic Reviews and Meta-Analyses (PRISMA) methodological flow,
+allowing for a systematic and complete literature survey. In particular,
+firstly we will examine the three different workflows for implementing a
+TinyML-based system, i.e., ML-oriented, HW-oriented, and co-design. Secondly,
+we propose a taxonomy that covers the learning panorama under the TinyML lens,
+examining in detail the different families of model optimization and design, as
+well as the state-of-the-art learning techniques. Thirdly, this survey will
+present the distinct features of hardware devices and software tools that
+represent the current state-of-the-art for TinyML intelligent edge
+applications. Finally, we discuss the challenges and future directions."
+2103.13630,A Survey of Quantization Methods for Efficient Neural Network Inference,http://arxiv.org/abs/2103.13630,"As soon as abstract mathematical computations were adapted to computation on
+digital computers, the problem of efficient representation, manipulation, and
+communication of the numerical values in those computations arose. Strongly
+related to the problem of numerical representation is the problem of
+quantization: in what manner should a set of continuous real-valued numbers be
+distributed over a fixed discrete set of numbers to minimize the number of bits
+required and also to maximize the accuracy of the attendant computations? This
+perennial problem of quantization is particularly relevant whenever memory
+and/or computational resources are severely restricted, and it has come to the
+forefront in recent years due to the remarkable performance of Neural Network
+models in computer vision, natural language processing, and related areas.
+Moving from floating-point representations to low-precision fixed integer
+values represented in four bits or less holds the potential to reduce the
+memory footprint and latency by a factor of 16x; and, in fact, reductions of 4x
+to 8x are often realized in practice in these applications. Thus, it is not
+surprising that quantization has emerged recently as an important and very
+active sub-area of research in the efficient implementation of computations
+associated with Neural Networks. In this article, we survey approaches to the
+problem of quantizing the numerical values in deep Neural Network computations,
+covering the advantages/disadvantages of current methods. With this survey and
+its organization, we hope to have presented a useful snapshot of the current
+research in quantization for Neural Networks and to have given an intelligent
+organization to ease the evaluation of future research in this area."
+2006.05525,Knowledge Distillation: A Survey,http://arxiv.org/abs/2006.05525,"In recent years, deep neural networks have been successful in both industry
+and academia, especially for computer vision tasks. The great success of deep
+learning is mainly due to its scalability to encode large-scale data and to
+maneuver billions of model parameters. However, it is a challenge to deploy
+these cumbersome deep models on devices with limited resources, e.g., mobile
+phones and embedded devices, not only because of the high computational
+complexity but also the large storage requirements. To this end, a variety of
+model compression and acceleration techniques have been developed. As a
+representative type of model compression and acceleration, knowledge
+distillation effectively learns a small student model from a large teacher
+model. It has received rapid increasing attention from the community. This
+paper provides a comprehensive survey of knowledge distillation from the
+perspectives of knowledge categories, training schemes, teacher-student
+architecture, distillation algorithms, performance comparison and applications.
+Furthermore, challenges in knowledge distillation are briefly reviewed and
+comments on future research are discussed and forwarded."
+2203.14263,A General Survey on Attention Mechanisms in Deep Learning,http://arxiv.org/abs/2203.14263,"Attention is an important mechanism that can be employed for a variety of
+deep learning models across many different domains and tasks. This survey
+provides an overview of the most important attention mechanisms proposed in the
+literature. The various attention mechanisms are explained by means of a
+framework consisting of a general attention model, uniform notation, and a
+comprehensive taxonomy of attention mechanisms. Furthermore, the various
+measures for evaluating attention models are reviewed, and methods to
+characterize the structure of attention models based on the proposed framework
+are discussed. Last, future work in the field of attention models is
+considered."

@@ -1,0 +1,22 @@
+## Related Works
+
+3D human pose estimation has seen significant advancements in recent years, with a growing emphasis on modeling long-range dependencies between body parts. Traditional approaches often rely on graph convolutional networks (GCNs) or attention mechanisms to capture spatial and temporal relationships \[[1' 2024-07-14](http://arxiv.org/abs/2407.10099v2)\]. However, these methods face challenges in effectively modeling the complex interactions between joints and body parts, particularly in the context of monocular 3D pose estimation \[[2' 2023-04-27](http://arxiv.org/abs/2304.14045v1)\]. For instance, prior work has highlighted that the underutilization of spatiotemporal body structure features in transformers and the inadequate granularity of spatiotemporal interaction modeling in GCNs lead to pervasive depth ambiguity \[[2' 2023-04-27](http://arxiv.org/abs/2304.14045v1)\]. This issue is further compounded by the need to capture both local and global dependencies in a single model \[[3' 2024-01-30](http://arxiv.org/abs/2401.16700v2)\].
+
+Several recent works have attempted to address these challenges by introducing novel architectures. For example, the Interweaved Graph and Attention Network (IGANet) proposes a bidirectional communication mechanism between GCNs and attention modules, allowing for the integration of local and global information \[[4' 2016-09-18](http://arxiv.org/abs/1609.05522v1)\]. This approach improves the learning of human skeleton representations by leveraging both types of information. Similarly, the Multi-hop Graph Transformer Network introduces a combination of multi-head self-attention and multi-hop graph convolutional layers to capture both local and global dependencies, while dilated convolutional layers enhance spatial detail capture \[[5' 2024-05-05](http://arxiv.org/abs/2405.03055v1)\]. These methods demonstrate the importance of integrating multiple types of dependencies in the modeling process.
+
+Another line of research focuses on improving the efficiency and accuracy of 3D human pose estimation through lightweight architectures. The Graph Stacked Hourglass Networks, for instance, use a multi-scale architecture to learn both local and global feature representations, which are critical for 3D human pose estimation \[[6' 2021-03-30](http://arxiv.org/abs/2103.16385v1)\]. This approach enables the model to generalize better across different poses and viewpoints. Additionally, the Regular Splitting Graph Network (RS-Net) introduces a higher-order regular splitting graph network that captures long-range dependencies between body joints using multi-hop neighborhoods and learnable modulation matrices \[[7' 2019-01-12](http://arxiv.org/abs/1901.03798v2)\]. This allows for more accurate modeling of the human skeleton, particularly in scenarios where joints are not directly connected.
+
+In addition to architectural improvements, some works have focused on improving the robustness of 3D human pose estimation in challenging environments. The 3D Human Pose Machines with Self-supervised Learning propose a self-supervised correction mechanism that bridges the gap between 2D and 3D human pose estimation by introducing dual learning tasks \[[8' 2023-05-09](http://arxiv.org/abs/2305.05785v1)\]. This approach enables the model to learn intrinsic structures of human poses from abundant images, improving the accuracy of 3D pose estimation in diverse scenarios.
+
+Finally, the use of multi-view data and additional modalities has also been explored to improve the accuracy of 3D human pose estimation. For example, the TransFusion framework introduces a transformer-based approach for multi-view 3D pose estimation, directly improving individual 2D predictors by integrating information from different views \[[9' 2025-05-02](http://arxiv.org/abs/2505.01003v1)\]. This approach enhances the robustness of pose estimation in scenarios with occlusions and varying viewpoints.
+
+References:
+
+1. \[[2' 2023-04-27](http://arxiv.org/abs/2304.14045v1)\]  
+2. \[[3' 2024-01-30](http://arxiv.org/abs/2401.16700v2)\]  
+3. \[[4' 2016-09-18](http://arxiv.org/abs/1609.05522v1)\]  
+4. \[[5' 2024-05-05](http://arxiv.org/abs/2405.03055v1)\]  
+5. \[[6' 2021-03-30](http://arxiv.org/abs/2103.16385v1)\]  
+6. \[[7' 2019-01-12](http://arxiv.org/abs/1901.03798v2)\]  
+7. \[[8' 2023-05-09](http://arxiv.org/abs/2305.05785v1)\]  
+8. \[[9' 2025-05-02](http://arxiv.org/abs/2505.01003v1)\]

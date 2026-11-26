@@ -1,0 +1,269 @@
+id,title,url,snippet
+2304.03891,Contrastive Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2304.03891,"Cross-Domain Sequential Recommendation (CDSR) aims to predict future
+interactions based on user's historical sequential interactions from multiple
+domains. Generally, a key challenge of CDSR is how to mine precise cross-domain
+user preference based on the intra-sequence and inter-sequence item
+interactions. Existing works first learn single-domain user preference only
+with intra-sequence item interactions, and then build a transferring module to
+obtain cross-domain user preference. However, such a pipeline and implicit
+solution can be severely limited by the bottleneck of the designed transferring
+module, and ignores to consider inter-sequence item relationships. In this
+paper, we propose C^2DSR to tackle the above problems to capture precise user
+preferences. The main idea is to simultaneously leverage the intra- and inter-
+sequence item relationships, and jointly learn the single- and cross- domain
+user preferences. Specifically, we first utilize a graph neural network to mine
+inter-sequence item collaborative relationship, and then exploit sequential
+attentive encoder to capture intra-sequence item sequential relationship. Based
+on them, we devise two different sequential training objectives to obtain user
+single-domain and cross-domain representations. Furthermore, we present a novel
+contrastive cross-domain infomax objective to enhance the correlation between
+single- and cross- domain user representations by maximizing their mutual
+information. To validate the effectiveness of C^2DSR, we first re-split four
+e-comerce datasets, and then conduct extensive experiments to demonstrate the
+effectiveness of our approach C^2DSR."
+2401.04971,A Survey on Cross-Domain Sequential Recommendation,http://arxiv.org/abs/2401.04971,"Cross-domain sequential recommendation (CDSR) shifts the modeling of user
+preferences from flat to stereoscopic by integrating and learning interaction
+information from multiple domains at different granularities (ranging from
+inter-sequence to intra-sequence and from single-domain to cross-domain). In
+this survey, we first define the CDSR problem using a four-dimensional tensor
+and then analyze its multi-type input representations under multidirectional
+dimensionality reductions. Following that, we provide a systematic overview
+from both macro and micro views. From a macro view, we abstract the multi-level
+fusion structures of various models across domains and discuss their bridges
+for fusion. From a micro view, focusing on the existing models, we first
+discuss the basic technologies and then explain the auxiliary learning
+technologies. Finally, we exhibit the available public datasets and the
+representative experimental results as well as provide some insights into
+future directions for research in CDSR."
+2304.05027,Triple Sequence Learning for Cross-domain Recommendation,http://arxiv.org/abs/2304.05027,"Cross-domain recommendation (CDR) aims to leverage the correlation of users'
+behaviors in both the source and target domains to improve the user preference
+modeling in the target domain. Conventional CDR methods typically explore the
+dual-relations between the source and target domains' behaviors. However, this
+may ignore the informative mixed behaviors that naturally reflect the user's
+global preference. To address this issue, we present a novel framework, termed
+triple sequence learning for cross-domain recommendation (Tri-CDR), which
+jointly models the source, target, and mixed behavior sequences to highlight
+the global and target preference and precisely model the triple correlation in
+CDR. Specifically, Tri-CDR independently models the hidden representations for
+the triple behavior sequences and proposes a triple cross-domain attention
+(TCA) method to emphasize the informative knowledge related to both user's
+global and target-domain preference. To comprehensively explore the
+cross-domain correlations, we design a triple contrastive learning (TCL)
+strategy that simultaneously considers the coarse-grained similarities and
+fine-grained distinctions among the triple sequences, ensuring the alignment
+while preserving information diversity in multi-domain. We conduct extensive
+experiments and analyses on six cross-domain settings. The significant
+improvements of Tri-CDR with different sequential encoders verify its
+effectiveness and universality. The code will be released upon acceptance."
+2411.14922,GOT4Rec: Graph of Thoughts for Sequential Recommendation,http://arxiv.org/abs/2411.14922,"With their vast open-world knowledge and reasoning abilities, large language
+models (LLMs) have become a promising tool for sequential recommendation.
+Researchers have explored various methods to harness these capabilities, but
+most existing approaches rely on simple input-output prompting, failing to
+effectively bridge the gap between LLMs' general knowledge and the specific
+needs of recommendation tasks. While reasoning strategies like chain-of-thought
+(CoT) have been introduced to enhance performance, they often produce
+inaccurate recommendations due to underutilized user preference information and
+insufficient reasoning depth. To address these challenges, we propose GOT4Rec,
+a novel sequential recommendation method leveraging the graph of thoughts (GoT)
+reasoning strategy. Our method focuses on three key types of information in
+user histories: short-term interests, long-term interests and collaborative
+information from other users. It enables LLMs to reason independently and
+generate recommendations, subsequently aggregating results to derive final
+items. This method allows LLMs, with enhanced reasoning capabilities, to better
+utilize the user sequence information, producing more accurate recommendations
+and comprehensive explanations. Extensive experiments on real-world datasets
+demonstrate the effectiveness of GOT4Rec, outperforming existing
+state-of-the-art baselines with an average improvement of 37.11%. Our code is
+available at https://anonymous.4open.science/r/GOT4Rec."
+2305.00447,"TALLRec: An Effective and Efficient Tuning Framework to Align Large
+  Language Model with Recommendation",http://arxiv.org/abs/2305.00447,"Large Language Models (LLMs) have demonstrated remarkable performance across
+diverse domains, thereby prompting researchers to explore their potential for
+use in recommendation systems. Initial attempts have leveraged the exceptional
+capabilities of LLMs, such as rich knowledge and strong generalization through
+In-context Learning, which involves phrasing the recommendation task as
+prompts. Nevertheless, the performance of LLMs in recommendation tasks remains
+suboptimal due to a substantial disparity between the training tasks for LLMs
+and recommendation tasks, as well as inadequate recommendation data during
+pre-training. To bridge the gap, we consider building a Large Recommendation
+Language Model by tunning LLMs with recommendation data. To this end, we
+propose an efficient and effective Tuning framework for Aligning LLMs with
+Recommendation, namely TALLRec. We have demonstrated that the proposed TALLRec
+framework can significantly enhance the recommendation capabilities of LLMs in
+the movie and book domains, even with a limited dataset of fewer than 100
+samples. Additionally, the proposed framework is highly efficient and can be
+executed on a single RTX 3090 with LLaMA-7B. Furthermore, the fine-tuned LLM
+exhibits robust cross-domain generalization. Our code and data are available at
+https://github.com/SAI990323/TALLRec."
+2406.09215,On Softmax Direct Preference Optimization for Recommendation,http://arxiv.org/abs/2406.09215,"Recommender systems aim to predict personalized rankings based on user
+preference data. With the rise of Language Models (LMs), LM-based recommenders
+have been widely explored due to their extensive world knowledge and powerful
+reasoning abilities. Most of the LM-based recommenders convert historical
+interactions into language prompts, pairing with a positive item as the target
+response and fine-tuning LM with a language modeling loss. However, the current
+objective fails to fully leverage preference data and is not optimized for
+personalized ranking tasks, which hinders the performance of LM-based
+recommenders. Inspired by the current advancement of Direct Preference
+Optimization (DPO) in human preference alignment and the success of softmax
+loss in recommendations, we propose Softmax-DPO (S-DPO) to instill ranking
+information into the LM to help LM-based recommenders distinguish preferred
+items from negatives, rather than solely focusing on positives. Specifically,
+we incorporate multiple negatives in user preference data and devise an
+alternative version of DPO loss tailored for LM-based recommenders, which is
+extended from the traditional full-ranking Plackett-Luce (PL) model to partial
+rankings and connected to softmax sampling strategies. Theoretically, we bridge
+S-DPO with the softmax loss over negative sampling and find that it has an
+inherent benefit of mining hard negatives, which assures its exceptional
+capabilities in recommendation tasks. Empirically, extensive experiments
+conducted on three real-world datasets demonstrate the superiority of S-DPO to
+effectively model user preference and further boost recommendation performance
+while providing better rewards for preferred items. Our codes are available at
+https://github.com/chenyuxin1999/S-DPO."
+2306.05817,How Can Recommender Systems Benefit from Large Language Models: A Survey,http://arxiv.org/abs/2306.05817,"With the rapid development of online services, recommender systems (RS) have
+become increasingly indispensable for mitigating information overload. Despite
+remarkable progress, conventional recommendation models (CRM) still have some
+limitations, e.g., lacking open-world knowledge, and difficulties in
+comprehending users' underlying preferences and motivations. Meanwhile, large
+language models (LLM) have shown impressive general intelligence and human-like
+capabilities, which mainly stem from their extensive open-world knowledge,
+reasoning ability, as well as their comprehension of human culture and society.
+Consequently, the emergence of LLM is inspiring the design of recommender
+systems and pointing out a promising research direction, i.e., whether we can
+incorporate LLM and benefit from their knowledge and capabilities to compensate
+for the limitations of CRM. In this paper, we conduct a comprehensive survey on
+this research direction from the perspective of the whole pipeline in
+real-world recommender systems. Specifically, we summarize existing works from
+two orthogonal aspects: where and how to adapt LLM to RS. For the WHERE
+question, we discuss the roles that LLM could play in different stages of the
+recommendation pipeline, i.e., feature engineering, feature encoder,
+scoring/ranking function, user interaction, and pipeline controller. For the
+HOW question, we investigate the training and inference strategies, resulting
+in two fine-grained taxonomy criteria, i.e., whether to tune LLM or not, and
+whether to involve conventional recommendation models for inference. Then, we
+highlight key challenges in adapting LLM to RS from three aspects, i.e.,
+efficiency, effectiveness, and ethics. Finally, we summarize the survey and
+discuss the future prospects. We actively maintain a GitHub repository for
+papers and other related resources:
+https://github.com/CHIANGEL/Awesome-LLM-for-RecSys/."
+2410.19744,"Towards Next-Generation LLM-based Recommender Systems: A Survey and
+  Beyond",http://arxiv.org/abs/2410.19744,"Large language models (LLMs) have not only revolutionized the field of
+natural language processing (NLP) but also have the potential to bring a
+paradigm shift in many other fields due to their remarkable abilities of
+language understanding, as well as impressive generalization capabilities and
+reasoning skills. As a result, recent studies have actively attempted to
+harness the power of LLMs to improve recommender systems, and it is imperative
+to thoroughly review the recent advances and challenges of LLM-based
+recommender systems. Unlike existing work, this survey does not merely analyze
+the classifications of LLM-based recommendation systems according to the
+technical framework of LLMs. Instead, it investigates how LLMs can better serve
+recommendation tasks from the perspective of the recommender system community,
+thus enhancing the integration of large language models into the research of
+recommender system and its practical application. In addition, the
+long-standing gap between academic research and industrial applications related
+to recommender systems has not been well discussed, especially in the era of
+large language models. In this review, we introduce a novel taxonomy that
+originates from the intrinsic essence of recommendation, delving into the
+application of large language model-based recommendation systems and their
+industrial implementation. Specifically, we propose a three-tier structure that
+more accurately reflects the developmental progression of recommendation
+systems from research to practical implementation, including representing and
+understanding, scheming and utilizing, and industrial deployment. Furthermore,
+we discuss critical challenges and opportunities in this emerging field. A more
+up-to-date version of the papers is maintained at:
+https://github.com/jindongli-Ai/Next-Generation-LLM-based-Recommender-Systems-Survey."
+2409.19925,"LLMEmb: Large Language Model Can Be a Good Embedding Generator for
+  Sequential Recommendation",http://arxiv.org/abs/2409.19925,"Sequential Recommender Systems (SRS), which model a user's interaction
+history to predict the next item of interest, are widely used in various
+applications. However, existing SRS often struggle with low-popularity items, a
+challenge known as the long-tail problem. This issue leads to reduced
+serendipity for users and diminished profits for sellers, ultimately harming
+the overall system. Large Language Model (LLM) has the ability to capture
+semantic relationships between items, independent of their popularity, making
+it a promising solution to this problem. In this paper, we introduce LLMEmb, a
+novel method leveraging LLM to generate item embeddings that enhance SRS
+performance. To bridge the gap between general-purpose LLM and the
+recommendation domain, we propose a Supervised Contrastive Fine-Tuning (SCFT)
+approach. This approach includes attribute-level data augmentation and a
+tailored contrastive loss to make LLM more recommendation-friendly.
+Additionally, we emphasize the importance of integrating collaborative signals
+into LLM-generated embeddings, for which we propose Recommendation Adaptation
+Training (RAT). This further refines the embeddings for optimal use in SRS. The
+LLMEmb-derived embeddings can be seamlessly integrated with any SRS models,
+underscoring the practical value. Comprehensive experiments conducted on three
+real-world datasets demonstrate that LLMEmb significantly outperforms existing
+methods across multiple SRS models. The code for our method is released online
+https://github.com/Applied-Machine-Learning-Lab/LLMEmb."
+2503.12547,"LLMSeR: Enhancing Sequential Recommendation via LLM-based Data
+  Augmentation",http://arxiv.org/abs/2503.12547,"Sequential Recommender Systems (SRS) have become a cornerstone of online
+platforms, leveraging users' historical interaction data to forecast their next
+potential engagement. Despite their widespread adoption, SRS often grapple with
+the long-tail user dilemma, resulting in less effective recommendations for
+individuals with limited interaction records. The advent of Large Language
+Models (LLMs), with their profound capability to discern semantic relationships
+among items, has opened new avenues for enhancing SRS through data
+augmentation. Nonetheless, current methodologies encounter obstacles, including
+the absence of collaborative signals and the prevalence of hallucination
+phenomena. In this work, we present LLMSeR, an innovative framework that
+utilizes Large Language Models (LLMs) to generate pseudo-prior items, thereby
+improving the efficacy of Sequential Recommender Systems (SRS). To alleviate
+the challenge of insufficient collaborative signals, we introduce the Semantic
+Interaction Augmentor (SIA), a method that integrates both semantic and
+collaborative information to comprehensively augment user interaction data.
+Moreover, to weaken the adverse effects of hallucination in SRS, we develop the
+Adaptive Reliability Validation (ARV), a validation technique designed to
+assess the reliability of the generated pseudo items. Complementing these
+advancements, we also devise a Dual-Channel Training strategy, ensuring
+seamless integration of data augmentation into the SRS training
+process.Extensive experiments conducted with three widely-used SRS models
+demonstrate the generalizability and efficacy of LLMSeR."
+2402.06196,Large Language Models: A Survey,http://arxiv.org/abs/2402.06196,"Large Language Models (LLMs) have drawn a lot of attention due to their
+strong performance on a wide range of natural language tasks, since the release
+of ChatGPT in November 2022. LLMs' ability of general-purpose language
+understanding and generation is acquired by training billions of model's
+parameters on massive amounts of text data, as predicted by scaling laws
+\cite(kaplan2020scaling,hoffmann2022training). The research area of LLMs, while
+very recent, is evolving rapidly in many different ways. In this paper, we
+review some of the most prominent LLMs, including three popular LLM families
+(GPT, LLaMA, PaLM), and discuss their characteristics, contributions and
+limitations. We also give an overview of techniques developed to build, and
+augment LLMs. We then survey popular datasets prepared for LLM training,
+fine-tuning, and evaluation, review widely used LLM evaluation metrics, and
+compare the performance of several popular LLMs on a set of representative
+benchmarks. Finally, we conclude the paper by discussing open challenges and
+future research directions."
+2309.06217,HAMUR: Hyper Adapter for Multi-Domain Recommendation,http://arxiv.org/abs/2309.06217,"Multi-Domain Recommendation (MDR) has gained significant attention in recent
+years, which leverages data from multiple domains to enhance their performance
+concurrently.However, current MDR models are confronted with two limitations.
+Firstly, the majority of these models adopt an approach that explicitly shares
+parameters between domains, leading to mutual interference among them.
+Secondly, due to the distribution differences among domains, the utilization of
+static parameters in existing methods limits their flexibility to adapt to
+diverse domains. To address these challenges, we propose a novel model Hyper
+Adapter for Multi-Domain Recommendation (HAMUR). Specifically, HAMUR consists
+of two components: (1). Domain-specific adapter, designed as a pluggable module
+that can be seamlessly integrated into various existing multi-domain backbone
+models, and (2). Domain-shared hyper-network, which implicitly captures shared
+information among domains and dynamically generates the parameters for the
+adapter. We conduct extensive experiments on two public datasets using various
+backbone networks. The experimental results validate the effectiveness and
+scalability of the proposed model."
+2310.04633,"Unbiased and Robust: External Attention-enhanced Graph Contrastive
+  Learning for Cross-domain Sequential Recommendation",http://arxiv.org/abs/2310.04633,"Cross-domain sequential recommenders (CSRs) are gaining considerable research
+attention as they can capture user sequential preference by leveraging side
+information from multiple domains. However, these works typically follow an
+ideal setup, i.e., different domains obey similar data distribution, which
+ignores the bias brought by asymmetric interaction densities (a.k.a. the
+inter-domain density bias). Besides, the frequently adopted mechanism (e.g.,
+the self-attention network) in sequence encoder only focuses on the
+interactions within a local view, which overlooks the global correlations
+between different training batches. To this end, we propose an External
+Attention-enhanced Graph Contrastive Learning framework, namely EA-GCL.
+Specifically, to remove the impact of the inter-domain density bias, an
+auxiliary Self-Supervised Learning (SSL) task is attached to the traditional
+graph encoder under a multi-task learning manner. To robustly capture users'
+behavioral patterns, we develop an external attention-based sequence encoder
+that contains an MLP-based memory-sharing structure. Unlike the self-attention
+mechanism, such a structure can effectively alleviate the bias interference
+from the batch-based training scheme. Extensive experiments on two real-world
+datasets demonstrate that EA-GCL outperforms several state-of-the-art baselines
+on CSR tasks. The source codes and relevant datasets are available at
+https://github.com/HoupingY/EA-GCL."

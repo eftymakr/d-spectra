@@ -1,0 +1,29 @@
+## Related Works
+
+Brain tumor segmentation remains a critical challenge in medical imaging due to the complexity of tumor morphology, limited annotated data, and the need for high accuracy in clinical settings. Several approaches have been proposed to address these challenges, with deep learning-based methods becoming increasingly prevalent. Early works focused on 2D U-Net architectures, which demonstrated significant improvements over traditional image segmentation techniques \[[1](http://arxiv.org/abs/2011.11052)\]. However, the 3D nature of brain MRI scans introduced new challenges, including memory constraints and computational inefficiency \[[2](http://arxiv.org/abs/1812.01049)\]. To address these limitations, researchers have explored various modifications to the U-Net architecture, such as the introduction of attention mechanisms \[[3](http://arxiv.org/abs/2504.13200)\], dual-decoder structures \[[4](http://arxiv.org/abs/1907.00281)\], and ensemble methods \[[5](http://arxiv.org/abs/2402.07008)\].
+
+The use of pre-trained models has also gained traction, as they can reduce training time and improve performance by leveraging features learned from large datasets. For example, the integration of EfficientNet into a 3D U-Net has shown promise in reducing computational demands while maintaining segmentation accuracy \[[6](http://arxiv.org/abs/2210.13336)\]. Similarly, the application of transfer learning from ImageNet pre-trained models has been explored to improve performance in brain tumor segmentation \[[7](http://arxiv.org/abs/1709.02967)\]. However, the direct transfer of 2D pre-trained weights to the 3D domain often leads to performance degradation due to differences in spatial and contextual information \[[8](http://arxiv.org/abs/2411.01896)\].
+
+To mitigate this issue, several studies have proposed strategies for adapting 2D pre-trained models to 3D segmentation tasks. One approach involves the use of axial-coronal-sagittal convolutions to preserve spatial relationships during the transfer process \[[9](http://arxiv.org/abs/2211.01885)\]. Another method introduces lesion priors to guide the segmentation process, improving accuracy by incorporating prior knowledge about tumor morphology \[[10](http://arxiv.org/abs/1705.03820)\]. Additionally, the use of multi-scale attention mechanisms has been shown to enhance segmentation performance by capturing both local and global features \[[11](http://arxiv.org/abs/2108.06772)\].
+
+Recent advancements have also focused on improving the efficiency of segmentation models, particularly in resource-constrained settings. For instance, the MBDRes-U-Net model incorporates lightweight architectures and attention mechanisms to reduce computational overhead while maintaining high segmentation accuracy \[[12](http://arxiv.org/abs/2411.00922)\]. Similarly, the LATUP-Net model introduces parallel convolutions and attention mechanisms to achieve high performance with significantly reduced computational requirements \[[13](http://arxiv.org/abs/2409.13229)\]. These models demonstrate the potential of lightweight architectures in clinical settings where computational resources are limited.
+
+In addition to architectural improvements, the integration of radiomic features has been explored to enhance the clinical utility of segmentation models. For example, a linear model based on radiomic features extracted from segmentation results has been used to predict patient overall survival \[[14](http://arxiv.org/abs/2001.02040)\]. This highlights the importance of not only accurate segmentation but also the ability to extract meaningful features for downstream clinical tasks.
+
+Finally, the development of automated segmentation pipelines has been a key focus in recent research. The nnU-Net framework, for instance, has been adapted for various segmentation tasks and has demonstrated strong performance across multiple datasets \[[15](http://arxiv.org/abs/2305.06203)\]. These efforts underscore the ongoing evolution of brain tumor segmentation techniques, driven by the need for accuracy, efficiency, and clinical applicability.
+
+1. \[[1](http://arxiv.org/abs/2011.11052)\] Document 1  
+2. \[[2](http://arxiv.org/abs/1812.01049)\] Document 2  
+3. \[[3](http://arxiv.org/abs/2504.13200)\] Document 3  
+4. \[[4](http://arxiv.org/abs/1907.00281)\] Document 4  
+5. \[[5](http://arxiv.org/abs/2402.07008)\] Document 5  
+6. \[[6](http://arxiv.org/abs/2210.13336)\] Document 6  
+7. \[[7](http://arxiv.org/abs/1709.02967)\] Document 7  
+8. \[[8](http://arxiv.org/abs/2411.01896)\] Document 8  
+9. \[[9](http://arxiv.org/abs/2211.01885)\] Document 9  
+10. \[[10](http://arxiv.org/abs/1705.03820)\] Document 10  
+11. \[[11](http://arxiv.org/abs/2108.06772)\] Document 11  
+12. \[[12](http://arxiv.org/abs/2411.00922)\] Document 12  
+13. \[[13](http://arxiv.org/abs/2409.13229)\] Document 13  
+14. \[[14](http://arxiv.org/abs/2001.02040)\] Document 14  
+15. \[[15](http://arxiv.org/abs/2305.06203)\] Document 15

@@ -1,0 +1,23 @@
+## Related Works
+
+Efficient Large Language Model (LLM) serving has attracted significant research interest, particularly in optimizing Key-Value (KV) cache management to reduce latency and improve throughput. Prior work has explored various strategies, including KV cache compression, eviction policies, and reuse mechanisms, to address the growing memory and computational demands of LLMs. 
+
+KV cache reuse has been widely studied as a means to reduce redundant computation during inference. For instance, \[[12](http://arxiv.org/abs/2309.06180)\] introduces PagedAttention, inspired by virtual memory paging techniques, to manage the dynamic and large KV cache memory efficiently. This approach enables near-zero memory waste and flexible sharing of KV cache across requests, significantly improving throughput. Similarly, \[[6](http://arxiv.org/abs/2502.16002)\] proposes KVLink, which precomputes KV caches for frequently reused documents and concatenates them during inference, reducing time-to-first-token (TTFT) by up to 96%. This method also introduces positional embedding adjustments and trainable special tokens to maintain accuracy across concatenated sequences.
+
+KV cache compression techniques have also been explored to reduce memory consumption. \[[10](http://arxiv.org/abs/2502.04420)\] presents KVTuner, a framework that performs layer-wise mixed precision quantization of KV caches while maintaining nearly lossless performance. This approach leverages layer-wise sensitivity analysis and offline calibration to optimize quantization precision, achieving 3.25-bit quantization for LLMs like Llama-3.1-8B-Instruct. \[[5](http://arxiv.org/abs/2503.24000)\] investigates KV cache compression algorithms, highlighting that while they reduce memory usage, current implementations often fail to optimize for production-level throughput and may introduce increased end-to-end latency.
+
+Efforts to improve KV cache management in multi-tenant and distributed environments have also emerged. \[[1](http://arxiv.org/abs/2503.16525)\] introduces KVShare, a system that enables multi-tenant KV cache reuse without sacrificing accuracy. It employs a Dual-Stage High Deviation algorithm to conditionally recompute small portions of the KV cache during prefill and decode phases, and a cache-aware scheduler to prioritize requests based on hit rates. This system improves throughput by up to 1.2x and reduces TTFT by up to 9.39x compared to full recompute methods. \[[8](http://arxiv.org/abs/2503.08461)\] proposes FastCache, a framework that combines dynamic batching and an efficient KV-cache memory pool to reduce memory fragmentation and improve GPU utilization, achieving up to 19.3× reduction in TTFT and 12.1× improvement in throughput.
+
+Recent studies have also examined the economic and practical benefits of KV cache reuse. \[[4](http://arxiv.org/abs/2503.14647)\] evaluates the cost-effectiveness of storing and reusing precomputed KV caches in cloud environments, showing that it can reduce both delay and cloud costs across various workloads. \[[11](http://arxiv.org/abs/2503.16163)\] introduces SpeCache, which offloads the entire KV cache to CPU memory and dynamically fetches KV pairs based on their importance, avoiding information loss and enabling high compression ratios without retraining.
+
+These works collectively highlight the importance of KV cache management in LLM serving, with ongoing efforts to balance memory efficiency, computational speed, and accuracy. Future research should continue to explore workload-aware strategies and system-level optimizations to further enhance the practical deployment of LLMs.
+
+References:  
+\[[1](http://arxiv.org/abs/2503.16525)\] KVShare: An LLM Service System with Efficient and Effective Multi-Tenant KV Cache Reuse  
+\[[4](http://arxiv.org/abs/2503.14647)\] Towards More Economical Context-Augmented LLM Generation by Reusing Stored KV Cache  
+\[[5](http://arxiv.org/abs/2503.24000)\] Rethinking Key-Value Cache Compression Techniques for Large Language Model Serving  
+\[[6](http://arxiv.org/abs/2502.16002)\] KVLink: Accelerating Large Language Models via Efficient KV Cache Reuse  
+\[[8](http://arxiv.org/abs/2503.08461)\] FastCache: Optimizing Multimodal LLM Serving through Lightweight KV-Cache Compression Framework  
+\[[10](http://arxiv.org/abs/2502.04420)\] KVTuner: Sensitivity-Aware Layer-wise Mixed Precision KV Cache Quantization for Efficient and Nearly Lossless LLM Inference  
+\[[11](http://arxiv.org/abs/2503.16163)\] SpeCache: Speculative Key-Value Caching for Efficient Generation of LLMs  
+\[[12](http://arxiv.org/abs/2309.06180)\] Efficient Memory Management for Large Language Model Serving with PagedAttention

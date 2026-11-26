@@ -1,0 +1,25 @@
+## Related Works
+
+3D human pose estimation from a single image has been a challenging task due to the inherent ambiguity and occlusion in monocular views. Early approaches relied on two-step methods, where a Convolutional Network (ConvNet) first localized 2D joints and then a subsequent optimization step recovered 3D pose \[[1](http://arxiv.org/abs/1611.07828)\]. However, these methods often struggle with modeling long-range dependencies between body parts and suffer from high error rates due to limited understanding of 2D pose \[[2](http://arxiv.org/abs/1705.03098)\]. 
+
+Recent works have focused on end-to-end learning, where deep networks directly predict 3D joint locations from raw image pixels \[[3](http://arxiv.org/abs/2111.12707)\]. For instance, \[[4](http://arxiv.org/abs/2302.01825)\] proposed a volumetric representation of 3D pose by predicting per-voxel likelihoods, which improved performance over direct regression. Similarly, \[[5](http://arxiv.org/abs/2107.07797)\] introduced a multi-hypothesis approach using a transformer to model multiple plausible pose hypotheses, leading to more accurate and robust results. These methods, however, often require complex architectures or extensive training data to achieve high accuracy \[[6](http://arxiv.org/abs/1711.07971)\].
+
+To address the issue of long-range dependencies, some works have incorporated graph-based models. For example, \[[7](http://arxiv.org/abs/2211.16940)\] represented the human skeleton as a directed graph, leveraging hierarchical relationships between joints. This approach was further enhanced by introducing spatial-temporal conditional graph convolutions, which adaptively model non-local dependencies based on input poses \[[8](http://arxiv.org/abs/2211.16487)\]. Additionally, \[[9](http://arxiv.org/abs/1710.06513)\] proposed a U-shaped network with conditional directed graph convolutions, achieving top performance on benchmark datasets. These graph-based models have shown promise in capturing the structured nature of human motion \[[10](http://arxiv.org/abs/2103.14304)\].
+
+Another line of research has explored the use of transformers for 3D pose estimation. \[[11](http://arxiv.org/abs/2203.00859)\] introduced a multi-order attention module that models interactions between joints, bones, and hyperbones, improving performance in complex and occluded scenarios. \[[12](http://arxiv.org/abs/1706.03762)\] further enhanced this by integrating CNN techniques into the transformer-based architecture, balancing performance and efficiency. These models have demonstrated significant improvements over previous methods, especially in terms of computational efficiency and accuracy \[[13](http://arxiv.org/abs/1910.12032)\].
+
+Despite these advancements, challenges remain in modeling the spatial and temporal coherence of human motion. \[[14](http://arxiv.org/abs/2103.16385)\] proposed a Strided Transformer that efficiently aggregates long-range information by progressively shrinking the sequence length, reducing redundancy and computational cost. \[[15]()\] introduced a mixed spatio-temporal encoder that separately models the temporal motion of each joint and the spatial correlation between joints, leading to improved accuracy and coherence in pose estimation \[[16]()\].
+
+In summary, recent approaches have made significant strides in 3D human pose estimation by leveraging end-to-end learning, graph-based models, and transformer architectures. However, the challenge of capturing long-range dependencies and modeling the hierarchical structure of human motion remains an active area of research \[[17]()\].
+
+References  
+\[[1](http://arxiv.org/abs/1611.07828)\] Coarse-to-Fine Volumetric Prediction for Single-Image 3D Human Pose  
+\[[2](http://arxiv.org/abs/1705.03098)\] A simple yet effective baseline for 3D human pose estimation  
+\[[3](http://arxiv.org/abs/2111.12707)\] MHFormer: Multi-Hypothesis Transformer for 3D Human Pose Estimation  
+\[[4](http://arxiv.org/abs/2302.01825)\] HDFormer: High-order Directed Transformer for 3D Human Pose Estimation  
+\[[5](http://arxiv.org/abs/2107.07797)\] Conditional Directed Graph Convolution for 3D Human Pose Estimation  
+\[[6](http://arxiv.org/abs/1711.07971)\] DiffPose: Toward More Reliable 3D Pose Estimation  
+\[[7](http://arxiv.org/abs/2211.16940)\] DiffPose: Multi-hypothesis Human Pose Estimation using Diffusion models  
+\[[8](http://arxiv.org/abs/2211.16487)\] Learning Pose Grammar to Encode Human Body Configuration for 3D Pose Estimation  
+\[[9](http://arxiv.org/abs/1710.06513)\] Exploiting Temporal Contexts with Strided Transformer for 3D Human Pose Estimation  
+\[[10](http://arxiv.org/abs/2103.14304)\] MixSTE: Seq2seq Mixed Spatio-Temporal Encoder for 3D Human Pose Estimation in Video

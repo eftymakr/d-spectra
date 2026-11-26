@@ -1,0 +1,22 @@
+## Related Works
+
+Active learning (AL) has been extensively studied for reducing human annotation costs by selecting the most informative unlabeled data for labeling \[[1]()\]. Early approaches such as uncertainty sampling \[[1]()\] and query-by-committee \[[2](http://arxiv.org/abs/2505.06825)\] aimed to reduce the amount of training data required by focusing on uncertain or ambiguous examples. More recent methods have explored uncertainty metrics to guide the selection of high-value examples in smaller training sets, particularly in image classification tasks \[[2](http://arxiv.org/abs/2505.06825)\]. These techniques have shown marked improvement over random sampling, especially on more complex tasks \[[2](http://arxiv.org/abs/2505.06825)\].
+
+Federated learning (FL) has emerged as a promising approach for training models on decentralized data without sharing raw data \[[7](http://arxiv.org/abs/1511.03575)\]. This is particularly relevant in scenarios where data is distributed across many devices, such as mobile phones or edge devices \[[8](http://arxiv.org/abs/1602.05629)\]. However, existing FL methods often assume that data is identically and independently distributed (IID), which is not always the case in real-world applications \[[10](http://arxiv.org/abs/2002.05038)\]. To address this, federated active learning (FAL) has been proposed to combine the benefits of AL and FL, allowing for collaborative data selection and model training while preserving data privacy \[[9](http://arxiv.org/abs/2202.00195)\]. FAL methods have been shown to outperform random sampling strategies in image classification tasks \[[9](http://arxiv.org/abs/2202.00195)\].
+
+Despite these advances, existing FAL methods often fail to account for the heterogeneity of data distribution across clients and the associated fluctuations in global and local model parameters, which can negatively impact model accuracy \[[1]()\]. To address these challenges, several studies have proposed novel approaches to improve the robustness of FAL to data heterogeneity. For example, Knowledge-Aware Federated Active Learning (KAFAL) introduces a novel active sampling method tailored for the federated active learning problem, which addresses the mismatch between the active sampling goals of the global model and the local clients \[[11](http://arxiv.org/abs/2211.13579)\]. Similarly, LoGo proposes a sampling strategy that integrates global and local selector models to resolve imbalances in data distribution and local heterogeneity \[[12](http://arxiv.org/abs/2303.12317)\].
+
+Active Federated Learning (AFL) further improves the efficiency of FL by selecting clients based on their potential to improve model performance, rather than uniformly at random \[[13](http://arxiv.org/abs/1909.12641)\]. This approach reduces the number of required training iterations while maintaining model accuracy, demonstrating the potential of adaptive sampling in FL \[[13](http://arxiv.org/abs/1909.12641)\].
+
+In summary, while AL and FL have been independently studied, their integration in FAL presents new opportunities and challenges. Recent work has focused on improving the robustness of FAL to data heterogeneity and improving the efficiency of data selection. These efforts have led to promising results in image classification tasks and other applications \[[9](http://arxiv.org/abs/2202.00195)\]\[[11](http://arxiv.org/abs/2211.13579)\]\[[12](http://arxiv.org/abs/2303.12317)\]\[[13](http://arxiv.org/abs/1909.12641)\].
+
+References:
+1. \[[1]()\] A Sequential Algorithm for Training Text Classifiers
+2. \[[2](http://arxiv.org/abs/2505.06825)\] Active Learning for Multi-class Image Classification
+3. \[[7](http://arxiv.org/abs/1511.03575)\] Federated Optimization: Distributed Optimization Beyond the Datacenter
+4. \[[8](http://arxiv.org/abs/1602.05629)\] Communication-Efficient Learning of Deep Networks from Decentralized Data
+5. \[[9](http://arxiv.org/abs/2202.00195)\] Federated Active Learning (F-AL): an Efficient Annotation Strategy for Federated Learning
+6. \[[10](http://arxiv.org/abs/2002.05038)\] Robustness analytics to data heterogeneity in edge computing
+7. \[[11](http://arxiv.org/abs/2211.13579)\] Knowledge-Aware Federated Active Learning with Non-IID Data
+8. \[[12](http://arxiv.org/abs/2303.12317)\] Re-thinking Federated Active Learning based on Inter-class Diversity
+9. \[[13](http://arxiv.org/abs/1909.12641)\] Active Federated Learning

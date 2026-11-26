@@ -1,0 +1,294 @@
+id,title,url,snippet
+2204.02311,PaLM: Scaling Language Modeling with Pathways,http://arxiv.org/abs/2204.02311,"Large language models have been shown to achieve remarkable performance
+across a variety of natural language tasks using few-shot learning, which
+drastically reduces the number of task-specific training examples needed to
+adapt the model to a particular application. To further our understanding of
+the impact of scale on few-shot learning, we trained a 540-billion parameter,
+densely activated, Transformer language model, which we call Pathways Language
+Model PaLM. We trained PaLM on 6144 TPU v4 chips using Pathways, a new ML
+system which enables highly efficient training across multiple TPU Pods. We
+demonstrate continued benefits of scaling by achieving state-of-the-art
+few-shot learning results on hundreds of language understanding and generation
+benchmarks. On a number of these tasks, PaLM 540B achieves breakthrough
+performance, outperforming the finetuned state-of-the-art on a suite of
+multi-step reasoning tasks, and outperforming average human performance on the
+recently released BIG-bench benchmark. A significant number of BIG-bench tasks
+showed discontinuous improvements from model scale, meaning that performance
+steeply increased as we scaled to our largest model. PaLM also has strong
+capabilities in multilingual tasks and source code generation, which we
+demonstrate on a wide array of benchmarks. We additionally provide a
+comprehensive analysis on bias and toxicity, and study the extent of training
+data memorization with respect to model scale. Finally, we discuss the ethical
+considerations related to large language models and discuss potential
+mitigation strategies."
+2310.17157,Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time,http://arxiv.org/abs/2310.17157,"Large language models (LLMs) with hundreds of billions of parameters have
+sparked a new wave of exciting AI applications. However, they are
+computationally expensive at inference time. Sparsity is a natural approach to
+reduce this cost, but existing methods either require costly retraining, have
+to forgo LLM's in-context learning ability, or do not yield wall-clock time
+speedup on modern hardware. We hypothesize that contextual sparsity, which are
+small, input-dependent sets of attention heads and MLP parameters that yield
+approximately the same output as the dense model for a given input, can address
+these issues. We show that contextual sparsity exists, that it can be
+accurately predicted, and that we can exploit it to speed up LLM inference in
+wall-clock time without compromising LLM's quality or in-context learning
+ability. Based on these insights, we propose DejaVu, a system that uses a
+low-cost algorithm to predict contextual sparsity on the fly given inputs to
+each layer, along with an asynchronous and hardware-aware implementation that
+speeds up LLM inference. We validate that DejaVu can reduce the inference
+latency of OPT-175B by over 2X compared to the state-of-the-art
+FasterTransformer, and over 6X compared to the widely used Hugging Face
+implementation, without compromising model quality. The code is available at
+https://github.com/FMInference/DejaVu."
+2011.14203,"EdgeBERT: Sentence-Level Energy Optimizations for Latency-Aware
+  Multi-Task NLP Inference",http://arxiv.org/abs/2011.14203,"Transformer-based language models such as BERT provide significant accuracy
+improvement for a multitude of natural language processing (NLP) tasks.
+However, their hefty computational and memory demands make them challenging to
+deploy to resource-constrained edge platforms with strict latency requirements.
+We present EdgeBERT, an in-depth algorithm-hardware co-design for latency-aware
+energy optimization for multi-task NLP. EdgeBERT employs entropy-based early
+exit predication in order to perform dynamic voltage-frequency scaling (DVFS),
+at a sentence granularity, for minimal energy consumption while adhering to a
+prescribed target latency. Computation and memory footprint overheads are
+further alleviated by employing a calibrated combination of adaptive attention
+span, selective network pruning, and floating-point quantization. Furthermore,
+in order to maximize the synergistic benefits of these algorithms in always-on
+and intermediate edge computing settings, we specialize a 12nm scalable
+hardware accelerator system, integrating a fast-switching low-dropout voltage
+regulator (LDO), an all-digital phase-locked loop (ADPLL), as well as,
+high-density embedded non-volatile memories (eNVMs) wherein the sparse
+floating-point bit encodings of the shared multi-task parameters are carefully
+stored. Altogether, latency-aware multi-task NLP inference acceleration on the
+EdgeBERT hardware system generates up to 7x, 2.5x, and 53x lower energy
+compared to the conventional inference without early stopping, the
+latency-unbounded early exit approach, and CUDA adaptations on an Nvidia Jetson
+Tegra X2 mobile GPU, respectively."
+2303.06865,"FlexGen: High-Throughput Generative Inference of Large Language Models
+  with a Single GPU",http://arxiv.org/abs/2303.06865,"The high computational and memory requirements of large language model (LLM)
+inference make it feasible only with multiple high-end accelerators. Motivated
+by the emerging demand for latency-insensitive tasks with batched processing,
+this paper initiates the study of high-throughput LLM inference using limited
+resources, such as a single commodity GPU. We present FlexGen, a
+high-throughput generation engine for running LLMs with limited GPU memory.
+FlexGen can be flexibly configured under various hardware resource constraints
+by aggregating memory and computation from the GPU, CPU, and disk. By solving a
+linear programming problem, it searches for efficient patterns to store and
+access tensors. FlexGen further compresses the weights and the attention cache
+to 4 bits with negligible accuracy loss. These techniques enable FlexGen to
+have a larger space of batch size choices and thus significantly increase
+maximum throughput. As a result, when running OPT-175B on a single 16GB GPU,
+FlexGen achieves significantly higher throughput compared to state-of-the-art
+offloading systems, reaching a generation throughput of 1 token/s for the first
+time with an effective batch size of 144. On the HELM benchmark, FlexGen can
+benchmark a 30B model with a 16GB GPU on 7 representative sub-scenarios in 21
+hours. The code is available at https://github.com/FMInference/FlexGen"
+2211.10438,"SmoothQuant: Accurate and Efficient Post-Training Quantization for Large
+  Language Models",http://arxiv.org/abs/2211.10438,"Large language models (LLMs) show excellent performance but are compute- and
+memory-intensive. Quantization can reduce memory and accelerate inference.
+However, existing methods cannot maintain accuracy and hardware efficiency at
+the same time. We propose SmoothQuant, a training-free, accuracy-preserving,
+and general-purpose post-training quantization (PTQ) solution to enable 8-bit
+weight, 8-bit activation (W8A8) quantization for LLMs. Based on the fact that
+weights are easy to quantize while activations are not, SmoothQuant smooths the
+activation outliers by offline migrating the quantization difficulty from
+activations to weights with a mathematically equivalent transformation.
+SmoothQuant enables an INT8 quantization of both weights and activations for
+all the matrix multiplications in LLMs, including OPT, BLOOM, GLM, MT-NLG,
+Llama-1/2, Falcon, Mistral, and Mixtral models. We demonstrate up to 1.56x
+speedup and 2x memory reduction for LLMs with negligible loss in accuracy.
+SmoothQuant enables serving 530B LLM within a single node. Our work offers a
+turn-key solution that reduces hardware costs and democratizes LLMs. Code is
+available at https://github.com/mit-han-lab/smoothquant."
+2301.00774,SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot,http://arxiv.org/abs/2301.00774,"We show for the first time that large-scale generative pretrained transformer
+(GPT) family models can be pruned to at least 50% sparsity in one-shot, without
+any retraining, at minimal loss of accuracy. This is achieved via a new pruning
+method called SparseGPT, specifically designed to work efficiently and
+accurately on massive GPT-family models. We can execute SparseGPT on the
+largest available open-source models, OPT-175B and BLOOM-176B, in under 4.5
+hours, and can reach 60% unstructured sparsity with negligible increase in
+perplexity: remarkably, more than 100 billion weights from these models can be
+ignored at inference time. SparseGPT generalizes to semi-structured (2:4 and
+4:8) patterns, and is compatible with weight quantization approaches. The code
+is available at: https://github.com/IST-DASLab/sparsegpt."
+2309.06180,"Efficient Memory Management for Large Language Model Serving with
+  PagedAttention",http://arxiv.org/abs/2309.06180,"High throughput serving of large language models (LLMs) requires batching
+sufficiently many requests at a time. However, existing systems struggle
+because the key-value cache (KV cache) memory for each request is huge and
+grows and shrinks dynamically. When managed inefficiently, this memory can be
+significantly wasted by fragmentation and redundant duplication, limiting the
+batch size. To address this problem, we propose PagedAttention, an attention
+algorithm inspired by the classical virtual memory and paging techniques in
+operating systems. On top of it, we build vLLM, an LLM serving system that
+achieves (1) near-zero waste in KV cache memory and (2) flexible sharing of KV
+cache within and across requests to further reduce memory usage. Our
+evaluations show that vLLM improves the throughput of popular LLMs by
+2-4$\times$ with the same level of latency compared to the state-of-the-art
+systems, such as FasterTransformer and Orca. The improvement is more pronounced
+with longer sequences, larger models, and more complex decoding algorithms.
+vLLM's source code is publicly available at
+https://github.com/vllm-project/vllm"
+2312.11514,"LLM in a flash: Efficient Large Language Model Inference with Limited
+  Memory",http://arxiv.org/abs/2312.11514,"Large language models (LLMs) are central to modern natural language
+processing, delivering exceptional performance in various tasks. However, their
+substantial computational and memory requirements present challenges,
+especially for devices with limited DRAM capacity. This paper tackles the
+challenge of efficiently running LLMs that exceed the available DRAM capacity
+by storing the model parameters in flash memory, but bringing them on demand to
+DRAM. Our method involves constructing an inference cost model that takes into
+account the characteristics of flash memory, guiding us to optimize in two
+critical areas: reducing the volume of data transferred from flash and reading
+data in larger, more contiguous chunks. Within this hardware-informed
+framework, we introduce two principal techniques. First, ""windowing""
+strategically reduces data transfer by reusing previously activated neurons,
+and second, ""row-column bundling"", tailored to the sequential data access
+strengths of flash memory, increases the size of data chunks read from flash
+memory. These methods collectively enable running models up to twice the size
+of the available DRAM, with a 4-5x and 20-25x increase in inference speed
+compared to naive loading approaches in CPU and GPU, respectively. Our
+integration of sparsity awareness, context-adaptive loading, and a
+hardware-oriented design paves the way for effective inference of LLMs on
+devices with limited memory."
+2402.03898,DistiLLM: Towards Streamlined Distillation for Large Language Models,http://arxiv.org/abs/2402.03898,"Knowledge distillation (KD) is widely used for compressing a teacher model to
+a smaller student model, reducing its inference cost and memory footprint while
+preserving model capabilities. However, current KD methods for auto-regressive
+sequence models (e.g., large language models) suffer from missing a
+standardized objective function. Moreover, the recent use of student-generated
+outputs to address training-inference mismatches has significantly escalated
+computational costs. To tackle these issues, we introduce DistiLLM, a more
+effective and efficient KD framework for auto-regressive language models.
+DistiLLM comprises two components: (1) a novel skew Kullback-Leibler divergence
+loss, where we unveil and leverage its theoretical properties, and (2) an
+adaptive off-policy approach designed to enhance the efficiency in utilizing
+student-generated outputs. Extensive experiments, including
+instruction-following tasks, demonstrate the effectiveness of DistiLLM in
+building high-performing student models while achieving up to 4.3$\times$
+speedup compared to recent KD methods."
+2306.08543,MiniLLM: Knowledge Distillation of Large Language Models,http://arxiv.org/abs/2306.08543,"Knowledge Distillation (KD) is a promising technique for reducing the high
+computational demand of large language models (LLMs). However, previous KD
+methods are primarily applied to white-box classification models or training
+small models to imitate black-box model APIs like ChatGPT. How to effectively
+distill the knowledge of white-box LLMs into small models is still
+under-explored, which becomes more important with the prosperity of open-source
+LLMs. In this work, we propose a KD approach that distills LLMs into smaller
+language models. We first replace the forward Kullback-Leibler divergence (KLD)
+objective in the standard KD approaches with reverse KLD, which is more
+suitable for KD on generative language models, to prevent the student model
+from overestimating the low-probability regions of the teacher distribution.
+Then, we derive an effective optimization approach to learn this objective. The
+student models are named MiniLLM. Extensive experiments in the
+instruction-following setting show that MiniLLM generates more precise
+responses with higher overall quality, lower exposure bias, better calibration,
+and higher long-text generation performance than the baselines. Our method is
+scalable for different model families with 120M to 13B parameters. Our code,
+data, and model checkpoints can be found in
+https://github.com/microsoft/LMOps/tree/main/minillm."
+2302.13971,LLaMA: Open and Efficient Foundation Language Models,http://arxiv.org/abs/2302.13971,"We introduce LLaMA, a collection of foundation language models ranging from
+7B to 65B parameters. We train our models on trillions of tokens, and show that
+it is possible to train state-of-the-art models using publicly available
+datasets exclusively, without resorting to proprietary and inaccessible
+datasets. In particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks,
+and LLaMA-65B is competitive with the best models, Chinchilla-70B and
+PaLM-540B. We release all our models to the research community."
+2307.09288,Llama 2: Open Foundation and Fine-Tuned Chat Models,http://arxiv.org/abs/2307.09288,"In this work, we develop and release Llama 2, a collection of pretrained and
+fine-tuned large language models (LLMs) ranging in scale from 7 billion to 70
+billion parameters. Our fine-tuned LLMs, called Llama 2-Chat, are optimized for
+dialogue use cases. Our models outperform open-source chat models on most
+benchmarks we tested, and based on our human evaluations for helpfulness and
+safety, may be a suitable substitute for closed-source models. We provide a
+detailed description of our approach to fine-tuning and safety improvements of
+Llama 2-Chat in order to enable the community to build on our work and
+contribute to the responsible development of LLMs."
+2312.12456,PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU,http://arxiv.org/abs/2312.12456,"This paper introduces PowerInfer, a high-speed Large Language Model (LLM)
+inference engine on a personal computer (PC) equipped with a single
+consumer-grade GPU. The key principle underlying the design of PowerInfer is
+exploiting the high locality inherent in LLM inference, characterized by a
+power-law distribution in neuron activation. This distribution indicates that a
+small subset of neurons, termed hot neurons, are consistently activated across
+inputs, while the majority, cold neurons, vary based on specific inputs.
+PowerInfer exploits such an insight to design a GPU-CPU hybrid inference
+engine: hot-activated neurons are preloaded onto the GPU for fast access, while
+cold-activated neurons are computed on the CPU, thus significantly reducing GPU
+memory demands and CPU-GPU data transfers. PowerInfer further integrates
+adaptive predictors and neuron-aware sparse operators, optimizing the
+efficiency of neuron activation and computational sparsity. The evaluation
+shows that PowerInfer significantly outperforms llama.cpp by up to 11.69x while
+retaining model accuracy across various LLMs (including OPT-175B) on a single
+NVIDIA RTX 4090 GPU. For the OPT-30B model, PowerInfer achieves performance
+comparable to that of a high-end server-grade A100 GPU, reaching 82% of its
+token generation rate on a single consumer-grade RTX 4090 GPU."
+2404.07947,ExeGPT: Constraint-Aware Resource Scheduling for LLM Inference,http://arxiv.org/abs/2404.07947,"This paper presents ExeGPT, a distributed system designed for
+constraint-aware LLM inference. ExeGPT finds and runs with an optimal execution
+schedule to maximize inference throughput while satisfying a given latency
+constraint. By leveraging the distribution of input and output sequences, it
+effectively allocates resources and determines optimal execution
+configurations, including batch sizes and partial tensor parallelism. We also
+introduce two scheduling strategies based on Round-Robin Allocation and
+Workload-Aware Allocation policies, suitable for different NLP workloads. We
+evaluate ExeGPT on six LLM instances of T5, OPT, and GPT-3 and five NLP tasks,
+each with four distinct latency constraints. Compared to FasterTransformer,
+ExeGPT achieves up to 15.2x improvements in throughput and 6x improvements in
+latency. Overall, ExeGPT achieves an average throughput gain of 2.9x across
+twenty evaluation scenarios. Moreover, when adapting to changing sequence
+distributions, the cost of adjusting the schedule in ExeGPT is reasonably
+modest. ExeGPT proves to be an effective solution for optimizing and executing
+LLM inference for diverse NLP workload and serving conditions."
+2311.18677,Splitwise: Efficient generative LLM inference using phase splitting,http://arxiv.org/abs/2311.18677,"Recent innovations in generative large language models (LLMs) have made their
+applications and use-cases ubiquitous. This has led to large-scale deployments
+of these models, using complex, expensive, and power-hungry AI accelerators,
+most commonly GPUs. These developments make LLM inference efficiency an
+important challenge. Based on our extensive characterization, we find that
+there are two main phases during an LLM inference request: a compute-intensive
+prompt computation, and a memory-intensive token generation, each with distinct
+latency, throughput, memory, and power characteristics. Despite
+state-of-the-art batching and scheduling, the token generation phase
+underutilizes compute resources. Specifically, unlike compute-intensive prompt
+computation phases, token generation phases do not require the compute
+capability of the latest GPUs, and can be run with lower power and cost.
+  With Splitwise, we propose splitting the two phases of a LLM inference
+request on to separate machines. This allows us to use hardware that is
+well-suited for each phase, and provision resources independently per phase.
+However, splitting an inference request across machines requires state transfer
+from the machine running prompt computation over to the machine generating
+tokens. We implement and optimize this state transfer using the fast back-plane
+interconnects available in today's GPU clusters.
+  We use the Splitwise technique to design LLM inference clusters using the
+same or different types of machines for the prompt computation and token
+generation phases. Our clusters are optimized for three key objectives:
+throughput, cost, and power. In particular, we show that we can achieve 1.4x
+higher throughput at 20% lower cost than current designs. Alternatively, we can
+achieve 2.35x more throughput with the same cost and power budgets."
+2406.10903,"New Solutions on LLM Acceleration, Optimization, and Application",http://arxiv.org/abs/2406.10903,"Large Language Models (LLMs) have become extremely potent instruments with
+exceptional capacities for comprehending and producing human-like text in a
+wide range of applications. However, the increasing size and complexity of LLMs
+present significant challenges in both training and deployment, leading to
+substantial computational and storage costs as well as heightened energy
+consumption. In this paper, we provide a review of recent advancements and
+research directions aimed at addressing these challenges and enhancing the
+efficiency of LLM-based systems. We begin by discussing algorithm-level
+acceleration techniques focused on optimizing LLM inference speed and resource
+utilization. We also explore LLM-hardware co-design strategies with a vision to
+improve system efficiency by tailoring hardware architectures to LLM
+requirements. Further, we delve into LLM-to-accelerator compilation approaches,
+which involve customizing hardware accelerators for efficient LLM deployment.
+Finally, as a case study to leverage LLMs for assisting circuit design, we
+examine LLM-aided design methodologies for an important task: High-Level
+Synthesis (HLS) functional verification, by creating a new dataset that
+contains a large number of buggy and bug-free codes, which can be essential for
+training LLMs to specialize on HLS verification and debugging. For each aspect
+mentioned above, we begin with a detailed background study, followed by the
+presentation of several novel solutions proposed to overcome specific
+challenges. We then outline future research directions to drive further
+advancements. Through these efforts, we aim to pave the way for more efficient
+and scalable deployment of LLMs across a diverse range of applications."
+https://doi.org/10.48550/arXiv.2303.08774,(GPT-4) Technical Report,https://doi.org/10.48550/arXiv.2303.08774,
+http://papers.nips.cc/paper\_files/paper/2022/hash/c3ba4962c05c49636d4c6206a97e9c8a-Abstract-Conference.html,LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale,http://papers.nips.cc/paper\_files/paper/2022/hash/c3ba4962c05c49636d4c6206a97e9c8a-Abstract-Conference.html,
+https://openreview.net/forum?id=1tRLxQzdep,"Pruner-Zero: Evolving Symbolic Pruning Metric From Scratch for Large
+                  Language Models",https://openreview.net/forum?id=1tRLxQzdep,
+https://pytorch.org/,PyTorch: An Open Source Machine Learning Framework,https://pytorch.org/,
+https://www.tensorflow.org/,TensorFlow: An Open Source Machine Learning Framework for Everyone,https://www.tensorflow.org/,
+https://www.deepspeed.ai/,DeepSpeed: Advancing the Science of AI Through Efficient Training of Large Models,https://www.deepspeed.ai/,
+https://www.usenix.org/conference/osdi22/presentation/yu,"Orca: (A) Distributed Serving System for Transformer-Based Generative
+                  Models",https://www.usenix.org/conference/osdi22/presentation/yu,
+https://doi.org/10.1109/HPCA.2008.4658633,"System level analysis of fast, per-core (DVFS) using on-chip switching
+                  regulators",https://doi.org/10.1109/HPCA.2008.4658633,
+https://doi.org/10.1109/HPCA.2009.4798265,Variation-aware dynamic voltage/frequency scaling,https://doi.org/10.1109/HPCA.2009.4798265,

@@ -1,0 +1,31 @@
+## Related Works
+
+Dense retrievers have gained significant traction in information retrieval due to their ability to encode text into dense vector representations that can be efficiently compared using shallow similarity operations such as inner product \[[1](http://arxiv.org/abs/2108.05540)\]. These models typically rely on pre-trained language models (e.g., BERT, LLaMA) that are fine-tuned using contrastive learning to align queries with relevant documents \[[2](http://arxiv.org/abs/1907.11692)\]. However, recent research has questioned the role of fine-tuning versus pre-training in dense retrievers, suggesting that retrieval knowledge is primarily acquired during pre-training, and that fine-tuning may not significantly alter the underlying knowledge \[[3](http://arxiv.org/abs/1810.04805)\].
+
+This debate has primarily focused on BERT-based encoders using the Dense Passage Retrieval (DPR) framework as a representative dense retriever \[[4](http://arxiv.org/abs/2104.08253)\]. The current study extends this analysis by testing different representation approaches, such as CLS token versus mean pooling, and different backbone architectures, including encoder-only BERT and decoder-only LLaMA \[[5](http://arxiv.org/abs/2002.08909)\]. Additionally, we evaluate performance across multiple datasets, including MSMARCO and Natural Questions, to generalize findings beyond the original BERT-based setup \[[6](http://arxiv.org/abs/2007.00808)\].
+
+Our results confirm that in DPR tuning, pre-trained knowledge underpins retrieval performance, with fine-tuning primarily adjusting neuron activation rather than reorganizing knowledge \[[7](http://arxiv.org/abs/2010.08191)\]. However, this pattern does not hold universally. For example, in mean-pooled models like Contriever, and in decoder-based models like LLaMA, fine-tuning plays a more significant role in shaping retrieval performance \[[8](http://arxiv.org/abs/1906.08237)\]. This suggests that the effectiveness of fine-tuning may depend on the architecture and representation strategy employed \[[9](http://arxiv.org/abs/2112.09118)\].
+
+Several prior works have explored the training of dense retrievers. For instance, the Condenser architecture was introduced to improve dense encoders by pre-training with a novel Transformer design that conditions on dense representations \[[10](http://arxiv.org/abs/2002.03932)\]. Similarly, the coCondenser model adds an unsupervised corpus-level contrastive loss to warm up the passage embedding space, reducing the need for heavy data engineering \[[11](https://www.semanticscholar.org/paper/5be217c678916543884c354654263f27c0a6bd9f)\]. These approaches highlight the importance of pre-training strategies in achieving effective dense retrieval \[[12](http://arxiv.org/abs/2107.13602)\].
+
+Another line of research focuses on contrastive learning for dense retrieval, such as the ANCE model, which constructs negatives from an Approximate Nearest Neighbor (ANN) index of the corpus to improve training efficiency \[[13](http://arxiv.org/abs/2204.10641)\]. Similarly, the RocketQA model introduces techniques like cross-batch negatives and denoised hard negatives to enhance retrieval performance \[[14](http://arxiv.org/abs/1906.00300)\]. These methods demonstrate that training strategies significantly impact the effectiveness of dense retrievers \[[15](http://arxiv.org/abs/2004.04906)\].
+
+In summary, while pre-training plays a foundational role in dense retrievers, the extent to which fine-tuning contributes to retrieval performance varies depending on the model architecture and representation method \[[16](http://arxiv.org/abs/2006.03659)\].
+
+References:
+1. \[[1](http://arxiv.org/abs/2108.05540)\] [Document 1]
+2. \[[2](http://arxiv.org/abs/1907.11692)\] [Document 2]
+3. \[[3](http://arxiv.org/abs/1810.04805)\] [Document 3]
+4. \[[4](http://arxiv.org/abs/2104.08253)\] [Document 4]
+5. \[[5](http://arxiv.org/abs/2002.08909)\] [Document 5]
+6. \[[6](http://arxiv.org/abs/2007.00808)\] [Document 6]
+7. \[[7](http://arxiv.org/abs/2010.08191)\] [Document 7]
+8. \[[8](http://arxiv.org/abs/1906.08237)\] [Document 8]
+9. \[[9](http://arxiv.org/abs/2112.09118)\] [Document 9]
+10. \[[10](http://arxiv.org/abs/2002.03932)\] [Document 10]
+11. \[[11](https://www.semanticscholar.org/paper/5be217c678916543884c354654263f27c0a6bd9f)\] [Document 11]
+12. \[[12](http://arxiv.org/abs/2107.13602)\] [Document 12]
+13. \[[13](http://arxiv.org/abs/2204.10641)\] [Document 13]
+14. \[[14](http://arxiv.org/abs/1906.00300)\] [Document 14]
+15. \[[15](http://arxiv.org/abs/2004.04906)\] [Document 15]
+16. \[[16](http://arxiv.org/abs/2006.03659)\] [Document 16]

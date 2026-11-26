@@ -1,0 +1,33 @@
+## Related Works
+
+Efficient memory management and caching mechanisms are critical for the performance of large language model (LLM) serving systems. Several recent works have focused on optimizing the key-value (KV) cache, which is essential for maintaining high throughput and low latency during inference. These approaches aim to reduce memory usage, improve cache reuse, and adapt to varying workloads.
+
+The importance of KV cache management has been widely recognized, with several studies proposing novel techniques to enhance cache efficiency. For instance, PagedAttention \[[1](http://arxiv.org/abs/2309.06180)\] introduces an attention algorithm inspired by virtual memory and paging techniques, enabling near-zero waste in KV cache memory and flexible sharing across requests. This approach significantly improves throughput by up to 4× compared to state-of-the-art systems \[[1](http://arxiv.org/abs/2309.06180)\]. Similarly, vLLM \[[9](http://arxiv.org/abs/2309.06180)\] builds on PagedAttention, achieving similar results and demonstrating improved performance for longer sequences and more complex decoding algorithms \[[9](http://arxiv.org/abs/2309.06180)\].
+
+Another line of research focuses on optimizing self-attention computation by leveraging shared prefixes in multi-tenant scenarios. ChunkAttention \[[2](http://arxiv.org/abs/2402.15220)\] introduces a prefix-aware self-attention module that detects matching prompt prefixes across multiple requests, enabling efficient sharing of key/value tensors. This leads to improved memory utilization and a 3.2–4.8× speedup in self-attention computation \[[2](http://arxiv.org/abs/2402.15220)\].
+
+Prompt Cache \[[3](http://arxiv.org/abs/2311.04934)\] further enhances inference latency by reusing attention states across different prompts, particularly for longer prompts such as document-based question answering. This approach reduces time-to-first-token latency by up to 60× for CPU-based inference while maintaining output accuracy \[[3](http://arxiv.org/abs/2311.04934)\].
+
+In the context of retrieval-augmented generation (RAG), CacheBlend \[[4](http://arxiv.org/abs/2405.16444)\] addresses the challenge of combining precomputed KV caches from multiple text chunks. By selectively recomputing only a subset of tokens, CacheBlend achieves significant improvements in time-to-first-token (TTFT) and inference throughput without compromising generation quality \[[4](http://arxiv.org/abs/2405.16444)\].
+
+StreamingLLM \[[5](http://arxiv.org/abs/2309.17453)\] introduces an efficient framework for enabling LLMs to generalize to longer sequences without fine-tuning. It leverages the concept of attention sink, where retaining the KV of initial tokens recovers performance lost due to window attention limitations. This approach enables models like Llama-2 and Pythia to handle sequences up to 4 million tokens with stable and efficient performance \[[5](http://arxiv.org/abs/2309.17453)\].
+
+InfiniGen \[[6](http://arxiv.org/abs/2406.19707)\] presents a novel KV cache management framework that prefetches only essential KV cache entries, reducing fetch overhead in offloading-based systems. This leads to up to 3.00× performance improvements compared to prior methods \[[6](http://arxiv.org/abs/2406.19707)\].
+
+PyramidKV \[[7](http://arxiv.org/abs/2406.02069)\] dynamically adjusts the KV cache size across different layers, allocating more cache in lower layers and less in higher ones. This approach significantly reduces memory usage while maintaining performance, achieving up to a 20.5 absolute accuracy improvement on the TREC dataset \[[7](http://arxiv.org/abs/2406.02069)\].
+
+KVQuant \[[8](http://arxiv.org/abs/2401.18079)\] enables low-precision KV cache quantization, achieving less than 0.1 perplexity degradation with 3-bit quantization on both Wikitext-2 and C4 datasets. This allows models like LLaMA-7B to handle context lengths up to 10 million tokens \[[8](http://arxiv.org/abs/2401.18079)\].
+
+These studies collectively highlight the importance of efficient KV cache management in LLM serving systems. They demonstrate that techniques such as dynamic cache compression, prefix-aware attention, and workload-aware eviction policies can significantly improve performance and reduce memory usage. Future work may explore further integration of these techniques into production systems to optimize real-world LLM serving workloads.
+
+### References
+
+1. \[[1](http://arxiv.org/abs/2309.06180)\] http://arxiv.org/abs/2309.06180  
+2. \[[2](http://arxiv.org/abs/2402.15220)\] http://arxiv.org/abs/2402.15220  
+3. \[[3](http://arxiv.org/abs/2311.04934)\] http://arxiv.org/abs/2311.04934  
+4. \[[4](http://arxiv.org/abs/2405.16444)\] http://arxiv.org/abs/2405.16444  
+5. \[[5](http://arxiv.org/abs/2309.17453)\] http://arxiv.org/abs/2309.17453  
+6. \[[6](http://arxiv.org/abs/2406.19707)\] http://arxiv.org/abs/2406.19707  
+7. \[[7](http://arxiv.org/abs/2406.02069)\] http://arxiv.org/abs/2406.02069  
+8. \[[8](http://arxiv.org/abs/2401.18079)\] http://arxiv.org/abs/2401.18079  
+9. \[[9](http://arxiv.org/abs/2309.06180)\] http://arxiv.org/abs/2309.06180

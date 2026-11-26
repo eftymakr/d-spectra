@@ -1,0 +1,31 @@
+## Related Works
+
+Serverless computing has emerged as a transformative paradigm in cloud computing, offering automatic scaling, efficient resource utilization, and cost-effective pricing models \[[16](http://arxiv.org/abs/1911.01296)\]. However, a significant challenge persists in the form of cold-start latency, which can severely impact end-to-end performance \[[16](http://arxiv.org/abs/1911.01296)\]. This issue arises due to the overhead of initializing runtime environments and dependencies before a function can execute \[[16](http://arxiv.org/abs/1911.01296)\]. Several approaches have been proposed to mitigate this problem, each with varying degrees of success.
+
+One line of research focuses on reducing the startup latency of serverless functions by optimizing the initialization process. For instance, Catalyzer introduces a sandbox system that restores function instances from precomputed checkpoint images, thereby eliminating the need for initialization on the critical path \[[2](https://www.semanticscholar.org/paper/f14446970a5ed7145a6d350e1aff07ca203cece8)\]. This approach achieves sub-millisecond startup times, significantly outperforming traditional methods \[[2](https://www.semanticscholar.org/paper/f14446970a5ed7145a6d350e1aff07ca203cece8)\]. Similarly, the *Prebaking* technique restores snapshots of previously executed function processes, reducing startup times by up to 71% for certain workloads \[[6](https://www.semanticscholar.org/paper/ab1c0062964a2df3d7f8d11da4a774530286b801)\]. These methods demonstrate that minimizing initialization overhead is a promising avenue for addressing cold-start latency.
+
+Another approach involves managing function instances to reduce the frequency of cold starts. The *LCS* (Least Recently Used Warm Container Selection) approach keeps containers alive for longer periods, reducing the need for frequent reinitialization \[[3](https://www.semanticscholar.org/paper/d45518ce5741587c4c37ccbc5e74b3fcfd6f80f1)\]. This method outperforms the MRU (Most Recently Used) approach by approximately 48% \[[3](https://www.semanticscholar.org/paper/d45518ce5741587c4c37ccbc5e74b3fcfd6f80f1)\]. Similarly, the *FaasCache* system employs a caching-inspired keep-alive policy that reduces cold-start overhead by more than 3× compared to current approaches \[[11](https://www.semanticscholar.org/paper/3c05fec4087d94c61233a482e59b613388b2c3ae)\]. These techniques highlight the importance of maintaining warm function instances to minimize latency.
+
+Function fusion has also been explored as a way to mitigate cold-start latency in workflows. By combining multiple functions into a single function, the cold start of subsequent functions can be avoided \[[4](https://www.semanticscholar.org/paper/36338d869d7589b01c3707d70bece8c320e439e2)\]. However, this approach may increase response time for parallel workflows, as functions run sequentially \[[4](https://www.semanticscholar.org/paper/36338d869d7589b01c3707d70bece8c320e439e2)\]. The *Xanadu* system addresses cascading cold starts in function chains by employing speculative and just-in-time provisioning of resources, effectively eliminating cascading overheads \[[10](https://www.semanticscholar.org/paper/1cd137e77753ee6c51c97c520d64f91d484dbddc)\]. This approach demonstrates the potential of intelligent resource management in reducing cold-start latency.
+
+Recent work has also focused on leveraging reinforcement learning to predict and prepare function instances based on invocation patterns \[[8](https://www.semanticscholar.org/paper/96d4fea8d034a7605af936f2e2b6a44becdf6585)\]. This approach enables proactive resource allocation, reducing the frequency of cold starts by learning from historical data \[[8](https://www.semanticscholar.org/paper/96d4fea8d034a7605af936f2e2b6a44becdf6585)\]. Additionally, *Sustainable Serverless Computing* (SSC) introduces a gradient-based pre-warming algorithm and a priority queue-based resource allocation strategy, reducing cold start hit rates by nearly 50% and achieving cost savings of approximately 30% \[[12](https://www.semanticscholar.org/paper/fbf4355d06ddb5f6c81e67cffadf57f6939b8940)\]. These methods underscore the importance of adaptive and intelligent resource management in serverless environments.
+
+In summary, while cold-start latency remains a critical challenge in serverless computing, a variety of techniques—from optimizing initialization processes to managing function instances and employing intelligent resource allocation—have been proposed to address this issue. These approaches provide a foundation for further research and development in this area.
+
+References:
+1. \[[1](https://www.semanticscholar.org/paper/d911b03bfda4fc6fc92f8080bb81b3a967d6a9e7)\] [Document 1]
+2. \[[2](https://www.semanticscholar.org/paper/f14446970a5ed7145a6d350e1aff07ca203cece8)\] [Document 2]
+3. \[[3](https://www.semanticscholar.org/paper/d45518ce5741587c4c37ccbc5e74b3fcfd6f80f1)\] [Document 3]
+4. \[[4](https://www.semanticscholar.org/paper/36338d869d7589b01c3707d70bece8c320e439e2)\] [Document 4]
+5. \[[5](http://arxiv.org/abs/2003.03423)\] [Document 5]
+6. \[[6](https://www.semanticscholar.org/paper/ab1c0062964a2df3d7f8d11da4a774530286b801)\] [Document 6]
+7. \[[7](https://www.semanticscholar.org/paper/c066cf85b94846ddc057a113ce110e045f587375)\] [Document 7]
+8. \[[8](https://www.semanticscholar.org/paper/96d4fea8d034a7605af936f2e2b6a44becdf6585)\] [Document 8]
+9. \[[9](https://www.semanticscholar.org/paper/3bd6093647f045e4e5f533ce9b994f80e774d4ab)\] [Document 9]
+10. \[[10](https://www.semanticscholar.org/paper/1cd137e77753ee6c51c97c520d64f91d484dbddc)\] [Document 10]
+11. \[[11](https://www.semanticscholar.org/paper/3c05fec4087d94c61233a482e59b613388b2c3ae)\] [Document 11]
+12. \[[12](https://www.semanticscholar.org/paper/fbf4355d06ddb5f6c81e67cffadf57f6939b8940)\] [Document 12]
+13. \[[13](https://www.semanticscholar.org/paper/1a937f78c2d968d134981b5c82adba6495e470e5)\] [Document 13]
+14. \[[14](https://www.semanticscholar.org/paper/f85fde870a1eb9c98c62ded89602e2bd1bab6a86)\] [Document 14]
+15. \[[15](https://www.semanticscholar.org/paper/bbb606d78d379262c85c4615cb5d9c191cd2e3bf)\] [Document 15]
+16. \[[16](http://arxiv.org/abs/1911.01296)\] [Document 16]

@@ -1,0 +1,24 @@
+## Related Works
+
+Cross-domain Sequential Recommendation (CDSR) has gained significant attention due to its ability to alleviate data sparsity and cold-start problems by leveraging user interactions across multiple domains \[[1](http://arxiv.org/abs/2304.03891)\]. Early approaches primarily focused on transferring knowledge from a source domain to a target domain using matrix factorization or neural networks \[[11](http://arxiv.org/abs/1804.06769)\]. However, these methods often assume fully overlapping users and fail to account for the complexities of real-world scenarios where user interactions are sparse and non-overlapping \[[6](http://arxiv.org/abs/2311.04590)\]. 
+
+Recent works have attempted to address these limitations by incorporating more sophisticated modeling techniques. For instance, C2DSR \[[1](http://arxiv.org/abs/2304.03891)\] proposes a method that simultaneously captures intra- and inter-sequence item relationships to learn both single- and cross-domain user preferences. This approach utilizes graph neural networks and sequential attentive encoders to enhance the accuracy of cross-domain recommendations. Similarly, DASL \[[2](http://arxiv.org/abs/2106.02768)\] introduces a dual learning mechanism that iteratively transfers information between domains to improve click-through rate predictions. The model employs dual embeddings and dual attention mechanisms to establish a two-stage learning process, demonstrating superior performance on real-world datasets.
+
+Another notable approach is DDTCDR \[[3](http://arxiv.org/abs/1910.05189)\], which leverages dual learning to transfer information between domains while preserving the relationships between users across different latent spaces. This method also integrates autoencoder techniques to extract the latent essence of feature information, leading to improved recommendation accuracy. The model is tested on a large dataset containing three domains and consistently outperforms state-of-the-art baselines.
+
+The challenge of modeling mixed behavior sequences and capturing complex transition patterns has also been addressed in several works. For example, the mixed information flow network \[[8](http://arxiv.org/abs/2012.00485)\] considers both behavioral and knowledge transfer by incorporating behavior transfer units and knowledge transfer units. This allows the model to decide when and how to use cross-domain information to enrich sequence representations. The model is evaluated on four e-commerce datasets, showing significant improvements in recommendation performance.
+
+Additionally, the DREAM model \[[9](https://www.semanticscholar.org/paper/96bfe33a2503e960153a934e10be91da4d8b13a6)\] introduces a decoupled representation approach to jointly learn single- and cross-domain user preferences. It utilizes an extraction attention module and supervised contrastive learning to model inter-sequence relationships and address data sparsity. The model also incorporates focal loss to handle class imbalance, achieving up to a 75% uplift in performance on movie-book scenarios.
+
+In the context of shared-account cross-domain sequential recommendations, π-Net \[[16](https://www.semanticscholar.org/paper/fa990aee9a8f157b5d393f5f3eaa014e1e5c67aa)\] and PSJNet \[[19](http://arxiv.org/abs/1910.02448)\] have been proposed to handle the challenges of shared accounts and cross-domain interactions. These models employ parallel information-sharing mechanisms to generate recommendations for multiple domains simultaneously, demonstrating effectiveness on real-world datasets.
+
+Overall, these works highlight the importance of modeling cross-domain interactions and addressing data sparsity and cold-start problems in sequential recommendation systems. The proposed LLM4CDSR model builds upon these advancements by leveraging the powerful representation and reasoning abilities of large language models to enhance cross-domain sequential recommendations.
+
+References:
+1. \[[1](http://arxiv.org/abs/2304.03891)\] Contrastive Cross-Domain Sequential Recommendation
+2. \[[2](http://arxiv.org/abs/2106.02768)\] Dual Attentive Sequential Learning for Cross-Domain Click-Through Rate Prediction
+3. \[[3](http://arxiv.org/abs/1910.05189)\] DDTCDR: Deep Dual Transfer Cross Domain Recommendation
+4. \[[8](http://arxiv.org/abs/2012.00485)\] Mixed Information Flow for Cross-domain Sequential Recommendations
+5. \[[9](https://www.semanticscholar.org/paper/96bfe33a2503e960153a934e10be91da4d8b13a6)\] DREAM: Decoupled Representation via Extraction Attention Module and Supervised Contrastive Learning for Cross-Domain Sequential Recommender
+6. \[[16](https://www.semanticscholar.org/paper/fa990aee9a8f157b5d393f5f3eaa014e1e5c67aa)\] π-Net: A Parallel Information-sharing Network for Shared-account Cross-domain Sequential Recommendations
+7. \[[19](http://arxiv.org/abs/1910.02448)\] Parallel Split-Join Networks for Shared Account Cross-Domain Sequential Recommendations

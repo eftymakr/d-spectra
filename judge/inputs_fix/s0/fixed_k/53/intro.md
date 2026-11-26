@@ -1,0 +1,29 @@
+## Related Works
+
+Deep sequential recommendation models have seen significant advancements, yet challenges remain in effectively modeling user behavior, particularly in handling sequence length variations and capturing diverse interaction patterns \[[1](http://arxiv.org/abs/2012.03323)\]. Early approaches primarily relied on recurrent neural networks (RNNs) and their variants, such as Long Short-Term Memory (LSTM) and Gated Recurrent Units (GRUs), to model sequential dependencies \[[14](http://arxiv.org/abs/2009.06327)\]. However, these models often struggle with computational efficiency and capturing long-term dependencies \[[5](http://arxiv.org/abs/2310.02367)\]. More recently, self-attention mechanisms have been widely adopted due to their ability to model long-range dependencies and capture complex interactions within sequences \[[9](http://arxiv.org/abs/2208.13330)\]. Despite these improvements, existing models often fail to account for the dynamic and evolving nature of user preferences, leading to suboptimal recommendations \[[6](http://arxiv.org/abs/2203.16942)\].
+
+To address these limitations, several works have introduced novel architectures and techniques. For instance, KATRec leverages a knowledge graph to enhance sequential recommendations by incorporating side information and modeling higher-order connections \[[1](http://arxiv.org/abs/2012.03323)\]. Similarly, CauseRec introduces counterfactual data distribution modeling to learn robust user representations that are less sensitive to noisy or sparse interactions \[[2](http://arxiv.org/abs/2109.05261)\]. These approaches aim to improve the stability and accuracy of recommendations by incorporating external knowledge and counterfactual reasoning.
+
+Another line of research focuses on improving the efficiency and scalability of sequential recommendation models. Linear Recurrent Units (LRURec) propose a lightweight alternative to self-attention-based models, enabling fast inference and parallelizable training while maintaining performance \[[5](http://arxiv.org/abs/2310.02367)\]. This is particularly important for real-time recommendation systems where computational efficiency is critical. Additionally, the Hierarchical Time-Aware Mixture of Experts (HM4SR) integrates multi-modal data and explicit temporal signals to better capture dynamic user interests \[[8](http://arxiv.org/abs/2501.14269)\]. This approach addresses the limitations of traditional models that rely solely on implicit temporal information.
+
+In the context of user preference modeling, some studies emphasize the importance of decomposing evolving preferences. For example, Sequential Recommendation with User Evolving Preference Decomposition introduces a reinforcement learning module to simulate the evolution of user preferences \[[6](http://arxiv.org/abs/2203.16942)\]. This allows for more accurate modeling of complex and changing user behavior. Similarly, the Double-Wing Mixture of Experts (DWMoE) framework addresses the challenge of heterogeneous data streams by learning distinct user preferences and item characteristics through two separate Mixture of Experts (MoE) components \[[14](http://arxiv.org/abs/2009.06327)\].
+
+Moreover, recent works have explored the integration of negative feedback and contrastive learning to improve recommendation quality. For instance, Enhancing Sequential Music Recommendation with Negative Feedback-informed Contrastive Learning structures item embeddings based on user feedback, promoting the ranking of true next items while down-ranking skipped tracks \[[10](http://arxiv.org/abs/2409.07367)\]. This approach leverages the rich feedback signals available in music streaming platforms to refine recommendations.
+
+In summary, while existing methods have made strides in sequential recommendation, challenges remain in modeling dynamic user preferences, handling sequence variations, and leveraging diverse interaction patterns. The proposed STAR-Rec architecture addresses these issues by combining preference-aware attention and state-space modeling through a sequence-level mixture-of-experts framework, offering a more flexible and efficient solution \[[1](http://arxiv.org/abs/2012.03323)\].
+
+References:
+1. KATRec: Knowledge Aware aTtentive Sequential Recommendations [http://arxiv.org/abs/2012.03323]
+2. CauseRec: Counterfactual User Sequence Synthesis for Sequential Recommendation [http://arxiv.org/abs/2109.05261]
+3. Facet-Aware Multi-Head Mixture-of-Experts Model for Sequential Recommendation [http://arxiv.org/abs/2411.01457]
+4. Sequence-level Semantic Representation Fusion for Recommender Systems [http://arxiv.org/abs/2402.18166]
+5. Linear Recurrent Units for Sequential Recommendation [http://arxiv.org/abs/2310.02367]
+6. Sequential Recommendation with User Evolving Preference Decomposition [http://arxiv.org/abs/2203.16942]
+7. Modeling the Dynamics of User Preferences for Sequence-Aware Recommendation Using Hidden Markov Models [http://arxiv.org/abs/1905.06863]
+8. Hierarchical Time-Aware Mixture of Experts for Multi-Modal Sequential Recommendation [http://arxiv.org/abs/2501.14269]
+9. Time-aware Self-Attention Meets Logic Reasoning in Recommender Systems [http://arxiv.org/abs/2208.13330]
+10. Enhancing Sequential Music Recommendation with Negative Feedback-informed Contrastive Learning [http://arxiv.org/abs/2409.07367]
+11. Sequential Recommendation in Online Games with Multiple Sequences, Tasks and User Levels [http://arxiv.org/abs/2102.06950]
+12. Multi-Level Sequence Denoising with Cross-Signal Contrastive Learning for Sequential Recommendation [http://arxiv.org/abs/2404.13878]
+13. Multi-Gradient Descent for Multi-Objective Recommender Systems [http://arxiv.org/abs/2001.00846]
+14. Double-Wing Mixture of Experts for Streaming Recommendations [http://arxiv.org/abs/2009.06327]

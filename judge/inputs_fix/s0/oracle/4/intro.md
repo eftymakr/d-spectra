@@ -1,0 +1,25 @@
+## Related Works
+
+In-context learning (ICL) has gained significant attention as a paradigm where large language models (LLMs) perform tasks by conditioning on a few input-output pairs, known as demonstrations \[[1](http://arxiv.org/abs/2205.12685)\]. Early studies highlighted the critical role of high-quality demonstrations in ICL, emphasizing that the performance of the model is highly dependent on the provided examples \[[5](http://arxiv.org/abs/2202.12837)\]. However, recent research has shown that the quality of these demonstrations can be compromised by noisy labels, which can significantly degrade the model's performance \[[6](http://arxiv.org/abs/2411.19581)\]. 
+
+The assumption that noisy samples yield higher perplexity than clean ones has been widely used to detect noisy annotations \[[7](http://arxiv.org/abs/2405.17264)\]. However, this approach is not robust when the noise ratio is high and many demonstrations are flawed \[[6](http://arxiv.org/abs/2411.19581)\]. This limitation has led to the development of alternative methods that aim to improve the reliability of ICL under noisy conditions. For instance, the work by \[[7](http://arxiv.org/abs/2405.17264)\] proposed Local Perplexity Ranking (LPR), which replaces noisy candidates with their nearest neighbors in semantic space, thereby improving the performance of ICL on tasks with noisy annotations. This method is motivated by the analysis of perplexity deviation caused by noisy labels and decomposes perplexity into inherent and matching components \[[7](http://arxiv.org/abs/2405.17264)\].
+
+Another line of research focuses on the role of demonstrations in ICL, showing that ground-truth labels are not always necessary for achieving good performance \[[5](http://arxiv.org/abs/2202.12837)\]. Instead, the format, distribution, and structure of the demonstrations play a crucial role in determining the model's ability to generalize \[[5](http://arxiv.org/abs/2202.12837)\]. This insight has led to the development of methods that aim to improve the effectiveness of ICL by focusing on the structure and content of the demonstrations rather than their correctness \[[5](http://arxiv.org/abs/2202.12837)\].
+
+Furthermore, the importance of controlling the verbosity of prompt templates and the size of the language model has been identified as a key factor in achieving more noise-resilient ICL \[[1](http://arxiv.org/abs/2205.12685)\]. This highlights the need for a more nuanced understanding of how different components of the ICL setup affect the final performance \[[1](http://arxiv.org/abs/2205.12685)\].
+
+In addition to improving the quality of demonstrations, recent studies have explored methods to enhance the robustness of ICL by introducing new decoding strategies. Contrastive decoding, for example, has been shown to improve reasoning tasks by maximizing the weighted difference in likelihood between strong and weak models \[[2](http://arxiv.org/abs/2309.09117)\]. This method has been applied to various tasks, including commonsense reasoning and math word problems, demonstrating its effectiveness in generating more accurate and coherent outputs \[[2](http://arxiv.org/abs/2309.09117)\].
+
+Finally, the issue of label biases in ICL has also been addressed, with studies showing that certain design settings can bias the model towards specific predictions without reflecting a true understanding of the task \[[10](http://arxiv.org/abs/2305.19148)\]. To mitigate this, researchers have proposed methods that estimate and control for these biases, leading to improved performance across a range of tasks \[[10](http://arxiv.org/abs/2305.19148)\].
+
+References:  
+\[[1](http://arxiv.org/abs/2205.12685)\] Ground-Truth Labels Matter: A Deeper Look into Input-Label Demonstrations  
+\[[2](http://arxiv.org/abs/2309.09117)\] Contrastive Decoding Improves Reasoning in Large Language Models  
+\[[3](http://arxiv.org/abs/2305.04320)\] Unified Demonstration Retriever for In-Context Learning  
+\[[4](http://arxiv.org/abs/2311.06668)\] In-context Vectors: Making In Context Learning More Effective and Controllable Through Latent Space Steering  
+\[[5](http://arxiv.org/abs/2202.12837)\] Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?  
+\[[6](http://arxiv.org/abs/2411.19581)\] In-Context Learning with Noisy Labels  
+\[[7](http://arxiv.org/abs/2405.17264)\] On the Noise Robustness of In-Context Learning for Text Generation  
+\[[8](http://arxiv.org/abs/2210.15097)\] Contrastive Decoding: Open-ended Text Generation as Optimization  
+\[[9](http://arxiv.org/abs/2405.02750)\] Enhancing Contextual Understanding in Large Language Models through Contrastive Decoding  
+\[[10](http://arxiv.org/abs/2305.19148)\] Mitigating Label Biases for In-context Learning

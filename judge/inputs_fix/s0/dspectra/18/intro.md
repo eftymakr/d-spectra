@@ -1,0 +1,30 @@
+## Related Works
+
+Anomaly detection has become a critical component in modern industrial settings, particularly in the context of intelligent manufacturing, where maintaining quality control is essential \[[11](http://arxiv.org/abs/2106.08265)\]. Traditional approaches often rely on threshold-based methods or supervised learning, which are limited by the lack of labeled data and the complexity of real-world scenarios \[[9](http://arxiv.org/abs/1901.04997)\]. Recent advances in deep learning have enabled more robust and flexible anomaly detection methods, particularly for image-based and time-series data \[[5](http://arxiv.org/abs/2301.11514)\]\[[10](http://arxiv.org/abs/2007.10088)\].
+
+Several studies have focused on improving the efficiency and performance of anomaly detection models for deployment in resource-constrained environments. For instance, \[[11](http://arxiv.org/abs/2106.08265)\] proposed PatchCore, a method that uses a maximally representative memory bank of nominal patch-features to achieve state-of-the-art performance for both detection and localization, with competitive inference times. This is particularly relevant for embedded systems where computational resources are limited. Similarly, \[[1](http://arxiv.org/abs/1607.00148)\] introduced an LSTM-based Encoder-Decoder scheme for anomaly detection, which is effective for both predictable and unpredictable time-series data. This approach leverages reconstruction errors to identify anomalies, demonstrating robustness across different types of time-series data.
+
+In the realm of image-based anomaly detection, \[[8](http://arxiv.org/abs/2005.14140)\] proposed a method that leverages deep feature representations from pre-trained models, such as those trained on ImageNet, to detect anomalies in a transfer learning setting. This approach fits a multivariate Gaussian to deep features and uses the Mahalanobis distance as an anomaly score, achieving high performance on the MVTec dataset. Another study, \[[13](http://arxiv.org/abs/2310.07716)\], introduced the PAD dataset and benchmark for pose-agnostic anomaly detection, addressing the limitations of existing datasets that assume fixed object poses during training and testing. This work also proposed a novel method, OmniposeAD, specifically designed for pose-agnostic detection, demonstrating the importance of diverse and realistic data in improving model generalization.
+
+For multivariate time-series data, \[[6](https://www.semanticscholar.org/paper/440d248d148f7e36dad232e48f1c5c1cbc556d86)\] proposed OmniAnomaly, a stochastic recurrent neural network that captures the normal patterns of multivariate time series through robust representations. This method uses reconstruction probabilities to determine anomalies and provides interpretations based on the reconstruction of univariate time series, achieving high performance on real-world datasets. Additionally, \[[9](http://arxiv.org/abs/1901.04997)\] introduced MAD-GAN, an unsupervised multivariate anomaly detection method based on Generative Adversarial Networks (GANs), which considers the entire variable set concurrently to capture latent interactions. This approach uses a novel anomaly score called DR-score, which combines discrimination and reconstruction to detect anomalies effectively in complex systems.
+
+In the context of attributed networks, \[[14](https://www.semanticscholar.org/paper/bcfdbb6b8911272139170ef4b24e31d9145093e7)\] proposed a deep model that explicitly models both the topological structure and node attributes for anomaly detection. This method uses graph convolutional networks (GCN) for node embedding learning and deep autoencoders for reconstruction, enabling the detection of anomalies by measuring reconstruction errors from both structure and attribute perspectives.
+
+These studies highlight the ongoing efforts to improve the efficiency, robustness, and generalization of anomaly detection models across various domains, from time-series data to image-based and attributed networks. The proposed KairosAD approach builds upon these advancements by leveraging the Mobile Segment Anything Model (MobileSAM) to achieve a balance between performance and computational efficiency, making it suitable for deployment on embedded devices in industrial settings.
+
+References:
+
+1. \[[1](http://arxiv.org/abs/1607.00148)\] LSTM-based Encoder-Decoder for Multi-sensor Anomaly Detection  
+2. \[[2](http://arxiv.org/abs/2012.03586)\] No Need to Know Physics: Resilience of Process-based Model-free Anomaly Detection for Industrial Control Systems  
+3. \[[3](http://arxiv.org/abs/1906.02694)\] Deep Semi-Supervised Anomaly Detection  
+4. \[[4](http://arxiv.org/abs/2002.03665)\] Anomalydae: Dual Autoencoder for Anomaly Detection on Attributed Networks  
+5. \[[5](http://arxiv.org/abs/2301.11514)\] Deep Industrial Image Anomaly Detection: A Survey  
+6. \[[6](https://www.semanticscholar.org/paper/440d248d148f7e36dad232e48f1c5c1cbc556d86)\] Robust Anomaly Detection for Multivariate Time Series through Stochastic Recurrent Neural Network  
+7. \[[7](http://arxiv.org/abs/2107.12571)\] CFLOW-AD: Real-Time Unsupervised Anomaly Detection with Localization via Conditional Normalizing Flows  
+8. \[[8](http://arxiv.org/abs/2005.14140)\] Modeling the Distribution of Normal Data in Pre-Trained Deep Features for Anomaly Detection  
+9. \[[9](http://arxiv.org/abs/1901.04997)\] MAD-GAN: Multivariate Anomaly Detection for Time Series Data with Generative Adversarial Networks  
+10. \[[10](http://arxiv.org/abs/2007.10088)\] Interpretable, Multidimensional, Multimodal Anomaly Detection with Negative Sampling for Detection of Device Failure  
+11. \[[11](http://arxiv.org/abs/2106.08265)\] Towards Total Recall in Industrial Anomaly Detection  
+12. \[[12](http://arxiv.org/abs/2112.09045)\] The MVTec 3D-AD Dataset for Unsupervised 3D Anomaly Detection and Localization  
+13. \[[13](http://arxiv.org/abs/2310.07716)\] PAD: A Dataset and Benchmark for Pose-agnostic Anomaly Detection  
+14. \[[14](https://www.semanticscholar.org/paper/bcfdbb6b8911272139170ef4b24e31d9145093e7)\] Deep Anomaly Detection on Attributed Networks

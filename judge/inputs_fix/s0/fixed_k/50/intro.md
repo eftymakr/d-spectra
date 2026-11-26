@@ -1,0 +1,24 @@
+## Related Works
+
+The rapid growth of open-source machine learning (ML) resources has significantly impacted information retrieval (IR) research, as noted in the paper’s abstract \[[1](http://arxiv.org/abs/2502.04484)\]. However, existing platforms like Hugging Face lack structured representations, which limits advanced querying and analysis \[[1](http://arxiv.org/abs/2502.04484)\]. This section reviews related works that address similar challenges, focusing on dataset documentation, model evolution, and knowledge graph construction.
+
+Several studies have examined the documentation and structure of datasets on Hugging Face. For instance, a large-scale analysis of dataset cards revealed that while some sections are well-populated, others such as "Considerations for Using the Data" are underdeveloped \[[2](http://arxiv.org/abs/2401.13822)\]. This highlights a need for more comprehensive documentation, which aligns with the goals of HuggingKG in capturing rich textual attributes \[[1](http://arxiv.org/abs/2502.04484)\]. Additionally, the study found that dataset popularity correlates with documentation completeness \[[2](http://arxiv.org/abs/2401.13822)\], suggesting that more popular datasets may benefit from better documentation practices.
+
+The evolution and maintenance of ML models on Hugging Face have also been explored. A repository mining study analyzed over 380,000 models, revealing trends in ML domains, framework usage, and maintenance practices \[[3](http://arxiv.org/abs/2311.13380)\]. The study introduced a classification system for model maintenance, categorizing commit messages into corrective, perfective, and adaptive types \[[3](http://arxiv.org/abs/2311.13380)\]. These findings support the importance of structured metadata in tracking model evolution, a key aspect of HuggingKG \[[1](http://arxiv.org/abs/2502.04484)\].
+
+In the context of carbon footprint and sustainability, a study analyzed 1,417 ML models on Hugging Face, finding that only a small proportion report carbon emissions \[[4](http://arxiv.org/abs/2305.11164)\]. The study also identified correlations between carbon emissions and model size, dataset size, and application domains \[[4](http://arxiv.org/abs/2305.11164)\]. These findings underscore the need for transparent reporting practices, which HuggingKG aims to address through its structured representation of ML resources \[[1](http://arxiv.org/abs/2502.04484)\].
+
+The Hugging Face Hub has also been evaluated for its suitability as a source for empirical studies. A qualitative and quantitative analysis confirmed that HFH offers sufficient features and diverse data for empirical research on AI development \[[5](http://arxiv.org/abs/2307.14841)\]. This aligns with the goals of HuggingKG in providing a structured knowledge graph for ML resource management \[[1](http://arxiv.org/abs/2502.04484)\].
+
+In terms of knowledge graph construction, a study on multi-modal graph learning over UMLS knowledge graphs demonstrated the effectiveness of graph neural networks in medical concept representation \[[13](http://arxiv.org/abs/2307.04461)\]. Similarly, a paper on generating knowledge graphs using NLP and ML techniques in the scholarly domain showed the potential of such approaches in capturing complex relationships \[[14](http://arxiv.org/abs/2011.01103)\]. These studies highlight the broader applicability of knowledge graphs in various domains, supporting the development of HuggingKG for ML resource management \[[1](http://arxiv.org/abs/2502.04484)\].
+
+Finally, a study on gender diversity in Hugging Face organizations found that women are underrepresented in both organizational roles and commits \[[10](http://arxiv.org/abs/2503.17000)\]. This highlights the importance of inclusivity in open-source communities, a consideration that should be addressed alongside technical advancements in resource management.
+
+1. \[[1](http://arxiv.org/abs/2502.04484)\] The paper’s abstract
+2. \[[2](http://arxiv.org/abs/2401.13822)\] Navigating Dataset Documentations in AI: A Large-Scale Analysis of Dataset Cards on Hugging Face
+3. \[[3](http://arxiv.org/abs/2311.13380)\] Analyzing the Evolution and Maintenance of ML Models on Hugging Face
+4. \[[4](http://arxiv.org/abs/2305.11164)\] Exploring the Carbon Footprint of Hugging Face's ML Models: A Repository Mining Study
+5. \[[5](http://arxiv.org/abs/2307.14841)\] On the suitability of hugging face hub for empirical studies
+6. \[[10](http://arxiv.org/abs/2503.17000)\] Exploring the Role of Women in Hugging Face Organizations
+7. \[[13](http://arxiv.org/abs/2307.04461)\] Multi-modal Graph Learning over UMLS Knowledge Graphs
+8. \[[14](http://arxiv.org/abs/2011.01103)\] Generating Knowledge Graphs by Employing Natural Language Processing and Machine Learning Techniques within the Scholarly Domain

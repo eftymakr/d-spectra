@@ -1,0 +1,165 @@
+id,title,url,snippet
+2411.00722,Token-level Proximal Policy Optimization for Query Generation,http://arxiv.org/abs/2411.00722,"Query generation is a critical task for web search engines (e.g. Google,
+Bing) and recommendation systems. Recently, state-of-the-art query generation
+methods leverage Large Language Models (LLMs) for their strong capabilities in
+context understanding and text generation. However, they still face challenges
+in generating high-quality queries in terms of inferring user intent based on
+their web search interaction history. In this paper, we propose Token-level
+Proximal Policy Optimization (TPPO), a noval approach designed to empower LLMs
+perform better in query generation through fine-tuning. TPPO is based on the
+Reinforcement Learning from AI Feedback (RLAIF) paradigm, consisting of a
+token-level reward model and a token-level proximal policy optimization module
+to address the sparse reward challenge in traditional RLAIF frameworks. To
+evaluate the effectiveness and robustness of TPPO, we conducted experiments on
+both open-source dataset and an industrial dataset that was collected from a
+globally-used search engine. The experimental results demonstrate that TPPO
+significantly improves the performance of query generation for LLMs and
+outperforms its existing competitors."
+2007.00808,"Approximate Nearest Neighbor Negative Contrastive Learning for Dense
+  Text Retrieval",http://arxiv.org/abs/2007.00808,"Conducting text retrieval in a dense learned representation space has many
+intriguing advantages over sparse retrieval. Yet the effectiveness of dense
+retrieval (DR) often requires combination with sparse retrieval. In this paper,
+we identify that the main bottleneck is in the training mechanisms, where the
+negative instances used in training are not representative of the irrelevant
+documents in testing. This paper presents Approximate nearest neighbor Negative
+Contrastive Estimation (ANCE), a training mechanism that constructs negatives
+from an Approximate Nearest Neighbor (ANN) index of the corpus, which is
+parallelly updated with the learning process to select more realistic negative
+training instances. This fundamentally resolves the discrepancy between the
+data distribution used in the training and testing of DR. In our experiments,
+ANCE boosts the BERT-Siamese DR model to outperform all competitive dense and
+sparse retrieval baselines. It nearly matches the accuracy of
+sparse-retrieval-and-BERT-reranking using dot-product in the ANCE-learned
+representation space and provides almost 100x speed-up."
+2004.04906,Dense Passage Retrieval for Open-Domain Question Answering,http://arxiv.org/abs/2004.04906,"Open-domain question answering relies on efficient passage retrieval to
+select candidate contexts, where traditional sparse vector space models, such
+as TF-IDF or BM25, are the de facto method. In this work, we show that
+retrieval can be practically implemented using dense representations alone,
+where embeddings are learned from a small number of questions and passages by a
+simple dual-encoder framework. When evaluated on a wide range of open-domain QA
+datasets, our dense retriever outperforms a strong Lucene-BM25 system largely
+by 9%-19% absolute in terms of top-20 passage retrieval accuracy, and helps our
+end-to-end QA system establish new state-of-the-art on multiple open-domain QA
+benchmarks."
+2108.05540,"Unsupervised Corpus Aware Language Model Pre-training for Dense Passage
+  Retrieval",http://arxiv.org/abs/2108.05540,"Recent research demonstrates the effectiveness of using fine-tuned language
+models~(LM) for dense retrieval. However, dense retrievers are hard to train,
+typically requiring heavily engineered fine-tuning pipelines to realize their
+full potential. In this paper, we identify and address two underlying problems
+of dense retrievers: i)~fragility to training data noise and ii)~requiring
+large batches to robustly learn the embedding space. We use the recently
+proposed Condenser pre-training architecture, which learns to condense
+information into the dense vector through LM pre-training. On top of it, we
+propose coCondenser, which adds an unsupervised corpus-level contrastive loss
+to warm up the passage embedding space. Retrieval experiments on MS-MARCO,
+Natural Question, and Trivia QA datasets show that coCondenser removes the need
+for heavy data engineering such as augmentation, synthesis, or filtering, as
+well as the need for large batch training. It shows comparable performance to
+RocketQA, a state-of-the-art, heavily engineered system, using simple small
+batch fine-tuning."
+2205.12035,"RetroMAE: Pre-Training Retrieval-oriented Language Models Via Masked
+  Auto-Encoder",http://arxiv.org/abs/2205.12035,"Despite pre-training's progress in many important NLP tasks, it remains to
+explore effective pre-training strategies for dense retrieval. In this paper,
+we propose RetroMAE, a new retrieval oriented pre-training paradigm based on
+Masked Auto-Encoder (MAE). RetroMAE is highlighted by three critical designs.
+1) A novel MAE workflow, where the input sentence is polluted for encoder and
+decoder with different masks. The sentence embedding is generated from the
+encoder's masked input; then, the original sentence is recovered based on the
+sentence embedding and the decoder's masked input via masked language modeling.
+2) Asymmetric model structure, with a full-scale BERT like transformer as
+encoder, and a one-layer transformer as decoder. 3) Asymmetric masking ratios,
+with a moderate ratio for encoder: 15~30%, and an aggressive ratio for decoder:
+50~70%. Our framework is simple to realize and empirically competitive: the
+pre-trained models dramatically improve the SOTA performances on a wide range
+of dense retrieval benchmarks, like BEIR and MS MARCO. The source code and
+pre-trained models are made publicly available at
+https://github.com/staoxiao/RetroMAE so as to inspire more interesting
+research."
+2209.11755,Promptagator: Few-shot Dense Retrieval From 8 Examples,http://arxiv.org/abs/2209.11755,"Much recent research on information retrieval has focused on how to transfer
+from one task (typically with abundant supervised data) to various other tasks
+where supervision is limited, with the implicit assumption that it is possible
+to generalize from one task to all the rest. However, this overlooks the fact
+that there are many diverse and unique retrieval tasks, each targeting
+different search intents, queries, and search domains. In this paper, we
+suggest to work on Few-shot Dense Retrieval, a setting where each task comes
+with a short description and a few examples. To amplify the power of a few
+examples, we propose Prompt-base Query Generation for Retriever (Promptagator),
+which leverages large language models (LLM) as a few-shot query generator, and
+creates task-specific retrievers based on the generated data. Powered by LLM's
+generalization ability, Promptagator makes it possible to create task-specific
+end-to-end retrievers solely based on a few examples (without) using Natural
+Questions or MS MARCO to train %question generators or dual encoders.
+Surprisingly, LLM prompting with no more than 8 examples allows dual encoders
+to outperform heavily engineered models trained on MS MARCO like ColBERT v2 by
+more than 1.2 nDCG on average on 11 retrieval sets. Further training
+standard-size re-rankers using the same generated data yields another 5.0 point
+nDCG improvement. Our studies determine that query generation can be far more
+effective than previously observed, especially when a small amount of
+task-specific knowledge is given."
+2202.05144,"InPars: Data Augmentation for Information Retrieval using Large Language
+  Models",http://arxiv.org/abs/2202.05144,"The information retrieval community has recently witnessed a revolution due
+to large pretrained transformer models. Another key ingredient for this
+revolution was the MS MARCO dataset, whose scale and diversity has enabled
+zero-shot transfer learning to various tasks. However, not all IR tasks and
+domains can benefit from one single dataset equally. Extensive research in
+various NLP tasks has shown that using domain-specific training data, as
+opposed to a general-purpose one, improves the performance of neural models. In
+this work, we harness the few-shot capabilities of large pretrained language
+models as synthetic data generators for IR tasks. We show that models finetuned
+solely on our unsupervised dataset outperform strong baselines such as BM25 as
+well as recently proposed self-supervised dense retrieval methods. Furthermore,
+retrievers finetuned on both supervised and our synthetic data achieve better
+zero-shot transfer than models finetuned only on supervised data. Code, models,
+and data are available at https://github.com/zetaalphavector/inpars ."
+2403.20327,Gecko: Versatile Text Embeddings Distilled from Large Language Models,http://arxiv.org/abs/2403.20327,"We present Gecko, a compact and versatile text embedding model. Gecko
+achieves strong retrieval performance by leveraging a key idea: distilling
+knowledge from large language models (LLMs) into a retriever. Our two-step
+distillation process begins with generating diverse, synthetic paired data
+using an LLM. Next, we further refine the data quality by retrieving a set of
+candidate passages for each query, and relabeling the positive and hard
+negative passages using the same LLM. The effectiveness of our approach is
+demonstrated by the compactness of the Gecko. On the Massive Text Embedding
+Benchmark (MTEB), Gecko with 256 embedding dimensions outperforms all existing
+entries with 768 embedding size. Gecko with 768 embedding dimensions achieves
+an average score of 66.31, competing with 7x larger models and 5x higher
+dimensional embeddings."
+1706.03762,Attention Is All You Need,http://arxiv.org/abs/1706.03762,"The dominant sequence transduction models are based on complex recurrent or
+convolutional neural networks in an encoder-decoder configuration. The best
+performing models also connect the encoder and decoder through an attention
+mechanism. We propose a new simple network architecture, the Transformer, based
+solely on attention mechanisms, dispensing with recurrence and convolutions
+entirely. Experiments on two machine translation tasks show these models to be
+superior in quality while being more parallelizable and requiring significantly
+less time to train. Our model achieves 28.4 BLEU on the WMT 2014
+English-to-German translation task, improving over the existing best results,
+including ensembles by over 2 BLEU. On the WMT 2014 English-to-French
+translation task, our model establishes a new single-model state-of-the-art
+BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction
+of the training costs of the best models from the literature. We show that the
+Transformer generalizes well to other tasks by applying it successfully to
+English constituency parsing both with large and limited training data."
+1904.08375,Document Expansion by Query Prediction,http://arxiv.org/abs/1904.08375,"One technique to improve the retrieval effectiveness of a search engine is to
+expand documents with terms that are related or representative of the
+documents' content.From the perspective of a question answering system, this
+might comprise questions the document can potentially answer. Following this
+observation, we propose a simple method that predicts which queries will be
+issued for a given document and then expands it with those predictions with a
+vanilla sequence-to-sequence model, trained using datasets consisting of pairs
+of query and relevant documents. By combining our method with a
+highly-effective re-ranking component, we achieve the state of the art in two
+retrieval tasks. In a latency-critical regime, retrieval results alone (without
+re-ranking) approach the effectiveness of more computationally expensive neural
+re-rankers but are much faster."
+1707.06347,Proximal Policy Optimization Algorithms,http://arxiv.org/abs/1707.06347,"We propose a new family of policy gradient methods for reinforcement
+learning, which alternate between sampling data through interaction with the
+environment, and optimizing a ""surrogate"" objective function using stochastic
+gradient ascent. Whereas standard policy gradient methods perform one gradient
+update per data sample, we propose a novel objective function that enables
+multiple epochs of minibatch updates. The new methods, which we call proximal
+policy optimization (PPO), have some of the benefits of trust region policy
+optimization (TRPO), but they are much simpler to implement, more general, and
+have better sample complexity (empirically). Our experiments test PPO on a
+collection of benchmark tasks, including simulated robotic locomotion and Atari
+game playing, and we show that PPO outperforms other online policy gradient
+methods, and overall strikes a favorable balance between sample complexity,
+simplicity, and wall-time."

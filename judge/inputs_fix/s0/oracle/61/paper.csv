@@ -1,0 +1,350 @@
+id,title,url,snippet
+1905.01866,"POG: Personalized Outfit Generation for Fashion Recommendation at
+  Alibaba iFashion",http://arxiv.org/abs/1905.01866,"Increasing demand for fashion recommendation raises a lot of challenges for
+online shopping platforms and fashion communities. In particular, there exist
+two requirements for fashion outfit recommendation: the Compatibility of the
+generated fashion outfits, and the Personalization in the recommendation
+process. In this paper, we demonstrate these two requirements can be satisfied
+via building a bridge between outfit generation and recommendation. Through
+large data analysis, we observe that people have similar tastes in individual
+items and outfits. Therefore, we propose a Personalized Outfit Generation (POG)
+model, which connects user preferences regarding individual items and outfits
+with Transformer architecture. Extensive offline and online experiments provide
+strong quantitative evidence that our method outperforms alternative methods
+regarding both compatibility and personalization metrics. Furthermore, we
+deploy POG on a platform named Dida in Alibaba to generate personalized outfits
+for the users of the online application iFashion.
+  This work represents a first step towards an industrial-scale fashion outfit
+generation and recommendation solution, which goes beyond generating outfits
+based on explicit queries, or merely recommending from existing outfit pools.
+As part of this work, we release a large-scale dataset consisting of 1.01
+million outfits with rich context information, and 0.28 billion user click
+actions from 3.57 million users. To the best of our knowledge, this dataset is
+the largest, publicly available, fashion related dataset, and the first to
+provide user behaviors relating to both outfits and fashion items."
+2402.17279,Diffusion Models for Generative Outfit Recommendation,http://arxiv.org/abs/2402.17279,"Outfit Recommendation (OR) in the fashion domain has evolved through two
+stages: Pre-defined Outfit Recommendation and Personalized Outfit Composition.
+However, both stages are constrained by existing fashion products, limiting
+their effectiveness in addressing users' diverse fashion needs. Recently, the
+advent of AI-generated content provides the opportunity for OR to transcend
+these limitations, showcasing the potential for personalized outfit generation
+and recommendation.
+  To this end, we introduce a novel task called Generative Outfit
+Recommendation (GOR), aiming to generate a set of fashion images and compose
+them into a visually compatible outfit tailored to specific users. The key
+objectives of GOR lie in the high fidelity, compatibility, and personalization
+of generated outfits. To achieve these, we propose a generative outfit
+recommender model named DiFashion, which empowers exceptional diffusion models
+to accomplish the parallel generation of multiple fashion images. To ensure
+three objectives, we design three kinds of conditions to guide the parallel
+generation process and adopt Classifier-Free-Guidance to enhance the alignment
+between the generated images and conditions. We apply DiFashion on both
+personalized Fill-In-The-Blank and GOR tasks and conduct extensive experiments
+on iFashion and Polyvore-U datasets. The quantitative and human-involved
+qualitative evaluation demonstrate the superiority of DiFashion over
+competitive baselines."
+1804.10871,"CRAFT: Complementary Recommendations Using Adversarial Feature
+  Transformer",http://arxiv.org/abs/1804.10871,"Traditional approaches for complementary product recommendations rely on
+behavioral and non-visual data such as customer co-views or co-buys. However,
+certain domains such as fashion are primarily visual. We propose a framework
+that harnesses visual cues in an unsupervised manner to learn the distribution
+of co-occurring complementary items in real world images. Our model learns a
+non-linear transformation between the two manifolds of source and target
+complementary item categories (e.g., tops and bottoms in outfits). Given a
+large dataset of images containing instances of co-occurring object categories,
+we train a generative transformer network directly on the feature
+representation space by casting it as an adversarial optimization problem. Such
+a conditional generative model can produce multiple novel samples of
+complementary items (in the feature space) for a given query item. The final
+recommendations are selected from the closest real world examples to the
+synthesized complementary features. We apply our framework to the task of
+recommending complementary tops for a given bottom clothing item. The
+recommendations made by our system are diverse, and are favored by human
+experts over the baseline approaches."
+1711.08447,VITON: An Image-based Virtual Try-on Network,http://arxiv.org/abs/1711.08447,"We present an image-based VIirtual Try-On Network (VITON) without using 3D
+information in any form, which seamlessly transfers a desired clothing item
+onto the corresponding region of a person using a coarse-to-fine strategy.
+Conditioned upon a new clothing-agnostic yet descriptive person representation,
+our framework first generates a coarse synthesized image with the target
+clothing item overlaid on that same person in the same pose. We further enhance
+the initial blurry clothing area with a refinement network. The network is
+trained to learn how much detail to utilize from the target clothing item, and
+where to apply to the person in order to synthesize a photo-realistic image in
+which the target item deforms naturally with clear visual patterns. Experiments
+on our newly collected Zalando dataset demonstrate its promise in the
+image-based virtual try-on task over state-of-the-art generative models."
+2311.12908,Diffusion Model Alignment Using Direct Preference Optimization,http://arxiv.org/abs/2311.12908,"Large language models (LLMs) are fine-tuned using human comparison data with
+Reinforcement Learning from Human Feedback (RLHF) methods to make them better
+aligned with users' preferences. In contrast to LLMs, human preference learning
+has not been widely explored in text-to-image diffusion models; the best
+existing approach is to fine-tune a pretrained model using carefully curated
+high quality images and captions to improve visual appeal and text alignment.
+We propose Diffusion-DPO, a method to align diffusion models to human
+preferences by directly optimizing on human comparison data. Diffusion-DPO is
+adapted from the recently developed Direct Preference Optimization (DPO), a
+simpler alternative to RLHF which directly optimizes a policy that best
+satisfies human preferences under a classification objective. We re-formulate
+DPO to account for a diffusion model notion of likelihood, utilizing the
+evidence lower bound to derive a differentiable objective. Using the Pick-a-Pic
+dataset of 851K crowdsourced pairwise preferences, we fine-tune the base model
+of the state-of-the-art Stable Diffusion XL (SDXL)-1.0 model with
+Diffusion-DPO. Our fine-tuned base model significantly outperforms both base
+SDXL-1.0 and the larger SDXL-1.0 model consisting of an additional refinement
+model in human evaluation, improving visual appeal and prompt alignment. We
+also develop a variant that uses AI feedback and has comparable performance to
+training on human preferences, opening the door for scaling of diffusion model
+alignment methods."
+2311.13231,"Using Human Feedback to Fine-tune Diffusion Models without Any Reward
+  Model",http://arxiv.org/abs/2311.13231,"Using reinforcement learning with human feedback (RLHF) has shown significant
+promise in fine-tuning diffusion models. Previous methods start by training a
+reward model that aligns with human preferences, then leverage RL techniques to
+fine-tune the underlying models. However, crafting an efficient reward model
+demands extensive datasets, optimal architecture, and manual hyperparameter
+tuning, making the process both time and cost-intensive. The direct preference
+optimization (DPO) method, effective in fine-tuning large language models,
+eliminates the necessity for a reward model. However, the extensive GPU memory
+requirement of the diffusion model's denoising process hinders the direct
+application of the DPO method. To address this issue, we introduce the Direct
+Preference for Denoising Diffusion Policy Optimization (D3PO) method to
+directly fine-tune diffusion models. The theoretical analysis demonstrates that
+although D3PO omits training a reward model, it effectively functions as the
+optimal reward model trained using human feedback data to guide the learning
+process. This approach requires no training of a reward model, proving to be
+more direct, cost-effective, and minimizing computational overhead. In
+experiments, our method uses the relative scale of objectives as a proxy for
+human preference, delivering comparable results to methods using ground-truth
+rewards. Moreover, D3PO demonstrates the ability to reduce image distortion
+rates and generate safer images, overcoming challenges lacking robust reward
+models. Our code is publicly available at https://github.com/yk7333/D3PO."
+2005.12566,"Hierarchical Fashion Graph Network for Personalized Outfit
+  Recommendation",http://arxiv.org/abs/2005.12566,"Fashion outfit recommendation has attracted increasing attentions from online
+shopping services and fashion communities.Distinct from other scenarios (e.g.,
+social networking or content sharing) which recommend a single item (e.g., a
+friend or picture) to a user, outfit recommendation predicts user preference on
+a set of well-matched fashion items.Hence, performing high-quality personalized
+outfit recommendation should satisfy two requirements -- 1) the nice
+compatibility of fashion items and 2) the consistence with user preference.
+However, present works focus mainly on one of the requirements and only
+consider either user-outfit or outfit-item relationships, thereby easily
+leading to suboptimal representations and limiting the performance. In this
+work, we unify two tasks, fashion compatibility modeling and personalized
+outfit recommendation. Towards this end, we develop a new framework,
+Hierarchical Fashion Graph Network(HFGN), to model relationships among users,
+items, and outfits simultaneously. In particular, we construct a hierarchical
+structure upon user-outfit interactions and outfit-item mappings. We then get
+inspirations from recent graph neural networks, and employ the embedding
+propagation on such hierarchical graph, so as to aggregate item information
+into an outfit representation, and then refine a user's representation via
+his/her historical outfits. Furthermore, we jointly train these two tasks to
+optimize these representations. To demonstrate the effectiveness of HFGN, we
+conduct extensive experiments on a benchmark dataset, and HFGN achieves
+significant improvements over the state-of-the-art compatibility matching
+models like NGNN and outfit recommenders like FHN."
+2311.16751,MultiCBR: Multi-view Contrastive Learning for Bundle Recommendation,http://arxiv.org/abs/2311.16751,"Bundle recommendation seeks to recommend a bundle of related items to users
+to improve both user experience and the profits of platform. Existing bundle
+recommendation models have progressed from capturing only user-bundle
+interactions to the modeling of multiple relations among users, bundles and
+items. CrossCBR, in particular, incorporates cross-view contrastive learning
+into a two-view preference learning framework, significantly improving SOTA
+performance. It does, however, have two limitations: 1) the two-view
+formulation does not fully exploit all the heterogeneous relations among users,
+bundles and items; and 2) the ""early contrast and late fusion"" framework is
+less effective in capturing user preference and difficult to generalize to
+multiple views. In this paper, we present MultiCBR, a novel Multi-view
+Contrastive learning framework for Bundle Recommendation. First, we devise a
+multi-view representation learning framework capable of capturing all the
+user-bundle, user-item and bundle-item relations, especially better utilizing
+the bundle-item affiliations to enhance sparse bundles' representations.
+Second, we innovatively adopt an ""early fusion and late contrast"" design that
+first fuses the multi-view representations before performing self-supervised
+contrastive learning. In comparison to existing approaches, our framework
+reverses the order of fusion and contrast, introducing the following
+advantages: 1)our framework is capable of modeling both cross-view and ego-view
+preferences, allowing us to achieve enhanced user preference modeling; and 2)
+instead of requiring quadratic number of cross-view contrastive losses, we only
+require two self-supervised contrastive losses, resulting in minimal extra
+costs. Experimental results on three public datasets indicate that our method
+outperforms SOTA methods."
+2302.05543,Adding Conditional Control to Text-to-Image Diffusion Models,http://arxiv.org/abs/2302.05543,"We present ControlNet, a neural network architecture to add spatial
+conditioning controls to large, pretrained text-to-image diffusion models.
+ControlNet locks the production-ready large diffusion models, and reuses their
+deep and robust encoding layers pretrained with billions of images as a strong
+backbone to learn a diverse set of conditional controls. The neural
+architecture is connected with ""zero convolutions"" (zero-initialized
+convolution layers) that progressively grow the parameters from zero and ensure
+that no harmful noise could affect the finetuning. We test various conditioning
+controls, eg, edges, depth, segmentation, human pose, etc, with Stable
+Diffusion, using single or multiple conditions, with or without prompts. We
+show that the training of ControlNets is robust with small (<50k) and large
+(>1m) datasets. Extensive results show that ControlNet may facilitate wider
+applications to control image diffusion models."
+2306.03395,Computational Technologies for Fashion Recommendation: A Survey,http://arxiv.org/abs/2306.03395,"Fashion recommendation is a key research field in computational fashion
+research and has attracted considerable interest in the computer vision,
+multimedia, and information retrieval communities in recent years. Due to the
+great demand for applications, various fashion recommendation tasks, such as
+personalized fashion product recommendation, complementary (mix-and-match)
+recommendation, and outfit recommendation, have been posed and explored in the
+literature. The continuing research attention and advances impel us to look
+back and in-depth into the field for a better understanding. In this paper, we
+comprehensively review recent research efforts on fashion recommendation from a
+technological perspective. We first introduce fashion recommendation at a macro
+level and analyse its characteristics and differences with general
+recommendation tasks. We then clearly categorize different fashion
+recommendation efforts into several sub-tasks and focus on each sub-task in
+terms of its problem formulation, research focus, state-of-the-art methods, and
+limitations. We also summarize the datasets proposed in the literature for use
+in fashion recommendation studies to give readers a brief illustration.
+Finally, we discuss several promising directions for future research in this
+field. Overall, this survey systematically reviews the development of fashion
+recommendation research. It also discusses the current limitations and gaps
+between academic research and the real needs of the fashion industry. In the
+process, we offer a deep insight into how the fashion industry could benefit
+from the computational technologies of fashion recommendation."
+1712.01262,Compatibility Family Learning for Item Recommendation and Generation,http://arxiv.org/abs/1712.01262,"Compatibility between items, such as clothes and shoes, is a major factor
+among customer's purchasing decisions. However, learning ""compatibility"" is
+challenging due to (1) broader notions of compatibility than those of
+similarity, (2) the asymmetric nature of compatibility, and (3) only a small
+set of compatible and incompatible items are observed. We propose an end-to-end
+trainable system to embed each item into a latent vector and project a query
+item into K compatible prototypes in the same space. These prototypes reflect
+the broad notions of compatibility. We refer to both the embedding and
+prototypes as ""Compatibility Family"". In our learned space, we introduce a
+novel Projected Compatibility Distance (PCD) function which is differentiable
+and ensures diversity by aiming for at least one prototype to be close to a
+compatible item, whereas none of the prototypes are close to an incompatible
+item. We evaluate our system on a toy dataset, two Amazon product datasets, and
+Polyvore outfit dataset. Our method consistently achieves state-of-the-art
+performance. Finally, we show that we can visualize the candidate compatible
+prototypes using a Metric-regularized Conditional Generative Adversarial
+Network (MrCGAN), where the input is a projected prototype and the output is a
+generated image of a compatible item. We ask human evaluators to judge the
+relative compatibility between our generated images and images generated by
+CGANs conditioned directly on query items. Our generated images are
+significantly preferred, with roughly twice the number of votes as others."
+2308.06101,"Taming the Power of Diffusion Models for High-Quality Virtual Try-On
+  with Appearance Flow",http://arxiv.org/abs/2308.06101,"Virtual try-on is a critical image synthesis task that aims to transfer
+clothes from one image to another while preserving the details of both humans
+and clothes. While many existing methods rely on Generative Adversarial
+Networks (GANs) to achieve this, flaws can still occur, particularly at high
+resolutions. Recently, the diffusion model has emerged as a promising
+alternative for generating high-quality images in various applications.
+However, simply using clothes as a condition for guiding the diffusion model to
+inpaint is insufficient to maintain the details of the clothes. To overcome
+this challenge, we propose an exemplar-based inpainting approach that leverages
+a warping module to guide the diffusion model's generation effectively. The
+warping module performs initial processing on the clothes, which helps to
+preserve the local details of the clothes. We then combine the warped clothes
+with clothes-agnostic person image and add noise as the input of diffusion
+model. Additionally, the warped clothes is used as local conditions for each
+denoising process to ensure that the resulting output retains as much detail as
+possible. Our approach, namely Diffusion-based Conditional Inpainting for
+Virtual Try-ON (DCI-VTON), effectively utilizes the power of the diffusion
+model, and the incorporation of the warping module helps to produce
+high-quality and realistic virtual try-on results. Experimental results on
+VITON-HD demonstrate the effectiveness and superiority of our method."
+2401.16825,"Smart Fitting Room: A One-stop Framework for Matching-aware Virtual
+  Try-on",http://arxiv.org/abs/2401.16825,"The development of virtual try-on has revolutionized online shopping by
+allowing customers to visualize themselves in various fashion items, thus
+extending the in-store try-on experience to the cyber space. Although virtual
+try-on has attracted considerable research initiatives, existing systems only
+focus on the quality of image generation, overlooking whether the fashion item
+is a good match to the given person and clothes. Recognizing this gap, we
+propose to design a one-stop Smart Fitting Room, with the novel formulation of
+matching-aware virtual try-on. Following this formulation, we design a Hybrid
+Matching-aware Virtual Try-On Framework (HMaVTON), which combines
+retrieval-based and generative methods to foster a more personalized virtual
+try-on experience. This framework integrates a hybrid mix-and-match module and
+an enhanced virtual try-on module. The former can recommend fashion items
+available on the platform to boost sales and generate clothes that meets the
+diverse tastes of consumers. The latter provides high-quality try-on effects,
+delivering a one-stop shopping service. To validate the effectiveness of our
+approach, we enlist the expertise of fashion designers for a professional
+evaluation, assessing the rationality and diversity of the clothes combinations
+and conducting an evaluation matrix analysis. Our method significantly enhances
+the practicality of virtual try-on. The code is available at
+https://github.com/Yzcreator/HMaVTON."
+2407.06187,"JeDi: Joint-Image Diffusion Models for Finetuning-Free Personalized
+  Text-to-Image Generation",http://arxiv.org/abs/2407.06187,"Personalized text-to-image generation models enable users to create images
+that depict their individual possessions in diverse scenes, finding
+applications in various domains. To achieve the personalization capability,
+existing methods rely on finetuning a text-to-image foundation model on a
+user's custom dataset, which can be non-trivial for general users,
+resource-intensive, and time-consuming. Despite attempts to develop
+finetuning-free methods, their generation quality is much lower compared to
+their finetuning counterparts. In this paper, we propose Joint-Image Diffusion
+(\jedi), an effective technique for learning a finetuning-free personalization
+model. Our key idea is to learn the joint distribution of multiple related
+text-image pairs that share a common subject. To facilitate learning, we
+propose a scalable synthetic dataset generation technique. Once trained, our
+model enables fast and easy personalization at test time by simply using
+reference images as input during the sampling process. Our approach does not
+require any expensive optimization process or additional modules and can
+faithfully preserve the identity represented by any number of reference images.
+Experimental results show that our model achieves state-of-the-art generation
+quality, both quantitatively and qualitatively, significantly outperforming
+both the prior finetuning-based and finetuning-free personalization baselines."
+2312.01725,"StableVITON: Learning Semantic Correspondence with Latent Diffusion
+  Model for Virtual Try-On",http://arxiv.org/abs/2312.01725,"Given a clothing image and a person image, an image-based virtual try-on aims
+to generate a customized image that appears natural and accurately reflects the
+characteristics of the clothing image. In this work, we aim to expand the
+applicability of the pre-trained diffusion model so that it can be utilized
+independently for the virtual try-on task.The main challenge is to preserve the
+clothing details while effectively utilizing the robust generative capability
+of the pre-trained model. In order to tackle these issues, we propose
+StableVITON, learning the semantic correspondence between the clothing and the
+human body within the latent space of the pre-trained diffusion model in an
+end-to-end manner. Our proposed zero cross-attention blocks not only preserve
+the clothing details by learning the semantic correspondence but also generate
+high-fidelity images by utilizing the inherent knowledge of the pre-trained
+model in the warping process. Through our proposed novel attention total
+variation loss and applying augmentation, we achieve the sharp attention map,
+resulting in a more precise representation of clothing details. StableVITON
+outperforms the baselines in qualitative and quantitative evaluation, showing
+promising quality in arbitrary person images. Our code is available at
+https://github.com/rlawjdghek/StableVITON."
+2305.18290,"Direct Preference Optimization: Your Language Model is Secretly a Reward
+  Model",http://arxiv.org/abs/2305.18290,"While large-scale unsupervised language models (LMs) learn broad world
+knowledge and some reasoning skills, achieving precise control of their
+behavior is difficult due to the completely unsupervised nature of their
+training. Existing methods for gaining such steerability collect human labels
+of the relative quality of model generations and fine-tune the unsupervised LM
+to align with these preferences, often with reinforcement learning from human
+feedback (RLHF). However, RLHF is a complex and often unstable procedure, first
+fitting a reward model that reflects the human preferences, and then
+fine-tuning the large unsupervised LM using reinforcement learning to maximize
+this estimated reward without drifting too far from the original model. In this
+paper we introduce a new parameterization of the reward model in RLHF that
+enables extraction of the corresponding optimal policy in closed form, allowing
+us to solve the standard RLHF problem with only a simple classification loss.
+The resulting algorithm, which we call Direct Preference Optimization (DPO), is
+stable, performant, and computationally lightweight, eliminating the need for
+sampling from the LM during fine-tuning or performing significant
+hyperparameter tuning. Our experiments show that DPO can fine-tune LMs to align
+with human preferences as well as or better than existing methods. Notably,
+fine-tuning with DPO exceeds PPO-based RLHF in ability to control sentiment of
+generations, and matches or improves response quality in summarization and
+single-turn dialogue while being substantially simpler to implement and train."
+2412.03177,"PatchDPO: Patch-level DPO for Finetuning-free Personalized Image
+  Generation",http://arxiv.org/abs/2412.03177,"Finetuning-free personalized image generation can synthesize customized
+images without test-time finetuning, attracting wide research interest owing to
+its high efficiency. Current finetuning-free methods simply adopt a single
+training stage with a simple image reconstruction task, and they typically
+generate low-quality images inconsistent with the reference images during
+test-time. To mitigate this problem, inspired by the recent DPO (i.e., direct
+preference optimization) technique, this work proposes an additional training
+stage to improve the pre-trained personalized generation models. However,
+traditional DPO only determines the overall superiority or inferiority of two
+samples, which is not suitable for personalized image generation because the
+generated images are commonly inconsistent with the reference images only in
+some local image patches. To tackle this problem, this work proposes PatchDPO
+that estimates the quality of image patches within each generated image and
+accordingly trains the model. To this end, PatchDPO first leverages the
+pre-trained vision model with a proposed self-supervised training method to
+estimate the patch quality. Next, PatchDPO adopts a weighted training approach
+to train the model with the estimated patch quality, which rewards the image
+patches with high quality while penalizing the image patches with low quality.
+Experiment results demonstrate that PatchDPO significantly improves the
+performance of multiple pre-trained personalized generation models, and
+achieves state-of-the-art performance on both single-object and multi-object
+personalized image generation. Our code is available at
+https://github.com/hqhQAQ/PatchDPO."

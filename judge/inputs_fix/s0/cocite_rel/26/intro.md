@@ -1,0 +1,23 @@
+## Related Works
+
+Differential privacy (DP) has emerged as the de facto standard for achieving privacy in data analysis \[[20](https://www.semanticscholar.org/paper/e4ce10063cd25447dcde75c2d9ce327446ced952)\]. However, its implementation is vulnerable to malicious behaviors by servers, particularly in distributed settings \[[1](http://arxiv.org/abs/1911.02046)\]. For instance, servers may sample noise from incorrect distributions or generate correlated noise while appearing to follow established protocols \[[1](http://arxiv.org/abs/1911.02046)\]. This issue has been explored in several works that examine the vulnerabilities of DP in distributed environments. 
+
+In the local differential privacy (LDP) model, where users perturb their data before sending it to a data collector, researchers have identified vulnerabilities to manipulation attacks \[[2](http://arxiv.org/abs/1909.09630)\]. These attacks can significantly distort the results of the data collector by allowing a small fraction of users to obscure the true distribution of the data \[[2](http://arxiv.org/abs/1909.09630)\]. Similarly, in the central model, where a trusted server collects and processes data, the risk of unfaithful execution by the server remains a critical concern \[[1](http://arxiv.org/abs/1911.02046)\]. 
+
+To address these issues, several works have proposed verifiable mechanisms that ensure the correctness of DP protocols. For example, the work by \[[14](http://arxiv.org/abs/2208.09011)\] introduces interactive proofs for differential privacy, which require the publishing entity to output a zero-knowledge proof that convinces a verifier that the output is both differentially private and reliable. This approach ensures that the randomness used in DP is faithfully generated without revealing the randomness itself \[[14](http://arxiv.org/abs/2208.09011)\]. 
+
+Another approach to verifying DP protocols is the use of verifiable randomization mechanisms, which allow the data collector to verify the completeness of the randomization process performed by each user \[[3](http://arxiv.org/abs/2104.06569)\]. This method effectively prevents malicious data providers from manipulating their output before sending it to the data collector \[[3](http://arxiv.org/abs/2104.06569)\]. Furthermore, the work by \[[12](https://www.semanticscholar.org/paper/ac8be9c934d6ff9ae095ebde81c8d3a57f7b918d)\] proposes a system called Cryptε that allows for the execution of DP programs on encrypted data, ensuring that untrusted servers learn nothing more than the noisy outputs \[[12](https://www.semanticscholar.org/paper/ac8be9c934d6ff9ae095ebde81c8d3a57f7b918d)\]. 
+
+In addition to these verification mechanisms, several works have focused on improving the efficiency and accuracy of DP protocols. For example, the work by \[[19](http://arxiv.org/abs/1808.01394)\] introduces the shuffled model, which lies between the local and central models of DP. This model allows for the computation of accurate statistics while maintaining a mild trust assumption \[[19](http://arxiv.org/abs/1808.01394)\]. Similarly, the work by \[[15](http://arxiv.org/abs/1911.06879)\] presents a protocol in the shuffled model that estimates histograms with error independent of the domain size, demonstrating the potential of this model for improving the accuracy of DP protocols \[[15](http://arxiv.org/abs/1911.06879)\]. 
+
+In summary, the related works highlight the vulnerabilities of DP in distributed settings and the need for verification mechanisms to ensure the correctness of DP protocols. These works provide a foundation for the proposed Verifiable Distributed Differential Privacy (VDDP) framework, which incorporates additional verification mechanisms to address these challenges. 
+
+References:  
+\[[1](http://arxiv.org/abs/1911.02046)\] http://arxiv.org/abs/1911.02046  
+\[[2](http://arxiv.org/abs/1909.09630)\] http://arxiv.org/abs/1909.09630  
+\[[3](http://arxiv.org/abs/2104.06569)\] http://arxiv.org/abs/2104.06569  
+\[[12](https://www.semanticscholar.org/paper/ac8be9c934d6ff9ae095ebde81c8d3a57f7b918d)\] https://www.semanticscholar.org/paper/ac8be9c934d6ff9ae095ebde81c8d3a57f7b918d  
+\[[14](http://arxiv.org/abs/2208.09011)\] https://www.semanticscholar.org/paper/3f70dc09f979b102c010d4bb500ceb09f18e3b17  
+\[[15](http://arxiv.org/abs/1911.06879)\] http://arxiv.org/abs/1911.06879  
+\[[19](http://arxiv.org/abs/1808.01394)\] http://arxiv.org/abs/1808.01394  
+\[[20](https://www.semanticscholar.org/paper/e4ce10063cd25447dcde75c2d9ce327446ced952)\] https://www.semanticscholar.org/paper/e4ce10063cd25447dcde75c2d9ce327446ced952

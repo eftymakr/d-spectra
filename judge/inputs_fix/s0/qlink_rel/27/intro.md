@@ -1,0 +1,24 @@
+## Related Works
+
+Recent advancements in information retrieval have led to the development of various paradigms for document and table retrieval. Traditional methods rely on the "representation-index-search" pipeline, where tables are encoded into dense vectors, indexed, and then retrieved based on semantic similarity with queries \[[14](http://arxiv.org/abs/1802.06159)\]. While these methods achieve high accuracy, they suffer from error accumulation during representation and indexing, which negatively impacts search performance \[[1](http://arxiv.org/abs/2206.10128)\]. Additionally, limited query-table interaction hinders effective semantic alignment, further limiting accuracy improvements \[[1](http://arxiv.org/abs/2206.10128)\].
+
+To address these limitations, differentiable search index (DSI) models have emerged as a promising alternative. DSI unifies indexing and retrieval into a single model, eliminating the need for separate indexing and retrieval stages \[[2](http://arxiv.org/abs/2202.06991)\]. This approach enables direct query-to-document mapping, reducing error propagation and improving retrieval accuracy \[[2](http://arxiv.org/abs/2202.06991)\]. However, early DSI models faced challenges with data distribution mismatches between indexing and retrieval phases, particularly in cross-lingual settings \[[1](http://arxiv.org/abs/2206.10128)\]. To mitigate this, DSI-QG was proposed, which generates relevant queries during indexing and re-ranks them using a cross-encoder ranker, improving alignment between queries and documents \[[1](http://arxiv.org/abs/2206.10128)\].
+
+Similarly, the Neural Corpus Indexer (NCI) aims to unify training and indexing stages to enhance recall performance. It employs a prefix-aware decoder and incorporates query generation and semantic document identifiers to improve retrieval effectiveness \[[3](http://arxiv.org/abs/2206.02743)\]. This approach has shown significant improvements on academic benchmarks, achieving notable gains in Recall@1 and R-Precision \[[3](http://arxiv.org/abs/2206.02743)\].
+
+In the context of table retrieval, the work in \[[14](http://arxiv.org/abs/1802.06159)\] introduced semantic similarity-based methods to improve ad hoc table retrieval by representing queries and tables in multiple semantic spaces and using various similarity measures. This approach outperformed traditional baselines, demonstrating the potential of semantic alignment in table retrieval tasks.
+
+Recent efforts have also focused on continual learning for DSI models, as retraining the model for incremental indexing is computationally expensive \[[6](http://arxiv.org/abs/2212.09744)\]. DSI++ was introduced to address this by enabling continual indexing of new documents while maintaining performance on previously indexed documents. It mitigates forgetting through flatter minima optimization and generative memory techniques, significantly improving retrieval accuracy \[[6](http://arxiv.org/abs/2212.09744)\].
+
+Furthermore, the work in \[[15](http://arxiv.org/abs/2208.07652)\] proposed CorpusBrain, a generative retrieval model that replaces the traditional "index-retrieve-then-rank" pipeline with a single-step model, enabling end-to-end optimization. This model outperforms existing baselines on the KILT benchmark and shows strong performance in zero- and low-resource settings \[[15](http://arxiv.org/abs/2208.07652)\].
+
+In summary, while traditional dense vector search pipelines remain widely used, they face limitations in error accumulation and semantic alignment. DSI and related approaches offer promising solutions by integrating indexing and retrieval into a unified model, enabling more accurate and efficient retrieval. The proposed Birdie framework builds upon these advances by incorporating a differentiable search index, prefix-aware identifiers, and continual indexing strategies to further improve performance and reduce forgetting \[[1](http://arxiv.org/abs/2206.10128)\].
+
+### References
+
+1. \[[1](http://arxiv.org/abs/2206.10128)\] Bridging the Gap Between Indexing and Retrieval for Differentiable Search Index with Query Generation [http://arxiv.org/abs/2206.10128]  
+2. \[[2](http://arxiv.org/abs/2202.06991)\] Transformer Memory as a Differentiable Search Index [http://arxiv.org/abs/2202.06991]  
+3. \[[3](http://arxiv.org/abs/2206.02743)\] A Neural Corpus Indexer for Document Retrieval [http://arxiv.org/abs/2206.02743]  
+6. \[[6](http://arxiv.org/abs/2212.09744)\] DSI++: Updating Transformer Memory with New Documents [http://arxiv.org/abs/2212.09744]  
+14. \[[14](http://arxiv.org/abs/1802.06159)\] Ad Hoc Table Retrieval using Semantic Similarity [http://arxiv.org/abs/1802.06159]  
+15. \[[15](http://arxiv.org/abs/2208.07652)\] CorpusBrain: Pre-train a Generative Retrieval Model for Knowledge-Intensive Language Tasks [http://arxiv.org/abs/2208.07652]

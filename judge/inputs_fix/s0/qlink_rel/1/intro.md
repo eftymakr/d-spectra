@@ -1,0 +1,29 @@
+## Related Works
+
+Efficient memory management and KV cache optimization have been central to improving the performance of large language model (LLM) serving systems. Prior work has focused on reducing memory usage and improving throughput through various techniques, including quantization, cache eviction policies, and adaptive compression strategies. These approaches are crucial for enabling high-throughput inference, especially with the growing demand for long-context LLMs.
+
+Several studies have explored KV cache quantization as a means to reduce memory consumption. For example, KIVI introduces a tuning-free 2-bit quantization method that reduces peak memory usage by up to 2.6× while maintaining model quality \[[2](http://arxiv.org/abs/2402.02750)\]. Similarly, KVQuant proposes a comprehensive set of techniques for low-precision KV cache quantization, including per-channel key quantization and non-uniform datatypes, achieving less than 0.1 perplexity degradation with 3-bit quantization \[[6](http://arxiv.org/abs/2401.18079)\]. These methods demonstrate the potential of quantization to significantly reduce memory footprints without compromising performance.
+
+Cache eviction policies have also been a focus of recent research. Scissorhands leverages the persistence of importance hypothesis, retaining pivotal tokens with higher probability to reduce memory usage by up to 5× without model fine-tuning \[[3](http://arxiv.org/abs/2305.17118)\]. H2O introduces a dynamic eviction policy based on the Heavy Hitter Oracle, which identifies and retains critical tokens that contribute most to attention scores, achieving up to 29× throughput improvements over existing systems \[[5](http://arxiv.org/abs/2306.14048)\]. These approaches highlight the importance of adaptive strategies that balance memory efficiency with generation quality.
+
+Another line of work focuses on the structural properties of attention mechanisms to enable more efficient KV cache compression. GEAR combines quantization, low-rank approximation, and sparse correction to achieve near-lossless 4-bit compression, improving throughput by up to 2.38× while reducing peak memory usage by 2.29× \[[11](http://arxiv.org/abs/2403.05527)\]. Similarly, No Token Left Behind proposes a mixed-precision quantization approach that preserves critical KV pairs at higher precision while allowing less important ones to be stored at lower precision, mitigating the risk of hallucinations and context loss \[[12](http://arxiv.org/abs/2402.18096)\]. These methods demonstrate the value of precision-aware compression in maintaining generation quality.
+
+In addition, recent work has addressed the challenges of long-context inference by introducing streaming capabilities and efficient cache management. StreamingLLM enables LLMs to generalize to infinite sequence lengths by leveraging attention sinks, which retain the KV states of initial tokens to recover performance \[[4](http://arxiv.org/abs/2309.17453)\]. SnapKV further improves memory efficiency by compressing KV caches based on attention patterns, achieving up to 8.2× memory efficiency gains and 3.6× speed improvements \[[8](http://arxiv.org/abs/2404.14469)\]. These techniques highlight the growing importance of adaptive and efficient KV cache management for real-world deployment.
+
+Finally, the importance of workload-aware strategies has been emphasized in several studies. For instance, Quest introduces a query-aware sparsity approach that selects critical KV cache pages based on query vectors, achieving up to 2.23× self-attention speedup \[[13](http://arxiv.org/abs/2406.10774)\]. These findings underscore the need for workload-specific optimizations that can adapt to the varying demands of real-world LLM serving environments.
+
+### References
+
+1. \[[1](http://arxiv.org/abs/2309.06180)\] [Efficient Memory Management for Large Language Model Serving with PagedAttention](http://arxiv.org/abs/2309.06180)  
+2. \[[2](http://arxiv.org/abs/2402.02750)\] [KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache](http://arxiv.org/abs/2402.02750)  
+3. \[[3](http://arxiv.org/abs/2305.17118)\] [Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time](http://arxiv.org/abs/2305.17118)  
+4. \[[4](http://arxiv.org/abs/2309.17453)\] [Efficient Streaming Language Models with Attention Sinks](http://arxiv.org/abs/2309.17453)  
+5. \[[5](http://arxiv.org/abs/2306.14048)\] [H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models](http://arxiv.org/abs/2306.14048)  
+6. \[[6](http://arxiv.org/abs/2401.18079)\] [KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization](http://arxiv.org/abs/2401.18079)  
+7. \[[7](http://arxiv.org/abs/2310.01801)\] [Model Tells You What to Discard: Adaptive KV Cache Compression for LLMs](http://arxiv.org/abs/2310.01801)  
+8. \[[8](http://arxiv.org/abs/2404.14469)\] [SnapKV: LLM Knows What You are Looking for Before Generation](http://arxiv.org/abs/2404.14469)  
+9. \[[9](http://arxiv.org/abs/2310.07240)\] [CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving](http://arxiv.org/abs/2310.07240)  
+10. \[[10](http://arxiv.org/abs/2406.19707)\] [InfiniGen: Efficient Generative Inference of Large Language Models with Dynamic KV Cache Management](http://arxiv.org/abs/2406.19707)  
+11. \[[11](http://arxiv.org/abs/2403.05527)\] [GEAR: An Efficient KV Cache Compression Recipe for Near-Lossless Generative Inference of LLM](http://arxiv.org/abs/2403.05527)  
+12. \[[12](http://arxiv.org/abs/2402.18096)\] [No Token Left Behind: Reliable KV Cache Compression via Importance-Aware Mixed Precision Quantization](http://arxiv.org/abs/2402.18096)  
+13. \[[13](http://arxiv.org/abs/2406.10774)\] [Quest: Query-Aware Sparsity for Efficient Long-Context LLM Inference](http://arxiv.org/abs/2406.10774)

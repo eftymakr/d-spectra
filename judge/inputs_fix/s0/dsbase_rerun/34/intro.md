@@ -1,0 +1,30 @@
+## Related Works
+
+Fund allocation in financial domains has attracted significant research interest, with a growing emphasis on integrating forecasting and optimization in a unified framework. Early approaches often treated forecasting and allocation as separate tasks, leading to goal mismatch and suboptimal outcomes \[[1' 2024-07-02](http://arxiv.org/abs/2407.02641v1)\]. For instance, prediction-only methods fail to account for the uncertainty in forecasts, while Predict-then-Optimize (PnO) approaches may not align the forecasting and optimization objectives effectively \[[2' 2021-07-08](http://arxiv.org/abs/2107.03743v1)\]. Recent works have sought to address these limitations by developing end-to-end frameworks that jointly optimize forecasting and allocation \[[3' 2018-10-19](http://arxiv.org/abs/1810.08418v2)\].
+
+A notable effort in this direction is the introduction of probabilistic forecasting models that provide uncertainty estimates, which are crucial for robust decision-making \[[4' 2023-06-21](http://arxiv.org/abs/2306.12086v2)\]. These models, such as those based on implicit quantile networks, enable more accurate and reliable forecasts by learning complex distributional properties of time series \[[5' 2012-11-17](http://arxiv.org/abs/1211.4108v1)\]. Similarly, models like STOIC incorporate stochastic correlations and uncertainty-aware structure learning, leading to better-calibrated forecasts \[[6' 2024-10-24](http://arxiv.org/abs/2410.19025v1)\]. These advancements highlight the importance of uncertainty quantification in financial forecasting, which is essential for risk-aware allocation strategies.
+
+In addition to forecasting, recent research has focused on improving the calibration of uncertainty in time series models. For example, the work on STOIC demonstrates that incorporating uncertainty into the structure learning process can significantly enhance forecast reliability \[[6' 2024-10-24](http://arxiv.org/abs/2410.19025v1)\]. Similarly, models such as SCINet and TSKANMixer leverage advanced architectures to capture both spatial and temporal dependencies, improving forecast accuracy across diverse financial datasets \[[7' 2024-07-09](http://arxiv.org/abs/2407.06567v3)\]\[[8' 2018-09-25](http://arxiv.org/abs/1809.09588v5)\]. These models often rely on deep learning techniques, such as Transformers and convolutional networks, to extract meaningful patterns from high-dimensional financial data \[[9' 2021-06-17](http://arxiv.org/abs/2106.09305v3)\].
+
+The integration of uncertainty-aware forecasting into allocation strategies has also been explored. For instance, the RTS-PnO framework proposed in this work is designed to be agnostic to the underlying forecasting model, allowing for flexible integration of various forecasting techniques \[[10' 2025-02-25](http://arxiv.org/abs/2502.18410v2)\]. This is in contrast to models that require specific assumptions about the forecasting process, which can limit their applicability in real-world financial scenarios \[[11' 2019-12-16](http://arxiv.org/abs/1912.07211v1)\]. The framework also includes adaptive uncertainty calibration, ensuring that the allocation decisions are robust to forecast errors \[[12' 2022-06-21](http://arxiv.org/abs/2206.10209v2)\].
+
+Several studies have also investigated the impact of noise and uncertainty in financial time series. For example, the work on probabilistic forecasting with implicit quantile networks emphasizes the importance of accurately modeling the underlying distribution of time series, which is critical for reliable allocation \[[5' 2012-11-17](http://arxiv.org/abs/1211.4108v1)\]. Similarly, the analysis of financial spillovers highlights the asymmetric effects of financial shocks, underscoring the need for models that can capture nonlinear and time-varying dependencies \[[13' 2024-10-21](http://arxiv.org/abs/2410.16214v1)\].
+
+In summary, the related works demonstrate a growing interest in integrating forecasting and optimization in financial applications, with a focus on uncertainty quantification and robust allocation strategies. The RTS-PnO framework builds upon these advances by providing a flexible, uncertainty-aware approach to fund allocation that aligns forecasting and optimization objectives \[[14' 2024-10-18](http://arxiv.org/abs/2410.14630v2)\].
+
+### References
+
+1. \[[1' 2024-07-02](http://arxiv.org/abs/2407.02641v1)\] Document 1  
+2. \[[2' 2021-07-08](http://arxiv.org/abs/2107.03743v1)\] Document 2  
+3. \[[3' 2018-10-19](http://arxiv.org/abs/1810.08418v2)\] Document 3  
+4. \[[4' 2023-06-21](http://arxiv.org/abs/2306.12086v2)\] Document 4  
+5. \[[5' 2012-11-17](http://arxiv.org/abs/1211.4108v1)\] Document 5  
+6. \[[6' 2024-10-24](http://arxiv.org/abs/2410.19025v1)\] Document 6  
+7. \[[7' 2024-07-09](http://arxiv.org/abs/2407.06567v3)\] Document 7  
+8. \[[8' 2018-09-25](http://arxiv.org/abs/1809.09588v5)\] Document 8  
+9. \[[9' 2021-06-17](http://arxiv.org/abs/2106.09305v3)\] Document 9  
+10. \[[10' 2025-02-25](http://arxiv.org/abs/2502.18410v2)\] Document 10  
+11. \[[11' 2019-12-16](http://arxiv.org/abs/1912.07211v1)\] Document 11  
+12. \[[12' 2022-06-21](http://arxiv.org/abs/2206.10209v2)\] Document 12  
+13. \[[13' 2024-10-21](http://arxiv.org/abs/2410.16214v1)\] Document 13  
+14. \[[14' 2024-10-18](http://arxiv.org/abs/2410.14630v2)\] Document 14

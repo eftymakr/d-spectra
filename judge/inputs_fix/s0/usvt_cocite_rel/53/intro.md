@@ -1,0 +1,30 @@
+## Related Works
+
+Deep sequential recommendation models have seen significant advancements, with various approaches addressing the challenges of modeling user behavior sequences. Early methods such as Markov Chains (MCs) and Recurrent Neural Networks (RNNs) were widely used to capture sequential patterns \[[1](http://arxiv.org/abs/1808.09781)\]. MCs assume that a user's next action is based on their last few actions, while RNNs allow for longer-term semantics \[[1](http://arxiv.org/abs/1808.09781)\]. However, MC-based methods often struggle with dense datasets, while RNNs can be computationally expensive \[[1](http://arxiv.org/abs/1808.09781)\]. To address these limitations, attention-based models such as SASRec were proposed, which combine the efficiency of MCs with the flexibility of RNNs by using self-attention to identify relevant items in a user's history \[[1](http://arxiv.org/abs/1808.09781)\]. This approach allows for capturing long-term semantics while maintaining computational efficiency \[[1](http://arxiv.org/abs/1808.09781)\].
+
+Recent works have also explored self-supervised learning for sequential recommendation, such as S3-Rec, which leverages mutual information maximization to enhance data representations \[[2](http://arxiv.org/abs/2008.07873)\]. This method introduces auxiliary objectives to learn correlations between items, attributes, and subsequences, improving performance, especially with limited training data \[[2](http://arxiv.org/abs/2008.07873)\]. Similarly, BERT4Rec extends the bidirectional self-attention mechanism from the Transformer model to sequential recommendation, allowing for bidirectional context modeling and improving recommendation accuracy \[[4](http://arxiv.org/abs/1904.06690)\]. This approach avoids information leakage by using the Cloze objective to predict masked items based on both left and right contexts \[[4](http://arxiv.org/abs/1904.06690)\].
+
+Time-aware models such as TiSASRec have also been developed to explicitly model time intervals between interactions, improving the accuracy of next-item predictions by considering both the order and timing of user actions \[[5](https://www.semanticscholar.org/paper/9c7a455b1e48d01a99e58e884a6c1acb75074ad0)\]. Feature-level models like FDSA further enhance sequential recommendation by considering both item-level and feature-level transitions, capturing more comprehensive sequential patterns \[[6](https://www.semanticscholar.org/paper/63555b4f363ee72dd8d49d8deca68760542c0cd2)\]. These methods demonstrate the importance of modeling both item and feature-level interactions for better recommendation performance.
+
+Session-based recommendation methods have also evolved, with models such as NARM incorporating attention mechanisms to capture user intent and session context \[[7](http://arxiv.org/abs/1711.04725)\]. These models use hybrid encoders to represent sessions and compute item scores based on a bi-linear matching scheme \[[7](http://arxiv.org/abs/1711.04725)\]. Additionally, graph-based models such as SR-GNN have been introduced to capture complex item transitions by modeling sessions as graph-structured data \[[13](http://arxiv.org/abs/1811.00855)\].
+
+To address the limitations of traditional models, recent works have focused on parameter-efficient transfer learning, such as PeterRec, which allows for efficient adaptation of pre-trained models to new tasks without retraining the entire network \[[14](https://www.semanticscholar.org/paper/2ca1abd015c72e7c04d63fa653b0a27d9592fc02)\]. This approach enables effective transfer across domains with limited data. Furthermore, multi-interest frameworks such as ComiRec have been proposed to capture diverse user preferences by modeling multiple interests within a single session \[[15](http://arxiv.org/abs/2005.09347)\].
+
+In summary, the field of sequential recommendation has evolved from simple Markov-based models to more sophisticated attention-based and self-supervised approaches, with recent advances focusing on modeling both item and feature-level interactions, time-awareness, and efficient transfer learning. These developments have significantly improved the performance of sequential recommendation models across various datasets and scenarios.
+
+References:
+1. \[[1](http://arxiv.org/abs/1808.09781)\] Self-Attentive Sequential Recommendation
+2. \[[2](http://arxiv.org/abs/2008.07873)\] S3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization
+3. \[[3](http://arxiv.org/abs/1809.07426)\] Personalized Top-N Sequential Recommendation via Convolutional Sequence Embedding
+4. \[[4](http://arxiv.org/abs/1904.06690)\] BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer
+5. \[[5](https://www.semanticscholar.org/paper/9c7a455b1e48d01a99e58e884a6c1acb75074ad0)\] Time Interval Aware Self-Attention for Sequential Recommendation
+6. \[[6](https://www.semanticscholar.org/paper/63555b4f363ee72dd8d49d8deca68760542c0cd2)\] Feature-level Deeper Self-Attention Network for Sequential Recommendation
+7. \[[7](http://arxiv.org/abs/1711.04725)\] Neural Attentive Session-based Recommendation
+8. \[[8](http://arxiv.org/abs/2206.05941)\] Towards Universal Sequence Representation Learning for Recommender Systems
+9. \[[9](http://arxiv.org/abs/2202.13556)\] Filter-enhanced MLP is All You Need for Sequential Recommendation
+10. \[[10](http://arxiv.org/abs/2110.05730)\] Contrastive Learning for Representation Degeneration Problem in Sequential Recommendation
+11. \[[11](http://arxiv.org/abs/1808.05163)\] A Simple Convolutional Generative Network for Next Item Recommendation
+12. \[[12](http://arxiv.org/abs/1511.06939)\] Session-based Recommendations with Recurrent Neural Networks
+13. \[[13](http://arxiv.org/abs/1811.00855)\] Session-based Recommendation with Graph Neural Networks
+14. \[[14](https://www.semanticscholar.org/paper/2ca1abd015c72e7c04d63fa653b0a27d9592fc02)\] Parameter-Efficient Transfer from Sequential Behaviors for User Modeling and Recommendation
+15. \[[15](http://arxiv.org/abs/2005.09347)\] Controllable Multi-Interest Framework for Recommendation

@@ -1,0 +1,25 @@
+## Related Works
+
+The long-tailed recognition problem, where a few classes dominate the dataset while most are underrepresented, has been extensively studied in recent years. Early approaches focused on class re-balancing strategies such as re-sampling and re-weighting \[[3](http://arxiv.org/abs/1508.03422)\]. However, these methods often fail to address the deeper issues of representation learning in imbalanced data \[[18](http://arxiv.org/abs/2306.15925)\]. More recently, contrastive learning has emerged as a promising approach for learning discriminative visual representations \[[14](http://arxiv.org/abs/2002.05709)\]. 
+
+Contrastive learning methods, such as SimCLR \[[14](http://arxiv.org/abs/2002.05709)\] and MoCo \[[13](http://arxiv.org/abs/1911.05722)\], have demonstrated strong performance on balanced datasets by learning representations that maximize the similarity between positive pairs and minimize it for negative pairs. However, these methods face significant challenges when applied to long-tailed data. For instance, supervised contrastive learning (SCL) \[[16](http://arxiv.org/abs/2004.11362)\] has been shown to struggle with class imbalance due to the need for large batches to construct contrastive pairs that cover all classes. This limitation is particularly problematic in long-tailed scenarios where minority classes are underrepresented \[[17](http://arxiv.org/abs/2403.06726)\].
+
+To address these issues, several works have proposed modifications to contrastive learning. For example, BBN \[[5](http://arxiv.org/abs/1912.02413)\] introduces a bilateral-branch network that separately handles representation learning and classifier learning, achieving state-of-the-art results on long-tailed benchmarks. Similarly, Decoupled Training \[[7](http://arxiv.org/abs/2304.09426)\] decouples the learning of representations from the classifier, leading to improved performance on long-tailed datasets. These approaches highlight the importance of balancing both representation and classification in long-tailed recognition.
+
+Another line of research focuses on logit adjustment techniques to mitigate the bias towards dominant classes. For example, Long-tail learning via logit adjustment \[[8](http://arxiv.org/abs/2007.07314)\] proposes simple modifications to standard softmax cross-entropy training, encouraging a larger margin between logits of rare versus dominant labels. These techniques have been shown to unify and generalize several recent proposals in the literature \[[8](http://arxiv.org/abs/2007.07314)\].
+
+Additionally, contrastive learning has been extended to handle long-tailed data through methods such as Balanced Contrastive Learning (BCL) \[[11](http://arxiv.org/abs/2207.09052)\], which ensures that all classes appear in every mini-batch. This approach helps form a regular simplex in the embedding space, which is crucial for effective representation learning. Furthermore, Probabilistic Contrastive Learning (ProCo) \[[17](http://arxiv.org/abs/2403.06726)\] estimates the distribution of samples from each class in the feature space, enabling the sampling of contrastive pairs without requiring large batches.
+
+In summary, while contrastive learning has shown great promise for representation learning, its application to long-tailed data remains challenging. Recent works have made significant strides in addressing these challenges through novel approaches such as decoupling representation and classifier learning, logit adjustment, and balanced contrastive learning. These methods provide a foundation for further research into long-tailed recognition.
+
+References:  
+\[[1](http://arxiv.org/abs/1710.05381)\] http://arxiv.org/abs/1710.05381  
+\[[3](http://arxiv.org/abs/1508.03422)\] http://arxiv.org/abs/1901.05555  
+\[[5](http://arxiv.org/abs/1912.02413)\] http://arxiv.org/abs/1912.02413  
+\[[7](http://arxiv.org/abs/2304.09426)\] http://arxiv.org/abs/2304.09426  
+\[[8](http://arxiv.org/abs/2007.07314)\] http://arxiv.org/abs/2007.07314  
+\[[11](http://arxiv.org/abs/2207.09052)\] http://arxiv.org/abs/2207.09052  
+\[[13](http://arxiv.org/abs/1911.05722)\] http://arxiv.org/abs/1911.05722  
+\[[14](http://arxiv.org/abs/2002.05709)\] http://arxiv.org/abs/2002.05709  
+\[[16](http://arxiv.org/abs/2004.11362)\] http://arxiv.org/abs/2004.11362  
+\[[17](http://arxiv.org/abs/2403.06726)\] http://arxiv.org/abs/2403.06726

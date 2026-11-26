@@ -92,10 +92,10 @@ index 87aa310..c4e7547 100644
 +                    result[url] = result[paper_id]
          return result
 diff --git a/eval/utils.py b/eval/utils.py
-index f046ad0..0748895 100644
+index f046ad0..b6c02e2 100644
 --- a/eval/utils.py
 +++ b/eval/utils.py
-@@ -58,8 +58,10 @@ def get_citation_count_from_title(
+@@ -58,8 +58,17 @@ def get_citation_count_from_title(
      title, mailto="your@email.com", similarity_threshold=0.8
  ):
      try:
@@ -104,11 +104,18 @@ index f046ad0..0748895 100644
 +        # local change: use OPENALEX_API_KEY when set (instead of the placeholder mailto)
 +        key = os.environ.get("OPENALEX_API_KEY")
 +        params = {"search": title, **({"api_key": key} if key else {"mailto": mailto})}
-+        response = requests.get("https://api.openalex.org/works", params=params, timeout=10)
++        # local change: back off on HTTP 429 (the caller's 0.05 s pause exceeds OpenAlex's 10
++        # requests/s) instead of scoring a rate-limited lookup as a missing paper
++        import time as _time
++        for _attempt in range(7):
++            response = requests.get("https://api.openalex.org/works", params=params, timeout=10)
++            if response.status_code != 429:
++                break
++            _time.sleep(min(2 ** _attempt, 30))
          response.raise_for_status()
          results = response.json().get("results", [])
  
-@@ -75,7 +77,9 @@ def get_citation_count_from_title(
+@@ -75,7 +84,9 @@ def get_citation_count_from_title(
              else:
                  return None
      except Exception as e:

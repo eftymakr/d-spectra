@@ -1,0 +1,22 @@
+## Related Works
+
+Automatic geometric calibration of radar and camera systems has been an active research area, with several approaches focusing on improving robustness and accuracy in the presence of sensor-specific limitations. Early methods often relied on manual calibration or required specialized calibration targets, which limited their applicability in dynamic environments \[[18](https://www.semanticscholar.org/paper/4d4dbbcf27d991aeab43dafb82a105bb5512b799)\]. For instance, \[[18](https://www.semanticscholar.org/paper/4d4dbbcf27d991aeab43dafb82a105bb5512b799)\] proposed an extrinsic calibration tool that supports radar, camera, and LiDAR, but it required a calibration target and focused on pairwise calibration rather than a joint system-level approach. These methods were less suitable for real-time applications due to their reliance on static targets and manual intervention.
+
+Recent works have explored data-driven calibration techniques that leverage sensor data without requiring external targets. For example, \[[15](http://arxiv.org/abs/2103.07505)\] introduced a continuous-time approach for 3D radar-to-camera extrinsic calibration, which utilized radar velocity measurements and did not require specialized retroreflectors. This method was effective in real-world scenarios but still required careful handling of sensor data and was limited to radar and camera pairs. Similarly, \[[16](https://www.semanticscholar.org/paper/0e88fc24ae7694d0b1a2fe78322936fc568bc7d2)\] proposed an automatic targetless method for calibrating multiple 3D LiDAR and radar sensors by driving the vehicle over a short distance, which demonstrated accuracy and repeatability but was not designed for online calibration during system operation.
+
+The challenge of sparse radar data and height uncertainty has also been addressed in the context of sensor fusion. \[[19](http://arxiv.org/abs/2403.16440)\] introduced a radar-camera fusion method in the bird's-eye view (BEV) for 3D object detection, leveraging radar data to improve the accuracy of BEV feature extraction. This work demonstrated the potential of radar data in complementing camera inputs, but it did not focus on calibration. Similarly, \[[20](http://arxiv.org/abs/2307.10249)\] proposed a multi-level fusion approach for radar and camera data, emphasizing feature and instance-level fusion, but again, the focus was on object detection rather than calibration.
+
+Several studies have explored the use of attention mechanisms and cross-modal matching to improve sensor fusion. \[[13](http://arxiv.org/abs/2210.09267)\] introduced CramNet, which used a ray-constrained cross-attention mechanism to align radar and camera features in a joint 3D space. This approach improved depth prediction and object detection by resolving geometric ambiguities between sensor modalities. \[[9](http://arxiv.org/abs/2209.06535)\] proposed a proposal-level early fusion approach that effectively exploited both spatial and contextual properties of camera and radar data, achieving state-of-the-art performance on the nuScenes dataset. However, these methods were primarily focused on object detection and did not address the calibration problem directly.
+
+In addition, \[[17](http://arxiv.org/abs/2102.05150)\] introduced RODNet, a real-time radar object detection network that was cross-supervised by a camera-radar fusion strategy. This method demonstrated the potential of using radar data for object detection without relying on LiDAR, but it did not incorporate automatic calibration during system operation.
+
+In summary, while previous works have made significant strides in radar-camera fusion and sensor calibration, the challenge of achieving automatic geometric calibration during system operation remains largely unaddressed. Our approach introduces a novel Dual-Perspective representation and Selective Fusion Mechanism to overcome the limitations of existing methods, offering a more robust and efficient solution for online calibration.
+
+1. \[[18](https://www.semanticscholar.org/paper/4d4dbbcf27d991aeab43dafb82a105bb5512b799)\]  
+2. \[[15](http://arxiv.org/abs/2103.07505)\]  
+3. \[[16](https://www.semanticscholar.org/paper/0e88fc24ae7694d0b1a2fe78322936fc568bc7d2)\]  
+4. \[[19](http://arxiv.org/abs/2403.16440)\]  
+5. \[[20](http://arxiv.org/abs/2307.10249)\]  
+6. \[[13](http://arxiv.org/abs/2210.09267)\]  
+7. \[[9](http://arxiv.org/abs/2209.06535)\]  
+8. \[[17](http://arxiv.org/abs/2102.05150)\]

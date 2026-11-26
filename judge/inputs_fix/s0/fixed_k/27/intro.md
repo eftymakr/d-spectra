@@ -1,0 +1,26 @@
+## Related Works
+
+Natural language (NL)-driven table discovery has gained significant attention in recent years due to the increasing availability of tabular data and the need for efficient retrieval mechanisms. Traditional approaches rely on dense vector search pipelines, which involve representation, indexing, and search stages \[[10](http://arxiv.org/abs/2105.06365)\]. While these methods achieve high accuracy, they suffer from error accumulation during representation and indexing, which degrades search performance \[[10](http://arxiv.org/abs/2105.06365)\]. Additionally, limited query-table interaction hinders semantic alignment, preventing further accuracy improvements \[[10](http://arxiv.org/abs/2105.06365)\]. 
+
+Several works have explored the use of neural networks for table discovery. Neural Enquirer \[[6](http://arxiv.org/abs/1512.00965)\] is a neural architecture that executes natural language queries on knowledge-base tables to retrieve answers. It generates distributed representations of queries and executes them on tables as differentiable operations, enabling end-to-end training. However, it focuses on answering queries rather than retrieving tables based on NL conditions. Similarly, the nlcTables dataset \[[2](http://arxiv.org/abs/2504.15849)\] provides a benchmark for NL-conditional table discovery, where users combine a query table with natural language conditions to refine search results. While this dataset highlights the need for advanced techniques, it does not directly address the issue of error accumulation or query-table interaction.
+
+Recent advances in differentiable search indexing (DSI) have shown promise in unifying indexing and retrieval into a single model \[[11](http://arxiv.org/abs/2202.06991)\]. DSI leverages a transformer-based architecture to map queries directly to document identifiers, eliminating the need for separate indexing and retrieval components. However, early DSI models faced challenges in distinguishing relevant documents from random ones due to the black-box nature of the neural architecture \[[1](http://arxiv.org/abs/2305.02073)\]. To address this, a multi-task distillation approach was proposed to enhance retrieval quality without altering the model structure \[[1](http://arxiv.org/abs/2305.02073)\]. Additionally, DSI-QG \[[3](http://arxiv.org/abs/2206.10128)\] was introduced to mitigate data distribution mismatches by generating and re-ranking queries during indexing, improving cross-lingual retrieval performance.
+
+The decentralized DSI framework, De-DSI \[[4](http://arxiv.org/abs/2404.12237)\], further extends the DSI paradigm by enabling efficient query-docid pair processing without direct document access. It uses an ensemble of DSI models trained on shard datasets, allowing for scalability and distributed computation. This approach maintains retrieval accuracy comparable to centralized methods while distributing computational complexity across the network. 
+
+To enhance diversity in retrieval results, Inducing Diversity in Differentiable Search Indexing \[[5](http://arxiv.org/abs/2502.02788)\] proposes a training strategy inspired by Maximal Marginal Relevance (MMR), balancing relevance and diversity. This method enables the DSI model to learn to diversify while maintaining relevance, eliminating the need for post-processing steps. 
+
+In summary, while traditional dense vector search pipelines remain popular, they face limitations in error accumulation and semantic alignment. Recent advances in DSI and related frameworks offer promising solutions, but further research is needed to address issues such as catastrophic forgetting and dynamic indexing.
+
+References:
+1. \[[1](http://arxiv.org/abs/2305.02073)\] Understanding Differential Search Index for Text Retrieval [http://arxiv.org/abs/2305.02073]
+2. \[[2](http://arxiv.org/abs/2504.15849)\] nlcTables: A Dataset for Marrying Natural Language Conditions with Table Discovery [http://arxiv.org/abs/2504.15849]
+3. \[[3](http://arxiv.org/abs/2206.10128)\] Bridging the Gap Between Indexing and Retrieval for Differentiable Search Index with Query Generation [http://arxiv.org/abs/2206.10128]
+4. \[[4](http://arxiv.org/abs/2404.12237)\] De-DSI: Decentralised Differentiable Search Index [http://arxiv.org/abs/2404.12237]
+5. \[[5](http://arxiv.org/abs/2502.02788)\] Inducing Diversity in Differentiable Search Indexing [http://arxiv.org/abs/2502.02788]
+6. \[[6](http://arxiv.org/abs/1512.00965)\] Neural Enquirer: Learning to Query Tables [http://arxiv.org/abs/1512.00965]
+7. \[[7](http://arxiv.org/abs/2209.09207)\] Table Detection in the Wild: A Novel Diverse Table Detection Dataset and Method [http://arxiv.org/abs/2209.09207]
+8. \[[8](http://arxiv.org/abs/1208.4016)\] Concept driven framework for Latent Table Discovery [http://arxiv.org/abs/1208.4016]
+9. \[[9](http://arxiv.org/abs/2107.09480)\] Learned Sorted Table Search and Static Indexes in Small Model Space [http://arxiv.org/abs/2107.09480]
+10. \[[10](http://arxiv.org/abs/2105.06365)\] Semantic Table Retrieval using Keyword and Table Queries [http://arxiv.org/abs/2105.06365]
+11. \[[11](http://arxiv.org/abs/2202.06991)\] Transformer Memory as a Differentiable Search Index [http://arxiv.org/abs/2202.06991]

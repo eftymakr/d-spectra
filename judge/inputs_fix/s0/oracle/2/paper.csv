@@ -1,0 +1,199 @@
+id,title,url,snippet
+2305.06355,VideoChat: Chat-Centric Video Understanding,http://arxiv.org/abs/2305.06355,"In this paper, we initiate an attempt of developing an end-to-end
+chat-centric video understanding system, coined as VideoChat. It integrates
+video foundation models and large language models via a learnable neural
+interface, excelling in spatiotemporal reasoning, event localization, and
+causal relationship inference. To instructively tune this system, we build a
+video-centric instruction dataset, composed of thousands of videos associated
+with detailed descriptions and conversations. This dataset emphasizes
+spatiotemporal reasoning and captures causal relationships, providing a
+valuable asset for training our chat-centric video understanding system.
+Preliminary qualitative experiments demonstrate the potential of our system
+across a broad spectrum of video applications, which could serve as a simple
+prototype system for future research on chat-centric video understanding.
+Access our code and data at https://github.com/OpenGVLab/Ask-Anything"
+2312.17172,"Unified-IO 2: Scaling Autoregressive Multimodal Models with Vision,
+  Language, Audio, and Action",http://arxiv.org/abs/2312.17172,"We present Unified-IO 2, the first autoregressive multimodal model that is
+capable of understanding and generating image, text, audio, and action. To
+unify different modalities, we tokenize inputs and outputs -- images, text,
+audio, action, bounding boxes, etc., into a shared semantic space and then
+process them with a single encoder-decoder transformer model. Since training
+with such diverse modalities is challenging, we propose various architectural
+improvements to stabilize model training. We train our model from scratch on a
+large multimodal pre-training corpus from diverse sources with a multimodal
+mixture of denoisers objective. To learn an expansive set of skills, such as
+following multimodal instructions, we construct and finetune on an ensemble of
+120 datasets with prompts and augmentations. With a single unified model,
+Unified-IO 2 achieves state-of-the-art performance on the GRIT benchmark and
+strong results in more than 35 benchmarks, including image generation and
+understanding, natural language understanding, video and audio understanding,
+and robotic manipulation. We release all our models to the research community."
+1810.02508,"MELD: A Multimodal Multi-Party Dataset for Emotion Recognition in
+  Conversations",http://arxiv.org/abs/1810.02508,"Emotion recognition in conversations is a challenging task that has recently
+gained popularity due to its potential applications. Until now, however, a
+large-scale multimodal multi-party emotional conversational database containing
+more than two speakers per dialogue was missing. Thus, we propose the
+Multimodal EmotionLines Dataset (MELD), an extension and enhancement of
+EmotionLines. MELD contains about 13,000 utterances from 1,433 dialogues from
+the TV-series Friends. Each utterance is annotated with emotion and sentiment
+labels, and encompasses audio, visual and textual modalities. We propose
+several strong multimodal baselines and show the importance of contextual and
+multimodal information for emotion recognition in conversations. The full
+dataset is available for use at http:// affective-meld.github.io."
+2303.09713,CHAMPAGNE: Learning Real-world Conversation from Large-Scale Web Videos,http://arxiv.org/abs/2303.09713,"Visual information is central to conversation: body gestures and physical
+behaviour, for example, contribute to meaning that transcends words alone. To
+date, however, most neural conversational models are limited to just text. We
+introduce CHAMPAGNE, a generative model of conversations that can account for
+visual contexts. To train CHAMPAGNE, we collect and release YTD-18M, a
+large-scale corpus of 18M video-based dialogues. YTD-18M is constructed from
+web videos: crucial to our data collection pipeline is a pretrained language
+model that converts error-prone automatic transcripts to a cleaner dialogue
+format while maintaining meaning. Human evaluation reveals that YTD-18M is more
+sensible and specific than prior resources (MMDialog, 1M dialogues), while
+maintaining visual-groundedness. Experiments demonstrate that 1) CHAMPAGNE
+learns to conduct conversation from YTD-18M; and 2) when fine-tuned, it
+achieves state-of-the-art results on four vision-language tasks focused on
+real-world conversations. We release data, models, and code."
+2406.07867,Let's Go Real Talk: Spoken Dialogue Model for Face-to-Face Conversation,http://arxiv.org/abs/2406.07867,"In this paper, we introduce a novel Face-to-Face spoken dialogue model. It
+processes audio-visual speech from user input and generates audio-visual speech
+as the response, marking the initial step towards creating an avatar chatbot
+system without relying on intermediate text. To this end, we newly introduce
+MultiDialog, the first large-scale multimodal (i.e., audio and visual) spoken
+dialogue corpus containing 340 hours of approximately 9,000 dialogues, recorded
+based on the open domain dialogue dataset, TopicalChat. The MultiDialog
+contains parallel audio-visual recordings of conversation partners acting
+according to the given script with emotion annotations, which we expect to open
+up research opportunities in multimodal synthesis. Our Face-to-Face spoken
+dialogue model incorporates a textually pretrained large language model and
+adapts it into the audio-visual spoken dialogue domain by incorporating
+speech-text joint pretraining. Through extensive experiments, we validate the
+effectiveness of our model in facilitating a face-to-face conversation. Demo
+and data are available at https://multidialog.github.io and
+https://huggingface.co/datasets/IVLLab/MultiDialog, respectively."
+2204.11312,EMOCA: Emotion Driven Monocular Face Capture and Animation,http://arxiv.org/abs/2204.11312,"As 3D facial avatars become more widely used for communication, it is
+critical that they faithfully convey emotion. Unfortunately, the best recent
+methods that regress parametric 3D face models from monocular images are unable
+to capture the full spectrum of facial expression, such as subtle or extreme
+emotions. We find the standard reconstruction metrics used for training
+(landmark reprojection error, photometric error, and face recognition loss) are
+insufficient to capture high-fidelity expressions. The result is facial
+geometries that do not match the emotional content of the input image. We
+address this with EMOCA (EMOtion Capture and Animation), by introducing a novel
+deep perceptual emotion consistency loss during training, which helps ensure
+that the reconstructed 3D expression matches the expression depicted in the
+input image. While EMOCA achieves 3D reconstruction errors that are on par with
+the current best methods, it significantly outperforms them in terms of the
+quality of the reconstructed expression and the perceived emotional content. We
+also directly regress levels of valence and arousal and classify basic
+expressions from the estimated 3D face parameters. On the task of in-the-wild
+emotion recognition, our purely geometric approach is on par with the best
+image-based methods, highlighting the value of 3D geometry in analyzing human
+behavior. The model and code are publicly available at
+https://emoca.is.tue.mpg.de."
+2212.04420,Generating Holistic 3D Human Motion from Speech,http://arxiv.org/abs/2212.04420,"This work addresses the problem of generating 3D holistic body motions from
+human speech. Given a speech recording, we synthesize sequences of 3D body
+poses, hand gestures, and facial expressions that are realistic and diverse. To
+achieve this, we first build a high-quality dataset of 3D holistic body meshes
+with synchronous speech. We then define a novel speech-to-motion generation
+framework in which the face, body, and hands are modeled separately. The
+separated modeling stems from the fact that face articulation strongly
+correlates with human speech, while body poses and hand gestures are less
+correlated. Specifically, we employ an autoencoder for face motions, and a
+compositional vector-quantized variational autoencoder (VQ-VAE) for the body
+and hand motions. The compositional VQ-VAE is key to generating diverse
+results. Additionally, we propose a cross-conditional autoregressive model that
+generates body poses and hand gestures, leading to coherent and realistic
+motions. Extensive experiments and user studies demonstrate that our proposed
+approach achieves state-of-the-art performance both qualitatively and
+quantitatively. Our novel dataset and code will be released for research
+purposes at https://talkshow.is.tue.mpg.de."
+2308.10897,Can Language Models Learn to Listen?,http://arxiv.org/abs/2308.10897,"We present a framework for generating appropriate facial responses from a
+listener in dyadic social interactions based on the speaker's words. Given an
+input transcription of the speaker's words with their timestamps, our approach
+autoregressively predicts a response of a listener: a sequence of listener
+facial gestures, quantized using a VQ-VAE. Since gesture is a language
+component, we propose treating the quantized atomic motion elements as
+additional language token inputs to a transformer-based large language model.
+Initializing our transformer with the weights of a language model pre-trained
+only on text results in significantly higher quality listener responses than
+training a transformer from scratch. We show that our generated listener motion
+is fluent and reflective of language semantics through quantitative metrics and
+a qualitative user study. In our evaluation, we analyze the model's ability to
+utilize temporal and semantic aspects of spoken text. Project page:
+https://people.eecs.berkeley.edu/~evonne_ng/projects/text2listen/"
+2204.08451,Learning to Listen: Modeling Non-Deterministic Dyadic Facial Motion,http://arxiv.org/abs/2204.08451,"We present a framework for modeling interactional communication in dyadic
+conversations: given multimodal inputs of a speaker, we autoregressively output
+multiple possibilities of corresponding listener motion. We combine the motion
+and speech audio of the speaker using a motion-audio cross attention
+transformer. Furthermore, we enable non-deterministic prediction by learning a
+discrete latent representation of realistic listener motion with a novel
+motion-encoding VQ-VAE. Our method organically captures the multimodal and
+non-deterministic nature of nonverbal dyadic interactions. Moreover, it
+produces realistic 3D listener facial motion synchronous with the speaker (see
+video). We demonstrate that our method outperforms baselines qualitatively and
+quantitatively via a rich suite of experiments. To facilitate this line of
+research, we introduce a novel and large in-the-wild dataset of dyadic
+conversations. Code, data, and videos available at
+https://evonneng.github.io/learning2listen/."
+2308.15214,"FurChat: An Embodied Conversational Agent using LLMs, Combining Open and
+  Closed-Domain Dialogue with Facial Expressions",http://arxiv.org/abs/2308.15214,"We demonstrate an embodied conversational agent that can function as a
+receptionist and generate a mixture of open and closed-domain dialogue along
+with facial expressions, by using a large language model (LLM) to develop an
+engaging conversation. We deployed the system onto a Furhat robot, which is
+highly expressive and capable of using both verbal and nonverbal cues during
+interaction. The system was designed specifically for the National Robotarium
+to interact with visitors through natural conversations, providing them with
+information about the facilities, research, news, upcoming events, etc. The
+system utilises the state-of-the-art GPT-3.5 model to generate such information
+along with domain-general conversations and facial expressions based on prompt
+engineering."
+2308.16529,"Developing Social Robots with Empathetic Non-Verbal Cues Using Large
+  Language Models",http://arxiv.org/abs/2308.16529,"We propose augmenting the empathetic capacities of social robots by
+integrating non-verbal cues. Our primary contribution is the design and
+labeling of four types of empathetic non-verbal cues, abbreviated as SAFE:
+Speech, Action (gesture), Facial expression, and Emotion, in a social robot.
+These cues are generated using a Large Language Model (LLM). We developed an
+LLM-based conversational system for the robot and assessed its alignment with
+social cues as defined by human counselors. Preliminary results show distinct
+patterns in the robot's responses, such as a preference for calm and positive
+social emotions like 'joy' and 'lively', and frequent nodding gestures. Despite
+these tendencies, our approach has led to the development of a social robot
+capable of context-aware and more authentic interactions. Our work lays the
+groundwork for future studies on human-robot interactions, emphasizing the
+essential role of both verbal and non-verbal cues in creating social and
+empathetic robots."
+2305.13500,Learning Emotion Representations from Verbal and Nonverbal Communication,http://arxiv.org/abs/2305.13500,"Emotion understanding is an essential but highly challenging component of
+artificial general intelligence. The absence of extensively annotated datasets
+has significantly impeded advancements in this field. We present EmotionCLIP,
+the first pre-training paradigm to extract visual emotion representations from
+verbal and nonverbal communication using only uncurated data. Compared to
+numerical labels or descriptions used in previous methods, communication
+naturally contains emotion information. Furthermore, acquiring emotion
+representations from communication is more congruent with the human learning
+process. We guide EmotionCLIP to attend to nonverbal emotion cues through
+subject-aware context encoding and verbal emotion cues using sentiment-guided
+contrastive learning. Extensive experiments validate the effectiveness and
+transferability of EmotionCLIP. Using merely linear-probe evaluation protocol,
+EmotionCLIP outperforms the state-of-the-art supervised visual emotion
+recognition methods and rivals many multimodal approaches across various
+benchmarks. We anticipate that the advent of EmotionCLIP will address the
+prevailing issue of data scarcity in emotion understanding, thereby fostering
+progress in related domains. The code and pre-trained models are available at
+https://github.com/Xeaver/EmotionCLIP."
+2310.12978,HumanTOMATO: Text-aligned Whole-body Motion Generation,http://arxiv.org/abs/2310.12978,"This work targets a novel text-driven whole-body motion generation task,
+which takes a given textual description as input and aims at generating
+high-quality, diverse, and coherent facial expressions, hand gestures, and body
+motions simultaneously. Previous works on text-driven motion generation tasks
+mainly have two limitations: they ignore the key role of fine-grained hand and
+face controlling in vivid whole-body motion generation, and lack a good
+alignment between text and motion. To address such limitations, we propose a
+Text-aligned whOle-body Motion generATiOn framework, named HumanTOMATO, which
+is the first attempt to our knowledge towards applicable holistic motion
+generation in this research area. To tackle this challenging task, our solution
+includes two key designs: (1) a Holistic Hierarchical VQ-VAE (aka H$^2$VQ) and
+a Hierarchical-GPT for fine-grained body and hand motion reconstruction and
+generation with two structured codebooks; and (2) a pre-trained
+text-motion-alignment model to help generated motion align with the input
+textual description explicitly. Comprehensive experiments verify that our model
+has significant advantages in both the quality of generated motions and their
+alignment with text."

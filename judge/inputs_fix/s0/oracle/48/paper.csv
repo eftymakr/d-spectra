@@ -1,0 +1,158 @@
+id,title,url,snippet
+2402.05672,Multilingual E5 Text Embeddings: A Technical Report,http://arxiv.org/abs/2402.05672,"This technical report presents the training methodology and evaluation
+results of the open-source multilingual E5 text embedding models, released in
+mid-2023. Three embedding models of different sizes (small / base / large) are
+provided, offering a balance between the inference efficiency and embedding
+quality. The training procedure adheres to the English E5 model recipe,
+involving contrastive pre-training on 1 billion multilingual text pairs,
+followed by fine-tuning on a combination of labeled datasets. Additionally, we
+introduce a new instruction-tuned embedding model, whose performance is on par
+with state-of-the-art, English-only models of similar sizes. Information
+regarding the model release can be found at
+https://github.com/microsoft/unilm/tree/master/e5 ."
+https://aclanthology.org/2021.mrl-1.11/,Small Data? (No) Problem! (Exploring) the Viability of Pretrained Multilingual Language Models for Low-resourced Languages,https://aclanthology.org/2021.mrl-1.11/,
+2412.04506,Arctic-Embed 2.0: Multilingual Retrieval Without Compromise,http://arxiv.org/abs/2412.04506,"This paper presents the training methodology of Arctic-Embed 2.0, a set of
+open-source text embedding models built for accurate and efficient multilingual
+retrieval. While prior works have suffered from degraded English retrieval
+quality, Arctic-Embed 2.0 delivers competitive retrieval quality on
+multilingual and English-only benchmarks, and supports Matryoshka
+Representation Learning (MRL) for efficient embedding storage with
+significantly lower compressed quality degradation compared to alternatives. We
+detail the design and implementation, presenting several important open
+research questions that arose during model development. We conduct experiments
+exploring these research questions and include extensive discussion aimed at
+fostering further discussion in this field."
+1906.01502,How multilingual is Multilingual BERT?,http://arxiv.org/abs/1906.01502,"In this paper, we show that Multilingual BERT (M-BERT), released by Devlin et
+al. (2018) as a single language model pre-trained from monolingual corpora in
+104 languages, is surprisingly good at zero-shot cross-lingual model transfer,
+in which task-specific annotations in one language are used to fine-tune the
+model for evaluation in another language. To understand why, we present a large
+number of probing experiments, showing that transfer is possible even to
+languages in different scripts, that transfer works best between typologically
+similar languages, that monolingual corpora can train models for
+code-switching, and that the model can find translation pairs. From these
+results, we can conclude that M-BERT does create multilingual representations,
+but that these representations exhibit systematic deficiencies affecting
+certain language pairs."
+1911.02116,Unsupervised Cross-lingual Representation Learning at Scale,http://arxiv.org/abs/1911.02116,"This paper shows that pretraining multilingual language models at scale leads
+to significant performance gains for a wide range of cross-lingual transfer
+tasks. We train a Transformer-based masked language model on one hundred
+languages, using more than two terabytes of filtered CommonCrawl data. Our
+model, dubbed XLM-R, significantly outperforms multilingual BERT (mBERT) on a
+variety of cross-lingual benchmarks, including +14.6% average accuracy on XNLI,
++13% average F1 score on MLQA, and +2.4% F1 score on NER. XLM-R performs
+particularly well on low-resource languages, improving 15.7% in XNLI accuracy
+for Swahili and 11.4% for Urdu over previous XLM models. We also present a
+detailed empirical analysis of the key factors that are required to achieve
+these gains, including the trade-offs between (1) positive transfer and
+capacity dilution and (2) the performance of high and low resource languages at
+scale. Finally, we show, for the first time, the possibility of multilingual
+modeling without sacrificing per-language performance; XLM-R is very
+competitive with strong monolingual models on the GLUE and XNLI benchmarks. We
+will make our code, data and models publicly available."
+2004.04906,Dense Passage Retrieval for Open-Domain Question Answering,http://arxiv.org/abs/2004.04906,"Open-domain question answering relies on efficient passage retrieval to
+select candidate contexts, where traditional sparse vector space models, such
+as TF-IDF or BM25, are the de facto method. In this work, we show that
+retrieval can be practically implemented using dense representations alone,
+where embeddings are learned from a small number of questions and passages by a
+simple dual-encoder framework. When evaluated on a wide range of open-domain QA
+datasets, our dense retriever outperforms a strong Lucene-BM25 system largely
+by 9%-19% absolute in terms of top-20 passage retrieval accuracy, and helps our
+end-to-end QA system establish new state-of-the-art on multiple open-domain QA
+benchmarks."
+2112.09118,Unsupervised Dense Information Retrieval with Contrastive Learning,http://arxiv.org/abs/2112.09118,"Recently, information retrieval has seen the emergence of dense retrievers,
+using neural networks, as an alternative to classical sparse methods based on
+term-frequency. These models have obtained state-of-the-art results on datasets
+and tasks where large training sets are available. However, they do not
+transfer well to new applications with no training data, and are outperformed
+by unsupervised term-frequency methods such as BM25. In this work, we explore
+the limits of contrastive learning as a way to train unsupervised dense
+retrievers and show that it leads to strong performance in various retrieval
+settings. On the BEIR benchmark our unsupervised model outperforms BM25 on 11
+out of 15 datasets for the Recall@100. When used as pre-training before
+fine-tuning, either on a few thousands in-domain examples or on the large
+MS~MARCO dataset, our contrastive model leads to improvements on the BEIR
+benchmark. Finally, we evaluate our approach for multi-lingual retrieval, where
+training data is even scarcer than for English, and show that our approach
+leads to strong unsupervised performance. Our model also exhibits strong
+cross-lingual transfer when fine-tuned on supervised English data only and
+evaluated on low resources language such as Swahili. We show that our
+unsupervised models can perform cross-lingual retrieval between different
+scripts, such as retrieving English documents from Arabic queries, which would
+not be possible with term matching methods."
+2212.10785,SERENGETI: Massively Multilingual Language Models for Africa,http://arxiv.org/abs/2212.10785,"Multilingual pretrained language models (mPLMs) acquire valuable,
+generalizable linguistic information during pretraining and have advanced the
+state of the art on task-specific finetuning. To date, only ~31 out of ~2,000
+African languages are covered in existing language models. We ameliorate this
+limitation by developing SERENGETI, a massively multilingual language model
+that covers 517 African languages and language varieties. We evaluate our novel
+models on eight natural language understanding tasks across 20 datasets,
+comparing to 4 mPLMs that cover 4-23 African languages. SERENGETI outperforms
+other models on 11 datasets across the eights tasks, achieving 82.27 average
+F_1. We also perform analyses of errors from our models, which allows us to
+investigate the influence of language genealogy and linguistic similarity when
+the models are applied under zero-shot settings. We will publicly release our
+models for
+research.\footnote(\href(https://github.com/UBC-NLP/serengeti)(https://github.com/UBC-NLP/serengeti))"
+https://aclanthology.org/2021.winlp-1.5/,The Development of Pre-processing Tools and Pre-trained Embedding Models for (A)mharic,https://aclanthology.org/2021.winlp-1.5/,
+2109.10086,SPLADE v2: Sparse Lexical and Expansion Model for Information Retrieval,http://arxiv.org/abs/2109.10086,"In neural Information Retrieval (IR), ongoing research is directed towards
+improving the first retriever in ranking pipelines. Learning dense embeddings
+to conduct retrieval using efficient approximate nearest neighbors methods has
+proven to work well. Meanwhile, there has been a growing interest in learning
+\emph(sparse) representations for documents and queries, that could inherit
+from the desirable properties of bag-of-words models such as the exact matching
+of terms and the efficiency of inverted indexes. Introduced recently, the
+SPLADE model provides highly sparse representations and competitive results
+with respect to state-of-the-art dense and sparse approaches. In this paper, we
+build on SPLADE and propose several significant improvements in terms of
+effectiveness and/or efficiency. More specifically, we modify the pooling
+mechanism, benchmark a model solely based on document expansion, and introduce
+models trained with distillation. We also report results on the BEIR benchmark.
+Overall, SPLADE is considerably improved with more than $9$\% gains on NDCG@10
+on TREC DL 2019, leading to state-of-the-art results on the BEIR benchmark."
+2007.00808,"Approximate Nearest Neighbor Negative Contrastive Learning for Dense
+  Text Retrieval",http://arxiv.org/abs/2007.00808,"Conducting text retrieval in a dense learned representation space has many
+intriguing advantages over sparse retrieval. Yet the effectiveness of dense
+retrieval (DR) often requires combination with sparse retrieval. In this paper,
+we identify that the main bottleneck is in the training mechanisms, where the
+negative instances used in training are not representative of the irrelevant
+documents in testing. This paper presents Approximate nearest neighbor Negative
+Contrastive Estimation (ANCE), a training mechanism that constructs negatives
+from an Approximate Nearest Neighbor (ANN) index of the corpus, which is
+parallelly updated with the learning process to select more realistic negative
+training instances. This fundamentally resolves the discrepancy between the
+data distribution used in the training and testing of DR. In our experiments,
+ANCE boosts the BERT-Siamese DR model to outperform all competitive dense and
+sparse retrieval baselines. It nearly matches the accuracy of
+sparse-retrieval-and-BERT-reranking using dot-product in the ANCE-learned
+representation space and provides almost 100x speed-up."
+2012.15613,"How Good is Your Tokenizer? On the Monolingual Performance of
+  Multilingual Language Models",http://arxiv.org/abs/2012.15613,"In this work, we provide a systematic and comprehensive empirical comparison
+of pretrained multilingual language models versus their monolingual
+counterparts with regard to their monolingual task performance. We study a set
+of nine typologically diverse languages with readily available pretrained
+monolingual models on a set of five diverse monolingual downstream tasks. We
+first aim to establish, via fair and controlled comparisons, if a gap between
+the multilingual and the corresponding monolingual representation of that
+language exists, and subsequently investigate the reason for any performance
+difference. To disentangle conflating factors, we train new monolingual models
+on the same data, with monolingually and multilingually trained tokenizers. We
+find that while the pretraining data size is an important factor, a designated
+monolingual tokenizer plays an equally important role in the downstream
+performance. Our results show that languages that are adequately represented in
+the multilingual model's vocabulary exhibit negligible performance decreases
+over their monolingual counterparts. We further find that replacing the
+original multilingual tokenizer with the specialized monolingual tokenizer
+improves the downstream performance of the multilingual model for almost every
+task and language."
+2103.05639,An Amharic News Text classification Dataset,http://arxiv.org/abs/2103.05639,"In NLP, text classification is one of the primary problems we try to solve
+and its uses in language analyses are indisputable. The lack of labeled
+training data made it harder to do these tasks in low resource languages like
+Amharic. The task of collecting, labeling, annotating, and making valuable this
+kind of data will encourage junior researchers, schools, and machine learning
+practitioners to implement existing classification models in their language. In
+this short paper, we aim to introduce the Amharic text classification dataset
+that consists of more than 50k news articles that were categorized into 6
+classes. This dataset is made available with easy baseline performances to
+encourage studies and better performance experiments."
+https://doi.org/10.1007/978-3-030-58219-7_5,(2AIRTC): The (Amharic) Adhoc Information Retrieval Test Collection,https://doi.org/10.1007/978-3-030-58219-7_5,

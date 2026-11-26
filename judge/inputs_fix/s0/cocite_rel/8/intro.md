@@ -1,0 +1,22 @@
+## Related Works
+
+The growing deployment of large language models (LLMs) has sparked significant interest in evaluating their fairness, particularly in how they reflect and amplify societal biases \[[19](http://arxiv.org/abs/2309.00770)\]. Traditional fairness metrics, such as Equalized Odds, focus on discrete accuracy-based evaluations, often overlooking the implicit impact of model uncertainty \[[19](http://arxiv.org/abs/2309.00770)\]. This limitation has been highlighted in prior work, which shows that conventional metrics fail to capture the nuanced ways in which models may exhibit bias, especially when they display high confidence in incorrect predictions \[[19](http://arxiv.org/abs/2309.00770)\]. For instance, Mistral-7B has been found to exhibit suboptimal fairness due to its high confidence in incorrect predictions, a detail that is not captured by Equalized Odds but is effectively addressed by uncertainty-aware metrics \[[19](http://arxiv.org/abs/2309.00770)\].
+
+Several studies have explored the challenges of defining and measuring fairness in machine learning systems. For example, \[[1](http://arxiv.org/abs/1812.05239)\] emphasizes the importance of aligning fairness criteria with real-world needs, highlighting the disconnect between theoretical research and practical implementation. Similarly, \[[2](http://arxiv.org/abs/1802.04422)\] compares fairness-enhancing interventions and finds that many fairness-preserving algorithms are sensitive to dataset composition and preprocessing, suggesting that fairness interventions may be more brittle than previously thought. This aligns with the findings of \[[19](http://arxiv.org/abs/2309.00770)\], which underscores the need for more nuanced fairness metrics that account for model uncertainty.
+
+The issue of fairness in machine learning has also been examined from a philosophical perspective, with \[[9](http://arxiv.org/abs/1712.03586)\] drawing on political philosophy to explore the conceptual foundations of fairness. This work highlights the complexity of defining fairness and the challenges of operationalizing it in machine learning contexts. Furthermore, \[[16](http://arxiv.org/abs/1902.04783)\] presents a descriptive approach to fairness, showing that demographic parity, a simple mathematical definition, closely matches lay people's perception of fairness in certain scenarios. This finding suggests that while more complex fairness criteria may be theoretically appealing, they may not always align with societal expectations.
+
+In the context of medical imaging, \[[8](http://arxiv.org/abs/2210.01725)\] introduces MEDFAIR, a benchmarking framework that evaluates fairness in medical diagnosis systems. This work highlights the challenges of comparing fairness metrics across different settings and emphasizes the importance of reproducibility and transparency in fairness evaluation. While this is specific to medical imaging, the principles of benchmarking and evaluating fairness are broadly applicable to LLMs.
+
+The development of fairness-aware algorithms has also been a focus of recent research. For example, \[[18](http://arxiv.org/abs/1706.02744)\] explores the use of causal reasoning to address discrimination in machine learning, arguing that observational criteria are insufficient for resolving fairness issues conclusively. This aligns with the need for uncertainty-aware fairness metrics, as proposed in this work, which aim to capture the internal biases of models more accurately.
+
+In summary, the literature on fairness in machine learning highlights the limitations of conventional metrics and the need for more nuanced approaches that account for model uncertainty and societal expectations. The proposed uncertainty-aware fairness metric, UCerF, addresses these gaps by enabling a more fine-grained evaluation of model fairness \[[19](http://arxiv.org/abs/2309.00770)\].
+
+References:  
+\[[1](http://arxiv.org/abs/1812.05239)\] http://arxiv.org/abs/1812.05239  
+\[[2](http://arxiv.org/abs/1802.04422)\] http://arxiv.org/abs/1802.04422  
+\[[8](http://arxiv.org/abs/2210.01725)\] http://arxiv.org/abs/2210.01725  
+\[[9](http://arxiv.org/abs/1712.03586)\] http://arxiv.org/abs/1712.03586  
+\[[16](http://arxiv.org/abs/1902.04783)\] http://arxiv.org/abs/1902.04783  
+\[[18](http://arxiv.org/abs/1706.02744)\] http://arxiv.org/abs/1706.02744  
+\[[19](http://arxiv.org/abs/2309.00770)\] http://arxiv.org/abs/2309.00770

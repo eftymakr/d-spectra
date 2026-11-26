@@ -1,0 +1,27 @@
+## Related Works
+
+Cold start latency remains a critical challenge in serverless computing, impacting both performance and resource utilization \[[1](http://arxiv.org/abs/2406.11734)\]. Several studies have explored this issue, proposing various mitigation strategies. One early approach, described in \[[8](http://arxiv.org/abs/1903.12221)\], involves maintaining a pool of warm containers to reduce the latency associated with on-demand provisioning. This method significantly improves response time, achieving an 85% reduction in P99 response time for a single instance pool. However, this approach does not address the root cause of cold starts, which often stem from inefficient library initialization and usage \[[1](http://arxiv.org/abs/2406.11734)\].
+
+To tackle this, \[[10](http://arxiv.org/abs/2207.08175)\] introduces FaaSLight, an application-level optimization technique that reduces code loading latency by identifying and loading only the essential code required for function execution. This approach significantly decreases cold-start latency, with evaluations showing up to a 42.05% reduction in total response latency. Similarly, \[[1](http://arxiv.org/abs/2406.11734)\] presents LibProf, a Python profiler that identifies inefficient library initializations through dynamic program analysis. LibProf collects library usage data using statistical sampling and call-path profiling, leading to a 2.26x speedup in cold-start execution time and a 1.51x reduction in memory usage.
+
+Another approach, \[[14](http://arxiv.org/abs/2108.11240)\], proposes Pagurus, a runtime container management system that eliminates cold startup by reusing shared containers across function invocations. This system allows actions to start in as little as 10ms, even when no warm container is available. The inter-action container scheduler and intra-action container scheduler work together to manage container lifecycles efficiently, reducing the overhead associated with container creation.
+
+Time series forecasting has also been applied to cold start mitigation. \[[4](http://arxiv.org/abs/2206.15176)\] uses SARIMA to predict incoming request times and adjust container provisioning accordingly, reducing resource wastage and function launching time. The proposed PBA (Prediction Based Autoscaler) outperforms the default HPA (Horizontal Pod Autoscaler) in Kubernetes, demonstrating the effectiveness of predictive models in managing serverless workloads.
+
+In addition, \[[11](http://arxiv.org/abs/2504.11338)\] leverages Transformer models to predict function initialization delays and optimize serverless system performance. This approach achieves a 79% reduction in cold start times compared to conventional methods, highlighting the potential of deep learning techniques in addressing cold start challenges.
+
+Furthermore, \[[15](http://arxiv.org/abs/2309.15471)\] introduces ProFaaStinate, which enables delayed execution of asynchronous function calls, allowing platforms to execute calls at optimal times. This approach reduces request response latency and workflow duration while preventing system overload during load peaks, demonstrating the benefits of adaptive execution strategies.
+
+Finally, \[[13](http://arxiv.org/abs/2010.04312)\] proposes a proactive technique called freshen, which allows developers to specify functionality to execute before a function, thereby mitigating overheads and improving function responsiveness. This approach is particularly useful in scenarios where function initialization is resource-intensive.
+
+In summary, while various approaches have been proposed to mitigate cold start latency, the most effective solutions often involve a combination of profiling, predictive modeling, and proactive resource management. These strategies collectively aim to reduce initialization overhead, improve resource utilization, and enhance the overall performance of serverless applications.
+
+References:  
+\[[1](http://arxiv.org/abs/2406.11734)\] LibProf: A Python Profiler for Improving Cold Start Performance in Serverless Applications  
+\[[4](http://arxiv.org/abs/2206.15176)\] A Time Series Forecasting Approach to Minimize Cold Start Time in Cloud-Serverless Platform  
+\[[8](http://arxiv.org/abs/1903.12221)\] Mitigating Cold Starts in Serverless Platforms: A Pool-Based Approach  
+\[[10](http://arxiv.org/abs/2207.08175)\] FaaSLight: General Application-level Cold-start Latency Optimization for Function-as-a-Service in Serverless Computing  
+\[[11](http://arxiv.org/abs/2504.11338)\] Transformer-Based Model for Cold Start Mitigation in FaaS Architecture  
+\[[13](http://arxiv.org/abs/2010.04312)\] Proactive Serverless Function Resource Management  
+\[[14](http://arxiv.org/abs/2108.11240)\] Pagurus: Eliminating Cold Startup in Serverless Computing with Inter-Action Container Sharing  
+\[[15](http://arxiv.org/abs/2309.15471)\] ProFaaStinate: Delaying Serverless Function Calls to Optimize Platform Performance

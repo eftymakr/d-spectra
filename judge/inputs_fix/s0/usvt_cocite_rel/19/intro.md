@@ -1,0 +1,31 @@
+## Related Works
+
+Speech-driven 3D facial animation has been a focal point in computer vision and machine learning research, aiming to generate realistic facial expressions that match speech content and emotion. Early approaches relied on handcrafted features and rule-based systems, but recent advances have shifted toward data-driven methods using deep learning \[[1](http://arxiv.org/abs/2112.05329)\]. These methods typically involve mapping audio signals to facial animations, often using pre-trained self-supervised audio models as encoders \[[2](http://arxiv.org/abs/2104.08223)\]. However, challenges persist, particularly in accurately capturing lip movements and facial expressions that align with speech content \[[3](http://arxiv.org/abs/2303.11089)\].
+
+One notable work, **VOCA**, introduced a neural network that factors identity from facial motion, enabling realistic animation of a wide range of adult faces based on any speech signal \[[4](http://arxiv.org/abs/2104.07452)\]. This model was trained on a large 4D face dataset, allowing it to generalize to unseen subjects without retargeting \[[4](http://arxiv.org/abs/2104.07452)\]. Similarly, **FaceFormer** proposed a Transformer-based autoregressive model that encodes long-term audio context and autoregressively predicts a sequence of animated 3D face meshes, improving upon prior phoneme-level feature learning \[[5](http://arxiv.org/abs/2306.10799)\]. The use of self-supervised pre-trained speech representations was also emphasized to address data scarcity issues \[[5](http://arxiv.org/abs/2306.10799)\].
+
+Another approach, **MeshTalk**, introduced a categorical latent space for facial animation that disentangles audio-correlated and audio-uncorrelated information using a novel cross-modality loss \[[6](http://arxiv.org/abs/1905.03079)\]. This enabled highly accurate lip motion and plausible animation of non-speech-related facial features like eye blinks and brow movements \[[6](http://arxiv.org/abs/1905.03079)\]. **EmoTalk** further extended this by proposing an end-to-end neural network to disentangle emotions from speech content, generating rich 3D facial expressions \[[7](http://arxiv.org/abs/2301.02379)\]. This work also addressed the scarcity of 3D emotional talking face data by leveraging facial blendshapes for plausible 3D face reconstruction \[[7](http://arxiv.org/abs/2301.02379)\].
+
+**Audio-Driven Emotional Video Portraits (EVP)** decomposed speech into two decoupled spaces—duration-independent emotion and duration-dependent content—enabling dynamic 2D emotional facial landmarks to be deduced \[[8](http://arxiv.org/abs/1805.09488)\]. This was then used to generate high-quality video portraits with vivid emotional dynamics \[[8](http://arxiv.org/abs/1805.09488)\]. **SelfTalk** introduced a self-supervised commutative training diagram to learn 3D talking faces by involving cross-modal features exchange between audio, text, and lip shape \[[9](http://arxiv.org/abs/2104.11116)\]. This framework enabled more plausible lip shapes by leveraging knowledge from the lip-reading interpreter \[[9](http://arxiv.org/abs/2104.11116)\].
+
+**CodeTalker** proposed a code query task in a finite proxy space of a learned codebook, reducing cross-modal mapping uncertainty and promoting vivid facial motions \[[10](http://arxiv.org/abs/1807.07860)\]. This approach was effective in generating realistic facial expressions while maintaining lip synchronization \[[10](http://arxiv.org/abs/1807.07860)\]. **Imitator** addressed identity-specific speaking style and facial idiosyncrasies by learning from a short input video, producing more realistic and accurate lip movements \[[11](http://arxiv.org/abs/2205.15278)\].
+
+**Wav2Lip** focused on lip-syncing arbitrary identities to match target speech segments, resolving issues with static images or videos trained on specific people \[[12](http://arxiv.org/abs/2301.00023)\]. It used a powerful lip-sync discriminator to learn from dynamic, unconstrained talking face videos \[[12](http://arxiv.org/abs/2301.00023)\]. **Realistic Speech-Driven Facial Animation with GANs** introduced an end-to-end system that generated videos of talking heads using only a still image and an audio clip, without relying on handcrafted intermediate features \[[13](http://arxiv.org/abs/2008.10010)\]. This method used temporal GANs with three discriminators to achieve detailed frames and natural facial expressions \[[13](http://arxiv.org/abs/2008.10010)\].
+
+**EMOTE** introduced content-emotion disentanglement to generate 3D talking-head avatars with explicit emotional control while maintaining lip-sync \[[14](http://arxiv.org/abs/1906.06337)\]. This was achieved through decoupled losses for speech and emotion, along with a content-emotion exchange mechanism \[[14](http://arxiv.org/abs/1906.06337)\]. **FaceDiffuser** proposed a non-deterministic deep learning model using diffusion techniques to generate speech-driven facial animations, trained on both 3D vertex and blendshape datasets \[[15](http://arxiv.org/abs/2306.08990)\]. This approach was the first to employ diffusion for this task \[[15](http://arxiv.org/abs/2306.08990)\].
+
+\[[1](http://arxiv.org/abs/2112.05329)\] http://arxiv.org/abs/1905.03079  
+\[[2](http://arxiv.org/abs/2104.08223)\] http://arxiv.org/abs/2112.05329  
+\[[3](http://arxiv.org/abs/2303.11089)\] http://arxiv.org/abs/2104.08223  
+\[[4](http://arxiv.org/abs/2104.07452)\] http://arxiv.org/abs/1905.03079  
+\[[5](http://arxiv.org/abs/2306.10799)\] http://arxiv.org/abs/2112.05329  
+\[[6](http://arxiv.org/abs/1905.03079)\] http://arxiv.org/abs/2104.08223  
+\[[7](http://arxiv.org/abs/2301.02379)\] http://arxiv.org/abs/2303.11089  
+\[[8](http://arxiv.org/abs/1805.09488)\] http://arxiv.org/abs/2104.07452  
+\[[9](http://arxiv.org/abs/2104.11116)\] http://arxiv.org/abs/2306.10799  
+\[[10](http://arxiv.org/abs/1807.07860)\] http://arxiv.org/abs/2301.02379  
+\[[11](http://arxiv.org/abs/2205.15278)\] http://arxiv.org/abs/2301.00023  
+\[[12](http://arxiv.org/abs/2301.00023)\] http://arxiv.org/abs/2008.10010  
+\[[13](http://arxiv.org/abs/2008.10010)\] http://arxiv.org/abs/1906.06337  
+\[[14](http://arxiv.org/abs/1906.06337)\] http://arxiv.org/abs/2306.08990  
+\[[15](http://arxiv.org/abs/2306.08990)\] http://arxiv.org/abs/2309.11306

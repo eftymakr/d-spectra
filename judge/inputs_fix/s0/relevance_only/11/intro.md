@@ -1,0 +1,26 @@
+## Related Works
+
+3D human pose estimation has attracted significant research interest due to its applications in human-computer interaction, action recognition, and robotics. Most existing methods rely on either Graph Convolutional Networks (GCNs) or Transformers to model spatial and temporal dependencies in human motion \[[1](http://arxiv.org/abs/2505.01003)\]. GCNs are effective at capturing local joint relationships but often neglect global dependencies and fail to model long-range interactions \[[2](https://www.semanticscholar.org/paper/a749bdc4cb725865635dd96e95676ff9eeb9ccf6)\]. Transformers, on the other hand, excel at modeling long-range dependencies but may overlook local joint constraints, leading to inaccuracies in pose estimation \[[3](http://arxiv.org/abs/2405.03055)\]. 
+
+To address these limitations, several works have combined the strengths of GCNs and Transformers. For instance, \[[4](http://arxiv.org/abs/1708.01101)\] introduced a multi-hop graph transformer network that leverages multi-head self-attention and multi-hop graph convolutional layers to capture both local and global dependencies. This approach improves the model's ability to handle spatial details and long-range interactions. Similarly, \[[5](http://arxiv.org/abs/2308.05298)\] proposed a dual-chain design that integrates local and global constraints to enhance pose estimation accuracy. The method employs a local constraint module and a global constraint module to capture multi-level dependencies between joints.
+
+Another line of research focuses on improving the efficiency and accuracy of 3D human pose estimation by incorporating attention mechanisms. \[[6](http://arxiv.org/abs/2412.19676)\] introduced a method that uses a self-attention mechanism to capture spatial-temporal relationships in human pose estimation. The approach also integrates dilated convolutions to enhance the model's ability to capture spatial details. \[[7](https://www.semanticscholar.org/paper/50167a9e6bdc1f64a58fe8a3c990105fec0bd2bc)\] further advanced this idea by proposing a lightweight graph transformer network that uses a multi-scale structure to capture long-range dependencies while maintaining computational efficiency.
+
+In addition to attention-based methods, some works have explored the use of graph-based models to better capture the spatial structure of the human body. \[[8](http://arxiv.org/abs/2111.00950)\] introduced a higher-order graph convolutional framework that uses multi-hop neighborhoods to capture long-range dependencies between body joints. This approach also leverages residual connections to retain important information from the input features. \[[9](http://arxiv.org/abs/2103.03170)\] proposed a method that combines attention mechanisms with dilated convolutions to achieve state-of-the-art performance on benchmark datasets.
+
+Recent works have also focused on improving the robustness of 3D human pose estimation by incorporating additional constraints. \[[10](http://arxiv.org/abs/2401.16700)\] introduced a method that uses a dual-branch framework to capture both local and global dependencies. The method also integrates a feature interaction module to enhance the model's ability to capture complex joint relationships. \[[11](https://www.semanticscholar.org/paper/b3c7b9151021a8fa6781aa52b5bb78c9dd2511d3)\] proposed a method that uses a joint relationship-aware neural network to capture both global and local joint relationships, leading to improved pose estimation accuracy.
+
+In summary, while existing methods have made significant progress in 3D human pose estimation, there remains a need for more efficient and accurate models that can better capture long-range dependencies and local constraints. Our proposed method, PGFormer, addresses these challenges by introducing a novel Pyramid Graph Attention (PGA) module that captures long-range cross-scale dependencies in a lightweight and efficient manner \[[12](https://www.semanticscholar.org/paper/594383e73ff20ea52e6a964703afaaf1e63b12b5)\].
+
+1. \[[1](http://arxiv.org/abs/2505.01003)\] Document 1  
+2. \[[2](https://www.semanticscholar.org/paper/a749bdc4cb725865635dd96e95676ff9eeb9ccf6)\] Document 2  
+3. \[[3](http://arxiv.org/abs/2405.03055)\] Document 3  
+4. \[[4](http://arxiv.org/abs/1708.01101)\] Document 4  
+5. \[[5](http://arxiv.org/abs/2308.05298)\] Document 5  
+6. \[[6](http://arxiv.org/abs/2412.19676)\] Document 6  
+7. \[[7](https://www.semanticscholar.org/paper/50167a9e6bdc1f64a58fe8a3c990105fec0bd2bc)\] Document 7  
+8. \[[8](http://arxiv.org/abs/2111.00950)\] Document 8  
+9. \[[9](http://arxiv.org/abs/2103.03170)\] Document 9  
+10. \[[10](http://arxiv.org/abs/2401.16700)\] Document 10  
+11. \[[11](https://www.semanticscholar.org/paper/b3c7b9151021a8fa6781aa52b5bb78c9dd2511d3)\] Document 11  
+12. \[[12](https://www.semanticscholar.org/paper/594383e73ff20ea52e6a964703afaaf1e63b12b5)\] Document 12

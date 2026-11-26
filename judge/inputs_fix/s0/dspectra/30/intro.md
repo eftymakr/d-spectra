@@ -1,0 +1,31 @@
+## Related Works
+
+Modern databases often trade strong transaction isolation for weak isolation guarantees to achieve low latency and high throughput, particularly in distributed systems \[[1](http://arxiv.org/abs/2107.11458)\]. This trade-off has led to the emergence of several weak isolation levels, such as Read Committed (RC), Read Atomic (RA), and Causal Consistency (CC), which are widely adopted in production databases \[[1](http://arxiv.org/abs/2107.11458)\]. However, these weaker isolation levels can introduce subtle correctness errors that are difficult to detect \[[5](https://www.semanticscholar.org/paper/405ae0ebf74cfbf5f2edec62e2966827dcdc9bef)\]. 
+
+Several studies have focused on black-box testing techniques to identify isolation bugs in databases. For instance, Plume \[[2](https://www.semanticscholar.org/paper/cbe191bda20907994d45bc835d20446968370add)\] presents an efficient black-box checker for weak isolation levels, leveraging vectors and tree clocks to accelerate isolation checking. Similarly, IsoVista \[[4](https://www.semanticscholar.org/paper/4f3081dbb68287f0d9d7bec3e7173e6c8ff035b9)\] introduces a black-box isolation checking system that ensures the absence of false positives and missed bugs in collected execution histories. These tools are essential for validating that databases adhere to their promised isolation guarantees \[[4](https://www.semanticscholar.org/paper/4f3081dbb68287f0d9d7bec3e7173e6c8ff035b9)\].
+
+Efforts to improve the efficiency of isolation checking have also been made. PolySI \[[6](http://arxiv.org/abs/2301.07313)\] is a black-box checker that efficiently verifies Snapshot Isolation (SI) and provides understandable counterexamples upon detecting violations. It uses generalized polygraphs (GPs) and an SMT solver to accelerate SMT solving. Another approach, MTC \[[8](http://arxiv.org/abs/2504.02344)\], introduces Mini-Transactions (MTs) to reduce end-to-end checking overhead during both history generation and verification. MTs are compact transactions that execute faster than general workloads, enabling efficient verification of strong isolation levels in linear or quadratic time \[[8](http://arxiv.org/abs/2504.02344)\].
+
+In the context of weak isolation, tools like DeepXplore \[[3](http://arxiv.org/abs/1705.06640)\] and DeepTest \[[16](http://arxiv.org/abs/1708.08559)\] focus on automated testing of deep learning systems and autonomous vehicles, respectively. While these tools are not directly related to database isolation, they share common themes of automated testing and the detection of erroneous behaviors in complex systems. Similarly, MonkeyDB \[[9](https://www.semanticscholar.org/paper/615ff2896b52bee2cbfd64ced324106a29b73397)\] is a mock storage system designed to test storage-backed applications under weak isolation levels, providing coverage of rare and hard-to-reproduce behaviors.
+
+The challenge of testing weak isolation levels has also been addressed in the context of static analysis. For example, Elle \[[11](http://arxiv.org/abs/2003.10554)\] infers isolation anomalies from experimental observations by generating client workloads and injecting faults. It constructs an Adya-style dependency graph between client-observed transactions and provides concise explanations of detected anomalies. Another approach, Viper \[[15](https://www.semanticscholar.org/paper/9f96a48d2bc0e77004b32960495685be6c301c63)\], is a fast SI checker that is sound, complete, and efficient, leveraging BC-polygraphs to represent transaction dependencies \[[15](https://www.semanticscholar.org/paper/9f96a48d2bc0e77004b32960495685be6c301c63)\].
+
+The complexity of isolation testing has been a subject of theoretical study. It has been shown that testing strong isolation is NP-complete, while weak isolation levels can be tested in polynomial time \[[1](http://arxiv.org/abs/2107.11458)\]. This theoretical foundation has enabled the development of scalable testing tools. However, existing testers often have large polynomial complexity, restricting testing to moderate-sized workloads \[[1](http://arxiv.org/abs/2107.11458)\]. AWDIT \[[14](http://arxiv.org/abs/2303.12606)\] addresses this limitation by providing an efficient and provably optimal tester for weak isolation levels, achieving time complexities of $O(n^(3/2))$, $O(n^(3/2))$, and $O(n \cdot k)$ for RC, RA, and CC, respectively \[[14](http://arxiv.org/abs/2303.12606)\].
+
+References  
+\[[1](http://arxiv.org/abs/2107.11458)\] https://arxiv.org/abs/2107.11458  
+\[[2](https://www.semanticscholar.org/paper/cbe191bda20907994d45bc835d20446968370add)\] https://www.semanticscholar.org/paper/cbe191bda20907994d45bc835d20446968370add  
+\[[3](http://arxiv.org/abs/1705.06640)\] http://arxiv.org/abs/1705.06640  
+\[[4](https://www.semanticscholar.org/paper/4f3081dbb68287f0d9d7bec3e7173e6c8ff035b9)\] https://www.semanticscholar.org/paper/4f3081dbb68287f0d9d7bec3e7173e6c8ff035b9  
+\[[5](https://www.semanticscholar.org/paper/405ae0ebf74cfbf5f2edec62e2966827dcdc9bef)\] https://www.semanticscholar.org/paper/405ae0ebf74cfbf5f2edec62e2966827dcdc9bef  
+\[[6](http://arxiv.org/abs/2301.07313)\] http://arxiv.org/abs/2301.07313  
+\[[7](http://arxiv.org/abs/1805.05206)\] https://www.semanticscholar.org/paper/405ae0ebf74cfbf5f2edec62e2966827dcdc9bef  
+\[[8](http://arxiv.org/abs/2504.02344)\] http://arxiv.org/abs/2504.02344  
+\[[9](https://www.semanticscholar.org/paper/615ff2896b52bee2cbfd64ced324106a29b73397)\] https://www.semanticscholar.org/paper/615ff2896b52bee2cbfd64ced324106a29b73397  
+\[[10](http://arxiv.org/abs/1806.08416)\] https://arxiv.org/abs/1806.08416  
+\[[11](http://arxiv.org/abs/2003.10554)\] https://arxiv.org/abs/2003.10554  
+\[[12](https://www.semanticscholar.org/paper/322ca3c1911230a84aab81b0f5ff8c2b543c56f7)\] https://www.semanticscholar.org/paper/322ca3c1911230a84aab81b0f5ff8c2b543c56f7  
+\[[13](https://www.semanticscholar.org/paper/04178561c9d8cd42904ed0a836e08e55b84703cf)\] https://www.semanticscholar.org/paper/04178561c9d8cd42904ed0a836e08e55b84703cf  
+\[[14](http://arxiv.org/abs/2303.12606)\] https://arxiv.org/abs/2303.12606  
+\[[15](https://www.semanticscholar.org/paper/9f96a48d2bc0e77004b32960495685be6c301c63)\] https://www.semanticscholar.org/paper/9f96a48d2bc0e77004b32960495685be6c301c63  
+\[[16](http://arxiv.org/abs/1708.08559)\] http://arxiv.org/abs/1708.08559

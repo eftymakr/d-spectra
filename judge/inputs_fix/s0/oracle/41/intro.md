@@ -1,0 +1,23 @@
+## Related Works
+
+Serverless computing has gained significant traction due to its ability to abstract server management, enabling automatic scaling, efficient resource utilization, and cost-effective pricing models \[[1](http://arxiv.org/abs/2008.12819)\]. However, a critical challenge remains: cold-start latency, which adversely impacts end-to-end performance \[[1](http://arxiv.org/abs/2008.12819)\]. Several studies have explored this issue, proposing various techniques to mitigate cold-start overhead. For instance, Fifer \[[1](http://arxiv.org/abs/2008.12819)\] addresses the underutilization of resources in serverless environments by introducing an adaptive resource management framework. This framework improves container utilization and cluster-wide energy consumption by 4x and 31%, respectively, without compromising on SLOs. Fifer leverages function-aware container scaling and intelligent request batching to reduce container over-provisioning during workload fluctuations \[[1](http://arxiv.org/abs/2008.12819)\].
+
+Similarly, FaaSLight \[[3](http://arxiv.org/abs/2207.08175)\] focuses on reducing cold-start latency by optimizing application-level code loading. The approach identifies and loads only indispensable code, significantly reducing code loading latency and, consequently, cold-start latency. This method achieves up to a 78.95% reduction in code loading latency and a 42.05% decrease in total response latency \[[3](http://arxiv.org/abs/2207.08175)\]. Another approach, Icebreaker \[[9]()\], enhances cold-start performance by leveraging heterogeneity in function execution, demonstrating the importance of tailored solutions for diverse workloads \[[9]()\].
+
+Pre-warming strategies have also been explored to mitigate cold-start latency. However, Pre-Warming is Not Enough \[[10]()\] highlights that opportunistic pre-loading can accelerate serverless inference by anticipating function invocations based on workload patterns \[[10]()\]. Similarly, RainbowCake \[[16]()\] mitigates cold-starts through layer-wise container caching and sharing, which reduces the need for repeated initialization \[[16]()\].
+
+In addition to cold-start optimization, several works focus on improving resource utilization and reducing overhead. For example, CodeCrunch \[[6]()\] introduces function compression and cost-aware warmup location optimization to enhance serverless performance. This approach reduces initialization latency and improves resource efficiency by minimizing unnecessary resource allocation \[[6]()\]. Furthermore, Catalyzer \[[12]()\] achieves sub-millisecond startup times through initialization-less booting, demonstrating the potential of novel booting mechanisms to drastically reduce cold-start latency \[[12]()\].
+
+Lastly, the work in \[[17]()\] proposes function fusion as a method to mitigate the cold-start problem by combining multiple functions into a single, more efficient unit. This reduces the overhead associated with individual function initialization \[[17]()\].
+
+These studies collectively highlight the multifaceted nature of cold-start challenges in serverless computing and the diverse approaches taken to address them. While some focus on optimizing code loading and initialization, others emphasize resource management and adaptive provisioning. The proposed SLIMSTART tool builds upon these insights, leveraging profile-guided optimization to address inefficiencies in library usage and improve cold-start performance \[[1](http://arxiv.org/abs/2008.12819)\].
+
+1. Fifer: Tackling Underutilization in the Serverless Era [http://arxiv.org/abs/2008.12819]  
+2. Serverless in the Wild: Characterizing and Optimizing the Serverless Workload at a Large Cloud Provider [http://arxiv.org/abs/2003.03423]  
+3. FaaSLight: General Application-Level Cold-Start Latency Optimization for Function-as-a-Service in Serverless Computing [http://arxiv.org/abs/2207.08175]  
+6. CodeCrunch: Improving Serverless Performance via Function Compression and Cost-Aware Warmup Location Optimization [http://arxiv.org/abs/2207.08175]  
+9. Icebreaker: Warming serverless functions better with heterogeneity [http://arxiv.org/abs/2207.08175]  
+10. Pre-Warming is Not Enough: Accelerating Serverless Inference With Opportunistic Pre-Loading [http://arxiv.org/abs/2207.08175]  
+12. Catalyzer: Sub-millisecond startup for serverless computing with initialization-less booting [http://arxiv.org/abs/2207.08175]  
+16. RainbowCake: Mitigating Cold-starts in Serverless with Layer-wise Container Caching and Sharing [http://arxiv.org/abs/2207.08175]  
+17. Mitigating cold start problem in serverless computing with function fusion [http://arxiv.org/abs/2207.08175]

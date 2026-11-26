@@ -1,0 +1,30 @@
+## Related Works
+
+Generative retrieval (GR) has recently emerged as a promising paradigm in information retrieval (IR), shifting the focus from traditional index-retrieve pipelines to end-to-end document retrieval via sequence-to-sequence models \[[3](http://arxiv.org/abs/2202.06991)\]. Unlike conventional methods that rely on precomputed dense vectors or inverted indexes, GR models directly generate document identifiers (docids) for a given query \[[10](http://arxiv.org/abs/2208.09257)\]. However, most existing GR models are primarily evaluated on static document collections, with limited exploration of their performance in dynamic corpora where documents are continuously added \[[1](http://arxiv.org/abs/2308.14968)\]. This section reviews related works in generative retrieval, particularly focusing on docid design, scalability, and continual learning.
+
+Docid design is a critical factor in GR performance. Current approaches typically use either numeric-based or text-based docids. Numeric-based docids are efficient but often lead to poor generalization in dynamic settings due to their strong dependence on the initial training set \[[1](http://arxiv.org/abs/2308.14968)\]. This overfitting issue is exacerbated in dynamic corpora, where new documents are frequently added \[[11](http://arxiv.org/abs/2212.09744)\]. In contrast, text-based docids, which are more semantically aligned with language models' pretrained knowledge, demonstrate superior performance in dynamic settings \[[1](http://arxiv.org/abs/2308.14968)\]. This is attributed to their fine-grained design and high lexical diversity, which enable better adaptation to new documents \[[1](http://arxiv.org/abs/2308.14968)\]. Several works have explored the benefits of text-based docids, such as in GenRet \[[5](http://arxiv.org/abs/2304.04171)\], which learns semantic docids via a discrete auto-encoding approach, and in NOVO \[[12](https://www.semanticscholar.org/paper/6682a3679a17d090830635f1c420126d20eae54a)\], which proposes learnable and interpretable docids optimized for retrieval tasks.
+
+Scalability remains a significant challenge for generative retrieval models, especially when dealing with large-scale corpora. Early works like the Differentiable Search Index (DSI) \[[3](http://arxiv.org/abs/2202.06991)\] demonstrated the potential of using a single Transformer to encode the entire corpus, but scalability to millions of passages was not thoroughly investigated until more recent studies \[[6](http://arxiv.org/abs/2305.11841)\]. These studies revealed that synthetic queries are essential during indexing, and model parameter scaling does not always translate to improved retrieval performance \[[6](http://arxiv.org/abs/2305.11841)\]. To address these challenges, works such as DSI++ \[[11](http://arxiv.org/abs/2212.09744)\] and Ultron \[[10](http://arxiv.org/abs/2208.09257)\] have proposed continual learning strategies to incrementally update models with new documents while maintaining retrieval performance over previously indexed content.
+
+In addition to scalability and continual learning, several works have focused on improving the efficiency and effectiveness of generative retrieval. For instance, the Neural Corpus Indexer (NCI) \[[2](http://arxiv.org/abs/2206.02743)\] introduces a prefix-aware decoder to enhance recall performance, while the Auto Search Indexer (ASI) \[[17](http://arxiv.org/abs/2310.12455)\] proposes a fully end-to-end retrieval paradigm that automatically learns optimal docids for both existing and new documents. These approaches highlight the ongoing efforts to bridge the gap between traditional retrieval methods and the flexibility of generative models.
+
+In summary, while GR has shown promising results, several challenges remain, including scalability, continual learning, and docid design. The works reviewed here provide a foundation for addressing these challenges and advancing the field of generative retrieval.
+
+References:
+1. \[[1](http://arxiv.org/abs/2308.14968)\] http://arxiv.org/abs/2308.14968
+2. \[[2](http://arxiv.org/abs/2206.02743)\] http://arxiv.org/abs/2206.02743
+3. \[[3](http://arxiv.org/abs/2202.06991)\] http://arxiv.org/abs/2202.06991
+4. \[[4](http://arxiv.org/abs/2206.10128)\] http://arxiv.org/abs/2206.10128
+5. \[[5](http://arxiv.org/abs/2304.04171)\] http://arxiv.org/abs/2304.04171
+6. \[[6](http://arxiv.org/abs/2305.11841)\] http://arxiv.org/abs/2305.11841
+7. \[[7](http://arxiv.org/abs/2311.09134)\] http://arxiv.org/abs/2311.09134
+8. \[[8](http://arxiv.org/abs/2208.07652)\] http://arxiv.org/abs/2208.07652
+9. \[[9](http://arxiv.org/abs/2204.10628)\] http://arxiv.org/abs/2204.10628
+10. \[[10](http://arxiv.org/abs/2208.09257)\] http://arxiv.org/abs/2208.09257
+11. \[[11](http://arxiv.org/abs/2212.09744)\] http://arxiv.org/abs/2212.09744
+12. \[[12](https://www.semanticscholar.org/paper/6682a3679a17d090830635f1c420126d20eae54a)\] https://www.semanticscholar.org/paper/6682a3679a17d090830635f1c420126d20eae54a
+13. \[[13](http://arxiv.org/abs/2305.15115)\] http://arxiv.org/abs/2305.15115
+14. \[[14](http://arxiv.org/abs/2204.05511)\] http://arxiv.org/abs/2204.05511
+15. \[[15](http://arxiv.org/abs/2304.14856)\] http://arxiv.org/abs/2304.14856
+16. \[[16](http://arxiv.org/abs/2306.15222)\] http://arxiv.org/abs/2306.15222
+17. \[[17](http://arxiv.org/abs/2310.12455)\] http://arxiv.org/abs/2310.12455

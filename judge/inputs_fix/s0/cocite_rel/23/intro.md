@@ -1,0 +1,30 @@
+## Related Works
+
+Sensor calibration is a fundamental step in multi-sensor fusion for autonomous driving systems, ensuring accurate alignment between heterogeneous sensors such as radar and camera \[[1](http://arxiv.org/abs/2103.07505)\]. Early approaches for radar-camera calibration often relied on dedicated calibration targets, which limited their applicability in dynamic environments \[[2](http://arxiv.org/abs/1904.08743)\]. More recent methods have sought to automate this process without requiring external targets, leveraging data-driven techniques and deep learning \[[3](https://www.semanticscholar.org/paper/4d4dbbcf27d991aeab43dafb82a105bb5512b799)\]. For example, \[[4](https://www.semanticscholar.org/paper/fa7f4199640500d48c0671181ea6a8dce3141123)\] proposed a targetless method for rotational radar-camera calibration using a coarse and fine convolutional neural network, demonstrating robustness in real-world conditions. Similarly, \[[5](https://www.semanticscholar.org/paper/0955326c67a947b5fac5fbae7238d04fc9adc251)\] introduced a novel calibration tool that supports joint calibration of radar, camera, and lidar, enabling simultaneous optimization across multiple sensor pairs.
+
+The challenge of sparse radar data and height uncertainty has motivated the development of advanced calibration strategies. \[[6](https://www.semanticscholar.org/paper/c80265fa719eb85c8a56a6b36c74b99b793f39b2)\] addressed this by introducing a dual-perspective representation that combines frontal and bird's-eye views, leveraging the rich height information from the frontal view while using the robust features of the bird's-eye view to mitigate height uncertainty. This approach aligns with the proposed Dual-Perspective representation in this work, which aims to reduce the impact of height uncertainty during automatic calibration \[[7](http://arxiv.org/abs/2011.04841)\]. Furthermore, \[[8](http://arxiv.org/abs/2210.09267)\] proposed a multi-modal cross-attention mechanism to find location correspondences between radar and camera data, a concept that is also utilized in the Selective Fusion Mechanism of this paper \[[9](http://arxiv.org/abs/2008.05711)\].
+
+To enhance the robustness of the calibration process against data sparsity and height uncertainty, \[[10](https://www.semanticscholar.org/paper/0e88fc24ae7694d0b1a2fe78322936fc568bc7d2)\] introduced a noise-resistant matcher during training, improving supervision and matching reliability. This aligns with the Noise-Resistant Matcher designed in this work to enhance the robustness of the matching mechanism \[[11](https://www.semanticscholar.org/paper/2726fb04936e6c668dff18b2117e92e34c826698)\]. Additionally, \[[12](http://arxiv.org/abs/2209.06535)\] proposed a method for automatic targetless calibration of multiple 3D LiDAR and radar sensors, demonstrating the feasibility of calibration without requiring overlapping fields of view \[[13](http://arxiv.org/abs/2103.07825)\].
+
+In the context of sensor fusion, \[[14](http://arxiv.org/abs/2204.13483)\] explored the use of deep learning for radar perception, highlighting the importance of accurate calibration for reliable fusion. The proposed method in this paper, which combines a Dual-Perspective representation with a Selective Fusion Mechanism, directly addresses the challenges of radar-camera calibration by leveraging both spatial and contextual information \[[15](https://www.semanticscholar.org/paper/0bfee9229bd3166a0d1bf4730c9a1ef26720b8d0)\]. The effectiveness of the proposed method is validated on the nuScenes dataset, where it outperforms existing radar-camera auto-calibration methods and state-of-the-art LiDAR-camera calibration techniques \[[16](https://www.semanticscholar.org/paper/0681cea243e4fb4d5ba9d8d08bec107615714bb4)\].
+
+In summary, the related works highlight the ongoing efforts to improve the accuracy and robustness of radar-camera calibration, with this paper contributing a novel online automatic geometric calibration method that addresses the challenges of data sparsity and height uncertainty \[[17](http://arxiv.org/abs/2009.08428)\].
+
+References:  
+\[[1](http://arxiv.org/abs/2103.07505)\] http://arxiv.org/abs/2103.07505  
+\[[2](http://arxiv.org/abs/1904.08743)\] http://arxiv.org/abs/1904.08743  
+\[[3](https://www.semanticscholar.org/paper/4d4dbbcf27d991aeab43dafb82a105bb5512b799)\] https://www.semanticscholar.org/paper/4d4dbbcf27d991aeab43dafb82a105bb5512b799  
+\[[4](https://www.semanticscholar.org/paper/fa7f4199640500d48c0671181ea6a8dce3141123)\] https://www.semanticscholar.org/paper/fa7f4199640500d48c0671181ea6a8dce3141123  
+\[[5](https://www.semanticscholar.org/paper/0955326c67a947b5fac5fbae7238d04fc9adc251)\] https://www.semanticscholar.org/paper/0955326c67a947b5fac5fbae7238d04fc9adc251  
+\[[6](https://www.semanticscholar.org/paper/c80265fa719eb85c8a56a6b36c74b99b793f39b2)\] https://www.semanticscholar.org/paper/c80265fa719eb85c8a56a6b36c74b99b793f39b2  
+\[[7](http://arxiv.org/abs/2011.04841)\] http://arxiv.org/abs/2011.04841  
+\[[8](http://arxiv.org/abs/2210.09267)\] http://arxiv.org/abs/2210.09267  
+\[[9](http://arxiv.org/abs/2008.05711)\] http://arxiv.org/abs/2008.05711  
+\[[10](https://www.semanticscholar.org/paper/0e88fc24ae7694d0b1a2fe78322936fc568bc7d2)\] https://www.semanticscholar.org/paper/0e88fc24ae7694d0b1a2fe78322936fc568bc7d2  
+\[[11](https://www.semanticscholar.org/paper/2726fb04936e6c668dff18b2117e92e34c826698)\] https://www.semanticscholar.org/paper/2726fb04936e6c668dff18b2117e92e34c826698  
+\[[12](http://arxiv.org/abs/2209.06535)\] http://arxiv.org/abs/2209.06535  
+\[[13](http://arxiv.org/abs/2103.07825)\] http://arxiv.org/abs/2103.07825  
+\[[14](http://arxiv.org/abs/2204.13483)\] http://arxiv.org/abs/2204.13483  
+\[[15](https://www.semanticscholar.org/paper/0bfee9229bd3166a0d1bf4730c9a1ef26720b8d0)\] https://www.semanticscholar.org/paper/0bfee9229bd3166a0d1bf4730c9a1ef26720b8d0  
+\[[16](https://www.semanticscholar.org/paper/0681cea243e4fb4d5ba9d8d08bec107615714bb4)\] https://www.semanticscholar.org/paper/0681cea243e4fb4d5ba9d8d08bec107615714bb4  
+\[[17](http://arxiv.org/abs/2009.08428)\] http://arxiv.org/abs/2009.08428

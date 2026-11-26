@@ -1,0 +1,263 @@
+id,title,url,snippet
+2403.03900,"Mamba4Rec: Towards Efficient Sequential Recommendation with Selective
+  State Space Models",http://arxiv.org/abs/2403.03900,"Sequential recommendation aims to estimate the dynamic user preferences and
+sequential dependencies among historical user behaviors. Although
+Transformer-based models have proven to be effective for sequential
+recommendation, they suffer from the inference inefficiency problem stemming
+from the quadratic computational complexity of attention operators, especially
+for long behavior sequences. Inspired by the recent success of state space
+models (SSMs), we propose Mamba4Rec, which is the first work to explore the
+potential of selective SSMs for efficient sequential recommendation. Built upon
+the basic Mamba block which is a selective SSM with an efficient hardware-aware
+parallel algorithm, we design a series of sequential modeling techniques to
+further promote model performance while maintaining inference efficiency.
+Through experiments on public datasets, we demonstrate how Mamba4Rec
+effectively tackles the effectiveness-efficiency dilemma, outperforming both
+RNN- and attention-based baselines in terms of both effectiveness and
+efficiency. The code is available at https://github.com/chengkai-liu/Mamba4Rec."
+1808.09781,Self-Attentive Sequential Recommendation,http://arxiv.org/abs/1808.09781,"Sequential dynamics are a key feature of many modern recommender systems,
+which seek to capture the `context' of users' activities on the basis of
+actions they have performed recently. To capture such patterns, two approaches
+have proliferated: Markov Chains (MCs) and Recurrent Neural Networks (RNNs).
+Markov Chains assume that a user's next action can be predicted on the basis of
+just their last (or last few) actions, while RNNs in principle allow for
+longer-term semantics to be uncovered. Generally speaking, MC-based methods
+perform best in extremely sparse datasets, where model parsimony is critical,
+while RNNs perform better in denser datasets where higher model complexity is
+affordable. The goal of our work is to balance these two goals, by proposing a
+self-attention based sequential model (SASRec) that allows us to capture
+long-term semantics (like an RNN), but, using an attention mechanism, makes its
+predictions based on relatively few actions (like an MC). At each time step,
+SASRec seeks to identify which items are `relevant' from a user's action
+history, and use them to predict the next item. Extensive empirical studies
+show that our method outperforms various state-of-the-art sequential models
+(including MC/CNN/RNN-based approaches) on both sparse and dense datasets.
+Moreover, the model is an order of magnitude more efficient than comparable
+CNN/RNN-based models. Visualizations on attention weights also show how our
+model adaptively handles datasets with various density, and uncovers meaningful
+patterns in activity sequences."
+1904.06690,"BERT4Rec: Sequential Recommendation with Bidirectional Encoder
+  Representations from Transformer",http://arxiv.org/abs/1904.06690,"Modeling users' dynamic and evolving preferences from their historical
+behaviors is challenging and crucial for recommendation systems. Previous
+methods employ sequential neural networks (e.g., Recurrent Neural Network) to
+encode users' historical interactions from left to right into hidden
+representations for making recommendations. Although these methods achieve
+satisfactory results, they often assume a rigidly ordered sequence which is not
+always practical. We argue that such left-to-right unidirectional architectures
+restrict the power of the historical sequence representations. For this
+purpose, we introduce a Bidirectional Encoder Representations from Transformers
+for sequential Recommendation (BERT4Rec). However, jointly conditioning on both
+left and right context in deep bidirectional model would make the training
+become trivial since each item can indirectly ""see the target item"". To address
+this problem, we train the bidirectional model using the Cloze task, predicting
+the masked items in the sequence by jointly conditioning on their left and
+right context. Comparing with predicting the next item at each position in a
+sequence, the Cloze task can produce more samples to train a more powerful
+bidirectional model. Extensive experiments on four benchmark datasets show that
+our model outperforms various state-of-the-art sequential models consistently."
+2405.16542,Mamba4KT:An Efficient and Effective Mamba-based Knowledge Tracing Model,http://arxiv.org/abs/2405.16542,"Knowledge tracing (KT) enhances student learning by leveraging past
+performance to predict future performance. Current research utilizes models
+based on attention mechanisms and recurrent neural network structures to
+capture long-term dependencies and correlations between exercises, aiming to
+improve model accuracy. Due to the growing amount of data in smart education
+scenarios, this poses a challenge in terms of time and space consumption for
+knowledge tracing models. However, existing research often overlooks the
+efficiency of model training and inference and the constraints of training
+resources. Recognizing the significance of prioritizing model efficiency and
+resource usage in knowledge tracing, we introduce Mamba4KT. This novel model is
+the first to explore enhanced efficiency and resource utilization in knowledge
+tracing. We also examine the interpretability of the Mamba structure both
+sequence-level and exercise-level to enhance model interpretability.
+Experimental findings across three public datasets demonstrate that Mamba4KT
+achieves comparable prediction accuracy to state-of-the-art models while
+significantly improving training and inference efficiency and resource
+utilization. As educational data continues to grow, our work suggests a
+promising research direction for knowledge tracing that improves model
+prediction accuracy, model efficiency, resource utilization, and
+interpretability simultaneously."
+2403.16371,"Uncovering Selective State Space Model's Capabilities in Lifelong
+  Sequential Recommendation",http://arxiv.org/abs/2403.16371,"Sequential Recommenders have been widely applied in various online services,
+aiming to model users' dynamic interests from their sequential interactions.
+With users increasingly engaging with online platforms, vast amounts of
+lifelong user behavioral sequences have been generated. However, existing
+sequential recommender models often struggle to handle such lifelong sequences.
+The primary challenges stem from computational complexity and the ability to
+capture long-range dependencies within the sequence. Recently, a state space
+model featuring a selective mechanism (i.e., Mamba) has emerged. In this work,
+we investigate the performance of Mamba for lifelong sequential recommendation
+(i.e., length>=2k). More specifically, we leverage the Mamba block to model
+lifelong user sequences selectively. We conduct extensive experiments to
+evaluate the performance of representative sequential recommendation models in
+the setting of lifelong sequences. Experiments on two real-world datasets
+demonstrate the superiority of Mamba. We found that RecMamba achieves
+performance comparable to the representative model while significantly reducing
+training duration by approximately 70% and memory costs by 80%. Codes and data
+are available at \url(https://github.com/nancheng58/RecMamba)."
+1706.04148,"Personalizing Session-based Recommendations with Hierarchical Recurrent
+  Neural Networks",http://arxiv.org/abs/1706.04148,"Session-based recommendations are highly relevant in many modern on-line
+services (e.g. e-commerce, video streaming) and recommendation settings.
+Recently, Recurrent Neural Networks have been shown to perform very well in
+session-based settings. While in many session-based recommendation domains user
+identifiers are hard to come by, there are also domains in which user profiles
+are readily available. We propose a seamless way to personalize RNN models with
+cross-session information transfer and devise a Hierarchical RNN model that
+relays end evolves latent hidden states of the RNNs across user sessions.
+Results on two industry datasets show large improvements over the session-only
+RNNs."
+2102.09269,Dynamic Memory based Attention Network for Sequential Recommendation,http://arxiv.org/abs/2102.09269,"Sequential recommendation has become increasingly essential in various online
+services. It aims to model the dynamic preferences of users from their
+historical interactions and predict their next items. The accumulated user
+behavior records on real systems could be very long. This rich data brings
+opportunities to track actual interests of users. Prior efforts mainly focus on
+making recommendations based on relatively recent behaviors. However, the
+overall sequential data may not be effectively utilized, as early interactions
+might affect users' current choices. Also, it has become intolerable to scan
+the entire behavior sequence when performing inference for each user, since
+real-world system requires short response time. To bridge the gap, we propose a
+novel long sequential recommendation model, called Dynamic Memory-based
+Attention Network (DMAN). It segments the overall long behavior sequence into a
+series of sub-sequences, then trains the model and maintains a set of memory
+blocks to preserve long-term interests of users. To improve memory fidelity,
+DMAN dynamically abstracts each user's long-term interest into its own memory
+blocks by minimizing an auxiliary reconstruction loss. Based on the dynamic
+memory, the user's short-term and long-term interests can be explicitly
+extracted and combined for efficient joint recommendation. Empirical results
+over four benchmark datasets demonstrate the superiority of our model in
+capturing long-term dependency over various state-of-the-art sequential models."
+2304.09184,"Frequency Enhanced Hybrid Attention Network for Sequential
+  Recommendation",http://arxiv.org/abs/2304.09184,"The self-attention mechanism, which equips with a strong capability of
+modeling long-range dependencies, is one of the extensively used techniques in
+the sequential recommendation field. However, many recent studies represent
+that current self-attention based models are low-pass filters and are
+inadequate to capture high-frequency information. Furthermore, since the items
+in the user behaviors are intertwined with each other, these models are
+incomplete to distinguish the inherent periodicity obscured in the time domain.
+In this work, we shift the perspective to the frequency domain, and propose a
+novel Frequency Enhanced Hybrid Attention Network for Sequential
+Recommendation, namely FEARec. In this model, we firstly improve the original
+time domain self-attention in the frequency domain with a ramp structure to
+make both low-frequency and high-frequency information could be explicitly
+learned in our approach. Moreover, we additionally design a similar attention
+mechanism via auto-correlation in the frequency domain to capture the periodic
+characteristics and fuse the time and frequency level attention in a union
+model. Finally, both contrastive learning and frequency regularization are
+utilized to ensure that multiple views are aligned in both the time domain and
+frequency domain. Extensive experiments conducted on four widely used benchmark
+datasets demonstrate that the proposed model performs significantly better than
+the state-of-the-art approaches."
+2411.01537,"LinRec: Linear Attention Mechanism for Long-term Sequential Recommender
+  Systems",http://arxiv.org/abs/2411.01537,"Transformer models have achieved remarkable success in sequential recommender
+systems (SRSs). However, computing the attention matrix in traditional
+dot-product attention mechanisms results in a quadratic complexity with
+sequence lengths, leading to high computational costs for long-term sequential
+recommendation. Motivated by the above observation, we propose a novel
+L2-Normalized Linear Attention for the Transformer-based Sequential Recommender
+Systems (LinRec), which theoretically improves efficiency while preserving the
+learning capabilities of the traditional dot-product attention. Specifically,
+by thoroughly examining the equivalence conditions of efficient attention
+mechanisms, we show that LinRec possesses linear complexity while preserving
+the property of attention mechanisms. In addition, we reveal its latent
+efficiency properties by interpreting the proposed LinRec mechanism through a
+statistical lens. Extensive experiments are conducted based on two public
+benchmark datasets, demonstrating that the combination of LinRec and
+Transformer models achieves comparable or even superior performance than
+state-of-the-art Transformer-based SRS models while significantly improving
+time and memory efficiency."
+1511.06939,Session-based Recommendations with Recurrent Neural Networks,http://arxiv.org/abs/1511.06939,"We apply recurrent neural networks (RNN) on a new domain, namely recommender
+systems. Real-life recommender systems often face the problem of having to base
+recommendations only on short session-based data (e.g. a small sportsware
+website) instead of long user histories (as in the case of Netflix). In this
+situation the frequently praised matrix factorization approaches are not
+accurate. This problem is usually overcome in practice by resorting to
+item-to-item recommendations, i.e. recommending similar items. We argue that by
+modeling the whole session, more accurate recommendations can be provided. We
+therefore propose an RNN-based approach for session-based recommendations. Our
+approach also considers practical aspects of the task and introduces several
+modifications to classic RNNs such as a ranking loss function that make it more
+viable for this specific problem. Experimental results on two data-sets show
+marked improvements over widely used approaches."
+2312.00752,Mamba: Linear-Time Sequence Modeling with Selective State Spaces,http://arxiv.org/abs/2312.00752,"Foundation models, now powering most of the exciting applications in deep
+learning, are almost universally based on the Transformer architecture and its
+core attention module. Many subquadratic-time architectures such as linear
+attention, gated convolution and recurrent models, and structured state space
+models (SSMs) have been developed to address Transformers' computational
+inefficiency on long sequences, but they have not performed as well as
+attention on important modalities such as language. We identify that a key
+weakness of such models is their inability to perform content-based reasoning,
+and make several improvements. First, simply letting the SSM parameters be
+functions of the input addresses their weakness with discrete modalities,
+allowing the model to selectively propagate or forget information along the
+sequence length dimension depending on the current token. Second, even though
+this change prevents the use of efficient convolutions, we design a
+hardware-aware parallel algorithm in recurrent mode. We integrate these
+selective SSMs into a simplified end-to-end neural network architecture without
+attention or even MLP blocks (Mamba). Mamba enjoys fast inference (5$\times$
+higher throughput than Transformers) and linear scaling in sequence length, and
+its performance improves on real data up to million-length sequences. As a
+general sequence model backbone, Mamba achieves state-of-the-art performance
+across several modalities such as language, audio, and genomics. On language
+modeling, our Mamba-3B model outperforms Transformers of the same size and
+matches Transformers twice its size, both in pretraining and downstream
+evaluation."
+2408.01129,A Survey of Mamba,http://arxiv.org/abs/2408.01129,"As one of the most representative DL techniques, Transformer architecture has
+empowered numerous advanced models, especially the large language models (LLMs)
+that comprise billions of parameters, becoming a cornerstone in deep learning.
+Despite the impressive achievements, Transformers still face inherent
+limitations, particularly the time-consuming inference resulting from the
+quadratic computation complexity of attention calculation. Recently, a novel
+architecture named Mamba, drawing inspiration from classical state space models
+(SSMs), has emerged as a promising alternative for building foundation models,
+delivering comparable modeling abilities to Transformers while preserving
+near-linear scalability concerning sequence length. This has sparked an
+increasing number of studies actively exploring Mamba's potential to achieve
+impressive performance across diverse domains. Given such rapid evolution,
+there is a critical need for a systematic review that consolidates existing
+Mamba-empowered models, offering a comprehensive understanding of this emerging
+model architecture. In this survey, we therefore conduct an in-depth
+investigation of recent Mamba-associated studies, covering three main aspects:
+the advancements of Mamba-based models, the techniques of adapting Mamba to
+diverse data, and the applications where Mamba can excel. Specifically, we
+first review the foundational knowledge of various representative deep learning
+models and the details of Mamba-1&2 as preliminaries. Then, to showcase the
+significance of Mamba for AI, we comprehensively review the related studies
+focusing on Mamba models' architecture design, data adaptability, and
+applications. Finally, we present a discussion of current limitations and
+explore various promising research directions to provide deeper insights for
+future investigations."
+2405.21060,"Transformers are SSMs: Generalized Models and Efficient Algorithms
+  Through Structured State Space Duality",http://arxiv.org/abs/2405.21060,"While Transformers have been the main architecture behind deep learning's
+success in language modeling, state-space models (SSMs) such as Mamba have
+recently been shown to match or outperform Transformers at small to medium
+scale. We show that these families of models are actually quite closely
+related, and develop a rich framework of theoretical connections between SSMs
+and variants of attention, connected through various decompositions of a
+well-studied class of structured semiseparable matrices. Our state space
+duality (SSD) framework allows us to design a new architecture (Mamba-2) whose
+core layer is an a refinement of Mamba's selective SSM that is 2-8X faster,
+while continuing to be competitive with Transformers on language modeling."
+2406.02638,"EchoMamba4Rec: Harmonizing Bidirectional State Space Models with
+  Spectral Filtering for Advanced Sequential Recommendation",http://arxiv.org/abs/2406.02638,"Predicting user preferences and sequential dependencies based on historical
+behavior is the core goal of sequential recommendation. Although
+attention-based models have shown effectiveness in this field, they often
+struggle with inference inefficiency due to the quadratic computational
+complexity inherent in attention mechanisms, especially with long-range
+behavior sequences. Drawing inspiration from the recent advancements of state
+space models (SSMs) in control theory, which provide a robust framework for
+modeling and controlling dynamic systems, we introduce EchoMamba4Rec. Control
+theory emphasizes the use of SSMs for managing long-range dependencies and
+maintaining inferential efficiency through structured state matrices.
+EchoMamba4Rec leverages these control relationships in sequential
+recommendation and integrates bi-directional processing with frequency-domain
+filtering to capture complex patterns and dependencies in user interaction data
+more effectively. Our model benefits from the ability of state space models
+(SSMs) to learn and perform parallel computations, significantly enhancing
+computational efficiency and scalability. It features a bi-directional Mamba
+module that incorporates both forward and reverse Mamba components, leveraging
+information from both past and future interactions. Additionally, a filter
+layer operates in the frequency domain using learnable Fast Fourier Transform
+(FFT) and learnable filters, followed by an inverse FFT to refine item
+embeddings and reduce noise. We also integrate Gate Linear Units (GLU) to
+dynamically control information flow, enhancing the model's expressiveness and
+training stability. Experimental results demonstrate that EchoMamba
+significantly outperforms existing models, providing more accurate and
+personalized recommendations."

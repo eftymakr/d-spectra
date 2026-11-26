@@ -1,0 +1,26 @@
+## Related Works
+
+Cross-domain Sequential Recommendation (CDSR) has gained significant attention in recent years due to its ability to alleviate data sparsity and cold-start problems by leveraging user behavior across multiple domains \[[1](http://arxiv.org/abs/2304.03891)\]. Traditional approaches often rely on single-domain user preferences and then attempt to transfer knowledge to the target domain \[[2](http://arxiv.org/abs/2106.02768)\]. However, these methods typically ignore inter-sequence item relationships and suffer from the overlap dilemma, where they heavily depend on users with interactions across all domains, limiting their practicality \[[3](http://arxiv.org/abs/2105.03300)\]. Moreover, modeling complex transition patterns from mixed behavior sequences remains a challenge \[[4](http://arxiv.org/abs/2305.19860)\].
+
+Several studies have explored the use of graph neural networks (GNNs) and attention mechanisms to better capture cross-domain interactions. For instance, DA-GCN introduces a domain-aware graph convolution network to learn user-specific node representations and incorporates attention mechanisms to guide message passing \[[5](http://arxiv.org/abs/2012.00485)\]. Similarly, C2DSR proposes a framework that simultaneously leverages intra- and inter-sequence item relationships to capture both single- and cross-domain user preferences \[[6](http://arxiv.org/abs/2103.01696)\]. The model employs a graph neural network to mine inter-sequence collaborative relationships and a sequential attentive encoder to capture intra-sequence patterns \[[6](http://arxiv.org/abs/2103.01696)\]. Additionally, the paper introduces a contrastive cross-domain infomax objective to enhance the correlation between single- and cross-domain user representations \[[6](http://arxiv.org/abs/2103.01696)\].
+
+Other approaches focus on dual learning mechanisms to improve cross-domain recommendations. DASL, for example, introduces a dual learning framework that iteratively transfers information between two domains until the learning process stabilizes \[[7](http://arxiv.org/abs/2304.05027)\]. The model uses dual embeddings and dual attention mechanisms to jointly learn user preferences in both domains \[[7](http://arxiv.org/abs/2304.05027)\]. This approach has shown significant improvements in click-through rate prediction performance on real-world datasets \[[7](http://arxiv.org/abs/2304.05027)\].
+
+In the context of shared-account cross-domain sequential recommendations, π-Net and PSJNet have been proposed to address the challenges of identifying user roles and cross-domain behavior \[[8](https://www.semanticscholar.org/paper/96bfe33a2503e960153a934e10be91da4d8b13a6)\]\[[9](http://arxiv.org/abs/1804.06769)\]. π-Net employs a shared account filter unit and a cross-domain transfer unit to generate recommendations for two domains simultaneously \[[8](https://www.semanticscholar.org/paper/96bfe33a2503e960153a934e10be91da4d8b13a6)\]. PSJNet, on the other hand, uses a parallel split-join architecture to handle shared account and cross-domain settings \[[9](http://arxiv.org/abs/1804.06769)\]. Both models have demonstrated superior performance in terms of MRR and Recall \[[8](https://www.semanticscholar.org/paper/96bfe33a2503e960153a934e10be91da4d8b13a6)\]\[[9](http://arxiv.org/abs/1804.06769)\].
+
+Recent work has also explored the use of large language models (LLMs) to enhance cross-domain sequential recommendations. BERT4Rec, for instance, employs a bidirectional encoder to model user behavior sequences, allowing for more accurate predictions by capturing both left and right context \[[10](http://arxiv.org/abs/2311.04590)\]. This approach has shown consistent improvements over existing sequential models \[[10](http://arxiv.org/abs/2311.04590)\]. Additionally, UniSRec proposes a universal sequence representation learning method that leverages item descriptions to learn transferable representations across different recommendation scenarios \[[11](https://www.semanticscholar.org/paper/d1c7b8be5f3849a3fd4af780b58eb28355641206)\].
+
+In summary, while existing methods have made progress in CDSR, challenges such as the overlap dilemma and transition complexity remain. Recent approaches have explored graph-based models, dual learning, and LLMs to address these issues, paving the way for more effective cross-domain sequential recommendation systems.
+
+References:
+1. \[[1](http://arxiv.org/abs/2304.03891)\] http://arxiv.org/abs/2103.01696
+2. \[[2](http://arxiv.org/abs/2106.02768)\] http://arxiv.org/abs/2105.03300
+3. \[[3](http://arxiv.org/abs/2105.03300)\] http://arxiv.org/abs/2304.03891
+4. \[[4](http://arxiv.org/abs/2305.19860)\] http://arxiv.org/abs/2012.00485
+5. \[[5](http://arxiv.org/abs/2012.00485)\] http://arxiv.org/abs/2105.03300
+6. \[[6](http://arxiv.org/abs/2103.01696)\] http://arxiv.org/abs/2304.03891
+7. \[[7](http://arxiv.org/abs/2304.05027)\] http://arxiv.org/abs/2106.02768
+8. \[[8](https://www.semanticscholar.org/paper/96bfe33a2503e960153a934e10be91da4d8b13a6)\] http://arxiv.org/abs/2206.08088
+9. \[[9](http://arxiv.org/abs/1804.06769)\] http://arxiv.org/abs/1910.02448
+10. \[[10](http://arxiv.org/abs/2311.04590)\] http://arxiv.org/abs/1904.06690
+11. \[[11](https://www.semanticscholar.org/paper/d1c7b8be5f3849a3fd4af780b58eb28355641206)\] http://arxiv.org/abs/2206.05941

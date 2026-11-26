@@ -1,0 +1,380 @@
+id,title,url,snippet
+1508.03422,"Cost Sensitive Learning of Deep Feature Representations from Imbalanced
+  Data",http://arxiv.org/abs/1508.03422,"Class imbalance is a common problem in the case of real-world object
+detection and classification tasks. Data of some classes is abundant making
+them an over-represented majority, and data of other classes is scarce, making
+them an under-represented minority. This imbalance makes it challenging for a
+classifier to appropriately learn the discriminating boundaries of the majority
+and minority classes. In this work, we propose a cost sensitive deep neural
+network which can automatically learn robust feature representations for both
+the majority and minority classes. During training, our learning procedure
+jointly optimizes the class dependent costs and the neural network parameters.
+The proposed approach is applicable to both binary and multi-class problems
+without any modification. Moreover, as opposed to data level approaches, we do
+not alter the original data distribution which results in a lower computational
+cost during the training process. We report the results of our experiments on
+six major image classification datasets and show that the proposed approach
+significantly outperforms the baseline algorithms. Comparisons with popular
+data sampling techniques and cost sensitive classifiers demonstrate the
+superior performance of our proposed method."
+2306.15925,Subclass-balancing Contrastive Learning for Long-tailed Recognition,http://arxiv.org/abs/2306.15925,"Long-tailed recognition with imbalanced class distribution naturally emerges
+in practical machine learning applications. Existing methods such as data
+reweighing, resampling, and supervised contrastive learning enforce the class
+balance with a price of introducing imbalance between instances of head class
+and tail class, which may ignore the underlying rich semantic substructures of
+the former and exaggerate the biases in the latter. We overcome these drawbacks
+by a novel ``subclass-balancing contrastive learning (SBCL)'' approach that
+clusters each head class into multiple subclasses of similar sizes as the tail
+classes and enforce representations to capture the two-layer class hierarchy
+between the original classes and their subclasses. Since the clustering is
+conducted in the representation space and updated during the course of
+training, the subclass labels preserve the semantic substructures of head
+classes. Meanwhile, it does not overemphasize tail class samples, so each
+individual instance contribute to the representation learning equally. Hence,
+our method achieves both the instance- and subclass-balance, while the original
+class labels are also learned through contrastive learning among subclasses
+from different classes. We evaluate SBCL over a list of long-tailed benchmark
+datasets and it achieves the state-of-the-art performance. In addition, we
+present extensive analyses and ablation studies of SBCL to verify its
+advantages."
+2002.05709,A Simple Framework for Contrastive Learning of Visual Representations,http://arxiv.org/abs/2002.05709,"This paper presents SimCLR: a simple framework for contrastive learning of
+visual representations. We simplify recently proposed contrastive
+self-supervised learning algorithms without requiring specialized architectures
+or a memory bank. In order to understand what enables the contrastive
+prediction tasks to learn useful representations, we systematically study the
+major components of our framework. We show that (1) composition of data
+augmentations plays a critical role in defining effective predictive tasks, (2)
+introducing a learnable nonlinear transformation between the representation and
+the contrastive loss substantially improves the quality of the learned
+representations, and (3) contrastive learning benefits from larger batch sizes
+and more training steps compared to supervised learning. By combining these
+findings, we are able to considerably outperform previous methods for
+self-supervised and semi-supervised learning on ImageNet. A linear classifier
+trained on self-supervised representations learned by SimCLR achieves 76.5%
+top-1 accuracy, which is a 7% relative improvement over previous
+state-of-the-art, matching the performance of a supervised ResNet-50. When
+fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy,
+outperforming AlexNet with 100X fewer labels."
+1911.05722,Momentum Contrast for Unsupervised Visual Representation Learning,http://arxiv.org/abs/1911.05722,"We present Momentum Contrast (MoCo) for unsupervised visual representation
+learning. From a perspective on contrastive learning as dictionary look-up, we
+build a dynamic dictionary with a queue and a moving-averaged encoder. This
+enables building a large and consistent dictionary on-the-fly that facilitates
+contrastive unsupervised learning. MoCo provides competitive results under the
+common linear protocol on ImageNet classification. More importantly, the
+representations learned by MoCo transfer well to downstream tasks. MoCo can
+outperform its supervised pre-training counterpart in 7 detection/segmentation
+tasks on PASCAL VOC, COCO, and other datasets, sometimes surpassing it by large
+margins. This suggests that the gap between unsupervised and supervised
+representation learning has been largely closed in many vision tasks."
+2004.11362,Supervised Contrastive Learning,http://arxiv.org/abs/2004.11362,"Contrastive learning applied to self-supervised representation learning has
+seen a resurgence in recent years, leading to state of the art performance in
+the unsupervised training of deep image models. Modern batch contrastive
+approaches subsume or significantly outperform traditional contrastive losses
+such as triplet, max-margin and the N-pairs loss. In this work, we extend the
+self-supervised batch contrastive approach to the fully-supervised setting,
+allowing us to effectively leverage label information. Clusters of points
+belonging to the same class are pulled together in embedding space, while
+simultaneously pushing apart clusters of samples from different classes. We
+analyze two possible versions of the supervised contrastive (SupCon) loss,
+identifying the best-performing formulation of the loss. On ResNet-200, we
+achieve top-1 accuracy of 81.4% on the ImageNet dataset, which is 0.8% above
+the best number reported for this architecture. We show consistent
+outperformance over cross-entropy on other datasets and two ResNet variants.
+The loss shows benefits for robustness to natural corruptions and is more
+stable to hyperparameter settings such as optimizers and data augmentations.
+Our loss function is simple to implement, and reference TensorFlow code is
+released at https://t.ly/supcon."
+2403.06726,Probabilistic Contrastive Learning for Long-Tailed Visual Recognition,http://arxiv.org/abs/2403.06726,"Long-tailed distributions frequently emerge in real-world data, where a large
+number of minority categories contain a limited number of samples. Such
+imbalance issue considerably impairs the performance of standard supervised
+learning algorithms, which are mainly designed for balanced training sets.
+Recent investigations have revealed that supervised contrastive learning
+exhibits promising potential in alleviating the data imbalance. However, the
+performance of supervised contrastive learning is plagued by an inherent
+challenge: it necessitates sufficiently large batches of training data to
+construct contrastive pairs that cover all categories, yet this requirement is
+difficult to meet in the context of class-imbalanced data. To overcome this
+obstacle, we propose a novel probabilistic contrastive (ProCo) learning
+algorithm that estimates the data distribution of the samples from each class
+in the feature space, and samples contrastive pairs accordingly. In fact,
+estimating the distributions of all classes using features in a small batch,
+particularly for imbalanced data, is not feasible. Our key idea is to introduce
+a reasonable and simple assumption that the normalized features in contrastive
+learning follow a mixture of von Mises-Fisher (vMF) distributions on unit
+space, which brings two-fold benefits. First, the distribution parameters can
+be estimated using only the first sample moment, which can be efficiently
+computed in an online manner across different batches. Second, based on the
+estimated distribution, the vMF distribution allows us to sample an infinite
+number of contrastive pairs and derive a closed form of the expected
+contrastive loss for efficient optimization. Our code is available at
+https://github.com/LeapLabTHU/ProCo."
+1912.02413,"BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed
+  Visual Recognition",http://arxiv.org/abs/1912.02413,"Our work focuses on tackling the challenging but natural visual recognition
+task of long-tailed data distribution (i.e., a few classes occupy most of the
+data, while most classes have rarely few samples). In the literature, class
+re-balancing strategies (e.g., re-weighting and re-sampling) are the prominent
+and effective methods proposed to alleviate the extreme imbalance for dealing
+with long-tailed problems. In this paper, we firstly discover that these
+re-balancing methods achieving satisfactory recognition accuracy owe to that
+they could significantly promote the classifier learning of deep networks.
+However, at the same time, they will unexpectedly damage the representative
+ability of the learned deep features to some extent. Therefore, we propose a
+unified Bilateral-Branch Network (BBN) to take care of both representation
+learning and classifier learning simultaneously, where each branch does perform
+its own duty separately. In particular, our BBN model is further equipped with
+a novel cumulative learning strategy, which is designed to first learn the
+universal patterns and then pay attention to the tail data gradually. Extensive
+experiments on four benchmark datasets, including the large-scale iNaturalist
+ones, justify that the proposed BBN can significantly outperform
+state-of-the-art methods. Furthermore, validation experiments can demonstrate
+both our preliminary discovery and effectiveness of tailored designs in BBN for
+long-tailed problems. Our method won the first place in the iNaturalist 2019
+large scale species classification competition, and our code is open-source and
+available at https://github.com/Megvii-Nanjing/BBN."
+2304.09426,"Decoupled Training for Long-Tailed Classification With Stochastic
+  Representations",http://arxiv.org/abs/2304.09426,"Decoupling representation learning and classifier learning has been shown to
+be effective in classification with long-tailed data. There are two main
+ingredients in constructing a decoupled learning scheme; 1) how to train the
+feature extractor for representation learning so that it provides generalizable
+representations and 2) how to re-train the classifier that constructs proper
+decision boundaries by handling class imbalances in long-tailed data. In this
+work, we first apply Stochastic Weight Averaging (SWA), an optimization
+technique for improving the generalization of deep neural networks, to obtain
+better generalizing feature extractors for long-tailed classification. We then
+propose a novel classifier re-training algorithm based on stochastic
+representation obtained from the SWA-Gaussian, a Gaussian perturbed SWA, and a
+self-distillation strategy that can harness the diverse stochastic
+representations based on uncertainty estimates to build more robust
+classifiers. Extensive experiments on CIFAR10/100-LT, ImageNet-LT, and
+iNaturalist-2018 benchmarks show that our proposed method improves upon
+previous methods both in terms of prediction accuracy and uncertainty
+estimation."
+2007.07314,Long-tail learning via logit adjustment,http://arxiv.org/abs/2007.07314,"Real-world classification problems typically exhibit an imbalanced or
+long-tailed label distribution, wherein many labels are associated with only a
+few samples. This poses a challenge for generalisation on such labels, and also
+makes na\""ive learning biased towards dominant labels. In this paper, we
+present two simple modifications of standard softmax cross-entropy training to
+cope with these challenges. Our techniques revisit the classic idea of logit
+adjustment based on the label frequencies, either applied post-hoc to a trained
+model, or enforced in the loss during training. Such adjustment encourages a
+large relative margin between logits of rare versus dominant labels. These
+techniques unify and generalise several recent proposals in the literature,
+while possessing firmer statistical grounding and empirical performance."
+2207.09052,Balanced Contrastive Learning for Long-Tailed Visual Recognition,http://arxiv.org/abs/2207.09052,"Real-world data typically follow a long-tailed distribution, where a few
+majority categories occupy most of the data while most minority categories
+contain a limited number of samples. Classification models minimizing
+cross-entropy struggle to represent and classify the tail classes. Although the
+problem of learning unbiased classifiers has been well studied, methods for
+representing imbalanced data are under-explored. In this paper, we focus on
+representation learning for imbalanced data. Recently, supervised contrastive
+learning has shown promising performance on balanced data recently. However,
+through our theoretical analysis, we find that for long-tailed data, it fails
+to form a regular simplex which is an ideal geometric configuration for
+representation learning. To correct the optimization behavior of SCL and
+further improve the performance of long-tailed visual recognition, we propose a
+novel loss for balanced contrastive learning (BCL). Compared with SCL, we have
+two improvements in BCL: class-averaging, which balances the gradient
+contribution of negative classes; class-complement, which allows all classes to
+appear in every mini-batch. The proposed balanced contrastive learning (BCL)
+method satisfies the condition of forming a regular simplex and assists the
+optimization of cross-entropy. Equipped with BCL, the proposed two-branch
+framework can obtain a stronger feature representation and achieve competitive
+performance on long-tailed benchmark datasets such as CIFAR-10-LT,
+CIFAR-100-LT, ImageNet-LT, and iNaturalist2018. Our code is available at
+https://github.com/FlamieZhu/BCL ."
+1710.05381,"A systematic study of the class imbalance problem in convolutional
+  neural networks",http://arxiv.org/abs/1710.05381,"In this study, we systematically investigate the impact of class imbalance on
+classification performance of convolutional neural networks (CNNs) and compare
+frequently used methods to address the issue. Class imbalance is a common
+problem that has been comprehensively studied in classical machine learning,
+yet very limited systematic research is available in the context of deep
+learning. In our study, we use three benchmark datasets of increasing
+complexity, MNIST, CIFAR-10 and ImageNet, to investigate the effects of
+imbalance on classification and perform an extensive comparison of several
+methods to address the issue: oversampling, undersampling, two-phase training,
+and thresholding that compensates for prior class probabilities. Our main
+evaluation metric is area under the receiver operating characteristic curve
+(ROC AUC) adjusted to multi-class tasks since overall accuracy metric is
+associated with notable difficulties in the context of imbalanced data. Based
+on results from our experiments we conclude that (i) the effect of class
+imbalance on classification performance is detrimental; (ii) the method of
+addressing class imbalance that emerged as dominant in almost all analyzed
+scenarios was oversampling; (iii) oversampling should be applied to the level
+that completely eliminates the imbalance, whereas the optimal undersampling
+ratio depends on the extent of imbalance; (iv) as opposed to some classical
+machine learning models, oversampling does not cause overfitting of CNNs; (v)
+thresholding should be applied to compensate for prior class probabilities when
+overall number of properly classified cases is of interest."
+2110.04596,Deep Long-Tailed Learning: A Survey,http://arxiv.org/abs/2110.04596,"Deep long-tailed learning, one of the most challenging problems in visual
+recognition, aims to train well-performing deep models from a large number of
+images that follow a long-tailed class distribution. In the last decade, deep
+learning has emerged as a powerful recognition model for learning high-quality
+image representations and has led to remarkable breakthroughs in generic visual
+recognition. However, long-tailed class imbalance, a common problem in
+practical visual recognition tasks, often limits the practicality of deep
+network based recognition models in real-world applications, since they can be
+easily biased towards dominant classes and perform poorly on tail classes. To
+address this problem, a large number of studies have been conducted in recent
+years, making promising progress in the field of deep long-tailed learning.
+Considering the rapid evolution of this field, this paper aims to provide a
+comprehensive survey on recent advances in deep long-tailed learning. To be
+specific, we group existing deep long-tailed learning studies into three main
+categories (i.e., class re-balancing, information augmentation and module
+improvement), and review these methods following this taxonomy in detail.
+Afterward, we empirically analyze several state-of-the-art methods by
+evaluating to what extent they address the issue of class imbalance via a newly
+proposed evaluation metric, i.e., relative accuracy. We conclude the survey by
+highlighting important applications of deep long-tailed learning and
+identifying several promising directions for future research."
+2107.12028,Parametric Contrastive Learning,http://arxiv.org/abs/2107.12028,"In this paper, we propose Parametric Contrastive Learning (PaCo) to tackle
+long-tailed recognition. Based on theoretical analysis, we observe supervised
+contrastive loss tends to bias on high-frequency classes and thus increases the
+difficulty of imbalanced learning. We introduce a set of parametric class-wise
+learnable centers to rebalance from an optimization perspective. Further, we
+analyze our PaCo loss under a balanced setting. Our analysis demonstrates that
+PaCo can adaptively enhance the intensity of pushing samples of the same class
+close as more samples are pulled together with their corresponding centers and
+benefit hard example learning. Experiments on long-tailed CIFAR, ImageNet,
+Places, and iNaturalist 2018 manifest the new state-of-the-art for long-tailed
+recognition. On full ImageNet, models trained with PaCo loss surpass supervised
+contrastive learning across various ResNet backbones, e.g., our ResNet-200
+achieves 81.8% top-1 accuracy. Our code is available at
+https://github.com/dvlab-research/Parametric-Contrastive-Learning."
+2209.12400,Generalized Parametric Contrastive Learning,http://arxiv.org/abs/2209.12400,"In this paper, we propose the Generalized Parametric Contrastive Learning
+(GPaCo/PaCo) which works well on both imbalanced and balanced data. Based on
+theoretical analysis, we observe that supervised contrastive loss tends to bias
+high-frequency classes and thus increases the difficulty of imbalanced
+learning. We introduce a set of parametric class-wise learnable centers to
+rebalance from an optimization perspective. Further, we analyze our GPaCo/PaCo
+loss under a balanced setting. Our analysis demonstrates that GPaCo/PaCo can
+adaptively enhance the intensity of pushing samples of the same class close as
+more samples are pulled together with their corresponding centers and benefit
+hard example learning. Experiments on long-tailed benchmarks manifest the new
+state-of-the-art for long-tailed recognition. On full ImageNet, models from
+CNNs to vision transformers trained with GPaCo loss show better generalization
+performance and stronger robustness compared with MAE models. Moreover, GPaCo
+can be applied to the semantic segmentation task and obvious improvements are
+observed on the 4 most popular benchmarks. Our code is available at
+https://github.com/dvlab-research/Parametric-Contrastive-Learning."
+1901.05555,Class-Balanced Loss Based on Effective Number of Samples,http://arxiv.org/abs/1901.05555,"With the rapid increase of large-scale, real-world datasets, it becomes
+critical to address the problem of long-tailed data distribution (i.e., a few
+classes account for most of the data, while most classes are
+under-represented). Existing solutions typically adopt class re-balancing
+strategies such as re-sampling and re-weighting based on the number of
+observations for each class. In this work, we argue that as the number of
+samples increases, the additional benefit of a newly added data point will
+diminish. We introduce a novel theoretical framework to measure data overlap by
+associating with each sample a small neighboring region rather than a single
+point. The effective number of samples is defined as the volume of samples and
+can be calculated by a simple formula $(1-\beta^(n))/(1-\beta)$, where $n$ is
+the number of samples and $\beta \in [0,1)$ is a hyperparameter. We design a
+re-weighting scheme that uses the effective number of samples for each class to
+re-balance the loss, thereby yielding a class-balanced loss. Comprehensive
+experiments are conducted on artificially induced long-tailed CIFAR datasets
+and large-scale datasets including ImageNet and iNaturalist. Our results show
+that when trained with the proposed class-balanced loss, the network is able to
+achieve significant performance gains on long-tailed datasets."
+2305.01160,"Long-Tailed Recognition by Mutual Information Maximization between
+  Latent Features and Ground-Truth Labels",http://arxiv.org/abs/2305.01160,"Although contrastive learning methods have shown prevailing performance on a
+variety of representation learning tasks, they encounter difficulty when the
+training dataset is long-tailed. Many researchers have combined contrastive
+learning and a logit adjustment technique to address this problem, but the
+combinations are done ad-hoc and a theoretical background has not yet been
+provided. The goal of this paper is to provide the background and further
+improve the performance. First, we show that the fundamental reason contrastive
+learning methods struggle with long-tailed tasks is that they try to maximize
+the mutual information maximization between latent features and input data. As
+ground-truth labels are not considered in the maximization, they are not able
+to address imbalances between class labels. Rather, we interpret the
+long-tailed recognition task as a mutual information maximization between
+latent features and ground-truth labels. This approach integrates contrastive
+learning and logit adjustment seamlessly to derive a loss function that shows
+state-of-the-art performance on long-tailed recognition benchmarks. It also
+demonstrates its efficacy in image segmentation tasks, verifying its
+versatility beyond image classification."
+1910.09217,Decoupling Representation and Classifier for Long-Tailed Recognition,http://arxiv.org/abs/1910.09217,"The long-tail distribution of the visual world poses great challenges for
+deep learning based classification models on how to handle the class imbalance
+problem. Existing solutions usually involve class-balancing strategies, e.g.,
+by loss re-weighting, data re-sampling, or transfer learning from head- to
+tail-classes, but most of them adhere to the scheme of jointly learning
+representations and classifiers. In this work, we decouple the learning
+procedure into representation learning and classification, and systematically
+explore how different balancing strategies affect them for long-tailed
+recognition. The findings are surprising: (1) data imbalance might not be an
+issue in learning high-quality representations; (2) with representations
+learned with the simplest instance-balanced (natural) sampling, it is also
+possible to achieve strong long-tailed recognition ability by adjusting only
+the classifier. We conduct extensive experiments and set new state-of-the-art
+performance on common long-tailed benchmarks like ImageNet-LT, Places-LT and
+iNaturalist, showing that it is possible to outperform carefully designed
+losses, sampling strategies, even complex modules with memory, by using a
+straightforward approach that decouples representation and classification. Our
+code is available at https://github.com/facebookresearch/classifier-balancing."
+2006.07733,Bootstrap your own latent: A new approach to self-supervised Learning,http://arxiv.org/abs/2006.07733,"We introduce Bootstrap Your Own Latent (BYOL), a new approach to
+self-supervised image representation learning. BYOL relies on two neural
+networks, referred to as online and target networks, that interact and learn
+from each other. From an augmented view of an image, we train the online
+network to predict the target network representation of the same image under a
+different augmented view. At the same time, we update the target network with a
+slow-moving average of the online network. While state-of-the art methods rely
+on negative pairs, BYOL achieves a new state of the art without them. BYOL
+reaches $74.3\%$ top-1 classification accuracy on ImageNet using a linear
+evaluation with a ResNet-50 architecture and $79.6\%$ with a larger ResNet. We
+show that BYOL performs on par or better than the current state of the art on
+both transfer and semi-supervised benchmarks. Our implementation and pretrained
+models are given on GitHub."
+2111.13998,Targeted Supervised Contrastive Learning for Long-Tailed Recognition,http://arxiv.org/abs/2111.13998,"Real-world data often exhibits long tail distributions with heavy class
+imbalance, where the majority classes can dominate the training process and
+alter the decision boundaries of the minority classes. Recently, researchers
+have investigated the potential of supervised contrastive learning for
+long-tailed recognition, and demonstrated that it provides a strong performance
+gain. In this paper, we show that while supervised contrastive learning can
+help improve performance, past baselines suffer from poor uniformity brought in
+by imbalanced data distribution. This poor uniformity manifests in samples from
+the minority class having poor separability in the feature space. To address
+this problem, we propose targeted supervised contrastive learning (TSC), which
+improves the uniformity of the feature distribution on the hypersphere. TSC
+first generates a set of targets uniformly distributed on a hypersphere. It
+then makes the features of different classes converge to these distinct and
+uniformly distributed targets during training. This forces all classes,
+including minority classes, to maintain a uniform distribution in the feature
+space, improves class boundaries, and provides better generalization even in
+the presence of long-tail data. Experiments on multiple datasets show that TSC
+achieves state-of-the-art performance on long-tailed recognition tasks."
+2006.09882,"Unsupervised Learning of Visual Features by Contrasting Cluster
+  Assignments",http://arxiv.org/abs/2006.09882,"Unsupervised image representations have significantly reduced the gap with
+supervised pretraining, notably with the recent achievements of contrastive
+learning methods. These contrastive methods typically work online and rely on a
+large number of explicit pairwise feature comparisons, which is computationally
+challenging. In this paper, we propose an online algorithm, SwAV, that takes
+advantage of contrastive methods without requiring to compute pairwise
+comparisons. Specifically, our method simultaneously clusters the data while
+enforcing consistency between cluster assignments produced for different
+augmentations (or views) of the same image, instead of comparing features
+directly as in contrastive learning. Simply put, we use a swapped prediction
+mechanism where we predict the cluster assignment of a view from the
+representation of another view. Our method can be trained with large and small
+batches and can scale to unlimited amounts of data. Compared to previous
+contrastive methods, our method is more memory efficient since it does not
+require a large memory bank or a special momentum network. In addition, we also
+propose a new data augmentation strategy, multi-crop, that uses a mix of views
+with different resolutions in place of two full-resolution views, without
+increasing the memory or compute requirements much. We validate our findings by
+achieving 75.3% top-1 accuracy on ImageNet with ResNet-50, as well as
+surpassing supervised pretraining on all the considered transfer tasks."
+2105.13343,"Drawing Multiple Augmentation Samples Per Image During Training
+  Efficiently Decreases Test Error",http://arxiv.org/abs/2105.13343,"In computer vision, it is standard practice to draw a single sample from the
+data augmentation procedure for each unique image in the mini-batch. However
+recent work has suggested drawing multiple samples can achieve higher test
+accuracies. In this work, we provide a detailed empirical evaluation of how the
+number of augmentation samples per unique image influences model performance on
+held out data when training deep ResNets. We demonstrate drawing multiple
+samples per image consistently enhances the test accuracy achieved for both
+small and large batch training. Crucially, this benefit arises even if
+different numbers of augmentations per image perform the same number of
+parameter updates and gradient evaluations (requiring the same total compute).
+Although prior work has found variance in the gradient estimate arising from
+subsampling the dataset has an implicit regularization benefit, our experiments
+suggest variance which arises from the data augmentation process harms
+generalization. We apply these insights to the highly performant NFNet-F5,
+achieving 86.8$\%$ top-1 w/o extra data on ImageNet."

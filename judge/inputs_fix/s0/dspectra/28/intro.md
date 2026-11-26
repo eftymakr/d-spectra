@@ -1,0 +1,25 @@
+## Related Works
+
+Federated Learning (FL) has emerged as a promising framework for collaborative machine learning while preserving data privacy \[[1](http://arxiv.org/abs/1804.08333)\]. Traditional FL methods, such as Federated Averaging (FedAvg), assume that all clients contribute equally and that their data distributions are similar \[[7](http://arxiv.org/abs/1910.06378)\]. However, in practice, client data is often non-IID (non-independent and identically distributed), leading to suboptimal model performance \[[16](http://arxiv.org/abs/1909.06335)\]. To address this, several works have proposed modifications to FL protocols, such as FedCS \[[1](http://arxiv.org/abs/1804.08333)\], which introduces client selection based on resource constraints, and CFL \[[4](http://arxiv.org/abs/1910.01991)\], which groups clients into clusters to improve model performance by exploiting data similarities. These approaches aim to improve convergence and model accuracy in heterogeneous environments.
+
+Active learning (AL) has also been explored in the federated setting, with the introduction of Federated Active Learning (FAL) \[[17](http://arxiv.org/abs/2202.08922)\]. FAL enables collaborative data selection and model training while maintaining data privacy. However, existing FAL methods often fail to account for the heterogeneity of data distribution across clients and the associated fluctuations in model parameters, which can negatively impact accuracy \[[17](http://arxiv.org/abs/2202.08922)\]. This is a critical limitation, as data heterogeneity is a common challenge in real-world FL scenarios \[[16](http://arxiv.org/abs/1909.06335)\].
+
+To address these limitations, recent works have proposed methods that incorporate techniques for handling non-IID data and improving model calibration. For example, CCVR \[[5](http://arxiv.org/abs/2106.05001)\] introduces a classifier calibration method that improves classification performance by post-calibrating the classifier after federated training. Similarly, SCAFFOLD \[[7](http://arxiv.org/abs/1910.06378)\] introduces a new algorithm that reduces drift between clients by using control variates, leading to faster convergence and better performance in heterogeneous settings. These methods highlight the importance of addressing both data and model heterogeneity in FL.
+
+Another line of research focuses on improving FL personalization by leveraging meta-learning techniques. For instance, \[[6](http://arxiv.org/abs/1909.12488)\] explores the use of Model Agnostic Meta Learning (MAML) to enable personalized model training in FL. This approach allows for better adaptation to individual client data distributions, improving both global and local model performance. Additionally, \[[11](https://www.semanticscholar.org/paper/1ace65d958cd27ae9ad857c49d8caa9aa5740526)\] introduces a robust FL framework that handles noisy and heterogeneous clients by aligning models using public data and applying noise-tolerant loss functions. These methods demonstrate the potential of combining FL with advanced learning techniques to improve robustness and performance.
+
+In the context of semi-supervised learning, \[[3](http://arxiv.org/abs/2006.12097)\] proposes FedMatch, which improves federated semi-supervised learning by introducing an inter-client consistency loss and parameter decomposition. This approach allows for better utilization of partially labeled data, which is common in FL settings. Similarly, \[[19](http://arxiv.org/abs/2011.06393)\] introduces a method that aggregates generic model parameters on the server while maintaining client-specific parameters, enabling more flexible and accurate model training in heterogeneous environments.
+
+In summary, while existing FL and FAL methods have made significant progress, they often fail to address the full spectrum of challenges posed by data and model heterogeneity. The proposed CHASe method aims to bridge this gap by focusing on identifying high-epistemic variation samples and improving model calibration and data selection efficiency \[[17](http://arxiv.org/abs/2202.08922)\]. These advancements are critical for achieving robust and effective federated learning in real-world scenarios.
+
+References:  
+\[[1](http://arxiv.org/abs/1804.08333)\] http://arxiv.org/abs/1804.08333  
+\[[3](http://arxiv.org/abs/2006.12097)\] http://arxiv.org/abs/2006.12097  
+\[[4](http://arxiv.org/abs/1910.01991)\] http://arxiv.org/abs/1910.01991  
+\[[5](http://arxiv.org/abs/2106.05001)\] http://arxiv.org/abs/2106.05001  
+\[[6](http://arxiv.org/abs/1909.12488)\] http://arxiv.org/abs/1909.12488  
+\[[7](http://arxiv.org/abs/1910.06378)\] http://arxiv.org/abs/1910.06378  
+\[[11](https://www.semanticscholar.org/paper/1ace65d958cd27ae9ad857c49d8caa9aa5740526)\] https://www.semanticscholar.org/paper/1ace65d958cd27ae9ad857c49d8caa9aa5740526  
+\[[16](http://arxiv.org/abs/1909.06335)\] http://arxiv.org/abs/1909.06335  
+\[[17](http://arxiv.org/abs/2202.08922)\] http://arxiv.org/abs/2202.08922  
+\[[19](http://arxiv.org/abs/2011.06393)\] http://arxiv.org/abs/2011.06393

@@ -1,0 +1,24 @@
+## Related Works
+
+Large Language Models (LLMs) have been extensively studied for their ability to encode complex behaviors within their activation spaces, including refusal mechanisms. Prior research has explored how LLMs can be fine-tuned to align with specific safety and ethical guidelines, often relying on predefined templates or manual analysis to detect refusal behavior \[[8](http://arxiv.org/abs/2406.11717)\]. However, these approaches are limited by their dependence on model outputs and assumptions about the presence of specific refusal tokens \[[8](http://arxiv.org/abs/2406.11717)\]. 
+
+Recent work has focused on improving the alignment of LLMs with human values through instruction tuning and reinforcement learning. For instance, Toolformer demonstrates that LLMs can be trained to use external tools via simple APIs, achieving competitive performance across a variety of downstream tasks without sacrificing core language modeling abilities \[[3](http://arxiv.org/abs/2302.04761)\]. This aligns with broader efforts to enhance LLMs' ability to perform complex reasoning and task execution, such as Multimodal-CoT, which integrates language and vision modalities to improve reasoning accuracy \[[2](http://arxiv.org/abs/2302.00923)\].
+
+In the context of visual instruction tuning, LLaVA and Improved Baselines with Visual Instruction Tuning have shown that multimodal models can be effectively trained using visual instruction datasets, achieving strong performance on benchmarks such as ScienceQA and A-OKVQA \[[12](http://arxiv.org/abs/2304.08485)\]. These models leverage pre-trained vision and language encoders to generate responses grounded in visual and auditory information, demonstrating the potential of multimodal instruction tuning \[[4](http://arxiv.org/abs/2310.03744)\].
+
+The challenge of identifying and steering refusal behaviors in LLMs has also been addressed through architectural innovations. For example, Flamingo enables few-shot learning by bridging pretrained vision-only and language-only models, allowing models to be rapidly adapted to novel tasks using only a handful of annotated examples \[[13](http://arxiv.org/abs/2204.14198)\]. Similarly, ReAct synergizes reasoning and acting in LLMs by generating both reasoning traces and task-specific actions in an interleaved manner, improving interpretability and trustworthiness \[[14](http://arxiv.org/abs/2210.03629)\].
+
+COSMIC introduces an automated framework for direction selection that identifies viable steering directions and target layers using cosine similarity, independent of model outputs. This approach overcomes limitations of prior methods that rely on predefined refusal templates or manual analysis \[[8](http://arxiv.org/abs/2406.11717)\]. By leveraging cosine similarity, COSMIC achieves steering performance comparable to existing methods without requiring assumptions about the presence of specific refusal tokens \[[8](http://arxiv.org/abs/2406.11717)\]. It reliably identifies refusal directions in adversarial settings and weakly aligned models, demonstrating robustness across a wide range of alignment conditions \[[8](http://arxiv.org/abs/2406.11717)\].
+
+The development of LLMs has also been influenced by foundational work in pre-training methodologies. BERT, for example, introduced a new language representation model based on bidirectional transformers, achieving state-of-the-art results on various natural language processing tasks \[[15](http://arxiv.org/abs/1810.04805)\]. This work laid the groundwork for subsequent advancements in LLMs, including the development of more sophisticated models like LLaMA and LLaMA-Adapter V2, which focus on parameter-efficient adaptation for multi-modal tasks \[[9](http://arxiv.org/abs/2302.13971)\]\[[7](http://arxiv.org/abs/2304.15010)\].
+
+1. \[[2](http://arxiv.org/abs/2302.00923)\] Multimodal Chain-of-Thought Reasoning in Language Models  
+2. \[[3](http://arxiv.org/abs/2302.04761)\] Toolformer: Language Models Can Teach Themselves to Use Tools  
+3. \[[4](http://arxiv.org/abs/2310.03744)\] Improved Baselines with Visual Instruction Tuning  
+4. \[[7](http://arxiv.org/abs/2304.15010)\] LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model  
+5. \[[8](http://arxiv.org/abs/2406.11717)\] Refusal in Language Models Is Mediated by a Single Direction  
+6. \[[9](http://arxiv.org/abs/2302.13971)\] LLaMA: Open and Efficient Foundation Language Models  
+7. \[[12](http://arxiv.org/abs/2304.08485)\] Visual Instruction Tuning  
+8. \[[13](http://arxiv.org/abs/2204.14198)\] Flamingo: a Visual Language Model for Few-Shot Learning  
+9. \[[14](http://arxiv.org/abs/2210.03629)\] ReAct: Synergizing Reasoning and Acting in Language Models  
+10. \[[15](http://arxiv.org/abs/1810.04805)\] BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding

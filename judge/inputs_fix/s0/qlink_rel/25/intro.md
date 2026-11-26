@@ -1,0 +1,22 @@
+## Related Works
+
+The integration of knowledge graphs (KGs) with large language models (LLMs) to enhance reasoning capabilities in claim verification has gained significant attention in recent research. While LLMs have demonstrated strong reasoning abilities, their performance on complex, multi-step reasoning tasks remains limited, particularly when compared to structured knowledge sources such as KGs \[[1](http://arxiv.org/abs/2306.08302)\]. KGs, on the other hand, provide rich, semantically grounded representations that are well-suited for reasoning but are often underutilized in verification tasks due to the reliance on unstructured text corpora \[[1](http://arxiv.org/abs/2306.08302)\]. 
+
+Several studies have explored the use of KGs to improve LLM reasoning. For instance, the QA-GNN model introduces a joint reasoning framework that combines LLMs and KGs by estimating the relevance of KG nodes relative to a question and performing graph-based message passing to update representations \[[2](http://arxiv.org/abs/2104.06378)\]. Similarly, the KGP method constructs a knowledge graph over multiple documents to guide LLMs in multi-document question answering, leveraging semantic and structural relationships to improve reasoning \[[5](http://arxiv.org/abs/2308.11730)\]. These approaches highlight the potential of integrating KGs with LLMs to enhance reasoning accuracy and interpretability.
+
+However, existing methods often face challenges in effectively leveraging KGs for complex reasoning tasks. For example, the retrieval-augmented generation (RAG) framework combines pre-trained LLMs with non-parametric memory, such as Wikipedia, to improve factual accuracy in open-domain question answering \[[3](http://arxiv.org/abs/2005.11401)\]. Despite these advances, LLMs still struggle with multi-step reasoning and structured knowledge integration without adaptation \[[1](http://arxiv.org/abs/2306.08302)\]. This limitation has led to the development of specialized models like ERNIE, which integrates both textual and KG information to enhance language representation and reasoning capabilities \[[16](http://arxiv.org/abs/1905.07129)\]. 
+
+Recent work has also focused on improving the zero-shot reasoning capabilities of LLMs, demonstrating that simple prompting strategies, such as "Let's think step by step," can significantly enhance performance on arithmetic and symbolic reasoning tasks \[[4](http://arxiv.org/abs/2205.11916)\]. This aligns with the broader trend of using chain-of-thought (CoT) prompting to elicit complex reasoning from LLMs \[[20](http://arxiv.org/abs/2201.11903)\]. However, these methods often lack the structured knowledge provided by KGs, which is crucial for accurate claim verification \[[1](http://arxiv.org/abs/2306.08302)\].
+
+To address these limitations, the ClaimPKG framework proposes an end-to-end solution that integrates LLM reasoning with structured knowledge from KGs. It uses a lightweight LLM to represent claims as pseudo-subgraphs, guiding a dedicated subgraph retrieval module to identify relevant KG subgraphs \[[1](http://arxiv.org/abs/2306.08302)\]. This approach enables the model to leverage structured knowledge while maintaining the flexibility and generalizability of LLMs. The framework has been evaluated on the FactKG dataset, achieving state-of-the-art performance and demonstrating zero-shot generalizability to unstructured datasets such as HoVer and FEVEROUS \[[1](http://arxiv.org/abs/2306.08302)\].
+
+In summary, while existing works have explored the integration of KGs with LLMs, the ClaimPKG framework represents a significant advancement by combining structured knowledge retrieval with flexible LLM reasoning, leading to improved accuracy and generalizability in claim verification tasks.
+
+References  
+\[[1](http://arxiv.org/abs/2306.08302)\] Unifying Large Language Models and Knowledge Graphs: A Roadmap  
+\[[2](http://arxiv.org/abs/2104.06378)\] QA-GNN: Reasoning with Language Models and Knowledge Graphs for Question Answering  
+\[[3](http://arxiv.org/abs/2005.11401)\] Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks  
+\[[4](http://arxiv.org/abs/2205.11916)\] Large Language Models are Zero-Shot Reasoners  
+\[[5](http://arxiv.org/abs/2308.11730)\] Knowledge Graph Prompting for Multi-Document Question Answering  
+\[[16](http://arxiv.org/abs/1905.07129)\] ERNIE: Enhanced Language Representation with Informative Entities  
+\[[20](http://arxiv.org/abs/2201.11903)\] Chain of Thought Prompting Elicits Reasoning in Large Language Models

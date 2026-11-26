@@ -1,0 +1,28 @@
+id,title,url,snippet
+2408.05890,SZKP: A Scalable Accelerator Architecture for Zero-Knowledge Proofs,http://arxiv.org/abs/2408.05890,"Zero-Knowledge Proofs (ZKPs) are an emergent paradigm in verifiable
+computing. In the context of applications like cloud computing, ZKPs can be
+used by a client (called the verifier) to verify the service provider (called
+the prover) is in fact performing the correct computation based on a public
+input. A recently prominent variant of ZKPs is zkSNARKs, generating succinct
+proofs that can be rapidly verified by the end user. However, proof generation
+itself is very time consuming per transaction. Two key primitives in proof
+generation are the Number Theoretic Transform (NTT) and Multi-scalar
+Multiplication (MSM). These primitives are prime candidates for hardware
+acceleration, and prior works have looked at GPU implementations and custom
+RTL. However, both algorithms involve complex dataflow patterns -- standard
+NTTs have irregular memory accesses for butterfly computations from stage to
+stage, and MSMs using Pippenger's algorithm have data-dependent memory accesses
+for partial sum calculations. We present SZKP, a scalable accelerator framework
+that is the first ASIC to accelerate an entire proof on-chip by leveraging
+structured dataflows for both NTTs and MSMs. SZKP achieves conservative
+full-proof speedups of over 400$\times$, 3$\times$, and 12$\times$ over CPU,
+ASIC, and GPU implementations."
+https://eprint.iacr.org/2022/1321,cuZK: Accelerating Zero-Knowledge Proof with A Faster Parallel Multi-Scalar Multiplication Algorithm on GPUs,https://eprint.iacr.org/2022/1321,
+https://doi.org/10.1145/3649329.3655672,MSMAC: Accelerating Multi-Scalar Multiplication for Zero-Knowledge Proof,https://doi.org/10.1145/3649329.3655672,
+https://eprint.iacr.org/2024/1862,(BatchZK): A Fully Pipelined (GPU)-Accelerated System for Batch Generation of Zero-Knowledge Proofs,https://eprint.iacr.org/2024/1862,
+https://eprint.iacr.org/2024/057,"Elastic (MSM): A Fast, Elastic and Modular Preprocessing Technique for Multi-Scalar Multiplication Algorithm on (GPUs)",https://eprint.iacr.org/2024/057,
+https://doi.org/10.1145/3620666.3651364,Accelerating Multi-Scalar Multiplication for Efficient Zero Knowledge Proofs with Multi-GPU Systems,https://doi.org/10.1145/3620666.3651364,
+https://tches.iacr.org/index.php/TCHES/article/view/11930,A High-performance NTT/MSM Accelerator for Zero-knowledge Proof Using Load-balanced Fully-pipelined Montgomery Multiplier,https://tches.iacr.org/index.php/TCHES/article/view/11930,
+https://eprint.iacr.org/2025/252,Chiplet-Based Techniques for Scalable and Memory-Aware Multi-Scalar Multiplication,https://eprint.iacr.org/2025/252,
+https://www.usenix.org/conference/usenixsecurity23/presentation/xiong,VeriZexe: Decentralized Private Computation with Universal Setup,https://www.usenix.org/conference/usenixsecurity23/presentation/xiong,
+https://eprint.iacr.org/2019/458,Poseidon: A New Hash Function for Zero-Knowledge Proof Systems,https://eprint.iacr.org/2019/458,

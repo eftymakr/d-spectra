@@ -1,0 +1,21 @@
+## Related Works
+
+Differential privacy (DP) has been extensively studied and applied in various contexts, with several notable works contributing to its theoretical foundations and practical implementations. Early work by Dwork et al. introduced the concept of differential privacy as a formal framework for privacy protection in data analysis \[[2](http://arxiv.org/abs/0803.3946)\]. This definition ensures that the output of a data release mechanism does not reveal sensitive information about any individual in the dataset, regardless of the adversary's side information \[[2](http://arxiv.org/abs/0803.3946)\]. Subsequent research has explored relaxations and extensions of differential privacy, such as $(\epsilon, \delta)$-differential privacy, which allows for a small probability of privacy violation \[[2](http://arxiv.org/abs/0803.3946)\]. 
+
+The notion of concentrated differential privacy was introduced as a refinement, offering tighter bounds on privacy loss and enabling more precise analyses \[[7](http://arxiv.org/abs/1605.02065)\]. This approach is based on Rényi divergence and provides a more flexible framework for privacy amplification and composition \[[7](http://arxiv.org/abs/1605.02065)\]. Furthermore, the concept of randomized differential privacy (RDP) has been proposed, where the privacy guarantee is based on the effect of adding a randomly drawn observation to the database \[[1](http://arxiv.org/abs/1112.2680)\]. This approach has been shown to yield more accurate results compared to traditional differential privacy methods \[[1](http://arxiv.org/abs/1112.2680)\].
+
+In the context of local differential privacy (LDP), several challenges have been identified, particularly regarding the vulnerability of protocols to manipulation attacks. Research has shown that noninteractive LDP protocols can be significantly manipulated by adversaries, especially when the privacy level is high or the domain size is large \[[20](http://arxiv.org/abs/1909.09630)\]. These findings highlight the need for robust verification mechanisms to ensure the correctness of the privacy guarantees \[[20](http://arxiv.org/abs/1909.09630)\]. 
+
+To address these issues, recent work has proposed verifiable differential privacy (VDP) frameworks that incorporate additional verification steps to ensure that the mechanisms are executed correctly \[[15](http://arxiv.org/abs/2406.18940)\]. These frameworks leverage cryptographic techniques such as zero-knowledge proofs (ZKPs) to verify the correctness of the privacy-preserving computations \[[15](http://arxiv.org/abs/2406.18940)\]. While ZKPs are sufficient for achieving verifiable differential privacy, they are not strictly necessary, as alternative approaches can also be used \[[15](http://arxiv.org/abs/2406.18940)\]. 
+
+Several studies have focused on improving the efficiency and accuracy of LDP mechanisms. For instance, the work on verifiable randomized response (VRR) under local differential privacy has led to significant improvements in communication costs and verification overhead \[[16](http://arxiv.org/abs/2104.06569)\]. Additionally, the development of the Verifiable Distributed Discrete Laplacian Mechanism (VDDLM) has demonstrated substantial gains in proof generation efficiency, achieving up to a $4 \times 10^5$ improvement with minimal error \[[15](http://arxiv.org/abs/2406.18940)\]. 
+
+These advancements highlight the ongoing efforts to enhance the practicality and robustness of differential privacy mechanisms in distributed settings. 
+
+References:  
+\[[1](http://arxiv.org/abs/1112.2680)\] Random Differential Privacy  
+\[[2](http://arxiv.org/abs/0803.3946)\] On the 'Semantics' of Differential Privacy: A Bayesian Formulation  
+\[[7](http://arxiv.org/abs/1605.02065)\] Concentrated Differential Privacy: Simplifications, Extensions, and Lower Bounds  
+\[[15](http://arxiv.org/abs/2406.18940)\] Efficient Verifiable Differential Privacy with Input Authenticity in the Local and Shuffle Model  
+\[[16](http://arxiv.org/abs/2104.06569)\] Preventing Manipulation Attack in Local Differential Privacy using Verifiable Randomization Mechanism  
+\[[20](http://arxiv.org/abs/1909.09630)\] Manipulation Attacks in Local Differential Privacy

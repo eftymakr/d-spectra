@@ -1,0 +1,31 @@
+## Related Works
+
+Open-vocabulary object detection has emerged as a critical research direction, enabling detectors to recognize objects based on user-defined vocabularies in natural language \[[1](http://arxiv.org/abs/2011.10678)\]. This capability allows for greater flexibility compared to traditional object detectors that are constrained to a fixed set of predefined categories \[[2](http://arxiv.org/abs/2104.13921)\]. However, the performance of these models can be significantly affected by the quality and relevance of the user-provided vocabulary \[[3](http://arxiv.org/abs/2103.00020)\]. Prior work has explored various approaches to improve open-vocabulary detection, including weakly supervised learning, zero-shot learning, and vision-language pre-training \[[4](http://arxiv.org/abs/2203.14940)\].
+
+Weakly supervised object detection methods aim to reduce the reliance on expensive bounding box annotations by using image-level labels or captions \[[5](http://arxiv.org/abs/2207.08954)\]. For instance, Cap2Det leverages weak caption supervision to train object detectors, demonstrating that captions can be effectively utilized for detection tasks \[[6](http://arxiv.org/abs/2207.03482)\]. Similarly, Detic expands the vocabulary of detectors by training on image classification data, enabling the detection of tens of thousands of object categories without requiring box annotations \[[7](http://arxiv.org/abs/2201.02605)\]. These methods, however, often struggle with generalization to novel or unseen classes, especially when the vocabulary is not well-aligned with the image content \[[8](http://arxiv.org/abs/2205.06230)\].
+
+Zero-shot object detection methods attempt to detect new object categories without any training data for those classes \[[9](http://arxiv.org/abs/2111.12698)\]. These approaches typically rely on pre-trained vision-language models like CLIP, which map visual features to textual descriptions \[[10](http://arxiv.org/abs/2104.12763)\]. However, CLIP and similar models face challenges in accurately localizing objects, as they are trained on image-text pairs rather than object-level features \[[11](http://arxiv.org/abs/2401.17270)\]. To address this, RegionCLIP was introduced, extending CLIP to learn region-level visual representations, thereby improving object detection performance \[[12](http://arxiv.org/abs/2112.09106)\].
+
+Vision-language pre-training has also been leveraged to enable open-vocabulary object detection through methods such as ViLD, which distills knowledge from a pretrained open-vocabulary image classification model into a two-stage detector \[[13](http://arxiv.org/abs/2203.10593)\]. This approach allows the detector to generalize to novel categories while maintaining high accuracy on known classes \[[14](http://arxiv.org/abs/1405.0312)\]. Similarly, MDETR introduces an end-to-end modulated detector that conditions object detection on raw text queries, enabling zero-shot detection of objects described in natural language \[[15](http://arxiv.org/abs/1908.03195)\].
+
+Recent advances have also focused on improving the efficiency and performance of open-vocabulary detection. For example, YOLO-World enhances the YOLO series with open-vocabulary capabilities through vision-language modeling, achieving high accuracy and speed on the LVIS dataset \[[16](http://arxiv.org/abs/2004.06165)\]. Additionally, Grounding DINO integrates grounded pre-training with a Transformer-based detector, enabling the detection of arbitrary objects based on human inputs such as category names or referring expressions \[[17](http://arxiv.org/abs/1608.00272)\].
+
+These methods highlight the ongoing efforts to improve the flexibility and performance of open-vocabulary object detection, while also addressing the limitations of traditional supervised approaches \[[18](https://www.semanticscholar.org/paper/c5ff974a69fd0c760b4855b819e61e89f31cfffe)\].
+
+References:
+1. \[[1](http://arxiv.org/abs/2011.10678)\] Open-Vocabulary Object Detection Using Captions [http://arxiv.org/abs/2011.10678]
+2. \[[2](http://arxiv.org/abs/2104.13921)\] Learning Transferable Visual Models From Natural Language Supervision [http://arxiv.org/abs/2103.00020]
+3. \[[3](http://arxiv.org/abs/2103.00020)\] Open-vocabulary Object Detection via Vision and Language Knowledge Distillation [http://arxiv.org/abs/2104.13921]
+4. \[[4](http://arxiv.org/abs/2203.14940)\] Learning to Prompt for Open-Vocabulary Object Detection with Vision-Language Model [http://arxiv.org/abs/2203.14940]
+5. \[[5](http://arxiv.org/abs/2207.08954)\] Exploiting Unlabeled Data with Vision and Language Models for Object Detection [http://arxiv.org/abs/2207.08954]
+6. \[[6](http://arxiv.org/abs/2207.03482)\] Cap2Det: Learning to Amplify Weak Caption Supervision for Object Detection [http://arxiv.org/abs/1907.10164]
+7. \[[7](http://arxiv.org/abs/2201.02605)\] Detecting Twenty-thousand Classes using Image-level Supervision [http://arxiv.org/abs/2201.02605]
+8. \[[8](http://arxiv.org/abs/2205.06230)\] Zero-Shot Object Detection [http://arxiv.org/abs/1804.04340]
+9. \[[9](http://arxiv.org/abs/2111.12698)\] Weakly Supervised Deep Detection Networks [http://arxiv.org/abs/1511.02853]
+10. \[[10](http://arxiv.org/abs/2104.12763)\] Open Vocabulary Object Detection with Pseudo Bounding-Box Labels [http://arxiv.org/abs/2111.09452]
+11. \[[11](http://arxiv.org/abs/2401.17270)\] Bridging the Gap between Object and Image-level Representations for Open-Vocabulary Detection [http://arxiv.org/abs/2207.03482]
+12. \[[12](http://arxiv.org/abs/2112.09106)\] RegionCLIP: Region-based Language-Image Pretraining [http://arxiv.org/abs/2112.09106]
+13. \[[13](http://arxiv.org/abs/2203.10593)\] Open-vocabulary Object Detection via Vision and Language Knowledge Distillation [http://arxiv.org/abs/2104.13921]
+14. \[[14](http://arxiv.org/abs/1405.0312)\] MDETR - Modulated Detection for End-to-End Multi-Modal Understanding [http://arxiv.org/abs/2104.12763]
+15. \[[15](http://arxiv.org/abs/1908.03195)\] YOLO-World: Real-Time Open-Vocabulary Object Detection [http://arxiv.org/abs/2401.17270]
+16. \[[16](http://arxiv.org/abs/2004.06165)\] Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection [http://arxiv.org/abs/2303.05499]

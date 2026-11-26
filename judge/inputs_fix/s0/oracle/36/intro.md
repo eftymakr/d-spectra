@@ -1,0 +1,31 @@
+## Related Works
+
+Deploying large language models (LLMs) on edge devices presents significant challenges due to the limited storage, power, and computational resources available on such platforms \[[1](http://arxiv.org/abs/2204.02311)\]. Prior work has explored various techniques to address these limitations, including model compression, efficient inference strategies, and hardware-software co-design. For instance, \[[1](http://arxiv.org/abs/2204.02311)\] highlights the computational and memory demands of LLMs and introduces methods to reduce these requirements, such as quantization and sparsity. Similarly, \[[10](http://arxiv.org/abs/2310.17157)\] explores contextual sparsity to reduce inference costs without compromising model quality. These approaches are critical for enabling efficient deployment on resource-constrained devices.
+
+Several studies have focused on optimizing LLM inference for edge environments. \[[16](http://arxiv.org/abs/2011.14203)\] introduces EdgeBERT, an algorithm-hardware co-design that employs entropy-based early exit prediction and dynamic voltage-frequency scaling (DVFS) to minimize energy consumption while maintaining latency constraints. This work demonstrates significant energy savings, achieving up to 7x reduction compared to conventional inference methods. \[[15](http://arxiv.org/abs/2303.06865)\] presents FlexGen, a high-throughput inference engine that enables LLMs to run on a single GPU by compressing weights and attention caches to 4 bits, achieving a generation throughput of 1 token/s for the first time with an effective batch size of 144. These techniques are essential for enabling efficient inference on limited hardware.
+
+Model compression techniques such as quantization and pruning have also been widely studied. \[[11](http://arxiv.org/abs/2211.10438)\] introduces SmoothQuant, a post-training quantization method that enables 8-bit weight and activation quantization with minimal accuracy loss. This approach is particularly useful for deploying large models on devices with limited memory. \[[12](http://arxiv.org/abs/2301.00774)\] proposes SparseGPT, a one-shot pruning method that allows large models to be pruned to 50% sparsity without retraining, significantly reducing memory usage and computational costs. These methods are crucial for reducing the resource footprint of LLMs on edge devices.
+
+In addition to model-level optimizations, system-level improvements have been explored. \[[7](http://arxiv.org/abs/2309.06180)\] introduces PagedAttention, an attention algorithm inspired by virtual memory paging techniques, which significantly reduces memory waste and improves throughput. \[[8](http://arxiv.org/abs/2312.11514)\] presents LLM in a flash, a method that stores model parameters in flash memory and loads them on demand, enabling inference of models up to twice the size of available DRAM. These techniques are vital for enabling efficient deployment of large models on devices with limited memory.
+
+Finally, knowledge distillation has been used to compress large models into smaller, more efficient versions. \[[13](http://arxiv.org/abs/2402.03898)\] introduces DistiLLM, a knowledge distillation framework that achieves up to 4.3x speedup compared to existing methods. \[[14](http://arxiv.org/abs/2306.08543)\] proposes MiniLLM, a KD approach that distills large models into smaller ones while maintaining high-quality outputs. These methods are essential for enabling efficient deployment of LLMs on edge devices with limited computational resources.
+
+In summary, prior work has explored a wide range of techniques to enable efficient deployment of LLMs on edge devices, including model compression, efficient inference strategies, and hardware-software co-design. These approaches are critical for addressing the challenges of deploying LLMs on resource-constrained platforms.
+
+References:  
+\[[1](http://arxiv.org/abs/2204.02311)\] PaLM: Scaling Language Modeling with Pathways [http://arxiv.org/abs/2204.02311]  
+\[[2](http://arxiv.org/abs/2302.13971)\] LLaMA: Open and Efficient Foundation Language Models [http://arxiv.org/abs/2302.13971]  
+\[[3](http://arxiv.org/abs/2307.09288)\] Llama 2: Open Foundation and Fine-Tuned Chat Models [http://arxiv.org/abs/2307.09288]  
+\[[4](http://arxiv.org/abs/2312.12456)\] PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU [http://arxiv.org/abs/2312.12456]  
+\[[5](http://arxiv.org/abs/2404.07947)\] ExeGPT: Constraint-Aware Resource Scheduling for LLM Inference [http://arxiv.org/abs/2404.07947]  
+\[[6](http://arxiv.org/abs/2311.18677)\] Splitwise: Efficient generative LLM inference using phase splitting [http://arxiv.org/abs/2311.18677]  
+\[[7](http://arxiv.org/abs/2309.06180)\] Efficient Memory Management for Large Language Model Serving with PagedAttention [http://arxiv.org/abs/2309.06180]  
+\[[8](http://arxiv.org/abs/2312.11514)\] LLM in a flash: Efficient Large Language Model Inference with Limited Memory [http://arxiv.org/abs/2312.11514]  
+\[[9](http://arxiv.org/abs/2406.10903)\] New Solutions on LLM Acceleration, Optimization, and Application [http://arxiv.org/abs/2406.10903]  
+\[[10](http://arxiv.org/abs/2310.17157)\] Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time [http://arxiv.org/abs/2310.17157]  
+\[[11](http://arxiv.org/abs/2211.10438)\] SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models [http://arxiv.org/abs/2211.10438]  
+\[[12](http://arxiv.org/abs/2301.00774)\] SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot [http://arxiv.org/abs/2301.00774]  
+\[[13](http://arxiv.org/abs/2402.03898)\] DistiLLM: Towards Streamlined Distillation for Large Language Models [http://arxiv.org/abs/2402.03898]  
+\[[14](http://arxiv.org/abs/2306.08543)\] MiniLLM: Knowledge Distillation of Large Language Models [http://arxiv.org/abs/2306.08543]  
+\[[15](http://arxiv.org/abs/2303.06865)\] FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU [http://arxiv.org/abs/2303.06865]  
+\[[16](http://arxiv.org/abs/2011.14203)\] EdgeBERT: Sentence-Level Energy Optimizations for Latency-Aware Multi-Task NLP Inference [http://arxiv.org/abs/2011.14203]

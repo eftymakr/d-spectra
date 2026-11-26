@@ -1,0 +1,35 @@
+## Related Works
+
+The integration of knowledge graphs (KGs) into large language models (LLMs) to enhance reasoning capabilities has gained significant attention in recent years. While KGs provide structured, semantically rich representations that are ideal for reasoning tasks, most existing claim verification methods rely on unstructured text corpora, limiting their ability to effectively leverage KGs \[[1](http://arxiv.org/abs/1911.06136)\]. This limitation is particularly evident in tasks requiring multi-step reasoning and modular pipelines, where LLMs often struggle without adaptation \[[2](http://arxiv.org/abs/2308.09729)\]. 
+
+Several studies have explored the use of KGs in conjunction with LLMs. For instance, KEPLER \[[3](http://arxiv.org/abs/2305.13168)\] proposes a unified model that integrates factual knowledge from KGs into pre-trained language models, enhancing both knowledge embedding and language representation. Similarly, K-BERT \[[13](http://arxiv.org/abs/1909.07606)\] incorporates knowledge graphs into BERT-based models to improve domain-specific tasks, demonstrating that domain knowledge can significantly enhance model performance. However, these approaches often require extensive pre-training or domain-specific adaptation, which limits their generalizability \[[14](http://arxiv.org/abs/2305.12744)\].
+
+In the realm of knowledge-intensive NLP tasks, retrieval-augmented generation (RAG) has emerged as a promising approach. RAG combines pre-trained language models with external knowledge sources, such as Wikipedia, to improve the accuracy and credibility of generated responses \[[17](http://arxiv.org/abs/2312.10997)\]. This paradigm has been extended to incorporate KGs, as seen in the work of MindMap \[[2](http://arxiv.org/abs/2308.09729)\], which leverages KGs to enhance LLMs' inference and transparency. The method enables LLMs to comprehend KG inputs and infer using both implicit and external knowledge, leading to significant improvements in medical question-answering tasks.
+
+Another notable approach is the use of graph neural networks (GNNs) to enhance LLMs' ability to reason over structured data. For example, StructGPT \[[15](http://arxiv.org/abs/2305.09645)\] introduces an iterative reading-then-reasoning approach to solve question-answering tasks based on structured data. This method constructs specialized functions to collect relevant evidence from structured data and allows LLMs to concentrate on reasoning tasks, significantly improving performance on various datasets.
+
+Moreover, the integration of KGs into LLMs has also been explored in the context of fact-checking and reasoning. Program-Guided Fact-Checking (ProgramFC) \[[14](http://arxiv.org/abs/2305.12744)\] decomposes complex claims into sub-tasks that can be solved using specialized functions, leveraging the in-context learning ability of LLMs. This approach not only improves accuracy but also provides clear explanations of the reasoning process, enhancing transparency.
+
+In summary, while existing works have made significant strides in integrating KGs with LLMs, there remains a need for more generalizable and efficient frameworks that can seamlessly combine structured knowledge from KGs with the reasoning capabilities of LLMs. Our proposed framework, ClaimPKG, addresses these challenges by employing a lightweight, specialized LLM to represent input claims as pseudo-subgraphs, guiding a dedicated subgraph retrieval module to identify relevant KG subgraphs \[[1](http://arxiv.org/abs/1911.06136)\].
+
+1. Document 1  
+2. Document 2  
+3. Document 3  
+4. Document 4  
+5. Document 5  
+6. Document 6  
+7. Document 7  
+8. Document 8  
+9. Document 9  
+10. Document 10  
+11. Document 11  
+12. Document 12  
+13. Document 13  
+14. Document 14  
+15. Document 15  
+16. Document 16  
+17. Document 17  
+18. Document 18  
+19. Document 19  
+20. Document 20  
+21. Document 21

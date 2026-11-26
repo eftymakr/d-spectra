@@ -170,11 +170,18 @@ async def main():
     args = ap.parse_args()
     from lotus.models import LM
     from deepscholar_base.configs import Configs
-    lm = LM(model=args.model, api_base=args.api_base, api_key="local", temperature=0.7, top_p=0.8,
-            max_tokens=10000, seed=args.seed, max_ctx_len=32768,
-            extra_body={"top_k": 20, "chat_template_kwargs": {"enable_thinking": False}})
-    configs = Configs(lm=lm, categorize_references=True, generate_category_summary=True, generate_insights=True,
-                      use_structured_output=True)
+    def stage_lm():
+        # every stage LM is built explicitly: Configs derives them from `lm` after dropping its
+        # max_completion_tokens, which silently caps each call at LOTUS's default of 512 tokens
+        # (the upstream bug Mateo's wrapper fixes; our Nov 2-6 writer runs had it, see bug 5)
+        return LM(model=args.model, api_base=args.api_base, api_key="local", temperature=0.7, top_p=0.8,
+                  max_tokens=10000, seed=args.seed, max_ctx_len=32768,
+                  extra_body={"top_k": 20, "chat_template_kwargs": {"enable_thinking": False}})
+    configs = Configs(lm=stage_lm(), filter_lm=stage_lm(), search_lm=stage_lm(), taxonomize_lm=stage_lm(),
+                      generation_lm=stage_lm(), categorize_references=True, generate_category_summary=True,
+                      generate_insights=True, use_structured_output=True)
+    for k in ("filter_lm", "search_lm", "taxonomize_lm", "generation_lm"):
+        assert getattr(configs, k).max_tokens == 10000, (k, getattr(configs, k).max_tokens)
     lists = load_lists(args)
     for name, docs in lists.items():
         if args.only and name not in args.only:

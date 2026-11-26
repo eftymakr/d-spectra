@@ -1,0 +1,343 @@
+id,title,url,snippet
+2001.06001,"Curriculum Labeling: Revisiting Pseudo-Labeling for Semi-Supervised
+  Learning",http://arxiv.org/abs/2001.06001,"In this paper we revisit the idea of pseudo-labeling in the context of
+semi-supervised learning where a learning algorithm has access to a small set
+of labeled samples and a large set of unlabeled samples. Pseudo-labeling works
+by applying pseudo-labels to samples in the unlabeled set by using a model
+trained on the combination of the labeled samples and any previously
+pseudo-labeled samples, and iteratively repeating this process in a
+self-training cycle. Current methods seem to have abandoned this approach in
+favor of consistency regularization methods that train models under a
+combination of different styles of self-supervised losses on the unlabeled
+samples and standard supervised losses on the labeled samples. We empirically
+demonstrate that pseudo-labeling can in fact be competitive with the
+state-of-the-art, while being more resilient to out-of-distribution samples in
+the unlabeled set. We identify two key factors that allow pseudo-labeling to
+achieve such remarkable results (1) applying curriculum learning principles and
+(2) avoiding concept drift by restarting model parameters before each
+self-training cycle. We obtain 94.91% accuracy on CIFAR-10 using only 4,000
+labeled samples, and 68.87% top-1 accuracy on Imagenet-ILSVRC using only 10% of
+the labeled samples. The code is available at
+https://github.com/uvavision/Curriculum-Labeling"
+1703.01780,"Mean teachers are better role models: Weight-averaged consistency
+  targets improve semi-supervised deep learning results",http://arxiv.org/abs/1703.01780,"The recently proposed Temporal Ensembling has achieved state-of-the-art
+results in several semi-supervised learning benchmarks. It maintains an
+exponential moving average of label predictions on each training example, and
+penalizes predictions that are inconsistent with this target. However, because
+the targets change only once per epoch, Temporal Ensembling becomes unwieldy
+when learning large datasets. To overcome this problem, we propose Mean
+Teacher, a method that averages model weights instead of label predictions. As
+an additional benefit, Mean Teacher improves test accuracy and enables training
+with fewer labels than Temporal Ensembling. Without changing the network
+architecture, Mean Teacher achieves an error rate of 4.35% on SVHN with 250
+labels, outperforming Temporal Ensembling trained with 1000 labels. We also
+show that a good network architecture is crucial to performance. Combining Mean
+Teacher and Residual Networks, we improve the state of the art on CIFAR-10 with
+4000 labels from 10.55% to 6.28%, and on ImageNet 2012 with 10% of the labels
+from 35.24% to 9.11%."
+1610.02242,Temporal Ensembling for Semi-Supervised Learning,http://arxiv.org/abs/1610.02242,"In this paper, we present a simple and efficient method for training deep
+neural networks in a semi-supervised setting where only a small portion of
+training data is labeled. We introduce self-ensembling, where we form a
+consensus prediction of the unknown labels using the outputs of the
+network-in-training on different epochs, and most importantly, under different
+regularization and input augmentation conditions. This ensemble prediction can
+be expected to be a better predictor for the unknown labels than the output of
+the network at the most recent training epoch, and can thus be used as a target
+for training. Using our method, we set new records for two standard
+semi-supervised learning benchmarks, reducing the (non-augmented)
+classification error rate from 18.44% to 7.05% in SVHN with 500 labels and from
+18.63% to 16.55% in CIFAR-10 with 4000 labels, and further to 5.12% and 12.16%
+by enabling the standard augmentations. We additionally obtain a clear
+improvement in CIFAR-100 classification accuracy by using random images from
+the Tiny Images dataset as unlabeled extra inputs during training. Finally, we
+demonstrate good tolerance to incorrect labels."
+1905.02249,MixMatch: A Holistic Approach to Semi-Supervised Learning,http://arxiv.org/abs/1905.02249,"Semi-supervised learning has proven to be a powerful paradigm for leveraging
+unlabeled data to mitigate the reliance on large labeled datasets. In this
+work, we unify the current dominant approaches for semi-supervised learning to
+produce a new algorithm, MixMatch, that works by guessing low-entropy labels
+for data-augmented unlabeled examples and mixing labeled and unlabeled data
+using MixUp. We show that MixMatch obtains state-of-the-art results by a large
+margin across many datasets and labeled data amounts. For example, on CIFAR-10
+with 250 labels, we reduce error rate by a factor of 4 (from 38% to 11%) and by
+a factor of 2 on STL-10. We also demonstrate how MixMatch can help achieve a
+dramatically better accuracy-privacy trade-off for differential privacy.
+Finally, we perform an ablation study to tease apart which components of
+MixMatch are most important for its success."
+2001.07685,"FixMatch: Simplifying Semi-Supervised Learning with Consistency and
+  Confidence",http://arxiv.org/abs/2001.07685,"Semi-supervised learning (SSL) provides an effective means of leveraging
+unlabeled data to improve a model's performance. In this paper, we demonstrate
+the power of a simple combination of two common SSL methods: consistency
+regularization and pseudo-labeling. Our algorithm, FixMatch, first generates
+pseudo-labels using the model's predictions on weakly-augmented unlabeled
+images. For a given image, the pseudo-label is only retained if the model
+produces a high-confidence prediction. The model is then trained to predict the
+pseudo-label when fed a strongly-augmented version of the same image. Despite
+its simplicity, we show that FixMatch achieves state-of-the-art performance
+across a variety of standard semi-supervised learning benchmarks, including
+94.93% accuracy on CIFAR-10 with 250 labels and 88.61% accuracy with 40 -- just
+4 labels per class. Since FixMatch bears many similarities to existing SSL
+methods that achieve worse performance, we carry out an extensive ablation
+study to tease apart the experimental factors that are most important to
+FixMatch's success. We make our code available at
+https://github.com/google-research/fixmatch."
+1911.09785,"ReMixMatch: Semi-Supervised Learning with Distribution Alignment and
+  Augmentation Anchoring",http://arxiv.org/abs/1911.09785,"We improve the recently-proposed ""MixMatch"" semi-supervised learning
+algorithm by introducing two new techniques: distribution alignment and
+augmentation anchoring. Distribution alignment encourages the marginal
+distribution of predictions on unlabeled data to be close to the marginal
+distribution of ground-truth labels. Augmentation anchoring feeds multiple
+strongly augmented versions of an input into the model and encourages each
+output to be close to the prediction for a weakly-augmented version of the same
+input. To produce strong augmentations, we propose a variant of AutoAugment
+which learns the augmentation policy while the model is being trained. Our new
+algorithm, dubbed ReMixMatch, is significantly more data-efficient than prior
+work, requiring between $5\times$ and $16\times$ less data to reach the same
+accuracy. For example, on CIFAR-10 with 250 labeled examples we reach $93.73\%$
+accuracy (compared to MixMatch's accuracy of $93.58\%$ with $4(,)000$ examples)
+and a median accuracy of $84.92\%$ with just four labels per class. We make our
+code and data open-source at https://github.com/google-research/remixmatch."
+2110.08263,"FlexMatch: Boosting Semi-Supervised Learning with Curriculum Pseudo
+  Labeling",http://arxiv.org/abs/2110.08263,"The recently proposed FixMatch achieved state-of-the-art results on most
+semi-supervised learning (SSL) benchmarks. However, like other modern SSL
+algorithms, FixMatch uses a pre-defined constant threshold for all classes to
+select unlabeled data that contribute to the training, thus failing to consider
+different learning status and learning difficulties of different classes. To
+address this issue, we propose Curriculum Pseudo Labeling (CPL), a curriculum
+learning approach to leverage unlabeled data according to the model's learning
+status. The core of CPL is to flexibly adjust thresholds for different classes
+at each time step to let pass informative unlabeled data and their pseudo
+labels. CPL does not introduce additional parameters or computations (forward
+or backward propagation). We apply CPL to FixMatch and call our improved
+algorithm FlexMatch. FlexMatch achieves state-of-the-art performance on a
+variety of SSL benchmarks, with especially strong performances when the labeled
+data are extremely limited or when the task is challenging. For example,
+FlexMatch achieves 13.96% and 18.96% error rate reduction over FixMatch on
+CIFAR-100 and STL-10 datasets respectively, when there are only 4 labels per
+class. CPL also significantly boosts the convergence speed, e.g., FlexMatch can
+use only 1/5 training time of FixMatch to achieve even better performance.
+Furthermore, we show that CPL can be easily adapted to other SSL algorithms and
+remarkably improve their performances. We open-source our code at
+https://github.com/TorchSSL/TorchSSL."
+2205.07246,FreeMatch: Self-adaptive Thresholding for Semi-supervised Learning,http://arxiv.org/abs/2205.07246,"Semi-supervised Learning (SSL) has witnessed great success owing to the
+impressive performances brought by various methods based on pseudo labeling and
+consistency regularization. However, we argue that existing methods might fail
+to utilize the unlabeled data more effectively since they either use a
+pre-defined / fixed threshold or an ad-hoc threshold adjusting scheme,
+resulting in inferior performance and slow convergence. We first analyze a
+motivating example to obtain intuitions on the relationship between the
+desirable threshold and model's learning status. Based on the analysis, we
+hence propose FreeMatch to adjust the confidence threshold in a self-adaptive
+manner according to the model's learning status. We further introduce a
+self-adaptive class fairness regularization penalty to encourage the model for
+diverse predictions during the early training stage. Extensive experiments
+indicate the superiority of FreeMatch especially when the labeled data are
+extremely rare. FreeMatch achieves 5.78%, 13.59%, and 1.28% error rate
+reduction over the latest state-of-the-art method FlexMatch on CIFAR-10 with 1
+label per class, STL-10 with 4 labels per class, and ImageNet with 100 labels
+per class, respectively. Moreover, FreeMatch can also boost the performance of
+imbalanced SSL. The codes can be found at
+https://github.com/microsoft/Semi-supervised-learning."
+2011.11183,CoMatch: Semi-supervised Learning with Contrastive Graph Regularization,http://arxiv.org/abs/2011.11183,"Semi-supervised learning has been an effective paradigm for leveraging
+unlabeled data to reduce the reliance on labeled data. We propose CoMatch, a
+new semi-supervised learning method that unifies dominant approaches and
+addresses their limitations. CoMatch jointly learns two representations of the
+training data, their class probabilities and low-dimensional embeddings. The
+two representations interact with each other to jointly evolve. The embeddings
+impose a smoothness constraint on the class probabilities to improve the
+pseudo-labels, whereas the pseudo-labels regularize the structure of the
+embeddings through graph-based contrastive learning. CoMatch achieves
+state-of-the-art performance on multiple datasets. It achieves substantial
+accuracy improvements on the label-scarce CIFAR-10 and STL-10. On ImageNet with
+1% labels, CoMatch achieves a top-1 accuracy of 66.0%, outperforming FixMatch
+by 12.6%. Furthermore, CoMatch achieves better representation learning
+performance on downstream tasks, outperforming both supervised learning and
+self-supervised learning. Code and pre-trained models are available at
+https://github.com/salesforce/CoMatch."
+1804.09170,Realistic Evaluation of Deep Semi-Supervised Learning Algorithms,http://arxiv.org/abs/1804.09170,"Semi-supervised learning (SSL) provides a powerful framework for leveraging
+unlabeled data when labels are limited or expensive to obtain. SSL algorithms
+based on deep neural networks have recently proven successful on standard
+benchmark tasks. However, we argue that these benchmarks fail to address many
+issues that these algorithms would face in real-world applications. After
+creating a unified reimplementation of various widely-used SSL techniques, we
+test them in a suite of experiments designed to address these issues. We find
+that the performance of simple baselines which do not use unlabeled data is
+often underreported, that SSL methods differ in sensitivity to the amount of
+labeled and unlabeled data, and that performance can degrade substantially when
+the unlabeled dataset contains out-of-class examples. To help guide SSL
+research towards real-world applicability, we make our unified reimplemention
+and evaluation platform publicly available."
+2007.11330,Multi-Task Curriculum Framework for Open-Set Semi-Supervised Learning,http://arxiv.org/abs/2007.11330,"Semi-supervised learning (SSL) has been proposed to leverage unlabeled data
+for training powerful models when only limited labeled data is available. While
+existing SSL methods assume that samples in the labeled and unlabeled data
+share the classes of their samples, we address a more complex novel scenario
+named open-set SSL, where out-of-distribution (OOD) samples are contained in
+unlabeled data. Instead of training an OOD detector and SSL separately, we
+propose a multi-task curriculum learning framework. First, to detect the OOD
+samples in unlabeled data, we estimate the probability of the sample belonging
+to OOD. We use a joint optimization framework, which updates the network
+parameters and the OOD score alternately. Simultaneously, to achieve high
+performance on the classification of in-distribution (ID) data, we select ID
+samples in unlabeled data having small OOD scores, and use these data with
+labeled data for training the deep neural networks to classify ID samples in a
+semi-supervised manner. We conduct several experiments, and our method achieves
+state-of-the-art results by successfully eliminating the effect of OOD samples."
+2409.17512,SCOMatch: Alleviating Overtrusting in Open-set Semi-supervised Learning,http://arxiv.org/abs/2409.17512,"Open-set semi-supervised learning (OSSL) leverages practical open-set
+unlabeled data, comprising both in-distribution (ID) samples from seen classes
+and out-of-distribution (OOD) samples from unseen classes, for semi-supervised
+learning (SSL). Prior OSSL methods initially learned the decision boundary
+between ID and OOD with labeled ID data, subsequently employing self-training
+to refine this boundary. These methods, however, suffer from the tendency to
+overtrust the labeled ID data: the scarcity of labeled data caused the
+distribution bias between the labeled samples and the entire ID data, which
+misleads the decision boundary to overfit. The subsequent self-training
+process, based on the overfitted result, fails to rectify this problem. In this
+paper, we address the overtrusting issue by treating OOD samples as an
+additional class, forming a new SSL process.
+  Specifically, we propose SCOMatch, a novel OSSL method that 1) selects
+reliable OOD samples as new labeled data with an OOD memory queue and a
+corresponding update strategy and 2) integrates the new SSL process into the
+original task through our Simultaneous Close-set and Open-set self-training.
+SCOMatch refines the decision boundary of ID and OOD classes across the entire
+dataset, thereby leading to improved results. Extensive experimental results
+show that SCOMatch significantly outperforms the state-of-the-art methods on
+various benchmarks. The effectiveness is further verified through ablation
+studies and visualization."
+2308.11874,"Semi-Supervised Learning via Weight-aware Distillation under Class
+  Distribution Mismatch",http://arxiv.org/abs/2308.11874,"Semi-Supervised Learning (SSL) under class distribution mismatch aims to
+tackle a challenging problem wherein unlabeled data contain lots of unknown
+categories unseen in the labeled ones. In such mismatch scenarios, traditional
+SSL suffers severe performance damage due to the harmful invasion of the
+instances with unknown categories into the target classifier. In this study, by
+strict mathematical reasoning, we reveal that the SSL error under class
+distribution mismatch is composed of pseudo-labeling error and invasion error,
+both of which jointly bound the SSL population risk. To alleviate the SSL
+error, we propose a robust SSL framework called Weight-Aware Distillation (WAD)
+that, by weights, selectively transfers knowledge beneficial to the target task
+from unsupervised contrastive representation to the target classifier.
+Specifically, WAD captures adaptive weights and high-quality pseudo labels to
+target instances by exploring point mutual information (PMI) in representation
+space to maximize the role of unlabeled data and filter unknown categories.
+Theoretically, we prove that WAD has a tight upper bound of population risk
+under class distribution mismatch. Experimentally, extensive results
+demonstrate that WAD outperforms five state-of-the-art SSL approaches and one
+standard baseline on two benchmark datasets, CIFAR10 and CIFAR100, and an
+artificial cross-dataset. The code is available at
+https://github.com/RUC-DWBI-ML/research/tree/main/WAD-master."
+2108.05617,"Trash to Treasure: Harvesting OOD Data with Cross-Modal Matching for
+  Open-Set Semi-Supervised Learning",http://arxiv.org/abs/2108.05617,"Open-set semi-supervised learning (open-set SSL) investigates a challenging
+but practical scenario where out-of-distribution (OOD) samples are contained in
+the unlabeled data. While the mainstream technique seeks to completely filter
+out the OOD samples for semi-supervised learning (SSL), we propose a novel
+training mechanism that could effectively exploit the presence of OOD data for
+enhanced feature learning while avoiding its adverse impact on the SSL. We
+achieve this goal by first introducing a warm-up training that leverages all
+the unlabeled data, including both the in-distribution (ID) and OOD samples.
+Specifically, we perform a pretext task that enforces our feature extractor to
+obtain a high-level semantic understanding of the training images, leading to
+more discriminative features that can benefit the downstream tasks. Since the
+OOD samples are inevitably detrimental to SSL, we propose a novel cross-modal
+matching strategy to detect OOD samples. Instead of directly applying binary
+classification, we train the network to predict whether the data sample is
+matched to an assigned one-hot class label. The appeal of the proposed
+cross-modal matching over binary classification is the ability to generate a
+compatible feature space that aligns with the core classification task.
+Extensive experiments show that our approach substantially lifts the
+performance on open-set SSL and outperforms the state-of-the-art by a large
+margin."
+2305.18158,Out-of-Distributed Semantic Pruning for Robust Semi-Supervised Learning,http://arxiv.org/abs/2305.18158,"Recent advances in robust semi-supervised learning (SSL) typically filter
+out-of-distribution (OOD) information at the sample level. We argue that an
+overlooked problem of robust SSL is its corrupted information on semantic
+level, practically limiting the development of the field. In this paper, we
+take an initial step to explore and propose a unified framework termed OOD
+Semantic Pruning (OSP), which aims at pruning OOD semantics out from
+in-distribution (ID) features. Specifically, (i) we propose an aliasing OOD
+matching module to pair each ID sample with an OOD sample with semantic
+overlap. (ii) We design a soft orthogonality regularization, which first
+transforms each ID feature by suppressing its semantic component that is
+collinear with paired OOD sample. It then forces the predictions before and
+after soft orthogonality decomposition to be consistent. Being practically
+simple, our method shows a strong performance in OOD detection and ID
+classification on challenging benchmarks. In particular, OSP surpasses the
+previous state-of-the-art by 13.7% on accuracy for ID classification and 5.9%
+on AUROC for OOD detection on TinyImageNet dataset. The source codes are
+publicly available at https://github.com/rain305f/OSP."
+2308.13168,"IOMatch: Simplifying Open-Set Semi-Supervised Learning with Joint
+  Inliers and Outliers Utilization",http://arxiv.org/abs/2308.13168,"Semi-supervised learning (SSL) aims to leverage massive unlabeled data when
+labels are expensive to obtain. Unfortunately, in many real-world applications,
+the collected unlabeled data will inevitably contain unseen-class outliers not
+belonging to any of the labeled classes. To deal with the challenging open-set
+SSL task, the mainstream methods tend to first detect outliers and then filter
+them out. However, we observe a surprising fact that such approach could result
+in more severe performance degradation when labels are extremely scarce, as the
+unreliable outlier detector may wrongly exclude a considerable portion of
+valuable inliers. To tackle with this issue, we introduce a novel open-set SSL
+framework, IOMatch, which can jointly utilize inliers and outliers, even when
+it is difficult to distinguish exactly between them. Specifically, we propose
+to employ a multi-binary classifier in combination with the standard closed-set
+classifier for producing unified open-set classification targets, which regard
+all outliers as a single new class. By adopting these targets as open-set
+pseudo-labels, we optimize an open-set classifier with all unlabeled samples
+including both inliers and outliers. Extensive experiments have shown that
+IOMatch significantly outperforms the baseline methods across different
+benchmark datasets and different settings despite its remarkable simplicity.
+Our code and models are available at https://github.com/nukezil/IOMatch."
+2105.14148,"OpenMatch: Open-set Consistency Regularization for Semi-supervised
+  Learning with Outliers",http://arxiv.org/abs/2105.14148,"Semi-supervised learning (SSL) is an effective means to leverage unlabeled
+data to improve a model's performance. Typical SSL methods like FixMatch assume
+that labeled and unlabeled data share the same label space. However, in
+practice, unlabeled data can contain categories unseen in the labeled set,
+i.e., outliers, which can significantly harm the performance of SSL algorithms.
+To address this problem, we propose a novel Open-set Semi-Supervised Learning
+(OSSL) approach called OpenMatch. Learning representations of inliers while
+rejecting outliers is essential for the success of OSSL. To this end, OpenMatch
+unifies FixMatch with novelty detection based on one-vs-all (OVA) classifiers.
+The OVA-classifier outputs the confidence score of a sample being an inlier,
+providing a threshold to detect outliers. Another key contribution is an
+open-set soft-consistency regularization loss, which enhances the smoothness of
+the OVA-classifier with respect to input transformations and greatly improves
+outlier detection. OpenMatch achieves state-of-the-art performance on three
+datasets, and even outperforms a fully supervised model in detecting outliers
+unseen in unlabeled data on CIFAR10."
+2311.10572,"SSB: Simple but Strong Baseline for Boosting Performance of Open-Set
+  Semi-Supervised Learning",http://arxiv.org/abs/2311.10572,"Semi-supervised learning (SSL) methods effectively leverage unlabeled data to
+improve model generalization. However, SSL models often underperform in
+open-set scenarios, where unlabeled data contain outliers from novel categories
+that do not appear in the labeled set. In this paper, we study the challenging
+and realistic open-set SSL setting, where the goal is to both correctly
+classify inliers and to detect outliers. Intuitively, the inlier classifier
+should be trained on inlier data only. However, we find that inlier
+classification performance can be largely improved by incorporating
+high-confidence pseudo-labeled data, regardless of whether they are inliers or
+outliers. Also, we propose to utilize non-linear transformations to separate
+the features used for inlier classification and outlier detection in the
+multi-task learning framework, preventing adverse effects between them.
+Additionally, we introduce pseudo-negative mining, which further boosts outlier
+detection performance. The three ingredients lead to what we call Simple but
+Strong Baseline (SSB) for open-set SSL. In experiments, SSB greatly improves
+both inlier classification and outlier detection performance, outperforming
+existing methods by a large margin. Our code will be released at
+https://github.com/YUE-FAN/SSB."
+2011.13529,"They are Not Completely Useless: Towards Recycling Transferable
+  Unlabeled Data for Class-Mismatched Semi-Supervised Learning",http://arxiv.org/abs/2011.13529,"Semi-Supervised Learning (SSL) with mismatched classes deals with the problem
+that the classes-of-interests in the limited labeled data is only a subset of
+the classes in massive unlabeled data. As a result, the classes only possessed
+by the unlabeled data may mislead the classifier training and thus hindering
+the realistic landing of various SSL methods. To solve this problem, existing
+methods usually divide unlabeled data to in-distribution (ID) data and
+out-of-distribution (OOD) data, and directly discard or weaken the OOD data to
+avoid their adverse impact. In other words, they treat OOD data as completely
+useless and thus the potential valuable information for classification
+contained by them is totally ignored. To remedy this defect, this paper
+proposes a ""Transferable OOD data Recycling"" (TOOR) method which properly
+utilizes ID data as well as the ""recyclable"" OOD data to enrich the information
+for conducting class-mismatched SSL. Specifically, TOOR firstly attributes all
+unlabeled data to ID data or OOD data, among which the ID data are directly
+used for training. Then we treat the OOD data that have a close relationship
+with ID data and labeled data as recyclable, and employ adversarial domain
+adaptation to project them to the space of ID data and labeled data. In other
+words, the recyclability of an OOD datum is evaluated by its transferability,
+and the recyclable OOD data are transferred so that they are compatible with
+the distribution of known classes-of-interests. Consequently, our TOOR method
+extracts more information from unlabeled data than existing approaches, so it
+can achieve the improved performance which is demonstrated by the experiments
+on typical benchmark datasets."

@@ -1,0 +1,28 @@
+## Related Works
+
+Recent advancements in Text-to-Speech (TTS) systems have significantly improved speech naturalness, leading to increased demand for precise prosody control and mispronunciation correction \[[1](http://arxiv.org/abs/1909.10302)\]. Traditional approaches for prosody manipulation often rely on specialized modules or additional training, which limits their capacity for post-hoc adjustments \[[1](http://arxiv.org/abs/1909.10302)\]. Similarly, conventional mispronunciation correction methods depend on grapheme-to-phoneme dictionaries, making them less practical in low-resource settings \[[1](http://arxiv.org/abs/1909.10302)\]. This section reviews related works that address these challenges.
+
+Several studies have explored methods for prosody control in TTS systems. For example, \[[2](https://www.semanticscholar.org/paper/ffe8bc7ea78838e8f35b2bc518f33037374ae0ef)\] introduces a fully automatic method that makes the system aware of the prosody and enables sentence-wise speaking pace and expressiveness control on a continuous scale. This approach improves the overall quality and expressiveness of the synthesized speech. Additionally, \[[3](http://arxiv.org/abs/2102.08328)\] proposes a novel augmented attention mechanism that facilitates better pace control sensitivity and faster attention convergence. These methods demonstrate the importance of explicit prosody modeling for generating natural-sounding speech.
+
+In the realm of prosody modeling, \[[4](https://www.semanticscholar.org/paper/fb2be38253698f5267bc0125a86f4f36e0a8c3a5)\] explores methods for evaluating the effectiveness of prosodic encodings in language models by cross-analyzing state-of-the-art TTS models with corpus data of natural speech. The study highlights the significance of correct assignments of major intonational events and phrasal pausing for TTS naturalness. \[[5](http://arxiv.org/abs/2309.05423)\] further advances this by proposing a two-stage automatic annotation pipeline that enhances prosodic information in latent representations and builds a multi-modal prosody annotator. These works underscore the challenges of accurately modeling prosody in TTS.
+
+For mispronunciation correction, \[[6](http://arxiv.org/abs/2011.06465)\] introduces a method that uses a fine-tuned BERT-based front-end combined with a pre-trained FastSpeech2-based acoustic model to improve prosody modeling, especially for structurally complex sentences. \[[7](http://arxiv.org/abs/2211.13533)\] also addresses this issue by proposing an unsupervised word-level prosody tagging approach, which enables controllable speech synthesis by providing word-level prosody tags. These methods highlight the limitations of traditional approaches and the need for more flexible and effective solutions.
+
+Recent works have also focused on improving the controllability of TTS systems. \[[8](https://www.semanticscholar.org/paper/c424e5d18589de32d13ec4073447e30ed66b26af)\] proposes a hierarchical prosody modeling approach that allows for non-autoregressive speech synthesis while maintaining high-quality output. \[[9](http://arxiv.org/abs/2202.07816)\] introduces a novel architecture for prosody-controllable spontaneous TTS that can rapidly learn to speak from small and irregular datasets, while also reproducing the diversity of expressive phenomena present in spontaneous speech. These approaches demonstrate the potential of advanced modeling techniques for enhancing TTS controllability.
+
+In addition, \[[10](http://arxiv.org/abs/2008.01490)\] presents a method for improving prosody in unseen texts by utilizing linguistic information and noisy data, which is particularly useful in low-resource settings. \[[11](http://arxiv.org/abs/2110.02854)\] introduces a data-efficient end-to-end speech synthesis model that combines the advantages of statistical parametric models and end-to-end neural network models, enabling finer-level control over prosody during synthesis. These studies highlight the importance of integrating linguistic and acoustic features for better prosody modeling.
+
+Overall, these related works demonstrate the ongoing efforts to improve prosody control and mispronunciation correction in TTS systems, laying the groundwork for more flexible and effective solutions.
+
+References:
+1. \[[1](http://arxiv.org/abs/1909.10302)\]
+2. \[[2](https://www.semanticscholar.org/paper/ffe8bc7ea78838e8f35b2bc518f33037374ae0ef)\]
+3. \[[3](http://arxiv.org/abs/2102.08328)\]
+4. \[[4](https://www.semanticscholar.org/paper/fb2be38253698f5267bc0125a86f4f36e0a8c3a5)\]
+5. \[[5](http://arxiv.org/abs/2309.05423)\]
+6. \[[6](http://arxiv.org/abs/2011.06465)\]
+7. \[[7](http://arxiv.org/abs/2211.13533)\]
+8. \[[8](https://www.semanticscholar.org/paper/c424e5d18589de32d13ec4073447e30ed66b26af)\]
+9. \[[9](http://arxiv.org/abs/2202.07816)\]
+10. \[[10](http://arxiv.org/abs/2008.01490)\]
+11. \[[11](http://arxiv.org/abs/2110.02854)\]

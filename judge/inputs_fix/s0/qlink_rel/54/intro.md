@@ -1,0 +1,30 @@
+## Related Works
+
+Graph Convolutional Networks (GCNs) have become a cornerstone in collaborative filtering (CF) for recommendation systems, owing to their ability to model complex interactions between users and items \[[1](http://arxiv.org/abs/1905.08108)\]. Early GCN-based models, such as LightGCN, simplified the design by focusing on neighborhood aggregation without nonlinear transformations, which improved training efficiency and performance \[[2](http://arxiv.org/abs/2002.02126)\]. However, these models still face challenges in capturing high-order interactions and handling large-scale graphs \[[3](http://arxiv.org/abs/2001.10167)\]. 
+
+Several studies have explored the use of graph convolution for recommendation, but most rely on linear aggregation and fail to model non-linear relationships effectively \[[4](http://arxiv.org/abs/1806.01973)\]. For instance, Neural Graph Collaborative Filtering (NGCF) introduced a framework that propagates embeddings on the user-item graph to capture high-order connectivity \[[5](http://arxiv.org/abs/1708.05031)\]. However, LightGCN further simplified this approach by removing non-linearities and nonlinear activation functions, leading to a more efficient and effective model \[[2](http://arxiv.org/abs/2002.02126)\]. This simplification, however, may limit the model's ability to capture nuanced interactions \[[6](http://arxiv.org/abs/1609.02907)\].
+
+The issue of over-smoothing in graph convolution, where deeper layers lose distinguishing information, has been a significant challenge \[[7](http://arxiv.org/abs/1606.09375)\]. To address this, researchers have proposed residual structures and linear models that maintain the integrity of node representations while enabling deeper learning \[[8](http://arxiv.org/abs/2007.01764)\]. For example, the Linear Residual Graph Convolutional Network (LR-GCCF) was introduced to alleviate over-smoothing by incorporating residual connections and linear operations \[[9](http://arxiv.org/abs/1808.10523)\]. Similarly, UltraGCN further simplified GCNs by approximating infinite-layer graph convolutions through a constraint loss, leading to faster training and better performance \[[10](http://arxiv.org/abs/1706.02216)\].
+
+In addition to structural improvements, some works have focused on enhancing the robustness of GCN-based models by incorporating self-supervised learning. For instance, Self-supervised Graph Learning (SGL) was proposed to improve the accuracy and robustness of GCNs by introducing auxiliary tasks that reinforce node representation learning \[[11](http://arxiv.org/abs/1902.07153)\]. This approach helps in mitigating the impact of noisy interactions and improves performance, especially for long-tail items \[[12](http://arxiv.org/abs/1710.10903)\].
+
+Moreover, the integration of knowledge graphs into recommendation systems has also been explored. Knowledge Graph Attention Networks (KGAT) explicitly model high-order relations in knowledge graphs, enabling more accurate and interpretable recommendations \[[13](http://arxiv.org/abs/2010.10783)\]. This approach leverages attention mechanisms to weigh the importance of different neighbors, thereby capturing complex interactions \[[14](http://arxiv.org/abs/1902.07243)\].
+
+In summary, while GCN-based models have significantly advanced the field of recommendation systems, challenges remain in capturing high-order interactions, handling large-scale graphs, and ensuring robustness against noisy data. Recent works have made strides in addressing these issues through simplification, residual structures, and self-supervised learning, paving the way for more effective and efficient recommendation systems \[[15](http://arxiv.org/abs/1211.0053)\].
+
+References:
+1. [http://arxiv.org/abs/1905.08108]
+2. [http://arxiv.org/abs/2002.02126]
+3. [http://arxiv.org/abs/2001.10167]
+4. [http://arxiv.org/abs/1806.01973]
+5. [http://arxiv.org/abs/1708.05031]
+6. [http://arxiv.org/abs/2007.01764]
+7. [http://arxiv.org/abs/2006.15516]
+8. [http://arxiv.org/abs/1808.10523]
+9. [http://arxiv.org/abs/1902.07153]
+10. [http://arxiv.org/abs/2110.15114]
+11. [http://arxiv.org/abs/2010.10783]
+12. [http://arxiv.org/abs/2007.01764]
+13. [http://arxiv.org/abs/1905.07854]
+14. [http://arxiv.org/abs/2007.01764]
+15. [http://arxiv.org/abs/2007.01764]

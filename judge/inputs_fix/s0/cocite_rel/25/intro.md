@@ -1,0 +1,23 @@
+## Related Works
+
+The integration of knowledge graphs (KGs) into large language models (LLMs) to enhance reasoning capabilities has gained significant attention in recent years. While LLMs have demonstrated strong reasoning abilities, they often struggle with multi-step reasoning and incorporating structured knowledge from KGs without adaptation \[[9](http://arxiv.org/abs/2306.08302)\]. This limitation has motivated researchers to explore methods that combine the strengths of LLMs with the structured knowledge represented in KGs \[[1](http://arxiv.org/abs/2308.09729)\]. 
+
+Several approaches have been proposed to improve the reasoning capabilities of LLMs using KGs. One notable work is the MindMap method, which leverages KGs to enhance LLMs' inference and transparency by enabling them to comprehend KG inputs and infer with a combination of implicit and external knowledge \[[1](http://arxiv.org/abs/2308.09729)\]. This approach also elicits the mind map of LLMs, revealing their reasoning pathways based on the ontology of knowledge \[[1](http://arxiv.org/abs/2308.09729)\]. Similarly, the Knowledge Graph Prompting (KGP) method for multi-document question answering constructs a knowledge graph over multiple documents and uses an LLM-based graph traversal agent to gather supporting passages, improving the accuracy of LLMs in complex reasoning tasks \[[5](http://arxiv.org/abs/2308.11730)\].
+
+Another line of research focuses on retrieval-augmented generation (RAG) models, which combine pre-trained parametric and non-parametric memory to enhance the ability of LLMs to access and manipulate knowledge \[[3](http://arxiv.org/abs/2005.11401)\]. These models use a dense vector index of Wikipedia, accessed with a pre-trained neural retriever, to improve the factual accuracy of generated responses \[[3](http://arxiv.org/abs/2005.11401)\]. Additionally, the Program-Guided Fact-Checking (ProgramFC) model decomposes complex claims into sub-tasks that can be solved using a shared library of specialized functions, enabling more accurate and interpretable fact-checking \[[4](http://arxiv.org/abs/2305.12744)\].
+
+The use of KGs in language models has also been explored through joint pre-training frameworks, such as JAKET, which models both the knowledge graph and language by integrating entity embeddings and context-aware initial embeddings \[[12](http://arxiv.org/abs/2010.00796)\]. This approach enables the pre-trained model to easily adapt to unseen knowledge graphs in new domains \[[12](http://arxiv.org/abs/2010.00796)\]. Similarly, the KEPLER model unifies knowledge embedding and pre-trained language representation by encoding textual entity descriptions with a PLM and jointly optimizing the KE and language modeling objectives \[[7](http://arxiv.org/abs/1911.06136)\].
+
+In addition, the ERNIE model enhances language representation by incorporating knowledge graphs, which provide rich structured knowledge facts for better language understanding \[[18](http://arxiv.org/abs/1905.07129)\]. The model utilizes both large-scale textual corpora and KGs to train an enhanced language representation model that can take full advantage of lexical, syntactic, and knowledge information simultaneously \[[18](http://arxiv.org/abs/1905.07129)\].
+
+Finally, the K-BERT model enables language representation with knowledge graphs by injecting domain knowledge into the sentences as domain knowledge, while mitigating the knowledge noise issue through soft-position and visible matrix \[[21](http://arxiv.org/abs/1909.07606)\]. These approaches collectively highlight the growing interest in integrating KGs with LLMs to improve reasoning and factual accuracy.
+
+1. \[[1](http://arxiv.org/abs/2308.09729)\] MindMap: Knowledge Graph Prompting Sparks Graph of Thoughts in Large Language Models  
+2. \[[3](http://arxiv.org/abs/2005.11401)\] Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks  
+3. \[[4](http://arxiv.org/abs/2305.12744)\] Fact-Checking Complex Claims with Program-Guided Reasoning  
+4. \[[5](http://arxiv.org/abs/2308.11730)\] Knowledge Graph Prompting for Multi-Document Question Answering  
+5. \[[7](http://arxiv.org/abs/1911.06136)\] KEPLER: A Unified Model for Knowledge Embedding and Pre-trained Language Representation  
+6. \[[9](http://arxiv.org/abs/2306.08302)\] Large Language Models are Zero-Shot Reasoners  
+7. \[[12](http://arxiv.org/abs/2010.00796)\] JAKET: Joint Pre-training of Knowledge Graph and Language Understanding  
+8. \[[18](http://arxiv.org/abs/1905.07129)\] ERNIE: Enhanced Language Representation with Informative Entities  
+9. \[[21](http://arxiv.org/abs/1909.07606)\] K-BERT: Enabling Language Representation with Knowledge Graph

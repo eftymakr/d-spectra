@@ -1,0 +1,28 @@
+## Related Works
+
+Semi-supervised learning (SSL) has emerged as a powerful paradigm for improving model performance when labeled data is scarce. Traditional SSL methods assume that labeled and unlabeled data share the same class distribution \[[1](https://www.semanticscholar.org/paper/f3df804a7eef204b0c4fc4b81166dec9b4abc073)\]. However, this assumption is often violated in practice, as unlabeled data may contain out-of-distribution (OOD) samples, i.e., outliers \[[2](http://arxiv.org/abs/2007.11330)\]. These outliers are typically treated as noise, leading to significant performance degradation \[[3](http://arxiv.org/abs/2105.14148)\]. To address this limitation, numerous approaches have been proposed to handle open-set SSL, where the presence of OOD samples is explicitly considered \[[4](http://arxiv.org/abs/2001.07685)\].
+
+One line of work focuses on filtering OOD samples before applying SSL. For instance, \[[5](http://arxiv.org/abs/2108.05617)\] introduces a method that detects OOD samples in unlabeled data by estimating the probability of a sample belonging to OOD. This approach uses a joint optimization framework that alternates between updating network parameters and OOD scores. Similarly, \[[6](https://www.semanticscholar.org/paper/9e4376e0572de32236e408469ffb2173d89eaab5)\] proposes a multi-task curriculum learning framework that detects OOD samples and trains a classifier on in-distribution (ID) data simultaneously. Another approach, \[[7](http://arxiv.org/abs/1905.02249)\], leverages cross-modal matching to detect OOD samples by training the network to predict whether a data sample matches an assigned one-hot class label, generating a compatible feature space aligned with the core classification task.
+
+Another line of work focuses on improving SSL performance by incorporating OOD data in a controlled manner. \[[8](http://arxiv.org/abs/2107.08943)\] proposes OpenMatch, which unifies FixMatch with novelty detection based on one-vs-all (OVA) classifiers. The OVA classifier outputs confidence scores for inlier detection, providing a threshold to detect outliers. Additionally, \[[9](http://arxiv.org/abs/2308.13168)\] introduces an open-set soft-consistency regularization loss that enhances the smoothness of the OVA classifier with respect to input transformations, improving outlier detection. \[[10](http://arxiv.org/abs/2102.03526)\] further explores the use of OOD data by proposing a warm-up training phase that leverages all unlabeled data, including both ID and OOD samples, to learn more discriminative features.
+
+To address the issue of unreliable outlier detection when labeled data is scarce, \[[11](http://arxiv.org/abs/2205.07246)\] introduces IOMatch, a framework that jointly utilizes inliers and outliers. It employs a multi-binary classifier in combination with a standard closed-set classifier to produce unified open-set classification targets, treating all outliers as a single new class. This approach allows the model to optimize an open-set classifier using all unlabeled samples, including both inliers and outliers.
+
+In addition to outlier detection, some methods focus on improving the robustness of SSL by adjusting confidence thresholds dynamically. \[[12](http://arxiv.org/abs/1610.02242)\] introduces FreeMatch, which adjusts the confidence threshold in a self-adaptive manner based on the model's learning status. This approach improves performance, especially when labeled data is extremely rare, achieving significant error rate reductions over existing methods \[[13](http://arxiv.org/abs/2109.00650)\].
+
+Finally, \[[14](http://arxiv.org/abs/1606.04586)\] proposes a method that leverages advanced data augmentation techniques to improve the quality of noising in unlabeled examples, leading to substantial improvements in SSL performance across various tasks. This highlights the importance of data augmentation in enhancing SSL performance, especially when labeled data is limited.
+
+1. \[[1](https://www.semanticscholar.org/paper/f3df804a7eef204b0c4fc4b81166dec9b4abc073)\] Document 1  
+2. \[[2](http://arxiv.org/abs/2007.11330)\] Document 3  
+3. \[[3](http://arxiv.org/abs/2105.14148)\] Document 1  
+4. \[[4](http://arxiv.org/abs/2001.07685)\] Document 2  
+5. \[[5](http://arxiv.org/abs/2108.05617)\] Document 2  
+6. \[[6](https://www.semanticscholar.org/paper/9e4376e0572de32236e408469ffb2173d89eaab5)\] Document 5  
+7. \[[7](http://arxiv.org/abs/1905.02249)\] Document 3  
+8. \[[8](http://arxiv.org/abs/2107.08943)\] Document 6  
+9. \[[9](http://arxiv.org/abs/2308.13168)\] Document 9  
+10. \[[10](http://arxiv.org/abs/2102.03526)\] Document 10  
+11. \[[11](http://arxiv.org/abs/2205.07246)\] Document 11  
+12. \[[12](http://arxiv.org/abs/1610.02242)\] Document 13  
+13. \[[13](http://arxiv.org/abs/2109.00650)\] Document 15  
+14. \[[14](http://arxiv.org/abs/1606.04586)\] Document 18
